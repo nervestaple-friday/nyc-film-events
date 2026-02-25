@@ -23,7 +23,7 @@ import os, sys, json, urllib.request, urllib.parse, datetime, time, argparse
 
 PROXY_URL  = os.environ.get("ARR_PROXY_URL", "http://192.168.4.94:7879")
 PROXY_KEY  = os.environ.get("ARR_PROXY_KEY", "orRkC573vbA4cepg4TV_kdtLoy-AaaM8uuyBloWQzT4")
-TMDB_KEY   = os.environ.get("TMDB_API_KEY", "")
+TMDB_TOKEN = os.environ.get("TMDB_TOKEN", "")  # Bearer token (read access token)
 
 STATE_FILE = os.path.join(os.path.dirname(__file__), "../memory/4k-state.json")
 CHECK_COOLDOWN_DAYS = 30  # re-check TMDB at most once per month per movie
@@ -40,14 +40,16 @@ def proxy_req(method, path, body=None):
 
 
 def tmdb_req(path, params=None):
-    if not TMDB_KEY:
-        raise RuntimeError("TMDB_API_KEY not set")
+    if not TMDB_TOKEN:
+        raise RuntimeError("TMDB_TOKEN not set")
     base = "https://api.themoviedb.org/3"
-    p = {"api_key": TMDB_KEY}
+    url = base + path
     if params:
-        p.update(params)
-    url = base + path + "?" + urllib.parse.urlencode(p)
-    r = urllib.request.Request(url, headers={"Accept": "application/json"})
+        url += "?" + urllib.parse.urlencode(params)
+    r = urllib.request.Request(url, headers={
+        "Accept": "application/json",
+        "Authorization": f"Bearer {TMDB_TOKEN}",
+    })
     with urllib.request.urlopen(r, timeout=15) as resp:
         return json.loads(resp.read())
 
@@ -104,7 +106,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply",  action="store_true", help="Switch profile + trigger search for approved movies")
     parser.add_argument("--check",  action="store_true", help="Detection pass only, print JSON candidates")
-    parser.add_argument("--limit",  type=int, default=100, help="Max TMDB lookups per run (default 100)")
+    parser.add_argument("--limit",  type=int, default=150, help="Max TMDB lookups per run (default 150)")
     parser.add_argument("--upgrade", type=int, nargs="+", metavar="MOVIE_ID",
                         help="Immediately trigger a search for specific Radarr movie IDs")
     args = parser.parse_args()
@@ -117,8 +119,8 @@ def main():
             print(f"  Done.")
         return
 
-    if not TMDB_KEY:
-        print("Error: TMDB_API_KEY environment variable not set.", file=sys.stderr)
+    if not TMDB_TOKEN:
+        print("Error: TMDB_TOKEN environment variable not set.", file=sys.stderr)
         sys.exit(1)
 
     print("Fetching library...")
@@ -144,6 +146,9 @@ def main():
         candidates.append((movie_id, movie, file_info, tmdb_id))
 
     print(f"  {len(candidates)} movies with sub-4K files to check")
+
+    # Sort by year descending — newer films more likely to have fresh 4K releases
+    candidates.sort(key=lambda x: x[1].get("year", 0), reverse=True)
 
     # Filter by cooldown
     to_check = []

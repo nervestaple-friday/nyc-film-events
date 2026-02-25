@@ -9,6 +9,12 @@
 ## Config Backup
 - Run `scripts/backup-config.sh` to sync OpenClaw config to GitHub
 
+## 4K Upgrade Scan
+- Run `TMDB_TOKEN=<token> python3 scripts/4k-upgrade-scan.py` (token in credentials.json)
+- Checks up to 150 movies/run against TMDB, newest first
+- If new 4K releases found → message Jim with titles and movie IDs
+- Jim replies with IDs to upgrade → run `--upgrade <ID>` to trigger Radarr search
+
 ## Email Check
 - Check Gmail inbox (a few times/day)
 - Skip: Nextdoor, normal financial statements
