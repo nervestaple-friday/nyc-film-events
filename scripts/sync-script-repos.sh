@@ -18,6 +18,7 @@ declare -A REPOS=(
   [gmail-check]="gmail-check.py"
   [recruiter-scan]="recruiter-scan.py"
   [4k-upgrade-scan]="4k-upgrade-scan.py"
+  [seedpool-monitor]="seedpool-monitor.py"
 )
 
 any_pushed=false
