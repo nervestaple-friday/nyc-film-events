@@ -19,7 +19,7 @@ Usage:
   python3 4k-upgrade-scan.py [--apply] [--check] [--limit N]
 """
 
-import os, sys, json, urllib.request, urllib.parse, datetime, time, argparse
+import os, sys, json, urllib.request, urllib.parse, datetime, time, argparse, random
 
 PROXY_URL  = os.environ.get("ARR_PROXY_URL", "http://192.168.4.94:7879")
 PROXY_KEY  = os.environ.get("ARR_PROXY_KEY", "orRkC573vbA4cepg4TV_kdtLoy-AaaM8uuyBloWQzT4")
@@ -106,7 +106,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply",  action="store_true", help="Switch profile + trigger search for approved movies")
     parser.add_argument("--check",  action="store_true", help="Detection pass only, print JSON candidates")
-    parser.add_argument("--limit",  type=int, default=150, help="Max TMDB lookups per run (default 150)")
+    parser.add_argument("--limit",  type=int, default=200, help="Max TMDB lookups per run (default 200)")
     parser.add_argument("--upgrade", type=int, nargs="+", metavar="MOVIE_ID",
                         help="Immediately trigger a search for specific Radarr movie IDs")
     args = parser.parse_args()
@@ -128,10 +128,13 @@ def main():
     print("Fetching file quality info...")
     files  = {f["movieId"]: f for f in proxy_req("GET", "/movies/files")}
 
-    state = load_state()
-    now   = datetime.datetime.now()
+    state        = load_state()
+    now          = datetime.datetime.now()
+    current_year = now.year
 
     # Build candidate list: movies with files but not 4K
+    # Exclude films too new for a 4K disc release (less than ~8 months old)
+    cutoff_year = current_year - 1  # films from last year or older only
     candidates = []
     for movie_id, movie in movies.items():
         if not movie.get("hasFile"):
@@ -143,12 +146,15 @@ def main():
         tmdb_id = movie.get("tmdbId")
         if not tmdb_id:
             continue
+        year = movie.get("year", 0) or 0
+        if year > cutoff_year:
+            continue  # too new — no disc release yet
         candidates.append((movie_id, movie, file_info, tmdb_id))
 
-    print(f"  {len(candidates)} movies with sub-4K files to check")
+    print(f"  {len(candidates)} movies with sub-4K files to check (up to {cutoff_year})")
 
-    # Sort by year descending — newer films more likely to have fresh 4K releases
-    candidates.sort(key=lambda x: x[1].get("year", 0), reverse=True)
+    # Shuffle so each run samples across all years, not just newest/oldest
+    random.shuffle(candidates)
 
     # Filter by cooldown
     to_check = []
@@ -194,6 +200,7 @@ def main():
 
     if not newly_found:
         print("\nNo new 4K releases found for your library.")
+        save_state(state)
         return
 
     print(f"\n🎬 New 4K releases available for {len(newly_found)} movies in your library:\n")
@@ -201,6 +208,9 @@ def main():
         rel = f" (released {m['releaseDate']})" if m['releaseDate'] else ""
         print(f"  [{m['movieId']}] {m['title']} ({m['year']}){rel}")
         print(f"         Currently: {m['currentQuality']} @ {m['currentSizeGB']}GB")
+        # Mark as notified so we don't re-alert
+        state["notified"].append(m["tmdbId"])
+    save_state(state)
     print(f"\nTo trigger a search for any of these, run:")
     print(f"  python3 4k-upgrade-scan.py --upgrade <MOVIE_ID> [MOVIE_ID ...]")
     print(f"Radarr will grab the 4K automatically based on your quality preferences.")
