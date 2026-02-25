@@ -70,7 +70,7 @@ _Started fresh after data loss on 2026-02-25. Rebuilt from Telegram history dump
 
 ### arr-proxy (Radarr + Sonarr gateway)
 - Running at: 192.168.4.94:7879
-- Proxy key: orRkC573vbA4cepg4TV_kdtLoy-AaaM8uuyBloWQzT4
+- Proxy key: orRkC573vbA4cepg4TV_kdtLoy-AaaM8uuyBloWQzT4 (header: `X-Proxy-Key`)
 - Repo: https://github.com/nervestaple-friday/arr-proxy
 - Allowed: list, search, add, toggle monitored
 - Blocked: DELETE (enforced in proxy code)
