@@ -17,6 +17,7 @@
 - Jim approves → run `--upgrade <ID> [ID...]` to trigger Radarr search
 
 ## Email Check
-- Check Gmail inbox (a few times/day)
-- Skip: Nextdoor, normal financial statements
+- Run `python3 scripts/gmail-check.py 6` (last 6 hours)
+- Skip: Nextdoor, newsletters, normal financial statements
 - Call BlueChew "medication"
+- If anything actionable found → message Jim with distilled summary
