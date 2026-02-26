@@ -19,6 +19,8 @@ declare -A REPOS=(
   [recruiter-scan]="recruiter-scan.py"
   [4k-upgrade-scan]="4k-upgrade-scan.py"
   [seedpool-monitor]="seedpool-monitor.py"
+  [film-of-the-day]="film-of-the-day.py"
+  [plex-watch-status]="plex-watch-status.py"
 )
 
 any_pushed=false
