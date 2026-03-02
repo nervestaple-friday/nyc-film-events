@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-02T00:54:16.168504",
+  "updated": "2026-03-02T03:43:15.022057",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -532,6 +532,31 @@
         {
           "title": "Jim Henson’s World",
           "link": "https://movingimage.org/series/jim-hensons-world-2020/",
+          "date_str": ""
+        }
+      ]
+    },
+    "MoMA": {
+      "url": "https://www.moma.org/calendar/film",
+      "events": [
+        {
+          "title": "Modern MondaysModern Mondays",
+          "link": "https://www.moma.org/calendar/film/560",
+          "date_str": ""
+        },
+        {
+          "title": "Marilyn Monroe: Celluloid Dream",
+          "link": "https://www.moma.org/calendar/film/5883",
+          "date_str": ""
+        },
+        {
+          "title": "A View from the Vaults: The 1980s",
+          "link": "https://www.moma.org/calendar/film/5885",
+          "date_str": ""
+        },
+        {
+          "title": "MoMA Presents:Lumière, Le Cinéma!Mar 20–26, 2026",
+          "link": "https://www.moma.org/calendar/film/5884",
           "date_str": ""
         }
       ]
