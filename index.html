@@ -4,79 +4,356 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NYC Film Events</title>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <style>
     :root {
-      --bg: #0e0e0e; --border: #2a2a2a;
-      --text: #e8e8e8; --muted: #888; --accent: #c8a96e;
+      --bg: #0c0c0c;
+      --surface: #141414;
+      --border: #242424;
+      --text: #e2e2e2;
+      --muted: #777;
+      --accent: #c8a96e;
+      --accent-dim: #8a7248;
+      --link: #c8a96e;
+      --card-bg: #161616;
+      --tag-bg: #1e1e1e;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; line-height: 1.6; min-height: 100vh; }
-    header { border-bottom: 1px solid var(--border); padding: 2rem; display: flex; align-items: baseline; gap: 1.5rem; flex-wrap: wrap; }
-    header h1 { font-size: 1.4rem; font-weight: normal; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
-    #updated { font-size: 0.8rem; color: var(--muted); font-family: monospace; }
-    main { max-width: 900px; margin: 0 auto; padding: 2rem; }
-    .venue-section { margin-bottom: 3rem; }
-    .venue-name {
-      font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase;
-      color: var(--muted); border-bottom: 1px solid var(--border);
-      padding-bottom: 0.5rem; margin-bottom: 1rem;
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', 'Times New Roman', serif;
+      min-height: 100vh;
     }
-    .venue-name a { color: var(--muted); text-decoration: none; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--accent); }
+
+    /* Header */
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .header-left { display: flex; align-items: baseline; gap: 1rem; }
+    .header h1 {
+      font-size: 1rem;
+      font-weight: normal;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .updated {
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-family: 'Courier New', monospace;
+    }
+
+    /* Venue filter tabs */
+    .filters {
+      padding: 0 2rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .filters::-webkit-scrollbar { display: none; }
+    .filter-btn {
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font-family: 'Courier New', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      padding: 0.75rem 1rem;
+      text-transform: uppercase;
+      white-space: nowrap;
+      transition: color 0.15s, border-color 0.15s;
+      margin-bottom: -1px;
+    }
+    .filter-btn:hover { color: var(--text); }
+    .filter-btn.active {
+      border-bottom-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* Main content */
+    .main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* Venue section */
+    .venue-section { margin-bottom: 3rem; }
+    .venue-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.25rem;
+    }
+    .venue-name {
+      font-family: 'Courier New', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
     .venue-name a:hover { color: var(--accent); }
-    .event { display: flex; align-items: baseline; gap: 1rem; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
-    .event:last-child { border-bottom: none; }
-    .event-date { font-size: 0.75rem; color: var(--muted); font-family: monospace; min-width: 50px; flex-shrink: 0; }
-    .event-title a { color: var(--text); text-decoration: none; }
+    .event-count {
+      font-family: 'Courier New', monospace;
+      font-size: 0.62rem;
+      color: var(--border);
+      background: var(--tag-bg);
+      padding: 0.1rem 0.4rem;
+      border-radius: 2px;
+    }
+
+    /* Event cards */
+    .events-grid {
+      display: grid;
+      gap: 0;
+    }
+    .event-card {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 0;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.1s;
+    }
+    .event-card:last-child { border-bottom: none; }
+    .event-card:hover { background: var(--surface); }
+
+    .event-poster {
+      width: 80px;
+      padding: 0.75rem 0.75rem 0.75rem 0;
+      flex-shrink: 0;
+    }
+    .event-poster img {
+      width: 100%;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      display: block;
+      border-radius: 2px;
+      background: var(--tag-bg);
+    }
+    .poster-placeholder {
+      width: 100%;
+      aspect-ratio: 2/3;
+      background: var(--tag-bg);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      opacity: 0.3;
+    }
+
+    .event-body {
+      padding: 0.75rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    .event-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .event-date {
+      font-family: 'Courier New', monospace;
+      font-size: 0.68rem;
+      color: var(--muted);
+    }
+    .event-year {
+      font-family: 'Courier New', monospace;
+      font-size: 0.68rem;
+      color: var(--border);
+    }
+    .event-rating {
+      font-family: 'Courier New', monospace;
+      font-size: 0.68rem;
+      color: var(--accent-dim);
+    }
+    .event-title {
+      font-size: 0.95rem;
+      line-height: 1.3;
+      color: var(--text);
+    }
     .event-title a:hover { color: var(--accent); }
+    .event-overview {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* No poster layout */
+    .event-card.no-poster {
+      grid-template-columns: 1fr;
+    }
+    .event-card.no-poster .event-body {
+      padding: 0.6rem 0;
+    }
+
     .empty { color: var(--muted); font-style: italic; text-align: center; padding: 4rem; }
-    footer { border-top: 1px solid var(--border); padding: 1.5rem 2rem; font-size: 0.75rem; color: var(--muted); font-family: monospace; }
+    .loading { color: var(--muted); text-align: center; padding: 4rem; font-family: monospace; font-size: 0.8rem; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.25rem 2rem;
+      font-family: 'Courier New', monospace;
+      font-size: 0.68rem;
+      color: var(--border);
+      letter-spacing: 0.05em;
+    }
+
+    @media (max-width: 600px) {
+      .header { padding: 1rem; }
+      .main { padding: 1rem; }
+      .filters { padding: 0 1rem; }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>🎬 NYC Film Events</h1>
-    <span id="updated">loading…</span>
-  </header>
-  <main id="content"><p class="empty">Loading events…</p></main>
-  <footer>Metrograph · Film Forum · IFC Center · Film at Lincoln Center · Anthology Film Archives · Museum of the Moving Image · Nitehawk · Spectacle · Syndicated BK · BAM</footer>
-  <script>
-    async function load() {
-      try {
-        const r = await fetch('events.json?t=' + Date.now());
-        const data = await r.json();
-        document.getElementById('updated').textContent = 'Updated ' + new Date(data.updated).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
-        const main = document.getElementById('content');
-        const venues = data.venues || {};
-        if (!Object.values(venues).some(v => (v.events || v).length)) {
-          main.innerHTML = '<p class="empty">No events found.</p>'; return;
-        }
-        main.innerHTML = '';
-        for (const [venue, vdata] of Object.entries(venues)) {
-          // Support both old format (array) and new format (object with url+events)
-          const events = Array.isArray(vdata) ? vdata : vdata.events || [];
-          const url = Array.isArray(vdata) ? null : vdata.url;
-          if (!events.length) continue;
-          const section = document.createElement('div');
-          section.className = 'venue-section';
-          const venueLabel = url
-            ? `<a href="${url}" target="_blank" rel="noopener">${venue}</a>`
-            : venue;
-          section.innerHTML = '<div class="venue-name">' + venueLabel + '</div>';
-          for (const e of events) {
-            const row = document.createElement('div');
-            row.className = 'event';
-            const dateStr = e.date_str ? '<span class="event-date">' + e.date_str + '</span>' : '<span class="event-date"></span>';
-            const link = e.link ? '<a href="' + e.link + '" target="_blank" rel="noopener">' + e.title + '</a>' : e.title;
-            row.innerHTML = dateStr + '<span class="event-title">' + link + '</span>';
-            section.appendChild(row);
-          }
-          main.appendChild(section);
-        }
-      } catch(err) {
-        document.getElementById('content').innerHTML = '<p class="empty">Failed to load events.</p>';
-      }
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    const TMDB_IMG = 'https://image.tmdb.org/t/p/w185';
+
+    function formatUpdated(iso) {
+      if (!iso) return '';
+      const d = new Date(iso);
+      return d.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
     }
-    load();
+
+    function EventCard({ event }) {
+      const hasPoster = event.poster;
+      return (
+        <div className={`event-card ${hasPoster ? '' : 'no-poster'}`}>
+          {hasPoster && (
+            <div className="event-poster">
+              <img src={event.poster} alt={event.title} loading="lazy" />
+            </div>
+          )}
+          <div className="event-body">
+            <div className="event-meta">
+              {event.date_str && <span className="event-date">{event.date_str}</span>}
+              {event.year && <span className="event-year">{event.year}</span>}
+              {event.rating && <span className="event-rating">★ {event.rating.toFixed(1)}</span>}
+            </div>
+            <div className="event-title">
+              {event.link
+                ? <a href={event.link} target="_blank" rel="noopener">{event.title}</a>
+                : event.title}
+            </div>
+            {event.overview && (
+              <div className="event-overview">{event.overview}</div>
+            )}
+          </div>
+        </div>
+      );
+    }
+
+    function VenueSection({ name, vdata }) {
+      const events = Array.isArray(vdata) ? vdata : (vdata.events || []);
+      const url = Array.isArray(vdata) ? null : vdata.url;
+      if (!events.length) return null;
+      return (
+        <div className="venue-section">
+          <div className="venue-header">
+            <div className="venue-name">
+              {url
+                ? <a href={url} target="_blank" rel="noopener">{name}</a>
+                : name}
+            </div>
+            <span className="event-count">{events.length}</span>
+          </div>
+          <div className="events-grid">
+            {events.map((e, i) => <EventCard key={i} event={e} />)}
+          </div>
+        </div>
+      );
+    }
+
+    function App() {
+      const [data, setData] = useState(null);
+      const [activeVenue, setActiveVenue] = useState('All');
+      const [error, setError] = useState(false);
+
+      useEffect(() => {
+        fetch('events.json?t=' + Date.now())
+          .then(r => r.json())
+          .then(setData)
+          .catch(() => setError(true));
+      }, []);
+
+      const venues = data?.venues ? Object.entries(data.venues) : [];
+      const venueNames = venues.map(([name]) => name);
+
+      const filtered = activeVenue === 'All'
+        ? venues
+        : venues.filter(([name]) => name === activeVenue);
+
+      return (
+        <>
+          <header className="header">
+            <div className="header-left">
+              <h1>🎬 NYC Film Events</h1>
+              {data && <span className="updated">Updated {formatUpdated(data.updated)}</span>}
+            </div>
+          </header>
+
+          {venues.length > 0 && (
+            <nav className="filters">
+              <button
+                className={`filter-btn ${activeVenue === 'All' ? 'active' : ''}`}
+                onClick={() => setActiveVenue('All')}
+              >All</button>
+              {venueNames.map(name => (
+                <button
+                  key={name}
+                  className={`filter-btn ${activeVenue === name ? 'active' : ''}`}
+                  onClick={() => setActiveVenue(name)}
+                >{name}</button>
+              ))}
+            </nav>
+          )}
+
+          <main className="main">
+            {error && <p className="empty">Failed to load events.</p>}
+            {!data && !error && <p className="loading">Loading…</p>}
+            {data && filtered.length === 0 && <p className="empty">No events found.</p>}
+            {filtered.map(([name, vdata]) => (
+              <VenueSection key={name} name={name} vdata={vdata} />
+            ))}
+          </main>
+
+          <footer>
+            Metrograph · Film Forum · IFC Center · Film at Lincoln Center · Anthology · MoMI · MoMA · Nitehawk · Spectacle · Syndicated BK · BAM
+          </footer>
+        </>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
   </script>
 </body>
 </html>
