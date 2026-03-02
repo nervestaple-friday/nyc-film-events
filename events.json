@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-02T03:46:43.098811",
+  "updated": "2026-03-02T03:49:21.544885",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -570,78 +570,108 @@
       "url": "https://nitehawkcinema.com/williamsburg/",
       "events": [
         {
-          "title": "Theres Something About Samuel",
+          "title": "THERE'S SOMETHING ABOUT SAMUEL...: THE SELECTED WORKS OF SAMUEL L. JACKSON",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/theres-something-about-samuel/",
           "date_str": ""
         },
         {
-          "title": "Femme Photographers",
+          "title": "Beau Travail",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/femme-photographers/",
           "date_str": ""
         },
         {
-          "title": "Video Store Gems",
+          "title": "Super Mario Bros.",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/video-store-gems/",
           "date_str": ""
         },
         {
-          "title": "Recent Restorations",
+          "title": "The Servant",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/recent-restorations/",
           "date_str": ""
         },
         {
-          "title": "A Man Under The Influence 63 Days Of Stevens Selects",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/a-man-under-the-influence-63-days-of-stevens-selects/",
-          "date_str": ""
-        },
-        {
-          "title": "Skin Deep",
+          "title": "Resurrection of Eve",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/skin-deep/",
           "date_str": ""
         },
         {
-          "title": "Anime After Dark",
+          "title": "Urusei Yatsura 2: Beautiful Dreamer",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/anime-after-dark/",
           "date_str": ""
         },
         {
-          "title": "Lets Watch A Movie",
+          "title": "Leprechaun",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/lets-watch-a-movie/",
           "date_str": ""
         },
         {
-          "title": "Nostalgia Ultra",
+          "title": "Monsters, Inc.",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/nostalgia-ultra/",
           "date_str": ""
         },
         {
-          "title": "Anniversary Party",
+          "title": "Eternal Sunshine of the Spotless Mind",
+          "link": "https://nitehawkcinema.com/williamsburg/film-series/brunch-screenings/",
+          "date_str": ""
+        },
+        {
+          "title": "The Fly",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/anniversary-party/",
           "date_str": ""
         },
         {
-          "title": "35Mm Screenings",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/35mm-screenings/",
-          "date_str": ""
-        },
-        {
-          "title": "Music Driven",
+          "title": "Something Better Change",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/music-driven/",
           "date_str": ""
         },
         {
-          "title": "Nitehawk Midnite Screenings",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/nitehawk-midnite-screenings/",
+          "title": "Big Hero 6",
+          "link": "https://nitehawkcinema.com/williamsburg/film-series/family-friendly-screenings/",
           "date_str": ""
         },
         {
-          "title": "Future Of Film Is Female",
+          "title": "Atropia",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/future-of-film-is-female/",
           "date_str": ""
         },
         {
-          "title": "The Deuce",
+          "title": "Laserblast",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/the-deuce/",
+          "date_str": ""
+        },
+        {
+          "title": "Ultra-Mega Oscars 2026",
+          "link": "https://nitehawkcinema.com/williamsburg/film-series/one-nite-only/",
+          "date_str": ""
+        },
+        {
+          "title": "Teddy, Out of Tune",
+          "link": "https://nitehawkcinema.com/williamsburg/film-series/nobudge-presents/",
+          "date_str": ""
+        },
+        {
+          "title": "Vampire Time Travelers",
+          "link": "https://nitehawkcinema.com/williamsburg/film-series/visual-vengeance/",
+          "date_str": ""
+        }
+      ]
+    },
+    "Nitehawk (Prospect Park)": {
+      "url": "https://nitehawkcinema.com/prospectpark/",
+      "events": [
+        {
+          "title": "Pulp Fiction",
+          "link": "https://nitehawkcinema.com/prospectpark/film-series/theres-something-about-samuel/",
+          "date_str": ""
+        },
+        {
+          "title": "Cutting Through Rocks",
+          "link": "https://nitehawkcinema.com/prospectpark/film-series/icymi/",
+          "date_str": ""
+        },
+        {
+          "title": "The 5,000 Fingers of Dr. T.",
+          "link": "https://nitehawkcinema.com/prospectpark/film-series/a-man-under-the-influence-63-days-of-stevens-selects/",
           "date_str": ""
         }
       ]
