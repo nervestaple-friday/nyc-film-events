@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-02T03:49:21.544885",
+  "updated": "2026-03-02T17:22:29.348261",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -70,11 +70,6 @@
       "url": "https://filmforum.org/films",
       "events": [
         {
-          "title": "SNOW WHITE AND THE SEVEN DWARFS",
-          "link": "https://filmforum.org/film/snow-white-and-the-seven-dwarfs-ffjr-2026",
-          "date_str": ""
-        },
-        {
           "title": "Satyajit Ray’sDAYS AND NIGHTS IN THE FOREST",
           "link": "https://filmforum.org/film/days-and-nights-in-the-forest",
           "date_str": ""
@@ -100,13 +95,13 @@
           "date_str": ""
         },
         {
-          "title": "Giuseppe De Santis’BITTER RICE",
-          "link": "https://filmforum.org/film/bitter-rice",
+          "title": "Ida Lupino’sTHE BIGAMIST",
+          "link": "https://filmforum.org/film/the-bigamist",
           "date_str": ""
         },
         {
-          "title": "Ida Lupino’sTHE BIGAMIST",
-          "link": "https://filmforum.org/film/the-bigamist",
+          "title": "Giuseppe De Santis’BITTER RICE",
+          "link": "https://filmforum.org/film/bitter-rice",
           "date_str": ""
         },
         {
@@ -160,8 +155,8 @@
       "url": "https://www.ifccenter.com/",
       "events": [
         {
-          "title": "Live-Action, Animated, and Documentary short programs now playing!",
-          "link": "https://www.ifccenter.com/series/the-2026-oscar-nominated-shorts/",
+          "title": "PICTURES OF GHOSTS",
+          "link": "https://www.ifccenter.com/films/pictures-of-ghosts/",
           "date_str": ""
         },
         {
@@ -170,8 +165,23 @@
           "date_str": ""
         },
         {
+          "title": "DOC NYC Selects",
+          "link": "https://www.ifccenter.com/films/a-life-illuminated/",
+          "date_str": ""
+        },
+        {
+          "title": "THE UGLY STEPSISTER",
+          "link": "https://www.ifccenter.com/films/the-ugly-stepsister/",
+          "date_str": ""
+        },
+        {
           "title": "DOLLY",
           "link": "https://www.ifccenter.com/films/dolly/",
+          "date_str": ""
+        },
+        {
+          "title": "SIRAT",
+          "link": "https://www.ifccenter.com/films/sirat/",
           "date_str": ""
         },
         {
@@ -185,53 +195,38 @@
           "date_str": ""
         },
         {
-          "title": "Pictures of Ghosts",
-          "link": "https://www.ifccenter.com/films/pictures-of-ghosts/",
-          "date_str": ""
-        },
-        {
-          "title": "The Ugly Stepsister",
-          "link": "https://www.ifccenter.com/films/the-ugly-stepsister/",
-          "date_str": ""
-        },
-        {
-          "title": "Pompei: Below the Clouds",
-          "link": "https://www.ifccenter.com/films/below-the-clouds/",
-          "date_str": ""
-        },
-        {
           "title": "Ghost Elephants",
           "link": "https://www.ifccenter.com/films/ghost-elephants/",
           "date_str": ""
         },
         {
-          "title": "Live-Action Oscar-Nominated Shorts 2026",
+          "title": "Live-Action Oscar-Nominated Shorts 2026(https://www.ifccenter.com/films/live-action-oscar-nominated-shorts-2026/)",
           "link": "https://www.ifccenter.com/films/live-action-oscar-nominated-shorts-2026/",
           "date_str": ""
         },
         {
-          "title": "Doc Program B: Oscar-Nominated Shorts 2026",
+          "title": "Doc Program B: Oscar-Nominated Shorts 2026(https://www.ifccenter.com/films/doc-program-b-oscar-nominated-shorts-2026/)",
           "link": "https://www.ifccenter.com/films/doc-program-b-oscar-nominated-shorts-2026/",
           "date_str": ""
         },
         {
-          "title": "Doc Program A: Oscar- Nominated Shorts 2026",
+          "title": "Doc Program A: Oscar- Nominated Shorts 2026(https://www.ifccenter.com/films/doc-program-a-oscar-nominated-shorts-2026/)",
           "link": "https://www.ifccenter.com/films/doc-program-a-oscar-nominated-shorts-2026/",
           "date_str": ""
         },
         {
-          "title": "Animated Oscar-Nominated Shorts 2026",
+          "title": "Animated Oscar-Nominated Shorts 2026(https://www.ifccenter.com/films/animated-oscar-nominated-shorts-2026/)",
           "link": "https://www.ifccenter.com/films/animated-oscar-nominated-shorts-2026/",
           "date_str": ""
         },
         {
-          "title": "Shudder Showcase 2026Wed Jan 21- Thu Mar 5Shudder Showcase 2026“Shudder Showcase at IFC Center” is a series that serves up special",
-          "link": "https://www.ifccenter.com/series/shudder-showcase-2026/",
+          "title": "Late Night Favorites: Spring 2026",
+          "link": "https://www.ifccenter.com/series/late-night-favorites-spring-2026/",
           "date_str": ""
         },
         {
-          "title": "Frankenstein",
-          "link": "https://www.ifccenter.com/films/frankenstein/",
+          "title": "THE 2026 OSCAR®- NOMINATED SHORTS",
+          "link": "https://www.ifccenter.com/series/the-2026-oscar-nominated-shorts/",
           "date_str": ""
         }
       ]
@@ -240,89 +235,104 @@
       "url": "https://www.filmlinc.org/calendar/",
       "events": [
         {
-          "title": "Raymond Depardon: Humanity in Focus",
-          "link": "https://www.filmlinc.org/series/raymond-depardon/",
-          "date_str": ""
+          "title": "A Day in the Country",
+          "link": "https://www.filmlinc.org/films/a-day-in-the-country/",
+          "date_str": "2026-03-04"
         },
         {
-          "title": "What Does That Nature Say to You",
-          "link": "https://www.filmlinc.org/films/what-does-that-nature/",
-          "date_str": ""
+          "title": "Affection Affection",
+          "link": "https://www.filmlinc.org/films/affection-affection/",
+          "date_str": "2026-03-09"
         },
         {
-          "title": "Rendez-Vous with French Cinema 2026",
-          "link": "https://www.filmlinc.org/festivals/rendez-vous-with-french-cinema/",
-          "date_str": ""
+          "title": "Alpha",
+          "link": "https://www.filmlinc.org/films/alpha/",
+          "date_str": "2026-03-14"
         },
         {
-          "title": "Pompei: Below the Clouds",
+          "title": "At Work",
+          "link": "https://www.filmlinc.org/films/at-work/",
+          "date_str": "2026-03-08"
+        },
+        {
+          "title": "Barbara",
+          "link": "https://www.filmlinc.org/films/barbara/",
+          "date_str": "2026-03-18"
+        },
+        {
+          "title": "Below the Clouds",
           "link": "https://www.filmlinc.org/films/below-the-clouds/",
-          "date_str": ""
+          "date_str": "2026-03-06"
         },
         {
-          "title": "Christian Petzold In Person",
-          "link": "https://www.filmlinc.org/series/christian-petzold-in-person/",
-          "date_str": ""
+          "title": "Case 137",
+          "link": "https://www.filmlinc.org/films/case-137/",
+          "date_str": "2026-03-06"
         },
         {
-          "title": "Miroirs No. 3",
-          "link": "https://www.filmlinc.org/films/miroirs-no-3/",
-          "date_str": ""
+          "title": "Colors of Time",
+          "link": "https://www.filmlinc.org/films/colors-of-time/",
+          "date_str": "2026-03-13"
         },
         {
           "title": "Dry Leaf",
           "link": "https://www.filmlinc.org/films/dry-leaf/",
-          "date_str": ""
+          "date_str": "2026-03-20"
         },
         {
-          "title": "Farewell to Béla Tarr",
-          "link": "https://www.filmlinc.org/series/farewell-to-bela-tarr/",
-          "date_str": ""
+          "title": "Enzo",
+          "link": "https://www.filmlinc.org/films/enzo/",
+          "date_str": "2026-03-06"
         },
         {
-          "title": "Sirāt",
-          "link": "https://www.filmlinc.org/films/sirat/",
-          "date_str": ""
+          "title": "Ghosts",
+          "link": "https://www.filmlinc.org/films/ghosts/",
+          "date_str": "2026-03-17"
         },
         {
-          "title": "The Love That Remains",
-          "link": "https://www.filmlinc.org/films/the-love-that-remains/",
-          "date_str": ""
+          "title": "Guess Who Is Calling?",
+          "link": "https://www.filmlinc.org/films/guess-who-is-calling/",
+          "date_str": "2026-03-08"
         },
         {
-          "title": "The Secret Agent",
-          "link": "https://www.filmlinc.org/films/the-secret-agent/",
-          "date_str": ""
+          "title": "Hearts on Fire",
+          "link": "https://www.filmlinc.org/films/hearts-on-fire/",
+          "date_str": "2026-03-09"
+        },
+        {
+          "title": "Hugo",
+          "link": "https://www.filmlinc.org/films/hugo/",
+          "date_str": "2026-03-09"
+        },
+        {
+          "title": "In a Whisper",
+          "link": "https://www.filmlinc.org/films/in-a-whisper/",
+          "date_str": "2026-03-11"
         },
         {
           "title": "It Was Just an Accident",
           "link": "https://www.filmlinc.org/films/it-was-just-an-accident/",
-          "date_str": ""
+          "date_str": "2026-03-03"
         },
         {
-          "title": "New Directors/New Films 2026",
-          "link": "https://www.filmlinc.org/festivals/new-directors-new-films-2026/",
-          "date_str": ""
+          "title": "Love Me Tender",
+          "link": "https://www.filmlinc.org/films/love-me-tender/",
+          "date_str": "2026-03-07"
         },
         {
-          "title": "New York African Film Festival 2026",
-          "link": "https://www.filmlinc.org/festivals/new-york-african-film-festival/",
-          "date_str": ""
+          "title": "Maigret and the Dead Lover",
+          "link": "https://www.filmlinc.org/films/maigret-and-the-dead-lover/",
+          "date_str": "2026-03-10"
         },
         {
-          "title": "Open Roads: New Italian Cinema 2026",
-          "link": "https://www.filmlinc.org/festivals/open-roads-new-italian-cinema/",
-          "date_str": ""
+          "title": "Meteors",
+          "link": "https://www.filmlinc.org/films/meteors/",
+          "date_str": "2026-03-09"
         },
         {
-          "title": "The Met: Live in HD 2025 Through 2026",
-          "link": "https://www.filmlinc.org/series/the-met-live-in-hd-2025-through-2026/",
-          "date_str": ""
-        },
-        {
-          "title": "Make FLC Your Home for Cinema",
-          "link": "https://www.filmlinc.org/membership/",
-          "date_str": ""
+          "title": "Miroirs No. 3",
+          "link": "https://www.filmlinc.org/films/miroirs-no-3/",
+          "date_str": "2026-03-19"
         }
       ]
     },
@@ -431,192 +441,97 @@
         }
       ]
     },
-    "Museum of the Moving Image": {
-      "url": "https://movingimage.org/whats-on/screenings-and-series/",
-      "events": [
-        {
-          "title": "The Thing from Another World",
-          "link": "https://movingimage.org/event/the-thing-from-another-world/",
-          "date_str": ""
-        },
-        {
-          "title": "Sneak Preview: The Blue Trail",
-          "link": "https://movingimage.org/event/the-blue-trail/",
-          "date_str": ""
-        },
-        {
-          "title": "Mulholland Drive",
-          "link": "https://movingimage.org/event/mulholland-drive-2001/",
-          "date_str": ""
-        },
-        {
-          "title": "Ghost World",
-          "link": "https://movingimage.org/event/ghost-world/",
-          "date_str": ""
-        },
-        {
-          "title": "Infinite Beauty: Muslim and MENASA Identity Onscreen",
-          "link": "https://movingimage.org/whats-on/screenings-and-series/",
-          "date_str": ""
-        },
-        {
-          "title": "Disreputable Cinema",
-          "link": "https://movingimage.org/whats-on/screenings-and-series/",
-          "date_str": ""
-        },
-        {
-          "title": "Las Premieres",
-          "link": "https://movingimage.org/whats-on/screenings-and-series/",
-          "date_str": ""
-        },
-        {
-          "title": "Special Screenings",
-          "link": "https://movingimage.org/whats-on/screenings-and-series/",
-          "date_str": ""
-        },
-        {
-          "title": "2001: The Year, Not the Movie",
-          "link": "https://movingimage.org/whats-on/screenings-and-series/",
-          "date_str": ""
-        },
-        {
-          "title": "The World of ’70s Black Film Musicals — Presented by Ashley Clark",
-          "link": "https://movingimage.org/whats-on/screenings-and-series/",
-          "date_str": ""
-        },
-        {
-          "title": "Overexposed: Through and Through",
-          "link": "https://movingimage.org/whats-on/screenings-and-series/",
-          "date_str": ""
-        },
-        {
-          "title": "Always on Sunday: Greek Film Series",
-          "link": "https://movingimage.org/whats-on/screenings-and-series/",
-          "date_str": ""
-        },
-        {
-          "title": "Jim Henson's World",
-          "link": "https://movingimage.org/whats-on/screenings-and-series/",
-          "date_str": ""
-        },
-        {
-          "title": "World of Animation",
-          "link": "https://movingimage.org/whats-on/screenings-and-series/",
-          "date_str": ""
-        },
-        {
-          "title": "Marilyn Monroe in New York",
-          "link": "https://movingimage.org/whats-on/screenings-and-series/",
-          "date_str": ""
-        },
-        {
-          "title": "Song & Dance",
-          "link": "https://movingimage.org/whats-on/screenings-and-series/",
-          "date_str": ""
-        },
-        {
-          "title": "SCREENINGS THIS WEEK",
-          "link": "https://movingimage.org/whats-on/screenings-and-series/",
-          "date_str": ""
-        },
-        {
-          "title": "ONGOING SERIES",
-          "link": "https://movingimage.org/whats-on/screenings-and-series/",
-          "date_str": ""
-        },
-        {
-          "title": "Art & Craft",
-          "link": "https://movingimage.org/series/art-and-craft/",
-          "date_str": ""
-        },
-        {
-          "title": "Jim Henson’s World",
-          "link": "https://movingimage.org/series/jim-hensons-world-2020/",
-          "date_str": ""
-        }
-      ]
-    },
-    "MoMA": {
-      "url": "https://www.moma.org/calendar/film",
-      "events": [
-        {
-          "title": "Doc Fortnight 2026: MoMA’s Festival of International Nonfiction Film and",
-          "link": "https://www.moma.org/calendar/film/5881",
-          "date_str": ""
-        },
-        {
-          "title": "Modern MondaysModern Mondays",
-          "link": "https://www.moma.org/calendar/film/560",
-          "date_str": ""
-        },
-        {
-          "title": "Marilyn Monroe: Celluloid Dream",
-          "link": "https://www.moma.org/calendar/film/5883",
-          "date_str": ""
-        },
-        {
-          "title": "A View from the Vaults: The 1980s",
-          "link": "https://www.moma.org/calendar/film/5885",
-          "date_str": ""
-        },
-        {
-          "title": "MoMA Presents:Lumière, Le Cinéma!",
-          "link": "https://www.moma.org/calendar/film/5884",
-          "date_str": ""
-        }
-      ]
-    },
     "Nitehawk (Williamsburg)": {
       "url": "https://nitehawkcinema.com/williamsburg/",
       "events": [
         {
-          "title": "THERE'S SOMETHING ABOUT SAMUEL...: THE SELECTED WORKS OF SAMUEL L. JACKSON",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/theres-something-about-samuel/",
-          "date_str": ""
-        },
-        {
           "title": "Beau Travail",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/femme-photographers/",
+          "link": "https://nitehawkcinema.com/movies/beau-travail/",
           "date_str": ""
         },
         {
-          "title": "Super Mario Bros.",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/video-store-gems/",
+          "title": "Eternal Sunshine",
+          "link": "https://nitehawkcinema.com/movies/eternal-sunshine/",
+          "date_str": ""
+        },
+        {
+          "title": "Jawbreaker",
+          "link": "https://nitehawkcinema.com/movies/jawbreaker/",
+          "date_str": ""
+        },
+        {
+          "title": "Portrait Of A Lady On Fire",
+          "link": "https://nitehawkcinema.com/movies/portrait-of-a-lady-on-fire/",
+          "date_str": ""
+        },
+        {
+          "title": "Shattered Glass",
+          "link": "https://nitehawkcinema.com/movies/shattered-glass/",
+          "date_str": ""
+        },
+        {
+          "title": "Holy Motors",
+          "link": "https://nitehawkcinema.com/movies/holy-motors/",
+          "date_str": ""
+        },
+        {
+          "title": "Super Mario Bros Video Store Gems",
+          "link": "https://nitehawkcinema.com/movies/super-mario-bros-video-store-gems/",
           "date_str": ""
         },
         {
           "title": "The Servant",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/recent-restorations/",
+          "link": "https://nitehawkcinema.com/movies/the-servant/",
           "date_str": ""
         },
         {
-          "title": "Resurrection of Eve",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/skin-deep/",
+          "title": "Fargo",
+          "link": "https://nitehawkcinema.com/movies/fargo/",
           "date_str": ""
         },
         {
-          "title": "Urusei Yatsura 2: Beautiful Dreamer",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/anime-after-dark/",
+          "title": "Lost In Translation",
+          "link": "https://nitehawkcinema.com/movies/lost-in-translation/",
           "date_str": ""
         },
         {
-          "title": "Leprechaun",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/lets-watch-a-movie/",
+          "title": "Resurrection Of Eve",
+          "link": "https://nitehawkcinema.com/movies/resurrection-of-eve/",
           "date_str": ""
         },
         {
-          "title": "Monsters, Inc.",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/nostalgia-ultra/",
+          "title": "Urusei Yatsura 2 Beautiful Dreamer",
+          "link": "https://nitehawkcinema.com/movies/urusei-yatsura-2-beautiful-dreamer/",
           "date_str": ""
         },
         {
-          "title": "Eternal Sunshine of the Spotless Mind",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/brunch-screenings/",
+          "title": "Leprechaun Lwam",
+          "link": "https://nitehawkcinema.com/movies/leprechaun-lwam/",
+          "date_str": ""
+        },
+        {
+          "title": "Monsters Inc",
+          "link": "https://nitehawkcinema.com/movies/monsters-inc/",
           "date_str": ""
         },
         {
           "title": "The Fly",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/anniversary-party/",
+          "link": "https://nitehawkcinema.com/movies/the-fly/",
+          "date_str": ""
+        },
+        {
+          "title": "Laserblast",
+          "link": "https://nitehawkcinema.com/movies/laserblast/",
+          "date_str": ""
+        },
+        {
+          "title": "Happy Feet",
+          "link": "https://nitehawkcinema.com/movies/happy-feet/",
+          "date_str": ""
+        },
+        {
+          "title": "Faust Lsc",
+          "link": "https://nitehawkcinema.com/movies/faust-lsc/",
           "date_str": ""
         },
         {
@@ -625,18 +540,13 @@
           "date_str": ""
         },
         {
-          "title": "Big Hero 6",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/family-friendly-screenings/",
+          "title": "Night Of The Creeps",
+          "link": "https://nitehawkcinema.com/movies/night-of-the-creeps/",
           "date_str": ""
         },
         {
           "title": "Atropia",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/future-of-film-is-female/",
-          "date_str": ""
-        },
-        {
-          "title": "Laserblast",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/the-deuce/",
           "date_str": ""
         },
         {
@@ -653,6 +563,16 @@
           "title": "Vampire Time Travelers",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/visual-vengeance/",
           "date_str": ""
+        },
+        {
+          "title": "Spoons Toons & Booze Spring Break!",
+          "link": "https://nitehawkcinema.com/williamsburg/film-series/spoons-toons-booze/",
+          "date_str": ""
+        },
+        {
+          "title": "FILM FEASTS",
+          "link": "https://nitehawkcinema.com/williamsburg/film-series/film-feasts/",
+          "date_str": ""
         }
       ]
     },
@@ -660,18 +580,123 @@
       "url": "https://nitehawkcinema.com/prospectpark/",
       "events": [
         {
-          "title": "Pulp Fiction",
-          "link": "https://nitehawkcinema.com/prospectpark/film-series/theres-something-about-samuel/",
-          "date_str": ""
-        },
-        {
           "title": "Cutting Through Rocks",
           "link": "https://nitehawkcinema.com/prospectpark/film-series/icymi/",
           "date_str": ""
         },
         {
-          "title": "The 5,000 Fingers of Dr. T.",
-          "link": "https://nitehawkcinema.com/prospectpark/film-series/a-man-under-the-influence-63-days-of-stevens-selects/",
+          "title": "Pulp Fiction",
+          "link": "https://nitehawkcinema.com/movies/pulp-fiction/",
+          "date_str": ""
+        },
+        {
+          "title": "5000 Fingers Of Dr T",
+          "link": "https://nitehawkcinema.com/movies/5000-fingers-of-dr-t/",
+          "date_str": ""
+        },
+        {
+          "title": "Jaws 1975",
+          "link": "https://nitehawkcinema.com/movies/jaws-1975/",
+          "date_str": ""
+        },
+        {
+          "title": "Do The Right Thing",
+          "link": "https://nitehawkcinema.com/movies/do-the-right-thing/",
+          "date_str": ""
+        },
+        {
+          "title": "Phantom Thread",
+          "link": "https://nitehawkcinema.com/movies/phantom-thread/",
+          "date_str": ""
+        },
+        {
+          "title": "Cameraperson",
+          "link": "https://nitehawkcinema.com/movies/cameraperson/",
+          "date_str": ""
+        },
+        {
+          "title": "Creed",
+          "link": "https://nitehawkcinema.com/movies/creed/",
+          "date_str": ""
+        },
+        {
+          "title": "Dope",
+          "link": "https://nitehawkcinema.com/movies/dope/",
+          "date_str": ""
+        },
+        {
+          "title": "The Headless Woman",
+          "link": "https://nitehawkcinema.com/movies/the-headless-woman/",
+          "date_str": ""
+        },
+        {
+          "title": "Pieces Of April",
+          "link": "https://nitehawkcinema.com/movies/pieces-of-april/",
+          "date_str": ""
+        },
+        {
+          "title": "Stranger By The Lake",
+          "link": "https://nitehawkcinema.com/movies/stranger-by-the-lake/",
+          "date_str": ""
+        },
+        {
+          "title": "Girls About Town",
+          "link": "https://nitehawkcinema.com/movies/girls-about-town/",
+          "date_str": ""
+        },
+        {
+          "title": "Dirty Difficult Dangerous",
+          "link": "https://nitehawkcinema.com/movies/dirty-difficult-dangerous/",
+          "date_str": ""
+        },
+        {
+          "title": "The Man Who Shot Liberty Valance",
+          "link": "https://nitehawkcinema.com/movies/the-man-who-shot-liberty-valance/",
+          "date_str": ""
+        },
+        {
+          "title": "Swordfish",
+          "link": "https://nitehawkcinema.com/prospectpark/film-series/ridiculous-sublime/",
+          "date_str": ""
+        },
+        {
+          "title": "Sunday On Fire March 2026",
+          "link": "https://nitehawkcinema.com/movies/sunday-on-fire-march-2026/",
+          "date_str": ""
+        },
+        {
+          "title": "Riding In Cars With Boys",
+          "link": "https://nitehawkcinema.com/movies/riding-in-cars-with-boys/",
+          "date_str": ""
+        },
+        {
+          "title": "Hank’s Saloon",
+          "link": "https://nitehawkcinema.com/prospectpark/film-series/local-color-2/",
+          "date_str": ""
+        },
+        {
+          "title": "Madonna Truth Or Dare",
+          "link": "https://nitehawkcinema.com/movies/madonna-truth-or-dare/",
+          "date_str": ""
+        },
+        {
+          "title": "Labyrinth",
+          "link": "https://nitehawkcinema.com/movies/labyrinth/",
+          "date_str": ""
+        },
+        {
+          "title": "Stand By Me",
+          "link": "https://nitehawkcinema.com/movies/stand-by-me/",
+          "date_str": ""
+        },
+        {
+          "title": "The Best Oscars Party!",
+          "link": "https://nitehawkcinema.com/prospectpark/film-series/one-nite-only-2/",
+          "date_str": ""
+        },
+        {
+          "title": "MUSIC DRIVEN",
+          "link": "https://nitehawkcinema.com/prospectpark/film-series/music-driven/",
           "date_str": ""
         }
       ]
@@ -786,77 +811,107 @@
         }
       ]
     },
+    "Paris Theater": {
+      "url": "https://paristheaternyc.com",
+      "events": [
+        {
+          "title": "Frankenstein",
+          "link": "https://www.paristheaternyc.com/films/frankenstein",
+          "date_str": ""
+        },
+        {
+          "title": "Train Dreams",
+          "link": "https://www.paristheaternyc.com/films/train-dreams",
+          "date_str": ""
+        },
+        {
+          "title": "The Singers",
+          "link": "https://www.paristheaternyc.com/films/the-singers",
+          "date_str": ""
+        },
+        {
+          "title": "Peaky Blinders: The Immortal Man",
+          "link": "https://www.paristheaternyc.com/films/peaky-blinders-the-immortal-man",
+          "date_str": ""
+        }
+      ]
+    },
     "BAM": {
       "url": "https://www.bam.org/film",
       "events": [
         {
           "title": "The Secret Agent",
-          "link": "https://www.bam.org/film/2025/the-secret-agent",
+          "link": "https://www.bam.org/film/the-secret-agent",
           "date_str": ""
         },
         {
           "title": "Pillion",
-          "link": "https://www.bam.org/film/2026/pillion",
+          "link": "https://www.bam.org/film/pillion",
           "date_str": ""
         },
         {
           "title": "“Wuthering Heights”",
-          "link": "https://www.bam.org/film/2026/wuthering-heights",
+          "link": "https://www.bam.org/film/wuthering-heights",
           "date_str": ""
         },
         {
-          "title": "Sirât",
-          "link": "https://www.bam.org/film/2026/sirat",
+          "title": "Sir&",
+          "link": "https://www.bam.org/film/sir",
           "date_str": ""
         },
         {
           "title": "2026 Oscar Nominated Live-Action Shorts",
-          "link": "https://www.bam.org/film/2026/oscar-nominated-live-action",
+          "link": "https://www.bam.org/film/2026-oscar-nominated-live-action-shorts",
           "date_str": ""
         },
         {
           "title": "2026 Oscar Nominated Animated Shorts",
-          "link": "https://www.bam.org/film/2026/oscar-nominated-animated",
+          "link": "https://www.bam.org/film/2026-oscar-nominated-animated-shorts",
           "date_str": ""
         },
         {
-          "title": "Arte",
-          "link": "https://www.bam.org/film/2026/prince-of-nothingwood",
+          "title": "Ashley Clark presents: Selections from The World of Black Film",
+          "link": "https://www.bam.org/film/ashley-clark-presents-selections-from-the-world-of-black-film",
           "date_str": ""
         },
         {
-          "title": "Hamnet",
-          "link": "https://www.bam.org/film/2025/hamnet",
+          "title": "ArteEast Presents Prince of Nothingwood",
+          "link": "https://www.bam.org/film/arteeast-presents-prince-of-nothingwood",
           "date_str": ""
         },
         {
-          "title": "Sentimental Value",
-          "link": "https://www.bam.org/film/2025/sentimental-value",
+          "title": "Caribbean Film Series",
+          "link": "https://www.bam.org/film/caribbean-film-series",
           "date_str": ""
         },
         {
-          "title": "The Testament of Ann Lee",
-          "link": "https://www.bam.org/film/2026/the-testament-of-ann-lee",
+          "title": "Triple Canopy Presents: Magic",
+          "link": "https://www.bam.org/film/triple-canopy-presents-magic",
           "date_str": ""
         },
         {
-          "title": "No Other Choice",
-          "link": "https://www.bam.org/film/2025/no-other-choice",
+          "title": "Notebook presents I Am Love",
+          "link": "https://www.bam.org/film/notebook-presents-i-am-love",
           "date_str": ""
         },
         {
-          "title": "Marty Supreme",
-          "link": "https://www.bam.org/film/2026/marty-supreme",
+          "title": "Cinema Tropical at 25: Silvia Prieto",
+          "link": "https://www.bam.org/film/cinema-tropical-at-25-silvia-prieto",
           "date_str": ""
         },
         {
-          "title": "The Voice of Hind Rajab",
-          "link": "https://www.bam.org/film/2026/the-voice-of-hind-rajab",
+          "title": "May Your Eyes Be Blessed: Film and TV Work of Luiz Fernando Carvalho",
+          "link": "https://www.bam.org/film/may-your-eyes-be-blessed-film-and-tv-work-of-luiz-fernando-carvalho",
           "date_str": ""
         },
         {
-          "title": "Song Sung Blue",
-          "link": "https://www.bam.org/film/2025/song-sung-blue",
+          "title": "Of Father and Sons: The Bakri Family On Screen",
+          "link": "https://www.bam.org/film/of-father-and-sons-the-bakri-family-on-screen",
+          "date_str": ""
+        },
+        {
+          "title": "Palestine ‘36",
+          "link": "https://www.bam.org/film/palestine-36",
           "date_str": ""
         }
       ]
