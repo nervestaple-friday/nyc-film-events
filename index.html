@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYC Film Events</title>
+  <style>
+    :root {
+      --bg: #0e0e0e; --surface: #161616; --border: #2a2a2a;
+      --text: #e8e8e8; --muted: #888; --accent: #c8a96e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; line-height: 1.6; min-height: 100vh; }
+    header { border-bottom: 1px solid var(--border); padding: 2rem; display: flex; align-items: baseline; gap: 1.5rem; flex-wrap: wrap; }
+    header h1 { font-size: 1.4rem; font-weight: normal; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+    #updated { font-size: 0.8rem; color: var(--muted); font-family: monospace; }
+    main { max-width: 900px; margin: 0 auto; padding: 2rem; }
+    .venue-section { margin-bottom: 3rem; }
+    .venue-name { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-bottom: 1rem; }
+    .event { display: flex; align-items: baseline; gap: 1rem; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+    .event:last-child { border-bottom: none; }
+    .event-date { font-size: 0.75rem; color: var(--muted); font-family: monospace; min-width: 50px; flex-shrink: 0; }
+    .event-title a { color: var(--text); text-decoration: none; }
+    .event-title a:hover { color: var(--accent); }
+    .empty { color: var(--muted); font-style: italic; text-align: center; padding: 4rem; }
+    footer { border-top: 1px solid var(--border); padding: 1.5rem 2rem; font-size: 0.75rem; color: var(--muted); font-family: monospace; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎬 NYC Film Events</h1>
+    <span id="updated">loading…</span>
+  </header>
+  <main id="content"><p class="empty">Loading events…</p></main>
+  <footer>Metrograph · Film Forum · IFC Center · Film at Lincoln Center · Anthology Film Archives · Museum of the Moving Image · Nitehawk · Spectacle · Syndicated BK · BAM</footer>
+  <script>
+    async function load() {
+      try {
+        const r = await fetch('events.json?t=' + Date.now());
+        const data = await r.json();
+        document.getElementById('updated').textContent = 'Updated ' + new Date(data.updated).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+        const main = document.getElementById('content');
+        if (!data.venues || !Object.values(data.venues).some(v => v.length)) {
+          main.innerHTML = '<p class="empty">No events found.</p>'; return;
+        }
+        main.innerHTML = '';
+        for (const [venue, events] of Object.entries(data.venues)) {
+          if (!events.length) continue;
+          const section = document.createElement('div');
+          section.className = 'venue-section';
+          section.innerHTML = '<div class="venue-name">' + venue + '</div>';
+          for (const e of events) {
+            const row = document.createElement('div');
+            row.className = 'event';
+            const dateStr = e.date_str ? '<span class="event-date">' + e.date_str + '</span>' : '<span class="event-date"></span>';
+            const link = e.link ? '<a href="' + e.link + '" target="_blank" rel="noopener">' + e.title + '</a>' : e.title;
+            row.innerHTML = dateStr + '<span class="event-title">' + link + '</span>';
+            section.appendChild(row);
+          }
+          main.appendChild(section);
+        }
+      } catch(err) {
+        document.getElementById('content').innerHTML = '<p class="empty">Failed to load events.</p>';
+      }
+    }
+    load();
+  </script>
+</body>
+</html>
