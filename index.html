@@ -6,7 +6,7 @@
   <title>NYC Film Events</title>
   <style>
     :root {
-      --bg: #0e0e0e; --surface: #161616; --border: #2a2a2a;
+      --bg: #0e0e0e; --border: #2a2a2a;
       --text: #e8e8e8; --muted: #888; --accent: #c8a96e;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -16,7 +16,13 @@
     #updated { font-size: 0.8rem; color: var(--muted); font-family: monospace; }
     main { max-width: 900px; margin: 0 auto; padding: 2rem; }
     .venue-section { margin-bottom: 3rem; }
-    .venue-name { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-bottom: 1rem; }
+    .venue-name {
+      font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--muted); border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem; margin-bottom: 1rem;
+    }
+    .venue-name a { color: var(--muted); text-decoration: none; }
+    .venue-name a:hover { color: var(--accent); }
     .event { display: flex; align-items: baseline; gap: 1rem; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
     .event:last-child { border-bottom: none; }
     .event-date { font-size: 0.75rem; color: var(--muted); font-family: monospace; min-width: 50px; flex-shrink: 0; }
@@ -40,15 +46,22 @@
         const data = await r.json();
         document.getElementById('updated').textContent = 'Updated ' + new Date(data.updated).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
         const main = document.getElementById('content');
-        if (!data.venues || !Object.values(data.venues).some(v => v.length)) {
+        const venues = data.venues || {};
+        if (!Object.values(venues).some(v => (v.events || v).length)) {
           main.innerHTML = '<p class="empty">No events found.</p>'; return;
         }
         main.innerHTML = '';
-        for (const [venue, events] of Object.entries(data.venues)) {
+        for (const [venue, vdata] of Object.entries(venues)) {
+          // Support both old format (array) and new format (object with url+events)
+          const events = Array.isArray(vdata) ? vdata : vdata.events || [];
+          const url = Array.isArray(vdata) ? null : vdata.url;
           if (!events.length) continue;
           const section = document.createElement('div');
           section.className = 'venue-section';
-          section.innerHTML = '<div class="venue-name">' + venue + '</div>';
+          const venueLabel = url
+            ? `<a href="${url}" target="_blank" rel="noopener">${venue}</a>`
+            : venue;
+          section.innerHTML = '<div class="venue-name">' + venueLabel + '</div>';
           for (const e of events) {
             const row = document.createElement('div');
             row.className = 'event';
