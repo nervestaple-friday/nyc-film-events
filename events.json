@@ -1,0 +1,775 @@
+{
+  "updated": "2026-03-02T00:38:43.105785",
+  "venues": {
+    "Metrograph": [
+      {
+        "title": "Anocha Suwichakornpong",
+        "link": "https://metrograph.com/anocha-suwichakornpong_kirsten_tan/?utm_source=rss&utm_medium=rss&utm_campaign=anocha-suwichakornpong_kirsten_tan",
+        "date_str": ""
+      },
+      {
+        "title": "The Holy Girl",
+        "link": "https://metrograph.com/the-holy-girl-amalia-ulman/?utm_source=rss&utm_medium=rss&utm_campaign=the-holy-girl-amalia-ulman",
+        "date_str": ""
+      },
+      {
+        "title": "Somersault",
+        "link": "https://metrograph.com/somersault-cate-shortland/?utm_source=rss&utm_medium=rss&utm_campaign=somersault-cate-shortland",
+        "date_str": ""
+      },
+      {
+        "title": "Can She Bake a Cherry Pie?",
+        "link": "https://metrograph.com/can-she-bake-a-cherry-pie-jaglom/?utm_source=rss&utm_medium=rss&utm_campaign=can-she-bake-a-cherry-pie-jaglom",
+        "date_str": ""
+      },
+      {
+        "title": "Re-Wind",
+        "link": "https://metrograph.com/re-wind-sato/?utm_source=rss&utm_medium=rss&utm_campaign=re-wind-sato",
+        "date_str": ""
+      },
+      {
+        "title": "Listen Up! Mihály Víg & Béla Tarr",
+        "link": "https://metrograph.com/listen-up-mihaly-vig-and-bela-tarr/?utm_source=rss&utm_medium=rss&utm_campaign=listen-up-mihaly-vig-and-bela-tarr",
+        "date_str": ""
+      },
+      {
+        "title": "Orangey, Revisited",
+        "link": "https://metrograph.com/orangey-revisited/?utm_source=rss&utm_medium=rss&utm_campaign=orangey-revisited",
+        "date_str": ""
+      },
+      {
+        "title": "Green Snake",
+        "link": "https://metrograph.com/hark-green-snake/?utm_source=rss&utm_medium=rss&utm_campaign=hark-green-snake",
+        "date_str": ""
+      },
+      {
+        "title": "Travel Companions: Bahram Beyzaie & Amir Naderi",
+        "link": "https://metrograph.com/bahram-beyzaie-amir-naderi/?utm_source=rss&utm_medium=rss&utm_campaign=bahram-beyzaie-amir-naderi",
+        "date_str": ""
+      },
+      {
+        "title": "A New Love in Tokyo",
+        "link": "https://metrograph.com/love-in-tokyo-banmei/?utm_source=rss&utm_medium=rss&utm_campaign=love-in-tokyo-banmei",
+        "date_str": ""
+      },
+      {
+        "title": "Let the Dead Bury the Dead: A. S. Hamrah in Conversation",
+        "link": "https://metrograph.com/a-s-hamrah-in-conversation-with-nick-pinkerton/?utm_source=rss&utm_medium=rss&utm_campaign=a-s-hamrah-in-conversation-with-nick-pinkerton",
+        "date_str": ""
+      },
+      {
+        "title": "Nina Menkes",
+        "link": "https://metrograph.com/nina-menkes-interview/?utm_source=rss&utm_medium=rss&utm_campaign=nina-menkes-interview",
+        "date_str": ""
+      }
+    ],
+    "Film Forum": [
+      {
+        "title": "SNOW WHITE AND THE SEVEN DWARFS",
+        "link": "https://filmforum.org/film/snow-white-and-the-seven-dwarfs-ffjr-2026",
+        "date_str": ""
+      },
+      {
+        "title": "Satyajit Ray’sDAYS AND NIGHTS IN THE FOREST",
+        "link": "https://filmforum.org/film/days-and-nights-in-the-forest",
+        "date_str": ""
+      },
+      {
+        "title": "BILLY PRESTON: THAT’S THE WAY GOD PLANNED IT",
+        "link": "https://filmforum.org/film/billy-preston-thats-the-way-god-planned-it",
+        "date_str": ""
+      },
+      {
+        "title": "CALLE MALAGA",
+        "link": "https://filmforum.org/film/calle-malaga",
+        "date_str": ""
+      },
+      {
+        "title": "NATCHEZ",
+        "link": "https://filmforum.org/film/natchez",
+        "date_str": ""
+      },
+      {
+        "title": "THE VOICE OF HIND RAJAB",
+        "link": "https://filmforum.org/film/the-voice-of-hind-rajab",
+        "date_str": ""
+      },
+      {
+        "title": "Giuseppe De Santis’BITTER RICE",
+        "link": "https://filmforum.org/film/bitter-rice",
+        "date_str": ""
+      },
+      {
+        "title": "Ida Lupino’sTHE BIGAMIST",
+        "link": "https://filmforum.org/film/the-bigamist",
+        "date_str": ""
+      },
+      {
+        "title": "SHOES",
+        "link": "https://filmforum.org/film/shoes-tenement-stories",
+        "date_str": ""
+      },
+      {
+        "title": "BILLY PRESTON:THAT’S THE WAY GOD PLANNED IT",
+        "link": "https://filmforum.org/film/billy-preston-thats-the-way-god-planned-it",
+        "date_str": ""
+      },
+      {
+        "title": "Ida Lupino'sTHE BIGAMIST",
+        "link": "https://filmforum.org/film/the-bigamist",
+        "date_str": ""
+      },
+      {
+        "title": "ANDRÉ IS AN IDIOT",
+        "link": "https://filmforum.org/film/andre-is-an-idiot",
+        "date_str": ""
+      },
+      {
+        "title": "THE BELLBOY",
+        "link": "https://filmforum.org/film/the-bellboy-ffjr-2026",
+        "date_str": ""
+      },
+      {
+        "title": "Martin and Lewis inMONEY FROM HOME in 3-D!",
+        "link": "https://filmforum.org/film/money-from-home",
+        "date_str": ""
+      },
+      {
+        "title": "TWO PROSECUTORS",
+        "link": "https://filmforum.org/film/two-prosecutors",
+        "date_str": ""
+      },
+      {
+        "title": "KONTINENTAL ‘25",
+        "link": "https://filmforum.org/film/kontinental-25",
+        "date_str": ""
+      },
+      {
+        "title": "And the Roots of Rhythm RemainPresented by Joe Boyd",
+        "link": "https://filmforum.org/film/and-the-roots-of-rhythm-remainpresented-by-joe-boyd",
+        "date_str": ""
+      }
+    ],
+    "IFC Center": [
+      {
+        "title": "Live-Action, Animated, and Documentary short programs now playing!",
+        "link": "https://www.ifccenter.com/series/the-2026-oscar-nominated-shorts/",
+        "date_str": ""
+      },
+      {
+        "title": "NIRVANNA: THE BAND THE SHOW THE MOVIE",
+        "link": "https://www.ifccenter.com/films/nirvanna-the-band-the-show-the-movie/",
+        "date_str": ""
+      },
+      {
+        "title": "DOLLY",
+        "link": "https://www.ifccenter.com/films/dolly/",
+        "date_str": ""
+      },
+      {
+        "title": "MIROIRS NO. 3",
+        "link": "https://www.ifccenter.com/films/miroirs-no-3/",
+        "date_str": ""
+      },
+      {
+        "title": "DEAD LOVER",
+        "link": "https://www.ifccenter.com/films/dead-lover/",
+        "date_str": ""
+      },
+      {
+        "title": "Pictures of Ghosts",
+        "link": "https://www.ifccenter.com/films/pictures-of-ghosts/",
+        "date_str": ""
+      },
+      {
+        "title": "The Ugly Stepsister",
+        "link": "https://www.ifccenter.com/films/the-ugly-stepsister/",
+        "date_str": ""
+      },
+      {
+        "title": "Pompei: Below the Clouds",
+        "link": "https://www.ifccenter.com/films/below-the-clouds/",
+        "date_str": ""
+      },
+      {
+        "title": "Ghost Elephants",
+        "link": "https://www.ifccenter.com/films/ghost-elephants/",
+        "date_str": ""
+      },
+      {
+        "title": "Live-Action Oscar-Nominated Shorts 2026",
+        "link": "https://www.ifccenter.com/films/live-action-oscar-nominated-shorts-2026/",
+        "date_str": ""
+      },
+      {
+        "title": "Doc Program B: Oscar-Nominated Shorts 2026",
+        "link": "https://www.ifccenter.com/films/doc-program-b-oscar-nominated-shorts-2026/",
+        "date_str": ""
+      },
+      {
+        "title": "Doc Program A: Oscar- Nominated Shorts 2026",
+        "link": "https://www.ifccenter.com/films/doc-program-a-oscar-nominated-shorts-2026/",
+        "date_str": ""
+      },
+      {
+        "title": "Animated Oscar-Nominated Shorts 2026",
+        "link": "https://www.ifccenter.com/films/animated-oscar-nominated-shorts-2026/",
+        "date_str": ""
+      },
+      {
+        "title": "Shudder Showcase 2026Wed Jan 21- Thu Mar 5Shudder Showcase 2026“Shudder Showcase at IFC Center” is a series that serves up special",
+        "link": "https://www.ifccenter.com/series/shudder-showcase-2026/",
+        "date_str": ""
+      },
+      {
+        "title": "Frankenstein",
+        "link": "https://www.ifccenter.com/films/frankenstein/",
+        "date_str": ""
+      }
+    ],
+    "Film at Lincoln Center": [
+      {
+        "title": "Raymond Depardon: Humanity in Focus",
+        "link": "https://www.filmlinc.org/series/raymond-depardon/",
+        "date_str": ""
+      },
+      {
+        "title": "What Does That Nature Say to You",
+        "link": "https://www.filmlinc.org/films/what-does-that-nature/",
+        "date_str": ""
+      },
+      {
+        "title": "Rendez-Vous with French Cinema 2026",
+        "link": "https://www.filmlinc.org/festivals/rendez-vous-with-french-cinema/",
+        "date_str": ""
+      },
+      {
+        "title": "Pompei: Below the Clouds",
+        "link": "https://www.filmlinc.org/films/below-the-clouds/",
+        "date_str": ""
+      },
+      {
+        "title": "Christian Petzold In Person",
+        "link": "https://www.filmlinc.org/series/christian-petzold-in-person/",
+        "date_str": ""
+      },
+      {
+        "title": "Miroirs No. 3",
+        "link": "https://www.filmlinc.org/films/miroirs-no-3/",
+        "date_str": ""
+      },
+      {
+        "title": "Dry Leaf",
+        "link": "https://www.filmlinc.org/films/dry-leaf/",
+        "date_str": ""
+      },
+      {
+        "title": "Farewell to Béla Tarr",
+        "link": "https://www.filmlinc.org/series/farewell-to-bela-tarr/",
+        "date_str": ""
+      },
+      {
+        "title": "Sirāt",
+        "link": "https://www.filmlinc.org/films/sirat/",
+        "date_str": ""
+      },
+      {
+        "title": "The Love That Remains",
+        "link": "https://www.filmlinc.org/films/the-love-that-remains/",
+        "date_str": ""
+      },
+      {
+        "title": "The Secret Agent",
+        "link": "https://www.filmlinc.org/films/the-secret-agent/",
+        "date_str": ""
+      },
+      {
+        "title": "It Was Just an Accident",
+        "link": "https://www.filmlinc.org/films/it-was-just-an-accident/",
+        "date_str": ""
+      },
+      {
+        "title": "New Directors/New Films 2026",
+        "link": "https://www.filmlinc.org/festivals/new-directors-new-films-2026/",
+        "date_str": ""
+      },
+      {
+        "title": "New York African Film Festival 2026",
+        "link": "https://www.filmlinc.org/festivals/new-york-african-film-festival/",
+        "date_str": ""
+      },
+      {
+        "title": "Open Roads: New Italian Cinema 2026",
+        "link": "https://www.filmlinc.org/festivals/open-roads-new-italian-cinema/",
+        "date_str": ""
+      },
+      {
+        "title": "The Met: Live in HD 2025 Through 2026",
+        "link": "https://www.filmlinc.org/series/the-met-live-in-hd-2025-through-2026/",
+        "date_str": ""
+      },
+      {
+        "title": "Make FLC Your Home for Cinema",
+        "link": "https://www.filmlinc.org/membership/",
+        "date_str": ""
+      }
+    ],
+    "Anthology Film Archives": [
+      {
+        "title": "DEAN MAJD PRESENTS \"HUSBANDS\" (35mm!)",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 05"
+      },
+      {
+        "title": "MORICHALESby Chris Gude",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 05"
+      },
+      {
+        "title": "A BODY TO LIVE INby Angelo Madsen",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 06"
+      },
+      {
+        "title": "THE RULES OF THE GAMEby Jean Renoir",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 07"
+      },
+      {
+        "title": "THE FLOWERS OF ST. FRANCISby Roberto Rossellini",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 07"
+      },
+      {
+        "title": "CEIJA STOJKA: MAKING VISIBLE (FREE SCREENING + TALK)",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 12"
+      },
+      {
+        "title": "SIDNEY PETERSON",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 13"
+      },
+      {
+        "title": "MABOU MINES PGM 1: MOI-MÊME",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 13"
+      },
+      {
+        "title": "O’NEILL / RICHTER / SHARITS",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 13"
+      },
+      {
+        "title": "MABOU MINES PGM 2: RED HORSE ANIMATION / B. BEAVER ANIMATION / SISTER SUZIE CINEMA",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 13"
+      },
+      {
+        "title": "MABOU MINES PGM 3: LEAR '87 ARCHIVE, PART 1",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 14"
+      },
+      {
+        "title": "MABOU MINES PGM 4: FAR FROM POLAND",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 14"
+      },
+      {
+        "title": "MABOU MINES PGM 3: LEAR '87 ARCHIVE, PART 2",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 15"
+      },
+      {
+        "title": "MABOU MINES PGM 5: MABOU MINES DOLLHOUSE",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 15"
+      },
+      {
+        "title": "MABOU MINES PGM 6: OTHER CHILDREN + DEAD END KIDS",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 16"
+      },
+      {
+        "title": "DEFIANT AND PLAYFUL: FLAHERTY AT 70 AND CINEMA TROPICAL AT 25",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 18"
+      },
+      {
+        "title": "THE LADIES MANby Jerry Lewis",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 19"
+      },
+      {
+        "title": "TOUT VA BIENby Jean-Luc GodardIn English and French with English subtitles,",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 19"
+      },
+      {
+        "title": "THE ERRAND BOYby Jerry Lewis",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 20"
+      },
+      {
+        "title": "HARRY SMITH",
+        "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+        "date_str": "Mar 20"
+      }
+    ],
+    "Museum of the Moving Image": [
+      {
+        "title": "The Thing from Another World",
+        "link": "https://movingimage.org/event/the-thing-from-another-world/",
+        "date_str": ""
+      },
+      {
+        "title": "Sneak Preview: The Blue Trail",
+        "link": "https://movingimage.org/event/the-blue-trail/",
+        "date_str": ""
+      },
+      {
+        "title": "Mulholland Drive",
+        "link": "https://movingimage.org/event/mulholland-drive-2001/",
+        "date_str": ""
+      },
+      {
+        "title": "Ghost World",
+        "link": "https://movingimage.org/event/ghost-world/",
+        "date_str": ""
+      },
+      {
+        "title": "Infinite Beauty: Muslim and MENASA Identity Onscreen",
+        "link": "https://movingimage.org/whats-on/screenings-and-series/",
+        "date_str": ""
+      },
+      {
+        "title": "Disreputable Cinema",
+        "link": "https://movingimage.org/whats-on/screenings-and-series/",
+        "date_str": ""
+      },
+      {
+        "title": "Las Premieres",
+        "link": "https://movingimage.org/whats-on/screenings-and-series/",
+        "date_str": ""
+      },
+      {
+        "title": "Special Screenings",
+        "link": "https://movingimage.org/whats-on/screenings-and-series/",
+        "date_str": ""
+      },
+      {
+        "title": "2001: The Year, Not the Movie",
+        "link": "https://movingimage.org/whats-on/screenings-and-series/",
+        "date_str": ""
+      },
+      {
+        "title": "The World of ’70s Black Film Musicals — Presented by Ashley Clark",
+        "link": "https://movingimage.org/whats-on/screenings-and-series/",
+        "date_str": ""
+      },
+      {
+        "title": "Overexposed: Through and Through",
+        "link": "https://movingimage.org/whats-on/screenings-and-series/",
+        "date_str": ""
+      },
+      {
+        "title": "Always on Sunday: Greek Film Series",
+        "link": "https://movingimage.org/whats-on/screenings-and-series/",
+        "date_str": ""
+      },
+      {
+        "title": "Jim Henson's World",
+        "link": "https://movingimage.org/whats-on/screenings-and-series/",
+        "date_str": ""
+      },
+      {
+        "title": "World of Animation",
+        "link": "https://movingimage.org/whats-on/screenings-and-series/",
+        "date_str": ""
+      },
+      {
+        "title": "Marilyn Monroe in New York",
+        "link": "https://movingimage.org/whats-on/screenings-and-series/",
+        "date_str": ""
+      },
+      {
+        "title": "Song & Dance",
+        "link": "https://movingimage.org/whats-on/screenings-and-series/",
+        "date_str": ""
+      },
+      {
+        "title": "SCREENINGS THIS WEEK",
+        "link": "https://movingimage.org/whats-on/screenings-and-series/",
+        "date_str": ""
+      },
+      {
+        "title": "ONGOING SERIES",
+        "link": "https://movingimage.org/whats-on/screenings-and-series/",
+        "date_str": ""
+      },
+      {
+        "title": "Art & Craft",
+        "link": "https://movingimage.org/series/art-and-craft/",
+        "date_str": ""
+      },
+      {
+        "title": "Jim Henson’s World",
+        "link": "https://movingimage.org/series/jim-hensons-world-2020/",
+        "date_str": ""
+      }
+    ],
+    "Nitehawk (Williamsburg)": [
+      {
+        "title": "Theres Something About Samuel",
+        "link": "https://nitehawkcinema.com/williamsburg/film-series/theres-something-about-samuel/",
+        "date_str": ""
+      },
+      {
+        "title": "Femme Photographers",
+        "link": "https://nitehawkcinema.com/williamsburg/film-series/femme-photographers/",
+        "date_str": ""
+      },
+      {
+        "title": "Video Store Gems",
+        "link": "https://nitehawkcinema.com/williamsburg/film-series/video-store-gems/",
+        "date_str": ""
+      },
+      {
+        "title": "Recent Restorations",
+        "link": "https://nitehawkcinema.com/williamsburg/film-series/recent-restorations/",
+        "date_str": ""
+      },
+      {
+        "title": "A Man Under The Influence 63 Days Of Stevens Selects",
+        "link": "https://nitehawkcinema.com/williamsburg/film-series/a-man-under-the-influence-63-days-of-stevens-selects/",
+        "date_str": ""
+      },
+      {
+        "title": "Skin Deep",
+        "link": "https://nitehawkcinema.com/williamsburg/film-series/skin-deep/",
+        "date_str": ""
+      },
+      {
+        "title": "Anime After Dark",
+        "link": "https://nitehawkcinema.com/williamsburg/film-series/anime-after-dark/",
+        "date_str": ""
+      },
+      {
+        "title": "Lets Watch A Movie",
+        "link": "https://nitehawkcinema.com/williamsburg/film-series/lets-watch-a-movie/",
+        "date_str": ""
+      },
+      {
+        "title": "Nostalgia Ultra",
+        "link": "https://nitehawkcinema.com/williamsburg/film-series/nostalgia-ultra/",
+        "date_str": ""
+      },
+      {
+        "title": "Anniversary Party",
+        "link": "https://nitehawkcinema.com/williamsburg/film-series/anniversary-party/",
+        "date_str": ""
+      },
+      {
+        "title": "35Mm Screenings",
+        "link": "https://nitehawkcinema.com/williamsburg/film-series/35mm-screenings/",
+        "date_str": ""
+      },
+      {
+        "title": "Music Driven",
+        "link": "https://nitehawkcinema.com/williamsburg/film-series/music-driven/",
+        "date_str": ""
+      },
+      {
+        "title": "Nitehawk Midnite Screenings",
+        "link": "https://nitehawkcinema.com/williamsburg/film-series/nitehawk-midnite-screenings/",
+        "date_str": ""
+      },
+      {
+        "title": "Future Of Film Is Female",
+        "link": "https://nitehawkcinema.com/williamsburg/film-series/future-of-film-is-female/",
+        "date_str": ""
+      },
+      {
+        "title": "The Deuce",
+        "link": "https://nitehawkcinema.com/williamsburg/film-series/the-deuce/",
+        "date_str": ""
+      }
+    ],
+    "Spectacle Theater": [
+      {
+        "title": "STRAY CAT ROCK",
+        "link": "https://www.spectacletheater.com/stray-cat-rock/",
+        "date_str": ""
+      },
+      {
+        "title": "SUKEBAN DOYŌBI",
+        "link": "https://www.spectacletheater.com/sukeban-doyobi/",
+        "date_str": ""
+      },
+      {
+        "title": "A NITE WITH TITE",
+        "link": "https://www.spectacletheater.com/nite-with-tite/",
+        "date_str": ""
+      },
+      {
+        "title": "AN EVENING WITH ROSS MCELWEE",
+        "link": "https://www.spectacletheater.com/an-evening-with-ross-mcelwee/",
+        "date_str": ""
+      },
+      {
+        "title": "FOUR FILMS BY LEIDA LAIUS",
+        "link": "https://www.spectacletheater.com/four-films-by-leida-laius/",
+        "date_str": ""
+      },
+      {
+        "title": "PYJAMA GIRLS",
+        "link": "https://www.spectacletheater.com/pyjama-girls/",
+        "date_str": ""
+      },
+      {
+        "title": "THE CROSSROADS OF DREAMS: FOUR MORE ANTERO ALLI FILMS",
+        "link": "https://www.spectacletheater.com/the-crossroads-of-dreams-four-more-antero-alli-films/",
+        "date_str": ""
+      },
+      {
+        "title": "WRONG NUMBER: FILMS BY FRANK HEATH",
+        "link": "https://www.spectacletheater.com/wrong-number/",
+        "date_str": ""
+      },
+      {
+        "title": "SOCK SOCK: ANDY HECK BOYD 2013-2025",
+        "link": "https://www.spectacletheater.com/sock-sock-andy-heck-boyd-2013-2025/",
+        "date_str": ""
+      },
+      {
+        "title": "ROCKUARY: BE GLAD FOR THE SONG HAS NO ENDING",
+        "link": "https://www.spectacletheater.com/rockuary-be-glad-for-the-song-has-no-ending/",
+        "date_str": ""
+      }
+    ],
+    "Syndicated BK": [
+      {
+        "title": "2026 Oscar Nominated Shorts: Animation",
+        "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+        "date_str": "Tuesday 3, March"
+      },
+      {
+        "title": "The Chronology of Water",
+        "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+        "date_str": "Tuesday 3, March"
+      },
+      {
+        "title": "2026 Oscar Nominated Shorts: Live Action",
+        "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+        "date_str": "Wednesday 4, March"
+      },
+      {
+        "title": "No Other Choice",
+        "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+        "date_str": "Friday 6, March"
+      },
+      {
+        "title": "2026 Oscar Nominated Shorts: Documentary",
+        "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+        "date_str": "Saturday 7, March"
+      },
+      {
+        "title": "The Testament of Ann Lee",
+        "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+        "date_str": "Saturday 7, March"
+      },
+      {
+        "title": "The Secret Agent",
+        "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+        "date_str": "Sunday 8, March"
+      },
+      {
+        "title": "Hamnet",
+        "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+        "date_str": "Friday 13, March"
+      },
+      {
+        "title": "98th Academy Awards",
+        "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+        "date_str": "Sunday 15, March"
+      },
+      {
+        "title": "98th Academy Awards - VIP Booth",
+        "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+        "date_str": "Sunday 15, March"
+      }
+    ],
+    "BAM": [
+      {
+        "title": "The Secret Agent",
+        "link": "https://www.bam.org/film/2025/the-secret-agent",
+        "date_str": ""
+      },
+      {
+        "title": "Pillion",
+        "link": "https://www.bam.org/film/2026/pillion",
+        "date_str": ""
+      },
+      {
+        "title": "“Wuthering Heights”",
+        "link": "https://www.bam.org/film/2026/wuthering-heights",
+        "date_str": ""
+      },
+      {
+        "title": "Sirât",
+        "link": "https://www.bam.org/film/2026/sirat",
+        "date_str": ""
+      },
+      {
+        "title": "2026 Oscar Nominated Live-Action Shorts",
+        "link": "https://www.bam.org/film/2026/oscar-nominated-live-action",
+        "date_str": ""
+      },
+      {
+        "title": "2026 Oscar Nominated Animated Shorts",
+        "link": "https://www.bam.org/film/2026/oscar-nominated-animated",
+        "date_str": ""
+      },
+      {
+        "title": "Arte",
+        "link": "https://www.bam.org/film/2026/prince-of-nothingwood",
+        "date_str": ""
+      },
+      {
+        "title": "Hamnet",
+        "link": "https://www.bam.org/film/2025/hamnet",
+        "date_str": ""
+      },
+      {
+        "title": "Sentimental Value",
+        "link": "https://www.bam.org/film/2025/sentimental-value",
+        "date_str": ""
+      },
+      {
+        "title": "The Testament of Ann Lee",
+        "link": "https://www.bam.org/film/2026/the-testament-of-ann-lee",
+        "date_str": ""
+      },
+      {
+        "title": "No Other Choice",
+        "link": "https://www.bam.org/film/2025/no-other-choice",
+        "date_str": ""
+      },
+      {
+        "title": "Marty Supreme",
+        "link": "https://www.bam.org/film/2026/marty-supreme",
+        "date_str": ""
+      },
+      {
+        "title": "The Voice of Hind Rajab",
+        "link": "https://www.bam.org/film/2026/the-voice-of-hind-rajab",
+        "date_str": ""
+      },
+      {
+        "title": "Song Sung Blue",
+        "link": "https://www.bam.org/film/2025/song-sung-blue",
+        "date_str": ""
+      }
+    ]
+  }
+}
