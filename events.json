@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-02T03:44:39.571852",
+  "updated": "2026-03-02T03:46:43.098811",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -540,6 +540,11 @@
       "url": "https://www.moma.org/calendar/film",
       "events": [
         {
+          "title": "Doc Fortnight 2026: MoMA’s Festival of International Nonfiction Film and",
+          "link": "https://www.moma.org/calendar/film/5881",
+          "date_str": ""
+        },
+        {
           "title": "Modern MondaysModern Mondays",
           "link": "https://www.moma.org/calendar/film/560",
           "date_str": ""
@@ -550,7 +555,7 @@
           "date_str": ""
         },
         {
-          "title": "A View from the Vaults: The 1980s3–, 2026",
+          "title": "A View from the Vaults: The 1980s",
           "link": "https://www.moma.org/calendar/film/5885",
           "date_str": ""
         },
