@@ -120,9 +120,7 @@
               <img src={event.poster} alt={event.title} loading="lazy" />
             </div>
           ) : (
-            <div className="event-poster">
-              <div className="poster-placeholder">🎬</div>
-            </div>
+            {/* no poster — skip column */}
           )}
           <div className="event-body">
             <div className="event-meta">
