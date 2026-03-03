@@ -53,7 +53,7 @@
 
     .event-poster { width: 64px; flex-shrink: 0; }
     .event-poster img { width: 100%; aspect-ratio: 2/3; object-fit: cover; display: block; border-radius: 3px; background: var(--tag-bg); }
-    .poster-placeholder { width: 100%; aspect-ratio: 2/3; background: var(--tag-bg); border-radius: 3px; display: flex; align-items: center; justify-content: center; color: var(--dim); font-size: 1.2rem; }
+    .poster-placeholder { width: 100%; aspect-ratio: 2/3; background: var(--tag-bg); border-radius: 3px; display: flex; align-items: center; justify-content: center; color: var(--dim); font-size: 1.2rem; overflow: hidden; pointer-events: none; }
 
     .event-body { display: flex; flex-direction: column; gap: 0.2rem; justify-content: center; }
     .event-meta { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
@@ -93,7 +93,7 @@
 
     const ALL = 'all';
     function getHashVenue() { return decodeURIComponent(window.location.hash.slice(1)) || ALL; }
-    function setHashVenue(v) { window.history.replaceState(null, '', v === ALL ? '#' : '#' + encodeURIComponent(v)); }
+    function setHashVenue(v) { window.history.replaceState(<div className="event-poster"><div className="poster-placeholder">🎬</div></div>, '', v === ALL ? '#' : '#' + encodeURIComponent(v)); }
 
     function useHashVenue() {
       const [venue, setVenue] = useState(getHashVenue);
@@ -120,7 +120,7 @@
               <img src={event.poster} alt={event.title} loading="lazy" />
             </div>
           ) : (
-            null
+            <div className="event-poster"><div className="poster-placeholder">🎬</div></div>
           )}
           <div className="event-body">
             <div className="event-meta">
@@ -152,7 +152,7 @@
         (e.overview && e.overview.toLowerCase().includes(searchFilter))
       );
       const url = vdata.url;
-      if (!events.length) return null;
+      if (!events.length) return <div className="event-poster"><div className="poster-placeholder">🎬</div></div>;
       return (
         <div className="venue-section">
           <div className="venue-header">
@@ -167,7 +167,7 @@
     }
 
     function App() {
-      const [data, setData] = useState(null);
+      const [data, setData] = useState(<div className="event-poster"><div className="poster-placeholder">🎬</div></div>);
       const [error, setError] = useState(false);
       const [search, setSearch] = useState('');
       const [activeVenue, navigate] = useHashVenue();
@@ -224,7 +224,7 @@
             )}
             {data && filtered.length === 0 && <p className="empty">No events found.</p>}
             {filtered.map(([name, vdata]) =>
-              <VenueSection key={name} name={name} vdata={vdata} searchFilter={searchLower || null} />
+              <VenueSection key={name} name={name} vdata={vdata} searchFilter={searchLower || <div className="event-poster"><div className="poster-placeholder">🎬</div></div>} />
             )}
           </main>
 
