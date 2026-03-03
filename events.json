@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-03T02:29:04.986711",
+  "updated": "2026-03-03T02:30:08.501942",
   "venues": {
     "Film Forum": {
       "url": "https://filmforum.org/films",
@@ -95,7 +95,11 @@
         },
         {
           "title": "Martin and Lewis in MONEY FROM HOME in 3-D!",
-          "link": "https://filmforum.org/film/money-from-home"
+          "link": "https://filmforum.org/film/money-from-home",
+          "poster": "https://image.tmdb.org/t/p/w300/pokwiDJO8U2DjfNcDaQIA4QeRTG.jpg",
+          "overview": "Herman owes a lot of gambling debts. To pay them off, he promises the mob he'll fix a horse, so that it does not run. He intends to trick his animal-loving cousin Virgil, an apprentice veterinarian, into helping him. Of course, he doesn't tell Virgil what he is really up to. Mistaken identities are assumed, while along the way, Virgil meets a female vet and Herman falls for the owner of the horse.",
+          "year": "1953",
+          "rating": 5.9
         },
         {
           "title": "TWO PROSECUTORS",
@@ -378,7 +382,11 @@
         {
           "title": "DEAN MAJD PRESENTS \"HUSBANDS\" (35mm!)",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
-          "date_str": "Mar 05"
+          "date_str": "Mar 05",
+          "poster": "https://image.tmdb.org/t/p/w300/482OpzSoSeAVx7KDJlWupLNIf0r.jpg",
+          "overview": "A common friend's sudden death brings three men, married with children, to reconsider their lives and ultimately leave the country together. But mindless enthusiasm for regained freedom will be short-lived.",
+          "year": "1970",
+          "rating": 6.739
         },
         {
           "title": "MORICHALESby Chris Gude",
@@ -481,7 +489,11 @@
         {
           "title": "TOUT VA BIENby Jean-Luc GodardIn English and French with English subtitles,",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
-          "date_str": "Mar 19"
+          "date_str": "Mar 19",
+          "poster": "https://image.tmdb.org/t/p/w300/6mJssZAMmziBP6tIe4vGTdNjeIA.jpg",
+          "overview": "A strike at a French sausage factory contributes to the estrangement of a married filmmaker and his reporter wife.",
+          "year": "1972",
+          "rating": 6.6
         },
         {
           "title": "THE ERRAND BOYby Jerry Lewis",
