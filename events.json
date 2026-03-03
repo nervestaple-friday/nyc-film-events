@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-03T02:28:02.765575",
+  "updated": "2026-03-03T02:29:04.986711",
   "venues": {
     "Film Forum": {
       "url": "https://filmforum.org/films",
@@ -40,11 +40,19 @@
         },
         {
           "title": "Ida Lupino’s THE BIGAMIST",
-          "link": "https://filmforum.org/film/the-bigamist"
+          "link": "https://filmforum.org/film/the-bigamist",
+          "poster": "https://image.tmdb.org/t/p/w300/iht6xFLrObIoQvvuC3XOmnocc9u.jpg",
+          "overview": "San Francisco businessman Harry Graham and his wife and business partner, Eve, are in the process of adopting a child. When private investigator Mr. Jordan uncovers the fact that Graham has another wife, Phyllis, and a small child in Los Angeles, he confesses everything.",
+          "year": "1953",
+          "rating": 6.41
         },
         {
           "title": "Giuseppe De Santis’ BITTER RICE",
-          "link": "https://filmforum.org/film/bitter-rice"
+          "link": "https://filmforum.org/film/bitter-rice",
+          "poster": "https://image.tmdb.org/t/p/w300/9vvbZgbkfE7urqQXRNiONmvYTtF.jpg",
+          "overview": "Francesca and Walter are two-bit criminals in Northern Italy, and, in an effort to avoid the police, Francesca joins a group of women rice workers. She meets the voluptuous peasant rice worker, Silvana, and the soon-to-be-discharged soldier, Marco. Walter follows her to the rice fields, and the four characters become involved in a complex plot involving robbery, love, and murder.",
+          "year": "1949",
+          "rating": 7.5
         },
         {
           "title": "SHOES",
