@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-03T22:31:27.133687",
+  "updated": "2026-03-03T22:35:10.710355",
   "venues": {
     "Film Forum": {
       "url": "https://filmforum.org/films",
@@ -601,13 +601,6 @@
           "rating": 7.3
         },
         {
-          "title": "Something Better Change",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/music-driven/",
-          "poster": "https://image.tmdb.org/t/p/w300/7vkON1EGwDRQn3jbYc0UhqLNtgj.jpg",
-          "overview": "These days, there’s a lot of talk about outsiders in politics, but very few people can claim outsider status like Joe Keithley, punk legend turned a dedicated environmentalist and city councilor. Something Better Change follows Keithley’s absolutely fascinating life and career, showing us both his time as the front man of the formative hardcore punk band D.O.A., as well as his campaigns for city council as a Green Party candidate in his hometown of Burnaby, British Columbia. Featuring interviews with other punk luminaries like Jello Biafra and Ian MacKaye, as well as an appearance from Beto O’Rourke, whether you’re a hardcore punk fan or just a civically engaged citizen, Creem: America's Only Rock 'n' Roll Magazine director Scott Crawford’s latest film has a little something for everyone. – Daniel Abelow",
-          "year": "2024"
-        },
-        {
           "title": "The Fly",
           "link": "https://nitehawkcinema.com/movies/the-fly/",
           "date_str": "Mar 6",
@@ -651,6 +644,7 @@
         {
           "title": "Atropia",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/future-of-film-is-female/",
+          "date_str": "Mar 9",
           "poster": "https://image.tmdb.org/t/p/w300/qurd8tG5E2T20QihO0ysaJCzAjL.jpg",
           "overview": "When an aspiring actress in a military role-playing facility falls in love with a soldier cast as an insurgent, their unsimulated emotions threaten to derail the performance.",
           "year": "2025",
@@ -667,11 +661,13 @@
         },
         {
           "title": "Ultra-Mega Oscars 2026",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/one-nite-only/"
+          "link": "https://nitehawkcinema.com/williamsburg/film-series/one-nite-only/",
+          "date_str": "Mar 15"
         },
         {
           "title": "Teddy, Out of Tune",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/nobudge-presents/",
+          "date_str": "Mar 18",
           "poster": "https://image.tmdb.org/t/p/w300/arWBYrNj6vtU4yhzYQB3wsBkpha.jpg",
           "overview": "With a piano strapped to the back of his truck, a nomadic street musician drives 2,000 miles north to Canada on an emotional mission to spread his mother's ashes",
           "year": "2020",
@@ -680,6 +676,7 @@
         {
           "title": "Vampire Time Travelers",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/visual-vengeance/",
+          "date_str": "Mar 19",
           "poster": "https://image.tmdb.org/t/p/w300/5H24Yg1S4H5XrYqzhTHfTomUzt3.jpg",
           "overview": "Four young college women battle vampires and several other supernatural forces as they try to join a strange sorority.",
           "year": "1998",
@@ -687,21 +684,14 @@
         },
         {
           "title": "Spoons Toons & Booze Spring Break!",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/spoons-toons-booze/"
+          "link": "https://nitehawkcinema.com/williamsburg/film-series/spoons-toons-booze/",
+          "date_str": "Mar 21"
         }
       ]
     },
     "Nitehawk (Prospect Park)": {
       "url": "https://nitehawkcinema.com/prospectpark/",
       "events": [
-        {
-          "title": "Pulp Fiction",
-          "link": "https://nitehawkcinema.com/movies/pulp-fiction/",
-          "poster": "https://image.tmdb.org/t/p/w300/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
-          "overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
-          "year": "1994",
-          "rating": 8.486
-        },
         {
           "title": "5000 Fingers Of Dr T",
           "link": "https://nitehawkcinema.com/movies/5000-fingers-of-dr-t/",
@@ -793,14 +783,6 @@
           "rating": 7.818
         },
         {
-          "title": "Swordfish",
-          "link": "https://nitehawkcinema.com/prospectpark/film-series/ridiculous-sublime/",
-          "poster": "https://image.tmdb.org/t/p/w300/mM6h4jMqC4q5IaFgBIGKQDLnRU.jpg",
-          "overview": "Rogue agent Gabriel Shear is determined to get his mitts on $9 billion stashed in a secret Drug Enforcement Administration account. He wants the cash to fight terrorism, but lacks the computer skills necessary to hack into the government mainframe. Enter Stanley Jobson, a n'er-do-well encryption expert who can log into anything.",
-          "year": "2001",
-          "rating": 6.255
-        },
-        {
           "title": "Sunday On Fire March 2026",
           "link": "https://nitehawkcinema.com/movies/sunday-on-fire-march-2026/",
           "date_str": "Mar 8"
@@ -817,6 +799,7 @@
         {
           "title": "Hank’s Saloon",
           "link": "https://nitehawkcinema.com/prospectpark/film-series/local-color-2/",
+          "date_str": "Mar 4",
           "poster": "https://image.tmdb.org/t/p/w300/6wJRiJQuGpsleaBB2GdFgxSdDrs.jpg",
           "overview": "For over 100 years, Hank's Saloon existed, under various names and owners, as a beloved local Brooklyn dive bar. In 2018, after nearly a decade of speculation and uncertainty, the rickety little flame-painted building on the corner of Third Avenue and Atlantic announced they would finally be closing their doors for good. This feature documentary follows Hank's-along with its colorful staff and rotating cast of oddball patrons-through the bar's stressful and celebratory final months. It also takes a deep-dive into the fascinating history of the building, from its roots as a working-class Irish saloon, through its various roles as a Prohibition speakeasy, First Nations ironworker hangout, and crack-era safe haven, up to its final incarnation as a quintessential \"old man bar\" turned legendary indie music venue, all pitted against the backdrop of a rapidly changing New York City."
         },
@@ -837,6 +820,11 @@
           "overview": "Frustrated with babysitting on yet another weekend night, Sarah, a teenager with an active imagination, summons the Goblins to take her baby stepbrother away. When little Toby actually disappears, Sarah must follow him into a fantastical world to rescue him from the Goblin King. Guarding his castle is the labyrinth itself, a twisted maze of deception, populated with outrageous characters and unknown dangers.",
           "year": "1986",
           "rating": 7.3
+        },
+        {
+          "title": "The Best Oscars Party!",
+          "link": "https://nitehawkcinema.com/prospectpark/film-series/one-nite-only-2/",
+          "date_str": "Mar 15"
         }
       ]
     },
