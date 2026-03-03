@@ -93,7 +93,7 @@
 
     const ALL = 'all';
     function getHashVenue() { return decodeURIComponent(window.location.hash.slice(1)) || ALL; }
-    function setHashVenue(v) { window.history.replaceState(<div className="event-poster"><div className="poster-placeholder">🎬</div></div>, '', v === ALL ? '#' : '#' + encodeURIComponent(v)); }
+    function setHashVenue(v) { window.history.replaceState(null, '', v === ALL ? '#' : '#' + encodeURIComponent(v)); }
 
     function useHashVenue() {
       const [venue, setVenue] = useState(getHashVenue);
@@ -120,7 +120,9 @@
               <img src={event.poster} alt={event.title} loading="lazy" />
             </div>
           ) : (
-            <div className="event-poster"><div className="poster-placeholder">🎬</div></div>
+            <div className="event-poster">
+              <div className="poster-placeholder">🎬</div>
+            </div>
           )}
           <div className="event-body">
             <div className="event-meta">
@@ -152,7 +154,7 @@
         (e.overview && e.overview.toLowerCase().includes(searchFilter))
       );
       const url = vdata.url;
-      if (!events.length) return <div className="event-poster"><div className="poster-placeholder">🎬</div></div>;
+      if (!events.length) return null;
       return (
         <div className="venue-section">
           <div className="venue-header">
@@ -167,7 +169,7 @@
     }
 
     function App() {
-      const [data, setData] = useState(<div className="event-poster"><div className="poster-placeholder">🎬</div></div>);
+      const [data, setData] = useState(null);
       const [error, setError] = useState(false);
       const [search, setSearch] = useState('');
       const [activeVenue, navigate] = useHashVenue();
@@ -224,7 +226,7 @@
             )}
             {data && filtered.length === 0 && <p className="empty">No events found.</p>}
             {filtered.map(([name, vdata]) =>
-              <VenueSection key={name} name={name} vdata={vdata} searchFilter={searchLower || <div className="event-poster"><div className="poster-placeholder">🎬</div></div>} />
+              <VenueSection key={name} name={name} vdata={vdata} searchFilter={searchLower || null} />
             )}
           </main>
 
