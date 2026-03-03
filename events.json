@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-03T02:30:08.501942",
+  "updated": "2026-03-03T22:31:27.133687",
   "venues": {
     "Film Forum": {
       "url": "https://filmforum.org/films",
@@ -78,14 +78,6 @@
           "rating": 6.5
         },
         {
-          "title": "Ida Lupino's THE BIGAMIST",
-          "link": "https://filmforum.org/film/the-bigamist",
-          "poster": "https://image.tmdb.org/t/p/w300/iht6xFLrObIoQvvuC3XOmnocc9u.jpg",
-          "overview": "San Francisco businessman Harry Graham and his wife and business partner, Eve, are in the process of adopting a child. When private investigator Mr. Jordan uncovers the fact that Graham has another wife, Phyllis, and a small child in Los Angeles, he confesses everything.",
-          "year": "1953",
-          "rating": 6.41
-        },
-        {
           "title": "THE BELLBOY",
           "link": "https://filmforum.org/film/the-bellboy-ffjr-2026",
           "poster": "https://image.tmdb.org/t/p/w300/xmdlbkVeUn97buYm4ZZ8quY0EVZ.jpg",
@@ -127,22 +119,36 @@
       "url": "https://www.ifccenter.com/",
       "events": [
         {
+          "title": "DOC NYC Selects",
+          "link": "https://www.ifccenter.com/films/a-life-illuminated/",
+          "date_str": "Mar 5"
+        },
+        {
+          "title": "DOLLY",
+          "link": "https://www.ifccenter.com/films/dolly/",
+          "date_str": "Mar 4",
+          "poster": "https://image.tmdb.org/t/p/w300/sTPUg3XtdcKRAS5Vwsi1GYPFhNZ.jpg",
+          "overview": "Young Macy is abducted by a deranged, monstrous figure who wants to raise her as its child.",
+          "year": "2026",
+          "rating": 9.0
+        },
+        {
           "title": "THE UGLY STEPSISTER",
           "link": "https://www.ifccenter.com/films/the-ugly-stepsister/",
-          "date_str": "Mar 5",
+          "date_str": "Mar 6",
           "poster": "https://image.tmdb.org/t/p/w300/rayAREIKtSinuov10GvrZHyXfXH.jpg",
           "overview": "In a fairy-tale kingdom where beauty is a brutal business, Elvira battles to compete with her incredibly beautiful stepsister, and she will go to any length to catch the prince’s eye.",
           "year": "2025",
           "rating": 7.307
         },
         {
-          "title": "SIRAT",
-          "link": "https://www.ifccenter.com/films/sirat/",
+          "title": "POMPEI: BELOW THE CLOUDS",
+          "link": "https://www.ifccenter.com/films/below-the-clouds/",
           "date_str": "Mar 19",
-          "poster": "https://image.tmdb.org/t/p/w300/bzBtsLi17rK4G6kDvOXfUZfAhca.jpg",
-          "overview": "A man and his son arrive at a rave lost in the mountains of Morocco. They are looking for Marina, their daughter and sister, who disappeared months ago at another rave. Driven by fate, they decide to follow a group of ravers in search of one last party, in hopes Marina will be there.",
+          "poster": "https://image.tmdb.org/t/p/w300/xmTTrWGbw2wIHBw0ht5Oo6AJGZd.jpg",
+          "overview": "Naples faces dual volcanic threats from Vesuvius and Campi Flegrei. Amid increasing tremors, archaeologists work as residents live anxiously, haunted by Pompeii's fate while emergency services strain.",
           "year": "2025",
-          "rating": 6.822
+          "rating": 6.0
         },
         {
           "title": "MIROIRS NO. 3",
@@ -159,19 +165,26 @@
         {
           "title": "DEAD LOVER",
           "link": "https://www.ifccenter.com/films/dead-lover/",
-          "date_str": "Mar 6",
           "poster": "https://image.tmdb.org/t/p/w300/mbvP4f6BU923NGfqjpOJcJih3i6.jpg",
           "overview": "A lonely gravedigger who stinks of corpses finally meets her dream man, but their whirlwind affair is cut short when he tragically drowns at sea. Grief-stricken, she goes to morbid lengths to resurrect him through madcap scientific experiments, resulting in grave consequences and unlikely love.",
           "year": "2025",
           "rating": 8.0
         },
         {
-          "title": "POMPEI: BELOW THE CLOUDS",
-          "link": "https://www.ifccenter.com/films/below-the-clouds/",
-          "poster": "https://image.tmdb.org/t/p/w300/xmTTrWGbw2wIHBw0ht5Oo6AJGZd.jpg",
-          "overview": "Naples faces dual volcanic threats from Vesuvius and Campi Flegrei. Amid increasing tremors, archaeologists work as residents live anxiously, haunted by Pompeii's fate while emergency services strain.",
+          "title": "NIRVANNA: THE BAND THE SHOW THE MOVIE",
+          "link": "https://www.ifccenter.com/films/nirvanna-the-band-the-show-the-movie/",
+          "poster": "https://image.tmdb.org/t/p/w300/sm5TGX8WbnCd9Uo26cLyTxVwA1n.jpg",
+          "overview": "When their plan to book a show at the Rivoli goes horribly wrong, Matt and Jay accidentally travel back to the year 2008. Blah blah blah.",
+          "year": "2026",
+          "rating": 7.8
+        },
+        {
+          "title": "SIRAT",
+          "link": "https://www.ifccenter.com/films/sirat/",
+          "poster": "https://image.tmdb.org/t/p/w300/bzBtsLi17rK4G6kDvOXfUZfAhca.jpg",
+          "overview": "A man and his son arrive at a rave lost in the mountains of Morocco. They are looking for Marina, their daughter and sister, who disappeared months ago at another rave. Driven by fate, they decide to follow a group of ravers in search of one last party, in hopes Marina will be there.",
           "year": "2025",
-          "rating": 6.0
+          "rating": 6.822
         },
         {
           "title": "Ghost Elephants",
@@ -588,6 +601,13 @@
           "rating": 7.3
         },
         {
+          "title": "Something Better Change",
+          "link": "https://nitehawkcinema.com/williamsburg/film-series/music-driven/",
+          "poster": "https://image.tmdb.org/t/p/w300/7vkON1EGwDRQn3jbYc0UhqLNtgj.jpg",
+          "overview": "These days, there’s a lot of talk about outsiders in politics, but very few people can claim outsider status like Joe Keithley, punk legend turned a dedicated environmentalist and city councilor. Something Better Change follows Keithley’s absolutely fascinating life and career, showing us both his time as the front man of the formative hardcore punk band D.O.A., as well as his campaigns for city council as a Green Party candidate in his hometown of Burnaby, British Columbia. Featuring interviews with other punk luminaries like Jello Biafra and Ian MacKaye, as well as an appearance from Beto O’Rourke, whether you’re a hardcore punk fan or just a civically engaged citizen, Creem: America's Only Rock 'n' Roll Magazine director Scott Crawford’s latest film has a little something for everyone. – Daniel Abelow",
+          "year": "2024"
+        },
+        {
           "title": "The Fly",
           "link": "https://nitehawkcinema.com/movies/the-fly/",
           "date_str": "Mar 6",
@@ -595,15 +615,6 @@
           "overview": "When Seth Brundle makes a huge scientific and technological breakthrough in teleportation, he decides to test it on himself. Unbeknownst to him, a common housefly manages to get inside the device and the two become one.",
           "year": "1986",
           "rating": 7.427
-        },
-        {
-          "title": "Laserblast",
-          "link": "https://nitehawkcinema.com/movies/laserblast/",
-          "date_str": "Mar 12",
-          "poster": "https://image.tmdb.org/t/p/w300/jxv1Z0URENuWADDRwvRINUWUsP.jpg",
-          "overview": "Happy go-lucky teen Billy Duncan discovers an otherworldly laser gun in the southern California desert, making him the target of a pair of aliens who had recently executed its previous owner.",
-          "year": "1978",
-          "rating": 3.3
         },
         {
           "title": "Happy Feet",
@@ -620,11 +631,13 @@
           "date_str": "Mar 25"
         },
         {
-          "title": "Something Better Change",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/music-driven/",
-          "poster": "https://image.tmdb.org/t/p/w300/7vkON1EGwDRQn3jbYc0UhqLNtgj.jpg",
-          "overview": "These days, there’s a lot of talk about outsiders in politics, but very few people can claim outsider status like Joe Keithley, punk legend turned a dedicated environmentalist and city councilor. Something Better Change follows Keithley’s absolutely fascinating life and career, showing us both his time as the front man of the formative hardcore punk band D.O.A., as well as his campaigns for city council as a Green Party candidate in his hometown of Burnaby, British Columbia. Featuring interviews with other punk luminaries like Jello Biafra and Ian MacKaye, as well as an appearance from Beto O’Rourke, whether you’re a hardcore punk fan or just a civically engaged citizen, Creem: America's Only Rock 'n' Roll Magazine director Scott Crawford’s latest film has a little something for everyone. – Daniel Abelow",
-          "year": "2024"
+          "title": "Laserblast",
+          "link": "https://nitehawkcinema.com/movies/laserblast/",
+          "date_str": "Mar 12",
+          "poster": "https://image.tmdb.org/t/p/w300/jxv1Z0URENuWADDRwvRINUWUsP.jpg",
+          "overview": "Happy go-lucky teen Billy Duncan discovers an otherworldly laser gun in the southern California desert, making him the target of a pair of aliens who had recently executed its previous owner.",
+          "year": "1978",
+          "rating": 3.3
         },
         {
           "title": "Night Of The Creeps",
@@ -642,6 +655,15 @@
           "overview": "When an aspiring actress in a military role-playing facility falls in love with a soldier cast as an insurgent, their unsimulated emotions threaten to derail the performance.",
           "year": "2025",
           "rating": 4.8
+        },
+        {
+          "title": "The Bride",
+          "link": "https://nitehawkcinema.com/movies/the-bride/",
+          "date_str": "Mar 10",
+          "poster": "https://image.tmdb.org/t/p/w300/lV8YHwGkYZsm6EfIqnhaSz2avKt.jpg",
+          "overview": "A lonely Frankenstein travels to 1930s Chicago to ask groundbreaking scientist Dr. Euphronious to create a companion for him. The two revive a murdered young woman and The Bride is born. But what ensues is beyond what either of them imagined.",
+          "year": "2026",
+          "rating": 8.333
         },
         {
           "title": "Ultra-Mega Oscars 2026",
@@ -666,14 +688,6 @@
         {
           "title": "Spoons Toons & Booze Spring Break!",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/spoons-toons-booze/"
-        },
-        {
-          "title": "FILM FEASTS",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/film-feasts/",
-          "poster": "https://image.tmdb.org/t/p/w300/14pKAV7qXHuIvzAn07SBO1NpOUp.jpg",
-          "overview": "Sylvain George crosses Paris in 2015 and 2016 with an “unaccompanied foreign minor”, as the official term has it. This splendid whirlwind in black-and-white mixes the details of iconic monuments – an equestrian statue, the obelisk or the big wheel – with life in the streets.",
-          "year": "2017",
-          "rating": 5.2
         }
       ]
     },
@@ -681,11 +695,12 @@
       "url": "https://nitehawkcinema.com/prospectpark/",
       "events": [
         {
-          "title": "ICYMI",
-          "link": "https://nitehawkcinema.com/prospectpark/film-series/icymi/",
-          "poster": "https://image.tmdb.org/t/p/w300/dDx99h6KtrGMjAV2pskUJigBbEY.jpg",
-          "overview": "A music documentary on MNL48, a franchise of the highly successful Japanese idol group, AKB48. The film looks into the girls as they perform within a music subculture that tries to get a foothold in a market of an overtly critical audience.",
-          "year": "2019"
+          "title": "Pulp Fiction",
+          "link": "https://nitehawkcinema.com/movies/pulp-fiction/",
+          "poster": "https://image.tmdb.org/t/p/w300/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
+          "overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+          "year": "1994",
+          "rating": 8.486
         },
         {
           "title": "5000 Fingers Of Dr T",
