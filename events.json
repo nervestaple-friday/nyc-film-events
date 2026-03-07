@@ -1,6 +1,99 @@
 {
-  "updated": "2026-03-07T20:47:44.640764",
+  "updated": "2026-03-07T20:50:06.117113",
   "venues": {
+    "Metrograph": {
+      "url": "https://metrograph.com/calendar/",
+      "events": [
+        {
+          "title": "I’m Not Everything I Want to Be",
+          "link": "https://metrograph.com/im-not-everything-i-want-to-be-keva-york/?utm_source=rss&utm_medium=rss&utm_campaign=im-not-everything-i-want-to-be-keva-york",
+          "date_str": "Mar 05",
+          "poster": "https://image.tmdb.org/t/p/w300/gZ8Gm1Nspuf5zZDvvKm96yRByW3.jpg",
+          "overview": "After the Soviet invasion of Czechoslovakia in 1968, Libuše Jarcovjáková, a young female photographer, strives to break free from the constraints of Czechoslovak normalization and embarks on a wild journey towards freedom, capturing her experiences on thousands of subjective photographs.",
+          "year": "2024",
+          "rating": 8.0
+        },
+        {
+          "title": "Letters to His Wife",
+          "link": "https://metrograph.com/letters-to-his-wife/?utm_source=rss&utm_medium=rss&utm_campaign=letters-to-his-wife",
+          "date_str": "Mar 03"
+        },
+        {
+          "title": "Anocha Suwichakornpong",
+          "link": "https://metrograph.com/anocha-suwichakornpong_kirsten_tan/?utm_source=rss&utm_medium=rss&utm_campaign=anocha-suwichakornpong_kirsten_tan",
+          "date_str": "Feb 26"
+        },
+        {
+          "title": "The Holy Girl",
+          "link": "https://metrograph.com/the-holy-girl-amalia-ulman/?utm_source=rss&utm_medium=rss&utm_campaign=the-holy-girl-amalia-ulman",
+          "date_str": "Feb 23",
+          "poster": "https://image.tmdb.org/t/p/w300/srA4HPJe0YpDTZ4L4Nj5psD7v48.jpg",
+          "overview": "Amalia is an adolescent girl who is caught in the throes of her emerging sexuality and her deeply held passion for her Catholic faith. These two drives mingle when the visiting Dr. Jano takes advantage of a crowd to get inappropriately close to the girl. Repulsed by him but inspired by an inner burning, Amalia decides it is her God-given mission to save the doctor from his behavior, and she begins to stalk Dr. Jano, becoming a most unusual voyeur.",
+          "year": "2004",
+          "rating": 6.6
+        },
+        {
+          "title": "Somersault",
+          "link": "https://metrograph.com/somersault-cate-shortland/?utm_source=rss&utm_medium=rss&utm_campaign=somersault-cate-shortland",
+          "date_str": "Feb 19",
+          "poster": "https://image.tmdb.org/t/p/w300/hN6GnyLhamDrz2xAOqVZ4Fv6Lyo.jpg",
+          "overview": "Australian teenager Heidi is left with little choice but to leave home after she's caught red-handed with her mother's boyfriend. With few options, Heidi ends up in Jindabyne, a tourist community. Upon meeting Joe at a bar, she pursues a relationship with him and tries to find something resembling a normal home life. Heidi makes small strides by getting a job and finding a place to stay, but her relationship with Joe must overcome more than its share of hurdles.",
+          "year": "2004",
+          "rating": 6.2
+        },
+        {
+          "title": "Can She Bake a Cherry Pie?",
+          "link": "https://metrograph.com/can-she-bake-a-cherry-pie-jaglom/?utm_source=rss&utm_medium=rss&utm_campaign=can-she-bake-a-cherry-pie-jaglom",
+          "date_str": "Feb 13",
+          "poster": "https://image.tmdb.org/t/p/w300/7dEU2A75lw0A8znU9GEcWucuuPS.jpg",
+          "overview": "Zee is walking up and down Manhattan streets, talking to herself and to the husband who has just left her. At a sidewalk café she runs into Eli, and a very unlikely, funny and touching relationship develops between two lost souls in the big city.",
+          "year": "1983",
+          "rating": 5.571
+        },
+        {
+          "title": "Re-Wind",
+          "link": "https://metrograph.com/re-wind-sato/?utm_source=rss&utm_medium=rss&utm_campaign=re-wind-sato",
+          "date_str": "Feb 11",
+          "poster": "https://image.tmdb.org/t/p/w300/2ei5ZduECrvHiOZfjTgY3UURwYu.jpg",
+          "overview": "An investigation into a videotape that shows the results of a brutal murder committed using a knife-equipped camera.",
+          "year": "1988",
+          "rating": 5.417
+        },
+        {
+          "title": "Listen Up! Mihály Víg & Béla Tarr",
+          "link": "https://metrograph.com/listen-up-mihaly-vig-and-bela-tarr/?utm_source=rss&utm_medium=rss&utm_campaign=listen-up-mihaly-vig-and-bela-tarr",
+          "date_str": "Feb 06"
+        },
+        {
+          "title": "Orangey, Revisited",
+          "link": "https://metrograph.com/orangey-revisited/?utm_source=rss&utm_medium=rss&utm_campaign=orangey-revisited",
+          "date_str": "Feb 03"
+        },
+        {
+          "title": "Green Snake",
+          "link": "https://metrograph.com/hark-green-snake/?utm_source=rss&utm_medium=rss&utm_campaign=hark-green-snake",
+          "date_str": "Jan 30",
+          "poster": "https://image.tmdb.org/t/p/w300/1zs5zsQDP5KuWwxIg9EUULLFEV.jpg",
+          "overview": "While trying to free her sister from Fahai's clutches, Xiao Qing winds up in a dystopian city and meets a mysterious man who can't recall his past life.",
+          "year": "2021",
+          "rating": 8.084
+        },
+        {
+          "title": "Travel Companions: Bahram Beyzaie & Amir Naderi",
+          "link": "https://metrograph.com/bahram-beyzaie-amir-naderi/?utm_source=rss&utm_medium=rss&utm_campaign=bahram-beyzaie-amir-naderi",
+          "date_str": "Jan 27"
+        },
+        {
+          "title": "A New Love in Tokyo",
+          "link": "https://metrograph.com/love-in-tokyo-banmei/?utm_source=rss&utm_medium=rss&utm_campaign=love-in-tokyo-banmei",
+          "date_str": "Jan 23",
+          "poster": "https://image.tmdb.org/t/p/w300/a4lidbbDWxcsI0M0vW7SN6gipq7.jpg",
+          "overview": "A look at the lives of two prostitutes in Tokyo: Rei, who works as an S&M dominatrix, and Ayumi, in the more straightforward profession of call girl. In addition to their working life, the film also looks at their private lives. Rei is acting in an amateur theatre company along with the receptionist from Ayumi's escort service, while Ayumi is living with her student-boyfriend as he struggles to finally get accepted to college.",
+          "year": "1994",
+          "rating": 5.6
+        }
+      ]
+    },
     "Film Forum": {
       "url": "https://filmforum.org/films",
       "events": [
@@ -994,6 +1087,71 @@
           "title": "The Best Oscars Party!",
           "link": "https://nitehawkcinema.com/prospectpark/film-series/one-nite-only-2/",
           "date_str": "Mar 15"
+        }
+      ]
+    },
+    "Spectacle Theater": {
+      "url": "https://www.spectacletheater.com/",
+      "events": [
+        {
+          "title": "FILM DIARY 4: GO TO THE MOUNTAINS AND PRAY",
+          "link": "https://www.spectacletheater.com/film-diary-4-go-to-the-mountains-and-pray/",
+          "date_str": "Mar 05"
+        },
+        {
+          "title": "ENERGY ON THE LOOSE: Short Film Program",
+          "link": "https://www.spectacletheater.com/energy-on-the-loose/",
+          "date_str": "Mar 05"
+        },
+        {
+          "title": "NUMBSKULL REVOLUTION",
+          "link": "https://www.spectacletheater.com/numbskull-revolution/",
+          "date_str": "Mar 03",
+          "poster": "https://image.tmdb.org/t/p/w300/9TrwHagZidiZlzDchxfK6jc7Ku7.jpg",
+          "overview": "Satire and deconstruction the high art scene with an eyeball-scorching onslaught of mind-blowing narrative madness and honey-laced pathos.",
+          "year": "2026"
+        },
+        {
+          "title": "STRAY CAT ROCK",
+          "link": "https://www.spectacletheater.com/stray-cat-rock/",
+          "date_str": "Feb 28",
+          "poster": "https://image.tmdb.org/t/p/w300/iTdsd1VAWOOY8Vd8uh9oj4PDW9d.jpg",
+          "overview": "Wild young people kidnap a wealthy woman and she becomes attracted to one of them. When she tells the man that she is the mistress of a religious leader, he and his posse make plans to rob her partner.",
+          "year": "1970",
+          "rating": 5.538
+        },
+        {
+          "title": "SUKEBAN DOYŌBI",
+          "link": "https://www.spectacletheater.com/sukeban-doyobi/",
+          "date_str": "Feb 28"
+        },
+        {
+          "title": "A NITE WITH TITE",
+          "link": "https://www.spectacletheater.com/nite-with-tite/",
+          "date_str": "Feb 28"
+        },
+        {
+          "title": "AN EVENING WITH ROSS MCELWEE",
+          "link": "https://www.spectacletheater.com/an-evening-with-ross-mcelwee/",
+          "date_str": "Feb 27"
+        },
+        {
+          "title": "FOUR FILMS BY LEIDA LAIUS",
+          "link": "https://www.spectacletheater.com/four-films-by-leida-laius/",
+          "date_str": "Feb 24"
+        },
+        {
+          "title": "PYJAMA GIRLS",
+          "link": "https://www.spectacletheater.com/pyjama-girls/",
+          "date_str": "Feb 23",
+          "overview": "Pyjama Girls presents the chaotic friendship of Irish teenagers Lauren and Tara as they navigate the trials of life, dressed all the while in their uniform of rebellion: pyjamas. Balancing tenderness with hilarity, Pyjama Girls tracks the explosive micro-dramas of teenage life against the bleak backdrop of Dublin's inner city flats. Lauren's future hangs in the balance as she takes part in street violence with rival teen gangs and faces expulsion from school. Over the course of the film we learn about the challenges that life throws her - from her addict mother to the disruptive world of the flats - and understand the crucial importance of her friendship with Tara.",
+          "year": "2010",
+          "rating": 5.5
+        },
+        {
+          "title": "THE CROSSROADS OF DREAMS: FOUR MORE ANTERO ALLI FILMS",
+          "link": "https://www.spectacletheater.com/the-crossroads-of-dreams-four-more-antero-alli-films/",
+          "date_str": "Feb 23"
         }
       ]
     },
