@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a0a">
   <title>NYC Film Events</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
@@ -25,10 +26,13 @@
     .header-right { display: flex; align-items: center; gap: 1rem; }
     .updated { font-size: 0.7rem; color: var(--dim); font-family: monospace; }
 
+    .sticky-nav { position: sticky; top: 0; z-index: 100; background: var(--bg); }
     .search-bar { padding: 0.6rem 1.2rem; display: flex; align-items: center; border-bottom: 1px solid var(--border); background: var(--surface); }
     .search-input { flex: 1; background: none; border: none; color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 0.85rem; outline: none; padding: 0.4rem 0; }
     .search-input::placeholder { color: var(--dim); }
     .search-icon { color: var(--dim); margin-right: 0.6rem; font-size: 0.9rem; }
+    .search-clear { background: none; border: none; color: var(--dim); cursor: pointer; font-size: 1rem; padding: 0.3rem 0.4rem; line-height: 1; border-radius: 50%; transition: color 0.15s; }
+    .search-clear:hover { color: var(--text); }
 
     .filters { padding: 0 2rem; border-bottom: 1px solid var(--border); display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; background: var(--bg); }
     .filters::-webkit-scrollbar { display: none; }
@@ -53,25 +57,30 @@
 
     .event-poster { width: 64px; flex-shrink: 0; }
     .event-poster img { width: 100%; aspect-ratio: 2/3; object-fit: cover; display: block; border-radius: 3px; background: var(--tag-bg); }
-    .poster-placeholder { width: 100%; aspect-ratio: 2/3; background: var(--tag-bg); border-radius: 3px; display: flex; align-items: center; justify-content: center; color: var(--dim); font-size: 1.2rem; overflow: hidden; pointer-events: none; }
+    .poster-placeholder { width: 100%; aspect-ratio: 2/3; background: var(--tag-bg); border-radius: 3px; display: flex; align-items: center; justify-content: center; color: var(--dim); font-size: 0.7rem; letter-spacing: 0.05em; overflow: hidden; pointer-events: none; }
 
-    .event-body { display: flex; flex-direction: column; gap: 0.2rem; justify-content: center; }
+    .event-body { display: flex; flex-direction: column; gap: 0.2rem; justify-content: center; min-width: 0; }
     .event-meta { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
     .event-date { font-size: 0.68rem; color: var(--muted); }
     .event-year { font-size: 0.68rem; color: var(--dim); }
     .event-rating { font-size: 0.68rem; color: var(--accent); font-weight: 500; }
     .event-title { font-size: 0.92rem; line-height: 1.35; font-weight: 500; }
     .event-title a:hover { color: var(--accent); }
-    .event-overview { font-size: 0.78rem; color: var(--muted); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-top: 0.15rem; }
+    .event-overview { font-size: 0.78rem; color: var(--muted); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-top: 0.15rem; cursor: pointer; -webkit-tap-highlight-color: transparent; }
     .event-overview.expanded { -webkit-line-clamp: unset; }
     .event-also-at { font-size: 0.68rem; color: var(--dim); margin-top: 0.15rem; }
-    .event-also-at span { color: var(--muted); }
+    .event-also-at button { background: none; border: none; border-bottom: 1px dotted var(--dim); color: var(--muted); cursor: pointer; font-family: inherit; font-size: inherit; padding: 0; transition: color 0.15s; }
+    .event-also-at button:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
     .empty { color: var(--muted); font-style: italic; text-align: center; padding: 4rem; }
     .loading { text-align: center; padding: 4rem; }
     .spinner { display: inline-block; width: 24px; height: 24px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
     .loading-text { color: var(--dim); font-size: 0.75rem; margin-top: 0.75rem; }
+
+    .back-to-top { position: fixed; bottom: 1.5rem; right: 1.5rem; width: 36px; height: 36px; border-radius: 50%; background: var(--surface2); border: 1px solid var(--border); color: var(--muted); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1rem; transition: opacity 0.2s, transform 0.2s, color 0.15s; z-index: 50; -webkit-tap-highlight-color: transparent; }
+    .back-to-top:hover { color: var(--accent); border-color: var(--accent-dim); }
+    .back-to-top.hidden { opacity: 0; transform: translateY(10px); pointer-events: none; }
 
     footer { border-top: 1px solid var(--border); padding: 1.5rem 2rem; font-size: 0.68rem; color: var(--dim); letter-spacing: 0.03em; text-align: center; }
 
@@ -81,15 +90,16 @@
       .main { padding: 1rem; }
       .filters { padding: 0 1rem; }
       .search-bar { padding: 0.5rem 1rem; }
-      .event-card { grid-template-columns: 52px 1fr; gap: 0.6rem; }
+      .event-card { grid-template-columns: 52px 1fr; gap: 0.6rem; padding: 0.75rem 0; }
       .event-poster { width: 52px; }
+      .event-overview { -webkit-line-clamp: 3; }
     }
   </style>
 </head>
 <body>
   <div id="root"></div>
   <script type="text/babel">
-    const { useState, useEffect, useCallback, useMemo } = React;
+    const { useState, useEffect, useCallback, useMemo, useRef } = React;
 
     const ALL = 'all';
     function getHashVenue() { return decodeURIComponent(window.location.hash.slice(1)) || ALL; }
@@ -110,9 +120,20 @@
       return new Date(iso).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
     }
 
-    function EventCard({ event }) {
+    function formatDateStr(dateStr) {
+      if (!dateStr) return '';
+      // Handle ISO date strings from FLC ("2026-03-09")
+      if (/^\d{4}-\d{2}-\d{2}/.test(dateStr)) {
+        const d = new Date(dateStr + 'T12:00:00');
+        return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      }
+      return dateStr;
+    }
+
+    function EventCard({ event, onNavigate }) {
       const [expanded, setExpanded] = useState(false);
       const hasPoster = !!event.poster;
+      const rating = event.rating ? parseFloat(event.rating.toFixed(1)) : 0;
       return (
         <div className={`event-card ${hasPoster ? '' : 'no-poster'}`}>
           {hasPoster ? (
@@ -121,34 +142,41 @@
             </div>
           ) : (
             <div className="event-poster">
-              <div className="poster-placeholder">🎬</div>
+              <div className="poster-placeholder">FILM</div>
             </div>
           )}
           <div className="event-body">
             <div className="event-meta">
-              {event.date_str && <span className="event-date">{event.date_str}</span>}
+              {event.date_str && <span className="event-date">{formatDateStr(event.date_str)}</span>}
               {event.year && <span className="event-year">({event.year})</span>}
-              {event.rating && <span className="event-rating">★ {event.rating.toFixed(1)}</span>}
+              {rating > 0 && <span className="event-rating">&#9733; {rating.toFixed(1)}</span>}
             </div>
             <div className="event-title">
               {event.link ? <a href={event.link} target="_blank" rel="noopener">{event.title}</a> : event.title}
             </div>
             {event.overview && (
               <div className={`event-overview ${expanded ? 'expanded' : ''}`}
-                   onClick={() => setExpanded(!expanded)}
-                   style={{cursor: 'pointer'}}>
+                   onClick={() => setExpanded(!expanded)}>
                 {event.overview}
               </div>
             )}
             {event.also_at && event.also_at.length > 0 && (
-              <div className="event-also-at">Also at: <span>{event.also_at.join(', ')}</span></div>
+              <div className="event-also-at">
+                Also at:{' '}
+                {event.also_at.map((v, i) => (
+                  <span key={v}>
+                    {i > 0 && ', '}
+                    <button onClick={() => onNavigate(v)}>{v}</button>
+                  </span>
+                ))}
+              </div>
             )}
           </div>
         </div>
       );
     }
 
-    function VenueSection({ name, vdata, searchFilter }) {
+    function VenueSection({ name, vdata, searchFilter, onNavigate }) {
       const events = (vdata.events || []).filter(e =>
         !searchFilter || e.title.toLowerCase().includes(searchFilter) ||
         (e.overview && e.overview.toLowerCase().includes(searchFilter))
@@ -163,7 +191,7 @@
             </div>
             <span className="event-count">{events.length}</span>
           </div>
-          {events.map((e, i) => <EventCard key={i} event={e} />)}
+          {events.map((e, i) => <EventCard key={i} event={e} onNavigate={onNavigate} />)}
         </div>
       );
     }
@@ -173,9 +201,17 @@
       const [error, setError] = useState(false);
       const [search, setSearch] = useState('');
       const [activeVenue, navigate] = useHashVenue();
+      const [showTop, setShowTop] = useState(false);
+      const searchRef = useRef(null);
 
       useEffect(() => {
         fetch('events.json?t=' + Date.now()).then(r => r.json()).then(setData).catch(() => setError(true));
+      }, []);
+
+      useEffect(() => {
+        const onScroll = () => setShowTop(window.scrollY > 400);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
       }, []);
 
       const allVenues = data?.venues ? Object.entries(data.venues) : [];
@@ -191,6 +227,11 @@
         return c;
       }, [allVenues]);
 
+      const handleNavigate = useCallback((v) => {
+        navigate(v);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, [navigate]);
+
       return (
         <>
           <header className="header">
@@ -200,38 +241,49 @@
             </div>
           </header>
 
-          <div className="search-bar">
-            <span className="search-icon">⌕</span>
-            <input className="search-input" type="text" placeholder="Search films..." value={search} onChange={e => setSearch(e.target.value)} />
-          </div>
+          <div className="sticky-nav">
+            <div className="search-bar">
+              <span className="search-icon">&#8981;</span>
+              <input ref={searchRef} className="search-input" type="text" placeholder="Search films..." value={search} onChange={e => setSearch(e.target.value)} />
+              {search && (
+                <button className="search-clear" onClick={() => { setSearch(''); searchRef.current?.focus(); }} aria-label="Clear search">&times;</button>
+              )}
+            </div>
 
-          {allVenues.length > 0 && (
-            <nav className="filters">
-              <button className={`filter-btn ${effective === ALL ? 'active' : ''}`}
-                onClick={() => navigate(ALL)}>All <span className="filter-count">{totalEvents}</span></button>
-              {venueNames.map(name => (
-                <button key={name} className={`filter-btn ${effective === name ? 'active' : ''}`}
-                  onClick={() => navigate(name)}>{name} <span className="filter-count">{venueCounts[name]||0}</span></button>
-              ))}
-            </nav>
-          )}
+            {allVenues.length > 0 && (
+              <nav className="filters">
+                <button className={`filter-btn ${effective === ALL ? 'active' : ''}`}
+                  onClick={() => handleNavigate(ALL)}>All <span className="filter-count">{totalEvents}</span></button>
+                {venueNames.map(name => (
+                  <button key={name} className={`filter-btn ${effective === name ? 'active' : ''}`}
+                    onClick={() => handleNavigate(name)}>{name} <span className="filter-count">{venueCounts[name]||0}</span></button>
+                ))}
+              </nav>
+            )}
+          </div>
 
           <main className="main">
             {error && <p className="empty">Failed to load events.</p>}
             {!data && !error && (
               <div className="loading">
                 <div className="spinner"></div>
-                <div className="loading-text">Loading screenings…</div>
+                <div className="loading-text">Loading screenings&hellip;</div>
               </div>
             )}
             {data && filtered.length === 0 && <p className="empty">No events found.</p>}
             {filtered.map(([name, vdata]) =>
-              <VenueSection key={name} name={name} vdata={vdata} searchFilter={searchLower || null} />
+              <VenueSection key={name} name={name} vdata={vdata} searchFilter={searchLower || null} onNavigate={handleNavigate} />
             )}
           </main>
 
+          <button
+            className={`back-to-top ${showTop ? '' : 'hidden'}`}
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            aria-label="Back to top"
+          >&#8593;</button>
+
           <footer>
-            Curated from NYC's finest arthouse cinemas · Updated automatically
+            Curated from NYC's finest arthouse cinemas &middot; Updated automatically
           </footer>
         </>
       );
