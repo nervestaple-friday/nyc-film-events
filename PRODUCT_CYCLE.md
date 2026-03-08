@@ -34,14 +34,14 @@ After changes are committed but BEFORE pushing:
 - [ ] Paris Theater: only 1 event scraping (likely has more)
 - [ ] Add showtime information where available
 - [ ] Venue website links (click venue name → their site)
-- [ ] "Tonight" / "This Weekend" quick filters
+- [x] "Tonight" / "This Weekend" quick filters (+ Today, Tomorrow, This Week)
 - [ ] Dark/light theme toggle
 - [ ] Last updated timestamp more prominent
 - [ ] Mobile swipe between venue filters
 - [ ] Event count badges on venue filter tabs
 - [ ] Sort by: date, rating, venue
 - [ ] "New this week" badge for recently added events
-- [ ] Better empty state when no events match search
+- [x] Better empty state when no events match search
 - [ ] Favicon
 - [ ] Social meta tags (og:image, etc.)
 - [ ] PWA manifest for "add to home screen"
