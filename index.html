@@ -34,6 +34,12 @@
     .search-clear { background: none; border: none; color: var(--dim); cursor: pointer; font-size: 1rem; padding: 0.3rem 0.4rem; line-height: 1; border-radius: 50%; transition: color 0.15s; }
     .search-clear:hover { color: var(--text); }
 
+    .date-filters { padding: 0.5rem 2rem; border-bottom: 1px solid var(--border); display: flex; gap: 0.4rem; overflow-x: auto; scrollbar-width: none; background: var(--surface); }
+    .date-filters::-webkit-scrollbar { display: none; }
+    .date-pill { background: var(--tag-bg); border: 1px solid var(--border); border-radius: 999px; color: var(--muted); cursor: pointer; font-family: 'DM Sans', sans-serif; font-size: 0.68rem; font-weight: 500; padding: 0.3rem 0.75rem; white-space: nowrap; transition: all 0.2s; }
+    .date-pill:hover { color: var(--text); border-color: var(--dim); }
+    .date-pill.active { background: rgba(212,168,67,0.15); border-color: var(--accent-dim); color: var(--accent); }
+
     .filters { padding: 0 2rem; border-bottom: 1px solid var(--border); display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; background: var(--bg); }
     .filters::-webkit-scrollbar { display: none; }
     .filter-btn { background: none; border: none; border-bottom: 2px solid transparent; color: var(--muted); cursor: pointer; font-family: 'DM Sans', sans-serif; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06em; padding: 0.7rem 0.9rem; text-transform: uppercase; white-space: nowrap; transition: all 0.2s; margin-bottom: -1px; display: flex; align-items: center; gap: 0.35rem; }
@@ -72,7 +78,10 @@
     .event-also-at button { background: none; border: none; border-bottom: 1px dotted var(--dim); color: var(--muted); cursor: pointer; font-family: inherit; font-size: inherit; padding: 0; transition: color 0.15s; }
     .event-also-at button:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
-    .empty { color: var(--muted); font-style: italic; text-align: center; padding: 4rem; }
+    .empty { color: var(--muted); text-align: center; padding: 4rem; }
+    .empty-icon { font-size: 2rem; margin-bottom: 0.75rem; opacity: 0.4; }
+    .empty-msg { font-style: italic; font-size: 0.9rem; }
+    .empty-hint { font-size: 0.75rem; color: var(--dim); margin-top: 0.4rem; }
     .loading { text-align: center; padding: 4rem; }
     .spinner { display: inline-block; width: 24px; height: 24px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
@@ -89,6 +98,7 @@
       .header h1 { font-size: 1.1rem; }
       .main { padding: 1rem; }
       .filters { padding: 0 1rem; }
+      .date-filters { padding: 0.4rem 1rem; }
       .search-bar { padding: 0.5rem 1rem; }
       .event-card { grid-template-columns: 52px 1fr; gap: 0.6rem; padding: 0.75rem 0; }
       .event-poster { width: 52px; }
@@ -128,6 +138,60 @@
         return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
       }
       return dateStr;
+    }
+
+    const DATE_FILTERS = [
+      { key: 'all', label: 'All Dates' },
+      { key: 'today', label: 'Today' },
+      { key: 'tomorrow', label: 'Tomorrow' },
+      { key: 'weekend', label: 'This Weekend' },
+      { key: 'week', label: 'This Week' },
+    ];
+
+    function parseEventDate(dateStr) {
+      if (!dateStr) return null;
+      // ISO format: "2026-03-09"
+      if (/^\d{4}-\d{2}-\d{2}/.test(dateStr)) return new Date(dateStr + 'T12:00:00');
+      // "Mar 09" style — assume current year
+      const now = new Date();
+      const attempt = new Date(dateStr + ', ' + now.getFullYear());
+      return isNaN(attempt.getTime()) ? null : attempt;
+    }
+
+    function toDateKey(d) { return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0'); }
+
+    function getDateRange(filterKey) {
+      const now = new Date();
+      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      if (filterKey === 'today') return [toDateKey(today), toDateKey(today)];
+      if (filterKey === 'tomorrow') {
+        const tom = new Date(today); tom.setDate(tom.getDate() + 1);
+        return [toDateKey(tom), toDateKey(tom)];
+      }
+      if (filterKey === 'weekend') {
+        // Find upcoming Sat & Sun (or today if already weekend)
+        const day = today.getDay();
+        const sat = new Date(today); sat.setDate(sat.getDate() + (6 - day) % 7);
+        const sun = new Date(sat); sun.setDate(sun.getDate() + 1);
+        // If today is Sunday, show today
+        if (day === 0) return [toDateKey(today), toDateKey(today)];
+        return [toDateKey(sat), toDateKey(sun)];
+      }
+      if (filterKey === 'week') {
+        const end = new Date(today); end.setDate(end.getDate() + 6);
+        return [toDateKey(today), toDateKey(end)];
+      }
+      return null;
+    }
+
+    function matchesDateFilter(event, filterKey) {
+      if (filterKey === 'all') return true;
+      const range = getDateRange(filterKey);
+      if (!range) return true;
+      const ed = parseEventDate(event.date_str);
+      if (!ed) return filterKey === 'all'; // no date = only show in "all"
+      const eKey = toDateKey(ed);
+      return eKey >= range[0] && eKey <= range[1];
     }
 
     function EventCard({ event, onNavigate }) {
@@ -176,11 +240,13 @@
       );
     }
 
-    function VenueSection({ name, vdata, searchFilter, onNavigate }) {
-      const events = (vdata.events || []).filter(e =>
-        !searchFilter || e.title.toLowerCase().includes(searchFilter) ||
-        (e.overview && e.overview.toLowerCase().includes(searchFilter))
-      );
+    function VenueSection({ name, vdata, searchFilter, dateFilter, onNavigate }) {
+      const events = (vdata.events || []).filter(e => {
+        if (searchFilter && !(e.title.toLowerCase().includes(searchFilter) ||
+          (e.overview && e.overview.toLowerCase().includes(searchFilter)))) return false;
+        if (!matchesDateFilter(e, dateFilter)) return false;
+        return true;
+      });
       const url = vdata.url;
       if (!events.length) return null;
       return (
@@ -200,6 +266,7 @@
       const [data, setData] = useState(null);
       const [error, setError] = useState(false);
       const [search, setSearch] = useState('');
+      const [dateFilter, setDateFilter] = useState('all');
       const [activeVenue, navigate] = useHashVenue();
       const [showTop, setShowTop] = useState(false);
       const searchRef = useRef(null);
@@ -221,6 +288,16 @@
       const searchLower = search.toLowerCase().trim();
 
       const totalEvents = useMemo(() => allVenues.reduce((s, [,v]) => s + (v.events||[]).length, 0), [allVenues]);
+
+      const hasVisibleEvents = useMemo(() => {
+        return filtered.some(([, vdata]) =>
+          (vdata.events || []).some(e => {
+            if (searchLower && !(e.title.toLowerCase().includes(searchLower) ||
+              (e.overview && e.overview.toLowerCase().includes(searchLower)))) return false;
+            return matchesDateFilter(e, dateFilter);
+          })
+        );
+      }, [filtered, searchLower, dateFilter]);
       const venueCounts = useMemo(() => {
         const c = {};
         allVenues.forEach(([n, v]) => { c[n] = (v.events||[]).length; });
@@ -250,6 +327,13 @@
               )}
             </div>
 
+            <div className="date-filters">
+              {DATE_FILTERS.map(f => (
+                <button key={f.key} className={`date-pill ${dateFilter === f.key ? 'active' : ''}`}
+                  onClick={() => setDateFilter(f.key)}>{f.label}</button>
+              ))}
+            </div>
+
             {allVenues.length > 0 && (
               <nav className="filters">
                 <button className={`filter-btn ${effective === ALL ? 'active' : ''}`}
@@ -270,9 +354,17 @@
                 <div className="loading-text">Loading screenings&hellip;</div>
               </div>
             )}
-            {data && filtered.length === 0 && <p className="empty">No events found.</p>}
+            {data && (filtered.length === 0 || !hasVisibleEvents) && (
+              <div className="empty">
+                <div className="empty-icon">🎬</div>
+                <div className="empty-msg">No screenings found</div>
+                <div className="empty-hint">
+                  {searchLower ? 'Try a different search term' : dateFilter !== 'all' ? 'No events in this date range — try "All Dates"' : 'Try a different filter'}
+                </div>
+              </div>
+            )}
             {filtered.map(([name, vdata]) =>
-              <VenueSection key={name} name={name} vdata={vdata} searchFilter={searchLower || null} onNavigate={handleNavigate} />
+              <VenueSection key={name} name={name} vdata={vdata} searchFilter={searchLower || null} dateFilter={dateFilter} onNavigate={handleNavigate} />
             )}
           </main>
 
