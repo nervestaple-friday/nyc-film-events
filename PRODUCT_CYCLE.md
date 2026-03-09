@@ -30,7 +30,9 @@ After changes are committed but BEFORE pushing:
 - Push to GitHub (auto-deploys via Pages)
 - Log what was done in `memory/YYYY-MM-DD.md`
 
-## Backlog (pick from here)
+## Backlog (pick from here, priority order)
+- [x] **PRIORITY: Fix events.json to include ALL events** — scraper was only pushing new (unseen) events; now pushes full filtered dataset (173 events across 13 venues)
+- [ ] Improve scraper coverage further — some venues still under-report (Paris Theater: 1 event)
 - [ ] Paris Theater: only 1 event scraping (likely has more)
 - [ ] Add showtime information where available
 - [ ] Venue website links (click venue name → their site)
