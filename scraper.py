@@ -1355,8 +1355,26 @@ def main():
             new_events.append(e)
             new_ids.append(eid)
 
-    events_by_venue = {v: [] for v in VENUES_ORDER}
+    # Build digest from NEW events only (for the printed summary)
+    new_by_venue = {v: [] for v in VENUES_ORDER}
     for e in new_events:
+        if e['venue'] in new_by_venue:
+            new_by_venue[e['venue']].append(e)
+        else:
+            new_by_venue[e['venue']] = new_by_venue.get(e['venue'], []) + [e]
+
+    digest = format_digest(new_by_venue)
+    print(digest if digest else "No new events found.")
+
+    if not TEST_MODE and new_ids:
+        state['seen']    = list(seen_ids | set(new_ids))[-300:]
+        state['lastRun'] = datetime.now().isoformat()
+        save_state(state)
+        print(f"\n[State updated: {len(new_ids)} new events]", file=sys.stderr)
+
+    # Build FULL event list for events.json (all filtered events, not just new)
+    events_by_venue = {v: [] for v in VENUES_ORDER}
+    for e in filtered:
         if e['venue'] in events_by_venue:
             events_by_venue[e['venue']].append(e)
         else:
@@ -1373,15 +1391,6 @@ def main():
                 deduped.append(e)
         events_by_venue[venue] = deduped
 
-    digest = format_digest(events_by_venue)
-    print(digest if digest else "No new events found.")
-
-    if not TEST_MODE and new_ids:
-        state['seen']    = list(seen_ids | set(new_ids))[-300:]
-        state['lastRun'] = datetime.now().isoformat()
-        save_state(state)
-        print(f"\n[State updated: {len(new_ids)} new events]", file=sys.stderr)
-
     # Cross-venue deduplication: add also_at field
     from collections import defaultdict
     title_venues = defaultdict(list)
@@ -1394,6 +1403,10 @@ def main():
             others = [v for v in title_venues[norm(e['title'])] if v != venue]
             if others:
                 e['also_at'] = others
+
+    total_events = sum(len(evts) for evts in events_by_venue.values())
+    venues_with_events = sum(1 for evts in events_by_venue.values() if evts)
+    print(f"\n[Full dataset: {total_events} events across {venues_with_events} venues]", file=sys.stderr)
 
     enrich_with_tmdb(events_by_venue)
 
