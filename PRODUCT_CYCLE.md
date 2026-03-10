@@ -32,15 +32,16 @@ After changes are committed but BEFORE pushing:
 
 ## Backlog (pick from here, priority order)
 - [x] **PRIORITY: Fix events.json to include ALL events** — scraper was only pushing new (unseen) events; now pushes full filtered dataset (173 events across 13 venues)
+- [x] **BUG: "Updated" timestamp shows future times** — fixed: scraper now writes UTC with timezone suffix, frontend shows relative time ("2h ago")
 - [ ] Improve scraper coverage further — some venues still under-report (Paris Theater: 1 event)
 - [ ] Paris Theater: only 1 event scraping (likely has more)
 - [ ] Add showtime information where available
-- [ ] Venue website links (click venue name → their site)
+- [x] Venue website links (click venue name → their site)
 - [x] "Tonight" / "This Weekend" quick filters (+ Today, Tomorrow, This Week)
 - [ ] Dark/light theme toggle
 - [ ] Last updated timestamp more prominent
 - [ ] Mobile swipe between venue filters
-- [ ] Event count badges on venue filter tabs
+- [x] Event count badges on venue filter tabs
 - [ ] Sort by: date, rating, venue
 - [ ] "New this week" badge for recently added events
 - [x] Better empty state when no events match search

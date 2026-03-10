@@ -19,7 +19,7 @@ Run weekly for a digest, or with --test to preview without updating state.
 """
 
 import os, sys, json, hashlib, re, time, requests, html as _html
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from bs4 import BeautifulSoup
 from xml.etree import ElementTree as ET
 
@@ -1243,7 +1243,7 @@ def push_to_github(events_by_venue):
         return False
 
     payload = {
-        'updated': datetime.now().isoformat(),
+        'updated': datetime.now(tz=timezone.utc).isoformat(),
         'venues': {
             venue: {
                 'url': VENUE_URLS.get(venue, ''),
