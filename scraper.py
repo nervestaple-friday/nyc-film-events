@@ -714,10 +714,90 @@ def scrape_momi():
 
 
 def scrape_moma():
-    """MoMA Film — apitap read for clean markdown extraction.
-    MoMA blocks headless Playwright; readability bypasses CF and gives structured output."""
-    import subprocess as _sp
+    """MoMA Film — direct fetch of the calendar page with Films filter.
+    The /calendar/?happening_filter=Films endpoint bypasses Cloudflare and returns
+    individual film events with dates. Falls back to apitap/FlareSolverr."""
     events = []
+    now = datetime.now()
+
+    SKIP = {'upcoming showtimes', 'upcoming exhibitions', 'view all showtimes',
+            'upcoming events, films, workshops, and more',
+            'film series', 'moma film', 'moma', 'modern mondays',
+            'read, watch, and listen from wherever you are.',
+            'visit moma ps1 in queens'}
+
+    # --- Primary: direct calendar fetch with Films filter ---
+    r = fetch('https://www.moma.org/calendar/?happening_filter=Films&location=both')
+    if r and len(r.text) > 10000:
+        soup = BeautifulSoup(r.text, 'html.parser')
+
+        # Build day→date mapping from h2 headers ("Wed, Mar 11")
+        current_date = None
+        current_date_str = ''
+        seen = set()
+
+        # Walk through all elements in order to track current date
+        for el in soup.find_all(['h2', 'a']):
+            if el.name == 'h2':
+                text = el.get_text(strip=True)
+                dm = re.match(r'((?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\w*,?\s+'
+                              r'(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\.?\s+\d{1,2})', text)
+                if dm:
+                    current_date_str = dm.group(1)
+                    current_date = parse_date_loose(current_date_str + f" {now.year}")
+                continue
+
+            # Process event links
+            href = el.get('href', '')
+            if '/calendar/events/' not in href:
+                continue
+            raw_text = el.get_text(' ', strip=True)
+            if not raw_text or len(raw_text) < 5:
+                continue
+
+            # Extract title: strip year, director, time, venue info
+            # Format: "TITLE . YEAR. Directed by DIRECTOR TIME p.m. MoMA, Floor..."
+            # Or: "Series Name TIME p.m. MoMA..."
+            title = raw_text
+            # Strip time and venue suffix: "4:00 p.m. MoMA..." or "4:30–8:00 p.m...."
+            title = re.sub(r'\s*\d{1,2}:\d{2}\s*[\u2013\-–]?\s*(?:\d{1,2}:\d{2}\s*)?[ap]\.?m\.?\s*.*$', '', title, flags=re.IGNORECASE).strip()
+            # Strip "Followed by a conversation..." suffix
+            title = re.sub(r'\s*Followed by\s+.*$', '', title).strip()
+            # Strip " . YEAR. Directed by DIRECTOR" or " YEAR. Directed by DIRECTOR"
+            # Require leading space so "Dr." abbreviation dot isn't consumed
+            title = re.sub(r'\s+\.?\s*\d{4}\.\s*(?:Directed|Written and directed)\s+by\s+.*$', '', title).strip()
+            # Strip trailing standalone dots (not abbreviations like "Dr.")
+            title = re.sub(r'(?<![A-Z][a-z])\.\s*$', '', title).strip()
+            # Handle double features: "Film1 . 1973. Dir... Film2 . 1952. Dir..." → keep first
+            double_m = re.match(r'^(.+?)\s+\.\s+\d{4}', title)
+            if double_m:
+                title = double_m.group(1).strip()
+
+            if not title or len(title) < 4:
+                continue
+            if title.lower() in SKIP:
+                continue
+
+            # Deduplicate by normalized title
+            norm = re.sub(r'[^a-z0-9 ]+', '', title.lower()).strip()
+            if norm in seen:
+                continue
+            seen.add(norm)
+
+            link = f"https://www.moma.org{href}" if href.startswith('/') else href
+            date = current_date
+            date_str = current_date_str
+
+            e = make_event('MoMA', title, link, date=date, date_str=date_str, special=True)
+            if e:
+                events.append(e)
+
+        if events:
+            return events[:30]
+
+    # --- Fallback: apitap read ---
+    import subprocess as _sp
+    print(f"  [MoMA] direct fetch failed, trying apitap", file=sys.stderr)
     try:
         result = _sp.run(
             ['apitap', 'read', 'https://www.moma.org/calendar/film'],
@@ -726,42 +806,29 @@ def scrape_moma():
         md = result.stdout
     except Exception as ex:
         print(f"  [MoMA/apitap] {ex}", file=sys.stderr)
-        return events
+        md = ''
 
     if not md or len(md.strip()) < 100:
         print(f"  [MoMA] apitap empty, trying FlareSolverr", file=sys.stderr)
         r = fetch_cf('https://www.moma.org/calendar/film')
         if r:
-            from bs4 import BeautifulSoup as _BS
-            soup = _BS(r.text, 'html.parser')
+            soup = BeautifulSoup(r.text, 'html.parser')
             main = soup.find('main') or soup
-            SKIP_CF = {'upcoming showtimes', 'upcoming exhibitions', 'view all showtimes',
-                       'film series', 'moma film', 'moma', 'modern mondays'}
             seen = set()
-            # Extract film/series titles from h2/h3 headings in main content
             for el in main.find_all(['h2', 'h3']):
                 raw_title = el.get_text(strip=True)
                 if not raw_title or len(raw_title) < 4 or len(raw_title) > 100:
                     continue
-                # Skip day headers like "Tue, Mar 3"
                 if re.match(r'^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)', raw_title):
                     continue
-                # Skip generic section headers
-                if raw_title.lower() in SKIP_CF:
+                if raw_title.lower() in SKIP:
                     continue
-                # Clean doubled titles: "Modern MondaysModern Mondays" → "Modern Mondays"
                 title = re.sub(r'^(.{4,40})\1$', r'\1', raw_title).strip()
-                # Strip "Doc Fortnight 2026: MoMA's Festival of..." → keep full title
-                # Strip trailing date info
                 title = re.sub(r'\s*(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d.*$', '', title).strip()
-                # Strip "MoMA Presents:" prefix
                 title = re.sub(r'^MoMA Presents:\s*', '', title).strip()
-                # Strip possessive director: "Ken Jacobs'sStar Spangled" → "Star Spangled to Death"
-                # Handle with or without space after 's, smart quotes, single/multi word names
                 title = re.sub(r"^[A-Z][a-zé]+(?:\s+[A-Z][a-zé]+)*['\u2019]s?\s*(?=[A-Z])", '', title).strip()
-                # Strip "An Evening Celebrating" prefix
                 title = re.sub(r'^An Evening (?:Celebrating|with)\s+', '', title).strip()
-                if not title or len(title) < 4 or title.lower() in SKIP_CF or title in seen:
+                if not title or len(title) < 4 or title.lower() in SKIP or title in seen:
                     continue
                 seen.add(title)
                 link_el = el.find('a', href=True) or (el.parent and el.parent.find('a', href=True))
@@ -772,17 +839,13 @@ def scrape_moma():
                     events.append(e)
             return events[:20]
 
-    SKIP = {'upcoming showtimes', 'upcoming exhibitions', 'view all showtimes',
-            'film series', 'moma film', 'moma'}
     seen = set()
-    # MoMA renders as ### Film Title\ndate-range\ndescription
     for m in re.finditer(
         r'###\s+\[?([^\n\]\#]{4,100})\]?\(?(https://www\.moma\.org/calendar/film/[^\s\)\"]+)?\)?',
         md,
     ):
         title = m.group(1).strip()
         link  = m.group(2) or 'https://www.moma.org/calendar/film'
-        # Strip trailing date ranges: "Mar 5–26, 2026" etc.
         title = re.sub(r'\s*(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d.*$', '', title).strip()
         title = re.sub(r'\s*(Ongoing|Now Playing|Coming Soon)\s*$', '', title, flags=re.IGNORECASE).strip()
         if not title or title.lower() in SKIP or title in seen or len(title) < 4:
@@ -796,19 +859,66 @@ def scrape_moma():
 
 
 def scrape_paris():
-    """Paris Theater NYC — extract current films from the Next.js page bundle.
-    Uses three extraction strategies:
-      1. DisplayTitle fields in double-escaped JSON (featured film + dates)
-      2. SlideTitle/SlideLink pairs in the homepage slider (promotional entries)
-      3. /film/ URL slugs linked anywhere on the page
-    No API auth needed, no FlareSolverr."""
-    import urllib.request as _ur
+    """Paris Theater NYC — Strapi CMS API at cms.ntflxthtrs.com.
+    Fetches structured film data with dates, slugs, and titles.
+    Falls back to HTML scraping if the API is unavailable."""
     events = []
+    now = datetime.now()
+    today = now.strftime('%Y-%m-%d')
+    max_date = (now + timedelta(days=MAX_DAYS)).strftime('%Y-%m-%d')
 
+    # --- Primary: Strapi API ---
+    try:
+        r = requests.get('https://cms.ntflxthtrs.com/api/films', params={
+            'pagination[limit]': 100,
+            'sort': 'OpeningDate:asc',
+            'filters[OpeningDate][$lte]': max_date,
+            'filters[ClosingDate][$gte]': today,
+        }, headers={'User-Agent': HEADERS['User-Agent']}, timeout=15)
+        r.raise_for_status()
+        data = r.json()
+        films = data.get('data', [])
+    except Exception as ex:
+        print(f"  [Paris/api] {ex}, falling back to HTML", file=sys.stderr)
+        films = []
+
+    if films:
+        seen = set()
+        for item in films:
+            a = item.get('attributes', {})
+            name = (a.get('FilmName') or '').strip()
+            slug = (a.get('Slug') or '').strip()
+            opening = a.get('OpeningDate', '')
+            closing = a.get('ClosingDate', '')
+
+            if not name or len(name) < 3:
+                continue
+            # Skip Egyptian Theater screenings (LA venue, not NYC)
+            if slug.endswith('-egyptian'):
+                continue
+
+            # Deduplicate by normalized title
+            norm = re.sub(r'[^a-z0-9 ]+', '', name.lower()).strip()
+            if norm in seen:
+                continue
+            seen.add(norm)
+
+            link = f"https://www.paristheaternyc.com/film/{slug}" if slug else 'https://www.paristheaternyc.com'
+            date = parse_date_loose(opening) if opening else None
+            date_str = date.strftime('%b %d') if date else ''
+
+            e = make_event('Paris Theater', name, link, date=date, date_str=date_str)
+            if e:
+                events.append(e)
+
+        return events[:25]
+
+    # --- Fallback: HTML scraping (original approach) ---
+    import urllib.request as _ur
     try:
         req = _ur.Request(
             'https://www.paristheaternyc.com',
-            headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/122.0.0.0 Safari/537.36'},
+            headers={'User-Agent': HEADERS['User-Agent']},
         )
         with _ur.urlopen(req, timeout=12) as resp:
             html = resp.read().decode('utf-8', errors='replace')
@@ -816,28 +926,19 @@ def scrape_paris():
         print(f"  [Paris/html] {ex}", file=sys.stderr)
         return events
 
-    seen = set()  # normalized lowercase titles
+    seen = set()
     SKIP_TITLES = {'fall preview', 'coming soon', 'paris theater', 'special event',
                    'special engagements', 'series and events', 'sign up', 'about',
                    'read more', 'tickets', 'buy tickets', 'learn more'}
 
     def _norm_key(t):
-        """Normalize for dedup: lowercase, strip punctuation, collapse spaces."""
         return re.sub(r'[^a-z0-9 ]+', '', t.lower()).strip()
 
-    def _title_case(t):
-        """Title-case but preserve short words and all-caps acronyms."""
-        if t == t.upper() and len(t) > 4:
-            t = t.title()
-        return t
-
     def _add(title, link, date=None, date_str=''):
-        """Helper: dedupe and add an event."""
-        title = _title_case(title)
+        title = title.title() if title == title.upper() and len(title) > 4 else title
         norm = _norm_key(title)
         if not title or len(title) < 3 or norm in SKIP_TITLES or norm in seen:
             return
-        # Also check if this is a substring match of something already seen
         for s in list(seen):
             if norm in s or s in norm:
                 return
@@ -846,7 +947,7 @@ def scrape_paris():
         if e:
             events.append(e)
 
-    # --- Strategy 1: DisplayTitle + OpeningDate from double-escaped JSON ---
+    # DisplayTitle + OpeningDate from double-escaped JSON
     title_dates = {}
     for script_m in re.finditer(r'<script[^>]*>([^<]*DisplayTitle[^<]*)</script>', html):
         blob = script_m.group(1)
@@ -862,7 +963,6 @@ def scrape_paris():
 
     for m in re.finditer(r'DisplayTitle[^:]*?:.*?"([^"\\]{3,80})', html):
         title = m.group(1).strip().rstrip(' -').strip()
-        # Clean Paris suffix
         title = re.sub(r'\s*-\s*\\?u003c?Paris\\?u003e?\s*$', '', title).strip()
         date = None
         date_str = ''
@@ -879,8 +979,7 @@ def scrape_paris():
         slug = re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
         _add(title, f"https://www.paristheaternyc.com/film/{slug}", date=date, date_str=date_str)
 
-    # --- Strategy 2: SlideTitle + SlideLink from homepage slider data ---
-    # Unescape the Next.js double-encoded content for slider parsing
+    # SlideTitle + SlideLink from homepage slider data
     unesc_html = html.replace('\\"', '"').replace('\\u003c', '<').replace('\\u003e', '>')
     for sm in re.finditer(
         r'"SlideTitle"\s*:\s*"([^"]{3,100})"\s*,\s*"SlideSubtext"\s*:\s*"[^"]*"\s*,\s*"SlideLink"\s*:\s*"([^"]+)"',
@@ -888,25 +987,20 @@ def scrape_paris():
     ):
         slide_title = sm.group(1).strip()
         slide_link = sm.group(2).strip()
-        # Skip non-film slides (promotional/generic)
         if any(skip in slide_title.lower() for skip in ('nominated', 'preview', 'coming soon', 'sign up', 'academy award')):
             continue
         _add(slide_title, slide_link)
 
-    # --- Strategy 3: /film/ URL slugs ---
+    # /film/ URL slugs
     for fm in re.finditer(r'paristheaternyc\.com/film/([a-z0-9][a-z0-9-]+[a-z0-9])', unesc_html):
         slug = fm.group(1)
-        # Convert slug to title: "peaky-blinders-the-immortal-man-paris" → "Peaky Blinders The Immortal Man"
         raw = slug.replace('-', ' ')
-        # Strip "paris" suffix (venue tag in slugs)
         raw = re.sub(r'\s+paris\s*$', '', raw).strip()
         if not raw or len(raw) < 3:
             continue
-        title = raw.title()
-        link = f"https://www.paristheaternyc.com/film/{slug}"
-        _add(title, link)
+        _add(raw.title(), f"https://www.paristheaternyc.com/film/{slug}")
 
-    return events[:10]
+    return events[:25]
 
 
 def clean_bam_title(title):
