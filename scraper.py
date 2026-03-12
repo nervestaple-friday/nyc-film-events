@@ -175,26 +175,36 @@ def make_event(venue, title, link='', date=None, date_str='', special=None):
 # ── scrapers ───────────────────────────────────────────────────────────────
 
 def scrape_metrograph():
+    """Metrograph — scrape the NYC calendar page for upcoming screenings."""
     events = []
-    r = fetch('https://metrograph.com/feed/')
+    r = fetch('https://metrograph.com/nyc/')
     if not r:
         return events
     try:
-        root = ET.fromstring(r.text)
-        for item in root.findall('.//item'):
-            title = item.findtext('title', '').strip()
-            link  = item.findtext('link', '').strip()
-            # NOTE: pubDate is when the listing was posted, NOT the screening date.
-            # Leave date=None so filter_by_date passes these through as undated.
-            date_str = ''
-            pub = item.findtext('pubDate', '').strip()
-            if pub:
-                pd = parse_date_loose(pub)
-                if pd:
-                    date_str = pd.strftime('%b %d')
-            e = make_event('Metrograph', title, link, date=None, date_str=date_str, special=True)
-            if e:
-                events.append(e)
+        soup = BeautifulSoup(r.text, 'html.parser')
+        seen = set()
+        for day_div in soup.find_all('div', class_='calendar-list-day'):
+            # Date is encoded in the id: "calendar-list-day-2026-03-12"
+            day_id = day_div.get('id', '')
+            m = re.search(r'calendar-list-day-(\d{4}-\d{2}-\d{2})', day_id)
+            if not m:
+                continue
+            date = datetime.strptime(m.group(1), '%Y-%m-%d')
+            date_str = date.strftime('%b %d')
+            for h4 in day_div.find_all('h4'):
+                a = h4.find('a', href=True)
+                if not a:
+                    continue
+                title = a.get_text(strip=True)
+                href = a['href']
+                link = 'https://metrograph.com' + href if href.startswith('/') else href
+                key = (title, m.group(1))
+                if key in seen:
+                    continue
+                seen.add(key)
+                e = make_event('Metrograph', title, link, date=date, date_str=date_str)
+                if e:
+                    events.append(e)
     except Exception as ex:
         print(f"  [Metrograph] {ex}", file=sys.stderr)
     return events
