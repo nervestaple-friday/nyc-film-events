@@ -1,93 +1,700 @@
 {
-  "updated": "2026-03-12T11:01:32.156203+00:00",
+  "updated": "2026-03-12T11:09:16.241385+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
       "events": [
         {
-          "title": "Juliette Binoche",
-          "link": "https://metrograph.com/cracked-actor-juliette-binoche/?utm_source=rss&utm_medium=rss&utm_campaign=cracked-actor-juliette-binoche",
-          "date_str": "Mar 09",
-          "year": "2025"
+          "title": "Ed Wood",
+          "link": "https://metrograph.com/film/?vista_film_id=9999003417",
+          "date_str": "Mar 13",
+          "poster": "https://image.tmdb.org/t/p/w300/n8SrO3WbyuY2b6KazogqbQF348C.jpg",
+          "overview": "The mostly true story of the legendary \"worst director of all time\", who, with the help of his strange friends, filmed countless B-movies without ever becoming famous or successful.",
+          "year": "1994",
+          "rating": 7.5
         },
         {
-          "title": "I’m Not Everything I Want to Be",
-          "link": "https://metrograph.com/im-not-everything-i-want-to-be-keva-york/?utm_source=rss&utm_medium=rss&utm_campaign=im-not-everything-i-want-to-be-keva-york",
-          "date_str": "Mar 05",
-          "poster": "https://image.tmdb.org/t/p/w300/gZ8Gm1Nspuf5zZDvvKm96yRByW3.jpg",
-          "overview": "After the Soviet invasion of Czechoslovakia in 1968, Libuše Jarcovjáková, a young female photographer, strives to break free from the constraints of Czechoslovak normalization and embarks on a wild journey towards freedom, capturing her experiences on thousands of subjective photographs.",
-          "year": "2024",
-          "rating": 8.0
+          "title": "Sunset Boulevard",
+          "link": "https://metrograph.com/film/?vista_film_id=9999001579",
+          "date_str": "Mar 13",
+          "poster": "https://image.tmdb.org/t/p/w300/zt8aQ6ksqK6p1AopC5zVTDS9pKT.jpg",
+          "overview": "A hack screenwriter writes a screenplay for a former silent film star who has faded into Hollywood obscurity.",
+          "year": "1950",
+          "rating": 8.3
         },
         {
-          "title": "Letters to His Wife",
-          "link": "https://metrograph.com/letters-to-his-wife/?utm_source=rss&utm_medium=rss&utm_campaign=letters-to-his-wife",
-          "date_str": "Mar 03"
+          "title": "Queen of Katwe",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004719",
+          "date_str": "Mar 13",
+          "poster": "https://image.tmdb.org/t/p/w300/m8V2ud6uhV7qH6wEDoQ4Ujw99ji.jpg",
+          "overview": "A young girl overcomes her disadvantaged upbringing in the slums of Uganda to become a Chess master.",
+          "year": "2016",
+          "rating": 7.2
         },
         {
-          "title": "Anocha Suwichakornpong",
-          "link": "https://metrograph.com/anocha-suwichakornpong_kirsten_tan/?utm_source=rss&utm_medium=rss&utm_campaign=anocha-suwichakornpong_kirsten_tan",
-          "date_str": "Feb 26"
+          "title": "Code Unknown",
+          "link": "https://metrograph.com/film/?vista_film_id=9999002367",
+          "date_str": "Mar 13",
+          "poster": "https://image.tmdb.org/t/p/w300/kJJx2FNmiaep8WT21uMPY9qPzxL.jpg",
+          "overview": "A series of events unfold like a chain reaction, all stemming from a minor event that brings the film's five characters together. Set in Paris, France, Anne is an actress whose boyfriend Georges photographs the war in Kosovo. Georges' brother, Jean, is looking for the entry code to Georges' apartment. These characters' lives interconnect with a Romanian immigrant and a deaf teacher.",
+          "year": "2000",
+          "rating": 6.7
         },
         {
-          "title": "The Holy Girl",
-          "link": "https://metrograph.com/the-holy-girl-amalia-ulman/?utm_source=rss&utm_medium=rss&utm_campaign=the-holy-girl-amalia-ulman",
-          "date_str": "Feb 23",
-          "poster": "https://image.tmdb.org/t/p/w300/srA4HPJe0YpDTZ4L4Nj5psD7v48.jpg",
-          "overview": "Amalia is an adolescent girl who is caught in the throes of her emerging sexuality and her deeply held passion for her Catholic faith. These two drives mingle when the visiting Dr. Jano takes advantage of a crowd to get inappropriately close to the girl. Repulsed by him but inspired by an inner burning, Amalia decides it is her God-given mission to save the doctor from his behavior, and she begins to stalk Dr. Jano, becoming a most unusual voyeur.",
-          "year": "2004",
-          "rating": 6.6
+          "title": "The Girl with the Hatbox",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004720",
+          "date_str": "Mar 13",
+          "poster": "https://image.tmdb.org/t/p/w300/bx6n6Oi96w0bImKVdJ8hNBjEl1.jpg",
+          "overview": "A Moscow hat shop girl chances upon a penniless young man who has arrived from the countryside for university and takes pity on him.",
+          "year": "1927",
+          "rating": 6.3
         },
         {
-          "title": "Somersault",
-          "link": "https://metrograph.com/somersault-cate-shortland/?utm_source=rss&utm_medium=rss&utm_campaign=somersault-cate-shortland",
-          "date_str": "Feb 19",
-          "poster": "https://image.tmdb.org/t/p/w300/hN6GnyLhamDrz2xAOqVZ4Fv6Lyo.jpg",
-          "overview": "Australian teenager Heidi is left with little choice but to leave home after she's caught red-handed with her mother's boyfriend. With few options, Heidi ends up in Jindabyne, a tourist community. Upon meeting Joe at a bar, she pursues a relationship with him and tries to find something resembling a normal home life. Heidi makes small strides by getting a job and finding a place to stay, but her relationship with Joe must overcome more than its share of hurdles.",
-          "year": "2004",
+          "title": "Camille Claudel 1915",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004726",
+          "date_str": "Mar 13",
+          "poster": "https://image.tmdb.org/t/p/w300/bZWvwcum4mMjqJsWcIaLOhYE3gq.jpg",
+          "overview": "The life of Camille Claudel, a French sculptor who becomes the apprentice of Auguste Rodin and later his lover. Her passion for her art and Rodin drive her further away from reason and rationality.",
+          "year": "1988",
+          "rating": 6.7
+        },
+        {
+          "title": "In a Lonely Place",
+          "link": "https://metrograph.com/film/?vista_film_id=9999001065",
+          "date_str": "Mar 13",
+          "poster": "https://image.tmdb.org/t/p/w300/vbdgtwzLOpE6MppZlyYChMagvQq.jpg",
+          "overview": "A violent screenwriter and a female neighbor fall in love after she clears him of murder, but she begins to have second thoughts.",
+          "year": "1950",
+          "rating": 7.6
+        },
+        {
+          "title": "The House on Trubnaya",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004721",
+          "date_str": "Mar 13",
+          "poster": "https://image.tmdb.org/t/p/w300/jujb99c1GzOu8tFQxDuEzMFVah1.jpg",
+          "overview": "Life is short and full of oppression, but that doesn't mean Parasha can't find love and laughter when she leaves her country home to take a job as a maid in the overcrowded, overworked, and underpaid world in the big city.",
+          "year": "1928",
           "rating": 6.2
         },
         {
-          "title": "Can She Bake a Cherry Pie?",
-          "link": "https://metrograph.com/can-she-bake-a-cherry-pie-jaglom/?utm_source=rss&utm_medium=rss&utm_campaign=can-she-bake-a-cherry-pie-jaglom",
-          "date_str": "Feb 13",
-          "poster": "https://image.tmdb.org/t/p/w300/7dEU2A75lw0A8znU9GEcWucuuPS.jpg",
-          "overview": "Zee is walking up and down Manhattan streets, talking to herself and to the husband who has just left her. At a sidewalk café she runs into Eli, and a very unlikely, funny and touching relationship develops between two lost souls in the big city.",
+          "title": "Cowboy Bebop: The Movie",
+          "link": "https://metrograph.com/film/?vista_film_id=9999000723",
+          "date_str": "Mar 13",
+          "poster": "https://image.tmdb.org/t/p/w300/34H5bsNc0EPILVr49TfOYXj50qV.jpg",
+          "overview": "The year is 2071. Following a terrorist bombing, a deadly virus is released on the populace of Mars and the government has issued the largest bounty in history, for the capture of whoever is behind it. The bounty hunter crew of the spaceship Bebop; Spike, Faye, Jet and Ed, take the case with hopes of cashing in the bounty. However, the mystery surrounding the man responsible, Vincent, goes deeper than they ever imagined, and they aren't the only ones hunting him.",
+          "year": "2001",
+          "rating": 7.7
+        },
+        {
+          "title": "Battle Royale",
+          "link": "https://metrograph.com/film/?vista_film_id=9999001953",
+          "date_str": "Mar 13",
+          "poster": "https://image.tmdb.org/t/p/w300/aLGKAQKgzWpJ6egyWzzC11jXBRJ.jpg",
+          "overview": "In the future, the Japanese government captures a class of ninth-grade students and forces them to kill each other under the revolutionary \"Battle Royale\" act.",
+          "year": "2000",
+          "rating": 7.3
+        },
+        {
+          "title": "Stalker",
+          "link": "https://metrograph.com/film/?vista_film_id=9999001012",
+          "date_str": "Mar 14",
+          "poster": "https://image.tmdb.org/t/p/w300/rFibFbwN7tw8GwrNRYjxIQP54Xp.jpg",
+          "overview": "One night as Lena is walking home from a volleyball game when she begins to realise that someone is following her.",
+          "year": "2014",
+          "rating": 2.0
+        },
+        {
+          "title": "Miss Mend",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004722",
+          "date_str": "Mar 14",
+          "poster": "https://image.tmdb.org/t/p/w300/cAFHbtniAew8mJ84tS5J9iCuTDm.jpg",
+          "overview": "Three reporters and an office girl are trying to stop a bacteriological strike by some powerful western business leaders against the USSR.",
+          "year": "1926",
+          "rating": 5.6
+        },
+        {
+          "title": "Kill Bill: Vol. 1",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004723",
+          "date_str": "Mar 14",
+          "poster": "https://image.tmdb.org/t/p/w300/v7TaX8kXMXs5yFFGR41guUDNcnB.jpg",
+          "overview": "An assassin is shot by her ruthless employer, Bill, and other members of their assassination circle – but she lives to plot her vengeance.",
+          "year": "2003",
+          "rating": 8.0
+        },
+        {
+          "title": "Kill Bill: Vol. 2",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004724",
+          "date_str": "Mar 14",
+          "poster": "https://image.tmdb.org/t/p/w300/2yhg0mZQMhDyvUQ4rG1IZ4oIA8L.jpg",
+          "overview": "The Bride unwaveringly continues on her roaring rampage of revenge against the band of assassins who had tried to kill her and her unborn child. She visits each of her former associates one-by-one, checking off the victims on her Death List Five until there's nothing left to do … but kill Bill.",
+          "year": "2004",
+          "rating": 7.9
+        },
+        {
+          "title": "Mauvais Sang",
+          "link": "https://metrograph.com/film/?vista_film_id=9999001771",
+          "date_str": "Mar 14",
+          "poster": "https://image.tmdb.org/t/p/w300/yjUmAFx8Z3E0K1IUpQSyUilL5P9.jpg",
+          "overview": "Two aging crooks are given two weeks to repay a debt to a woman named The American. They recruit their recently deceased partner's son to help them break into a laboratory and steal the vaccine against STBO, a sexually transmitted disease that is sweeping the country. It's spread by having sex without emotional involvement, and most of its victims are teenagers who make love out of curiosity rather than commitment.",
+          "year": "1986",
+          "rating": 7.1
+        },
+        {
+          "title": "The Bad and the Beautiful",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004725",
+          "date_str": "Mar 14",
+          "poster": "https://image.tmdb.org/t/p/w300/ajAXzTiPkL7JxeCRw5lQBqrKNGx.jpg",
+          "overview": "Told in flashback form, the film traces the rise and fall of a tough, ambitious Hollywood producer, Jonathan Shields, as seen through the eyes of various acquaintances, including a writer, James Lee Bartlow; a star, Georgia Lorrison; and a director, Fred Amiel. He is a hard-driving, ambitious man who ruthlessly uses everyone on the way to becoming one of Hollywood's top movie makers.",
+          "year": "1952",
+          "rating": 7.3
+        },
+        {
+          "title": "Sukiyaki Western Django",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004712",
+          "date_str": "Mar 14",
+          "poster": "https://image.tmdb.org/t/p/w300/6GLjfl1Atsawd5Aq83Qc4fQ9W1T.jpg",
+          "overview": "A nameless gunfighter arrives in a town ripped apart by rival gangs and, though courted by both to join, chooses his own path.",
+          "year": "2007",
+          "rating": 6.2
+        },
+        {
+          "title": "Ghost Dog: The Way of the Samurai",
+          "link": "https://metrograph.com/film/?vista_film_id=9999001440",
+          "date_str": "Mar 14",
+          "poster": "https://image.tmdb.org/t/p/w300/gkH4zOxIfbb4BEbk9Q4cVOEpDaY.jpg",
+          "overview": "A Black hitman who models after the samurai of old finds himself targeted for death by the mob.",
+          "year": "1999",
+          "rating": 7.3
+        },
+        {
+          "title": "Once Upon a Time in Hollywood",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004716",
+          "date_str": "Mar 15",
+          "poster": "https://image.tmdb.org/t/p/w300/xx0wykqodIBan6PYSD2Ph0sibz8.jpg",
+          "overview": "Hollywood is a 2002 Indian Kannada science fiction film written by Upendra and directed by Dinesh Babu. It stars Upendra in a triple role as Surendra, Upendra and US 47 (a robot) along with the Australian actress Felicity Mason as Manisha and Anant Nag. The film was shot entirely in Gold Coast, Australia with few supporting actors and a monkey named Lakshmi, voiced by Ramesh Bhat. The film was also dubbed into Telugu in 2003, retaining the same title.",
+          "year": "2002",
+          "rating": 7.2
+        },
+        {
+          "title": "The Unbearable Lightness of Being",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004497",
+          "date_str": "Mar 17",
+          "poster": "https://image.tmdb.org/t/p/w300/g1kPEwATsCI8DnGx6ViAhUVKQSI.jpg",
+          "overview": "Successful surgeon Tomas leaves Prague for an operation, meets a young photographer named Tereza, and brings her back with him. Tereza is surprised to learn that Tomas is already having an affair with the bohemian Sabina, but when the Soviet invasion occurs, all three flee to Switzerland. Sabina begins an affair, Tom continues womanizing, and Tereza, disgusted, returns to Czechoslovakia. Realizing his mistake, Tomas decides to chase after her.",
+          "year": "1988",
+          "rating": 6.9
+        },
+        {
+          "title": "Klute",
+          "link": "https://metrograph.com/film/?vista_film_id=9999000329",
+          "date_str": "Mar 17",
+          "poster": "https://image.tmdb.org/t/p/w300/tVyINAsNGSgD1OIstqwCcs7wyGH.jpg",
+          "overview": "A high-priced call girl is forced to depend on a reluctant private eye when she is stalked by a psychopath.",
+          "year": "1971",
+          "rating": 6.8
+        },
+        {
+          "title": "Nostalghia",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004203",
+          "date_str": "Mar 17",
+          "poster": "https://image.tmdb.org/t/p/w300/tr0iSQZCOqIYwEmhqlaYiJmeIR7.jpg",
+          "overview": "A poetic and intimate scene-by-scene look into the filming of Tarkovsky's 'Nostalghia'.",
+          "year": "1984",
+          "rating": 6.6
+        },
+        {
+          "title": "Lola Montès",
+          "link": "https://metrograph.com/film/?vista_film_id=9999000107",
+          "date_str": "Mar 18",
+          "poster": "https://image.tmdb.org/t/p/w300/ycePcddfSvqaalyPxMvFYT5D8wV.jpg",
+          "overview": "Lola Montes, previously a great adventuress, is reduced to being the attraction of a circus after having been the lover of various important men.",
+          "year": "1955",
+          "rating": 6.8
+        },
+        {
+          "title": "El Sur",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004686",
+          "date_str": "Mar 18",
+          "poster": "https://image.tmdb.org/t/p/w300/bAyghNTLIwHIxoQOha6kHfwmxS6.jpg",
+          "overview": "A woman recalls her childhood growing up in the North of Spain, focusing on her relationship with her father.",
           "year": "1983",
-          "rating": 5.571
+          "rating": 7.7
+        },
+        {
+          "title": "The English Patient",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004715",
+          "date_str": "Mar 18",
+          "poster": "https://image.tmdb.org/t/p/w300/8eHHqMg8qEYtVw8LQLygsHXSR2q.jpg",
+          "overview": "In the 1930s, Count Almásy is a Hungarian map maker employed by the Royal Geographical Society to chart the vast expanses of the Sahara Desert along with several other prominent explorers. As World War II unfolds, Almásy enters into a world of love, betrayal, and politics.",
+          "year": "1996",
+          "rating": 7.2
+        },
+        {
+          "title": "Weekend",
+          "link": "https://metrograph.com/film/?vista_film_id=9999001800",
+          "date_str": "Mar 18",
+          "poster": "https://image.tmdb.org/t/p/w300/9VWUx95pzlL1E9fDCBoDP0rL4jL.jpg",
+          "overview": "Eddy and Ylva have invited Björn and Lene to spend a perfect weekend in their cabin in the woods, but the vacation become disrupted by primitive creatures known as tree-cutters.",
+          "year": "2006"
+        },
+        {
+          "title": "In the Mood for Love",
+          "link": "https://metrograph.com/film/?vista_film_id=9999000517",
+          "date_str": "Mar 18",
+          "poster": "https://image.tmdb.org/t/p/w300/iYypPT4bhqXfq1b6EnmxvRt6b2Y.jpg",
+          "overview": "Two neighbors form a strong bond after both suspect extramarital activities of their spouses. However, they agree to keep their bond platonic so as not to commit similar wrongs.",
+          "year": "2000",
+          "rating": 8.1
+        },
+        {
+          "title": "The Silence",
+          "link": "https://metrograph.com/film/?vista_film_id=9999003929",
+          "date_str": "Mar 19",
+          "poster": "https://image.tmdb.org/t/p/w300/lTVOquzxw2DPF3MKuYd1ynz9F6H.jpg",
+          "overview": "With the world under attack by deadly creatures who hunt by sound, a teen and her family seek refuge outside the city and encounter a mysterious cult.",
+          "year": "2019",
+          "rating": 6.0
+        },
+        {
+          "title": "Irma Vep",
+          "link": "https://metrograph.com/film/?vista_film_id=9999000516",
+          "date_str": "Mar 19",
+          "poster": "https://image.tmdb.org/t/p/w300/9Z84G7mn8eS7WxiHr5CrXRrneaF.jpg",
+          "overview": "Hong Kong action diva Maggie Cheung comes to France when a past-his-prime director casts her in a remake of the silent classic Les Vampires. Clad in a rubber catsuit and unable to speak a word of French, Cheung finds herself adrift in the insanity of the film industry…",
+          "year": "1996",
+          "rating": 6.7
+        },
+        {
+          "title": "Certified Copy",
+          "link": "https://metrograph.com/film/?vista_film_id=9999003797",
+          "date_str": "Mar 19",
+          "poster": "https://image.tmdb.org/t/p/w300/soBvtCR33Gv1j6gXwXOIc3JTlNc.jpg",
+          "overview": "In Tuscany to promote his latest book, a middle-aged English writer meets a French woman who leads him to the village of Lucignano.",
+          "year": "2010",
+          "rating": 7.0
+        },
+        {
+          "title": "The Earrings of Madame de...",
+          "link": "https://metrograph.com/film/?vista_film_id=9999001228",
+          "date_str": "Mar 19",
+          "poster": "https://image.tmdb.org/t/p/w300/3eJIw86taD84NkpuZaORf5k2DsH.jpg",
+          "overview": "In late 19th century France, the Countess Louise, wife of a wealthy general, sells the earrings her husband gave her on their wedding day to pay off her secret debts, then claims to have lost them. Her husband quickly learns of the deceit, which is the beginning of many tragic misunderstandings, all involving the earrings, the general, the countess, and her new lover, the Italian Baron Donati.",
+          "year": "1953",
+          "rating": 7.5
+        },
+        {
+          "title": "Perfect Blue",
+          "link": "https://metrograph.com/film/?vista_film_id=9999001649",
+          "date_str": "Mar 19",
+          "poster": "https://image.tmdb.org/t/p/w300/6WTiOCfDPP8XV4jqfloiVWf7KHq.jpg",
+          "overview": "Rising pop star Mima quits singing to pursue a career as an actress. After she takes up a role on a popular detective show, her handlers and collaborators begin turning up murdered. Harboring feelings of guilt and haunted by visions of her former self, Mima's reality and fantasy meld into a frenzied paranoia.",
+          "year": "1998",
+          "rating": 8.3
         },
         {
           "title": "Re-Wind",
-          "link": "https://metrograph.com/re-wind-sato/?utm_source=rss&utm_medium=rss&utm_campaign=re-wind-sato",
-          "date_str": "Feb 11",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004699",
+          "date_str": "Mar 19",
           "poster": "https://image.tmdb.org/t/p/w300/2ei5ZduECrvHiOZfjTgY3UURwYu.jpg",
           "overview": "An investigation into a videotape that shows the results of a brutal murder committed using a knife-equipped camera.",
           "year": "1988",
           "rating": 5.417
         },
         {
-          "title": "Listen Up! Mihály Víg & Béla Tarr",
-          "link": "https://metrograph.com/listen-up-mihaly-vig-and-bela-tarr/?utm_source=rss&utm_medium=rss&utm_campaign=listen-up-mihaly-vig-and-bela-tarr",
-          "date_str": "Feb 06"
+          "title": "Four Adventures of Reinette and Mirabelle",
+          "link": "https://metrograph.com/film/?vista_film_id=9999000659",
+          "date_str": "Mar 20",
+          "poster": "https://image.tmdb.org/t/p/w300/iXydrbtUGX7CUutomhtMtlUd3Cb.jpg",
+          "overview": "Two young girls meet, Reinette from the countryside and Mirabelle from Paris, and decide to take a flat together in Paris where they attend University. Four successive stories about their daily lives illustrate the very different views, characters and relation to the world of these two friends.",
+          "year": "1987",
+          "rating": 7.4
         },
         {
-          "title": "Orangey, Revisited",
-          "link": "https://metrograph.com/orangey-revisited/?utm_source=rss&utm_medium=rss&utm_campaign=orangey-revisited",
-          "date_str": "Feb 03"
+          "title": "Kiss Me Deadly",
+          "link": "https://metrograph.com/film/?vista_film_id=9999000432",
+          "date_str": "Mar 20",
+          "poster": "https://image.tmdb.org/t/p/w300/z7me91nrpWLHY1mZOB2v20cK0zY.jpg",
+          "overview": "One evening, Hammer gives a ride to Christina, an attractive hitchhiker on a lonely country road, who has escaped from the nearby lunatic asylum. Thugs waylay them and force his car to crash. When Hammer returns to semi-consciousness, he hears Christina being tortured until she dies. Hammer, both for vengeance and in hopes that \"something big\" is behind it all, decides to pursue the case.",
+          "year": "1955",
+          "rating": 7.2
         },
         {
-          "title": "Green Snake",
-          "link": "https://metrograph.com/hark-green-snake/?utm_source=rss&utm_medium=rss&utm_campaign=hark-green-snake",
-          "date_str": "Jan 30",
-          "poster": "https://image.tmdb.org/t/p/w300/1zs5zsQDP5KuWwxIg9EUULLFEV.jpg",
-          "overview": "While trying to free her sister from Fahai's clutches, Xiao Qing winds up in a dystopian city and meets a mysterious man who can't recall his past life.",
-          "year": "2021",
-          "rating": 8.084
+          "title": "The Most Terrible Time in My Life",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004728",
+          "date_str": "Mar 20",
+          "poster": "https://image.tmdb.org/t/p/w300/w65eQOGWG6DeN9H74nlIVfeFEmc.jpg",
+          "overview": "A high school girl, while pondering her future, sees it flash before her eyes.",
+          "year": "2012",
+          "rating": 7.0
         },
         {
-          "title": "Travel Companions: Bahram Beyzaie & Amir Naderi",
-          "link": "https://metrograph.com/bahram-beyzaie-amir-naderi/?utm_source=rss&utm_medium=rss&utm_campaign=bahram-beyzaie-amir-naderi",
-          "date_str": "Jan 27"
+          "title": "The Stairway to a Distant Past",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004729",
+          "date_str": "Mar 20",
+          "poster": "https://image.tmdb.org/t/p/w300/DzobQXrzJF32ong4QTCiJC2JD6.jpg",
+          "overview": "Broke, with his vintage Nash convertible repossessed, private eye Mike Hama is reduced to combing the mean streets of the Yokohama waterfront on a borrowed bicycle. But when Lily, a beautiful stripper from out of Hama's past, returns to town, the fuse is lit on a criminal powder keg set to blow the lid off the Yokohama underworld.",
+          "year": "1995",
+          "rating": 7.0
+        },
+        {
+          "title": "High Life",
+          "link": "https://metrograph.com/film/?vista_film_id=9999002108",
+          "date_str": "Mar 20",
+          "poster": "https://image.tmdb.org/t/p/w300/ftRRIYNzpTDYeTznrAxgT5v1vJY.jpg",
+          "overview": "A father and his daughter struggle to survive in deep space where they live in isolation.",
+          "year": "2018",
+          "rating": 5.7
+        },
+        {
+          "title": "Inherent Vice",
+          "link": "https://metrograph.com/film/?vista_film_id=9999001238",
+          "date_str": "Mar 20",
+          "poster": "https://image.tmdb.org/t/p/w300/pfVua7TzzttOh3RTOuBqT7xN0oY.jpg",
+          "overview": "In Los Angeles at the turn of the 1970s, drug-fueled detective Larry \"Doc\" Sportello investigates the disappearance of an ex-girlfriend.",
+          "year": "2014",
+          "rating": 6.5
+        },
+        {
+          "title": "Maps to the Stars",
+          "link": "https://metrograph.com/film/?vista_film_id=9999002655",
+          "date_str": "Mar 20",
+          "poster": "https://image.tmdb.org/t/p/w300/aoMNfiaMmT7o7wY8oXWCLErZtah.jpg",
+          "overview": "Driven by an intense need for fame and validation, members of a dysfunctional Hollywood family are chasing celebrity, one another and the relentless ghosts of their pasts.",
+          "year": "2014",
+          "rating": 6.2
+        },
+        {
+          "title": "Murray Center Class of '25: Award-winning Shorts",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004731",
+          "date_str": "Mar 21"
+        },
+        {
+          "title": "Pinocchio",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004730",
+          "date_str": "Mar 21",
+          "poster": "https://image.tmdb.org/t/p/w300/bnZJrLRnoQHpzEJdka1KYfsAF3N.jpg",
+          "overview": "When the gentle woodcarver Geppetto builds a marionette to be his substitute son, a benevolent fairy brings the toy to life. The puppet, named Pinocchio, is not yet a human boy. He must earn the right to be real by proving that he is brave, truthful, and unselfish.",
+          "year": "1940",
+          "rating": 7.1
+        },
+        {
+          "title": "Future of Documentary: Secret Screening & Panel",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004732",
+          "date_str": "Mar 21"
+        },
+        {
+          "title": "The Player",
+          "link": "https://metrograph.com/film/?vista_film_id=9999003399",
+          "date_str": "Mar 21",
+          "poster": "https://image.tmdb.org/t/p/w300/tZ3kDut2dhFVGkWNEn9xoCHCNAx.jpg",
+          "overview": "A Hollywood studio executive is being sent death threats by a writer whose script he rejected - but which one?",
+          "year": "1992",
+          "rating": 7.2
+        },
+        {
+          "title": "Maidan",
+          "link": "https://metrograph.com/film/?vista_film_id=9999002533",
+          "date_str": "Mar 21",
+          "poster": "https://image.tmdb.org/t/p/w300/4HXNO4yenXTTbfvVZ15Zw4Zrfqg.jpg",
+          "overview": "A chronicle of the civil uprising against the regime of Ukrainian president Viktor Yanukovych that took place in Kyiv in the winter of 2013/14. The film follows the progress of the revolution: from peaceful rallies, half a million strong in the Maidan square, to the bloody street battles between protesters and riot police.",
+          "year": "2014",
+          "rating": 7.9
+        },
+        {
+          "title": "Outskirts",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004733",
+          "date_str": "Mar 21",
+          "overview": "Making of Jean Luc Godard's Alphaville (1965)",
+          "year": "2003"
+        },
+        {
+          "title": "The Trap",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004734",
+          "date_str": "Mar 21",
+          "poster": "https://image.tmdb.org/t/p/w300/swk3ionimeKwX1e6k1XbHCSeYv0.jpg",
+          "overview": "A man returns home to Atlanta to help and turn around his family's struggling restaurant with the help of a new chicken recipe.",
+          "year": "2019",
+          "rating": 4.9
+        },
+        {
+          "title": "By the Bluest of Seas",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004735",
+          "date_str": "Mar 21",
+          "poster": "https://image.tmdb.org/t/p/w300/o9PzjQheqgA72pDtsmg8VGYDz7u.jpg",
+          "overview": "Two men shipwrecked on an island in the Caspian Sea are saved by members of a collective farm, where they work on its fishing boats and woo the young woman leading the fishermen.",
+          "year": "1936",
+          "rating": 6.4
+        },
+        {
+          "title": "Inland Empire",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004189",
+          "date_str": "Mar 21",
+          "poster": "https://image.tmdb.org/t/p/w300/s5f0FbVAABEnJYKaApWORTxhiFC.jpg",
+          "overview": "When actress Nikki Grace gets the lead role in a cursed film, her world becomes more and more surreal, blending realities and ideas of infidelity, reincarnation, and supernatural forces.",
+          "year": "2006",
+          "rating": 7.0
+        },
+        {
+          "title": "The Invasion preceded",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004736",
+          "date_str": "Mar 22"
+        },
+        {
+          "title": "Let the Sunshine In",
+          "link": "https://metrograph.com/film/?vista_film_id=9999003597",
+          "date_str": "Mar 22",
+          "poster": "https://image.tmdb.org/t/p/w300/6O5F7dN47KUTB1HXcBvQlaQYYR6.jpg",
+          "overview": "Isabelle, Parisian artist, divorced mother, is looking for love, true love, at last.",
+          "year": "2017",
+          "rating": 5.2
+        },
+        {
+          "title": "Goodbye, Dragon Inn",
+          "link": "https://metrograph.com/film/?vista_film_id=9999000006",
+          "date_str": "Mar 27",
+          "poster": "https://image.tmdb.org/t/p/w300/js1uTY2FuKspVRQWLudFkEteFI5.jpg",
+          "overview": "On a dark, wet night in Taipei City, a cavernous old picture palace is about to close its doors forever. A meager audience, the remaining few staff, and perhaps even a ghost or two, watch King Hu’s wuxia classic \"Dragon Inn\", each haunted by memories and desires evoked by cinema itself.",
+          "year": "2003",
+          "rating": 6.7
+        },
+        {
+          "title": "Dead Man",
+          "link": "https://metrograph.com/film/?vista_film_id=9999000299",
+          "date_str": "Mar 27",
+          "poster": "https://image.tmdb.org/t/p/w300/jX3wGBVoYoAY3IixBpwYk1fjT4z.jpg",
+          "overview": "On the run after committing murder, an accountant encounters a strange Native American man who prepares him for his journey into the spiritual world.",
+          "year": "1995",
+          "rating": 7.3
+        },
+        {
+          "title": "The Seventh Seal",
+          "link": "https://metrograph.com/film/?vista_film_id=9999001970",
+          "date_str": "Mar 27",
+          "poster": "https://image.tmdb.org/t/p/w300/wcZ21zrOsy0b52AfAF50XpTiv75.jpg",
+          "overview": "When disillusioned Swedish knight Antonius Block returns home from the Crusades to find his country in the grips of the Black Death, he challenges Death to a chess match for his life. Tormented by the belief that God does not exist, Block sets off on a journey, meeting up with traveling players Jof and his wife, Mia, and becoming determined to evade Death long enough to commit one redemptive act while he still lives.",
+          "year": "1957",
+          "rating": 8.2
+        },
+        {
+          "title": "Red Sorghum",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004739",
+          "date_str": "Mar 27",
+          "poster": "https://image.tmdb.org/t/p/w300/2CP2eazEBKJ3njm4HM63pMfs5tW.jpg",
+          "overview": "An old leper who owned a remote sorghum winery dies. Jiu'er, the wife bought by the leper, and her lover, identified only as \"my Grandpa\" by the narrator, take over the winery and set up an idealized quasi-matriarchal community headed by Jiu'er. When the Japanese invaders subject the area to their rule and cut down the sorghum to make way for a road, the community rises up and resists as the sorghum grows anew.",
+          "year": "1988",
+          "rating": 7.1
+        },
+        {
+          "title": "Clouds of Sils Maria",
+          "link": "https://metrograph.com/film/?vista_film_id=9999002785",
+          "date_str": "Mar 27",
+          "poster": "https://image.tmdb.org/t/p/w300/dtCZ31RlokpkAaKMr9jFCJjBngi.jpg",
+          "overview": "A veteran actress comes face-to-face with an uncomfortable reflection of herself when she agrees to take part in a revival of the play that launched her career 20 years earlier.",
+          "year": "2014",
+          "rating": 6.6
+        },
+        {
+          "title": "Allegro Non Troppo",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004740",
+          "date_str": "Mar 27",
+          "poster": "https://image.tmdb.org/t/p/w300/xRAnD7yd6Qx8NYXfoW5GN6K5jiC.jpg",
+          "overview": "An enterprising producer believes he has hit upon a winning concept: a program of original animated shorts set to classical music. Undeterred by warnings that this has already been done by an American named 'Prisney,' he rallies an orchestra of geriatric women, a bullish conductor, and an animator that he keeps locked in the dungeon. What could go wrong?",
+          "year": "1976",
+          "rating": 7.1
+        },
+        {
+          "title": "Zodiac",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004741",
+          "date_str": "Mar 27",
+          "poster": "https://image.tmdb.org/t/p/w300/6YmeO4pB7XTh8P8F960O1uA14JO.jpg",
+          "overview": "Over the course of a decade, editors of the San Francisco Chronicle entice themselves in the murders of the Zodiac Killer. However, as time runs its course, interest in the case dwindles in the eyes of the professionals. The Killer stops interacting with the public. However, believing he has the answers, an amateur cartoonist from the initial sightings races against time to prevent what he believes is another murder.",
+          "year": "2007",
+          "rating": 7.5
+        },
+        {
+          "title": "Downtown 81",
+          "link": "https://metrograph.com/film/?vista_film_id=9999002127",
+          "date_str": "Mar 28",
+          "poster": "https://image.tmdb.org/t/p/w300/lAWr0YaC1PaflYT08GBLToqYhW9.jpg",
+          "overview": "The film is a day in the life of a young artist, Jean-Michel Basquiat, who needs to raise money to reclaim the apartment from which he has been evicted. He wanders the downtown streets carrying a painting he hopes to sell, encountering friends, whose lives (and performances) we peek into.",
+          "year": "2001",
+          "rating": 6.7
+        },
+        {
+          "title": "Raise the Red Lantern",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004742",
+          "date_str": "Mar 28",
+          "poster": "https://image.tmdb.org/t/p/w300/j6MGZpg55cTqlHHwahBtzI2qQg1.jpg",
+          "overview": "In 1920s China, 19-year-old Songlian becomes a concubine of a powerful lord and is forced to compete with his three wives for the privileges gained.",
+          "year": "1991",
+          "rating": 7.9
+        },
+        {
+          "title": "The Old Jockey",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004743",
+          "date_str": "Mar 28",
+          "poster": "https://image.tmdb.org/t/p/w300/ckDn8SiAvKpAeKyWOdO2frkEjBO.jpg",
+          "overview": "About Trofimov, a well-known rider who goes on taking part in races in spite of the advanced age, until he realizes his time has gone and passes his experience on to his granddaughter’s fiance",
+          "year": "1940",
+          "rating": 4.2
+        },
+        {
+          "title": "The Story of Qiu Ju",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004744",
+          "date_str": "Mar 28",
+          "poster": "https://image.tmdb.org/t/p/w300/5yYnTVXuLBjFQ91k2FnSWcwNn3x.jpg",
+          "overview": "When her husband is kicked in the groin by the village head, Qiu Ju, a peasant woman, despite her pregnancy, travels to a nearby town, and later a big city to deal with its bureaucrats and find justice.",
+          "year": "1992",
+          "rating": 7.3
+        },
+        {
+          "title": "ACE Presents Cool Hand Luke",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004745",
+          "date_str": "Mar 28",
+          "poster": "https://image.tmdb.org/t/p/w300/4ykzTiHKLamh3eZJ8orVICtU2Jp.jpg",
+          "overview": "When petty criminal Luke Jackson is sentenced to two years in a Florida prison farm, he doesn't play by the rules of either the sadistic warden or the yard's resident heavy, Dragline, who ends up admiring the new guy's unbreakable will. Luke's bravado, even in the face of repeated stints in the prison's dreaded solitary confinement cell, \"the box,\" make him a rebel hero to his fellow convicts and a thorn in the side of the prison officers.",
+          "year": "1967",
+          "rating": 7.7
+        },
+        {
+          "title": "Made in Hong Kong",
+          "link": "https://metrograph.com/film/?vista_film_id=9999002313",
+          "date_str": "Mar 28",
+          "poster": "https://image.tmdb.org/t/p/w300/iv19QA5Ofa6vBmX5QEf34UZ3WsI.jpg",
+          "overview": "A seven-part anthology film exploring the history of Hong Kong from the 1940s to present day.",
+          "year": "2022",
+          "rating": 6.9
+        },
+        {
+          "title": "Point Blank",
+          "link": "https://metrograph.com/film/?vista_film_id=9999000587",
+          "date_str": "Mar 28",
+          "poster": "https://image.tmdb.org/t/p/w300/weAvkxl0dnPevIKD8fwHjiOi6tc.jpg",
+          "overview": "A nurse is forced to spring a wounded murder suspect from the hospital when the man’s brother kidnaps his pregnant wife and wants to make a trade.",
+          "year": "2019",
+          "rating": 6.0
+        },
+        {
+          "title": "Fantasia",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004578",
+          "date_str": "Mar 29",
+          "poster": "https://image.tmdb.org/t/p/w300/5m9njnidjR0syG2gpVPVgcEMB2X.jpg",
+          "overview": "Walt Disney's timeless masterpiece is an extravaganza of sight and sound! See the music come to life, hear the pictures burst into song and experience the excitement that is Fantasia over and over again.",
+          "year": "1940",
+          "rating": 7.3
+        },
+        {
+          "title": "Secret Agent",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004746",
+          "date_str": "Mar 29",
+          "poster": "https://image.tmdb.org/t/p/w300/rZqolYhxMEe6TZZTjSmFw9crDTD.jpg",
+          "overview": "Brazil, 1977. Marcelo, a technology expert in his early 40s, is on the run. Hoping to reunite with his son, he travels to Recife during Carnival but soon realizes that the city is not the safe haven he was expecting.",
+          "year": "2025",
+          "rating": 7.4
+        },
+        {
+          "title": "Once Upon a Night preceded by A Priceless Head",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004747",
+          "date_str": "Mar 29"
+        },
+        {
+          "title": "The Darjeeling Limited",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004748",
+          "date_str": "Mar 29",
+          "poster": "https://image.tmdb.org/t/p/w300/oSW5OVXTulaIXcoNwJAp5YEKpbP.jpg",
+          "overview": "Three American brothers who have not spoken to each other in a year set off on a train voyage across India with a plan to find themselves and bond with each other -- to become brothers again like they used to be. Their \"spiritual quest\", however, veers rapidly off-course (due to events involving over-the-counter pain killers, Indian cough syrup, and pepper spray).",
+          "year": "2007",
+          "rating": 7.1
+        },
+        {
+          "title": "Ju Dou",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004738",
+          "date_str": "Mar 29",
+          "poster": "https://image.tmdb.org/t/p/w300/ejvX1lukPZZ10jatUWmKaXbhjGI.jpg",
+          "overview": "Tianqing falls in love with Ju Dou, his uncle's wife who is tortured for being childless. However, after they have an affair, they discover that his uncle is impotent and try to conceal the truth.",
+          "year": "1990",
+          "rating": 7.2
+        },
+        {
+          "title": "No Other Choice",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004749",
+          "date_str": "Mar 29",
+          "also_at": [
+            "Syndicated BK"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/sBpxTGLzKnvPSVtL5yQYpSxvKEb.jpg",
+          "overview": "After being laid off and humiliated by a ruthless job market, a veteran paper mill manager descends into violence in a desperate bid to reclaim his dignity.",
+          "year": "2025",
+          "rating": 7.6
+        },
+        {
+          "title": "Miami Vice",
+          "link": "https://metrograph.com/film/?vista_film_id=9999002826",
+          "date_str": "Apr 03",
+          "poster": "https://image.tmdb.org/t/p/w300/1KGD2g0wOc7WBfHc5G19reLHQxk.jpg",
+          "overview": "A case involving drug lords and murder in South Florida takes a personal turn for undercover detectives Sonny Crockett and Ricardo Tubbs. Unorthodox Crockett gets involved romantically with the Chinese-Cuban wife of a trafficker of arms and drugs, while Tubbs deals with an assault on those he loves.",
+          "year": "2006",
+          "rating": 6.0
+        },
+        {
+          "title": "Sambizanga",
+          "link": "https://metrograph.com/film/?vista_film_id=9999000849",
+          "date_str": "Apr 03",
+          "poster": "https://image.tmdb.org/t/p/w300/isnDnTWjOE9EJqsKXvCwZQrIkeE.jpg",
+          "overview": "Domingos is a member of an African liberation movement, arrested by the Portuguese secret police, after bloody events in Angola. His wife goes from a prison station to another, trying in vain to find out where he is.",
+          "year": "1973",
+          "rating": 7.0
+        },
+        {
+          "title": "Three Colors: Blue",
+          "link": "https://metrograph.com/film/?vista_film_id=9999003845",
+          "date_str": "Apr 03",
+          "poster": "https://image.tmdb.org/t/p/w300/33wsWxzsNstI8N7dvuwzFmj1qBd.jpg",
+          "overview": "The wife of a famous composer survives a car accident that kills her husband and daughter. Now alone, she shakes off her old identity and explores her newfound freedom but finds that she is unbreakably bound to other humans, including her husband’s mistress, whose existence she never suspected.",
+          "year": "1993",
+          "rating": 7.6
+        },
+        {
+          "title": "The Outfit",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004750",
+          "date_str": "Apr 03",
+          "poster": "https://image.tmdb.org/t/p/w300/lZa5EB6PVJBT5mxhgZS5ftqdAm6.jpg",
+          "overview": "Leonard is an English tailor who used to craft suits on London’s world-famous Savile Row. After a personal tragedy, he’s ended up in Chicago, operating a small tailor shop in a rough part of town where he makes beautiful clothes for the only people around who can afford them: a family of vicious gangsters.",
+          "year": "2022",
+          "rating": 7.1
+        },
+        {
+          "title": "Three Colors: White",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004334",
+          "date_str": "Apr 03",
+          "poster": "https://image.tmdb.org/t/p/w300/fdIet3NSa27gobMbaUml66oCQNT.jpg",
+          "overview": "Polish immigrant Karol Karol finds himself out of a marriage, a job and a country when his French wife, Dominique, divorces him after six months due to his impotence. Forced to leave France after losing the business they jointly owned, Karol enlists fellow Polish expatriate Mikołaj to smuggle him back to their homeland.",
+          "year": "1994",
+          "rating": 7.4
+        },
+        {
+          "title": "Possession",
+          "link": "https://metrograph.com/film/?vista_film_id=9999001205",
+          "date_str": "Apr 03",
+          "also_at": [
+            "Paris Theater"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/lUFZsUuJ0YyhBXH8D2BFUd6wODm.jpg",
+          "overview": "A young woman left her family for an unspecified reason. The husband determines to find out the truth and starts following his wife. At first, he suspects that a man is involved. But gradually, he finds out more and more strange behaviors and bizarre incidents that indicate something more than a possessed love affair.",
+          "year": "1981",
+          "rating": 7.3
+        },
+        {
+          "title": "The Matrix",
+          "link": "https://metrograph.com/film/?vista_film_id=9999000722",
+          "date_str": "Apr 03",
+          "also_at": [
+            "Syndicated BK"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/p96dm7sCMn4VYAStA6siNz30G1r.jpg",
+          "overview": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
+          "year": "1999",
+          "rating": 8.2
         }
       ]
     },
@@ -1383,6 +1990,9 @@
           "title": "No Other Choice",
           "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
           "date_str": "Wednesday 18, March",
+          "also_at": [
+            "Metrograph"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/sBpxTGLzKnvPSVtL5yQYpSxvKEb.jpg",
           "overview": "After being laid off and humiliated by a ruthless job market, a veteran paper mill manager descends into violence in a desperate bid to reclaim his dignity.",
           "year": "2025",
@@ -1430,6 +2040,9 @@
           "title": "The Matrix",
           "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
           "date_str": "Tuesday 31, March",
+          "also_at": [
+            "Metrograph"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/p96dm7sCMn4VYAStA6siNz30G1r.jpg",
           "overview": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
           "year": "1999",
@@ -1573,6 +2186,9 @@
           "title": "Possession",
           "link": "https://www.paristheaternyc.com/film/something-very-bad-possession",
           "date_str": "Mar 24",
+          "also_at": [
+            "Metrograph"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/lUFZsUuJ0YyhBXH8D2BFUd6wODm.jpg",
           "overview": "A young woman left her family for an unspecified reason. The husband determines to find out the truth and starts following his wife. At first, he suspects that a man is involved. But gradually, he finds out more and more strange behaviors and bizarre incidents that indicate something more than a possessed love affair.",
           "year": "1981",
