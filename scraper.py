@@ -221,15 +221,17 @@ def scrape_spectacle():
         for item in root.findall('.//item'):
             title = item.findtext('title', '').strip()
             link  = item.findtext('link', '').strip()
-            # NOTE: pubDate is when the listing was posted, NOT the screening date.
-            # Leave date=None so filter_by_date passes these through as undated.
+            # pubDate is close to the screening date — use it for date filtering
+            # so past screenings get excluded by filter_by_date().
+            date = None
             date_str = ''
             pub = item.findtext('pubDate', '').strip()
             if pub:
                 pd = parse_date_loose(pub)
                 if pd:
+                    date = pd
                     date_str = pd.strftime('%b %d')
-            e = make_event('Spectacle Theater', title, link, date=None, date_str=date_str, special=True)
+            e = make_event('Spectacle Theater', title, link, date=date, date_str=date_str, special=True)
             if e:
                 events.append(e)
     except Exception as ex:
@@ -1309,7 +1311,20 @@ def filter_by_date(events):
             if MIN_DAYS <= delta <= MAX_DAYS:
                 result.append(e)
         else:
-            result.append(e)  # undated venue listings always included
+            # For undated events, try to parse date_str as a fallback.
+            # If it resolves to a past date, exclude it.
+            ds = (e.get('date_str') or '').strip()
+            if ds and ds != 'Now Playing':
+                fallback = parse_date_loose(ds + f" {now.year}")
+                if fallback:
+                    delta = (fallback - now).days
+                    if MIN_DAYS <= delta <= MAX_DAYS:
+                        result.append(e)
+                    # else: parseable past/far-future date — skip
+                else:
+                    result.append(e)  # unparseable date_str — keep
+            else:
+                result.append(e)  # no date_str or "Now Playing" — keep
     return result
 
 
