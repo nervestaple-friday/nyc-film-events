@@ -36,7 +36,7 @@ HEADERS = {
     'Accept-Language': 'en-US,en;q=0.9',
 }
 
-FLARESOLVERR = 'http://192.168.4.227:8191/v1'
+FLARESOLVERR = 'http://downloader:8191/v1'
 
 MIN_DAYS, MAX_DAYS = 0, 21
 
