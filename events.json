@@ -1,45 +1,9 @@
 {
-  "updated": "2026-03-14T11:01:18.528161+00:00",
+  "updated": "2026-03-15T11:01:05.643846+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
       "events": [
-        {
-          "title": "Ed Wood",
-          "link": "https://metrograph.com/film/?vista_film_id=9999003417",
-          "date_str": "Mar 15",
-          "poster": "https://image.tmdb.org/t/p/w300/n8SrO3WbyuY2b6KazogqbQF348C.jpg",
-          "overview": "The mostly true story of the legendary \"worst director of all time\", who, with the help of his strange friends, filmed countless B-movies without ever becoming famous or successful.",
-          "year": "1994",
-          "rating": 7.5
-        },
-        {
-          "title": "The Bad and the Beautiful",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004725",
-          "date_str": "Mar 15",
-          "poster": "https://image.tmdb.org/t/p/w300/ajAXzTiPkL7JxeCRw5lQBqrKNGx.jpg",
-          "overview": "Told in flashback form, the film traces the rise and fall of a tough, ambitious Hollywood producer, Jonathan Shields, as seen through the eyes of various acquaintances, including a writer, James Lee Bartlow; a star, Georgia Lorrison; and a director, Fred Amiel. He is a hard-driving, ambitious man who ruthlessly uses everyone on the way to becoming one of Hollywood's top movie makers.",
-          "year": "1952",
-          "rating": 7.3
-        },
-        {
-          "title": "Once Upon a Time in Hollywood",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004716",
-          "date_str": "Mar 15",
-          "poster": "https://image.tmdb.org/t/p/w300/xx0wykqodIBan6PYSD2Ph0sibz8.jpg",
-          "overview": "Hollywood is a 2002 Indian Kannada science fiction film written by Upendra and directed by Dinesh Babu. It stars Upendra in a triple role as Surendra, Upendra and US 47 (a robot) along with the Australian actress Felicity Mason as Manisha and Anant Nag. The film was shot entirely in Gold Coast, Australia with few supporting actors and a monkey named Lakshmi, voiced by Ramesh Bhat. The film was also dubbed into Telugu in 2003, retaining the same title.",
-          "year": "2002",
-          "rating": 7.2
-        },
-        {
-          "title": "Queen of Katwe",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004719",
-          "date_str": "Mar 15",
-          "poster": "https://image.tmdb.org/t/p/w300/m8V2ud6uhV7qH6wEDoQ4Ujw99ji.jpg",
-          "overview": "A young girl overcomes her disadvantaged upbringing in the slums of Uganda to become a Chess master.",
-          "year": "2016",
-          "rating": 7.2
-        },
         {
           "title": "The Unbearable Lightness of Being",
           "link": "https://metrograph.com/film/?vista_film_id=9999004497",
@@ -66,6 +30,15 @@
           "overview": "A poetic and intimate scene-by-scene look into the filming of Tarkovsky's 'Nostalghia'.",
           "year": "1984",
           "rating": 6.6
+        },
+        {
+          "title": "The Bad and the Beautiful",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004725",
+          "date_str": "Mar 17",
+          "poster": "https://image.tmdb.org/t/p/w300/ajAXzTiPkL7JxeCRw5lQBqrKNGx.jpg",
+          "overview": "Told in flashback form, the film traces the rise and fall of a tough, ambitious Hollywood producer, Jonathan Shields, as seen through the eyes of various acquaintances, including a writer, James Lee Bartlow; a star, Georgia Lorrison; and a director, Fred Amiel. He is a hard-driving, ambitious man who ruthlessly uses everyone on the way to becoming one of Hollywood's top movie makers.",
+          "year": "1952",
+          "rating": 7.3
         },
         {
           "title": "Battle Royale",
@@ -102,6 +75,15 @@
           "overview": "A woman recalls her childhood growing up in the North of Spain, focusing on her relationship with her father.",
           "year": "1983",
           "rating": 7.7
+        },
+        {
+          "title": "Once Upon a Time in Hollywood",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004716",
+          "date_str": "Mar 18",
+          "poster": "https://image.tmdb.org/t/p/w300/xx0wykqodIBan6PYSD2Ph0sibz8.jpg",
+          "overview": "Hollywood is a 2002 Indian Kannada science fiction film written by Upendra and directed by Dinesh Babu. It stars Upendra in a triple role as Surendra, Upendra and US 47 (a robot) along with the Australian actress Felicity Mason as Manisha and Anant Nag. The film was shot entirely in Gold Coast, Australia with few supporting actors and a monkey named Lakshmi, voiced by Ramesh Bhat. The film was also dubbed into Telugu in 2003, retaining the same title.",
+          "year": "2002",
+          "rating": 7.2
         },
         {
           "title": "The English Patient",
@@ -416,6 +398,15 @@
           "overview": "After hearing a loud ‘bang’ at daybreak, a Scottish woman begins experiencing a mysterious sensory syndrome while traversing the jungles of Colombia.",
           "year": "2021",
           "rating": 6.0
+        },
+        {
+          "title": "Ed Wood",
+          "link": "https://metrograph.com/film/?vista_film_id=9999003417",
+          "date_str": "Mar 24",
+          "poster": "https://image.tmdb.org/t/p/w300/n8SrO3WbyuY2b6KazogqbQF348C.jpg",
+          "overview": "The mostly true story of the legendary \"worst director of all time\", who, with the help of his strange friends, filmed countless B-movies without ever becoming famous or successful.",
+          "year": "1994",
+          "rating": 7.5
         },
         {
           "title": "Inside the Yellow Cocoon Shell",
@@ -818,6 +809,14 @@
       "url": "https://filmforum.org/films",
       "events": [
         {
+          "title": "THE BELLBOY",
+          "link": "https://filmforum.org/film/the-bellboy-ffjr-2026",
+          "poster": "https://image.tmdb.org/t/p/w300/xmdlbkVeUn97buYm4ZZ8quY0EVZ.jpg",
+          "overview": "Stanley is a bellboy at the Fountainbleau Hotel in Miami Beach, where he performs his duties quietly and without a word to anyone. All he displays are facial expressions and a comedic slapstick style. And anything that can go wrong, does go wrong when Stanley is involved. One day, Jerry Lewis arrives at the hotel and some of the staff notice the striking resemblance.",
+          "year": "1960",
+          "rating": 6.2
+        },
+        {
           "title": "DAYS AND NIGHTS IN THE FOREST",
           "link": "https://filmforum.org/film/days-and-nights-in-the-forest",
           "poster": "https://image.tmdb.org/t/p/w300/dJvcIMaFXK77AQ934AZ4PpA19nT.jpg",
@@ -851,18 +850,6 @@
           "rating": 6.389
         },
         {
-          "title": "L'Opéra-Mouffe and Other Shorts",
-          "link": "https://filmforum.org/film/lopera-mouffe-and-other-shorts-agnes-varda"
-        },
-        {
-          "title": "LA POINTE COURTE",
-          "link": "https://filmforum.org/film/la-pointe-courte-agnes-varda",
-          "poster": "https://image.tmdb.org/t/p/w300/jPT3tkTu9U7oXkLTSpkPBAr5dwO.jpg",
-          "overview": "A penetrating study of a marriage on the rocks, set against the backdrop of a small Mediterranean fishing village. Both a stylized depiction of the complicated relationship between a married couple and a documentary-like look at the daily struggles of the inhabitants of Sète in the South of France.",
-          "year": "1956",
-          "rating": 6.9
-        },
-        {
           "title": "CLÉO FROM 5 TO 7",
           "link": "https://filmforum.org/film/cleo-from-5-to-7-agnes-varda",
           "poster": "https://image.tmdb.org/t/p/w300/oelBStY4xpguaplRv15P3Za7Xsr.jpg",
@@ -879,12 +866,12 @@
           "rating": 7.4
         },
         {
-          "title": "THE BELLBOY",
-          "link": "https://filmforum.org/film/the-bellboy-ffjr-2026",
-          "poster": "https://image.tmdb.org/t/p/w300/xmdlbkVeUn97buYm4ZZ8quY0EVZ.jpg",
-          "overview": "Stanley is a bellboy at the Fountainbleau Hotel in Miami Beach, where he performs his duties quietly and without a word to anyone. All he displays are facial expressions and a comedic slapstick style. And anything that can go wrong, does go wrong when Stanley is involved. One day, Jerry Lewis arrives at the hotel and some of the staff notice the striking resemblance.",
-          "year": "1960",
-          "rating": 6.2
+          "title": "LA POINTE COURTE",
+          "link": "https://filmforum.org/film/la-pointe-courte-agnes-varda",
+          "poster": "https://image.tmdb.org/t/p/w300/jPT3tkTu9U7oXkLTSpkPBAr5dwO.jpg",
+          "overview": "A penetrating study of a marriage on the rocks, set against the backdrop of a small Mediterranean fishing village. Both a stylized depiction of the complicated relationship between a married couple and a documentary-like look at the daily struggles of the inhabitants of Sète in the South of France.",
+          "year": "1956",
+          "rating": 6.9
         },
         {
           "title": "MONEY FROM HOME",
@@ -965,19 +952,20 @@
         {
           "title": "And the Roots of Rhythm Remain Presented",
           "link": "https://filmforum.org/film/and-the-roots-of-rhythm-remainpresented-by-joe-boyd"
+        },
+        {
+          "title": "LIVING THE LAND",
+          "link": "https://filmforum.org/film/living-the-land",
+          "poster": "https://image.tmdb.org/t/p/w300/dGqcIyfLyR4VZUonBE2Hhb8JaVm.jpg",
+          "overview": "With both parents working far away, ten-year-old Chuang is being raised by extended family in his home village, where thousands of years of rural tradition collide with the socio-economic changes of China in the early 1990s.",
+          "year": "2025",
+          "rating": 6.9
         }
       ]
     },
     "IFC Center": {
       "url": "https://www.ifccenter.com/",
       "events": [
-        {
-          "title": "SPACE COWBOY",
-          "link": "https://www.ifccenter.com/films/space-cowboy/",
-          "poster": "https://image.tmdb.org/t/p/w300/qkw3sQB1IBxnd7oGhbPBHuoEIzm.jpg",
-          "overview": "Joe Jennings, a pioneer of skydiving cinematography, looks back on a lifetime of creating iconic moments in film and television, while he tries to pull off his most ambitious stunt yet, turning a dreamlike vision into reality.",
-          "year": "2024"
-        },
         {
           "title": "ALPHA",
           "link": "https://www.ifccenter.com/films/alpha/",
@@ -1036,7 +1024,19 @@
         },
         {
           "title": "Best in Show: The Films of Catherine O&039;Hara",
-          "link": "https://www.ifccenter.com/series/best-in-show-the-films-of-catherine-ohara/"
+          "link": "https://www.ifccenter.com/series/best-in-show-the-films-of-catherine-ohara/",
+          "date_str": "Mar 27"
+        },
+        {
+          "title": "SERPENT&039;S PATH AND CHIME",
+          "link": "https://www.ifccenter.com/films/serpents-path-and-chime/"
+        },
+        {
+          "title": "Space Cowboy",
+          "link": "https://www.ifccenter.com/films/space-cowboy/",
+          "poster": "https://image.tmdb.org/t/p/w300/qkw3sQB1IBxnd7oGhbPBHuoEIzm.jpg",
+          "overview": "Joe Jennings, a pioneer of skydiving cinematography, looks back on a lifetime of creating iconic moments in film and television, while he tries to pull off his most ambitious stunt yet, turning a dreamlike vision into reality.",
+          "year": "2024"
         },
         {
           "title": "Live-Action Oscar-Nominated Shorts 2026",
@@ -1079,17 +1079,11 @@
         {
           "title": "Below the Clouds",
           "link": "https://www.filmlinc.org/films/below-the-clouds/",
-          "date_str": "Mar 15",
+          "date_str": "Mar 16",
           "poster": "https://image.tmdb.org/t/p/w300/xmTTrWGbw2wIHBw0ht5Oo6AJGZd.jpg",
           "overview": "Naples faces dual volcanic threats from Vesuvius and Campi Flegrei. Amid increasing tremors, archaeologists work as residents live anxiously, haunted by Pompeii's fate while emergency services strain.",
           "year": "2025",
           "rating": 6.0
-        },
-        {
-          "title": "Colors of Time",
-          "link": "https://www.filmlinc.org/films/colors-of-time/",
-          "date_str": "Mar 15",
-          "overview": "This film will investigate the prolific musical period that begins in the middle of the 1960s and continues to the beginning of the 21st century: a half a century of music history in the United States and UK.  This motion picture won't be the portrait of the person who'll serve as the \"leitmotif\" of this survey - even if this film will be based on the passionate viewpoints of Daniel Caux, who at the same time is a musicologist, essayist, activist, radioman, promoter and friend of the musicians who will be the subject of this film -, but rather the portrait of a particularly astounding era."
         },
         {
           "title": "Damnation",
@@ -1106,15 +1100,6 @@
           "poster": "https://image.tmdb.org/t/p/w300/8yoTbPfrcqxNWkIIo7bayF2N8hl.jpg",
           "overview": "Lisa, a photographer, has gone missing. The last known detail is that she had been photographing rural football stadiums in villages across Georgia. Her father, Irakli, sets out to search for her, traveling from place to place. Levani, Lisa's best friend – and an invisible person – also sets off to help.",
           "year": "2026"
-        },
-        {
-          "title": "Enzo",
-          "link": "https://www.filmlinc.org/films/enzo/",
-          "date_str": "Mar 15",
-          "poster": "https://image.tmdb.org/t/p/w300/nlki3XDhduO0OHueqIwcqgyVVoK.jpg",
-          "overview": "A 16-year-old boy who defies his bourgeois family’s expectations by starting a masonry apprenticeship where he meets a charismatic Ukrainian colleague who shakes up his world.",
-          "year": "2025",
-          "rating": 6.6
         },
         {
           "title": "Family Nest",
@@ -1145,11 +1130,6 @@
           "rating": 6.6
         },
         {
-          "title": "New Wave Oscars Party",
-          "link": "https://www.filmlinc.org/films/new-wave-oscars-party/",
-          "date_str": "Mar 15"
-        },
-        {
           "title": "Satantango",
           "link": "https://www.filmlinc.org/films/satantango/",
           "date_str": "Mar 28",
@@ -1161,7 +1141,7 @@
         {
           "title": "Sirat",
           "link": "https://www.filmlinc.org/films/sirat/",
-          "date_str": "Mar 15",
+          "date_str": "Mar 16",
           "also_at": [
             "IFC Center"
           ],
@@ -1198,7 +1178,7 @@
         {
           "title": "The Secret Agent",
           "link": "https://www.filmlinc.org/films/the-secret-agent/",
-          "date_str": "Mar 15",
+          "date_str": "Mar 16",
           "also_at": [
             "Syndicated BK",
             "BAM"
@@ -1206,7 +1186,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/rZqolYhxMEe6TZZTjSmFw9crDTD.jpg",
           "overview": "Brazil, 1977. Marcelo, a technology expert in his early 40s, is on the run. Hoping to reunite with his son, he travels to Recife during Carnival but soon realizes that the city is not the safe haven he was expecting.",
           "year": "2025",
-          "rating": 7.4
+          "rating": 7.3
         },
         {
           "title": "The State I Am In",
@@ -1221,7 +1201,7 @@
           "title": "The Stranger",
           "link": "https://www.filmlinc.org/films/the-stranger/",
           "date_str": "Apr 03",
-          "poster": "https://image.tmdb.org/t/p/w300/s97TitarxPtIdIsU7u1BSnf0FW5.jpg",
+          "poster": "https://image.tmdb.org/t/p/w300/b09A92ZuTH5RRIdIeM16kXIgl8M.jpg",
           "overview": "A former communist militant and a \"live and let live\" man form an unlikely friendship on a park bench, sharing their life stories with humor and heart.",
           "year": "2026",
           "rating": 6.7
@@ -1236,29 +1216,42 @@
           "rating": 7.6
         },
         {
-          "title": "The Wizard of the Kremlin",
-          "link": "https://www.filmlinc.org/films/the-wizard-of-the-kremlin/",
-          "date_str": "Mar 15",
-          "poster": "https://image.tmdb.org/t/p/w300/l8eEJ6iQPGLala7Oo43LTYb31fM.jpg",
-          "overview": "Russia, early 1990s. Amid post-Soviet chaos, a brilliant young man, Vadim Baranov, charts his path. First an artist, then a reality TV producer, he becomes the spin doctor to a rising KGB agent: Vladimir Putin. At the heart of power, Baranov shapes the new Russia, blurring the boundaries between truth and lies, belief and manipulation. Only the magnetic Ksenia is beyond his control, tempting him away from this dangerous game. Years later, after retreating into silence and shrouded in mystery, Baranov finally opens up, revealing the dark secrets of the regime he helped build.",
-          "year": "2026",
-          "rating": 6.5
+          "title": "Transit",
+          "link": "https://www.filmlinc.org/films/transit/",
+          "date_str": "Mar 16",
+          "overview": "A man responsible for documenting deaths at the hospital answers phone calls from families searching for loved ones who have gone missing during the war.",
+          "year": "2023"
+        },
+        {
+          "title": "Tristan und Isolde",
+          "link": "https://www.filmlinc.org/films/tristan-und-isolde/",
+          "date_str": "Mar 21",
+          "poster": "https://image.tmdb.org/t/p/w300/9OUw86S6wzlpb8Ho8dws8lngrco.jpg",
+          "overview": "Production Bayreuth 2024. There is no arrival in Tristan and Isolde, only the longing for the unattainable, for the place “where the end of deception promised me my heart”. Two people who strive to fall out of the roles ascribed to them, to escape the supposed lies of the day. Two people suffering from life, whose declaration of love consists of wanting to restore a moment that has irretrievably passed. Two nocturnal devotees who, in their regressive desire to be uplifted and completely abandon themselves, lose touch with reality and who, in their desire to abandon their ego to another and escape their own history, ultimately fail themselves. “To long to die, not to die of longing.”",
+          "year": "2024"
+        },
+        {
+          "title": "Undine",
+          "link": "https://www.filmlinc.org/films/undine/",
+          "date_str": "Mar 16",
+          "poster": "https://image.tmdb.org/t/p/w300/oY3zXoBD3bsO6aqM3iAN3Dy4RvL.jpg",
+          "overview": "A young man in 1930s Berlin finds himself torn between his love for a young performer and his desire for wealth and power. Based on the German fairytale of the same name.",
+          "year": "2026"
+        },
+        {
+          "title": "Werckmeister Harmonies",
+          "link": "https://www.filmlinc.org/films/werckmeister-harmonies/",
+          "date_str": "Mar 29",
+          "poster": "https://image.tmdb.org/t/p/w300/fzG0xks6HNSnQg6atlF98brHvIT.jpg",
+          "overview": "A naive young man witnesses an escalation of violence in his small hometown following the arrival of a mysterious circus attraction.",
+          "year": "2001",
+          "rating": 7.8
         }
       ]
     },
     "Anthology Film Archives": {
       "url": "https://anthologyfilmarchives.org/film_screenings/calendar",
       "events": [
-        {
-          "title": "MABOU MINES PGM 3: LEAR '87 ARCHIVE, PART 2",
-          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
-          "date_str": "Mar 15"
-        },
-        {
-          "title": "MABOU MINES PGM 5: MABOU MINES DOLLHOUSE",
-          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
-          "date_str": "Mar 15"
-        },
         {
           "title": "MABOU MINES PGM 6: OTHER CHILDREN + DEAD END KIDS",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
@@ -1384,46 +1377,30 @@
           "overview": "Long after his premature death, the impact of Paul Sharits lingers on. The prominent iconoclast and innovator provoked with fast-flickering, pulsating, colourful mosaics. The many interviews and testimonies are also a portrait of a generation of leading voices in experimental filmmaking.",
           "year": "2015",
           "rating": 5.6
+        },
+        {
+          "title": "THE NUTTY PROFESSOR",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+          "date_str": "Mar 23",
+          "poster": "https://image.tmdb.org/t/p/w300/fMtb5aZoLRNbMnCkatFsTmPRfl5.jpg",
+          "overview": "When beautiful Carla Purty joins the university faculty, genetic professor Dr. Sherman Klump grows desperate to whittle his 400-pound frame down to size and win her heart. So, with one swig of his experimental fat-reducing serum, Sherman becomes 'Buddy Love', a fast-talking, pumped-up, plumped down Don Juan.",
+          "year": "1996",
+          "rating": 5.6
+        },
+        {
+          "title": "NOUVELLE VAGUE",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+          "date_str": "Mar 23",
+          "poster": "https://image.tmdb.org/t/p/w300/AfE7DZ0DPgme6I58dlYp1Bo9xeN.jpg",
+          "overview": "After writing for Cahiers du cinéma, a young Jean-Luc Godard decides making films is the best film criticism. He convinces producer Georges de Beauregard to fund a low-budget feature, and creates a treatment with fellow New Wave filmmaker François Truffaut about a gangster couple. The result? Breathless, one of the first features of the Nouvelle Vague era of French cinema.",
+          "year": "2025",
+          "rating": 7.3
         }
       ]
     },
     "MoMA": {
       "url": "https://www.moma.org/calendar/film",
       "events": [
-        {
-          "title": "River of No Return",
-          "link": "https://www.moma.org/calendar/events/11221",
-          "date_str": "Sun, Mar 15",
-          "poster": "https://image.tmdb.org/t/p/w300/h6HkT7aJGx119cmXw2ahHcjdsJ0.jpg",
-          "overview": "David Stora summarizes in one lively minute \"River of No Return\" by Otto Preminger, with Marilyn Monroe.",
-          "year": "2023"
-        },
-        {
-          "title": "Near Dark",
-          "link": "https://www.moma.org/calendar/events/11291",
-          "date_str": "Sun, Mar 15",
-          "poster": "https://image.tmdb.org/t/p/w300/hVhFNn3IQxxARvnpLIKMx8ZfTtG.jpg",
-          "overview": "A farm boy reluctantly becomes a member of the undead when a girl he meets turns out to be part of a band of vampires who roam the highways in stolen cars.",
-          "year": "1987",
-          "rating": 6.8
-        },
-        {
-          "title": "Gentlemen Prefer Blondes",
-          "link": "https://www.moma.org/calendar/events/11220",
-          "date_str": "Sun, Mar 15",
-          "poster": "https://image.tmdb.org/t/p/w300/fDozhst5HVJJcd3BM8ZOsKniO7Q.jpg",
-          "overview": "Lorelei Lee is a beautiful showgirl engaged to be married to the wealthy Gus Esmond, much to the disapproval of Gus' rich father, Esmond Sr., who thinks that Lorelei is just after his money. When Lorelei goes on a cruise accompanied only by her best friend, Dorothy Shaw, Esmond Sr. hires Ernie Malone, a private detective, to follow her and report any questionable behavior that would disqualify her from the marriage.",
-          "year": "1953",
-          "rating": 7.3
-        },
-        {
-          "title": "The Last Emperor",
-          "link": "https://www.moma.org/calendar/events/11292",
-          "date_str": "Sun, Mar 15",
-          "poster": "https://image.tmdb.org/t/p/w300/7gW2f8brLbCM0i95QUyXRoZM42N.jpg",
-          "overview": "Reenacting the suicide episode of the last Ming emperor, Chong-zhen from the classic Cantonese Opera Floral Princess, this experimental short film blending Cantonese Opera and modern dance elements reveals the journey of the defeated emperor accompanied by his faithful eunuch, Wang Sing-yan, on their way to the summit of Coal Hill to end their lives. Apart from inviting new perspectives towards their ambiguous queer overtones, it also explores the crossroads of life and death, authority and obedience, love and sacrifice, power and duty, that befall under the traditional patriarchy.",
-          "year": "2023"
-        },
         {
           "title": "An Evening with Air Afrique, Part 1",
           "link": "https://www.moma.org/calendar/events/11271",
@@ -1460,6 +1437,15 @@
           "overview": "1985 Argentine documentary film directed by Susana Blaustein Muñoz and Lourdes Portillo about the Mothers of the Plaza de Mayo.",
           "year": "1985",
           "rating": 6.1
+        },
+        {
+          "title": "All About Eve",
+          "link": "https://www.moma.org/calendar/events/11216",
+          "date_str": "Tue, Mar 17",
+          "poster": "https://image.tmdb.org/t/p/w300/blBzZaatPWVuWpXEnPscMA4Xp6m.jpg",
+          "overview": "From the moment she glimpses her idol at the stage door, Eve Harrington is determined to take the reins of power away from the great actress Margo Channing. Eve maneuvers her way into Margo's Broadway role, becomes a sensation and even causes turmoil in the lives of Margo's director boyfriend, her playwright and his wife. Only the cynical drama critic sees through Eve, admiring her audacity and perfect pattern of deceit.",
+          "year": "1950",
+          "rating": 8.1
         },
         {
           "title": "Sugar Cane Alley (Rue Cases-Nègres)",
@@ -1595,12 +1581,25 @@
           "overview": "Disciplined Italian composer Antonio Salieri becomes consumed by jealousy and resentment towards the hedonistic and remarkably talented young Salzburger composer Wolfgang Amadeus Mozart.",
           "year": "1984",
           "rating": 8.0
+        },
+        {
+          "title": "The Misfits",
+          "link": "https://www.moma.org/calendar/events/11227",
+          "date_str": "Sun, Mar 22",
+          "poster": "https://image.tmdb.org/t/p/w300/eMYN7xwMW3y5E4s92Qm6Li0oAlG.jpg",
+          "overview": "Behrouz and Ghoncheh move into their new house, but in the middle of the night they encounter a burglar who claims to know a secret about their husband....",
+          "year": "2025"
         }
       ]
     },
     "Nitehawk (Williamsburg)": {
       "url": "https://nitehawkcinema.com/williamsburg/",
       "events": [
+        {
+          "title": "Resurrection of Eve",
+          "link": "https://nitehawkcinema.com/movies/resurrection-of-eve/",
+          "date_str": "Mar 16"
+        },
         {
           "title": "Jawbreaker",
           "link": "https://nitehawkcinema.com/movies/jawbreaker/",
@@ -1636,11 +1635,6 @@
           "overview": "We follow 24 hours in the life of a being moving from life to life like a cold and solitary assassin moving from hit to hit. In each of these interwoven lives, the being possesses an entirely distinct identity: sometimes a man, sometimes a woman, sometimes youthful, sometimes old. By turns murderer, beggar, company chairman, monstrous creature, worker, family man.",
           "year": "2012",
           "rating": 6.986
-        },
-        {
-          "title": "Resurrection of Eve",
-          "link": "https://nitehawkcinema.com/movies/resurrection-of-eve/",
-          "date_str": "Mar 16"
         },
         {
           "title": "Urusei Yatsura 2: Beautiful Dreamer",
@@ -1688,24 +1682,6 @@
           "rating": 7.6
         },
         {
-          "title": "Faust",
-          "link": "https://nitehawkcinema.com/movies/faust-lsc/",
-          "date_str": "Mar 25",
-          "poster": "https://image.tmdb.org/t/p/w300/8jH8wVLNZ24QVxm5IEByWpsmHXJ.jpg",
-          "overview": "A doctor in early 19th-century Germany becomes infatuated with the sister of a man he unintentionally killed and bargains with the Devil incarnate to conjure their union in exchange for his soul.",
-          "year": "2011",
-          "rating": 6.567
-        },
-        {
-          "title": "The French Connection",
-          "link": "https://nitehawkcinema.com/movies/the-french-connection/",
-          "date_str": "Mar 28",
-          "poster": "https://image.tmdb.org/t/p/w300/pH4saPwMjhnVGwmSH6RkMaHrt3s.jpg",
-          "overview": "Tough narcotics detective 'Popeye' Doyle is in hot pursuit of a suave French drug dealer who may be the key to a huge heroin-smuggling operation.",
-          "year": "1971",
-          "rating": 7.496
-        },
-        {
           "title": "The Descent",
           "link": "https://nitehawkcinema.com/movies/the-descent/",
           "date_str": "Mar 27",
@@ -1715,9 +1691,13 @@
           "rating": 6.978
         },
         {
-          "title": "Ultra-Mega Oscars 2026",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/one-nite-only/",
-          "date_str": "Mar 15"
+          "title": "The French Connection",
+          "link": "https://nitehawkcinema.com/movies/the-french-connection/",
+          "date_str": "Mar 28",
+          "poster": "https://image.tmdb.org/t/p/w300/pH4saPwMjhnVGwmSH6RkMaHrt3s.jpg",
+          "overview": "Tough narcotics detective 'Popeye' Doyle is in hot pursuit of a suave French drug dealer who may be the key to a huge heroin-smuggling operation.",
+          "year": "1971",
+          "rating": 7.496
         },
         {
           "title": "Teddy, Out of Tune",
@@ -1750,6 +1730,15 @@
           "title": "Spoons Toons & Booze Spring Break!",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/spoons-toons-booze/",
           "date_str": "Mar 21"
+        },
+        {
+          "title": "Faust",
+          "link": "https://nitehawkcinema.com/movies/faust-lsc/",
+          "date_str": "Mar 25",
+          "poster": "https://image.tmdb.org/t/p/w300/8jH8wVLNZ24QVxm5IEByWpsmHXJ.jpg",
+          "overview": "A doctor in early 19th-century Germany becomes infatuated with the sister of a man he unintentionally killed and bargains with the Devil incarnate to conjure their union in exchange for his soul.",
+          "year": "2011",
+          "rating": 6.567
         },
         {
           "title": "More Beautiful Perversions",
@@ -1837,6 +1826,15 @@
           "rating": 7.8
         },
         {
+          "title": "Riding in Cars with Boys",
+          "link": "https://nitehawkcinema.com/movies/riding-in-cars-with-boys/",
+          "date_str": "Mar 17",
+          "poster": "https://image.tmdb.org/t/p/w300/lz8FCZAzfr2gzju6YM4s7UCZugL.jpg",
+          "overview": "In 1965, a young woman with dreams of becoming a writer has a son at the age of 15 and struggles to make things work with the drug-addicted father.",
+          "year": "2001",
+          "rating": 6.736
+        },
+        {
           "title": "Labyrinth",
           "link": "https://nitehawkcinema.com/movies/labyrinth/",
           "date_str": "Mar 21",
@@ -1855,115 +1853,18 @@
           "rating": 6.0
         },
         {
-          "title": "The Best Oscars Party!",
-          "link": "https://nitehawkcinema.com/prospectpark/film-series/one-nite-only-2/",
-          "date_str": "Mar 15"
-        },
-        {
-          "title": "Riding in Cars with Boys",
-          "link": "https://nitehawkcinema.com/movies/riding-in-cars-with-boys/",
-          "date_str": "Mar 17",
-          "poster": "https://image.tmdb.org/t/p/w300/lz8FCZAzfr2gzju6YM4s7UCZugL.jpg",
-          "overview": "In 1965, a young woman with dreams of becoming a writer has a son at the age of 15 and struggles to make things work with the drug-addicted father.",
-          "year": "2001",
-          "rating": 6.736
-        },
-        {
           "title": "Revelations of Divine Love",
           "link": "https://nitehawkcinema.com/prospectpark/film-series/local-color-2/",
           "date_str": "Apr 5",
-          "also_at": [
-            "Spectacle Theater"
-          ],
           "poster": "https://image.tmdb.org/t/p/w300/q8YNdWmEGP6kwNVADATDV2ll9yA.jpg",
           "overview": "Between pandemics, people’s revolts and male institutions, this period film cheekily combines fantastic psychedelia and handmade sets. Inspired by the life story of Julian of Norwich, a 14th-century mystic and the first woman to write a book in English.",
           "year": "2025"
-        }
-      ]
-    },
-    "Spectacle Theater": {
-      "url": "https://www.spectacletheater.com/",
-      "events": [
-        {
-          "title": "REVELATIONS OF DIVINE LOVE",
-          "link": "https://www.spectacletheater.com/revelations-of-divine-love/",
-          "date_str": "Mar 10",
-          "also_at": [
-            "Nitehawk (Prospect Park)"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/q8YNdWmEGP6kwNVADATDV2ll9yA.jpg",
-          "overview": "Between pandemics, people’s revolts and male institutions, this period film cheekily combines fantastic psychedelia and handmade sets. Inspired by the life story of Julian of Norwich, a 14th-century mystic and the first woman to write a book in English.",
-          "year": "2025"
-        },
-        {
-          "title": "FILM DIARY 4: GO TO THE MOUNTAINS AND PRAY",
-          "link": "https://www.spectacletheater.com/film-diary-4-go-to-the-mountains-and-pray/",
-          "date_str": "Mar 05"
-        },
-        {
-          "title": "ENERGY ON THE LOOSE: Short Film Program",
-          "link": "https://www.spectacletheater.com/energy-on-the-loose/",
-          "date_str": "Mar 05"
-        },
-        {
-          "title": "NUMBSKULL REVOLUTION",
-          "link": "https://www.spectacletheater.com/numbskull-revolution/",
-          "date_str": "Mar 03",
-          "poster": "https://image.tmdb.org/t/p/w300/9TrwHagZidiZlzDchxfK6jc7Ku7.jpg",
-          "overview": "Satire and deconstruction the high art scene with an eyeball-scorching onslaught of mind-blowing narrative madness and honey-laced pathos.",
-          "year": "2026"
-        },
-        {
-          "title": "STRAY CAT ROCK",
-          "link": "https://www.spectacletheater.com/stray-cat-rock/",
-          "date_str": "Feb 28",
-          "poster": "https://image.tmdb.org/t/p/w300/iTdsd1VAWOOY8Vd8uh9oj4PDW9d.jpg",
-          "overview": "Wild young people kidnap a wealthy woman and she becomes attracted to one of them. When she tells the man that she is the mistress of a religious leader, he and his posse make plans to rob her partner.",
-          "year": "1970",
-          "rating": 5.538
-        },
-        {
-          "title": "SUKEBAN DOYŌBI",
-          "link": "https://www.spectacletheater.com/sukeban-doyobi/",
-          "date_str": "Feb 28"
-        },
-        {
-          "title": "A NITE WITH TITE",
-          "link": "https://www.spectacletheater.com/nite-with-tite/",
-          "date_str": "Feb 28"
-        },
-        {
-          "title": "AN EVENING WITH ROSS MCELWEE",
-          "link": "https://www.spectacletheater.com/an-evening-with-ross-mcelwee/",
-          "date_str": "Feb 27"
-        },
-        {
-          "title": "FOUR FILMS BY LEIDA LAIUS",
-          "link": "https://www.spectacletheater.com/four-films-by-leida-laius/",
-          "date_str": "Feb 24"
-        },
-        {
-          "title": "PYJAMA GIRLS",
-          "link": "https://www.spectacletheater.com/pyjama-girls/",
-          "date_str": "Feb 23",
-          "overview": "Pyjama Girls presents the chaotic friendship of Irish teenagers Lauren and Tara as they navigate the trials of life, dressed all the while in their uniform of rebellion: pyjamas. Balancing tenderness with hilarity, Pyjama Girls tracks the explosive micro-dramas of teenage life against the bleak backdrop of Dublin's inner city flats. Lauren's future hangs in the balance as she takes part in street violence with rival teen gangs and faces expulsion from school. Over the course of the film we learn about the challenges that life throws her - from her addict mother to the disruptive world of the flats - and understand the crucial importance of her friendship with Tara.",
-          "year": "2010",
-          "rating": 5.5
         }
       ]
     },
     "Syndicated BK": {
       "url": "https://syndicatedbk.com/",
       "events": [
-        {
-          "title": "Hamnet",
-          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
-          "date_str": "Sunday 15, March",
-          "poster": "https://image.tmdb.org/t/p/w300/vbeyOZm2bvBXcbgPD3v6o94epPX.jpg",
-          "overview": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
-          "year": "2025",
-          "rating": 7.748
-        },
         {
           "title": "2026 Oscar Nominated Shorts: Animation",
           "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
@@ -1980,12 +1881,21 @@
           "poster": "https://image.tmdb.org/t/p/w300/rZqolYhxMEe6TZZTjSmFw9crDTD.jpg",
           "overview": "Brazil, 1977. Marcelo, a technology expert in his early 40s, is on the run. Hoping to reunite with his son, he travels to Recife during Carnival but soon realizes that the city is not the safe haven he was expecting.",
           "year": "2025",
-          "rating": 7.4
+          "rating": 7.3
         },
         {
           "title": "2026 Oscar Nominated Shorts: Live Action",
           "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
           "date_str": "Tuesday 17, March"
+        },
+        {
+          "title": "Hamnet",
+          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+          "date_str": "Tuesday 17, March",
+          "poster": "https://image.tmdb.org/t/p/w300/vbeyOZm2bvBXcbgPD3v6o94epPX.jpg",
+          "overview": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
+          "year": "2025",
+          "rating": 7.748
         },
         {
           "title": "No Other Choice",
@@ -2018,7 +1928,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/7Pd6ChSQjSXy4snJiorSdzg2cG3.jpg",
           "overview": "Colin, a timid gay man, is swept off his feet when Ray, an enigmatic and impossibly handsome biker, takes him on as his submissive in a crazy and erotic BDSM-focused relationship.",
           "year": "2025",
-          "rating": 6.2
+          "rating": 6.3
         },
         {
           "title": "The Moment",
@@ -2057,26 +1967,12 @@
           "overview": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
           "year": "1999",
           "rating": 8.2
-        },
-        {
-          "title": "2026 Oscar Nominated Shorts: Documentary",
-          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
-          "date_str": "Wednesday 18, March"
         }
       ]
     },
     "Paris Theater": {
       "url": "https://paristheaternyc.com",
       "events": [
-        {
-          "title": "Pickpocket",
-          "link": "https://www.paristheaternyc.com/film/ac-pickpocket",
-          "date_str": "Mar 15",
-          "poster": "https://image.tmdb.org/t/p/w300/kxpvceDv9fhFc4OAs82fmdzu17Y.jpg",
-          "overview": "Michel takes up pickpocketing on a lark and is arrested soon after. His mother dies shortly after his release, and despite the objections of his only friend, Jacques, and his mother's neighbor Jeanne, Michel teams up with a couple of petty thieves in order to improve his craft. With a police inspector keeping an eye on him, Michel also tries to get a straight job, but the temptation to steal is hard to resist.",
-          "year": "1959",
-          "rating": 7.3
-        },
         {
           "title": "There Will Be Blood",
           "link": "https://www.paristheaternyc.com/film/ac-there-will-be-blood",
@@ -2105,13 +2001,13 @@
           "rating": 6.8
         },
         {
-          "title": "Close Encounters of the Third Kind (Director's Cut)",
-          "link": "https://www.paristheaternyc.com/film/close-encounters-of-the-third-kind-70mm-big-and-loud",
+          "title": "The Sopranos Season 3: 25th Anniversary Panel",
+          "link": "https://www.paristheaternyc.com/film/ac-the-sopranos-season-3-25th-anniversary-panel",
           "date_str": "Mar 21"
         },
         {
-          "title": "The Sopranos Season 3: 25th Anniversary Panel",
-          "link": "https://www.paristheaternyc.com/film/ac-the-sopranos-season-3-25th-anniversary-panel",
+          "title": "Close Encounters of the Third Kind (Director's Cut)",
+          "link": "https://www.paristheaternyc.com/film/close-encounters-of-the-third-kind-70mm-big-and-loud",
           "date_str": "Mar 21"
         },
         {
@@ -2250,6 +2146,24 @@
           "date_str": "Mar 29",
           "poster": "https://image.tmdb.org/t/p/w300/7MCxa5hoSP4i2o8stwbkCgshMZN.jpg",
           "overview": "A filmmaker goes back to his home country Iran to find out about the story of his parents."
+        },
+        {
+          "title": "The Killing of a Sacred Deer",
+          "link": "https://www.paristheaternyc.com/film/the-killing-of-a-sacred-deer-something-very-bad",
+          "date_str": "Mar 29",
+          "poster": "https://image.tmdb.org/t/p/w300/e4DGlsc9g0h5AyoyvvAuIRnofN7.jpg",
+          "overview": "Dr. Steven Murphy is a renowned cardiovascular surgeon who presides over a spotless household with his wife and two children. Lurking at the margins of his idyllic suburban existence is Martin, a fatherless teen who insinuates himself into the doctor's life in gradually unsettling ways.",
+          "year": "2017",
+          "rating": 7.0
+        },
+        {
+          "title": "Bullitt",
+          "link": "https://www.paristheaternyc.com/film/bullitt-branch-selects",
+          "date_str": "Mar 29",
+          "poster": "https://image.tmdb.org/t/p/w300/2ffzF1WmeXtH420fSUoCrecFvDA.jpg",
+          "overview": "Senator Walter Chalmers is aiming to take down mob boss Pete Ross with the help of testimony from the criminal's hothead brother Johnny, who is in protective custody in San Francisco under the watch of police lieutenant Frank Bullitt. When a pair of mob hitmen enter the scene, Bullitt follows their trail through a maze of complications and double-crosses. This thriller includes one of the most famous car chases ever filmed.",
+          "year": "1968",
+          "rating": 7.1
         }
       ]
     },
@@ -2267,7 +2181,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/rZqolYhxMEe6TZZTjSmFw9crDTD.jpg",
           "overview": "Brazil, 1977. Marcelo, a technology expert in his early 40s, is on the run. Hoping to reunite with his son, he travels to Recife during Carnival but soon realizes that the city is not the safe haven he was expecting.",
           "year": "2025",
-          "rating": 7.4
+          "rating": 7.3
         },
         {
           "title": "Pillion",
@@ -2279,13 +2193,13 @@
           "poster": "https://image.tmdb.org/t/p/w300/7Pd6ChSQjSXy4snJiorSdzg2cG3.jpg",
           "overview": "Colin, a timid gay man, is swept off his feet when Ray, an enigmatic and impossibly handsome biker, takes him on as his submissive in a crazy and erotic BDSM-focused relationship.",
           "year": "2025",
-          "rating": 6.2
+          "rating": 6.3
         },
         {
           "title": "“Wuthering Heights”",
           "link": "https://www.bam.org/film/wuthering-heights",
           "date_str": "Now Playing",
-          "poster": "https://image.tmdb.org/t/p/w300/iZfWsOD2kLJlH1RML0ceP6bmQbx.jpg",
+          "poster": "https://image.tmdb.org/t/p/w300/3YBce6dTh1D5oCMITXk2S5QhPt.jpg",
           "overview": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
           "year": "2026",
           "rating": 6.4
@@ -2327,10 +2241,10 @@
           "title": "Project Hail Mary",
           "link": "https://www.bam.org/film/project-hail-mary",
           "date_str": "Mar 20",
-          "poster": "https://image.tmdb.org/t/p/w300/vOhW7Lbt4kZAqe0vJhVC4Ced9x2.jpg",
+          "poster": "https://image.tmdb.org/t/p/w300/huVzcVrlK8aiLd240ienleODvWl.jpg",
           "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
           "year": "2026",
-          "rating": 9.1
+          "rating": 8.7
         },
         {
           "title": "An Evening of Shorts Honoring Women’s History Month",
