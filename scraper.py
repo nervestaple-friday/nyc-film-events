@@ -1530,7 +1530,12 @@ def main():
     enrich_with_tmdb(events_by_venue)
 
     if PUSH:
-        push_to_github(events_by_venue)
+        if total_events == 0:
+            print('[ABORT] 0 events after filtering — refusing to push empty dataset', file=sys.stderr)
+        elif total_events < 20:
+            print(f'[WARN] Only {total_events} events — suspiciously low, refusing to push', file=sys.stderr)
+        else:
+            push_to_github(events_by_venue)
 
 
 if __name__ == '__main__':
