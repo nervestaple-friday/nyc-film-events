@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-15T11:04:00.922903+00:00",
+  "updated": "2026-03-16T11:01:26.323527+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -809,14 +809,6 @@
       "url": "https://filmforum.org/films",
       "events": [
         {
-          "title": "THE BELLBOY",
-          "link": "https://filmforum.org/film/the-bellboy-ffjr-2026",
-          "poster": "https://image.tmdb.org/t/p/w300/xmdlbkVeUn97buYm4ZZ8quY0EVZ.jpg",
-          "overview": "Stanley is a bellboy at the Fountainbleau Hotel in Miami Beach, where he performs his duties quietly and without a word to anyone. All he displays are facial expressions and a comedic slapstick style. And anything that can go wrong, does go wrong when Stanley is involved. One day, Jerry Lewis arrives at the hotel and some of the staff notice the striking resemblance.",
-          "year": "1960",
-          "rating": 6.2
-        },
-        {
           "title": "DAYS AND NIGHTS IN THE FOREST",
           "link": "https://filmforum.org/film/days-and-nights-in-the-forest",
           "poster": "https://image.tmdb.org/t/p/w300/dJvcIMaFXK77AQ934AZ4PpA19nT.jpg",
@@ -850,6 +842,14 @@
           "rating": 6.389
         },
         {
+          "title": "LA POINTE COURTE",
+          "link": "https://filmforum.org/film/la-pointe-courte-agnes-varda",
+          "poster": "https://image.tmdb.org/t/p/w300/jPT3tkTu9U7oXkLTSpkPBAr5dwO.jpg",
+          "overview": "A penetrating study of a marriage on the rocks, set against the backdrop of a small Mediterranean fishing village. Both a stylized depiction of the complicated relationship between a married couple and a documentary-like look at the daily struggles of the inhabitants of Sète in the South of France.",
+          "year": "1956",
+          "rating": 6.9
+        },
+        {
           "title": "CLÉO FROM 5 TO 7",
           "link": "https://filmforum.org/film/cleo-from-5-to-7-agnes-varda",
           "poster": "https://image.tmdb.org/t/p/w300/oelBStY4xpguaplRv15P3Za7Xsr.jpg",
@@ -866,12 +866,12 @@
           "rating": 7.4
         },
         {
-          "title": "LA POINTE COURTE",
-          "link": "https://filmforum.org/film/la-pointe-courte-agnes-varda",
-          "poster": "https://image.tmdb.org/t/p/w300/jPT3tkTu9U7oXkLTSpkPBAr5dwO.jpg",
-          "overview": "A penetrating study of a marriage on the rocks, set against the backdrop of a small Mediterranean fishing village. Both a stylized depiction of the complicated relationship between a married couple and a documentary-like look at the daily struggles of the inhabitants of Sète in the South of France.",
-          "year": "1956",
-          "rating": 6.9
+          "title": "THE BELLBOY",
+          "link": "https://filmforum.org/film/the-bellboy-ffjr-2026",
+          "poster": "https://image.tmdb.org/t/p/w300/xmdlbkVeUn97buYm4ZZ8quY0EVZ.jpg",
+          "overview": "Stanley is a bellboy at the Fountainbleau Hotel in Miami Beach, where he performs his duties quietly and without a word to anyone. All he displays are facial expressions and a comedic slapstick style. And anything that can go wrong, does go wrong when Stanley is involved. One day, Jerry Lewis arrives at the hotel and some of the staff notice the striking resemblance.",
+          "year": "1960",
+          "rating": 6.2
         },
         {
           "title": "MONEY FROM HOME",
@@ -966,18 +966,6 @@
     "IFC Center": {
       "url": "https://www.ifccenter.com/",
       "events": [
-        {
-          "title": "ALPHA",
-          "link": "https://www.ifccenter.com/films/alpha/",
-          "date_str": "Mar 16",
-          "also_at": [
-            "BAM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/3SHrOxEjlcPPJUnM1vSzJCj3qOO.jpg",
-          "overview": "Alpha, a troubled 13-year-old lives with her single mom. Their world collapses the day she returns from school with a tattoo on her arm.",
-          "year": "2025",
-          "rating": 6.4
-        },
         {
           "title": "GOOD HOT STUFF",
           "link": "https://www.ifccenter.com/films/good-hot-stuff/"
@@ -1079,7 +1067,7 @@
         {
           "title": "Below the Clouds",
           "link": "https://www.filmlinc.org/films/below-the-clouds/",
-          "date_str": "Mar 16",
+          "date_str": "Mar 17",
           "poster": "https://image.tmdb.org/t/p/w300/xmTTrWGbw2wIHBw0ht5Oo6AJGZd.jpg",
           "overview": "Naples faces dual volcanic threats from Vesuvius and Campi Flegrei. Amid increasing tremors, archaeologists work as residents live anxiously, haunted by Pompeii's fate while emergency services strain.",
           "year": "2025",
@@ -1141,7 +1129,7 @@
         {
           "title": "Sirat",
           "link": "https://www.filmlinc.org/films/sirat/",
-          "date_str": "Mar 16",
+          "date_str": "Mar 17",
           "also_at": [
             "IFC Center"
           ],
@@ -1178,12 +1166,12 @@
         {
           "title": "The Secret Agent",
           "link": "https://www.filmlinc.org/films/the-secret-agent/",
-          "date_str": "Mar 16",
+          "date_str": "Mar 17",
           "also_at": [
             "Syndicated BK",
             "BAM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/rZqolYhxMEe6TZZTjSmFw9crDTD.jpg",
+          "poster": "https://image.tmdb.org/t/p/w300/jadCjQLZpX9yxlk4xPtyx4He2Ll.jpg",
           "overview": "Brazil, 1977. Marcelo, a technology expert in his early 40s, is on the run. Hoping to reunite with his son, he travels to Recife during Carnival but soon realizes that the city is not the safe haven he was expecting.",
           "year": "2025",
           "rating": 7.3
@@ -1216,27 +1204,12 @@
           "rating": 7.6
         },
         {
-          "title": "Transit",
-          "link": "https://www.filmlinc.org/films/transit/",
-          "date_str": "Mar 16",
-          "overview": "A man responsible for documenting deaths at the hospital answers phone calls from families searching for loved ones who have gone missing during the war.",
-          "year": "2023"
-        },
-        {
           "title": "Tristan und Isolde",
           "link": "https://www.filmlinc.org/films/tristan-und-isolde/",
           "date_str": "Mar 21",
           "poster": "https://image.tmdb.org/t/p/w300/9OUw86S6wzlpb8Ho8dws8lngrco.jpg",
           "overview": "Production Bayreuth 2024. There is no arrival in Tristan and Isolde, only the longing for the unattainable, for the place “where the end of deception promised me my heart”. Two people who strive to fall out of the roles ascribed to them, to escape the supposed lies of the day. Two people suffering from life, whose declaration of love consists of wanting to restore a moment that has irretrievably passed. Two nocturnal devotees who, in their regressive desire to be uplifted and completely abandon themselves, lose touch with reality and who, in their desire to abandon their ego to another and escape their own history, ultimately fail themselves. “To long to die, not to die of longing.”",
           "year": "2024"
-        },
-        {
-          "title": "Undine",
-          "link": "https://www.filmlinc.org/films/undine/",
-          "date_str": "Mar 16",
-          "poster": "https://image.tmdb.org/t/p/w300/oY3zXoBD3bsO6aqM3iAN3Dy4RvL.jpg",
-          "overview": "A young man in 1930s Berlin finds himself torn between his love for a young performer and his desire for wealth and power. Based on the German fairytale of the same name.",
-          "year": "2026"
         },
         {
           "title": "Werckmeister Harmonies",
@@ -1246,17 +1219,21 @@
           "overview": "A naive young man witnesses an escalation of violence in his small hometown following the arrival of a mysterious circus attraction.",
           "year": "2001",
           "rating": 7.8
+        },
+        {
+          "title": "Yella",
+          "link": "https://www.filmlinc.org/films/yella/",
+          "date_str": "Mar 18",
+          "poster": "https://image.tmdb.org/t/p/w300/axC6pBrFc7Y2I6pFzvvte9uRf9x.jpg",
+          "overview": "A young East German woman leaves her husband and business partner and relocates to a West German city to start anew as an accountant, but he soon catches up with her.",
+          "year": "2007",
+          "rating": 6.2
         }
       ]
     },
     "Anthology Film Archives": {
       "url": "https://anthologyfilmarchives.org/film_screenings/calendar",
       "events": [
-        {
-          "title": "MABOU MINES PGM 6: OTHER CHILDREN + DEAD END KIDS",
-          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
-          "date_str": "Mar 16"
-        },
         {
           "title": "MABOU MINES PGM 4: FAR FROM POLAND",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
@@ -1285,6 +1262,11 @@
           "overview": "After his girl leaves him for someone else, Herbert gets really depressed and starts searching for a job. He finally finds one in a big house which is inhabited by many, many women. Can he live in the same home with all these females?",
           "year": "1961",
           "rating": 6.3
+        },
+        {
+          "title": "MABOU MINES PGM 6: OTHER CHILDREN + DEAD END KIDS",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+          "date_str": "Mar 19"
         },
         {
           "title": "TOUT VA BIEN",
@@ -1398,37 +1380,124 @@
         }
       ]
     },
+    "Museum of the Moving Image": {
+      "url": "https://movingimage.org/whats-on/screenings-and-series/",
+      "events": [
+        {
+          "title": "Ghost World",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/",
+          "poster": "https://image.tmdb.org/t/p/w300/uwKqnUPE4dSM0kKuMW0vXpURh2T.jpg",
+          "overview": "Two quirky, cynical teenaged girls try to figure out what to do with their lives after high school graduation. After they play a prank on an eccentric, middle aged record collector, one of them befriends him, which causes a rift in the girls’ friendship.",
+          "year": "2001",
+          "rating": 7.1
+        },
+        {
+          "title": "In Jackson Heights",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/",
+          "poster": "https://image.tmdb.org/t/p/w300/3nLClMlhH75lU9Ey3k18H0suNFr.jpg",
+          "overview": "Legendary documentary filmmaker Frederick Wiseman (At Berkeley, National Gallery) explores the culture, politics and daily life of the Queens, NYC district of Jackson Heights, which lays claim to being the most diverse neighbourhood in the world.",
+          "year": "2015",
+          "rating": 6.8
+        },
+        {
+          "title": "2001: The Year, Not the Movie",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/"
+        },
+        {
+          "title": "Always on Sunday: Greek Film Series",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/"
+        },
+        {
+          "title": "Disreputable Cinema",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/"
+        },
+        {
+          "title": "Jim Henson's World",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/",
+          "poster": "https://image.tmdb.org/t/p/w300/vFaopnGXRXxRf4z2Z3IgA1QtOyV.jpg",
+          "overview": "Kagami drags Marinette to Tokyo to help the Stellars defeat a new supervillain, but Marinette soon realizes her friend has another, untold reason for this trip to Japan.",
+          "year": "2025",
+          "rating": 8.1
+        },
+        {
+          "title": "World of Animation",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/",
+          "poster": "https://image.tmdb.org/t/p/w300/A4E2gMDVkNxiiozMlHkUP4St07l.jpg",
+          "overview": "This original work is by Andrew Shin, who made his directorial debut with \"The Rabbit in the Night Sky\" while working as a composer. Set in the fantastical worldview that is characteristic of Shin's works, the story explores the nature of our finite lives.  A young girl returns home after being released from hospital. There is an invisible wall between her and her father, and for some reason, she is terrified of finding mirrors. Soon, strange events begin to occur around the girl, and after she runs away from home, a mysterious woman appears before her... (MTL of eigacom overview)",
+          "year": "2024"
+        },
+        {
+          "title": "Reverse Shot Presents",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/"
+        },
+        {
+          "title": "Marilyn Monroe in New York",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/",
+          "poster": "https://image.tmdb.org/t/p/w300/1e4WBvQ2eM2S94SNpev0P5PG2Ge.jpg",
+          "overview": "In the immediate post-war period, amidst the rubble of a poverty-ridden Naples, two kids, Carmine and Celestina, try to survive as best they can by helping each other out. One night, they secretly board a ship bound for New York to reach Celestina’s sister, who emigrated to America several years earlier.  The two children join the many Italian emigrants seeking a new life in America and arrive in an unknown metropolis, which, after several misadventures, they will learn to call home.",
+          "year": "2024",
+          "rating": 7.2
+        },
+        {
+          "title": "Song & Dance",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/",
+          "poster": "https://image.tmdb.org/t/p/w300/hTJcqa7nXDjUBZaA2KKOiXg0czN.jpg",
+          "overview": "A highlight of Baltic culture, the festival dedicated to Latvian song and dance celebrates its 150th anniversary in Riga.",
+          "year": "2023"
+        },
+        {
+          "title": "Art & Craft",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/",
+          "poster": "https://image.tmdb.org/t/p/w300/eP0Po80HWMHNR3Nea8Yyf9DHlFt.jpg",
+          "overview": "This short documentary on the bamboo craft of Saputara was created as part of a group assignment for our foundation year at MIT ID Avantika University, Indore. Over the course of a 5-day workshop, we learned traditional bamboo crafting techniques from artisans and documented our journey.",
+          "year": "2024",
+          "rating": 10.0
+        },
+        {
+          "title": "Infinite Beauty: Muslim and MENASA Identity Onscreen",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/"
+        },
+        {
+          "title": "MoMI Loves",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/"
+        },
+        {
+          "title": "Las Premieres",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/",
+          "poster": "https://image.tmdb.org/t/p/w300/2aSxRDmisJP90H3S0aocyuQIe4z.jpg",
+          "overview": "Two academic teenage superstars realize, on the eve of their high school graduation, that they should have worked less and played more. Determined to never fall short of their peers, the girls set out on a mission to cram four years of fun into one night.",
+          "year": "2019",
+          "rating": 7.0
+        },
+        {
+          "title": "Queens on Screen",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/",
+          "poster": "https://image.tmdb.org/t/p/w300/i0OAXQpZQzsu1X2ldlesgbX0cg9.jpg",
+          "year": "1916"
+        },
+        {
+          "title": "Science on Screen",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/"
+        },
+        {
+          "title": "Silents, Please!",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/",
+          "poster": "https://image.tmdb.org/t/p/w300/dkJPWPtLoCvsXmXKFamPSL3tRMB.jpg",
+          "overview": "A TCM original production on why silent movies matter, featuring new interviews with Honorary Academy Award winner Kevin Brownlow, filmmaker Bill Morrison, TCM Silent Sunday Nights host Jacqueline Stewart, and film collector/expert Shane Fleming. They discuss the beauty, cultural importance, and long-standing impact that silent film holds in its celluloid.",
+          "year": "2020"
+        },
+        {
+          "title": "Writers’ Room",
+          "link": "https://movingimage.org/whats-on/screenings-and-series/",
+          "poster": "https://image.tmdb.org/t/p/w300/p5STRTJ0lQWWxRZJkQsf1CygsRn.jpg",
+          "year": "2024",
+          "rating": 10.0
+        }
+      ]
+    },
     "MoMA": {
       "url": "https://www.moma.org/calendar/film",
       "events": [
-        {
-          "title": "An Evening with Air Afrique, Part 1",
-          "link": "https://www.moma.org/calendar/events/11271",
-          "date_str": "Mon, Mar 16"
-        },
-        {
-          "title": "Monkey Business",
-          "link": "https://www.moma.org/calendar/events/11219",
-          "date_str": "Mon, Mar 16",
-          "poster": "https://image.tmdb.org/t/p/w300/gUaTF2e6rO7wRcop3yvOoce1wGB.jpg",
-          "overview": "In an orphanage around the year 1900, the principal of an orphanage tries to earn some money by selling the orphans for child labour. The moment we step in the story one of the orphans, Wim, is about to be sold to a brutal man. The man wants Wim to go to the market with a little monkey to pickpocket people. By the time they get to the market, Wim succeeds in escaping with the monkey by hiding in an old canalboat with the help of Jet, a girl who lives at the countryside. When they arrive at the farm where Jet lives, he meets Jets little sister Sien and her friend Ot, two little children who will take care of Wim and the monkey for the next weeks. When the brutal man finally finds out the hiding place of Wim, a true chase follows and Wim is locked up in the orphanage again. But then Jet’s father, a schoolteacher, interferes…. A story for the whole family about the start of the compulsory school attendance in 3D!",
-          "year": "2015",
-          "rating": 6.6
-        },
-        {
-          "title": "An Evening with Air Afrique, Part 2",
-          "link": "https://www.moma.org/calendar/events/11272",
-          "date_str": "Mon, Mar 16"
-        },
-        {
-          "title": "Marilyn Times Five",
-          "link": "https://www.moma.org/calendar/events/11217",
-          "date_str": "Mon, Mar 16",
-          "poster": "https://image.tmdb.org/t/p/w300/igYKEVj6fIM3Kv4dxIypjgKrict.jpg",
-          "overview": "A commentary on the destructive expectations of females in a male dominated society, Marilyn Times Five was made from an old stag film called \"The Apple-Knockers, and the Coke\"(1948) these sections of the film were set to Marilyn Monroe's song \"I'm Through With Love\". The film depicts a Marilyn Monroe look-a-like slowly taking her clothes off for the camera (the viewer). The woman's actions are looped several times which gives the audience a sensation of exhaustion. That exhaustion keeps building until the very end where the woman is shown crumpled on the floor in an awkward position, which makes it appear as if she is lifeless.",
-          "year": "1973",
-          "rating": 6.0
-        },
         {
           "title": "Las Madres: The Mothers of Plaza de Mayo",
           "link": "https://www.moma.org/calendar/events/11293",
@@ -1491,6 +1560,23 @@
           "overview": "Aspiring comic Rupert Pupkin attempts to achieve success in show business by stalking his idol, a late night talk-show host who craves his own privacy.",
           "year": "1982",
           "rating": 7.8
+        },
+        {
+          "title": "River of No Return",
+          "link": "https://www.moma.org/calendar/events/11221",
+          "date_str": "Wed, Mar 18",
+          "poster": "https://image.tmdb.org/t/p/w300/h6HkT7aJGx119cmXw2ahHcjdsJ0.jpg",
+          "overview": "David Stora summarizes in one lively minute \"River of No Return\" by Otto Preminger, with Marilyn Monroe.",
+          "year": "2023"
+        },
+        {
+          "title": "Gentlemen Prefer Blondes",
+          "link": "https://www.moma.org/calendar/events/11220",
+          "date_str": "Thu, Mar 19",
+          "poster": "https://image.tmdb.org/t/p/w300/fDozhst5HVJJcd3BM8ZOsKniO7Q.jpg",
+          "overview": "Lorelei Lee is a beautiful showgirl engaged to be married to the wealthy Gus Esmond, much to the disapproval of Gus' rich father, Esmond Sr., who thinks that Lorelei is just after his money. When Lorelei goes on a cruise accompanied only by her best friend, Dorothy Shaw, Esmond Sr. hires Ernie Malone, a private detective, to follow her and report any questionable behavior that would disqualify her from the marriage.",
+          "year": "1953",
+          "rating": 7.3
         },
         {
           "title": "Open Art Space Films: Kiki",
@@ -1589,21 +1675,178 @@
           "poster": "https://image.tmdb.org/t/p/w300/eMYN7xwMW3y5E4s92Qm6Li0oAlG.jpg",
           "overview": "Behrouz and Ghoncheh move into their new house, but in the middle of the night they encounter a burglar who claims to know a secret about their husband....",
           "year": "2025"
+        },
+        {
+          "title": "An Evening with Juliette Binoche",
+          "link": "https://www.moma.org/calendar/events/11214",
+          "date_str": "Mon, Mar 23"
+        },
+        {
+          "title": "Dhrupad",
+          "link": "https://www.moma.org/calendar/events/11297",
+          "date_str": "Tue, Mar 24",
+          "poster": "https://image.tmdb.org/t/p/w300/eTQqmyPJvYrJfRLAp9AQP8hOL3B.jpg",
+          "overview": "The film tells the saga of the Dagars - the renowned family of Moslem royal musicians, who over many generations practiced and preserved dhrupad - the oldest form of Indian classical music, that has its origins in Hindu temple music and spiritual thought. The two main protagonists are Fahimuddin Dagar, one of the last bearers of the knowledge of this tradition, and his student Ashish Sankrityayan, the filmmaker, who wields the camera while learning, discussing, singing, and travelling with his teacher.",
+          "year": "2024"
+        }
+      ]
+    },
+    "Nitehawk (Williamsburg)": {
+      "url": "https://nitehawkcinema.com/williamsburg/",
+      "events": [
+        {
+          "title": "Jawbreaker",
+          "link": "https://nitehawkcinema.com/movies/jawbreaker/",
+          "date_str": "Mar 17",
+          "poster": "https://image.tmdb.org/t/p/w300/7YrxXoG25hVCK4nYDHQv9YIk3Ye.jpg",
+          "overview": "When an exclusive clique of teenage socialites accidentally murder their best friend on the morning of her birthday, the three girls responsible conspire to hide the truth.",
+          "year": "1999",
+          "rating": 6.4
+        },
+        {
+          "title": "Portrait of a Lady on Fire",
+          "link": "https://nitehawkcinema.com/movies/portrait-of-a-lady-on-fire/",
+          "date_str": "Mar 21",
+          "poster": "https://image.tmdb.org/t/p/w300/2LquGwEhbg3soxSCs9VNyh5VJd9.jpg",
+          "overview": "On an isolated island in Brittany at the end of the eighteenth century, a female painter is obliged to paint a wedding portrait of a young woman.",
+          "year": "2019",
+          "rating": 8.1
+        },
+        {
+          "title": "Shattered Glass",
+          "link": "https://nitehawkcinema.com/movies/shattered-glass/",
+          "date_str": "Mar 23",
+          "poster": "https://image.tmdb.org/t/p/w300/1KHHNkrf8t15sXXF9d9TGq1T9jv.jpg",
+          "overview": "The true story of fraudulent Washington, D.C. journalist Stephen Glass, who rose to meteoric heights as a young writer in his 20s, becoming a staff writer at The New Republic for three years. Looking for a short cut to fame, Glass concocted sources, quotes and even entire stories, but his deception did not go unnoticed forever, and eventually, his world came crumbling down.",
+          "year": "2003",
+          "rating": 7.0
+        },
+        {
+          "title": "Holy Motors",
+          "link": "https://nitehawkcinema.com/movies/holy-motors/",
+          "date_str": "Mar 30",
+          "poster": "https://image.tmdb.org/t/p/w300/4ZuTrrDQhCS9f6KzIX6HfsjjyMd.jpg",
+          "overview": "We follow 24 hours in the life of a being moving from life to life like a cold and solitary assassin moving from hit to hit. In each of these interwoven lives, the being possesses an entirely distinct identity: sometimes a man, sometimes a woman, sometimes youthful, sometimes old. By turns murderer, beggar, company chairman, monstrous creature, worker, family man.",
+          "year": "2012",
+          "rating": 6.986
+        },
+        {
+          "title": "Urusei Yatsura 2: Beautiful Dreamer",
+          "link": "https://nitehawkcinema.com/movies/urusei-yatsura-2-beautiful-dreamer/",
+          "date_str": "Mar 24",
+          "poster": "https://image.tmdb.org/t/p/w300/wxSwZBgUquBIv61IkITmHJHGqu3.jpg",
+          "overview": "As the perpetually lecherous Ataru and his friends prepare for a carnival at Tomobiki High School, they gradually realize the days are literally repeating themselves. Any effort to break the pattern dumps them back where they started.",
+          "year": "1984",
+          "rating": 7.3
+        },
+        {
+          "title": "Leprechaun",
+          "link": "https://nitehawkcinema.com/movies/leprechaun-lwam/",
+          "date_str": "Mar 26",
+          "poster": "https://image.tmdb.org/t/p/w300/8SZgqIjiCSaRq03SxW1Z6yLfBHf.jpg",
+          "overview": "A demonic leprechaun terrorizes a group of young people whom he believes stole his gold.",
+          "year": "1993",
+          "rating": 5.559
+        },
+        {
+          "title": "Monsters, Inc.",
+          "link": "https://nitehawkcinema.com/movies/monsters-inc/",
+          "date_str": "Mar 28",
+          "poster": "https://image.tmdb.org/t/p/w300/wFSpyMsp7H0ttERbxY7Trlv8xry.jpg",
+          "overview": "Lovable Sulley and his wisecracking sidekick Mike Wazowski are the top scare team at Monsters, Inc., the scream-processing factory in Monstropolis. When a little girl named Boo wanders into their world, it's the monsters who are scared silly, and it's up to Sulley and Mike to keep her out of sight and get her back home.",
+          "year": "2001",
+          "rating": 7.847
+        },
+        {
+          "title": "Fargo",
+          "link": "https://nitehawkcinema.com/movies/fargo/",
+          "date_str": "Apr 1",
+          "poster": "https://image.tmdb.org/t/p/w300/rt7cpEr1uP6RTZykBFhBTcRaKvG.jpg",
+          "overview": "Jerry, a small-town Minnesota car salesman is bursting at the seams with debt... but he's got a plan. He's going to hire two thugs to kidnap his wife in a scheme to collect a hefty ransom from his wealthy father-in-law. It's going to be a snap and nobody's going to get hurt... until people start dying. Enter Police Chief Marge, a coffee-drinking, parka-wearing - and extremely pregnant - investigator who'll stop at nothing to get her man. And if you think her small-time investigative skills will give the crooks a run for their ransom... you betcha!",
+          "year": "1996",
+          "rating": 7.848
+        },
+        {
+          "title": "American Movie",
+          "link": "https://nitehawkcinema.com/movies/american-movie/",
+          "date_str": "Apr 4",
+          "poster": "https://image.tmdb.org/t/p/w300/y8dJgWr1HeW0RRxwANDWvgIXdsF.jpg",
+          "overview": "American Movie documents the story of filmmaker Mark Borchardt, his mission, and his dream. Spanning over two years of intense struggle with his film, his family, financial decline, and spiritual crisis, American Movie is a portrayal of ambition, obsession, excess, and one man's quest for the American Dream.",
+          "year": "1999",
+          "rating": 7.6
+        },
+        {
+          "title": "The Descent",
+          "link": "https://nitehawkcinema.com/movies/the-descent/",
+          "date_str": "Mar 27",
+          "poster": "https://image.tmdb.org/t/p/w300/mxFPI4KYBk5ri9cPteIS8jiDFgj.jpg",
+          "overview": "After a personal tragedy, Sarah joins her friends on a caving expedition in the Appalachian Mountains. But when a rockfall traps them deep underground, their adventure turns into a nightmare. As they search for a way out, the group discovers they are not alone—lurking in the darkness are savage, cave-dwelling creatures. With rising tension and dwindling trust, the women must fight to survive against both the predators and each other.",
+          "year": "2005",
+          "rating": 6.978
+        },
+        {
+          "title": "The French Connection",
+          "link": "https://nitehawkcinema.com/movies/the-french-connection/",
+          "date_str": "Mar 28",
+          "poster": "https://image.tmdb.org/t/p/w300/pH4saPwMjhnVGwmSH6RkMaHrt3s.jpg",
+          "overview": "Tough narcotics detective 'Popeye' Doyle is in hot pursuit of a suave French drug dealer who may be the key to a huge heroin-smuggling operation.",
+          "year": "1971",
+          "rating": 7.496
+        },
+        {
+          "title": "Teddy, Out of Tune",
+          "link": "https://nitehawkcinema.com/williamsburg/film-series/nobudge-presents/",
+          "date_str": "Mar 18",
+          "poster": "https://image.tmdb.org/t/p/w300/arWBYrNj6vtU4yhzYQB3wsBkpha.jpg",
+          "overview": "With a piano strapped to the back of his truck, a nomadic street musician drives 2,000 miles north to Canada on an emotional mission to spread his mother's ashes",
+          "year": "2020",
+          "rating": 2.0
+        },
+        {
+          "title": "Vampire Time Travelers",
+          "link": "https://nitehawkcinema.com/williamsburg/film-series/visual-vengeance/",
+          "date_str": "Mar 19",
+          "poster": "https://image.tmdb.org/t/p/w300/5H24Yg1S4H5XrYqzhTHfTomUzt3.jpg",
+          "overview": "Four young college women battle vampires and several other supernatural forces as they try to join a strange sorority.",
+          "year": "1998",
+          "rating": 2.2
+        },
+        {
+          "title": "Night of the Creeps",
+          "link": "https://nitehawkcinema.com/movies/night-of-the-creeps/",
+          "date_str": "Mar 20",
+          "poster": "https://image.tmdb.org/t/p/w300/A3s2tQGNb6mhlr1hPZeE5F8IUwp.jpg",
+          "overview": "In 1959, an alien experiment crashes to earth and infects a fraternity member. They freeze the body, but in the modern day, two geeks pledging a fraternity accidentally thaw the corpse, which proceeds to infect the campus with parasites that transform their hosts into killer zombies.",
+          "year": "1986",
+          "rating": 6.713
+        },
+        {
+          "title": "Spoons Toons & Booze Spring Break!",
+          "link": "https://nitehawkcinema.com/williamsburg/film-series/spoons-toons-booze/",
+          "date_str": "Mar 21"
+        },
+        {
+          "title": "Faust",
+          "link": "https://nitehawkcinema.com/movies/faust-lsc/",
+          "date_str": "Mar 25",
+          "poster": "https://image.tmdb.org/t/p/w300/8jH8wVLNZ24QVxm5IEByWpsmHXJ.jpg",
+          "overview": "A doctor in early 19th-century Germany becomes infatuated with the sister of a man he unintentionally killed and bargains with the Devil incarnate to conjure their union in exchange for his soul.",
+          "year": "2011",
+          "rating": 6.567
+        },
+        {
+          "title": "More Beautiful Perversions",
+          "link": "https://nitehawkcinema.com/williamsburg/film-series/future-of-film-is-female/",
+          "date_str": "Apr 2",
+          "poster": "https://image.tmdb.org/t/p/w300/2bUIlssjBXmUSKmzQUhEIqdCqbK.jpg",
+          "overview": "A reject teenager follows some hot radicals and finds themself in the woods.  An eco-parable produced by a mutual aid collective, shot on 16mm and portions hand-processed with plants.",
+          "year": "2026"
         }
       ]
     },
     "Nitehawk (Prospect Park)": {
       "url": "https://nitehawkcinema.com/prospectpark/",
       "events": [
-        {
-          "title": "Dope",
-          "link": "https://nitehawkcinema.com/movies/dope/",
-          "date_str": "Mar 16",
-          "poster": "https://image.tmdb.org/t/p/w300/n6u00imN7AX2NiyWUc5kTgHXmEf.jpg",
-          "overview": "Malcolm is carefully surviving life in a tough neighborhood in Los Angeles while juggling college applications, academic interviews, and the SAT. A chance invitation to an underground party leads him into an adventure that could allow him to go from being a geek, to being dope, to ultimately being himself.",
-          "year": "2015",
-          "rating": 7.057
-        },
         {
           "title": "The Headless Woman",
           "link": "https://nitehawkcinema.com/movies/the-headless-woman/",
@@ -1708,24 +1951,6 @@
       "url": "https://syndicatedbk.com/",
       "events": [
         {
-          "title": "2026 Oscar Nominated Shorts: Animation",
-          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
-          "date_str": "Monday 16, March"
-        },
-        {
-          "title": "The Secret Agent",
-          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
-          "date_str": "Monday 16, March",
-          "also_at": [
-            "Film at Lincoln Center",
-            "BAM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/rZqolYhxMEe6TZZTjSmFw9crDTD.jpg",
-          "overview": "Brazil, 1977. Marcelo, a technology expert in his early 40s, is on the run. Hoping to reunite with his son, he travels to Recife during Carnival but soon realizes that the city is not the safe haven he was expecting.",
-          "year": "2025",
-          "rating": 7.3
-        },
-        {
           "title": "2026 Oscar Nominated Shorts: Live Action",
           "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
           "date_str": "Tuesday 17, March"
@@ -1738,6 +1963,11 @@
           "overview": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
           "year": "2025",
           "rating": 7.748
+        },
+        {
+          "title": "2026 Oscar Nominated Shorts: Animation",
+          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+          "date_str": "Wednesday 18, March"
         },
         {
           "title": "No Other Choice",
@@ -1809,6 +2039,19 @@
           "overview": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
           "year": "1999",
           "rating": 8.2
+        },
+        {
+          "title": "The Secret Agent",
+          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+          "date_str": "Wednesday 25, March",
+          "also_at": [
+            "Film at Lincoln Center",
+            "BAM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/jadCjQLZpX9yxlk4xPtyx4He2Ll.jpg",
+          "overview": "Brazil, 1977. Marcelo, a technology expert in his early 40s, is on the run. Hoping to reunite with his son, he travels to Recife during Carnival but soon realizes that the city is not the safe haven he was expecting.",
+          "year": "2025",
+          "rating": 7.3
         }
       ]
     },
@@ -1825,15 +2068,6 @@
           "rating": 8.1
         },
         {
-          "title": "The Wicker Man",
-          "link": "https://www.paristheaternyc.com/film/the-wicker-man-something-very-bad",
-          "date_str": "Mar 20",
-          "poster": "https://image.tmdb.org/t/p/w300/wwtrXRL8SiOWxhwLEvw7iBgYh0g.jpg",
-          "overview": "Police sergeant Neil Howie is called to an island village in search of a missing girl whom the locals claim never existed. The investigation is further complicated as Howie’s religious views clash with those of the island’s residents.",
-          "year": "1973",
-          "rating": 7.3
-        },
-        {
           "title": "Rosemary's Baby",
           "link": "https://www.paristheaternyc.com/film/rosemarys-baby-something-very-bad",
           "date_str": "Mar 20",
@@ -1843,13 +2077,22 @@
           "rating": 6.8
         },
         {
-          "title": "The Sopranos Season 3: 25th Anniversary Panel",
-          "link": "https://www.paristheaternyc.com/film/ac-the-sopranos-season-3-25th-anniversary-panel",
-          "date_str": "Mar 21"
+          "title": "The Wicker Man",
+          "link": "https://www.paristheaternyc.com/film/the-wicker-man-something-very-bad",
+          "date_str": "Mar 20",
+          "poster": "https://image.tmdb.org/t/p/w300/wwtrXRL8SiOWxhwLEvw7iBgYh0g.jpg",
+          "overview": "Police sergeant Neil Howie is called to an island village in search of a missing girl whom the locals claim never existed. The investigation is further complicated as Howie’s religious views clash with those of the island’s residents.",
+          "year": "1973",
+          "rating": 7.3
         },
         {
           "title": "Close Encounters of the Third Kind (Director's Cut)",
           "link": "https://www.paristheaternyc.com/film/close-encounters-of-the-third-kind-70mm-big-and-loud",
+          "date_str": "Mar 21"
+        },
+        {
+          "title": "The Sopranos Season 3: 25th Anniversary Panel",
+          "link": "https://www.paristheaternyc.com/film/ac-the-sopranos-season-3-25th-anniversary-panel",
           "date_str": "Mar 21"
         },
         {
@@ -1894,11 +2137,6 @@
           "year": "2024"
         },
         {
-          "title": "Something Very Bad Is Going to Happen | Sneak Preview of Episode One",
-          "link": "https://www.paristheaternyc.com/film/svbigth-something-very-bad",
-          "date_str": "Mar 23"
-        },
-        {
           "title": "Drag Me to Hell",
           "link": "https://www.paristheaternyc.com/film/drag-me-to-hell-something-very-bad",
           "date_str": "Mar 23",
@@ -1908,13 +2146,9 @@
           "rating": 6.5
         },
         {
-          "title": "Married to the Mob",
-          "link": "https://www.paristheaternyc.com/film/nyfcc-married-to-the-mob",
-          "date_str": "Mar 24",
-          "poster": "https://image.tmdb.org/t/p/w300/gkOsxv1RvV5smRnm6wrmn2wDXyZ.jpg",
-          "overview": "Angela de Marco is fed up with her gangster husband's line of work and wants no part of the crime world. When her husband is killed for having an affair with the mistress of mob boss Tony \"The Tiger\" Russo, Angela and her son depart for New York City to make a fresh start. Unfortunately, Tony has set his sights upon Angela -- and so has an undercover FBI agent looking to use her to bust Tony.",
-          "year": "1988",
-          "rating": 6.0
+          "title": "Something Very Bad Is Going to Happen | Sneak Preview of Episode One",
+          "link": "https://www.paristheaternyc.com/film/svbigth-something-very-bad",
+          "date_str": "Mar 23"
         },
         {
           "title": "Possession",
@@ -1927,6 +2161,15 @@
           "overview": "A young woman left her family for an unspecified reason. The husband determines to find out the truth and starts following his wife. At first, he suspects that a man is involved. But gradually, he finds out more and more strange behaviors and bizarre incidents that indicate something more than a possessed love affair.",
           "year": "1981",
           "rating": 7.3
+        },
+        {
+          "title": "Married to the Mob",
+          "link": "https://www.paristheaternyc.com/film/nyfcc-married-to-the-mob",
+          "date_str": "Mar 24",
+          "poster": "https://image.tmdb.org/t/p/w300/gkOsxv1RvV5smRnm6wrmn2wDXyZ.jpg",
+          "overview": "Angela de Marco is fed up with her gangster husband's line of work and wants no part of the crime world. When her husband is killed for having an affair with the mistress of mob boss Tony \"The Tiger\" Russo, Angela and her son depart for New York City to make a fresh start. Unfortunately, Tony has set his sights upon Angela -- and so has an undercover FBI agent looking to use her to bust Tony.",
+          "year": "1988",
+          "rating": 6.0
         },
         {
           "title": "The Cameraman",
@@ -1983,13 +2226,6 @@
           "rating": 6.4
         },
         {
-          "title": "The Celebration",
-          "link": "https://www.paristheaternyc.com/film/the-celebration-something-very-bad",
-          "date_str": "Mar 29",
-          "poster": "https://image.tmdb.org/t/p/w300/7MCxa5hoSP4i2o8stwbkCgshMZN.jpg",
-          "overview": "A filmmaker goes back to his home country Iran to find out about the story of his parents."
-        },
-        {
           "title": "The Killing of a Sacred Deer",
           "link": "https://www.paristheaternyc.com/film/the-killing-of-a-sacred-deer-something-very-bad",
           "date_str": "Mar 29",
@@ -2006,6 +2242,18 @@
           "overview": "Senator Walter Chalmers is aiming to take down mob boss Pete Ross with the help of testimony from the criminal's hothead brother Johnny, who is in protective custody in San Francisco under the watch of police lieutenant Frank Bullitt. When a pair of mob hitmen enter the scene, Bullitt follows their trail through a maze of complications and double-crosses. This thriller includes one of the most famous car chases ever filmed.",
           "year": "1968",
           "rating": 7.1
+        },
+        {
+          "title": "The Celebration",
+          "link": "https://www.paristheaternyc.com/film/the-celebration-something-very-bad",
+          "date_str": "Mar 29",
+          "poster": "https://image.tmdb.org/t/p/w300/7MCxa5hoSP4i2o8stwbkCgshMZN.jpg",
+          "overview": "A filmmaker goes back to his home country Iran to find out about the story of his parents."
+        },
+        {
+          "title": "LAFCA Presents: Red Rocket",
+          "link": "https://www.paristheaternyc.com/film/lafca-red-rocket",
+          "date_str": "Mar 31"
         }
       ]
     },
@@ -2020,7 +2268,7 @@
             "Film at Lincoln Center",
             "Syndicated BK"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/rZqolYhxMEe6TZZTjSmFw9crDTD.jpg",
+          "poster": "https://image.tmdb.org/t/p/w300/jadCjQLZpX9yxlk4xPtyx4He2Ll.jpg",
           "overview": "Brazil, 1977. Marcelo, a technology expert in his early 40s, is on the run. Hoping to reunite with his son, he travels to Recife during Carnival but soon realizes that the city is not the safe haven he was expecting.",
           "year": "2025",
           "rating": 7.3
@@ -2077,13 +2325,13 @@
           "poster": "https://image.tmdb.org/t/p/w300/ajeiriNRFPLESjGZ0vdp4MVardZ.jpg",
           "overview": "In 1936, as Palestinian villages revolt against British colonial rule and Zionist immigration from Europe accelerates toward the ethnic cleansing of Palestinians, Yusuf moves between Jerusalem and his rural home amid escalating unrest and a decisive moment for the British Empire.",
           "year": "2025",
-          "rating": 7.7
+          "rating": 7.8
         },
         {
           "title": "Project Hail Mary",
           "link": "https://www.bam.org/film/project-hail-mary",
           "date_str": "Mar 20",
-          "poster": "https://image.tmdb.org/t/p/w300/huVzcVrlK8aiLd240ienleODvWl.jpg",
+          "poster": "https://image.tmdb.org/t/p/w300/cCx1m530ph5FmtabVVUpUchEmhe.jpg",
           "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
           "year": "2026",
           "rating": 8.7
@@ -2115,10 +2363,7 @@
           "title": "Alpha",
           "link": "https://www.bam.org/film/alpha",
           "date_str": "Mar 27",
-          "also_at": [
-            "IFC Center"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/3SHrOxEjlcPPJUnM1vSzJCj3qOO.jpg",
+          "poster": "https://image.tmdb.org/t/p/w300/iE3P4LFSJCBX5PRWxbPs7DQh7yI.jpg",
           "overview": "Alpha, a troubled 13-year-old lives with her single mom. Their world collapses the day she returns from school with a tattoo on her arm.",
           "year": "2025",
           "rating": 6.4
