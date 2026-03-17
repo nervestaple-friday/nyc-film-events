@@ -175,11 +175,11 @@ def parse_date_loose(text):
     except Exception:
         return None
 
-def make_event(venue, title, link='', date=None, date_str='', special=None):
+def make_event(venue, title, link='', date=None, date_str='', special=None, showtimes=None):
     title = clean_title(title)
     if not title or len(title) < 3 or is_mainstream(title):
         return None
-    return {
+    ev = {
         'venue': venue,
         'title': title,
         'link': link,
@@ -187,6 +187,9 @@ def make_event(venue, title, link='', date=None, date_str='', special=None):
         'date_str': date_str,
         'special': special if special is not None else is_special(title),
     }
+    if showtimes:
+        ev['showtimes'] = showtimes
+    return ev
 
 
 # ── scrapers ───────────────────────────────────────────────────────────────
@@ -208,7 +211,10 @@ def scrape_metrograph():
                 continue
             date = datetime.strptime(m.group(1), '%Y-%m-%d')
             date_str = date.strftime('%b %d')
-            for h4 in day_div.find_all('h4'):
+            for item in day_div.find_all('div', class_='item'):
+                h4 = item.find('h4')
+                if not h4:
+                    continue
                 a = h4.find('a', href=True)
                 if not a:
                     continue
@@ -219,7 +225,18 @@ def scrape_metrograph():
                 if key in seen:
                     continue
                 seen.add(key)
-                e = make_event('Metrograph', title, link, date=date, date_str=date_str)
+                # Extract showtimes from the sibling showtimes div
+                show_times = []
+                st_div = item.find('div', class_='showtimes')
+                if st_div:
+                    for st_a in st_div.find_all('a'):
+                        t = st_a.get_text(strip=True)
+                        # Normalize "4:00pm" → "4:00 PM"
+                        tm = re.match(r'(\d{1,2}:\d{2})\s*(am|pm)', t, re.IGNORECASE)
+                        if tm:
+                            show_times.append(f"{tm.group(1)} {tm.group(2).upper()}")
+                e = make_event('Metrograph', title, link, date=date, date_str=date_str,
+                               showtimes=show_times if show_times else None)
                 if e:
                     events.append(e)
     except Exception as ex:
@@ -264,31 +281,43 @@ def scrape_syndicated():
     if not r:
         return events
     soup = BeautifulSoup(r.text, 'html.parser')
-    current_date_str = None
-    current_date     = None
     now = datetime.now()
     seen_titles = set()
-    for el in soup.find_all(['h3', 'h4', 'div', 'span', 'li', 'a']):
-        text = el.get_text(strip=True)
-        if re.match(r'(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)', text):
-            current_date_str = text
-            try:
-                from dateutil import parser as dp
-                current_date = dp.parse(text + f" {now.year}", fuzzy=True)
-            except Exception:
-                current_date = None
-        elif (text and 5 < len(text) < 80 and current_date and
-              el.name in ['a', 'h3', 'h4'] and not re.match(r'^\d+:\d+', text)):
-            if text not in seen_titles:
-                delta = (current_date - now).days
-                if MIN_DAYS <= delta <= MAX_DAYS:
-                    if text.lower() in ('show future dates', 'showtimes', 'buy tickets'):
-                        continue
-                    e = make_event('Syndicated BK', text, url,
-                                   date=current_date, date_str=current_date_str)
-                    if e:
-                        seen_titles.add(text)
-                        events.append(e)
+    for date_div in soup.find_all('div', class_='date'):
+        date_h3 = date_div.find('h3', class_='date-title')
+        if not date_h3:
+            continue
+        date_text = date_h3.get_text(strip=True)
+        try:
+            from dateutil import parser as dp
+            current_date = dp.parse(date_text + f" {now.year}", fuzzy=True)
+        except Exception:
+            continue
+        delta = (current_date - now).days
+        if not (MIN_DAYS <= delta <= MAX_DAYS):
+            continue
+        date_str = date_text
+        for film_div in date_div.find_all('div', class_='film'):
+            title_el = film_div.find('h3', class_='title')
+            if not title_el:
+                continue
+            title = title_el.get_text(strip=True)
+            if not title or title in seen_titles:
+                continue
+            if title.lower() in ('show future dates', 'showtimes', 'buy tickets'):
+                continue
+            # Extract showtimes from <time> elements
+            show_times = []
+            for time_el in film_div.find_all('time'):
+                t = time_el.get_text(strip=True)
+                if t:
+                    show_times.append(t)
+            e = make_event('Syndicated BK', title, url,
+                           date=current_date, date_str=date_str,
+                           showtimes=show_times if show_times else None)
+            if e:
+                seen_titles.add(title)
+                events.append(e)
     return events
 
 
@@ -559,6 +588,27 @@ def scrape_nitehawk():
                     excerpt = re.sub(r'<[^>]+>', '', show.get('excerpt', {}).get('rendered', '')).strip()
                     dirs    = [d['name'] for d in show.get('director', [])]
                     special_note = excerpt or (f"Dir. {', '.join(dirs)}" if dirs else None)
+                    # Extract showtimes from API
+                    show_times = []
+                    if show.get('showtimes') and isinstance(show['showtimes'], list):
+                        for st in show['showtimes']:
+                            if isinstance(st, dict):
+                                st_raw = st.get('time', '') or st.get('start', '') or st.get('date', '')
+                                if st_raw:
+                                    tm = re.search(r'(\d{1,2}:\d{2}\s*(?:AM|PM|am|pm))', st_raw)
+                                    if tm:
+                                        show_times.append(tm.group(1).strip().upper())
+                                    else:
+                                        # Try parsing ISO datetime for time
+                                        pd = parse_date_loose(st_raw)
+                                        if pd and pd.hour:
+                                            show_times.append(pd.strftime('%I:%M %p').lstrip('0'))
+                            elif isinstance(st, str):
+                                tm = re.search(r'(\d{1,2}:\d{2}\s*(?:AM|PM|am|pm))', st)
+                                if tm:
+                                    show_times.append(tm.group(1).strip().upper())
+                    # Dedupe while preserving order
+                    show_times = list(dict.fromkeys(show_times))
                     # Extract date from API fields
                     start = show.get('_start_date', '') or ''
                     start_display = show.get('_start_date_display', '') or ''
@@ -593,7 +643,8 @@ def scrape_nitehawk():
                         continue
 
                 e = make_event(f'Nitehawk ({location})', title, link,
-                               date=date, date_str=date_str, special=True)
+                               date=date, date_str=date_str, special=True,
+                               showtimes=show_times if show_times else None)
                 if e:
                     if special_note:
                         e['special_note'] = special_note
@@ -655,15 +706,26 @@ def scrape_flc():
         seen.add(title)
         date = None
         date_str = ''
+        show_times = []
         if upcoming:
             try:
                 dt_str = upcoming[0]['dateTimeET'].split('T')[0]
                 date   = datetime.fromisoformat(dt_str)
-                # Format as "Mar 09" instead of passing through API's ISO date
                 date_str = date.strftime('%b %d') if date else ''
             except Exception:
                 pass
-        e = make_event('Film at Lincoln Center', title, link, date=date, date_str=date_str)
+            # Extract showtimes from all upcoming screenings
+            for s in upcoming:
+                raw = s.get('dateTimeET', '')
+                if 'T' in raw:
+                    try:
+                        t = datetime.fromisoformat(raw.replace('Z', '+00:00'))
+                        show_times.append(t.strftime('%I:%M %p').lstrip('0'))
+                    except Exception:
+                        pass
+            show_times = list(dict.fromkeys(show_times))  # dedupe
+        e = make_event('Film at Lincoln Center', title, link, date=date, date_str=date_str,
+                       showtimes=show_times if show_times else None)
         if e:
             events.append(e)
 
@@ -788,6 +850,13 @@ def scrape_moma():
             # Format: "TITLE . YEAR. Directed by DIRECTOR TIME p.m. MoMA, Floor..."
             # Or: "Series Name TIME p.m. MoMA..."
             title = raw_text
+            # Extract showtime before stripping it
+            show_times = []
+            for tm in re.finditer(r'(\d{1,2}:\d{2})\s*([ap])\.?m\.?', raw_text, re.IGNORECASE):
+                hour_min = tm.group(1)
+                ampm = tm.group(2).upper() + 'M'
+                show_times.append(f"{hour_min} {ampm}")
+            show_times = list(dict.fromkeys(show_times))
             # Strip time and venue suffix: "4:00 p.m. MoMA..." or "4:30–8:00 p.m...."
             title = re.sub(r'\s*\d{1,2}:\d{2}\s*[\u2013\-–]?\s*(?:\d{1,2}:\d{2}\s*)?[ap]\.?m\.?\s*.*$', '', title, flags=re.IGNORECASE).strip()
             # Strip "Followed by a conversation..." suffix
@@ -817,7 +886,8 @@ def scrape_moma():
             date = current_date
             date_str = current_date_str
 
-            e = make_event('MoMA', title, link, date=date, date_str=date_str, special=True)
+            e = make_event('MoMA', title, link, date=date, date_str=date_str, special=True,
+                          showtimes=show_times if show_times else None)
             if e:
                 events.append(e)
 
@@ -1388,6 +1458,7 @@ def push_to_github(events_by_venue):
                         ('title', e['title']),
                         ('link', e.get('link', '')),
                         ('date_str', e.get('date_str', '')),
+                        ('showtimes', e.get('showtimes')),
                         ('also_at', e.get('also_at')),
                         ('poster', e.get('poster', '')),
                         ('overview', e.get('overview', '')),
