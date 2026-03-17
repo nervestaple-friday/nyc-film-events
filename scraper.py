@@ -116,18 +116,35 @@ def is_mainstream(title):
     t = title.lower()
     return any(kw in t for kw in MAINSTREAM_BLOCKLIST)
 
+def _retry(fn, retries=3, backoff=1):
+    """Retry a callable up to *retries* times with exponential backoff.
+    Returns the result on success, or None after all attempts fail."""
+    last_err = None
+    for attempt in range(retries):
+        try:
+            return fn()
+        except Exception as e:
+            last_err = e
+            if attempt < retries - 1:
+                wait = backoff * (2 ** attempt)
+                print(f"  [retry {attempt+1}/{retries}] {e} — retrying in {wait}s", file=sys.stderr)
+                time.sleep(wait)
+    print(f"  [retry] all {retries} attempts failed: {last_err}", file=sys.stderr)
+    return None
+
 def fetch(url, timeout=12):
-    try:
+    def _do():
         r = requests.get(url, headers=HEADERS, timeout=timeout)
         r.raise_for_status()
         return r
-    except Exception as e:
-        print(f"  [fetch error] {url}: {e}", file=sys.stderr)
-        return None
+    result = _retry(_do)
+    if result is None:
+        print(f"  [fetch error] {url}: all retries exhausted", file=sys.stderr)
+    return result
 
 def fetch_cf(url, timeout=35):
     """Fetch via FlareSolverr for Cloudflare-protected pages."""
-    try:
+    def _do():
         r = requests.post(FLARESOLVERR, json={
             'cmd': 'request.get',
             'url': url,
@@ -136,16 +153,16 @@ def fetch_cf(url, timeout=35):
         r.raise_for_status()
         data = r.json()
         if data.get('status') != 'ok':
-            print(f"  [flaresolverr error] {url}: {data.get('message')}", file=sys.stderr)
-            return None
+            raise RuntimeError(f"FlareSolverr error: {data.get('message')}")
         # Return a simple object with .text attribute
         class _Resp:
             text = data['solution']['response']
             status_code = data['solution']['status']
         return _Resp()
-    except Exception as e:
-        print(f"  [flaresolverr error] {url}: {e}", file=sys.stderr)
-        return None
+    result = _retry(_do)
+    if result is None:
+        print(f"  [flaresolverr error] {url}: all retries exhausted", file=sys.stderr)
+    return result
 
 def parse_date_loose(text):
     try:
