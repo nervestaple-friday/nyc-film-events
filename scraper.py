@@ -375,6 +375,45 @@ def scrape_ifc():
         if e:
             events.append(e)
 
+    # Enrich with showtimes from the HTML sidebar (apitap read strips it)
+    if events:
+        r_html = fetch('https://www.ifccenter.com/')
+        if r_html:
+            ifc_soup = BeautifulSoup(r_html.text, 'html.parser')
+            slug_times = {}
+            for sched in ifc_soup.find_all('div', class_='daily-schedule'):
+                for li in sched.find_all('li'):
+                    details = li.find('div', class_='details')
+                    if not details:
+                        continue
+                    h3 = details.find('h3')
+                    if not h3 or not h3.find('a', href=True):
+                        continue
+                    href = h3.find('a')['href']
+                    slug_m = re.search(r'/films/([\w-]+)', href)
+                    if not slug_m:
+                        continue
+                    times_ul = details.find('ul', class_='times')
+                    if not times_ul:
+                        continue
+                    times = []
+                    for time_a in times_ul.find_all('a'):
+                        t = time_a.get_text(strip=True)
+                        tm = re.match(r'(\d{1,2}:\d{2}\s*(?:AM|PM))', t, re.IGNORECASE)
+                        if tm:
+                            times.append(tm.group(1).strip())
+                    if times:
+                        slug_times.setdefault(slug_m.group(1), []).extend(times)
+            # Dedupe times per slug
+            for s in slug_times:
+                slug_times[s] = list(dict.fromkeys(slug_times[s]))
+            for e in events:
+                if e.get('showtimes'):
+                    continue
+                link_slug = re.search(r'/films/([\w-]+)', e.get('link', ''))
+                if link_slug and link_slug.group(1) in slug_times:
+                    e['showtimes'] = slug_times[link_slug.group(1)]
+
     return events[:15]
 
 
@@ -423,6 +462,41 @@ def scrape_film_forum():
                 e = make_event('Film Forum', title, link, date=date, date_str=date_str)
                 if e:
                     events.append(e)
+
+    # Extract showtimes from sidebar day-of-week tab structure
+    link_times = {}
+    for tab_div in soup.find_all('div', id=re.compile(r'^tabs-\d+')):
+        for a in tab_div.find_all('a', href=True):
+            href = a.get('href', '')
+            if '/film/' not in href:
+                continue
+            link = f"https://filmforum.org{href}" if href.startswith('/') else href
+            container = a.find_parent('p')
+            if not container:
+                continue
+            parent_text = container.get_text(' ', strip=True)
+            times = re.findall(r'\b(\d{1,2}:\d{2})\b', parent_text)
+            if times and len(times) <= 10:
+                link_times.setdefault(link, []).extend(times)
+    for e in events:
+        if e.get('showtimes') or not e.get('link'):
+            continue
+        times = link_times.get(e['link'])
+        if times:
+            times = list(dict.fromkeys(times))
+            show_times = []
+            for t in times:
+                h, mn = t.split(':')
+                h = int(h)
+                if 1 <= h <= 9:
+                    show_times.append(f"{h}:{mn} PM")
+                elif h == 10 or h == 11:
+                    show_times.append(f"{h}:{mn} AM")
+                elif h == 12:
+                    show_times.append(f"12:{mn} PM")
+            if show_times:
+                e['showtimes'] = show_times
+
     return events[:20]
 
 
@@ -438,33 +512,77 @@ def scrape_anthology():
         if not r:
             continue
         soup = BeautifulSoup(r.text, 'html.parser')
-        current_date = None
-        for h3 in soup.find_all('h3'):
-            date_text = h3.get_text(strip=True)
-            try:
-                from dateutil import parser as dp
-                current_date = dp.parse(date_text + f" {year}", fuzzy=True)
-            except Exception:
-                pass
-            for sib in h3.next_siblings:
-                if hasattr(sib, 'name') and sib.name == 'h3':
-                    break
-                text = sib.get_text(strip=True) if hasattr(sib, 'get_text') else ''
-                if not text or len(text) < 5:
+
+        # Structured extraction: film-showing divs with film-title spans and showing-* anchors
+        showings = soup.find_all('div', class_='film-showing')
+        if showings:
+            for showing in showings:
+                prev_h3 = showing.find_previous('h3')
+                if not prev_h3:
                     continue
-                clean = re.sub(r'^[,\s]*\d{1,2}:\d{2}\s*(AM|PM)\s*', '', text).strip()
-                title = re.split(r'\s+by\s+|\s+Share\s+|In \w+ with|\d{4},\s*\d+\s*min|Share \+', clean)[0].strip()
-                title = re.sub(r'^EC:\s*', '', title).strip()  # keep but clean EC: prefix
+                date_text = prev_h3.get_text(strip=True)
+                try:
+                    from dateutil import parser as dp
+                    current_date = dp.parse(date_text + f" {year}", fuzzy=True)
+                except Exception:
+                    continue
+                delta = (current_date - now).days
+                if not (MIN_DAYS <= delta <= MAX_DAYS):
+                    continue
+                # Extract showtimes from <a name="showing-..."> elements
+                show_times = []
+                for a in showing.find_all('a', attrs={'name': re.compile(r'^showing-')}):
+                    t = a.get_text(strip=True).rstrip(',').strip()
+                    tm = re.match(r'(\d{1,2}:\d{2}\s*(?:AM|PM))', t, re.IGNORECASE)
+                    if tm:
+                        show_times.append(tm.group(1))
+                # Extract title from <span class="film-title">
+                title_span = showing.find('span', class_='film-title')
+                if title_span:
+                    title = title_span.get_text(strip=True)
+                else:
+                    text = showing.get_text(strip=True)
+                    clean = re.sub(r'^(?:[,\s]*\d{1,2}:\d{2}\s*(?:AM|PM)[,\s]*)+', '', text).strip()
+                    title = re.split(r'\s+by\s+|\s+Share\s+|In \w+ with|\d{4},\s*\d+\s*min|Share \+', clean)[0].strip()
+                title = re.sub(r'^EC:\s*', '', title).strip()
                 title = clean_title_for_display(title)
-                if title and 5 < len(title) < 100 and current_date:
-                    delta = (current_date - now).days
-                    if MIN_DAYS <= delta <= MAX_DAYS:
-                        e = make_event('Anthology Film Archives', title, url,
-                                       date=current_date,
-                                       date_str=current_date.strftime('%b %d'),
-                                       special=True)
-                        if e:
-                            events.append(e)
+                if title and 5 < len(title) < 100:
+                    e = make_event('Anthology Film Archives', title, url,
+                                   date=current_date,
+                                   date_str=current_date.strftime('%b %d'),
+                                   special=True,
+                                   showtimes=show_times if show_times else None)
+                    if e:
+                        events.append(e)
+        else:
+            # Fallback: original h3 sibling walking (no showtime extraction)
+            current_date = None
+            for h3 in soup.find_all('h3'):
+                date_text = h3.get_text(strip=True)
+                try:
+                    from dateutil import parser as dp
+                    current_date = dp.parse(date_text + f" {year}", fuzzy=True)
+                except Exception:
+                    pass
+                for sib in h3.next_siblings:
+                    if hasattr(sib, 'name') and sib.name == 'h3':
+                        break
+                    text = sib.get_text(strip=True) if hasattr(sib, 'get_text') else ''
+                    if not text or len(text) < 5:
+                        continue
+                    clean = re.sub(r'^[,\s]*\d{1,2}:\d{2}\s*(AM|PM)\s*', '', text).strip()
+                    title = re.split(r'\s+by\s+|\s+Share\s+|In \w+ with|\d{4},\s*\d+\s*min|Share \+', clean)[0].strip()
+                    title = re.sub(r'^EC:\s*', '', title).strip()
+                    title = clean_title_for_display(title)
+                    if title and 5 < len(title) < 100 and current_date:
+                        delta = (current_date - now).days
+                        if MIN_DAYS <= delta <= MAX_DAYS:
+                            e = make_event('Anthology Film Archives', title, url,
+                                           date=current_date,
+                                           date_str=current_date.strftime('%b %d'),
+                                           special=True)
+                            if e:
+                                events.append(e)
     seen = set()
     return [e for e in events if e['title'] not in seen and not seen.add(e['title'])][:20]
 
@@ -649,6 +767,60 @@ def scrape_nitehawk():
                     if special_note:
                         e['special_note'] = special_note
                     events.append(e)
+
+    # Enrich events with showtimes from the listings API
+    # (The per-movie /nj/v1/show endpoint returns empty showtimes;
+    #  the location-scoped /showtime/listings endpoint has all data.)
+    LISTINGS_URLS = {
+        'Williamsburg': 'https://nitehawkcinema.com/williamsburg/wp-json/nj/v1/showtime/listings',
+        'Prospect Park': 'https://nitehawkcinema.com/prospectpark/wp-json/nj/v1/showtime/listings',
+    }
+    for location, listings_url in LISTINGS_URLS.items():
+        venue_name = f'Nitehawk ({location})'
+        try:
+            req = _ur.Request(listings_url, headers={
+                'Accept': 'application/json',
+                'User-Agent': HEADERS['User-Agent'],
+            })
+            with _ur.urlopen(req, timeout=10) as resp:
+                listings = json.load(resp)
+        except Exception:
+            continue
+        # Build movie_id → normalized name
+        id_to_norm = {}
+        for mv in listings.get('movies', []):
+            id_to_norm[mv['movie_id']] = re.sub(r'[^a-z0-9]', '', mv['movie_name'].lower())
+        # Build (norm_name, date_key) → [time_str, ...]
+        name_date_times = {}
+        for st in listings.get('showtimes', []):
+            norm_name = id_to_norm.get(st['movie_id'])
+            if not norm_name:
+                continue
+            dt_raw = st.get('datetime', '')
+            if len(dt_raw) < 14:
+                continue
+            try:
+                dt = datetime.strptime(dt_raw, '%Y%m%d%H%M%S')
+                date_key = dt.strftime('%Y-%m-%d')
+                time_str = dt.strftime('%I:%M %p').lstrip('0')
+                name_date_times.setdefault((norm_name, date_key), []).append(time_str)
+            except Exception:
+                pass
+        # Match showtimes to events
+        for e in events:
+            if e['venue'] != venue_name or e.get('showtimes'):
+                continue
+            enorm = re.sub(r'[^a-z0-9]', '', e['title'].lower())
+            date_key = e['date'].strftime('%Y-%m-%d') if e.get('date') else ''
+            times = name_date_times.get((enorm, date_key), [])
+            if not times:
+                # Try matching by name across all dates
+                for (n, d), t in name_date_times.items():
+                    if n == enorm:
+                        times = t
+                        break
+            if times:
+                e['showtimes'] = list(dict.fromkeys(times))
 
     # Filter out ghost films with no actual screening date
     events = [e for e in events if e.get('date') or e.get('date_str')]
