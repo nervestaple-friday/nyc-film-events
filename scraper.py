@@ -83,8 +83,9 @@ def clean_title(title):
     title = re.sub(r'\s*(Q&A?|More Info|Series Schedule|Watch Trailer|Tickets|Buy Tickets)\s*$',
                    '', title, flags=re.IGNORECASE).strip()
     title = re.sub(r'Q&\s*$', '', title).strip()
-    # Strip "by Director Name" suffix (with or without space)
-    title = re.sub(r'\s*[Bb]y\s+[A-Z][a-zé\-]+(?:[\s\-]+[A-Z][a-zé\-]+)*(?:\s*In\s+.*)?$', '', title).strip()
+    # Strip "by Director Name" suffix — require at least first+last name
+    # so "Stand By Me" is not truncated to "Stand"
+    title = re.sub(r'\s*[Bb]y\s+[A-Z][a-zé\-]+(?:[\s\-]+[A-Z][a-zé\-]+)+(?:\s*In\s+.*)?$', '', title).strip()
     # Handle no-space case: "TITLEby Director"
     title = re.sub(r'(?<=[a-z\)])by\s+[A-Z].*$', '', title).strip()
     # Strip language suffixes
@@ -1178,9 +1179,54 @@ def scrape_paris():
             date = parse_date_loose(opening) if opening else None
             date_str = date.strftime('%b %d') if date else ''
 
-            e = make_event('Paris Theater', name, link, date=date, date_str=date_str)
+            # Extract showtimes from CMS text fields (special events)
+            show_times = []
+            for field in ('FeaturedFilmSubtextOverride', 'RedLabelOverride', 'HeroDetails'):
+                val = a.get(field) or ''
+                for tm in re.finditer(r'(\d{1,2}(?::\d{2})?\s*(?:AM|PM))', val, re.IGNORECASE):
+                    raw = tm.group(1).strip()
+                    # Normalize "7 PM" → "7:00 PM", "3:30 PM" stays
+                    if ':' not in raw:
+                        raw = re.sub(r'(\d+)\s*(AM|PM)', lambda m: f"{m.group(1)}:00 {m.group(2).upper()}", raw, flags=re.IGNORECASE)
+                    else:
+                        raw = re.sub(r'(am|pm)', lambda m: m.group(1).upper(), raw, flags=re.IGNORECASE)
+                    show_times.append(raw)
+            show_times = list(dict.fromkeys(show_times))
+
+            e = make_event('Paris Theater', name, link, date=date, date_str=date_str,
+                           showtimes=show_times if show_times else None)
             if e:
                 events.append(e)
+
+        # Enrich from homepage embedded data: slug → Time field
+        try:
+            import urllib.request as _ur2
+            req = _ur2.Request('https://www.paristheaternyc.com',
+                               headers={'User-Agent': HEADERS['User-Agent']})
+            with _ur2.urlopen(req, timeout=12) as resp:
+                page_html = resp.read().decode('utf-8', errors='replace')
+            # Extract Slug→Time pairs from embedded JSON
+            slug_times = {}
+            for m in re.finditer(r'Slug[\\]*"[\\]*:[\\]*"([^"\\]+)', page_html):
+                slug_val = m.group(1)
+                ahead = page_html[m.end():m.end()+1000]
+                tm = re.search(r'Time[\\]*"[\\]*:[\\]*"([^"\\]{1,20})', ahead)
+                if tm and re.search(r'\d', tm.group(1)):
+                    raw = tm.group(1).strip()
+                    if ':' not in raw:
+                        raw = re.sub(r'(\d+)\s*(AM|PM)', lambda mx: f"{mx.group(1)}:00 {mx.group(2).upper()}", raw, flags=re.IGNORECASE)
+                    else:
+                        raw = re.sub(r'(am|pm)', lambda mx: mx.group(1).upper(), raw, flags=re.IGNORECASE)
+                    slug_times[slug_val] = raw
+            # Match to events
+            for e in events:
+                if e.get('showtimes'):
+                    continue
+                e_slug = re.search(r'/film/(.+?)/?$', e.get('link', ''))
+                if e_slug and e_slug.group(1) in slug_times:
+                    e['showtimes'] = [slug_times[e_slug.group(1)]]
+        except Exception:
+            pass
 
         return events[:25]
 
@@ -1295,60 +1341,115 @@ def clean_bam_title(title):
 
 
 def scrape_bam():
-    """BAM — apitap read gives clean markdown with h3 titles.
-    BAM's rendered HTML concatenates text into noise; the readability
-    extraction is significantly cleaner. Links still need a slug lookup
-    since apitap read strips JS-rendered hrefs, so we derive from title."""
-    import subprocess as _sp
+    """BAM — direct HTML fetch of listing page for titles/dates/links,
+    then fetch individual film pages for showtimes via JSON-LD."""
     events = []
-    try:
-        result = _sp.run(
-            ['apitap', 'read', 'https://www.bam.org/film'],
-            capture_output=True, text=True, timeout=30,
-        )
-        md = result.stdout
-    except Exception as ex:
-        print(f"  [BAM/apitap] fallback: {ex}", file=sys.stderr)
-        r = fetch('https://www.bam.org/film')
-        if not r:
-            return events
-        md = r.text
+    r = fetch('https://www.bam.org/film')
+    if not r:
+        return events
+
+    soup = BeautifulSoup(r.text, 'html.parser')
+    now = datetime.now()
 
     BAM_SKIP = {'BAM Film 2026', 'BAM Film', 'Film', 'More', 'See All', 'See all',
-                 'View All', 'Buy Tickets', 'Learn More'}
+                 'View All', 'Buy Tickets', 'Learn More', 'NEW RELEASE', 'FILM SERIES',
+                 'Now Playing'}
     seen = set()
-    # Unescape HTML entities BEFORE regex extraction (e.g. &#226; → â)
-    md = _html.unescape(md)
-    # apitap read renders BAM titles cleanly as ### Title
-    for m in re.finditer(r'###\s+([^\n#]{3,80})', md):
-        raw_title = m.group(1).strip().strip('"').strip()
-        # Skip header noise, short titles, bare years
-        if raw_title in BAM_SKIP or len(raw_title) < 4:
+
+    # Build href → (title, date, date_str) from h3 elements near film links
+    film_data = {}  # href → (title, date, date_str)
+    for h3 in soup.find_all('h3'):
+        text = h3.get_text(strip=True)
+        if not text or len(text) < 4 or len(text) > 100 or text in BAM_SKIP:
             continue
-        if re.match(r'^\d{4}$', raw_title):  # bare year like "2026"
+        if re.match(r'^\d{4}$', text):
             continue
+        # Walk up to find a parent with a /film/YEAR/slug link
+        parent = h3.parent
+        href = None
+        for _ in range(6):
+            if parent is None:
+                break
+            link_el = parent.find('a', href=re.compile(r'/film/\d{4}/'))
+            if link_el:
+                href = link_el['href'].split('#')[0]
+                break
+            parent = parent.parent
+        if not href or href in film_data:
+            continue
+
+        # Extract date from nearby text
+        container = h3.find_parent('div', class_=True)
+        date = None
+        date_str = ''
+        if container:
+            ct = container.get_text(' ', strip=True)
+            dm = re.search(r'Opens?\s+((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\.?\s+\d{1,2})', ct)
+            if dm:
+                date_str = dm.group(1)
+                date = parse_date_loose(date_str + f" {now.year}")
+            elif re.search(r'Now\s+Playing', ct):
+                date_str = 'Now Playing'
+            else:
+                dm2 = re.search(r'((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\.?\s+\d{1,2})', ct)
+                if dm2:
+                    date_str = dm2.group(1)
+                    date = parse_date_loose(date_str + f" {now.year}")
+
+        film_data[href] = (text, date, date_str)
+
+    # Fetch detail pages for showtimes (JSON-LD) — only for films within date window
+    for href, (raw_title, date, date_str) in film_data.items():
         if raw_title in seen:
             continue
         seen.add(raw_title)
-        # Derive link slug from ORIGINAL title (before cleanup)
-        slug = re.sub(r'[^a-z0-9]+', '-', raw_title.lower()).strip('-')
-        link = f"https://www.bam.org/film/{slug}"
-        # Extract date from text after the title heading
-        date = None
-        date_str = ''
-        after_text = md[m.end():m.end()+300]
-        dm = re.search(
-            r'((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\.?\s+\d{1,2})',
-            after_text,
-        )
-        if dm:
-            date_str = dm.group(1)
-            date = parse_date_loose(date_str + f" {datetime.now().year}")
-        elif 'Now Playing' in after_text:
-            date_str = 'Now Playing'
-        # Clean the title for display and TMDB matching
+
+        link = f"https://www.bam.org{href}"
         title = clean_bam_title(raw_title)
-        e = make_event('BAM', title, link, date=date, date_str=date_str)
+
+        # Check if within date window (allow undated "Now Playing")
+        if date:
+            delta = (date - now).days
+            if delta > MAX_DAYS:
+                continue
+        elif date_str != 'Now Playing':
+            continue
+
+        # Fetch detail page for showtimes
+        show_times = []
+        r2 = fetch(link)
+        if r2:
+            for ld_m in re.finditer(
+                r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>',
+                r2.text, re.DOTALL,
+            ):
+                try:
+                    ld = json.loads(ld_m.group(1))
+                    ld_events = ld.get('graph', []) if isinstance(ld, dict) else []
+                    for ev in ld_events:
+                        if ev.get('@type') != 'Event':
+                            continue
+                        start = ev.get('startDate', '')
+                        if not start:
+                            continue
+                        try:
+                            dt = datetime.fromisoformat(start)
+                            delta = (dt.replace(tzinfo=None) - now).days
+                            if MIN_DAYS <= delta <= MAX_DAYS:
+                                t = dt.strftime('%I:%M %p').lstrip('0')
+                                show_times.append(t)
+                                # Use earliest screening date if none yet
+                                if not date or date_str == 'Now Playing':
+                                    date = dt.replace(tzinfo=None)
+                                    date_str = date.strftime('%b %d')
+                        except Exception:
+                            pass
+                except (json.JSONDecodeError, AttributeError):
+                    pass
+            show_times = list(dict.fromkeys(show_times))
+
+        e = make_event('BAM', title, link, date=date, date_str=date_str,
+                       showtimes=show_times if show_times else None)
         if e:
             events.append(e)
 
@@ -1364,9 +1465,9 @@ def _clean_title_for_tmdb(title):
     t = title.strip()
     # Normalize smart quotes to ASCII
     t = t.replace('\u2019', "'").replace('\u2018', "'").replace('\u201c', '"').replace('\u201d', '"')
-    # Strip "by Director Name" suffix (with or without space): "THE ERRAND BOYby Jerry Lewis"
+    # Strip "by Director Name" suffix — require first+last name
     # Also strip trailing language notes: "In English and French with..."
-    t = re.sub(r'\s*[Bb]y\s+[A-Z][a-zé\-]+(?:[\s\-]+[A-Z][a-zé\-]+)*(?:\s*In\s+.*)?$', '', t)
+    t = re.sub(r'\s*[Bb]y\s+[A-Z][a-zé\-]+(?:[\s\-]+[A-Z][a-zé\-]+)+(?:\s*In\s+.*)?$', '', t)
     # Strip "Director's TITLE" prefix: "Satyajit Ray's DAYS AND NIGHTS..."
     t = re.sub(r"^[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*'s?\s+", '', t)
     # Also handle "Giuseppe De Santis' BITTER RICE", "Ida Lupino's THE BIGAMIST"
