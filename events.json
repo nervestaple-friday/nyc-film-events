@@ -1,105 +1,9 @@
 {
-  "updated": "2026-03-18T11:01:13.196780+00:00",
+  "updated": "2026-03-19T11:01:11.294762+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
       "events": [
-        {
-          "title": "Cowboy Bebop: The Movie",
-          "link": "https://metrograph.com/film/?vista_film_id=9999000723",
-          "date_str": "Mar 19",
-          "showtimes": [
-            "3:25 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/34H5bsNc0EPILVr49TfOYXj50qV.jpg",
-          "overview": "The year is 2071. Following a terrorist bombing, a deadly virus is released on the populace of Mars and the government has issued the largest bounty in history, for the capture of whoever is behind it. The bounty hunter crew of the spaceship Bebop; Spike, Faye, Jet and Ed, take the case with hopes of cashing in the bounty. However, the mystery surrounding the man responsible, Vincent, goes deeper than they ever imagined, and they aren't the only ones hunting him.",
-          "year": "2001",
-          "rating": 7.7
-        },
-        {
-          "title": "The Silence",
-          "link": "https://metrograph.com/film/?vista_film_id=9999003929",
-          "date_str": "Mar 19",
-          "showtimes": [
-            "4:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/lTVOquzxw2DPF3MKuYd1ynz9F6H.jpg",
-          "overview": "With the world under attack by deadly creatures who hunt by sound, a teen and her family seek refuge outside the city and encounter a mysterious cult.",
-          "year": "2019",
-          "rating": 6.0
-        },
-        {
-          "title": "Irma Vep",
-          "link": "https://metrograph.com/film/?vista_film_id=9999000516",
-          "date_str": "Mar 19",
-          "showtimes": [
-            "5:50 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/9Z84G7mn8eS7WxiHr5CrXRrneaF.jpg",
-          "overview": "Hong Kong action diva Maggie Cheung comes to France when a past-his-prime director casts her in a remake of the silent classic Les Vampires. Clad in a rubber catsuit and unable to speak a word of French, Cheung finds herself adrift in the insanity of the film industry…",
-          "year": "1996",
-          "rating": 6.7
-        },
-        {
-          "title": "In a Lonely Place",
-          "link": "https://metrograph.com/film/?vista_film_id=9999001065",
-          "date_str": "Mar 19",
-          "showtimes": [
-            "6:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/vbdgtwzLOpE6MppZlyYChMagvQq.jpg",
-          "overview": "A violent screenwriter and a female neighbor fall in love after she clears him of murder, but she begins to have second thoughts.",
-          "year": "1950",
-          "rating": 7.6
-        },
-        {
-          "title": "Certified Copy",
-          "link": "https://metrograph.com/film/?vista_film_id=9999003797",
-          "date_str": "Mar 19",
-          "showtimes": [
-            "8:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/soBvtCR33Gv1j6gXwXOIc3JTlNc.jpg",
-          "overview": "In Tuscany to promote his latest book, a middle-aged English writer meets a French woman who leads him to the village of Lucignano.",
-          "year": "2010",
-          "rating": 7.0
-        },
-        {
-          "title": "The Earrings of Madame de...",
-          "link": "https://metrograph.com/film/?vista_film_id=9999001228",
-          "date_str": "Mar 19",
-          "showtimes": [
-            "8:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/3eJIw86taD84NkpuZaORf5k2DsH.jpg",
-          "overview": "In late 19th century France, the Countess Louise, wife of a wealthy general, sells the earrings her husband gave her on their wedding day to pay off her secret debts, then claims to have lost them. Her husband quickly learns of the deceit, which is the beginning of many tragic misunderstandings, all involving the earrings, the general, the countess, and her new lover, the Italian Baron Donati.",
-          "year": "1953",
-          "rating": 7.5
-        },
-        {
-          "title": "Perfect Blue",
-          "link": "https://metrograph.com/film/?vista_film_id=9999001649",
-          "date_str": "Mar 19",
-          "showtimes": [
-            "10:15 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/6WTiOCfDPP8XV4jqfloiVWf7KHq.jpg",
-          "overview": "Rising pop star Mima quits singing to pursue a career as an actress. After she takes up a role on a popular detective show, her handlers and collaborators begin turning up murdered. Harboring feelings of guilt and haunted by visions of her former self, Mima's reality and fantasy meld into a frenzied paranoia.",
-          "year": "1998",
-          "rating": 8.3
-        },
-        {
-          "title": "Re-Wind",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004699",
-          "date_str": "Mar 19",
-          "showtimes": [
-            "10:20 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/2ei5ZduECrvHiOZfjTgY3UURwYu.jpg",
-          "overview": "An investigation into a videotape that shows the results of a brutal murder committed using a knife-equipped camera.",
-          "year": "1988",
-          "rating": 5.417
-        },
         {
           "title": "Kill Bill: Vol. 1",
           "link": "https://metrograph.com/film/?vista_film_id=9999004723",
@@ -455,6 +359,18 @@
           "rating": 7.5
         },
         {
+          "title": "Cowboy Bebop: The Movie",
+          "link": "https://metrograph.com/film/?vista_film_id=9999000723",
+          "date_str": "Mar 24",
+          "showtimes": [
+            "7:20 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/34H5bsNc0EPILVr49TfOYXj50qV.jpg",
+          "overview": "The year is 2071. Following a terrorist bombing, a deadly virus is released on the populace of Mars and the government has issued the largest bounty in history, for the capture of whoever is behind it. The bounty hunter crew of the spaceship Bebop; Spike, Faye, Jet and Ed, take the case with hopes of cashing in the bounty. However, the mystery surrounding the man responsible, Vincent, goes deeper than they ever imagined, and they aren't the only ones hunting him.",
+          "year": "2001",
+          "rating": 7.7
+        },
+        {
           "title": "In the Mood for Love",
           "link": "https://metrograph.com/film/?vista_film_id=9999000517",
           "date_str": "Mar 24",
@@ -525,6 +441,18 @@
           "overview": "A high-priced call girl is forced to depend on a reluctant private eye when she is stalked by a psychopath.",
           "year": "1971",
           "rating": 6.8
+        },
+        {
+          "title": "Perfect Blue",
+          "link": "https://metrograph.com/film/?vista_film_id=9999001649",
+          "date_str": "Mar 26",
+          "showtimes": [
+            "10:20 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/6WTiOCfDPP8XV4jqfloiVWf7KHq.jpg",
+          "overview": "Rising pop star Mima quits singing to pursue a career as an actress. After she takes up a role on a popular detective show, her handlers and collaborators begin turning up murdered. Harboring feelings of guilt and haunted by visions of her former self, Mima's reality and fantasy meld into a frenzied paranoia.",
+          "year": "1998",
+          "rating": 8.3
         },
         {
           "title": "Goodbye, Dragon Inn",
@@ -1013,6 +941,30 @@
           ],
           "overview": "A mother hunts down the killer of her son only discover that the reality is far more horrifying than anything she could have ever have believed.",
           "year": "2002"
+        },
+        {
+          "title": "The Hand",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004759",
+          "date_str": "Apr 10",
+          "showtimes": [
+            "6:15 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/zUSAV9rObBlJfYIK9y4o88hmmdd.jpg",
+          "overview": "Jon Lansdale is a comic book artist who loses his right hand in a car accident. The hand was not found at the scene of the accident, but it soon returns by itself to follow Jon around, and murder those who anger him.",
+          "year": "1981",
+          "rating": 5.9
+        },
+        {
+          "title": "Fiume o morte!",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004760",
+          "date_str": "Apr 10",
+          "showtimes": [
+            "7:45 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/aiKa7N1s3Elci85Kvj5wrze92f5.jpg",
+          "overview": "Through dramatic reconstruction and documentary asides, the spirit of Italian poet, playwright, journalist, aristocrat and army officer Gabriele D’Annunzio is captured, presenting the nascent fascism in his attempts to forge a new state in the aftermath of the First World War.",
+          "year": "2025",
+          "rating": 8.3
         }
       ]
     },
@@ -1022,6 +974,16 @@
         {
           "title": "DAYS AND NIGHTS IN THE FOREST",
           "link": "https://filmforum.org/film/days-and-nights-in-the-forest",
+          "showtimes": [
+            "12:30 PM",
+            "3:00 PM",
+            "5:30 PM",
+            "8:00 PM",
+            "3:15 PM",
+            "5:45 PM",
+            "8:15 PM",
+            "8:35 PM"
+          ],
           "also_at": [
             "Paris Theater"
           ],
@@ -1034,6 +996,15 @@
           "title": "ANDRÉ IS AN IDIOT",
           "link": "https://filmforum.org/film/andre-is-an-idiot",
           "date_str": "Now Playing",
+          "showtimes": [
+            "12:40 PM",
+            "2:40 PM",
+            "4:45 PM",
+            "6:45 PM",
+            "8:45 PM",
+            "2:30 PM",
+            "9:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/hGXJQiZjFspvhGhzM1bzlgOg7Ib.jpg",
           "overview": "André, a brilliant idiot, is dying because he didn’t get a colonoscopy. His sobering diagnosis, complete irreverence, and insatiable curiosity, send him on an unexpected journey learning how to die happily and ridiculously without losing his sense of humor.",
           "year": "2026"
@@ -1042,6 +1013,14 @@
           "title": "BILLY PRESTON: THAT'S THE WAY GOD PLANNED IT",
           "link": "https://filmforum.org/film/billy-preston-thats-the-way-god-planned-it",
           "date_str": "Now Playing",
+          "showtimes": [
+            "1:10 PM",
+            "3:30 PM",
+            "8:15 PM",
+            "12:15 PM",
+            "4:30 PM",
+            "6:45 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/yFqXOi6WIMiXZMvSFvpmQmCZ32t.jpg",
           "overview": "With his signature gospel sound on the Hammond B3, Billy Preston doublehandedly elevated the greatest artists of his time – from the Beatles to the Rolling Stones, from Aretha Franklin to Eric Clapton, from Ray Charles to Barbra Streisand to Sly and the Family Stone. In our film, we explore Billy's career and influence on generations of musicians, as he scored several number one hits of his own and became one of the most sought-after musicians in the world. He did all of this as a soul divided -- by his deep roots in the church, in constant conflict with his identity as a gay Black man, searching for a family of his own that would accept him for who he was.",
           "year": "2026"
@@ -1050,6 +1029,9 @@
           "title": "CALLE MALAGA",
           "link": "https://filmforum.org/film/calle-malaga",
           "date_str": "Now Playing",
+          "showtimes": [
+            "5:45 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/fWagBXNDk44UaupYtwQOAvDwGiT.jpg",
           "overview": "Maria Angeles, a 79-year-old Spanish woman, lives alone in Tangier, Morocco, and enjoys her daily routine. However, her life is turned upside down when her daughter arrives from Madrid to sell the apartment in which she has always lived. Determined to stay, she does everything she can to get her home and her belongings back and, unexpectedly, rediscovers love and sensuality.",
           "year": "2025",
@@ -1058,22 +1040,20 @@
         {
           "title": "NAUSICAA",
           "link": "https://filmforum.org/film/nausicaa-agnes-varda",
+          "showtimes": [
+            "1:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/A3iktrA0d68WsebSDqqB7Cfg5RZ.jpg",
           "overview": "A girl, whose father is from Greece, studies ancient art in France. The film was made for television but never broadcast for political reasons related to its portrayal of Greeks. A work print was screened in Belgium in 1971, and the film is now available in reconstructed form.",
           "year": "1971",
           "rating": 6.2
         },
         {
-          "title": "MUR MURS",
-          "link": "https://filmforum.org/film/mur-murs-agnes-varda",
-          "poster": "https://image.tmdb.org/t/p/w300/dFU0gAIUeSS0k96it0LhCNN8v9R.jpg",
-          "overview": "Venturing from Venice Beach to Watts, Varda looks at the murals of LA as backdrop to and mirror of the city’s many cultures. She casts a curious eye on graffiti and photorealism, roller disco & gang violence, evangelical Christians, Hare Krishnas, artists, angels and ordinary Angelenos.",
-          "year": "1982",
-          "rating": 7.4
-        },
-        {
           "title": "LIONS LOVE (... AND LIES)",
           "link": "https://filmforum.org/film/lions-love-and-lies-agnes-varda",
+          "showtimes": [
+            "3:15 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/ahLU10GZeVLFg1KoC6wblOk8ZlW.jpg",
           "overview": "Three actors in Hollywood live and love together. A director comes from New York to make a movie about actors and Hollywood.",
           "year": "1969",
@@ -1082,6 +1062,10 @@
         {
           "title": "KUNG-FU MASTER!",
           "link": "https://filmforum.org/film/kung-fu-master-agnes-varda",
+          "showtimes": [
+            "6:00 PM",
+            "8:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/kHZN7zZGsWik9Sg3APaHGeTK5Jm.jpg",
           "overview": "Ip Man’s promising career as a Policeman is ruined after he is framed for murder and targeted by a mob boss’s daughter.",
           "year": "2019",
@@ -1090,6 +1074,12 @@
         {
           "title": "ONE SINGS, THE OTHER DOESN'T",
           "link": "https://filmforum.org/film/one-sings-the-other-doesnt-agnes-varda",
+          "showtimes": [
+            "8:10 PM",
+            "3:20 PM",
+            "12:30 PM",
+            "8:20 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/b3YTxT8LM1AWeWyrAXd3b0kjjzz.jpg",
           "overview": "The intertwined lives of two women in 1970s France, set against the progress of the women's movement in which Agnes Varda was involved. Pomme and Suzanne meet when Pomme helps Suzanne obtain an abortion after a third pregnancy which she cannot afford. They lose contact but meet again ten years later. Pomme has become an unconventional singer, Suzanne a serious community worker - despite the contrast they remain friends and share in the various dramas of each others' lives, in the process affirming their different female identities.",
           "year": "1977",
@@ -1098,14 +1088,40 @@
         {
           "title": "TWO PROSECUTORS",
           "link": "https://filmforum.org/film/two-prosecutors",
+          "showtimes": [
+            "12:15 PM",
+            "2:45 PM",
+            "5:15 PM",
+            "7:45 PM",
+            "8:15 PM",
+            "12:20 PM",
+            "3:00 PM",
+            "5:30 PM",
+            "8:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/k2jGfmN4T8Q5EMDpsUUgSwyhnSX.jpg",
           "overview": "In 1937, amidst Stalin's Great Terror, a newly appointed prosecutor for the USSR is made aware of alleged corruption in the Secret Police, and takes it upon himself to investigate.",
           "year": "2025",
           "rating": 6.5
         },
         {
+          "title": "MUR MURS",
+          "link": "https://filmforum.org/film/mur-murs-agnes-varda",
+          "showtimes": [
+            "12:50 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/dFU0gAIUeSS0k96it0LhCNN8v9R.jpg",
+          "overview": "Venturing from Venice Beach to Watts, Varda looks at the murals of LA as backdrop to and mirror of the city’s many cultures. She casts a curious eye on graffiti and photorealism, roller disco & gang violence, evangelical Christians, Hare Krishnas, artists, angels and ordinary Angelenos.",
+          "year": "1982",
+          "rating": 7.4
+        },
+        {
           "title": "JANE B. BY AGNÈS V.",
           "link": "https://filmforum.org/film/jane-b-by-agnes-v-agnes-varda",
+          "showtimes": [
+            "6:00 PM",
+            "8:35 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/1izUNQlIMkc7dhcbatWej6NvpW8.jpg",
           "overview": "The interests, obsessions, and fantasies of two singular artists converge in this inspired collaboration between Agnès Varda and her longtime friend the actor Jane Birkin. Made over the course of a year and motivated by Birkin’s fortieth birthday—a milestone she admits to some anxiety over—Jane B. by Agnès V. contrasts the private, reflective Birkin with Birkin the icon.",
           "year": "1988",
@@ -1114,6 +1130,10 @@
         {
           "title": "DAGUERRÉOTYPES",
           "link": "https://filmforum.org/film/daguerreotypes-agnes-varda",
+          "showtimes": [
+            "3:15 PM",
+            "12:45 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/3XXWWVKbePGBu6Q7e0ngve5cwBB.jpg",
           "overview": "An intimate portrait of the small shops and shopkeepers of the Rue Daguerre in Paris, a picturesque street that has been the filmmaker’s home for more than 50 years.",
           "year": "1978",
@@ -1122,6 +1142,9 @@
         {
           "title": "DOCUMENTEUR",
           "link": "https://filmforum.org/film/documenteur-agnes-varda",
+          "showtimes": [
+            "5:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/hmfyf1qlkSigmiJf3c7Wu0528vt.jpg",
           "overview": "After separating from the father of her son, a young French woman tries to find lodging and a fresh start in L.A. for herself and her son.",
           "year": "1981",
@@ -1130,6 +1153,12 @@
         {
           "title": "VAGABOND",
           "link": "https://filmforum.org/film/vagabond-agnes-varda",
+          "showtimes": [
+            "8:00 PM",
+            "3:45 PM",
+            "1:00 PM",
+            "5:15 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/dU0vukkGmKAG76HmrugrRIrtAdY.jpg",
           "overview": "Lukas wanders through Vienna. In a random bar at night he meets other wanderers and strays. But what is colourful in the moonlight, in the morning never is.",
           "year": "2022"
@@ -1137,6 +1166,9 @@
         {
           "title": "MY LIFE AS A ZUCCHINI",
           "link": "https://filmforum.org/film/my-life-as-a-zucchini-ffjr-2026",
+          "showtimes": [
+            "11:00 AM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/2uu8fIzl76C9MFiUQhjKYSLKVq.jpg",
           "overview": "After his mother’s death, Zucchini is befriended by a kind police officer, Raymond, who accompanies him to his new foster home filled with other orphans his age. There, with the help of his newfound friends, Zucchini eventually learns to trust and love as he searches for a new family of his own.",
           "year": "2016",
@@ -1145,6 +1177,10 @@
         {
           "title": "THE GLEANERS AND I",
           "link": "https://filmforum.org/film/the-gleaners-and-i-agnes-varda",
+          "showtimes": [
+            "6:20 PM",
+            "1:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/6IdCTKi4Eu7i897jpe59wIDGCri.jpg",
           "overview": "Varda focuses her eye on gleaners: those who scour already-reaped fields for the odd potato or turnip. Her investigation leads from forgotten corners of the French countryside to off-hours at the green markets of Paris, following those who insist on finding a use for that which society has cast off, whether out of necessity or activism.",
           "year": "2000",
@@ -1153,6 +1189,9 @@
         {
           "title": "THE WORLD OF JACQUES DEMY",
           "link": "https://filmforum.org/film/the-world-of-jacques-demy-agnes-varda",
+          "showtimes": [
+            "1:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/yRkSL35uZ8EYj8ouv7h8gO9eqIg.jpg",
           "overview": "Agnès Varda's documentary portrait of her late husband, Jacques Demy.  A companion piece to her Jacquot de Nantes.",
           "year": "1995",
@@ -1161,6 +1200,10 @@
         {
           "title": "THE YOUNG GIRLS OF ROCHEFORT",
           "link": "https://filmforum.org/film/the-young-girls-of-rochefort-agnes-varda",
+          "showtimes": [
+            "3:00 PM",
+            "6:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/jtxhyGaYhurH6KsjvP1jV3dDypz.jpg",
           "overview": "In the seaside town of Rochefort, twin sisters Delphine and Solange dream of love and artistic fulfillment beyond their quiet lives. As sailors, artists, musicians, and chance visitors pass through town during a weekend fair, a web of near-misses and romantic longing brings ideal partners tantalizingly close—without their realizing it.",
           "year": "1967",
@@ -1169,6 +1212,9 @@
         {
           "title": "THE YOUNG GIRLS TURN 25",
           "link": "https://filmforum.org/film/the-young-girls-turn-25-agnes-varda",
+          "showtimes": [
+            "6:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/moM5PJmIQ06dVqfmSwxzaDLyrmk.jpg",
           "overview": "Agnes Varda's documentary of the celebrations arising from the 25th anniversary of her husband Jacques Demy's film The Young Girls of Rochefort.",
           "year": "1993",
@@ -1177,6 +1223,10 @@
         {
           "title": "JACQUOT DE NANTES",
           "link": "https://filmforum.org/film/jacquot-de-nantes-agnes-varda",
+          "showtimes": [
+            "8:00 PM",
+            "3:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/cg0Z7kqFbDOBWNanI7uYHzsTiU5.jpg",
           "overview": "Jacquot Demy, the son of a garage owner and a hairdresser, is fascinated by cinema and decides to pursue his dream of becoming a filmmaker by any means necessary.",
           "year": "1991",
@@ -1188,30 +1238,19 @@
       "url": "https://www.ifccenter.com/",
       "events": [
         {
-          "title": "SCENES FROM THE DIVIDE",
-          "link": "https://www.ifccenter.com/films/scenes-from-the-divide-2/",
-          "date_str": "Mar 19",
-          "poster": "https://image.tmdb.org/t/p/w300/oifxuPaUJDKGJz1K0MbqvK3WYQF.jpg",
-          "overview": "In the lead-up to Zohran Mamdani’s election as mayor of New York City, many of the city’s Jewish population found themselves at odds over the candidate’s positions on Palestine and Israel. By inviting viewers into the homes of New Yorkers on both sides of the campaign, filmmaker Alison reveals a fierce battle among American Jews over identity, history, and responsibility. SCENES FROM THE DIVIDE explores a community in generational upheaval.",
-          "year": "2026"
-        },
-        {
-          "title": "MIROIRS NO. 3",
-          "link": "https://www.ifccenter.com/films/miroirs-no-3/",
-          "date_str": "Mar 19",
-          "also_at": [
-            "Film at Lincoln Center",
-            "BAM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/dNzLDieAVlX3So2Qs2XSAOUmvxM.jpg",
-          "overview": "On a weekend trip to the countryside, Laura miraculously survives a car crash. Physically unhurt but deeply shaken, she is taken in by a local woman who witnessed the accident and now cares for Laura with motherly devotion. When her husband and adult son also give up their initial resistance to Laura's presence, the four of them slowly build up some family-like routine. But soon they can no longer ignore their past...",
-          "year": "2025",
-          "rating": 6.6
-        },
-        {
           "title": "DEAD LOVER",
           "link": "https://www.ifccenter.com/films/dead-lover/",
           "date_str": "Mar 27",
+          "showtimes": [
+            "7:00 PM",
+            "2:35 PM",
+            "4:45 PM",
+            "9:15 PM",
+            "5:25 PM",
+            "7:40 PM",
+            "9:45 PM",
+            "3:10 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/siGwXsTqwSBC9VcbDM4tdhb1qLo.jpg",
           "overview": "Commissioner Maigret rushes to the Quai d’Orsay with Lieutenant Janvier. There, they find Mademoiselle Larrieu in a state of shock. That very morning, she discovered the bullet-riddled body of Mr. Berthier-Lagès, a renowned former ambassador whom she had served as a housekeeper for 46 years. While searching the victim's apartment, Maigret and Janvier uncover hundreds of letters. The diplomat had maintained a fifty-year-long love correspondence with a certain Princess of Vuynes, whose husband - by a strange coincidence - had died just a few days earlier. As he confronts the various members of the two families and the suspicious silence of Mademoiselle Larrieu, Maigret finds himself faced with surprise after surprise, watching his certainties crumble - until the solution to the mystery finally hits him in the face at the very last moment...",
           "year": "2026",
@@ -1248,6 +1287,13 @@
         {
           "title": "SIRAT",
           "link": "https://www.ifccenter.com/films/sirat/",
+          "showtimes": [
+            "3:50 PM",
+            "9:40 PM",
+            "12:45 PM",
+            "7:35 PM",
+            "12:25 PM"
+          ],
           "also_at": [
             "Film at Lincoln Center"
           ],
@@ -1259,6 +1305,9 @@
         {
           "title": "Space Cowboy",
           "link": "https://www.ifccenter.com/films/space-cowboy/",
+          "showtimes": [
+            "2:45 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/qkw3sQB1IBxnd7oGhbPBHuoEIzm.jpg",
           "overview": "Joe Jennings, a pioneer of skydiving cinematography, looks back on a lifetime of creating iconic moments in film and television, while he tries to pull off his most ambitious stunt yet, turning a dreamlike vision into reality.",
           "year": "2024"
@@ -1266,6 +1315,11 @@
         {
           "title": "Pompei: Below the Clouds",
           "link": "https://www.ifccenter.com/films/below-the-clouds/",
+          "showtimes": [
+            "4:45 PM",
+            "10:35 AM",
+            "2:55 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/xmTTrWGbw2wIHBw0ht5Oo6AJGZd.jpg",
           "overview": "Naples faces dual volcanic threats from Vesuvius and Campi Flegrei. Amid increasing tremors, archaeologists work as residents live anxiously, haunted by Pompeii's fate while emergency services strain.",
           "year": "2025",
@@ -1273,20 +1327,56 @@
         },
         {
           "title": "Live-Action Oscar-Nominated Shorts 2026",
-          "link": "https://www.ifccenter.com/films/live-action-oscar-nominated-shorts-2026/"
+          "link": "https://www.ifccenter.com/films/live-action-oscar-nominated-shorts-2026/",
+          "showtimes": [
+            "10:45 AM",
+            "1:10 PM",
+            "4:00 PM",
+            "6:45 PM",
+            "9:30 PM",
+            "5:15 PM",
+            "9:25 PM",
+            "4:15 PM",
+            "9:50 PM",
+            "11:40 AM"
+          ]
         },
         {
           "title": "Doc Program B: Oscar-Nominated Shorts 2026",
-          "link": "https://www.ifccenter.com/films/doc-program-b-oscar-nominated-shorts-2026/"
+          "link": "https://www.ifccenter.com/films/doc-program-b-oscar-nominated-shorts-2026/",
+          "showtimes": [
+            "11:15 AM",
+            "8:00 PM",
+            "1:10 PM"
+          ]
         },
         {
           "title": "Doc Program A: Oscar- Nominated Shorts 2026",
-          "link": "https://www.ifccenter.com/films/doc-program-a-oscar-nominated-shorts-2026/"
+          "link": "https://www.ifccenter.com/films/doc-program-a-oscar-nominated-shorts-2026/",
+          "showtimes": [
+            "12:55 PM",
+            "6:05 PM",
+            "9:45 PM",
+            "11:15 AM",
+            "10:55 AM"
+          ]
         },
         {
           "title": "Animated Oscar-Nominated Shorts 2026",
           "link": "https://www.ifccenter.com/films/animated-oscar-nominated-shorts-2026/",
-          "date_str": "Mar 20"
+          "date_str": "Mar 20",
+          "showtimes": [
+            "12:50 PM",
+            "2:45 PM",
+            "4:40 PM",
+            "7:50 PM",
+            "9:55 PM",
+            "10:50 AM",
+            "3:15 PM",
+            "7:30 PM",
+            "2:35 PM",
+            "8:00 PM"
+          ]
         }
       ]
     },
@@ -1306,7 +1396,8 @@
           "link": "https://www.filmlinc.org/films/aro-berria/",
           "date_str": "Apr 09",
           "showtimes": [
-            "8:15 PM"
+            "8:15 PM",
+            "6:00 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/2jTqc6aNRe81XiPpKgoMHkYGm6j.jpg",
           "overview": "San Sebastian, 1978. The workers at the water meter factory hold an assembly to discuss a strike, which ultimately fails. Disappointed, the most non-conformist workers turn their aspirations for radical transformation towards more intimate spheres. Some leave the factory to join an isolated community in the mountains, where dozens of young people embarked on an intense journey of shared cathartic experiences.",
@@ -1315,12 +1406,8 @@
         {
           "title": "Below the Clouds",
           "link": "https://www.filmlinc.org/films/below-the-clouds/",
-          "date_str": "Mar 19",
+          "date_str": "Mar 20",
           "showtimes": [
-            "1:15 PM",
-            "3:45 PM",
-            "6:15 PM",
-            "8:45 PM",
             "12:30 PM",
             "6:00 PM",
             "6:30 PM"
@@ -1329,6 +1416,17 @@
           "overview": "Naples faces dual volcanic threats from Vesuvius and Campi Flegrei. Amid increasing tremors, archaeologists work as residents live anxiously, haunted by Pompeii's fate while emergency services strain.",
           "year": "2025",
           "rating": 6.0
+        },
+        {
+          "title": "Chronovisor",
+          "link": "https://www.filmlinc.org/films/chronovisor/",
+          "date_str": "Apr 10",
+          "showtimes": [
+            "8:45 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/iFkWLSxXI2HCBMtYUJEPayNNgTy.jpg",
+          "overview": "A French academic is seduced into a world of untold histories in her scholarly quest to uncover the mystery of a history-capturing camera-like machine created by clandestine Benedictine monks. An academic-noir, armchair mystery in the lineage of Jorge Luis Borges and Umberto Eco.",
+          "year": "2026"
         },
         {
           "title": "Damnation",
@@ -1341,6 +1439,18 @@
           "poster": "https://image.tmdb.org/t/p/w300/mRp1SMNbPzkHBa4NMoVdLtbnhXp.jpg",
           "overview": "Four individuals are set into a void where there is only one exit.",
           "year": "2024"
+        },
+        {
+          "title": "Do You Love Me",
+          "link": "https://www.filmlinc.org/films/do-you-love-me/",
+          "date_str": "Apr 10",
+          "showtimes": [
+            "8:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/77lsmFGy2owudc1BZpabXJMNsIv.jpg",
+          "overview": "Kira is living her life with the teenage confidence that the world revolves around her. Born and raised in the late Soviet Ukraine, she sees her life predictable and clear. But it doesn't last long. Suddenly, she discovers that her father has a mistress, and her mother knows about it but prefers to remain silent. As Kira's family begins to fall apart —and so does the Soviet State— everything she knew turns out to be an illusion. Kira is searching for love, warmth, and hope for the future, going down a dark path she could not foresee.",
+          "year": "2024",
+          "rating": 5.8
         },
         {
           "title": "Dry Leaf",
@@ -1394,9 +1504,8 @@
         {
           "title": "Miroirs No. 3",
           "link": "https://www.filmlinc.org/films/miroirs-no-3/",
-          "date_str": "Mar 19",
+          "date_str": "Mar 20",
           "showtimes": [
-            "6:00 PM",
             "12:15 PM",
             "2:15 PM",
             "4:15 PM",
@@ -1405,18 +1514,18 @@
             "12:30 PM",
             "2:30 PM",
             "4:30 PM",
+            "6:00 PM",
             "6:30 PM",
             "8:30 PM",
             "8:00 PM"
           ],
           "also_at": [
-            "IFC Center",
             "BAM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/dNzLDieAVlX3So2Qs2XSAOUmvxM.jpg",
           "overview": "On a weekend trip to the countryside, Laura miraculously survives a car crash. Physically unhurt but deeply shaken, she is taken in by a local woman who witnessed the accident and now cares for Laura with motherly devotion. When her husband and adult son also give up their initial resistance to Laura's presence, the four of them slowly build up some family-like routine. But soon they can no longer ignore their past...",
           "year": "2025",
-          "rating": 6.6
+          "rating": 6.5
         },
         {
           "title": "Satantango",
@@ -1434,11 +1543,10 @@
         {
           "title": "Sirat",
           "link": "https://www.filmlinc.org/films/sirat/",
-          "date_str": "Mar 19",
+          "date_str": "Mar 20",
           "showtimes": [
-            "3:30 PM",
-            "9:00 PM",
-            "8:30 PM"
+            "8:30 PM",
+            "9:00 PM"
           ],
           "also_at": [
             "IFC Center"
@@ -1447,18 +1555,6 @@
           "overview": "A man and his son arrive at a rave lost in the mountains of Morocco. They are looking for Marina, their daughter and sister, who disappeared months ago at another rave. Driven by fate, they decide to follow a group of ravers in search of one last party, in hopes Marina will be there.",
           "year": "2025",
           "rating": 6.8
-        },
-        {
-          "title": "Something to Remind Me",
-          "link": "https://www.filmlinc.org/films/something-to-remind-me/",
-          "date_str": "Mar 19",
-          "showtimes": [
-            "8:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/mqK1qQGQ0h3SxxMTAcO31lslvUq.jpg",
-          "overview": "Middle-aged lawyer Thomas meets Leyla at the pool. After their paths keep crossing, he asks her out on a date. Somewhat to his surprise she agrees. The next morning Thomas awakes to find Leyla and his laptop, which contains vital case files, missing.",
-          "year": "2002",
-          "rating": 6.9
         },
         {
           "title": "The Man from London",
@@ -1488,7 +1584,8 @@
           "link": "https://www.filmlinc.org/films/the-prophet/",
           "date_str": "Apr 09",
           "showtimes": [
-            "8:30 PM"
+            "8:30 PM",
+            "6:00 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/3DlL72rO36LzCHG7sLD2X384nfx.jpg",
           "overview": "An artist reflects on her career and the dark events of her past that haunt her",
@@ -1497,17 +1594,15 @@
         {
           "title": "The Secret Agent",
           "link": "https://www.filmlinc.org/films/the-secret-agent/",
-          "date_str": "Mar 19",
+          "date_str": "Mar 20",
           "showtimes": [
-            "12:30 PM",
-            "6:00 PM",
             "3:00 PM"
           ],
           "also_at": [
             "Syndicated BK",
             "BAM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/jadCjQLZpX9yxlk4xPtyx4He2Ll.jpg",
+          "poster": "https://image.tmdb.org/t/p/w300/rZqolYhxMEe6TZZTjSmFw9crDTD.jpg",
           "overview": "Brazil, 1977. Marcelo, a technology expert in his early 40s, is on the run. Hoping to reunite with his son, he travels to Recife during Carnival but soon realizes that the city is not the safe haven he was expecting.",
           "year": "2025",
           "rating": 7.3
@@ -1552,19 +1647,6 @@
           "poster": "https://image.tmdb.org/t/p/w300/9OUw86S6wzlpb8Ho8dws8lngrco.jpg",
           "overview": "Production Bayreuth 2024. There is no arrival in Tristan and Isolde, only the longing for the unattainable, for the place “where the end of deception promised me my heart”. Two people who strive to fall out of the roles ascribed to them, to escape the supposed lies of the day. Two people suffering from life, whose declaration of love consists of wanting to restore a moment that has irretrievably passed. Two nocturnal devotees who, in their regressive desire to be uplifted and completely abandon themselves, lose touch with reality and who, in their desire to abandon their ego to another and escape their own history, ultimately fail themselves. “To long to die, not to die of longing.”",
           "year": "2024"
-        },
-        {
-          "title": "Werckmeister Harmonies",
-          "link": "https://www.filmlinc.org/films/werckmeister-harmonies/",
-          "date_str": "Mar 29",
-          "showtimes": [
-            "4:00 PM",
-            "8:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/fzG0xks6HNSnQg6atlF98brHvIT.jpg",
-          "overview": "A naive young man witnesses an escalation of violence in his small hometown following the arrival of a mysterious circus attraction.",
-          "year": "2001",
-          "rating": 7.8
         }
       ]
     },
@@ -1572,32 +1654,12 @@
       "url": "https://anthologyfilmarchives.org/film_screenings/calendar",
       "events": [
         {
-          "title": "THE LADIES MAN",
-          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
-          "date_str": "Mar 19",
-          "poster": "https://image.tmdb.org/t/p/w300/c15TotHYrXPZSzjZCBfbup3fz4V.jpg",
-          "overview": "After his girl leaves him for someone else, Herbert gets really depressed and starts searching for a job. He finally finds one in a big house which is inhabited by many, many women. Can he live in the same home with all these females?",
-          "year": "1961",
-          "rating": 6.3
-        },
-        {
-          "title": "MABOU MINES PGM 6: OTHER CHILDREN + DEAD END KIDS",
-          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
-          "date_str": "Mar 19"
-        },
-        {
-          "title": "TOUT VA BIEN",
-          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
-          "date_str": "Mar 19",
-          "poster": "https://image.tmdb.org/t/p/w300/6mJssZAMmziBP6tIe4vGTdNjeIA.jpg",
-          "overview": "A strike at a French sausage factory contributes to the estrangement of a married filmmaker and his reporter wife.",
-          "year": "1972",
-          "rating": 6.6
-        },
-        {
           "title": "THE ERRAND BOY",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
           "date_str": "Mar 20",
+          "showtimes": [
+            "6:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/htJbw1ztW0m7bdJytMMOXWhgHgq.jpg",
           "overview": "Paramutual Pictures wants to know where all the money is going so they hire Morty to be their spy. Morty works for Mr. Sneak and gets a job in the mail room so that he can have access to the lot. But all that Morty ever finds is that he can cause havoc no matter what he does.",
           "year": "1961",
@@ -1607,17 +1669,26 @@
           "title": "HARRY SMITH",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
           "date_str": "Mar 20",
+          "showtimes": [
+            "6:45 PM"
+          ],
           "overview": "16mm\r silent film\r 1999"
         },
         {
-          "title": "FILM NO. 12 (HEAVEN AND EARTH MAGIC)ca. 1957-62, 66 min, 16mm, b&w",
+          "title": "FILM NO. 12 (HEAVEN AND EARTH MAGIC)",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
-          "date_str": "Mar 20"
+          "date_str": "Mar 20",
+          "showtimes": [
+            "8:30 PM"
+          ]
         },
         {
           "title": "CONTEMPT",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
           "date_str": "Mar 20",
+          "showtimes": [
+            "8:45 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/yUgtpY4NuLTW7jaaKoqhg8XVyGW.jpg",
           "overview": "Angel leaves a party she never wanted to go to in the first place.",
           "year": "2019"
@@ -1626,6 +1697,9 @@
           "title": "HOLLYWOOD OR BUST",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
           "date_str": "Mar 21",
+          "showtimes": [
+            "1:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/mm6VZSq6251wy3ynqNDHW7aoWfx.jpg",
           "overview": "The last movie with Jerry Lewis and Dean Martin together, is a satire of the life in Hollywood. Steve Wiley is a deceiver who cheats Malcolm Smith when he wins a car, claiming that he won it too. Trying to steal the car, Steve tells Malcolm that he lives in Hollywood, next to Anita Ekberg's. When Malcom hears that, they both set out for Hollywood and the adventure begins...",
           "year": "1956",
@@ -1635,6 +1709,9 @@
           "title": "PIERROT LE FOU",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
           "date_str": "Mar 21",
+          "showtimes": [
+            "3:45 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/i124H6iQB4CawrgFW9aZaZs7OBO.jpg",
           "overview": "Pierrot escapes his boring society and travels from Paris to the Mediterranean Sea with Marianne, a girl chased by hit-men from Algeria. They lead an unorthodox life, always on the run.",
           "year": "1965",
@@ -1643,12 +1720,18 @@
         {
           "title": "RUTTMANN / STAUFFACHER",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
-          "date_str": "Mar 21"
+          "date_str": "Mar 21",
+          "showtimes": [
+            "4:45 PM"
+          ]
         },
         {
           "title": "THE FAMILY JEWELS",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
           "date_str": "Mar 21",
+          "showtimes": [
+            "6:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/1Ar6Aq75Ro35XTqjDr3KgJFRobP.jpg",
           "overview": "A young heiress must choose between six uncles, one of which is up to no good and out to harm the girl's beloved bodyguard who practically raised her.",
           "year": "1965",
@@ -1657,21 +1740,54 @@
         {
           "title": "STEPHANIE BARBER: JHANA AND THE RATS OF JAMES OLDS or 31 DAYS/31 VIDEOS",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
-          "date_str": "Mar 21"
+          "date_str": "Mar 21",
+          "showtimes": [
+            "7:00 PM"
+          ]
         },
         {
           "title": "MADE IN U.S.A.",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
           "date_str": "Mar 21",
+          "showtimes": [
+            "9:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/zEfzGJXf9k8uiq82fYK7322N0Wi.jpg",
           "overview": "Two men from Pennsylvania give up hope in their small run down coal mining town, and head off in search of the beaches of California. The two steal cars as they travel across the USA and are joined by a wild young woman.",
           "year": "1987",
           "rating": 5.6
         },
         {
+          "title": "TOUT VA BIEN",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+          "date_str": "Mar 22",
+          "showtimes": [
+            "1:45 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/6mJssZAMmziBP6tIe4vGTdNjeIA.jpg",
+          "overview": "A strike at a French sausage factory contributes to the estrangement of a married filmmaker and his reporter wife.",
+          "year": "1972",
+          "rating": 6.6
+        },
+        {
+          "title": "THE LADIES MAN",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+          "date_str": "Mar 22",
+          "showtimes": [
+            "4:15 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/c15TotHYrXPZSzjZCBfbup3fz4V.jpg",
+          "overview": "After his girl leaves him for someone else, Herbert gets really depressed and starts searching for a job. He finally finds one in a big house which is inhabited by many, many women. Can he live in the same home with all these females?",
+          "year": "1961",
+          "rating": 6.3
+        },
+        {
           "title": "PAUL SHARITS",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
           "date_str": "Mar 22",
+          "showtimes": [
+            "5:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/xVXnToN9AdfLUIh4qKXVlVgITjX.jpg",
           "overview": "Long after his premature death, the impact of Paul Sharits lingers on. The prominent iconoclast and innovator provoked with fast-flickering, pulsating, colourful mosaics. The many interviews and testimonies are also a portrait of a generation of leading voices in experimental filmmaking.",
           "year": "2015",
@@ -1681,6 +1797,9 @@
           "title": "THE NUTTY PROFESSOR",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
           "date_str": "Mar 23",
+          "showtimes": [
+            "6:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/fMtb5aZoLRNbMnCkatFsTmPRfl5.jpg",
           "overview": "When beautiful Carla Purty joins the university faculty, genetic professor Dr. Sherman Klump grows desperate to whittle his 400-pound frame down to size and win her heart. So, with one swig of his experimental fat-reducing serum, Sherman becomes 'Buddy Love', a fast-talking, pumped-up, plumped down Don Juan.",
           "year": "1996",
@@ -1690,6 +1809,9 @@
           "title": "NOUVELLE VAGUE",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
           "date_str": "Mar 23",
+          "showtimes": [
+            "9:15 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/AfE7DZ0DPgme6I58dlYp1Bo9xeN.jpg",
           "overview": "After writing for Cahiers du cinéma, a young Jean-Luc Godard decides making films is the best film criticism. He convinces producer Georges de Beauregard to fund a low-budget feature, and creates a treatment with fellow New Wave filmmaker François Truffaut about a gangster couple. The result? Breathless, one of the first features of the Nouvelle Vague era of French cinema.",
           "year": "2025",
@@ -1698,12 +1820,18 @@
         {
           "title": "SMORGASBORD (aka CRACKING UP)",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
-          "date_str": "Mar 24"
+          "date_str": "Mar 24",
+          "showtimes": [
+            "6:45 PM"
+          ]
         },
         {
           "title": "WAVELENGTH",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
           "date_str": "Mar 24",
+          "showtimes": [
+            "7:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/qNfHQtlB5cBqo8xsGDqJN50FlUE.jpg",
           "overview": "Two young lovers learn that a small group of child-like space aliens are marooned on Earth and are being held prisoner at a top secret military facility. The couple then decide to liberate the extraterrestrial castaways and help them make a rendezvous with a rescue ship sent from the alien home planet.",
           "year": "1983",
@@ -1713,6 +1841,9 @@
           "title": "<---> (BACK AND FORTH)",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
           "date_str": "Mar 24",
+          "showtimes": [
+            "8:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/10lMoRN0SDMlLktjucciFE5WrOu.jpg",
           "overview": "Afonso is a university professor and a single father to his son Benedict. One day, they decide to take a trip together, but face problems when their car breaks down. They are helped by four very beautiful telemarketing operators who take them back to São Paulo.",
           "year": "2016",
@@ -1722,48 +1853,31 @@
           "title": "KEEP YOUR RIGHT UP / SOIGNE TA DROITE",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
           "date_str": "Mar 24",
+          "showtimes": [
+            "9:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/dSySPJlFdt0khrpM8IyElsXTkQ9.jpg",
           "overview": "This film is made up several sketches in which certain actors play several real or fictional roles to a background of rock music. The lead character, played by Godard himself, is an annoyingly perfectionist film-maker determined to wring every last drop of the finest performance possible from his stars.",
           "year": "1987",
           "rating": 6.0
+        },
+        {
+          "title": "THREE ON A COUCH",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+          "date_str": "Mar 25",
+          "showtimes": [
+            "6:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/ccmeNZoCVtaI45ztDeGYsvbioWh.jpg",
+          "overview": "An artist has an opportunity to go to Paris and wants to bring his fiancee along. However, she's a psychiatrist who currently has three female patients who don't like men. So, he guises himself as three different men to gauge their trust and hopefully cure them so that his fiancee can go with him.",
+          "year": "1966",
+          "rating": 5.3
         }
       ]
     },
     "MoMA": {
       "url": "https://www.moma.org/calendar/film",
       "events": [
-        {
-          "title": "Gentlemen Prefer Blondes",
-          "link": "https://www.moma.org/calendar/events/11220",
-          "date_str": "Thu, Mar 19",
-          "showtimes": [
-            "4:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/fDozhst5HVJJcd3BM8ZOsKniO7Q.jpg",
-          "overview": "Lorelei Lee is a beautiful showgirl engaged to be married to the wealthy Gus Esmond, much to the disapproval of Gus' rich father, Esmond Sr., who thinks that Lorelei is just after his money. When Lorelei goes on a cruise accompanied only by her best friend, Dorothy Shaw, Esmond Sr. hires Ernie Malone, a private detective, to follow her and report any questionable behavior that would disqualify her from the marriage.",
-          "year": "1953",
-          "rating": 7.3
-        },
-        {
-          "title": "Open Art Space Films: Kiki",
-          "link": "https://www.moma.org/calendar/events/11279",
-          "date_str": "Thu, Mar 19",
-          "showtimes": [
-            "8:00 PM"
-          ]
-        },
-        {
-          "title": "Let’s Make Love",
-          "link": "https://www.moma.org/calendar/events/11226",
-          "date_str": "Thu, Mar 19",
-          "showtimes": [
-            "7:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/lmLvFMRVEpaIU7EJOzIkZy7jjVr.jpg",
-          "overview": "Love Alone Can’t Make a Child chronicles the love story and emotional odyssey of Maria and Christiane who, for over a decade, have been trying to fulfil their desire of giving birth to a child of their own. The director, a childhood friend of Maria, lovingly narrates the couple's journey, showcasing their resilience in the face of ever-increasing challenges, and the intricate dynamics of a relationship under tremendous strain. More than anything else, the film continually pursues what love truly means in a long-term romantic relationship.",
-          "year": "2024",
-          "rating": 6.7
-        },
         {
           "title": "How to Marry a Millionaire",
           "link": "https://www.moma.org/calendar/events/11222",
@@ -1822,6 +1936,18 @@
           "overview": "A coming-of-age story about a young brother and sister whom spend a pivotal summer in the country with their grandparents.",
           "year": "1984",
           "rating": 7.4
+        },
+        {
+          "title": "The Prince and the Showgirl",
+          "link": "https://www.moma.org/calendar/events/11223",
+          "date_str": "Sat, Mar 21",
+          "showtimes": [
+            "1:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/eNnzkk6OPRnx2jApJ4MnbvJFEvm.jpg",
+          "overview": "An American showgirl becomes entangled in political intrigue when the Prince Regent of a foreign country attempts to seduce her.",
+          "year": "1957",
+          "rating": 6.4
         },
         {
           "title": "Family Films: Real and Imagined Journeys",
@@ -1942,6 +2068,36 @@
           "overview": "Yeon-gyu is a teenage boy who wants to escape his hometown where violence is commonly enacted among neighbors. He only hopes to have a peaceful life with his mother. However, the world never allows him to have a dream nor hope for life. When Yeon-gyu needs a hand from grown-ups, Chi-geon, a thug of the town, offers a favor. The simple favor leads Yeon-gyu to explore the world of Chi-geon. It ironically results Yeon-gyu gradually falling into Chi-geon's life. Grasping hope to run away from where he is, he struggles between the border. Can he escape from the town at the end?",
           "year": "2023",
           "rating": 5.8
+        },
+        {
+          "title": "Almanac of Fall (Öszi almanach aka Autumn Almanac)",
+          "link": "https://www.moma.org/calendar/events/11283",
+          "date_str": "Sat, Mar 28",
+          "showtimes": [
+            "4:00 PM"
+          ]
+        },
+        {
+          "title": "Die Hard",
+          "link": "https://www.moma.org/calendar/events/11284",
+          "date_str": "Sat, Mar 28",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "overview": "Meet the people in the northern village of Muodoslompolo, Tornedalen, Sweden. A small community undergoing major transformations and with deep connections to a dark side of Swedish history.",
+          "year": "2025"
+        },
+        {
+          "title": "Scarface",
+          "link": "https://www.moma.org/calendar/events/11286",
+          "date_str": "Sun, Mar 29",
+          "showtimes": [
+            "1:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/fnCwBoChd6K0DdcsTPOrq8fM0p2.jpg",
+          "overview": "Alphonse Gabriel Capone, the most infamous gangster of all time. He was cut across the left cheek during a fight when he was young, earning him the moniker \"Scarface.\" He moved to Chicago in 1919 and worked with infamous gangster Johnny Torrio to help run illicit operations there. In the Roaring Twenties, Al Capone ruled an empire of crime in the Windy City: gambling, prostitution, bootlegging, bribery, narcotics trafficking, robbery, \"protection\" rackets, and murder. And it seemed that law enforcement couldn't touch him. That was until one fatal night in 1929.",
+          "year": "2023",
+          "rating": 8.5
         }
       ]
     },
@@ -1952,6 +2108,9 @@
           "title": "Portrait of a Lady on Fire",
           "link": "https://nitehawkcinema.com/movies/portrait-of-a-lady-on-fire/",
           "date_str": "Mar 21",
+          "showtimes": [
+            "11:00 AM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/2LquGwEhbg3soxSCs9VNyh5VJd9.jpg",
           "overview": "On an isolated island in Brittany at the end of the eighteenth century, a female painter is obliged to paint a wedding portrait of a young woman.",
           "year": "2019",
@@ -1961,6 +2120,9 @@
           "title": "Shattered Glass",
           "link": "https://nitehawkcinema.com/movies/shattered-glass/",
           "date_str": "Mar 23",
+          "showtimes": [
+            "9:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/1KHHNkrf8t15sXXF9d9TGq1T9jv.jpg",
           "overview": "The true story of fraudulent Washington, D.C. journalist Stephen Glass, who rose to meteoric heights as a young writer in his 20s, becoming a staff writer at The New Republic for three years. Looking for a short cut to fame, Glass concocted sources, quotes and even entire stories, but his deception did not go unnoticed forever, and eventually, his world came crumbling down.",
           "year": "2003",
@@ -1970,6 +2132,9 @@
           "title": "Holy Motors",
           "link": "https://nitehawkcinema.com/movies/holy-motors/",
           "date_str": "Mar 30",
+          "showtimes": [
+            "9:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/4ZuTrrDQhCS9f6KzIX6HfsjjyMd.jpg",
           "overview": "We follow 24 hours in the life of a being moving from life to life like a cold and solitary assassin moving from hit to hit. In each of these interwoven lives, the being possesses an entirely distinct identity: sometimes a man, sometimes a woman, sometimes youthful, sometimes old. By turns murderer, beggar, company chairman, monstrous creature, worker, family man.",
           "year": "2012",
@@ -1979,6 +2144,9 @@
           "title": "Urusei Yatsura 2: Beautiful Dreamer",
           "link": "https://nitehawkcinema.com/movies/urusei-yatsura-2-beautiful-dreamer/",
           "date_str": "Mar 24",
+          "showtimes": [
+            "9:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/wxSwZBgUquBIv61IkITmHJHGqu3.jpg",
           "overview": "As the perpetually lecherous Ataru and his friends prepare for a carnival at Tomobiki High School, they gradually realize the days are literally repeating themselves. Any effort to break the pattern dumps them back where they started.",
           "year": "1984",
@@ -1988,6 +2156,9 @@
           "title": "Leprechaun",
           "link": "https://nitehawkcinema.com/movies/leprechaun-lwam/",
           "date_str": "Mar 26",
+          "showtimes": [
+            "9:15 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/8SZgqIjiCSaRq03SxW1Z6yLfBHf.jpg",
           "overview": "A demonic leprechaun terrorizes a group of young people whom he believes stole his gold.",
           "year": "1993",
@@ -1997,6 +2168,9 @@
           "title": "Monsters, Inc.",
           "link": "https://nitehawkcinema.com/movies/monsters-inc/",
           "date_str": "Mar 28",
+          "showtimes": [
+            "11:00 AM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/wFSpyMsp7H0ttERbxY7Trlv8xry.jpg",
           "overview": "Lovable Sulley and his wisecracking sidekick Mike Wazowski are the top scare team at Monsters, Inc., the scream-processing factory in Monstropolis. When a little girl named Boo wanders into their world, it's the monsters who are scared silly, and it's up to Sulley and Mike to keep her out of sight and get her back home.",
           "year": "2001",
@@ -2006,6 +2180,9 @@
           "title": "Fargo",
           "link": "https://nitehawkcinema.com/movies/fargo/",
           "date_str": "Apr 1",
+          "showtimes": [
+            "7:15 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/rt7cpEr1uP6RTZykBFhBTcRaKvG.jpg",
           "overview": "Jerry, a small-town Minnesota car salesman is bursting at the seams with debt... but he's got a plan. He's going to hire two thugs to kidnap his wife in a scheme to collect a hefty ransom from his wealthy father-in-law. It's going to be a snap and nobody's going to get hurt... until people start dying. Enter Police Chief Marge, a coffee-drinking, parka-wearing - and extremely pregnant - investigator who'll stop at nothing to get her man. And if you think her small-time investigative skills will give the crooks a run for their ransom... you betcha!",
           "year": "1996",
@@ -2015,6 +2192,9 @@
           "title": "Lost in Translation",
           "link": "https://nitehawkcinema.com/movies/lost-in-translation/",
           "date_str": "Apr 8",
+          "showtimes": [
+            "7:15 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/r5XIg9t5tHpj4fdIcgbCBan6NvY.jpg",
           "overview": "A young Gaeilgeoir must learn the art of self-assurance and acceptance upon moving from her remote town to the city.",
           "year": "2026"
@@ -2023,6 +2203,9 @@
           "title": "American Movie",
           "link": "https://nitehawkcinema.com/movies/american-movie/",
           "date_str": "Apr 4",
+          "showtimes": [
+            "11:00 AM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/y8dJgWr1HeW0RRxwANDWvgIXdsF.jpg",
           "overview": "American Movie documents the story of filmmaker Mark Borchardt, his mission, and his dream. Spanning over two years of intense struggle with his film, his family, financial decline, and spiritual crisis, American Movie is a portrayal of ambition, obsession, excess, and one man's quest for the American Dream.",
           "year": "1999",
@@ -2031,26 +2214,26 @@
         {
           "title": "Nitehawk Shorts Festival 2026: MUSIC DRIVEN",
           "link": "https://nitehawkcinema.com/movies/nsf26-music-driven/",
-          "date_str": "Apr 9"
+          "date_str": "Apr 9",
+          "showtimes": [
+            "6:45 PM"
+          ]
         },
         {
           "title": "Nitehawk Shorts Festival 2026: MIDNITE",
           "link": "https://nitehawkcinema.com/movies/nsf26-midnite/",
-          "date_str": "Apr 9"
-        },
-        {
-          "title": "Vampire Time Travelers",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/visual-vengeance/",
-          "date_str": "Mar 19",
-          "poster": "https://image.tmdb.org/t/p/w300/5H24Yg1S4H5XrYqzhTHfTomUzt3.jpg",
-          "overview": "Four young college women battle vampires and several other supernatural forces as they try to join a strange sorority.",
-          "year": "1998",
-          "rating": 2.2
+          "date_str": "Apr 9",
+          "showtimes": [
+            "9:30 PM"
+          ]
         },
         {
           "title": "Night of the Creeps",
           "link": "https://nitehawkcinema.com/movies/night-of-the-creeps/",
           "date_str": "Mar 20",
+          "showtimes": [
+            "11:55 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/A3s2tQGNb6mhlr1hPZeE5F8IUwp.jpg",
           "overview": "In 1959, an alien experiment crashes to earth and infects a fraternity member. They freeze the body, but in the modern day, two geeks pledging a fraternity accidentally thaw the corpse, which proceeds to infect the campus with parasites that transform their hosts into killer zombies.",
           "year": "1986",
@@ -2060,6 +2243,9 @@
           "title": "The Descent",
           "link": "https://nitehawkcinema.com/movies/the-descent/",
           "date_str": "Mar 27",
+          "showtimes": [
+            "11:55 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/mxFPI4KYBk5ri9cPteIS8jiDFgj.jpg",
           "overview": "After a personal tragedy, Sarah joins her friends on a caving expedition in the Appalachian Mountains. But when a rockfall traps them deep underground, their adventure turns into a nightmare. As they search for a way out, the group discovers they are not alone—lurking in the darkness are savage, cave-dwelling creatures. With rising tension and dwindling trust, the women must fight to survive against both the predators and each other.",
           "year": "2005",
@@ -2074,6 +2260,9 @@
           "title": "The French Connection",
           "link": "https://nitehawkcinema.com/movies/the-french-connection/",
           "date_str": "Mar 28",
+          "showtimes": [
+            "11:15 AM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/pH4saPwMjhnVGwmSH6RkMaHrt3s.jpg",
           "overview": "Tough narcotics detective 'Popeye' Doyle is in hot pursuit of a suave French drug dealer who may be the key to a huge heroin-smuggling operation.",
           "year": "1971",
@@ -2083,6 +2272,9 @@
           "title": "Faust",
           "link": "https://nitehawkcinema.com/movies/faust-lsc/",
           "date_str": "Mar 25",
+          "showtimes": [
+            "9:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/8jH8wVLNZ24QVxm5IEByWpsmHXJ.jpg",
           "overview": "A doctor in early 19th-century Germany becomes infatuated with the sister of a man he unintentionally killed and bargains with the Devil incarnate to conjure their union in exchange for his soul.",
           "year": "2011",
@@ -2092,6 +2284,9 @@
           "title": "More Beautiful Perversions",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/future-of-film-is-female/",
           "date_str": "Apr 2",
+          "showtimes": [
+            "6:45 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/2bUIlssjBXmUSKmzQUhEIqdCqbK.jpg",
           "overview": "A reject teenager follows some hot radicals and finds themself in the woods.  An eco-parable produced by a mutual aid collective, shot on 16mm and portions hand-processed with plants.",
           "year": "2026"
@@ -2105,6 +2300,9 @@
           "title": "The Man Who Shot Liberty Valance",
           "link": "https://nitehawkcinema.com/movies/the-man-who-shot-liberty-valance/",
           "date_str": "Mar 21",
+          "showtimes": [
+            "12:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/4C1R0LEivLjbv3swAzJfzh0tzXl.jpg",
           "overview": "Questions arise when Senator Stoddard attends the funeral of a local man named Tom Doniphon in a small Western town. Flashing back, we learn Doniphon saved Stoddard, then a lawyer, when he was roughed up by a crew of outlaws terrorizing the town, led by Liberty Valance. As the territory's safety hung in the balance, Doniphon and Stoddard, two of the only people standing up to him, proved to be very important, but different, foes to Valance.",
           "year": "1962",
@@ -2114,6 +2312,9 @@
           "title": "The Headless Woman",
           "link": "https://nitehawkcinema.com/movies/the-headless-woman/",
           "date_str": "Mar 23",
+          "showtimes": [
+            "9:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/qzDfJLfKQZY9D6zpaadFiugtphK.jpg",
           "overview": "After running into something with her car, Vero experiences a particular psychological state. She realizes she might have killed someone.",
           "year": "2008",
@@ -2123,6 +2324,9 @@
           "title": "Pieces of April",
           "link": "https://nitehawkcinema.com/movies/pieces-of-april/",
           "date_str": "Mar 28",
+          "showtimes": [
+            "12:15 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/qm3jGZwz2UkwwEFEFzSot8T0pz1.jpg",
           "overview": "Quirky and rebellious April Burns lives with her boyfriend in a low-rent New York City apartment miles away from her emotionally distant family. But when she discovers that her mother has a fatal form of breast cancer, she invites the clan to her place for Thanksgiving. While her father struggles to drive her family into the city, April -- an inexperienced cook -- runs into kitchen trouble and must ask a neighbor for help.",
           "year": "2003",
@@ -2132,6 +2336,9 @@
           "title": "Stranger By the Lake",
           "link": "https://nitehawkcinema.com/movies/stranger-by-the-lake/",
           "date_str": "Mar 31",
+          "showtimes": [
+            "9:15 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/ug6IbPt19J8YIW9vh87Xw9FOTaJ.jpg",
           "overview": "Frank spends his summer days hopelessly searching for companionship at a popular cruising spot on the shores of a lake in rural France. One day, he meets Michel, an attractive yet darkly mysterious man and falls blindly in love.",
           "year": "2013",
@@ -2141,6 +2348,9 @@
           "title": "Swordfish",
           "link": "https://nitehawkcinema.com/prospectpark/film-series/ridiculous-sublime/",
           "date_str": "Mar 26",
+          "showtimes": [
+            "9:15 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/mM6h4jMqC4q5IaFgBIGKQDLnRU.jpg",
           "overview": "Rogue agent Gabriel Shear is determined to get his mitts on $9 billion stashed in a secret Drug Enforcement Administration account. He wants the cash to fight terrorism, but lacks the computer skills necessary to hack into the government mainframe. Enter Stanley Jobson, a n'er-do-well encryption expert who can log into anything.",
           "year": "2001",
@@ -2150,6 +2360,9 @@
           "title": "Mr. Nobody Against Putin",
           "link": "https://nitehawkcinema.com/movies/mr-nobody-against-putin/",
           "date_str": "Apr 4",
+          "showtimes": [
+            "12:15 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/ss4NEGmPxgm4D73iMFeyjbE1m9b.jpg",
           "overview": "As Russia launches its full-scale invasion of Ukraine, primary schools across Russia’s hinterlands are transformed into recruitment stages for the war. Facing the ethical dilemma of working in a system defined by propaganda and violence, a brave teacher goes undercover to film what’s really happening in his own school.",
           "year": "2025",
@@ -2158,12 +2371,18 @@
         {
           "title": "Nitehawk Shorts Festival 2026: OPENING NITE",
           "link": "https://nitehawkcinema.com/movies/nsf26-opening-nite/",
-          "date_str": "Apr 8"
+          "date_str": "Apr 8",
+          "showtimes": [
+            "7:00 PM"
+          ]
         },
         {
           "title": "Do the Right Thing",
           "link": "https://nitehawkcinema.com/movies/do-the-right-thing/",
           "date_str": "Mar 25",
+          "showtimes": [
+            "7:15 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/63rmSDPahrH7C1gEFYzRuIBAN9W.jpg",
           "overview": "Sal is the Italian owner of a pizzeria in Brooklyn. A neighborhood local, Buggin' Out, becomes upset when he sees that the pizzeria's Wall of Fame exhibits only Italian actors. Buggin' Out believes a pizzeria in a black neighborhood should showcase black actors, but Sal disagrees. The wall becomes a symbol of racism and hate to Buggin' Out and to other people in the neighborhood, and tensions rise.",
           "year": "1989",
@@ -2173,6 +2392,9 @@
           "title": "Labyrinth",
           "link": "https://nitehawkcinema.com/movies/labyrinth/",
           "date_str": "Mar 21",
+          "showtimes": [
+            "11:00 AM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/hbSdA1DmNA9IlfVoqJkIWYF2oYm.jpg",
           "overview": "Frustrated with babysitting on yet another weekend night, Sarah, a teenager with an active imagination, summons the Goblins to take her baby stepbrother away. When little Toby actually disappears, Sarah must follow him into a fantastical world to rescue him from the Goblin King. Guarding his castle is the labyrinth itself, a twisted maze of deception, populated with outrageous characters and unknown dangers.",
           "year": "1986",
@@ -2191,6 +2413,9 @@
           "title": "Revelations of Divine Love",
           "link": "https://nitehawkcinema.com/prospectpark/film-series/local-color-2/",
           "date_str": "Apr 5",
+          "showtimes": [
+            "12:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/q8YNdWmEGP6kwNVADATDV2ll9yA.jpg",
           "overview": "Between pandemics, people’s revolts and male institutions, this period film cheekily combines fantastic psychedelia and handmade sets. Inspired by the life story of Julian of Norwich, a 14th-century mystic and the first woman to write a book in English.",
           "year": "2025"
@@ -2200,30 +2425,6 @@
     "Syndicated BK": {
       "url": "https://syndicatedbk.com/",
       "events": [
-        {
-          "title": "Hamnet",
-          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
-          "date_str": "Thursday 19, March",
-          "showtimes": [
-            "6:15 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/vbeyOZm2bvBXcbgPD3v6o94epPX.jpg",
-          "overview": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
-          "year": "2025",
-          "rating": 7.748
-        },
-        {
-          "title": "The Chronology of Water",
-          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
-          "date_str": "Thursday 19, March",
-          "showtimes": [
-            "9:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/pU3GZI6C9lxzxUnBccIQLThDLVY.jpg",
-          "overview": "A woman, after an abusive childhood, escapes into competitive swimming, sexual experimentation, toxic relationships, and addiction before finding her voice through writing.",
-          "year": "2025",
-          "rating": 6.517
-        },
         {
           "title": "Pillion",
           "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
@@ -2252,6 +2453,18 @@
           "rating": 5.9
         },
         {
+          "title": "Hamnet",
+          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+          "date_str": "Sunday 22, March",
+          "showtimes": [
+            "3:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/vbeyOZm2bvBXcbgPD3v6o94epPX.jpg",
+          "overview": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
+          "year": "2025",
+          "rating": 7.748
+        },
+        {
           "title": "The Secret Agent",
           "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
           "date_str": "Monday 23, March",
@@ -2262,7 +2475,7 @@
             "Film at Lincoln Center",
             "BAM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/jadCjQLZpX9yxlk4xPtyx4He2Ll.jpg",
+          "poster": "https://image.tmdb.org/t/p/w300/rZqolYhxMEe6TZZTjSmFw9crDTD.jpg",
           "overview": "Brazil, 1977. Marcelo, a technology expert in his early 40s, is on the run. Hoping to reunite with his son, he travels to Recife during Carnival but soon realizes that the city is not the safe haven he was expecting.",
           "year": "2025",
           "rating": 7.3
@@ -2545,7 +2758,7 @@
             "Film at Lincoln Center",
             "Syndicated BK"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/jadCjQLZpX9yxlk4xPtyx4He2Ll.jpg",
+          "poster": "https://image.tmdb.org/t/p/w300/rZqolYhxMEe6TZZTjSmFw9crDTD.jpg",
           "overview": "Brazil, 1977. Marcelo, a technology expert in his early 40s, is on the run. Hoping to reunite with his son, he travels to Recife during Carnival but soon realizes that the city is not the safe haven he was expecting.",
           "year": "2025",
           "rating": 7.3
@@ -2611,7 +2824,7 @@
           "title": "Project Hail Mary",
           "link": "https://www.bam.org/film/project-hail-mary",
           "date_str": "Mar 20",
-          "poster": "https://image.tmdb.org/t/p/w300/cCx1m530ph5FmtabVVUpUchEmhe.jpg",
+          "poster": "https://image.tmdb.org/t/p/w300/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
           "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
           "year": "2026",
           "rating": 8.4
@@ -2626,13 +2839,12 @@
           "link": "https://www.bam.org/film/miroirs-no-3",
           "date_str": "Mar 26",
           "also_at": [
-            "IFC Center",
             "Film at Lincoln Center"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/dNzLDieAVlX3So2Qs2XSAOUmvxM.jpg",
           "overview": "On a weekend trip to the countryside, Laura miraculously survives a car crash. Physically unhurt but deeply shaken, she is taken in by a local woman who witnessed the accident and now cares for Laura with motherly devotion. When her husband and adult son also give up their initial resistance to Laura's presence, the four of them slowly build up some family-like routine. But soon they can no longer ignore their past...",
           "year": "2025",
-          "rating": 6.6
+          "rating": 6.5
         },
         {
           "title": "Queering the Canon: We’re Out Here",
