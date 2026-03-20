@@ -1,129 +1,9 @@
 {
-  "updated": "2026-03-19T11:01:11.294762+00:00",
+  "updated": "2026-03-20T11:01:15.058372+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
       "events": [
-        {
-          "title": "Kill Bill: Vol. 1",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004723",
-          "date_str": "Mar 20",
-          "showtimes": [
-            "1:40 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/v7TaX8kXMXs5yFFGR41guUDNcnB.jpg",
-          "overview": "An assassin is shot by her ruthless employer, Bill, and other members of their assassination circle – but she lives to plot her vengeance.",
-          "year": "2003",
-          "rating": 8.0
-        },
-        {
-          "title": "Four Adventures of Reinette and Mirabelle",
-          "link": "https://metrograph.com/film/?vista_film_id=9999000659",
-          "date_str": "Mar 20",
-          "showtimes": [
-            "2:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/iXydrbtUGX7CUutomhtMtlUd3Cb.jpg",
-          "overview": "Two young girls meet, Reinette from the countryside and Mirabelle from Paris, and decide to take a flat together in Paris where they attend University. Four successive stories about their daily lives illustrate the very different views, characters and relation to the world of these two friends.",
-          "year": "1987",
-          "rating": 7.4
-        },
-        {
-          "title": "Battle Royale",
-          "link": "https://metrograph.com/film/?vista_film_id=9999001953",
-          "date_str": "Mar 20",
-          "showtimes": [
-            "4:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/aLGKAQKgzWpJ6egyWzzC11jXBRJ.jpg",
-          "overview": "In the future, the Japanese government captures a class of ninth-grade students and forces them to kill each other under the revolutionary \"Battle Royale\" act.",
-          "year": "2000",
-          "rating": 7.3
-        },
-        {
-          "title": "Kiss Me Deadly",
-          "link": "https://metrograph.com/film/?vista_film_id=9999000432",
-          "date_str": "Mar 20",
-          "showtimes": [
-            "4:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/z7me91nrpWLHY1mZOB2v20cK0zY.jpg",
-          "overview": "One evening, Hammer gives a ride to Christina, an attractive hitchhiker on a lonely country road, who has escaped from the nearby lunatic asylum. Thugs waylay them and force his car to crash. When Hammer returns to semi-consciousness, he hears Christina being tortured until she dies. Hammer, both for vengeance and in hopes that \"something big\" is behind it all, decides to pursue the case.",
-          "year": "1955",
-          "rating": 7.2
-        },
-        {
-          "title": "Code Unknown",
-          "link": "https://metrograph.com/film/?vista_film_id=9999002367",
-          "date_str": "Mar 20",
-          "showtimes": [
-            "6:10 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/kJJx2FNmiaep8WT21uMPY9qPzxL.jpg",
-          "overview": "A series of events unfold like a chain reaction, all stemming from a minor event that brings the film's five characters together. Set in Paris, France, Anne is an actress whose boyfriend Georges photographs the war in Kosovo. Georges' brother, Jean, is looking for the entry code to Georges' apartment. These characters' lives interconnect with a Romanian immigrant and a deaf teacher.",
-          "year": "2000",
-          "rating": 6.7
-        },
-        {
-          "title": "The Most Terrible Time in My Life",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004728",
-          "date_str": "Mar 20",
-          "showtimes": [
-            "6:20 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/w65eQOGWG6DeN9H74nlIVfeFEmc.jpg",
-          "overview": "A high school girl, while pondering her future, sees it flash before her eyes.",
-          "year": "2012",
-          "rating": 7.0
-        },
-        {
-          "title": "The Stairway to the Distant Past",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004729",
-          "date_str": "Mar 20",
-          "showtimes": [
-            "8:20 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/DzobQXrzJF32ong4QTCiJC2JD6.jpg",
-          "overview": "Broke, with his vintage Nash convertible repossessed, private eye Mike Hama is reduced to combing the mean streets of the Yokohama waterfront on a borrowed bicycle. But when Lily, a beautiful stripper from out of Hama's past, returns to town, the fuse is lit on a criminal powder keg set to blow the lid off the Yokohama underworld.",
-          "year": "1995",
-          "rating": 7.0
-        },
-        {
-          "title": "High Life",
-          "link": "https://metrograph.com/film/?vista_film_id=9999002108",
-          "date_str": "Mar 20",
-          "showtimes": [
-            "8:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/ftRRIYNzpTDYeTznrAxgT5v1vJY.jpg",
-          "overview": "A father and his daughter struggle to survive in deep space where they live in isolation.",
-          "year": "2018",
-          "rating": 5.7
-        },
-        {
-          "title": "Inherent Vice",
-          "link": "https://metrograph.com/film/?vista_film_id=9999001238",
-          "date_str": "Mar 20",
-          "showtimes": [
-            "10:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/pfVua7TzzttOh3RTOuBqT7xN0oY.jpg",
-          "overview": "In Los Angeles at the turn of the 1970s, drug-fueled detective Larry \"Doc\" Sportello investigates the disappearance of an ex-girlfriend.",
-          "year": "2014",
-          "rating": 6.5
-        },
-        {
-          "title": "Maps to the Stars",
-          "link": "https://metrograph.com/film/?vista_film_id=9999002655",
-          "date_str": "Mar 20",
-          "showtimes": [
-            "10:45 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/aoMNfiaMmT7o7wY8oXWCLErZtah.jpg",
-          "overview": "Driven by an intense need for fame and validation, members of a dysfunctional Hollywood family are chasing celebrity, one another and the relentless ghosts of their pasts.",
-          "year": "2014",
-          "rating": 6.2
-        },
         {
           "title": "Murray Center Class of '25: Award-winning Shorts",
           "link": "https://metrograph.com/film/?vista_film_id=9999004731",
@@ -175,6 +55,30 @@
           "overview": "A chronicle of the civil uprising against the regime of Ukrainian president Viktor Yanukovych that took place in Kyiv in the winter of 2013/14. The film follows the progress of the revolution: from peaceful rallies, half a million strong in the Maidan square, to the bloody street battles between protesters and riot police.",
           "year": "2014",
           "rating": 7.9
+        },
+        {
+          "title": "The Most Terrible Time in My Life",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004728",
+          "date_str": "Mar 21",
+          "showtimes": [
+            "4:10 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/w65eQOGWG6DeN9H74nlIVfeFEmc.jpg",
+          "overview": "A high school girl, while pondering her future, sees it flash before her eyes.",
+          "year": "2012",
+          "rating": 7.0
+        },
+        {
+          "title": "The Stairway to the Distant Past",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004729",
+          "date_str": "Mar 21",
+          "showtimes": [
+            "6:10 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/DzobQXrzJF32ong4QTCiJC2JD6.jpg",
+          "overview": "Broke, with his vintage Nash convertible repossessed, private eye Mike Hama is reduced to combing the mean streets of the Yokohama waterfront on a borrowed bicycle. But when Lily, a beautiful stripper from out of Hama's past, returns to town, the fuse is lit on a criminal powder keg set to blow the lid off the Yokohama underworld.",
+          "year": "1995",
+          "rating": 7.0
         },
         {
           "title": "Outskirts",
@@ -235,6 +139,18 @@
           "rating": 2.0
         },
         {
+          "title": "Kiss Me Deadly",
+          "link": "https://metrograph.com/film/?vista_film_id=9999000432",
+          "date_str": "Mar 22",
+          "showtimes": [
+            "11:40 AM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/z7me91nrpWLHY1mZOB2v20cK0zY.jpg",
+          "overview": "One evening, Hammer gives a ride to Christina, an attractive hitchhiker on a lonely country road, who has escaped from the nearby lunatic asylum. Thugs waylay them and force his car to crash. When Hammer returns to semi-consciousness, he hears Christina being tortured until she dies. Hammer, both for vengeance and in hopes that \"something big\" is behind it all, decides to pursue the case.",
+          "year": "1955",
+          "rating": 7.2
+        },
+        {
           "title": "Ghost Dog: The Way of the Samurai",
           "link": "https://metrograph.com/film/?vista_film_id=9999001440",
           "date_str": "Mar 22",
@@ -245,6 +161,18 @@
           "overview": "A Black hitman who models after the samurai of old finds himself targeted for death by the mob.",
           "year": "1999",
           "rating": 7.3
+        },
+        {
+          "title": "High Life",
+          "link": "https://metrograph.com/film/?vista_film_id=9999002108",
+          "date_str": "Mar 22",
+          "showtimes": [
+            "1:50 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/ftRRIYNzpTDYeTznrAxgT5v1vJY.jpg",
+          "overview": "A father and his daughter struggle to survive in deep space where they live in isolation.",
+          "year": "2018",
+          "rating": 5.7
         },
         {
           "title": "The Invasion preceded",
@@ -261,6 +189,18 @@
           "showtimes": [
             "6:15 PM"
           ]
+        },
+        {
+          "title": "Maps to the Stars",
+          "link": "https://metrograph.com/film/?vista_film_id=9999002655",
+          "date_str": "Mar 22",
+          "showtimes": [
+            "9:25 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/aoMNfiaMmT7o7wY8oXWCLErZtah.jpg",
+          "overview": "Driven by an intense need for fame and validation, members of a dysfunctional Hollywood family are chasing celebrity, one another and the relentless ghosts of their pasts.",
+          "year": "2014",
+          "rating": 6.2
         },
         {
           "title": "Let the Sunshine In",
@@ -311,6 +251,18 @@
           "rating": 6.9
         },
         {
+          "title": "Inherent Vice",
+          "link": "https://metrograph.com/film/?vista_film_id=9999001238",
+          "date_str": "Mar 23",
+          "showtimes": [
+            "6:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/pfVua7TzzttOh3RTOuBqT7xN0oY.jpg",
+          "overview": "In Los Angeles at the turn of the 1970s, drug-fueled detective Larry \"Doc\" Sportello investigates the disappearance of an ex-girlfriend.",
+          "year": "2014",
+          "rating": 6.5
+        },
+        {
           "title": "Nostalghia",
           "link": "https://metrograph.com/film/?vista_film_id=9999004203",
           "date_str": "Mar 23",
@@ -357,6 +309,18 @@
           "overview": "The mostly true story of the legendary \"worst director of all time\", who, with the help of his strange friends, filmed countless B-movies without ever becoming famous or successful.",
           "year": "1994",
           "rating": 7.5
+        },
+        {
+          "title": "Kill Bill: Vol. 1",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004723",
+          "date_str": "Mar 24",
+          "showtimes": [
+            "5:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/v7TaX8kXMXs5yFFGR41guUDNcnB.jpg",
+          "overview": "An assassin is shot by her ruthless employer, Bill, and other members of their assassination circle – but she lives to plot her vengeance.",
+          "year": "2003",
+          "rating": 8.0
         },
         {
           "title": "Cowboy Bebop: The Movie",
@@ -537,6 +501,18 @@
           "overview": "Over the course of a decade, editors of the San Francisco Chronicle entice themselves in the murders of the Zodiac Killer. However, as time runs its course, interest in the case dwindles in the eyes of the professionals. The Killer stops interacting with the public. However, believing he has the answers, an amateur cartoonist from the initial sightings races against time to prevent what he believes is another murder.",
           "year": "2007",
           "rating": 7.5
+        },
+        {
+          "title": "Battle Royale",
+          "link": "https://metrograph.com/film/?vista_film_id=9999001953",
+          "date_str": "Mar 27",
+          "showtimes": [
+            "10:45 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/aLGKAQKgzWpJ6egyWzzC11jXBRJ.jpg",
+          "overview": "In the future, the Japanese government captures a class of ninth-grade students and forces them to kill each other under the revolutionary \"Battle Royale\" act.",
+          "year": "2000",
+          "rating": 7.3
         },
         {
           "title": "Downtown 81",
@@ -965,12 +941,98 @@
           "overview": "Through dramatic reconstruction and documentary asides, the spirit of Italian poet, playwright, journalist, aristocrat and army officer Gabriele D’Annunzio is captured, presenting the nascent fascism in his attempts to forge a new state in the aftermath of the First World War.",
           "year": "2025",
           "rating": 8.3
+        },
+        {
+          "title": "Alyonka",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004761",
+          "date_str": "Apr 11",
+          "showtimes": [
+            "12:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/lRgfj1CgKUC717pAJEOvp3Wm5vX.jpg",
+          "overview": "A looked-for-footage film about a long-dreamed-of movie.  A film with no center.  A disassembled film that we couldn’t put together again.  A celebration of Boris Barnet.",
+          "year": "2022"
+        },
+        {
+          "title": "Black Girl",
+          "link": "https://metrograph.com/film/?vista_film_id=9999002460",
+          "date_str": "Apr 11",
+          "showtimes": [
+            "12:15 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/lQG2mxbSDqVYqOE2X6XM2CknWHG.jpg",
+          "overview": "The painter Hans Hauser falls head over heels in love with the \"Black Forest girl\" Bärbele Riederle. He travels to her home village and soon the two realize that they are made for each other.",
+          "year": "1950",
+          "rating": 5.8
+        },
+        {
+          "title": "ASC Presents Eve's Bayou",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004765",
+          "date_str": "Apr 11",
+          "showtimes": [
+            "5:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/33yTPcGSv7eo3FVlb7XKACHl1M8.jpg",
+          "overview": "Summer heats up in rural Louisiana beside Eve’s Bayou, 1962, as the Batiste family tries to survive the secrets they’ve kept and the betrayals they’ve endured.",
+          "year": "1997",
+          "rating": 6.4
+        },
+        {
+          "title": "ASC Presents Hustle & Flow",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004766",
+          "date_str": "Apr 11",
+          "showtimes": [
+            "7:45 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/yO5QTMZ2Oex6mwsgJuwRuINGuOQ.jpg",
+          "overview": "With help from his friends, a Memphis pimp in a mid-life crisis attempts to become a successful hip-hop emcee.",
+          "year": "2005",
+          "rating": 7.1
+        },
+        {
+          "title": "Ken Jacobs's Lower East Side: A Tribute",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004763",
+          "date_str": "Apr 11",
+          "showtimes": [
+            "8:00 PM"
+          ]
+        },
+        {
+          "title": "The Good, the Bad, the Weird",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004029",
+          "date_str": "Apr 11",
+          "showtimes": [
+            "10:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/lbPZ0aNoF0cHisg6DubFO2eS8so.jpg",
+          "overview": "The story of three Korean outlaws in 1930s Manchuria and their dealings with the Japanese army and Chinese and Russian bandits. The Good (a bounty hunter), the Bad (a hitman), and the Weird (a thief) battle the army and the bandits in a race to use a treasure map to uncover the riches of legend.",
+          "year": "2008",
+          "rating": 7.2
         }
       ]
     },
     "Film Forum": {
       "url": "https://filmforum.org/films",
       "events": [
+        {
+          "title": "TWO PROSECUTORS",
+          "link": "https://filmforum.org/film/two-prosecutors",
+          "showtimes": [
+            "12:15 PM",
+            "2:45 PM",
+            "5:15 PM",
+            "7:45 PM",
+            "8:15 PM",
+            "12:20 PM",
+            "3:00 PM",
+            "5:30 PM",
+            "8:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/k2jGfmN4T8Q5EMDpsUUgSwyhnSX.jpg",
+          "overview": "In 1937, amidst Stalin's Great Terror, a newly appointed prosecutor for the USSR is made aware of alleged corruption in the Secret Police, and takes it upon himself to investigate.",
+          "year": "2025",
+          "rating": 6.5
+        },
         {
           "title": "DAYS AND NIGHTS IN THE FOREST",
           "link": "https://filmforum.org/film/days-and-nights-in-the-forest",
@@ -993,30 +1055,10 @@
           "rating": 6.9
         },
         {
-          "title": "ANDRÉ IS AN IDIOT",
-          "link": "https://filmforum.org/film/andre-is-an-idiot",
-          "date_str": "Now Playing",
-          "showtimes": [
-            "12:40 PM",
-            "2:40 PM",
-            "4:45 PM",
-            "6:45 PM",
-            "8:45 PM",
-            "2:30 PM",
-            "9:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/hGXJQiZjFspvhGhzM1bzlgOg7Ib.jpg",
-          "overview": "André, a brilliant idiot, is dying because he didn’t get a colonoscopy. His sobering diagnosis, complete irreverence, and insatiable curiosity, send him on an unexpected journey learning how to die happily and ridiculously without losing his sense of humor.",
-          "year": "2026"
-        },
-        {
           "title": "BILLY PRESTON: THAT'S THE WAY GOD PLANNED IT",
           "link": "https://filmforum.org/film/billy-preston-thats-the-way-god-planned-it",
           "date_str": "Now Playing",
           "showtimes": [
-            "1:10 PM",
-            "3:30 PM",
-            "8:15 PM",
             "12:15 PM",
             "4:30 PM",
             "6:45 PM"
@@ -1026,83 +1068,16 @@
           "year": "2026"
         },
         {
-          "title": "CALLE MALAGA",
-          "link": "https://filmforum.org/film/calle-malaga",
+          "title": "ANDRÉ IS AN IDIOT",
+          "link": "https://filmforum.org/film/andre-is-an-idiot",
           "date_str": "Now Playing",
           "showtimes": [
-            "5:45 PM"
+            "2:30 PM",
+            "9:00 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/fWagBXNDk44UaupYtwQOAvDwGiT.jpg",
-          "overview": "Maria Angeles, a 79-year-old Spanish woman, lives alone in Tangier, Morocco, and enjoys her daily routine. However, her life is turned upside down when her daughter arrives from Madrid to sell the apartment in which she has always lived. Determined to stay, she does everything she can to get her home and her belongings back and, unexpectedly, rediscovers love and sensuality.",
-          "year": "2025",
-          "rating": 6.389
-        },
-        {
-          "title": "NAUSICAA",
-          "link": "https://filmforum.org/film/nausicaa-agnes-varda",
-          "showtimes": [
-            "1:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/A3iktrA0d68WsebSDqqB7Cfg5RZ.jpg",
-          "overview": "A girl, whose father is from Greece, studies ancient art in France. The film was made for television but never broadcast for political reasons related to its portrayal of Greeks. A work print was screened in Belgium in 1971, and the film is now available in reconstructed form.",
-          "year": "1971",
-          "rating": 6.2
-        },
-        {
-          "title": "LIONS LOVE (... AND LIES)",
-          "link": "https://filmforum.org/film/lions-love-and-lies-agnes-varda",
-          "showtimes": [
-            "3:15 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/ahLU10GZeVLFg1KoC6wblOk8ZlW.jpg",
-          "overview": "Three actors in Hollywood live and love together. A director comes from New York to make a movie about actors and Hollywood.",
-          "year": "1969",
-          "rating": 5.8
-        },
-        {
-          "title": "KUNG-FU MASTER!",
-          "link": "https://filmforum.org/film/kung-fu-master-agnes-varda",
-          "showtimes": [
-            "6:00 PM",
-            "8:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/kHZN7zZGsWik9Sg3APaHGeTK5Jm.jpg",
-          "overview": "Ip Man’s promising career as a Policeman is ruined after he is framed for murder and targeted by a mob boss’s daughter.",
-          "year": "2019",
-          "rating": 6.6
-        },
-        {
-          "title": "ONE SINGS, THE OTHER DOESN'T",
-          "link": "https://filmforum.org/film/one-sings-the-other-doesnt-agnes-varda",
-          "showtimes": [
-            "8:10 PM",
-            "3:20 PM",
-            "12:30 PM",
-            "8:20 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/b3YTxT8LM1AWeWyrAXd3b0kjjzz.jpg",
-          "overview": "The intertwined lives of two women in 1970s France, set against the progress of the women's movement in which Agnes Varda was involved. Pomme and Suzanne meet when Pomme helps Suzanne obtain an abortion after a third pregnancy which she cannot afford. They lose contact but meet again ten years later. Pomme has become an unconventional singer, Suzanne a serious community worker - despite the contrast they remain friends and share in the various dramas of each others' lives, in the process affirming their different female identities.",
-          "year": "1977",
-          "rating": 7.1
-        },
-        {
-          "title": "TWO PROSECUTORS",
-          "link": "https://filmforum.org/film/two-prosecutors",
-          "showtimes": [
-            "12:15 PM",
-            "2:45 PM",
-            "5:15 PM",
-            "7:45 PM",
-            "8:15 PM",
-            "12:20 PM",
-            "3:00 PM",
-            "5:30 PM",
-            "8:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/k2jGfmN4T8Q5EMDpsUUgSwyhnSX.jpg",
-          "overview": "In 1937, amidst Stalin's Great Terror, a newly appointed prosecutor for the USSR is made aware of alleged corruption in the Secret Police, and takes it upon himself to investigate.",
-          "year": "2025",
-          "rating": 6.5
+          "poster": "https://image.tmdb.org/t/p/w300/hGXJQiZjFspvhGhzM1bzlgOg7Ib.jpg",
+          "overview": "André, a brilliant idiot, is dying because he didn’t get a colonoscopy. His sobering diagnosis, complete irreverence, and insatiable curiosity, send him on an unexpected journey learning how to die happily and ridiculously without losing his sense of humor.",
+          "year": "2026"
         },
         {
           "title": "MUR MURS",
@@ -1116,6 +1091,19 @@
           "rating": 7.4
         },
         {
+          "title": "ONE SINGS, THE OTHER DOESN'T",
+          "link": "https://filmforum.org/film/one-sings-the-other-doesnt-agnes-varda",
+          "showtimes": [
+            "3:20 PM",
+            "12:30 PM",
+            "8:20 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/b3YTxT8LM1AWeWyrAXd3b0kjjzz.jpg",
+          "overview": "The intertwined lives of two women in 1970s France, set against the progress of the women's movement in which Agnes Varda was involved. Pomme and Suzanne meet when Pomme helps Suzanne obtain an abortion after a third pregnancy which she cannot afford. They lose contact but meet again ten years later. Pomme has become an unconventional singer, Suzanne a serious community worker - despite the contrast they remain friends and share in the various dramas of each others' lives, in the process affirming their different female identities.",
+          "year": "1977",
+          "rating": 7.1
+        },
+        {
           "title": "JANE B. BY AGNÈS V.",
           "link": "https://filmforum.org/film/jane-b-by-agnes-v-agnes-varda",
           "showtimes": [
@@ -1126,6 +1114,17 @@
           "overview": "The interests, obsessions, and fantasies of two singular artists converge in this inspired collaboration between Agnès Varda and her longtime friend the actor Jane Birkin. Made over the course of a year and motivated by Birkin’s fortieth birthday—a milestone she admits to some anxiety over—Jane B. by Agnès V. contrasts the private, reflective Birkin with Birkin the icon.",
           "year": "1988",
           "rating": 6.7
+        },
+        {
+          "title": "KUNG-FU MASTER!",
+          "link": "https://filmforum.org/film/kung-fu-master-agnes-varda",
+          "showtimes": [
+            "8:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/kHZN7zZGsWik9Sg3APaHGeTK5Jm.jpg",
+          "overview": "Ip Man’s promising career as a Policeman is ruined after he is framed for murder and targeted by a mob boss’s daughter.",
+          "year": "2019",
+          "rating": 6.6
         },
         {
           "title": "DAGUERRÉOTYPES",
@@ -1179,7 +1178,8 @@
           "link": "https://filmforum.org/film/the-gleaners-and-i-agnes-varda",
           "showtimes": [
             "6:20 PM",
-            "1:00 PM"
+            "1:00 PM",
+            "2:40 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/6IdCTKi4Eu7i897jpe59wIDGCri.jpg",
           "overview": "Varda focuses her eye on gleaners: those who scour already-reaped fields for the odd potato or turnip. Her investigation leads from forgotten corners of the French countryside to off-hours at the green markets of Paris, following those who insist on finding a use for that which society has cast off, whether out of necessity or activism.",
@@ -1231,6 +1231,36 @@
           "overview": "Jacquot Demy, the son of a garage owner and a hairdresser, is fascinated by cinema and decides to pursue his dream of becoming a filmmaker by any means necessary.",
           "year": "1991",
           "rating": 7.5
+        },
+        {
+          "title": "THE GLEANERS AND I: TWO YEARS LATER",
+          "link": "https://filmforum.org/film/the-gleaners-and-i-two-years-later-agnes-varda",
+          "showtimes": [
+            "3:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/azTpxHHruFZlroxfcYir9ESpcAK.jpg",
+          "overview": "Agnès Varda’s follow-up to her acclaimed documentary THE GLEANERS AND I takes us deeper into the world of those who find purpose and beauty in the refuse of society, revisiting many of the original film’s subjects.",
+          "year": "2002",
+          "rating": 7.0
+        },
+        {
+          "title": "LES CRÉATURES",
+          "link": "https://filmforum.org/film/les-creatures-agnes-varda",
+          "showtimes": [
+            "7:45 PM",
+            "7:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/Au7UmEA1gnUPIljLFPwb180WOkh.jpg",
+          "overview": "A writer decides to use the strange inhabitants of a small island as a basis for characters in his new book.",
+          "year": "1966",
+          "rating": 6.4
+        },
+        {
+          "title": "The Young Film Forum (YFF) Archive Dive: THE SAME RIVER TWICE",
+          "link": "https://filmforum.org/film/the-same-river-twice-yff-archive-dive",
+          "showtimes": [
+            "6:30 PM"
+          ]
         }
       ]
     },
@@ -1240,11 +1270,10 @@
         {
           "title": "DEAD LOVER",
           "link": "https://www.ifccenter.com/films/dead-lover/",
-          "date_str": "Mar 27",
           "showtimes": [
-            "7:00 PM",
             "2:35 PM",
             "4:45 PM",
+            "7:00 PM",
             "9:15 PM",
             "5:25 PM",
             "7:40 PM",
@@ -1257,8 +1286,18 @@
           "rating": 6.1
         },
         {
+          "title": "Best in Show: The Films of Catherine O&039;Hara",
+          "link": "https://www.ifccenter.com/series/best-in-show-the-films-of-catherine-ohara/"
+        },
+        {
+          "title": "SERPENT&039;S PATH AND CHIME",
+          "link": "https://www.ifccenter.com/films/serpents-path-and-chime/",
+          "date_str": "Mar 27"
+        },
+        {
           "title": "ALPHA",
           "link": "https://www.ifccenter.com/films/alpha/",
+          "date_str": "Apr 8",
           "also_at": [
             "BAM"
           ],
@@ -1268,13 +1307,8 @@
           "rating": 6.4
         },
         {
-          "title": "Best in Show: The Films of Catherine O&039;Hara",
-          "link": "https://www.ifccenter.com/series/best-in-show-the-films-of-catherine-ohara/",
-          "date_str": "Mar 27"
-        },
-        {
-          "title": "SERPENT&039;S PATH AND CHIME",
-          "link": "https://www.ifccenter.com/films/serpents-path-and-chime/",
+          "title": "DOC NYC Selects",
+          "link": "https://www.ifccenter.com/films/who-moves-america/",
           "date_str": "Apr 9"
         },
         {
@@ -1288,11 +1322,10 @@
           "title": "SIRAT",
           "link": "https://www.ifccenter.com/films/sirat/",
           "showtimes": [
-            "3:50 PM",
-            "9:40 PM",
             "12:45 PM",
             "7:35 PM",
-            "12:25 PM"
+            "12:25 PM",
+            "12:30 PM"
           ],
           "also_at": [
             "Film at Lincoln Center"
@@ -1303,22 +1336,32 @@
           "rating": 6.8
         },
         {
-          "title": "Space Cowboy",
-          "link": "https://www.ifccenter.com/films/space-cowboy/",
+          "title": "Vampires of the Velvet Lounge",
+          "link": "https://www.ifccenter.com/films/vampires-of-the-velvet-lounge/",
           "showtimes": [
-            "2:45 PM"
+            "11:50 PM",
+            "11:45 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/qkw3sQB1IBxnd7oGhbPBHuoEIzm.jpg",
-          "overview": "Joe Jennings, a pioneer of skydiving cinematography, looks back on a lifetime of creating iconic moments in film and television, while he tries to pull off his most ambitious stunt yet, turning a dreamlike vision into reality.",
-          "year": "2024"
+          "poster": "https://image.tmdb.org/t/p/w300/doTL7vyk04xBmH140BNbPvGNxmW.jpg",
+          "overview": "A group of vampires confronts the challenges of adapting to contemporary society while grappling with their own mortality, all while engaged in a conflict with a dangerous enemy.",
+          "year": "2026"
+        },
+        {
+          "title": "Scenes from the Divide",
+          "link": "https://www.ifccenter.com/films/scenes-from-the-divide-2/",
+          "showtimes": [
+            "1:20 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/oifxuPaUJDKGJz1K0MbqvK3WYQF.jpg",
+          "overview": "In the lead-up to Zohran Mamdani’s election as mayor of New York City, many of the city’s Jewish population found themselves at odds over the candidate’s positions on Palestine and Israel. By inviting viewers into the homes of New Yorkers on both sides of the campaign, filmmaker Alison reveals a fierce battle among American Jews over identity, history, and responsibility. SCENES FROM THE DIVIDE explores a community in generational upheaval.",
+          "year": "2026"
         },
         {
           "title": "Pompei: Below the Clouds",
           "link": "https://www.ifccenter.com/films/below-the-clouds/",
           "showtimes": [
-            "4:45 PM",
-            "10:35 AM",
-            "2:55 PM"
+            "2:55 PM",
+            "10:35 AM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/xmTTrWGbw2wIHBw0ht5Oo6AJGZd.jpg",
           "overview": "Naples faces dual volcanic threats from Vesuvius and Campi Flegrei. Amid increasing tremors, archaeologists work as residents live anxiously, haunted by Pompeii's fate while emergency services strain.",
@@ -1330,10 +1373,6 @@
           "link": "https://www.ifccenter.com/films/live-action-oscar-nominated-shorts-2026/",
           "showtimes": [
             "10:45 AM",
-            "1:10 PM",
-            "4:00 PM",
-            "6:45 PM",
-            "9:30 PM",
             "5:15 PM",
             "9:25 PM",
             "4:15 PM",
@@ -1345,37 +1384,16 @@
           "title": "Doc Program B: Oscar-Nominated Shorts 2026",
           "link": "https://www.ifccenter.com/films/doc-program-b-oscar-nominated-shorts-2026/",
           "showtimes": [
-            "11:15 AM",
-            "8:00 PM",
             "1:10 PM"
           ]
         },
         {
           "title": "Doc Program A: Oscar- Nominated Shorts 2026",
           "link": "https://www.ifccenter.com/films/doc-program-a-oscar-nominated-shorts-2026/",
+          "date_str": "Mar 27",
           "showtimes": [
-            "12:55 PM",
-            "6:05 PM",
-            "9:45 PM",
             "11:15 AM",
             "10:55 AM"
-          ]
-        },
-        {
-          "title": "Animated Oscar-Nominated Shorts 2026",
-          "link": "https://www.ifccenter.com/films/animated-oscar-nominated-shorts-2026/",
-          "date_str": "Mar 20",
-          "showtimes": [
-            "12:50 PM",
-            "2:45 PM",
-            "4:40 PM",
-            "7:50 PM",
-            "9:55 PM",
-            "10:50 AM",
-            "3:15 PM",
-            "7:30 PM",
-            "2:35 PM",
-            "8:00 PM"
           ]
         }
       ]
@@ -1406,11 +1424,11 @@
         {
           "title": "Below the Clouds",
           "link": "https://www.filmlinc.org/films/below-the-clouds/",
-          "date_str": "Mar 20",
+          "date_str": "Mar 21",
           "showtimes": [
+            "6:30 PM",
             "12:30 PM",
-            "6:00 PM",
-            "6:30 PM"
+            "6:00 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/xmTTrWGbw2wIHBw0ht5Oo6AJGZd.jpg",
           "overview": "Naples faces dual volcanic threats from Vesuvius and Campi Flegrei. Amid increasing tremors, archaeologists work as residents live anxiously, haunted by Pompeii's fate while emergency services strain.",
@@ -1422,7 +1440,8 @@
           "link": "https://www.filmlinc.org/films/chronovisor/",
           "date_str": "Apr 10",
           "showtimes": [
-            "8:45 PM"
+            "8:45 PM",
+            "5:30 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/iFkWLSxXI2HCBMtYUJEPayNNgTy.jpg",
           "overview": "A French academic is seduced into a world of untold histories in her scholarly quest to uncover the mystery of a history-capturing camera-like machine created by clandestine Benedictine monks. An academic-noir, armchair mystery in the lineage of Jorge Luis Borges and Umberto Eco.",
@@ -1445,7 +1464,8 @@
           "link": "https://www.filmlinc.org/films/do-you-love-me/",
           "date_str": "Apr 10",
           "showtimes": [
-            "8:30 PM"
+            "8:30 PM",
+            "1:00 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/77lsmFGy2owudc1BZpabXJMNsIv.jpg",
           "overview": "Kira is living her life with the teenage confidence that the world revolves around her. Born and raised in the late Soviet Ukraine, she sees her life predictable and clear. But it doesn't last long. Suddenly, she discovers that her father has a mistress, and her mother knows about it but prefers to remain silent. As Kira's family begins to fall apart —and so does the Soviet State— everything she knew turns out to be an illusion. Kira is searching for love, warmth, and hope for the future, going down a dark path she could not foresee.",
@@ -1455,15 +1475,26 @@
         {
           "title": "Dry Leaf",
           "link": "https://www.filmlinc.org/films/dry-leaf/",
-          "date_str": "Mar 20",
+          "date_str": "Mar 21",
           "showtimes": [
             "12:00 PM",
             "3:45 PM",
-            "7:30 PM",
-            "8:00 PM"
+            "8:00 PM",
+            "7:30 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/8yoTbPfrcqxNWkIIo7bayF2N8hl.jpg",
           "overview": "Lisa, a photographer, has gone missing. The last known detail is that she had been photographing rural football stadiums in villages across Georgia. Her father, Irakli, sets out to search for her, traveling from place to place. Levani, Lisa's best friend – and an invisible person – also sets off to help.",
+          "year": "2026"
+        },
+        {
+          "title": "Erupcja",
+          "link": "https://www.filmlinc.org/films/erupcja/",
+          "date_str": "Apr 11",
+          "showtimes": [
+            "8:15 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/1OMiyrpkZvu5YmWbPBtwDQHZsu1.jpg",
+          "overview": "While on vacation in Poland, Bethany breaks away from a romantic itinerary planned by her doting boyfriend, Rob, fearing that a marriage proposal is imminent. Reuniting instead with an old friend, Nel, the two women rekindle a uniquely combustible chemistry over the course of a few days in a chaste but burning trust predicated on sapphic synchronicity and a mutual penchant for poetry.",
           "year": "2026"
         },
         {
@@ -1482,7 +1513,8 @@
           "link": "https://www.filmlinc.org/films/fantasy/",
           "date_str": "Apr 09",
           "showtimes": [
-            "6:00 PM"
+            "6:00 PM",
+            "3:15 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/7FNU7f4sShaoYJrYL3GtY622Xim.jpg",
           "overview": "Mihrije, Sina, and Jasna are best friends in their early twenties who live in Slovenia. They are tomboys and refuse to conform to the conservative system they live in. Their world turns upside down when they meet Fantasy, a transgender woman. Together, they embark on a journey that explores the complexities of gender, desire, and self-discovery.",
@@ -1504,17 +1536,13 @@
         {
           "title": "Miroirs No. 3",
           "link": "https://www.filmlinc.org/films/miroirs-no-3/",
-          "date_str": "Mar 20",
+          "date_str": "Mar 21",
           "showtimes": [
-            "12:15 PM",
-            "2:15 PM",
-            "4:15 PM",
-            "6:15 PM",
-            "8:45 PM",
             "12:30 PM",
             "2:30 PM",
             "4:30 PM",
             "6:00 PM",
+            "8:45 PM",
             "6:30 PM",
             "8:30 PM",
             "8:00 PM"
@@ -1526,6 +1554,18 @@
           "overview": "On a weekend trip to the countryside, Laura miraculously survives a car crash. Physically unhurt but deeply shaken, she is taken in by a local woman who witnessed the accident and now cares for Laura with motherly devotion. When her husband and adult son also give up their initial resistance to Laura's presence, the four of them slowly build up some family-like routine. But soon they can no longer ignore their past...",
           "year": "2025",
           "rating": 6.5
+        },
+        {
+          "title": "Panda",
+          "link": "https://www.filmlinc.org/films/panda/",
+          "date_str": "Apr 11",
+          "showtimes": [
+            "2:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/hFbmT412dmD0yBVVd4aC8zDZTJo.jpg",
+          "overview": "On Chef Antonia's birthday, her estranged mother pays a surprise visit to the restaurant. Struggling with feeling abandoned by her mother when her twin brother died 10 years ago, Antonia imagines her brother urging reconciliation.",
+          "year": "2023",
+          "rating": 4.8
         },
         {
           "title": "Satantango",
@@ -1543,10 +1583,10 @@
         {
           "title": "Sirat",
           "link": "https://www.filmlinc.org/films/sirat/",
-          "date_str": "Mar 20",
+          "date_str": "Mar 21",
           "showtimes": [
-            "8:30 PM",
-            "9:00 PM"
+            "9:00 PM",
+            "8:30 PM"
           ],
           "also_at": [
             "IFC Center"
@@ -1555,6 +1595,18 @@
           "overview": "A man and his son arrive at a rave lost in the mountains of Morocco. They are looking for Marina, their daughter and sister, who disappeared months ago at another rave. Driven by fate, they decide to follow a group of ravers in search of one last party, in hopes Marina will be there.",
           "year": "2025",
           "rating": 6.8
+        },
+        {
+          "title": "Strange River",
+          "link": "https://www.filmlinc.org/films/strange-river/",
+          "date_str": "Apr 11",
+          "showtimes": [
+            "8:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/iZLoaJISWcFsU8rTdLYthbbMyFR.jpg",
+          "overview": "One summer, Dídac travels by bike along the Danube with his family, starting where the river first emerges in Germany. As they journey downstream, he begins seeing a mysterious boy, Alexander, who appears and disappears in the water. Dídac feels himself changing, drawn toward Alexander and away from his brother Biel. Their mother, Monika, who once took the same trip as a teenager, drifts into memories of a past summer love. When she sees Dídac and Alexander together, she encourages them to continue the journey alone. But as twilight falls, Dídac begins to question who Alexander truly is.",
+          "year": "2025",
+          "rating": 6.4
         },
         {
           "title": "The Man from London",
@@ -1594,7 +1646,7 @@
         {
           "title": "The Secret Agent",
           "link": "https://www.filmlinc.org/films/the-secret-agent/",
-          "date_str": "Mar 20",
+          "date_str": "Mar 22",
           "showtimes": [
             "3:00 PM"
           ],
@@ -1606,93 +1658,12 @@
           "overview": "Brazil, 1977. Marcelo, a technology expert in his early 40s, is on the run. Hoping to reunite with his son, he travels to Recife during Carnival but soon realizes that the city is not the safe haven he was expecting.",
           "year": "2025",
           "rating": 7.3
-        },
-        {
-          "title": "The Stranger",
-          "link": "https://www.filmlinc.org/films/the-stranger/",
-          "date_str": "Apr 03",
-          "showtimes": [
-            "1:15 PM",
-            "3:45 PM",
-            "6:15 PM",
-            "8:45 PM",
-            "1:00 PM",
-            "3:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/b09A92ZuTH5RRIdIeM16kXIgl8M.jpg",
-          "overview": "A former communist militant and a \"live and let live\" man form an unlikely friendship on a park bench, sharing their life stories with humor and heart.",
-          "year": "2026",
-          "rating": 6.2
-        },
-        {
-          "title": "The Turin Horse",
-          "link": "https://www.filmlinc.org/films/the-turin-horse/",
-          "date_str": "Mar 27",
-          "showtimes": [
-            "3:00 PM",
-            "7:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/2kSElneXSKmMsGL55k0CbPGqLbu.jpg",
-          "overview": "A monumental windstorm and an abused horse's refusal to work or eat signal the beginning of the end for a poor farmer and his daughter.",
-          "year": "2011",
-          "rating": 7.6
-        },
-        {
-          "title": "Tristan und Isolde",
-          "link": "https://www.filmlinc.org/films/tristan-und-isolde/",
-          "date_str": "Mar 21",
-          "showtimes": [
-            "12:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/9OUw86S6wzlpb8Ho8dws8lngrco.jpg",
-          "overview": "Production Bayreuth 2024. There is no arrival in Tristan and Isolde, only the longing for the unattainable, for the place “where the end of deception promised me my heart”. Two people who strive to fall out of the roles ascribed to them, to escape the supposed lies of the day. Two people suffering from life, whose declaration of love consists of wanting to restore a moment that has irretrievably passed. Two nocturnal devotees who, in their regressive desire to be uplifted and completely abandon themselves, lose touch with reality and who, in their desire to abandon their ego to another and escape their own history, ultimately fail themselves. “To long to die, not to die of longing.”",
-          "year": "2024"
         }
       ]
     },
     "Anthology Film Archives": {
       "url": "https://anthologyfilmarchives.org/film_screenings/calendar",
       "events": [
-        {
-          "title": "THE ERRAND BOY",
-          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
-          "date_str": "Mar 20",
-          "showtimes": [
-            "6:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/htJbw1ztW0m7bdJytMMOXWhgHgq.jpg",
-          "overview": "Paramutual Pictures wants to know where all the money is going so they hire Morty to be their spy. Morty works for Mr. Sneak and gets a job in the mail room so that he can have access to the lot. But all that Morty ever finds is that he can cause havoc no matter what he does.",
-          "year": "1961",
-          "rating": 6.1
-        },
-        {
-          "title": "HARRY SMITH",
-          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
-          "date_str": "Mar 20",
-          "showtimes": [
-            "6:45 PM"
-          ],
-          "overview": "16mm\r silent film\r 1999"
-        },
-        {
-          "title": "FILM NO. 12 (HEAVEN AND EARTH MAGIC)",
-          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
-          "date_str": "Mar 20",
-          "showtimes": [
-            "8:30 PM"
-          ]
-        },
-        {
-          "title": "CONTEMPT",
-          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
-          "date_str": "Mar 20",
-          "showtimes": [
-            "8:45 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/yUgtpY4NuLTW7jaaKoqhg8XVyGW.jpg",
-          "overview": "Angel leaves a party she never wanted to go to in the first place.",
-          "year": "2019"
-        },
         {
           "title": "HOLLYWOOD OR BUST",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
@@ -1794,6 +1765,29 @@
           "rating": 5.6
         },
         {
+          "title": "CONTEMPT",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+          "date_str": "Mar 22",
+          "showtimes": [
+            "6:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/yUgtpY4NuLTW7jaaKoqhg8XVyGW.jpg",
+          "overview": "Angel leaves a party she never wanted to go to in the first place.",
+          "year": "2019"
+        },
+        {
+          "title": "THE ERRAND BOY",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+          "date_str": "Mar 22",
+          "showtimes": [
+            "9:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/htJbw1ztW0m7bdJytMMOXWhgHgq.jpg",
+          "overview": "Paramutual Pictures wants to know where all the money is going so they hire Morty to be their spy. Morty works for Mr. Sneak and gets a job in the mail room so that he can have access to the lot. But all that Morty ever finds is that he can cause havoc no matter what he does.",
+          "year": "1961",
+          "rating": 6.1
+        },
+        {
           "title": "THE NUTTY PROFESSOR",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
           "date_str": "Mar 23",
@@ -1872,59 +1866,36 @@
           "overview": "An artist has an opportunity to go to Paris and wants to bring his fiancee along. However, she's a psychiatrist who currently has three female patients who don't like men. So, he guises himself as three different men to gauge their trust and hopefully cure them so that his fiancee can go with him.",
           "year": "1966",
           "rating": 5.3
+        },
+        {
+          "title": "GURU, THE MAD MONK",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+          "date_str": "Mar 25",
+          "showtimes": [
+            "6:45 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/1Vbo005gb9kMwWT4vvpdA8CE9ag.jpg",
+          "overview": "A deranged 15th Century prison colony chaplain exploits his power to get money for his church including murder and grave robbing committed by his vampire mistress and one-eyed hunchback assistant.",
+          "year": "1970",
+          "rating": 3.9
+        },
+        {
+          "title": "EXCALIBUR",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=03&year=2026",
+          "date_str": "Mar 25",
+          "showtimes": [
+            "8:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/cTWF6zkr5mUOnheowKODIijWYcN.jpg",
+          "overview": "Arthur fulfills his fate by bringing together the Knights of the Round Table at Camelot and unifying the country. However, this flawed monarch faces greater tests ahead in pursuit of love, the Holy Grail, and his nation's survival.",
+          "year": "1981",
+          "rating": 7.0
         }
       ]
     },
     "MoMA": {
       "url": "https://www.moma.org/calendar/film",
       "events": [
-        {
-          "title": "How to Marry a Millionaire",
-          "link": "https://www.moma.org/calendar/events/11222",
-          "date_str": "Fri, Mar 20",
-          "showtimes": [
-            "4:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/dFwefYyEOOZaWVn15xGY6CbYYJ2.jpg",
-          "overview": "Three women set out to find eligible millionaires to marry, but find true love in the process.",
-          "year": "1953",
-          "rating": 6.8
-        },
-        {
-          "title": "Where Is the Friend’s House?",
-          "link": "https://www.moma.org/calendar/events/11282",
-          "date_str": "Fri, Mar 20",
-          "showtimes": [
-            "4:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/2rTW4s1kgvoqVs0Kv8ARle1SrkF.jpg",
-          "overview": "An 8-year-old boy must return his friend's notebook he took by mistake, lest his friend be punished by expulsion from school.",
-          "year": "1987",
-          "rating": 7.9
-        },
-        {
-          "title": "Mulholland Dr.",
-          "link": "https://www.moma.org/calendar/events/11228",
-          "date_str": "Fri, Mar 20",
-          "showtimes": [
-            "6:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/x7A59t6ySylr1L7aubOQEA480vM.jpg",
-          "overview": "Blonde Betty Elms has only just arrived in Hollywood to become a movie star when she meets an enigmatic brunette with amnesia. Meanwhile, as the two set off to solve the second woman's identity, filmmaker Adam Kesher runs into ominous trouble while casting his latest project.",
-          "year": "2001",
-          "rating": 7.8
-        },
-        {
-          "title": "Lumière, Le Cinéma!",
-          "link": "https://www.moma.org/calendar/events/11280",
-          "date_str": "Fri, Mar 20",
-          "showtimes": [
-            "7:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/6ZCBDsnLXdLptJOSPG7mm0dblqU.jpg",
-          "overview": "In one of those wonderful coincidences of history, lumière, the French word for “light,” was also the last name of brothers Auguste and Louis, whose brilliant invention, the cinematograph, helped to inaugurate the most beloved art form of the last 130 years. Institute Lumière director Thierry Frémaux uses Lumière, Le Cinema! to guide the viewer through over a hundred shorts—some famous, some forgotten, some never before seen—directed by Lumière and company. In the process, Frémaux illuminates how the brothers employed the camera as a creative instrument as they (and their operators) mastered framing, staging, and subject selection for quotidian and exotic microdocumentaries as well as the first ever fictional motion pictures. The result is not only a glorious re(telling) of the genesis of cinema but a profound meditation on the beautiful world captured—and the mysterious world imagined—by the Lumières.",
-          "year": "2025"
-        },
         {
           "title": "A Summer at Grandpa’s (冬冬的假期)",
           "link": "https://www.moma.org/calendar/events/11295",
@@ -2004,6 +1975,18 @@
           "overview": "Disciplined Italian composer Antonio Salieri becomes consumed by jealousy and resentment towards the hedonistic and remarkably talented young Salzburger composer Wolfgang Amadeus Mozart.",
           "year": "1984",
           "rating": 8.0
+        },
+        {
+          "title": "Let’s Make Love",
+          "link": "https://www.moma.org/calendar/events/11226",
+          "date_str": "Sun, Mar 22",
+          "showtimes": [
+            "1:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/lmLvFMRVEpaIU7EJOzIkZy7jjVr.jpg",
+          "overview": "Love Alone Can’t Make a Child chronicles the love story and emotional odyssey of Maria and Christiane who, for over a decade, have been trying to fulfil their desire of giving birth to a child of their own. The director, a childhood friend of Maria, lovingly narrates the couple's journey, showcasing their resilience in the face of ever-increasing challenges, and the intricate dynamics of a relationship under tremendous strain. More than anything else, the film continually pursues what love truly means in a long-term romantic relationship.",
+          "year": "2024",
+          "rating": 6.7
         },
         {
           "title": "The Misfits",
@@ -2098,6 +2081,28 @@
           "overview": "Alphonse Gabriel Capone, the most infamous gangster of all time. He was cut across the left cheek during a fight when he was young, earning him the moniker \"Scarface.\" He moved to Chicago in 1919 and worked with infamous gangster Johnny Torrio to help run illicit operations there. In the Roaring Twenties, Al Capone ruled an empire of crime in the Windy City: gambling, prostitution, bootlegging, bribery, narcotics trafficking, robbery, \"protection\" rackets, and murder. And it seemed that law enforcement couldn't touch him. That was until one fatal night in 1929.",
           "year": "2023",
           "rating": 8.5
+        },
+        {
+          "title": "Variety",
+          "link": "https://www.moma.org/calendar/events/11289",
+          "date_str": "Mon, Mar 30",
+          "showtimes": [
+            "4:00 PM"
+          ],
+          "overview": "Korean Variety Hour, produced by KBS in 1976, captures how Koreans of that era wished to present themselves to a foreign audience. Nearly 50 years later, KBS produced the documentary series Modern Korea, which, with the advantage of a half-century of hindsight, presents images of Korea's past without any additional commentary. By juxtaposing these two programs, the film invites viewers to reflect on how much, or how little, Koreans' perspectives and self-representation have changed over time.",
+          "year": "2024"
+        },
+        {
+          "title": "Veronika Voss (Die Sehnsucht der Veronika Voss)",
+          "link": "https://www.moma.org/calendar/events/11299",
+          "date_str": "Tue, Mar 31",
+          "showtimes": [
+            "4:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/A09gh5oWVfincs6BbRz91HL4Rgc.jpg",
+          "overview": "In Munich 1955, German film star Veronika Voss becomes a drug addict at the mercy of corrupt Dr. Marianne Katz, who keeps her supplied with morphine. After meeting sports writer Robert Krohn, Veronika begins to dream of a return to stardom. As the couple's relationship escalates in intensity, Veronika begins seriously planning her return to the screen -- only to realize how debilitated she has become through her drug habit.",
+          "year": "1982",
+          "rating": 7.2
         }
       ]
     },
@@ -2228,9 +2233,17 @@
           ]
         },
         {
+          "title": "Nitehawk Shorts Festival 2026: MATINEE ONE",
+          "link": "https://nitehawkcinema.com/movies/nsf26-matinee-one/",
+          "date_str": "Apr 11",
+          "showtimes": [
+            "11:00 AM"
+          ]
+        },
+        {
           "title": "Night of the Creeps",
           "link": "https://nitehawkcinema.com/movies/night-of-the-creeps/",
-          "date_str": "Mar 20",
+          "date_str": "Mar 27",
           "showtimes": [
             "11:55 PM"
           ],
@@ -2279,6 +2292,18 @@
           "overview": "A doctor in early 19th-century Germany becomes infatuated with the sister of a man he unintentionally killed and bargains with the Devil incarnate to conjure their union in exchange for his soul.",
           "year": "2011",
           "rating": 6.567
+        },
+        {
+          "title": "The Fox and the Hound",
+          "link": "https://nitehawkcinema.com/movies/the-fox-and-the-hound/",
+          "date_str": "Apr 11",
+          "showtimes": [
+            "11:15 AM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/aC3k6XBaYnulGSkK8263ABjU3Md.jpg",
+          "overview": "When a feisty little fox named Tod is adopted into a farm family, he quickly becomes friends with a fun and adorable hound puppy named Copper. Life is full of hilarious adventures until Copper is expected to take on his role as a hunting dog -- and the object of his search is his best friend!",
+          "year": "1981",
+          "rating": 7.1
         },
         {
           "title": "More Beautiful Perversions",
@@ -2377,6 +2402,14 @@
           ]
         },
         {
+          "title": "Nitehawk Shorts Festival 2026: MATINEE TWO",
+          "link": "https://nitehawkcinema.com/movies/nsf26-matinee-two/",
+          "date_str": "Apr 11",
+          "showtimes": [
+            "11:00 AM"
+          ]
+        },
+        {
           "title": "Do the Right Thing",
           "link": "https://nitehawkcinema.com/movies/do-the-right-thing/",
           "date_str": "Mar 25",
@@ -2387,6 +2420,18 @@
           "overview": "Sal is the Italian owner of a pizzeria in Brooklyn. A neighborhood local, Buggin' Out, becomes upset when he sees that the pizzeria's Wall of Fame exhibits only Italian actors. Buggin' Out believes a pizzeria in a black neighborhood should showcase black actors, but Sal disagrees. The wall becomes a symbol of racism and hate to Buggin' Out and to other people in the neighborhood, and tensions rise.",
           "year": "1989",
           "rating": 7.8
+        },
+        {
+          "title": "Real Life",
+          "link": "https://nitehawkcinema.com/movies/real-life/",
+          "date_str": "Apr 11",
+          "showtimes": [
+            "11:30 AM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/ihN6hpMI8IUGgUvivU5HUT2M16c.jpg",
+          "overview": "A pushy, narcissistic filmmaker persuades a Phoenix family to let him and his crew film their everyday lives, in the manner of the ground-breaking PBS series \"An American Family\".",
+          "year": "1979",
+          "rating": 6.5
         },
         {
           "title": "Labyrinth",
@@ -2401,13 +2446,16 @@
           "rating": 7.3
         },
         {
-          "title": "Stand",
+          "title": "Stand By Me",
           "link": "https://nitehawkcinema.com/movies/stand-by-me/",
           "date_str": "Mar 28",
-          "poster": "https://image.tmdb.org/t/p/w300/5tawpWcklbFfFnrjQjMckN2wGV2.jpg",
-          "overview": "Two American brothers are trapped in the present-day jungles of Viet Nam standing on land mines that were left behind after the Viet Nam Conflict.",
-          "year": "2016",
-          "rating": 6.0
+          "showtimes": [
+            "12:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/vz0w9BSehcqjDcJOjRaCk7fgJe7.jpg",
+          "overview": "After learning that a boy their age has been accidentally killed near their rural homes, four boys decide to go see the body. Gordie, Vern, Chris, and Teddy encounter a mean junk man and a marsh full of leeches, but they also learn more about one another and their very different home lives. Just a lark at first, the boys' adventure evolves into a defining event in their lives.",
+          "year": "1986",
+          "rating": 7.8
         },
         {
           "title": "Revelations of Divine Love",
@@ -2428,9 +2476,9 @@
         {
           "title": "Pillion",
           "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
-          "date_str": "Friday 20, March",
+          "date_str": "Saturday 21, March",
           "showtimes": [
-            "6:05 PM"
+            "3:30 PM"
           ],
           "also_at": [
             "BAM"
@@ -2438,14 +2486,14 @@
           "poster": "https://image.tmdb.org/t/p/w300/7Pd6ChSQjSXy4snJiorSdzg2cG3.jpg",
           "overview": "Colin, a timid gay man, is swept off his feet when Ray, an enigmatic and impossibly handsome biker, takes him on as his submissive in a crazy and erotic BDSM-focused relationship.",
           "year": "2025",
-          "rating": 6.3
+          "rating": 6.2
         },
         {
           "title": "The Moment",
           "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
-          "date_str": "Friday 20, March",
+          "date_str": "Saturday 21, March",
           "showtimes": [
-            "9:45 PM"
+            "8:30 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/dYgCgTqqMnWdsnP2XirdcFB28ch.jpg",
           "overview": "A rising pop sensation navigates fame and industry pressures while preparing for her arena tour debut, revealing the transformation of underground culture into mainstream success.",
@@ -2499,9 +2547,6 @@
           "showtimes": [
             "6:20 PM"
           ],
-          "also_at": [
-            "BAM"
-          ],
           "poster": "https://image.tmdb.org/t/p/w300/bzBtsLi17rK4G6kDvOXfUZfAhca.jpg",
           "overview": "A man and his son arrive at a rave lost in the mountains of Morocco. They are looking for Marina, their daughter and sister, who disappeared months ago at another rave. Driven by fate, they decide to follow a group of ravers in search of one last party, in hopes Marina will be there.",
           "year": "2025",
@@ -2540,33 +2585,6 @@
       "url": "https://paristheaternyc.com",
       "events": [
         {
-          "title": "There Will Be Blood",
-          "link": "https://www.paristheaternyc.com/film/ac-there-will-be-blood",
-          "date_str": "Mar 20",
-          "poster": "https://image.tmdb.org/t/p/w300/fa0RDkAlCec0STeMNAhPaF89q6U.jpg",
-          "overview": "Ruthless silver miner, turned oil prospector, Daniel Plainview, moves to oil-rich California. Using his son to project a trustworthy, family-man image, Plainview cons local landowners into selling him their valuable properties for a pittance. However, local preacher Eli Sunday suspects Plainview's motives and intentions, starting a slow-burning feud that threatens both their lives.",
-          "year": "2007",
-          "rating": 8.1
-        },
-        {
-          "title": "The Wicker Man",
-          "link": "https://www.paristheaternyc.com/film/the-wicker-man-something-very-bad",
-          "date_str": "Mar 20",
-          "poster": "https://image.tmdb.org/t/p/w300/wwtrXRL8SiOWxhwLEvw7iBgYh0g.jpg",
-          "overview": "Police sergeant Neil Howie is called to an island village in search of a missing girl whom the locals claim never existed. The investigation is further complicated as Howie’s religious views clash with those of the island’s residents.",
-          "year": "1973",
-          "rating": 7.3
-        },
-        {
-          "title": "Rosemary's Baby",
-          "link": "https://www.paristheaternyc.com/film/rosemarys-baby-something-very-bad",
-          "date_str": "Mar 20",
-          "poster": "https://image.tmdb.org/t/p/w300/5yezGgo37qmd6kDknZKFzbhT19b.jpg",
-          "overview": "A nascent elite team of the Indian intelligence system perpetually strives to detect and eliminate terrorists and their plots. Officer Ajay leads his team to destroy one such potentially lethal ploy in their biggest operation yet.",
-          "year": "2015",
-          "rating": 6.8
-        },
-        {
           "title": "The Sopranos Season 3: 25th Anniversary Panel",
           "link": "https://www.paristheaternyc.com/film/ac-the-sopranos-season-3-25th-anniversary-panel",
           "date_str": "Mar 21"
@@ -2588,6 +2606,11 @@
           "rating": 7.2
         },
         {
+          "title": "Close Encounters of the Third Kind (Director's Cut)",
+          "link": "https://www.paristheaternyc.com/film/close-encounters-of-the-third-kind-70mm-big-and-loud",
+          "date_str": "Mar 21"
+        },
+        {
           "title": "Spirited Away",
           "link": "https://www.paristheaternyc.com/film/ac-spirited-away",
           "date_str": "Mar 21",
@@ -2597,9 +2620,13 @@
           "rating": 8.5
         },
         {
-          "title": "Close Encounters of the Third Kind (Director's Cut)",
-          "link": "https://www.paristheaternyc.com/film/close-encounters-of-the-third-kind-70mm-big-and-loud",
-          "date_str": "Mar 21"
+          "title": "Lawrence of Arabia",
+          "link": "https://www.paristheaternyc.com/film/lawrence-of-arabia-big-and-loud-2025",
+          "date_str": "Mar 22",
+          "poster": "https://image.tmdb.org/t/p/w300/AiAm0EtDvyGqNpVoieRw4u65vD1.jpg",
+          "overview": "During World War I, English officer Thomas Edward 'T.E.' Lawrence sets out to unite and lead the diverse, often warring, Arab tribes to fight the Turks.",
+          "year": "1962",
+          "rating": 8.0
         },
         {
           "title": "Days and Nights in the Forest",
@@ -2614,6 +2641,13 @@
           "rating": 6.9
         },
         {
+          "title": "Who's Afraid of Virginia Woolf?",
+          "link": "https://www.paristheaternyc.com/film/whos-afraid-of-virginia-woolf-something-very-bad",
+          "date_str": "Mar 22",
+          "poster": "https://image.tmdb.org/t/p/w300/3230Qp5Hd80eL0EfuXq2vz9nC6C.jpg",
+          "year": "2024"
+        },
+        {
           "title": "Network",
           "link": "https://www.paristheaternyc.com/film/ac-network",
           "date_str": "Mar 22",
@@ -2623,27 +2657,6 @@
           "rating": 7.8
         },
         {
-          "title": "Lawrence of Arabia",
-          "link": "https://www.paristheaternyc.com/film/lawrence-of-arabia-big-and-loud-2025",
-          "date_str": "Mar 22",
-          "poster": "https://image.tmdb.org/t/p/w300/AiAm0EtDvyGqNpVoieRw4u65vD1.jpg",
-          "overview": "During World War I, English officer Thomas Edward 'T.E.' Lawrence sets out to unite and lead the diverse, often warring, Arab tribes to fight the Turks.",
-          "year": "1962",
-          "rating": 8.0
-        },
-        {
-          "title": "Who's Afraid of Virginia Woolf?",
-          "link": "https://www.paristheaternyc.com/film/whos-afraid-of-virginia-woolf-something-very-bad",
-          "date_str": "Mar 22",
-          "poster": "https://image.tmdb.org/t/p/w300/3230Qp5Hd80eL0EfuXq2vz9nC6C.jpg",
-          "year": "2024"
-        },
-        {
-          "title": "Something Very Bad Is Going to Happen | Sneak Preview of Episode One",
-          "link": "https://www.paristheaternyc.com/film/svbigth-something-very-bad",
-          "date_str": "Mar 23"
-        },
-        {
           "title": "Drag Me to Hell",
           "link": "https://www.paristheaternyc.com/film/drag-me-to-hell-something-very-bad",
           "date_str": "Mar 23",
@@ -2651,6 +2664,14 @@
           "overview": "After denying a woman the extension she needs to keep her home, loan officer Christine Brown sees her once-promising life take a startling turn for the worse. Christine is convinced she's been cursed by a Gypsy, but her boyfriend is skeptical. Her only hope seems to lie in a psychic who claims he can help her lift the curse and keep her soul from being dragged straight to hell.",
           "year": "2009",
           "rating": 6.5
+        },
+        {
+          "title": "Something Very Bad Is Going to Happen | Sneak Preview of Episode One",
+          "link": "https://www.paristheaternyc.com/film/svbigth-something-very-bad",
+          "date_str": "Mar 23",
+          "showtimes": [
+            "7:00 PM"
+          ]
         },
         {
           "title": "Possession",
@@ -2668,6 +2689,9 @@
           "title": "Married to the Mob",
           "link": "https://www.paristheaternyc.com/film/nyfcc-married-to-the-mob",
           "date_str": "Mar 24",
+          "showtimes": [
+            "7:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/gkOsxv1RvV5smRnm6wrmn2wDXyZ.jpg",
           "overview": "Angela de Marco is fed up with her gangster husband's line of work and wants no part of the crime world. When her husband is killed for having an affair with the mistress of mob boss Tony \"The Tiger\" Russo, Angela and her son depart for New York City to make a fresh start. Unfortunately, Tony has set his sights upon Angela -- and so has an undercover FBI agent looking to use her to bust Tony.",
           "year": "1988",
@@ -2737,13 +2761,13 @@
           "rating": 6.4
         },
         {
-          "title": "Bullitt",
-          "link": "https://www.paristheaternyc.com/film/bullitt-branch-selects",
+          "title": "The Killing of a Sacred Deer",
+          "link": "https://www.paristheaternyc.com/film/the-killing-of-a-sacred-deer-something-very-bad",
           "date_str": "Mar 29",
-          "poster": "https://image.tmdb.org/t/p/w300/2ffzF1WmeXtH420fSUoCrecFvDA.jpg",
-          "overview": "Senator Walter Chalmers is aiming to take down mob boss Pete Ross with the help of testimony from the criminal's hothead brother Johnny, who is in protective custody in San Francisco under the watch of police lieutenant Frank Bullitt. When a pair of mob hitmen enter the scene, Bullitt follows their trail through a maze of complications and double-crosses. This thriller includes one of the most famous car chases ever filmed.",
-          "year": "1968",
-          "rating": 7.1
+          "poster": "https://image.tmdb.org/t/p/w300/e4DGlsc9g0h5AyoyvvAuIRnofN7.jpg",
+          "overview": "Dr. Steven Murphy is a renowned cardiovascular surgeon who presides over a spotless household with his wife and two children. Lurking at the margins of his idyllic suburban existence is Martin, a fatherless teen who insinuates himself into the doctor's life in gradually unsettling ways.",
+          "year": "2017",
+          "rating": 7.0
         }
       ]
     },
@@ -2752,8 +2776,13 @@
       "events": [
         {
           "title": "The Secret Agent",
-          "link": "https://www.bam.org/film/the-secret-agent",
-          "date_str": "Now Playing",
+          "link": "https://www.bam.org/film/2025/the-secret-agent",
+          "date_str": "Mar 20",
+          "showtimes": [
+            "1:00 PM",
+            "4:10 PM",
+            "7:30 PM"
+          ],
           "also_at": [
             "Film at Lincoln Center",
             "Syndicated BK"
@@ -2765,56 +2794,47 @@
         },
         {
           "title": "Pillion",
-          "link": "https://www.bam.org/film/pillion",
-          "date_str": "Now Playing",
+          "link": "https://www.bam.org/film/2026/pillion",
+          "date_str": "Mar 20",
+          "showtimes": [
+            "1:30 PM",
+            "6:50 PM",
+            "9:10 PM"
+          ],
           "also_at": [
             "Syndicated BK"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/7Pd6ChSQjSXy4snJiorSdzg2cG3.jpg",
           "overview": "Colin, a timid gay man, is swept off his feet when Ray, an enigmatic and impossibly handsome biker, takes him on as his submissive in a crazy and erotic BDSM-focused relationship.",
           "year": "2025",
-          "rating": 6.3
-        },
-        {
-          "title": "“Wuthering Heights”",
-          "link": "https://www.bam.org/film/wuthering-heights",
-          "date_str": "Now Playing",
-          "poster": "https://image.tmdb.org/t/p/w300/3YBce6dTh1D5oCMITXk2S5QhPt.jpg",
-          "overview": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
-          "year": "2026",
-          "rating": 6.3
-        },
-        {
-          "title": "Sirât",
-          "link": "https://www.bam.org/film/sir-t",
-          "date_str": "Now Playing",
-          "also_at": [
-            "Syndicated BK"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/bzBtsLi17rK4G6kDvOXfUZfAhca.jpg",
-          "overview": "A man and his son arrive at a rave lost in the mountains of Morocco. They are looking for Marina, their daughter and sister, who disappeared months ago at another rave. Driven by fate, they decide to follow a group of ravers in search of one last party, in hopes Marina will be there.",
-          "year": "2025",
-          "rating": 6.8
+          "rating": 6.2
         },
         {
           "title": "2026 Oscar Nominated Live-Action Shorts",
-          "link": "https://www.bam.org/film/2026-oscar-nominated-live-action-shorts",
-          "date_str": "Now Playing"
+          "link": "https://www.bam.org/film/2026/oscar-nominated-live-action",
+          "date_str": "Mar 20",
+          "showtimes": [
+            "1:50 PM",
+            "6:30 PM"
+          ]
         },
         {
           "title": "2026 Oscar Nominated Animated Shorts",
-          "link": "https://www.bam.org/film/2026-oscar-nominated-animated-shorts",
-          "date_str": "Now Playing"
-        },
-        {
-          "title": "Of Father and Sons: The Bakri Family On Screen",
-          "link": "https://www.bam.org/film/of-father-and-sons-the-bakri-family-on-screen",
-          "date_str": "Mar 20"
+          "link": "https://www.bam.org/film/2026/oscar-nominated-animated",
+          "date_str": "Mar 20",
+          "showtimes": [
+            "4:20 PM",
+            "9:00 PM",
+            "4:40 PM"
+          ]
         },
         {
           "title": "Palestine ‘36",
-          "link": "https://www.bam.org/film/palestine-36",
+          "link": "https://www.bam.org/film/2026/palestine-36",
           "date_str": "Mar 20",
+          "showtimes": [
+            "6:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/ajeiriNRFPLESjGZ0vdp4MVardZ.jpg",
           "overview": "In 1936, as Palestinian villages revolt against British colonial rule and Zionist immigration from Europe accelerates toward the ethnic cleansing of Palestinians, Yusuf moves between Jerusalem and his rural home amid escalating unrest and a decisive moment for the British Empire.",
           "year": "2025",
@@ -2822,22 +2842,38 @@
         },
         {
           "title": "Project Hail Mary",
-          "link": "https://www.bam.org/film/project-hail-mary",
+          "link": "https://www.bam.org/film/2026/project-hail-mary",
           "date_str": "Mar 20",
-          "poster": "https://image.tmdb.org/t/p/w300/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+          "showtimes": [
+            "1:00 PM",
+            "4:15 PM",
+            "7:40 PM",
+            "4:00 PM",
+            "7:15 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/huVzcVrlK8aiLd240ienleODvWl.jpg",
           "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
           "year": "2026",
-          "rating": 8.4
+          "rating": 8.5
         },
         {
           "title": "An Evening of Shorts Honoring Women’s History Month",
-          "link": "https://www.bam.org/film/reel-sisters-bam-present-an-evening-of-shorts-honoring-women-s-history-month",
-          "date_str": "Mar 25"
+          "link": "https://www.bam.org/film/2026/reel-sisters",
+          "date_str": "Mar 25",
+          "showtimes": [
+            "7:00 PM"
+          ]
         },
         {
           "title": "Miroirs No. 3",
-          "link": "https://www.bam.org/film/miroirs-no-3",
+          "link": "https://www.bam.org/film/2026/miroirs-no3",
           "date_str": "Mar 26",
+          "showtimes": [
+            "4:30 PM",
+            "6:50 PM",
+            "9:00 PM",
+            "2:00 PM"
+          ],
           "also_at": [
             "Film at Lincoln Center"
           ],
@@ -2848,13 +2884,23 @@
         },
         {
           "title": "Queering the Canon: We’re Out Here",
-          "link": "https://www.bam.org/film/queering-the-canon-we-re-out-here",
+          "link": "https://www.bam.org/film/2026/queering-the-canon",
           "date_str": "Mar 26"
         },
         {
           "title": "Alpha",
-          "link": "https://www.bam.org/film/alpha",
+          "link": "https://www.bam.org/film/2026/alpha",
           "date_str": "Mar 27",
+          "showtimes": [
+            "6:00 PM",
+            "9:00 PM",
+            "3:00 PM",
+            "1:40 PM",
+            "4:30 PM",
+            "7:30 PM",
+            "5:00 PM",
+            "8:00 PM"
+          ],
           "also_at": [
             "IFC Center"
           ],
@@ -2865,11 +2911,38 @@
         },
         {
           "title": "Solomon Northup’s Odyssey",
-          "link": "https://www.bam.org/film/solomon-northup-s-odyssey",
+          "link": "https://www.bam.org/film/2026/solomon-northups-odyssey",
           "date_str": "Apr 3",
+          "showtimes": [
+            "2:00 PM",
+            "4:30 PM",
+            "7:00 PM",
+            "5:30 PM",
+            "8:00 PM",
+            "3:00 PM",
+            "9:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/inY5q2BDdQGyYGMcFz3rtqxLbwq.jpg",
           "overview": "Six California kids test their brains and talents against students in Odyssey of the Mind, a problem-solving competition requiring mechanical, creative and intellectual skills. With little money and zero adult participation, the teens build a robot to tell a story about bullying, exclusion and mental health. But how does their solution measure up?",
           "year": "2023"
+        },
+        {
+          "title": "12 Years a Slave",
+          "link": "https://www.bam.org/film/2026/12-years-a-slave",
+          "date_str": "Apr 4",
+          "showtimes": [
+            "1:45 PM",
+            "9:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/xdANQijuNrJaw1HA61rDccME4Tm.jpg",
+          "overview": "In the pre-Civil War United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery. Facing cruelty as well as unexpected kindnesses Solomon struggles not only to stay alive, but to retain his dignity. In the twelfth year of his unforgettable odyssey, Solomon’s chance meeting with a Canadian abolitionist will forever alter his life.",
+          "year": "2013",
+          "rating": 7.9
+        },
+        {
+          "title": "Hoyt-Schermerhorn: Stand Clear of the Closing Doors",
+          "link": "https://www.bam.org/film/2026/hoyt-schermerhorn",
+          "date_str": "Apr 9"
         }
       ]
     }
