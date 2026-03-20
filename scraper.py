@@ -1146,6 +1146,7 @@ def scrape_paris():
             'sort': 'OpeningDate:asc',
             'filters[OpeningDate][$lte]': max_date,
             'filters[ClosingDate][$gte]': today,
+            'populate': 'events',
         }, headers={'User-Agent': HEADERS['User-Agent']}, timeout=15)
         r.raise_for_status()
         data = r.json()
@@ -1179,18 +1180,33 @@ def scrape_paris():
             date = parse_date_loose(opening) if opening else None
             date_str = date.strftime('%b %d') if date else ''
 
-            # Extract showtimes from CMS text fields (special events)
+            # Extract showtimes from CMS events relation (EventTime field)
             show_times = []
-            for field in ('FeaturedFilmSubtextOverride', 'RedLabelOverride', 'HeroDetails'):
-                val = a.get(field) or ''
-                for tm in re.finditer(r'(\d{1,2}(?::\d{2})?\s*(?:AM|PM))', val, re.IGNORECASE):
-                    raw = tm.group(1).strip()
-                    # Normalize "7 PM" → "7:00 PM", "3:30 PM" stays
+            for ev in a.get('events', {}).get('data', []):
+                ea = ev.get('attributes', {})
+                assoc = ea.get('Association', [])
+                if assoc and 'Paris' not in assoc:
+                    continue
+                et = (ea.get('EventTime') or '').strip()
+                if et:
+                    raw = et
                     if ':' not in raw:
                         raw = re.sub(r'(\d+)\s*(AM|PM)', lambda m: f"{m.group(1)}:00 {m.group(2).upper()}", raw, flags=re.IGNORECASE)
                     else:
                         raw = re.sub(r'(am|pm)', lambda m: m.group(1).upper(), raw, flags=re.IGNORECASE)
                     show_times.append(raw)
+            # Also extract from CMS text fields (special events)
+            if not show_times:
+                for field in ('FeaturedFilmSubtextOverride', 'RedLabelOverride', 'HeroDetails'):
+                    val = a.get(field) or ''
+                    for tm in re.finditer(r'(\d{1,2}(?::\d{2})?\s*(?:AM|PM))', val, re.IGNORECASE):
+                        raw = tm.group(1).strip()
+                        # Normalize "7 PM" → "7:00 PM", "3:30 PM" stays
+                        if ':' not in raw:
+                            raw = re.sub(r'(\d+)\s*(AM|PM)', lambda m: f"{m.group(1)}:00 {m.group(2).upper()}", raw, flags=re.IGNORECASE)
+                        else:
+                            raw = re.sub(r'(am|pm)', lambda m: m.group(1).upper(), raw, flags=re.IGNORECASE)
+                        show_times.append(raw)
             show_times = list(dict.fromkeys(show_times))
 
             e = make_event('Paris Theater', name, link, date=date, date_str=date_str,
