@@ -1836,12 +1836,12 @@ def main():
     for scraper in SCRAPERS:
         name = scraper.__name__.replace('scrape_', '').replace('_', ' ').title()
         print(f"  Fetching {name}...", file=sys.stderr)
-        try:
-            events = scraper()
+        events = _retry(scraper)
+        if events is not None:
             print(f"    {len(events)} items", file=sys.stderr)
             all_events.extend(events)
-        except Exception as ex:
-            print(f"    Error: {ex}", file=sys.stderr)
+        else:
+            print(f"    Skipping {name}: all retries failed", file=sys.stderr)
 
     filtered  = filter_by_date(all_events)
     new_events, new_ids = [], []
