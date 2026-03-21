@@ -66,8 +66,12 @@ SPECIAL_KEYWORDS = [
 def load_state():
     if os.path.exists(STATE_FILE):
         with open(STATE_FILE) as f:
-            return json.load(f)
-    return {'seen': []}
+            data = json.load(f)
+        # Migrate old list format to {hash: first_seen_date} dict
+        if isinstance(data.get('seen'), list):
+            data['seen'] = {h: '2026-01-01' for h in data['seen']}
+        return data
+    return {'seen': {}}
 
 def save_state(state):
     os.makedirs(os.path.dirname(STATE_FILE), exist_ok=True)
@@ -1753,6 +1757,7 @@ def push_to_github(events_by_venue):
                         ('overview', e.get('overview', '')),
                         ('year', e.get('year', '')),
                         ('rating', e.get('rating', 0)),
+                        ('first_seen', e.get('first_seen', '')),
                     ] if v}
                     for e in events
                 ]
@@ -1831,7 +1836,8 @@ SCRAPERS = [
 def main():
     print("Scraping NYC movie events...", file=sys.stderr)
     state    = load_state()
-    seen_ids = set(state.get('seen', []))
+    seen_ids = set(state.get('seen', {}).keys())
+    today    = datetime.now().strftime('%Y-%m-%d')
     all_events = []
     for scraper in SCRAPERS:
         name = scraper.__name__.replace('scrape_', '').replace('_', ' ').title()
@@ -1863,7 +1869,14 @@ def main():
     print(digest if digest else "No new events found.")
 
     if not TEST_MODE and new_ids:
-        state['seen']    = list(seen_ids | set(new_ids))[-300:]
+        seen_dict = state.get('seen', {})
+        for eid in new_ids:
+            seen_dict[eid] = today
+        # Keep only the most recent 300 entries
+        if len(seen_dict) > 300:
+            sorted_items = sorted(seen_dict.items(), key=lambda x: x[1])
+            seen_dict = dict(sorted_items[-300:])
+        state['seen']    = seen_dict
         state['lastRun'] = datetime.now().isoformat()
         save_state(state)
         print(f"\n[State updated: {len(new_ids)} new events]", file=sys.stderr)
@@ -1905,6 +1918,13 @@ def main():
     print(f"\n[Full dataset: {total_events} events across {venues_with_events} venues]", file=sys.stderr)
 
     enrich_with_tmdb(events_by_venue)
+
+    # Annotate each event with first_seen date from state
+    seen_dict = state.get('seen', {})
+    for venue, evts in events_by_venue.items():
+        for e in evts:
+            eid = event_id(e['venue'], e['title'], e.get('date_str', ''))
+            e['first_seen'] = seen_dict.get(eid, today)
 
     if PUSH:
         if total_events == 0:
