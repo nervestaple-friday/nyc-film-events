@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-21T11:01:19.368656+00:00",
+  "updated": "2026-03-21T14:45:51.197476+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -2897,9 +2897,9 @@
           "link": "https://www.bam.org/film/2025/the-secret-agent",
           "date_str": "Mar 21",
           "showtimes": [
-            "1:00 PM",
             "4:10 PM",
-            "7:30 PM"
+            "7:30 PM",
+            "1:00 PM"
           ],
           "also_at": [
             "Syndicated BK"
@@ -2914,9 +2914,9 @@
           "link": "https://www.bam.org/film/2026/pillion",
           "date_str": "Mar 21",
           "showtimes": [
-            "1:30 PM",
             "6:50 PM",
-            "9:10 PM"
+            "9:10 PM",
+            "1:30 PM"
           ],
           "also_at": [
             "Syndicated BK"
@@ -2943,10 +2943,10 @@
           "link": "https://www.bam.org/film/2026/sirat",
           "date_str": "Mar 21",
           "showtimes": [
-            "1:40 PM",
             "4:10 PM",
             "6:45 PM",
             "9:15 PM",
+            "1:40 PM",
             "4:15 PM",
             "7:30 PM"
           ],
@@ -2963,8 +2963,8 @@
           "link": "https://www.bam.org/film/2026/oscar-nominated-live-action",
           "date_str": "Mar 21",
           "showtimes": [
-            "1:50 PM",
-            "6:30 PM"
+            "6:30 PM",
+            "1:50 PM"
           ]
         },
         {
@@ -2991,9 +2991,9 @@
           "link": "https://www.bam.org/film/2026/project-hail-mary",
           "date_str": "Mar 21",
           "showtimes": [
-            "1:00 PM",
             "4:15 PM",
             "7:40 PM",
+            "1:00 PM",
             "4:00 PM",
             "7:15 PM"
           ],
