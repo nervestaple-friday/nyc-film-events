@@ -117,6 +117,9 @@
 
     footer { border-top: 1px solid var(--border); padding: 1.5rem 2rem; font-size: 0.68rem; color: var(--dim); letter-spacing: 0.03em; text-align: center; }
 
+    .skip-link { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; z-index: 1000; background: var(--bg); color: var(--accent); padding: 0.5rem 1rem; font-size: 0.85rem; }
+    .skip-link:focus { position: fixed; left: 0; top: 0; width: auto; height: auto; overflow: visible; }
+
     @media (max-width: 600px) {
       .header { padding: 1rem; }
       .header h1 { font-size: 1.1rem; }
@@ -250,7 +253,7 @@
       const hasPoster = !!event.poster;
       const rating = event.rating ? parseFloat(event.rating.toFixed(1)) : 0;
       return (
-        <div className={`event-card ${hasPoster ? '' : 'no-poster'}`}>
+        <div className={`event-card ${hasPoster ? '' : 'no-poster'}`} role="article">
           {hasPoster ? (
             <div className="event-poster">
               <img src={event.poster} alt={event.title} loading="lazy" />
@@ -273,7 +276,11 @@
             </div>
             {event.overview && (
               <div className={`event-overview ${expanded ? 'expanded' : ''}`}
-                   onClick={() => setExpanded(!expanded)}>
+                   onClick={() => setExpanded(!expanded)}
+                   onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setExpanded(!expanded); } }}
+                   tabIndex={0}
+                   role="button"
+                   aria-expanded={expanded}>
                 {event.overview}
               </div>
             )}
@@ -412,7 +419,8 @@
 
       return (
         <>
-          <header className="header">
+          <a className="skip-link" href="#main-content">Skip to main content</a>
+          <header className="header" role="banner">
             <h1>NYC Film Events</h1>
             <div className="header-right">
               {data && <span className="updated">Updated {formatUpdated(data.updated)}</span>}
@@ -421,9 +429,9 @@
           </header>
 
           <div className="sticky-nav">
-            <div className="search-bar">
+            <div className="search-bar" role="search">
               <span className="search-icon">&#8981;</span>
-              <input ref={searchRef} className="search-input" type="text" placeholder="Search films..." value={search} onChange={e => setSearch(e.target.value)} />
+              <input ref={searchRef} className="search-input" type="text" placeholder="Search films..." value={search} onChange={e => setSearch(e.target.value)} aria-label="Search films" />
               {search && (
                 <button className="search-clear" onClick={() => { setSearch(''); searchRef.current?.focus(); }} aria-label="Clear search">&times;</button>
               )}
@@ -433,31 +441,31 @@
               <div className="date-pills">
                 {DATE_FILTERS.map(f => (
                   <button key={f.key} className={`date-pill ${dateFilter === f.key ? 'active' : ''}`}
-                    onClick={() => setDateFilter(f.key)}>{f.label}</button>
+                    onClick={() => setDateFilter(f.key)} aria-pressed={dateFilter === f.key}>{f.label}</button>
                 ))}
               </div>
               <div className="sort-group">
                 <span className="sort-label">Sort</span>
                 {SORT_OPTIONS.map(s => (
                   <button key={s.key} className={`date-pill ${sortBy === s.key ? 'active' : ''}`}
-                    onClick={() => setSortBy(s.key)}>{s.label}</button>
+                    onClick={() => setSortBy(s.key)} aria-pressed={sortBy === s.key}>{s.label}</button>
                 ))}
               </div>
             </div>
 
             {allVenues.length > 0 && (
-              <nav className="filters">
+              <nav className="filters" role="navigation">
                 <button className={`filter-btn ${effective === ALL ? 'active' : ''}`}
-                  onClick={() => handleNavigate(ALL)}>All <span className="filter-count">{totalEvents}</span></button>
+                  onClick={() => handleNavigate(ALL)} aria-pressed={effective === ALL}>All <span className="filter-count">{totalEvents}</span></button>
                 {venueNames.map(name => (
                   <button key={name} className={`filter-btn ${effective === name ? 'active' : ''}`}
-                    onClick={() => handleNavigate(name)}>{name} <span className="filter-count">{venueCounts[name]||0}</span></button>
+                    onClick={() => handleNavigate(name)} aria-pressed={effective === name}>{name} <span className="filter-count">{venueCounts[name]||0}</span></button>
                 ))}
               </nav>
             )}
           </div>
 
-          <main className="main">
+          <main className="main" id="main-content" role="main">
             {error && <p className="empty">Failed to load events.</p>}
             {!data && !error && (
               <div className="loading">
@@ -493,7 +501,7 @@
             aria-label="Back to top"
           >&#8593;</button>
 
-          <footer>
+          <footer role="contentinfo">
             Curated from NYC's finest arthouse cinemas &middot; Updated automatically
           </footer>
         </>
