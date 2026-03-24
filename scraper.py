@@ -1561,12 +1561,16 @@ def enrich_with_tmdb(events_by_venue):
         except Exception:
             cache = {}
 
-    # Clear stale entries with empty overview so they get re-searched with improved cleaning
-    stale_keys = [k for k, v in cache.items() if not v.get('overview') and not v.get('poster')]
+    # Re-search no-match entries (no overview AND no poster) only after 7 days
+    now_iso = datetime.now().isoformat()
+    seven_days_ago = (datetime.now() - timedelta(days=7)).isoformat()
+    stale_keys = [k for k, v in cache.items()
+                  if not v.get('overview') and not v.get('poster')
+                  and v.get('cached_at', '') < seven_days_ago]
     for k in stale_keys:
         del cache[k]
     if stale_keys:
-        print(f"  [tmdb] cleared {len(stale_keys)} stale cache entries for re-search", file=sys.stderr)
+        print(f"  [tmdb] cleared {len(stale_keys)} stale no-match cache entries (>7 days) for re-search", file=sys.stderr)
 
     # Collect unique titles with venue info for venue-aware TMDB matching
     from collections import defaultdict as _dds
@@ -1579,12 +1583,16 @@ def enrich_with_tmdb(events_by_venue):
     # New-film venues primarily show recent/new films
     NEW_FILM_VENUES = {'Film at Lincoln Center', 'BAM', 'IFC Center', 'MoMA', 'Museum of the Moving Image'}
 
-    # Clear cache for titles at new-film venues to re-search with venue context
-    cleared_new = [t for t in title_venues if t in cache and (title_venues[t] & NEW_FILM_VENUES)]
+    # Clear cache for new-film venue titles only if they had no match and are older than 3 days
+    three_days_ago = (datetime.now() - timedelta(days=3)).isoformat()
+    cleared_new = [t for t in title_venues if t in cache
+                   and (title_venues[t] & NEW_FILM_VENUES)
+                   and not cache[t].get('poster') and not cache[t].get('overview')
+                   and cache[t].get('cached_at', '') < three_days_ago]
     for t in cleared_new:
         del cache[t]
     if cleared_new:
-        print(f"  [tmdb] cleared {len(cleared_new)} cache entries for new-film venue titles", file=sys.stderr)
+        print(f"  [tmdb] cleared {len(cleared_new)} no-match new-film venue entries (>3 days) for re-search", file=sys.stderr)
 
     def _search_tmdb(query, year=None, search_type='movie'):
         """Search TMDB movie or TV, return all results."""
@@ -1613,7 +1621,7 @@ def enrich_with_tmdb(events_by_venue):
         if title in cache:
             continue
         if _should_skip_tmdb(title):
-            cache[title] = {'poster': '', 'overview': '', 'year': '', 'rating': 0, 'skipped': True}
+            cache[title] = {'poster': '', 'overview': '', 'year': '', 'rating': 0, 'skipped': True, 'cached_at': now_iso}
             continue
         if api_calls > 0:
             time.sleep(0.25)
@@ -1653,12 +1661,13 @@ def enrich_with_tmdb(events_by_venue):
                     'overview': hit.get('overview', ''),
                     'year': release_date[:4] if len(release_date) >= 4 else '',
                     'rating': round(raw_rating, 1) if raw_rating else 0,
+                    'cached_at': now_iso,
                 }
             else:
-                cache[title] = {'poster': '', 'overview': '', 'year': '', 'rating': 0}
+                cache[title] = {'poster': '', 'overview': '', 'year': '', 'rating': 0, 'cached_at': now_iso}
         except Exception as ex:
             print(f"  [tmdb] search failed for '{title}': {ex}", file=sys.stderr)
-            cache[title] = {'poster': '', 'overview': '', 'year': '', 'rating': 0}
+            cache[title] = {'poster': '', 'overview': '', 'year': '', 'rating': 0, 'cached_at': now_iso}
 
     # Save cache
     try:
