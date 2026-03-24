@@ -249,8 +249,40 @@ def scrape_metrograph():
     return events
 
 
+def _spectacle_parse_screening_dates(text):
+    """Extract screening dates from Spectacle event page/RSS body text.
+
+    Looks for patterns like 'TUESDAY, APRIL 7th 10PM' or 'FRIDAY, APRIL 3rd – MIDNIGHT'.
+    Returns list of (datetime, time_str) tuples.
+    """
+    days = r'(?:MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY)'
+    months = (r'(?:JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|'
+              r'SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER)')
+    pat = (
+        rf'({days}),?\s+'
+        rf'({months})\s+(\d{{1,2}})(?:st|nd|rd|th)?'
+        rf'(?:\s*[–—-]?\s*((?:\d{{1,2}}(?::\d{{2}})?\s*(?:AM|PM))|MIDNIGHT|NOON))?'
+    )
+    results = []
+    now = datetime.now()
+    for m in re.finditer(pat, text, re.IGNORECASE):
+        month_str = m.group(2)
+        day_str = m.group(3)
+        time_str = (m.group(4) or '').strip()
+        try:
+            # Try current year first, then next year if date is in the past
+            for year in (now.year, now.year + 1):
+                dt = parse_date_loose(f"{month_str} {day_str} {year}")
+                if dt and dt >= now - timedelta(days=1):
+                    results.append((dt, time_str))
+                    break
+        except Exception:
+            continue
+    return results
+
+
 def scrape_spectacle():
-    """Spectacle Theater has a working RSS feed."""
+    """Spectacle Theater — RSS feed with screening dates parsed from event pages."""
     events = []
     r = fetch('https://www.spectacletheater.com/feed/')
     if not r:
@@ -260,19 +292,36 @@ def scrape_spectacle():
         for item in root.findall('.//item'):
             title = item.findtext('title', '').strip()
             link  = item.findtext('link', '').strip()
-            # pubDate is close to the screening date — use it for date filtering
-            # so past screenings get excluded by filter_by_date().
-            date = None
-            date_str = ''
-            pub = item.findtext('pubDate', '').strip()
-            if pub:
-                pd = parse_date_loose(pub)
-                if pd:
-                    date = pd
-                    date_str = pd.strftime('%b %d')
-            e = make_event('Spectacle Theater', title, link, date=date, date_str=date_str, special=True)
-            if e:
-                events.append(e)
+
+            # Try content:encoded from RSS first (saves an HTTP request)
+            screening_dates = []
+            content_encoded = item.findtext(
+                '{http://purl.org/rss/1.0/modules/content/}encoded', ''
+            )
+            if content_encoded:
+                screening_dates = _spectacle_parse_screening_dates(content_encoded)
+
+            # Fall back to fetching the event page
+            if not screening_dates and link:
+                time.sleep(0.5)
+                page = fetch(link)
+                if page:
+                    screening_dates = _spectacle_parse_screening_dates(page.text)
+
+            if screening_dates:
+                for dt, time_str in screening_dates:
+                    date_str = dt.strftime('%b %d')
+                    if time_str:
+                        date_str += f' {time_str}'
+                    e = make_event('Spectacle Theater', title, link,
+                                   date=dt, date_str=date_str, special=True)
+                    if e:
+                        events.append(e)
+            else:
+                # No screening dates found — keep event with no date so it still appears
+                e = make_event('Spectacle Theater', title, link, special=True)
+                if e:
+                    events.append(e)
     except Exception as ex:
         print(f"  [Spectacle] {ex}", file=sys.stderr)
     return events
