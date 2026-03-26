@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-26T11:04:23.922188+00:00",
+  "updated": "2026-03-26T11:07:03.046367+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -70,7 +70,7 @@
           "overview": "A Hollywood studio executive is being sent death threats by a writer whose script he rejected - but which one?",
           "year": "1992",
           "rating": 7.2,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Red Sorghum",
@@ -83,7 +83,7 @@
           "overview": "An old leper who owned a remote sorghum winery dies. Jiu'er, the wife bought by the leper, and her lover, identified only as \"my Grandpa\" by the narrator, take over the winery and set up an idealized quasi-matriarchal community headed by Jiu'er. When the Japanese invaders subject the area to their rule and cut down the sorghum to make way for a road, the community rises up and resists as the sorghum grows anew.",
           "year": "1988",
           "rating": 7.1,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Clouds of Sils Maria",
@@ -170,8 +170,10 @@
           "showtimes": [
             "1:10 PM"
           ],
-          "overview": "Making of Jean Luc Godard's Alphaville (1965)",
-          "year": "2003",
+          "poster": "https://image.tmdb.org/t/p/w300/xM237sYuNtPq3VnmBsPzlyF9yAV.jpg",
+          "overview": "In a remote Russian village during World War I, colourful and nuanced characters experience divided loyalties: family loyalty vs. personal desire, nationalism vs. transcendent humanism.",
+          "year": "1933",
+          "rating": 6.2,
           "first_seen": "2026-03-24"
         },
         {
@@ -237,7 +239,7 @@
           "overview": "A seven-part anthology film exploring the history of Hong Kong from the 1940s to present day.",
           "year": "2022",
           "rating": 6.9,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Point Blank",
@@ -379,7 +381,7 @@
           "overview": "A woman recalls her childhood growing up in the North of Spain, focusing on her relationship with her father.",
           "year": "1983",
           "rating": 7.7,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Stalker",
@@ -483,7 +485,7 @@
           "overview": "Hollywood is a 2002 Indian Kannada science fiction film written by Upendra and directed by Dinesh Babu. It stars Upendra in a triple role as Surendra, Upendra and US 47 (a robot) along with the Australian actress Felicity Mason as Manisha and Anant Nag. The film was shot entirely in Gold Coast, Australia with few supporting actors and a monkey named Lakshmi, voiced by Ramesh Bhat. The film was also dubbed into Telugu in 2003, retaining the same title.",
           "year": "2002",
           "rating": 7.2,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "The Lovers on the Bridge",
@@ -509,7 +511,7 @@
           "overview": "A nameless gunfighter arrives in a town ripped apart by rival gangs and, though courted by both to join, chooses his own path.",
           "year": "2007",
           "rating": 6.2,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "The Unbearable Lightness of Being",
@@ -535,7 +537,7 @@
           "overview": "When petty criminal Luke Jackson is sentenced to two years in a Florida prison farm, he doesn't play by the rules of either the sadistic warden or the yard's resident heavy, Dragline, who ends up admiring the new guy's unbreakable will. Luke's bravado, even in the face of repeated stints in the prison's dreaded solitary confinement cell, \"the box,\" make him a rebel hero to his fellow convicts and a thorn in the side of the prison officers.",
           "year": "1967",
           "rating": 7.7,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Cowboy Bebop: The Movie",
@@ -587,7 +589,7 @@
           "overview": "A case involving drug lords and murder in South Florida takes a personal turn for undercover detectives Sonny Crockett and Ricardo Tubbs. Unorthodox Crockett gets involved romantically with the Chinese-Cuban wife of a trafficker of arms and drugs, while Tubbs deals with an assault on those he loves.",
           "year": "2006",
           "rating": 6.0,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Sambizanga",
@@ -613,7 +615,7 @@
           "overview": "The wife of a famous composer survives a car accident that kills her husband and daughter. Now alone, she shakes off her old identity and explores her newfound freedom but finds that she is unbreakably bound to other humans, including her husband’s mistress, whose existence she never suspected.",
           "year": "1993",
           "rating": 7.6,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "The Outfit",
@@ -723,7 +725,7 @@
           "overview": "The war is over. The Red Army soldier Pyotr tries to find himself in a peaceful life. He takes the place of an accountant, and long-time friend Nazar, who has already grown to the post of the head of a collective farm, helps him in this. Together they achieve high performance indicators of their wards, skillfully solving controversial issues and emerging from confused situations.",
           "year": "1951",
           "rating": 3.0,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "The Wrestler and the Clown",
@@ -749,7 +751,7 @@
           "overview": "Part-time model Valentine unexpectedly befriends a retired judge after she runs over his dog. At first, the grumpy man shows no concern about the dog, and Valentine decides to keep it. But the two form a bond when she returns to his house and catches him listening to his neighbors’ phone calls.",
           "year": "1994",
           "rating": 7.9,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Millennium Mambo",
@@ -775,7 +777,7 @@
           "overview": "The Alchemist assembles together a group of people from all walks of life to represent the planets in the solar system. The occult adept's intention is to put his recruits through strange mystical rites and divest them of their worldly baggage before embarking on a trip to Lotus Island. There they ascend the Holy Mountain to displace the immortal gods who secretly rule the universe.",
           "year": "1973",
           "rating": 7.5,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Invention for Destruction",
@@ -845,8 +847,10 @@
           "showtimes": [
             "7:45 PM"
           ],
-          "overview": "A mother hunts down the killer of her son only discover that the reality is far more horrifying than anything she could have ever have believed.",
-          "year": "2002",
+          "poster": "https://image.tmdb.org/t/p/w300/g6PGzYqXNofrrGKS7dixoc2P5M7.jpg",
+          "overview": "Alice Tate, mother of two, with a marriage of 16 years, finds herself falling for a handsome sax player, Joe. Stricken with a backache, she consults herbalist Dr. Yang, who realizes that her problems are not related to her back, but in her mind and heart. Dr. Yang's magical herbs give Alice wondrous powers, taking her out of her well-established rut.",
+          "year": "1990",
+          "rating": 6.4,
           "first_seen": "2026-03-26"
         },
         {
@@ -981,7 +985,7 @@
           "overview": "In this meditative film the everyday lives of poor Ethiopian peasants are shown using documentary as well as storytelling techniques, with its drama arising out of the timeless yet persistent issues of their lives.",
           "year": "1975",
           "rating": 6.8,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Whistle Stop",
@@ -994,7 +998,7 @@
           "overview": "When beautiful Mary returns to her \"whistle stop\" hometown, long-standing feelings of animosity between two of her old boyfriends leads to robbery and murder.",
           "year": "1946",
           "rating": 4.3,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Dekalog: Episodes 5-7",
@@ -1273,7 +1277,7 @@
           "overview": "Monsieur Cinema, a hundred years old, lives alone in a large villa. His memories fade away, so he engages a young woman to tell him stories about all the movies ever made.",
           "year": "1995",
           "rating": 6.0,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "FACES PLACES",
@@ -1287,7 +1291,7 @@
           "overview": "Director Agnès Varda and photographer/muralist JR journey through rural France and form an unlikely friendship.",
           "year": "2017",
           "rating": 7.6,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "QUELQUES VEUVES DE NOIRMOUTIER",
@@ -1299,7 +1303,7 @@
           "overview": "A documentary film directed by French Agnès Varda as an extension of the exhibition 'L'île et elle'.  The installation 'Les veuves de Noirmoutier' (or 'The Widows of Noirmoutier') had various women filmed by Varda, young and old, who spoke about their widowhood and their residence on the island of Noirmoutier. The film is a montage of these meetings, which are both simple and melancholic.",
           "year": "2006",
           "rating": 9.5,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "CINÉVARDAPHOTO",
@@ -1311,7 +1315,7 @@
           "overview": "A theatrically-released compilation of three Varda shorts: \"Salut les Cubains,\" \"Ulysse\" and \"Ydessa, les ours et etc.\"",
           "year": "2004",
           "rating": 6.0,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "RATATOUILLE",
@@ -1323,7 +1327,7 @@
           "overview": "Remy, a rat living in Paris, possesses a palate far more refined than that of his fellow comrades. He dreams of becoming a chef, determined to create culinary masterpieces rather than scavenge for scraps. When fate deposits him in the sewers beneath one of Paris’s most famous restaurants, he finds himself ideally placed to fulfill his dream. Forming an unusual alliance with a bumbling young kitchen worker, Remy begins a daring culinary double life. Together, they must outwit the scheming Head Chef Skinner, evade Remy’s disapproving colony, and impress renowned food critic Anton Ego, who strikes fear in the hearts of chefs all throughout France.",
           "year": "2007",
           "rating": 7.8,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Agnès Varda: From Here To There (Episodes 1-3)",
@@ -1470,7 +1474,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/mbvP4f6BU923NGfqjpOJcJih3i6.jpg",
           "overview": "A lonely gravedigger who stinks of corpses finally meets her dream man, but their whirlwind affair is cut short when he tragically drowns at sea. Grief-stricken, she goes to morbid lengths to resurrect him through madcap scientific experiments, resulting in grave consequences and unlikely love.",
           "year": "2026",
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Best in Show: The Films of Catherine O'Hara",
@@ -1596,7 +1600,7 @@
           "overview": "The story of the preparation for an unspecified Asian Olympic Games by three real athletes, one of whom is the extraordinary Alice Bellandi, a judoka who won gold in Paris and kissed her girlfriend with a bleeding incisor.",
           "year": "2025",
           "rating": 7.4,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Aro Berria",
@@ -1728,8 +1732,10 @@
             "6:15 PM",
             "3:30 PM"
           ],
-          "overview": "Geon goes out searching for Ji-cheol, who left him when he was young.",
-          "year": "2025",
+          "poster": "https://image.tmdb.org/t/p/w300/tNizybxpOcOAkBzzOyRGVJ323pF.jpg",
+          "overview": "A family slowly disintegrates under various pressures in late 1970s communist Hungary.",
+          "year": "1979",
+          "rating": 6.6,
           "first_seen": "2026-03-26"
         },
         {
@@ -1813,7 +1819,7 @@
           "overview": "Brazil, 1977. Marcelo, a technology expert in his early 40s, is on the run. Hoping to reunite with his son, he travels to Recife during Carnival but soon realizes that the city is not the safe haven he was expecting.",
           "year": "2025",
           "rating": 7.4,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Memory",
@@ -2140,7 +2146,7 @@
           "showtimes": [
             "4:00 PM"
           ],
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Die Hard",
@@ -2149,9 +2155,11 @@
           "showtimes": [
             "7:00 PM"
           ],
-          "overview": "Meet the people in the northern village of Muodoslompolo, Tornedalen, Sweden. A small community undergoing major transformations and with deep connections to a dark side of Swedish history.",
-          "year": "2025",
-          "first_seen": "2026-03-24"
+          "poster": "https://image.tmdb.org/t/p/w300/7Bjd8kfmDSOzpmhySpEhkUyK2oH.jpg",
+          "overview": "NYPD cop John McClane's plan to reconcile with his estranged wife is thrown for a serious loop when, minutes after he arrives at her office's Christmas Party, the entire building is overtaken by a group of terrorists. With little help from the LAPD, wisecracking McClane sets out to single-handedly rescue the hostages and bring the bad guys down.",
+          "year": "1988",
+          "rating": 7.8,
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Scarface",
@@ -2186,8 +2194,10 @@
           "showtimes": [
             "4:00 PM"
           ],
-          "overview": "Korean Variety Hour, produced by KBS in 1976, captures how Koreans of that era wished to present themselves to a foreign audience. Nearly 50 years later, KBS produced the documentary series Modern Korea, which, with the advantage of a half-century of hindsight, presents images of Korea's past without any additional commentary. By juxtaposing these two programs, the film invites viewers to reflect on how much, or how little, Koreans' perspectives and self-representation have changed over time.",
-          "year": "2024",
+          "poster": "https://image.tmdb.org/t/p/w300/hwqY6igW7oRM9NJyotQ8oSt6BcF.jpg",
+          "overview": "A repressed young woman becomes obsessed with pornography and the mysterious rich patrons of the Times Square porn theater where she works selling tickets.",
+          "year": "1985",
+          "rating": 5.3,
           "first_seen": "2026-03-26"
         },
         {
@@ -2396,7 +2406,7 @@
           "overview": "Lovable Sulley and his wisecracking sidekick Mike Wazowski are the top scare team at Monsters, Inc., the scream-processing factory in Monstropolis. When a little girl named Boo wanders into their world, it's the monsters who are scared silly, and it's up to Sulley and Mike to keep her out of sight and get her back home.",
           "year": "2001",
           "rating": 7.847,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Holy Motors",
@@ -2434,7 +2444,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/r5XIg9t5tHpj4fdIcgbCBan6NvY.jpg",
           "overview": "A young Gaeilgeoir must learn the art of self-assurance and acceptance upon moving from her remote town to the city.",
           "year": "2026",
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "American Movie",
@@ -2478,7 +2488,7 @@
           "showtimes": [
             "9:30 PM"
           ],
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Nitehawk Shorts Festival 2026: MATINEE ONE",
@@ -2516,7 +2526,7 @@
           "overview": "The discovery of a severed human ear found in a field leads a young man on an investigation related to a beautiful, mysterious nightclub singer and a group of psychopathic criminals who have kidnapped her child.",
           "year": "1986",
           "rating": 7.6,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "The Descent",
@@ -2542,7 +2552,7 @@
           "overview": "Tough narcotics detective 'Popeye' Doyle is in hot pursuit of a suave French drug dealer who may be the key to a huge heroin-smuggling operation.",
           "year": "1971",
           "rating": 7.496,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Strange Brew",
@@ -2608,7 +2618,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/mbvP4f6BU923NGfqjpOJcJih3i6.jpg",
           "overview": "A lonely gravedigger who stinks of corpses finally meets her dream man, but their whirlwind affair is cut short when he tragically drowns at sea. Grief-stricken, she goes to morbid lengths to resurrect him through madcap scientific experiments, resulting in grave consequences and unlikely love.",
           "year": "2026",
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         }
       ]
     },
@@ -2639,7 +2649,7 @@
           "overview": "Frank spends his summer days hopelessly searching for companionship at a popular cruising spot on the shores of a lake in rural France. One day, he meets Michel, an attractive yet darkly mysterious man and falls blindly in love.",
           "year": "2013",
           "rating": 6.3,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Mr. Nobody Against Putin",
@@ -2661,7 +2671,7 @@
           "showtimes": [
             "7:00 PM"
           ],
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Nitehawk Shorts Festival 2026: MATINEE TWO",
@@ -2688,7 +2698,7 @@
           "showtimes": [
             "7:00 PM"
           ],
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "The Sign of the Cross",
@@ -2755,7 +2765,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/q8YNdWmEGP6kwNVADATDV2ll9yA.jpg",
           "overview": "Between pandemics, people’s revolts and male institutions, this period film cheekily combines fantastic psychedelia and handmade sets. Inspired by the life story of Julian of Norwich, a 14th-century mystic and the first woman to write a book in English.",
           "year": "2025",
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Snowy Bing Bongs and Friends",
@@ -2913,7 +2923,7 @@
           "overview": "A woman, after an abusive childhood, escapes into competitive swimming, sexual experimentation, toxic relationships, and addiction before finding her voice through writing.",
           "year": "2025",
           "rating": 6.517,
-          "first_seen": "2026-03-24"
+          "first_seen": "2026-03-26"
         },
         {
           "title": "Nirvanna the Band the Show the Movie",
