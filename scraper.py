@@ -18,7 +18,7 @@ Filters out mainstream Hollywood wide releases.
 Run weekly for a digest, or with --test to preview without updating state.
 """
 
-import os, sys, json, hashlib, re, time, requests, html as _html
+import os, sys, json, hashlib, re, time, requests, html as _html, difflib
 from datetime import datetime, timedelta, timezone
 from bs4 import BeautifulSoup
 from xml.etree import ElementTree as ET
@@ -1656,15 +1656,43 @@ def enrich_with_tmdb(events_by_venue):
         r.raise_for_status()
         return r.json().get('results', [])
 
-    def _pick_best(results, prefer_recent):
-        """Pick best TMDB result, preferring recent films (2023-2026) for new-film venues."""
+    def _pick_best(results, prefer_recent, query_title=''):
+        """Pick best TMDB result using title similarity, popularity, and vote count."""
         if not results:
             return None
-        if prefer_recent and len(results) > 1:
-            recent = [r for r in results if (r.get('release_date', '') or r.get('first_air_date', ''))[:4] in ('2023', '2024', '2025', '2026')]
-            if recent:
-                return recent[0]
-        return results[0]
+        query_lower = query_title.lower().strip()
+        if not query_lower:
+            return results[0]
+
+        # Normalize popularity and vote_count across results
+        max_pop = max((r.get('popularity', 0) for r in results), default=1) or 1
+        max_votes = max((r.get('vote_count', 0) for r in results), default=1) or 1
+
+        best, best_score = None, -1
+        for r in results:
+            # Title similarity: best of title and original_title
+            title = (r.get('title') or r.get('name') or '').lower().strip()
+            orig = (r.get('original_title') or r.get('original_name') or '').lower().strip()
+            sim = difflib.SequenceMatcher(None, query_lower, title).ratio()
+            if orig and orig != title:
+                sim = max(sim, difflib.SequenceMatcher(None, query_lower, orig).ratio())
+
+            if sim < 0.4:
+                continue
+
+            pop_norm = r.get('popularity', 0) / max_pop
+            vote_norm = r.get('vote_count', 0) / max_votes
+            score = sim * 0.6 + pop_norm * 0.2 + vote_norm * 0.2
+
+            if prefer_recent:
+                year_str = (r.get('release_date', '') or r.get('first_air_date', ''))[:4]
+                if year_str in ('2023', '2024', '2025', '2026'):
+                    score += 0.15
+
+            if score > best_score:
+                best, best_score = r, score
+
+        return best
 
     # Search TMDB for uncached titles
     api_calls = 0
@@ -1701,7 +1729,7 @@ def enrich_with_tmdb(events_by_venue):
                 results = _search_tmdb(cleaned, year=year, search_type='tv')
                 api_calls += 1
 
-            hit = _pick_best(results, prefer_recent)
+            hit = _pick_best(results, prefer_recent, query_title=cleaned)
             if hit:
                 poster_path = hit.get('poster_path') or ''
                 # TV uses first_air_date, movies use release_date
