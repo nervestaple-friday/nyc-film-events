@@ -83,6 +83,8 @@ def event_id(venue, title, date_str=''):
     return hashlib.md5(raw.encode()).hexdigest()[:12]
 
 def clean_title(title):
+    title = _html.unescape(title)
+    title = re.sub(r'&(\d+);', lambda m: chr(int(m.group(1))), title)  # fix malformed &#NNN; missing #
     title = re.sub(r'^[,\s]*\d{1,2}:\d{2}\s*(AM|PM)\s*', '', title).strip()
     title = re.sub(r'\s*(Q&A?|More Info|Series Schedule|Watch Trailer|Tickets|Buy Tickets)\s*$',
                    '', title, flags=re.IGNORECASE).strip()
