@@ -487,14 +487,16 @@ def scrape_film_forum():
         parent_a = img.parent
         if parent_a and parent_a.name == 'a' and '/film/' in parent_a.get('href', ''):
             alt = img.get('alt', '')
-            dm = re.match(
+            alt_stripped = alt.strip().upper()
+            # Search entire alt text for month+day pattern (not just start)
+            dm = re.search(
                 r'((?:January|February|March|April|May|June|July|August|September|October|November|December)'
                 r'\s+\d{1,2})',
-                alt,
+                alt, re.IGNORECASE,
             )
             if dm:
-                href_dates[parent_a['href']] = dm.group(1)
-            elif alt.strip().startswith('Now Playing'):
+                href_dates[parent_a['href']] = dm.group(1).title()
+            elif alt_stripped.startswith('NOW PLAYING') or alt_stripped.startswith('HELD OVER'):
                 href_dates[parent_a['href']] = 'Now Playing'
 
     seen_titles = set()
@@ -518,6 +520,35 @@ def scrape_film_forum():
                 e = make_event('Film Forum', title, link, date=date, date_str=date_str)
                 if e:
                     events.append(e)
+
+    # For events with no date, try fetching the individual film page
+    _month_pat = (r'(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),?\s*'
+                  r'((?:January|February|March|April|May|June|July|August|September|October|November|December)'
+                  r'\s+\d{1,2})')
+    for e in events:
+        if e.get('date_str') or e.get('date'):
+            continue
+        link = e.get('link', '')
+        if not link:
+            continue
+        time.sleep(0.5)
+        pr = fetch(link)
+        if not pr:
+            continue
+        page_text = pr.text
+        # Find all screening dates on the page
+        page_dates = re.findall(_month_pat, page_text, re.IGNORECASE)
+        if page_dates:
+            # Pick the earliest upcoming date
+            best = None
+            for pd_str in page_dates:
+                dt = parse_date_loose(pd_str.title() + f" {now.year}")
+                if dt and dt >= now.replace(hour=0, minute=0, second=0, microsecond=0):
+                    if best is None or dt < best[1]:
+                        best = (pd_str.title(), dt)
+            if best:
+                e['date_str'] = best[0]
+                e['date'] = best[1]
 
     # Extract showtimes from sidebar day-of-week tab structure
     link_times = {}
