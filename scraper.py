@@ -18,7 +18,7 @@ Filters out mainstream Hollywood wide releases.
 Run weekly for a digest, or with --test to preview without updating state.
 """
 
-import os, sys, json, hashlib, re, time, requests, html as _html, difflib
+import os, sys, json, hashlib, re, time, math, requests, html as _html, difflib
 from datetime import datetime, timedelta, timezone
 from bs4 import BeautifulSoup
 from xml.etree import ElementTree as ET
@@ -1623,6 +1623,16 @@ def _should_skip_tmdb(title):
     t = title.lower()
     return any(re.search(p, t) for p in _TMDB_SKIP_PATTERNS)
 
+# Manual TMDB ID overrides for titles that consistently match the wrong film.
+# Key = exact event title, Value = TMDB movie ID.
+_TMDB_OVERRIDES = {
+    'Stalker': 1398,           # Tarkovsky 1979
+    'Living in Oblivion': 9071,   # DiCillo 1995
+    'Point Blank': 26039,      # Boorman 1967
+    'The Vanishing': 1575,     # Sluizer 1988 (Spoorloos)
+    "You're Next": 83899,      # Wingard 2013
+}
+
 
 def enrich_with_tmdb(events_by_venue):
     """Look up each unique title on TMDB and attach poster, overview, year, rating."""
@@ -1688,16 +1698,20 @@ def enrich_with_tmdb(events_by_venue):
         return r.json().get('results', [])
 
     def _pick_best(results, prefer_recent, query_title=''):
-        """Pick best TMDB result using title similarity, popularity, and vote count."""
+        """Pick best TMDB result using title similarity, popularity, and vote count.
+
+        Uses log-scaled absolute scores for popularity/votes instead of relative
+        normalization, so a single mega-popular wrong match can't crush the correct
+        film's score. Adds bonuses for near-exact title matches with meaningful
+        votes, and penalizes very recent low-vote films at repertory venues.
+        """
         if not results:
             return None
         query_lower = query_title.lower().strip()
         if not query_lower:
             return results[0]
 
-        # Normalize popularity and vote_count across results
-        max_pop = max((r.get('popularity', 0) for r in results), default=1) or 1
-        max_votes = max((r.get('vote_count', 0) for r in results), default=1) or 1
+        any_high_pop = any(r.get('popularity', 0) > 50 for r in results)
 
         best, best_score = None, -1
         for r in results:
@@ -1711,12 +1725,41 @@ def enrich_with_tmdb(events_by_venue):
             if sim < 0.4:
                 continue
 
-            pop_norm = r.get('popularity', 0) / max_pop
-            vote_norm = r.get('vote_count', 0) / max_votes
-            score = sim * 0.6 + pop_norm * 0.2 + vote_norm * 0.2
+            pop = r.get('popularity', 0)
+            votes = r.get('vote_count', 0)
 
+            # Log-scaled absolute scores instead of relative normalization.
+            # This prevents a single mega-popular wrong match (e.g. The Blind Side
+            # when searching for Blind Chance) from making the correct film's
+            # normalized score near-zero.
+            vote_score = min(1.0, math.log10(max(votes, 1)) / 4)  # saturates at 10,000
+            pop_score = min(1.0, math.log10(max(pop, 1)) / 3)     # saturates at 1,000
+
+            score = sim * 0.5 + pop_score * 0.15 + vote_score * 0.35
+
+            # Near-exact title match with meaningful votes — likely the correct film
+            if sim > 0.9 and votes > 100:
+                score += 0.15
+
+            # Well-known films get a bonus (absolute vote thresholds)
+            if votes > 500:
+                score += 0.1
+            if votes > 2000:
+                score += 0.05
+
+            # Penalize very low popularity when much more popular alternatives exist
+            if any_high_pop and pop < 5:
+                score -= 0.15
+
+            year_str = (r.get('release_date', '') or r.get('first_air_date', ''))[:4]
+
+            # For repertory/classic venues, penalize very recent low-vote films
+            if not prefer_recent:
+                if year_str in ('2023', '2024', '2025', '2026') and votes < 500:
+                    score -= 0.3
+
+            # Recent film boost for new-film venues
             if prefer_recent:
-                year_str = (r.get('release_date', '') or r.get('first_air_date', ''))[:4]
                 if year_str in ('2023', '2024', '2025', '2026'):
                     score += 0.15
 
@@ -1733,6 +1776,32 @@ def enrich_with_tmdb(events_by_venue):
         if _should_skip_tmdb(title):
             cache[title] = {'poster': '', 'overview': '', 'year': '', 'rating': 0, 'skipped': True, 'cached_at': now_iso}
             continue
+
+        # Check manual overrides first — fetch by TMDB ID directly
+        if title in _TMDB_OVERRIDES:
+            tmdb_id = _TMDB_OVERRIDES[title]
+            try:
+                if api_calls > 0:
+                    time.sleep(0.25)
+                r = requests.get(f'https://api.themoviedb.org/3/movie/{tmdb_id}',
+                                 headers={'Authorization': f'Bearer {tmdb_token}'}, timeout=10)
+                r.raise_for_status()
+                api_calls += 1
+                hit = r.json()
+                poster_path = hit.get('poster_path') or ''
+                release_date = hit.get('release_date', '')
+                raw_rating = hit.get('vote_average', 0)
+                cache[title] = {
+                    'poster': f'https://image.tmdb.org/t/p/w300{poster_path}' if poster_path else '',
+                    'overview': hit.get('overview', ''),
+                    'year': release_date[:4] if len(release_date) >= 4 else '',
+                    'rating': round(raw_rating, 1) if raw_rating else 0,
+                    'cached_at': now_iso,
+                }
+                continue
+            except Exception as ex:
+                print(f"  [tmdb] override fetch failed for '{title}' (id={tmdb_id}): {ex}", file=sys.stderr)
+
         if api_calls > 0:
             time.sleep(0.25)
         try:
