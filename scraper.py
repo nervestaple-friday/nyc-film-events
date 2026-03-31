@@ -992,75 +992,160 @@ def scrape_flc():
 
 
 def scrape_momi():
-    """Museum of the Moving Image — apitap read for clean markdown extraction.
-    MoMI blocks headless browsers and FlareSolverr; readability works server-side."""
+    """Museum of the Moving Image — cascading fetch strategy.
+    movingimage.org is behind Cloudflare and blocks direct requests, so we try:
+    1. apitap read (readability extraction)
+    2. Google web cache
+    3. Wayback Machine
+    """
     import subprocess as _sp
-    events = []
+
+    MOMI_URL = 'https://movingimage.org/whats-on/screenings-and-series/'
+    SKIP = {'screenings and series', 'screenings', 'events', 'calendar',
+            'see all', 'rentals', 'museum of the moving image', 'whats on',
+            'screenings this week', 'ongoing series', 'keep exploring',
+            'plan yourvisit', 'plan your visit', 'tours & workshops',
+            'watch/read/listen', 'special screenings'}
+
+    def _parse_html(raw_html, source_label):
+        """Parse HTML from any source and extract film titles."""
+        soup = BeautifulSoup(raw_html, 'html.parser')
+        main = soup.find('main') or soup
+        found = []
+        seen = set()
+        for el in main.find_all(['h2', 'h3', 'h4']):
+            raw_title = el.get_text(strip=True)
+            if not raw_title or len(raw_title) < 4 or len(raw_title) > 100:
+                continue
+            if raw_title.lower() in SKIP:
+                continue
+            # Strip date suffixes: "Mulholland DriveFri, Mar 6, 6:30 pm"
+            title = re.sub(r'(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\w*,?\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec).*$', '', raw_title).strip()
+            # Strip "—Presented by ..." suffix
+            title = re.sub(r'\s*[—–-]\s*Presented\s+by\s+.*$', '', title).strip()
+            if not title or len(title) < 4 or title.lower() in SKIP or title in seen:
+                continue
+            seen.add(title)
+            link_el = el.find('a', href=True) or (el.parent and el.parent.find('a', href=True))
+            href = link_el['href'] if link_el else ''
+            if href.startswith('http'):
+                link = href
+            elif href.startswith('/'):
+                link = f"https://movingimage.org{href}"
+            else:
+                link = MOMI_URL
+            e = make_event('Museum of the Moving Image', title, link, special=True)
+            if e:
+                found.append(e)
+        if found:
+            print(f"  [MoMI] {source_label}: found {len(found)} events", file=sys.stderr)
+        return found
+
+    def _parse_markdown(md):
+        """Parse apitap markdown output for film titles."""
+        found = []
+        seen = set()
+        for m in re.finditer(
+            r'(?:#{1,3}\s+|\*\*)\[?([^\n\]\*]{4,80})\]?\(?(?:https://movingimage\.org)?(/[^\s\)\"]{5,100})?\)?',
+            md,
+        ):
+            title = m.group(1).strip().strip('*').strip()
+            path  = (m.group(2) or '').strip()
+            link  = f"https://movingimage.org{path}" if path else MOMI_URL
+            if not title or title.lower() in SKIP or title in seen:
+                continue
+            seen.add(title)
+            e = make_event('Museum of the Moving Image', title, link, special=True)
+            if e:
+                found.append(e)
+        if found:
+            print(f"  [MoMI] apitap markdown: found {len(found)} events", file=sys.stderr)
+        return found
+
+    # --- Strategy 1: apitap read ---
     try:
         result = _sp.run(
-            ['apitap', 'read', 'https://movingimage.org/whats-on/screenings-and-series/'],
+            ['apitap', 'read', MOMI_URL],
             capture_output=True, text=True, timeout=30,
         )
         md = result.stdout
+        if md and len(md.strip()) >= 100:
+            events = _parse_markdown(md)
+            if events:
+                return events[:20]
+            # apitap returned content but no events parsed — try HTML parse
+            events = _parse_html(md, 'apitap-html')
+            if events:
+                return events[:20]
+        print(f"  [MoMI] apitap returned insufficient content", file=sys.stderr)
     except Exception as ex:
         print(f"  [MoMI/apitap] {ex}", file=sys.stderr)
-        return events
 
-    if not md or len(md.strip()) < 100:
-        print(f"  [MoMI] apitap empty, trying FlareSolverr", file=sys.stderr)
-        r = fetch_cf('https://movingimage.org/whats-on/screenings-and-series/')
-        if r:
-            from bs4 import BeautifulSoup as _BS
-            soup = _BS(r.text, 'html.parser')
-            main = soup.find('main') or soup
-            SKIP_CF = {'screenings and series', 'screenings', 'events', 'calendar',
-                       'see all', 'rentals', 'museum of the moving image', 'whats on',
-                       'screenings this week', 'ongoing series', 'keep exploring',
-                       'plan yourvisit', 'plan your visit', 'tours & workshops',
-                       'watch/read/listen', 'special screenings'}
+    # --- Strategy 2: Google web cache ---
+    try:
+        cache_url = f'https://webcache.googleusercontent.com/search?q=cache:movingimage.org/whats-on/screenings-and-series/'
+        r = requests.get(cache_url, headers=HEADERS, timeout=20)
+        if r.status_code == 200 and len(r.text) > 500:
+            events = _parse_html(r.text, 'Google cache')
+            if events:
+                return events[:20]
+        print(f"  [MoMI] Google cache: status {r.status_code}", file=sys.stderr)
+    except Exception as ex:
+        print(f"  [MoMI/Google cache] {ex}", file=sys.stderr)
+
+    # --- Strategy 3: Wayback Machine ---
+    try:
+        wb_url = f'https://web.archive.org/web/2026/{MOMI_URL}'
+        r = requests.get(wb_url, headers=HEADERS, timeout=25, allow_redirects=True)
+        if r.status_code == 200 and len(r.text) > 500:
+            events = _parse_html(r.text, 'Wayback Machine')
+            if events:
+                return events[:20]
+        print(f"  [MoMI] Wayback Machine: status {r.status_code}", file=sys.stderr)
+    except Exception as ex:
+        print(f"  [MoMI/Wayback] {ex}", file=sys.stderr)
+
+    # --- Strategy 4: Google search results scrape ---
+    try:
+        search_url = 'https://www.google.com/search'
+        params = {'q': 'site:movingimage.org screenings 2026', 'num': '20'}
+        r = requests.get(search_url, headers=HEADERS, params=params, timeout=15)
+        if r.status_code == 200:
+            soup = BeautifulSoup(r.text, 'html.parser')
             seen = set()
-            # Extract film titles from h2/h3 headings in main content
-            for el in main.find_all(['h2', 'h3']):
-                raw_title = el.get_text(strip=True)
-                if not raw_title or len(raw_title) < 4 or len(raw_title) > 100:
+            events = []
+            for a in soup.find_all('a', href=True):
+                href = a['href']
+                # Google wraps links in /url?q=... redirects
+                if '/url?q=' in href:
+                    href = href.split('/url?q=')[1].split('&')[0]
+                if 'movingimage.org' not in href:
                     continue
-                if raw_title.lower() in SKIP_CF:
+                # Skip non-screening pages
+                if any(skip in href for skip in ['/about', '/visit', '/education', '/donate', '/membership', '/support']):
                     continue
-                # Strip date suffixes: "Mulholland DriveFri, Mar 6, 6:30 pm" → "Mulholland Drive"
-                title = re.sub(r'(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\w*,?\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec).*$', '', raw_title).strip()
-                # Strip "—Presented by ..." suffix
-                title = re.sub(r'\s*[—–-]\s*Presented\s+by\s+.*$', '', title).strip()
-                if not title or len(title) < 4 or title.lower() in SKIP_CF or title in seen:
+                title = a.get_text(strip=True)
+                # Strip date suffixes and site name
+                title = re.sub(r'\s*[-|–—].*Museum of the Moving Image.*$', '', title).strip()
+                title = re.sub(r'\s*[-|–—]\s*MoMI\s*$', '', title).strip()
+                if not title or len(title) < 4 or len(title) > 100:
+                    continue
+                if title.lower() in SKIP or title in seen:
                     continue
                 seen.add(title)
-                # Try to find a link nearby
-                link_el = el.find('a', href=True) or (el.parent and el.parent.find('a', href=True))
-                href = link_el['href'] if link_el else ''
-                link = href if href.startswith('http') else (f"https://movingimage.org{href}" if href.startswith('/') else 'https://movingimage.org/whats-on/screenings-and-series/')
+                link = href if href.startswith('http') else MOMI_URL
                 e = make_event('Museum of the Moving Image', title, link, special=True)
                 if e:
                     events.append(e)
-            return events[:20]
+            if events:
+                print(f"  [MoMI] Google search: found {len(events)} events", file=sys.stderr)
+                return events[:20]
+        print(f"  [MoMI] Google search: no results extracted", file=sys.stderr)
+    except Exception as ex:
+        print(f"  [MoMI/Google search] {ex}", file=sys.stderr)
 
-    SKIP = {'screenings and series', 'screenings', 'events', 'calendar',
-            'see all', 'rentals', 'museum of the moving image', 'whats on'}
-    seen = set()
-    # MoMI renders titles as ## or ### headings and bold links
-    for m in re.finditer(
-        r'(?:#{1,3}\s+|\*\*)\[?([^\n\]\*]{4,80})\]?\(?(?:https://movingimage\.org)?(/[^\s\)\"]{5,100})?\)?',
-        md,
-    ):
-        title = m.group(1).strip().strip('*').strip()
-        path  = (m.group(2) or '').strip()
-        link  = f"https://movingimage.org{path}" if path else 'https://movingimage.org/whats-on/screenings-and-series/'
-        if not title or title.lower() in SKIP or title in seen:
-            continue
-        seen.add(title)
-        e = make_event('Museum of the Moving Image', title, link, special=True)
-        if e:
-            events.append(e)
-
-    return events[:20]
+    print(f"  [MoMI] WARNING: all fetch strategies failed, returning empty", file=sys.stderr)
+    return []
 
 
 def scrape_moma():
