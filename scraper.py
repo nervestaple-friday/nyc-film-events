@@ -2122,6 +2122,9 @@ def main():
         else:
             print(f"    Skipping {name}: all retries failed", file=sys.stderr)
 
+    # Remove events with no date info (series headers, not individual screenings)
+    all_events = [e for e in all_events if e.get('date_str') or e.get('date')]
+
     filtered  = filter_by_date(all_events)
     new_events, new_ids = [], []
     for e in filtered:
