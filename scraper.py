@@ -1038,7 +1038,22 @@ def scrape_momi():
             link_el = entry.find('a', href=True)
             if not link_el:
                 continue
-            raw_title = link_el.get_text(strip=True)
+            # Only grab first meaningful text from the link to avoid
+            # concatenating event title with series/subtitle spans
+            raw_title = None
+            for child in link_el.children:
+                if isinstance(child, str):
+                    s = child.strip()
+                    if s:
+                        raw_title = s
+                        break
+                elif hasattr(child, 'get_text'):
+                    s = child.get_text(strip=True)
+                    if s:
+                        raw_title = s
+                        break
+            if not raw_title:
+                raw_title = link_el.get_text(strip=True)
             if not raw_title or len(raw_title) < 4:
                 continue
             # Extract date from <time datetime="..."> attribute
@@ -1743,17 +1758,19 @@ def _clean_title_for_tmdb(title):
     # Also strip trailing language notes: "In English and French with..."
     t = re.sub(r'\s*[Bb]y\s+[A-Z][a-zé\-]+(?:[\s\-]+[A-Z][a-zé\-]+)+(?:\s*In\s+.*)?$', '', t)
     # Strip "Director's TITLE" prefix: "Satyajit Ray's DAYS AND NIGHTS..."
-    t = re.sub(r"^[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*'s?\s+", '', t)
+    t = re.sub(r"^[A-ZÀ-Ý][a-zà-ÿ]+(?:\s+[A-ZÀ-Ý][a-zà-ÿ]+)*'s?\s+", '', t)
     # Also handle "Giuseppe De Santis' BITTER RICE", "Ida Lupino's THE BIGAMIST"
-    t = re.sub(r"^[A-Z][a-z]+(?:\s+(?:De|di|del|von|van|Le|La)\s+)?[A-Z][a-z]+'s?\s+", '', t)
+    t = re.sub(r"^[A-ZÀ-Ý][a-zà-ÿ]+(?:\s+(?:De|di|del|von|van|Le|La)\s+)?[A-ZÀ-Ý][a-zà-ÿ]+'s?\s+", '', t)
     # Handle "Martin and Lewis in TITLE in 3-D!" → "MONEY FROM HOME"
     t = re.sub(r'^.+?\s+in\s+(?=[A-Z])', '', t)
     # Strip trailing " in 3-D!" or " in 3D"
     t = re.sub(r'\s+in\s+3-?D!?\s*$', '', t, flags=re.IGNORECASE)
     # Strip "PRESENTER PRESENTS" prefix (case-insensitive)
-    t = re.sub(r'^.+?\s+[Pp][Rr][Ee][Ss][Ee][Nn][Tt][Ss]?\s+', '', t)
+    t = re.sub(r'^.+?\s+[Pp][Rr][Ee][Ss][Ee][Nn][Tt][Ss]?:?\s+', '', t)
     # Strip "(35mm!)" and similar tags
     t = re.sub(r'\s*\((?:35mm|16mm|DCP|FREE)[^)]*\)\s*$', '', t, flags=re.IGNORECASE)
+    # Strip "[35mm]", "[16mm]", "[DCP]" etc. in square brackets
+    t = re.sub(r'\s*\[(?:35mm|16mm|DCP|4K|70mm)[^\]]*\]', '', t, flags=re.IGNORECASE)
     # Strip quoted titles: '"HUSBANDS"' → 'HUSBANDS'
     t = re.sub(r'^"(.+)"$', r'\1', t)
     # Strip "Presented by Name" suffix
@@ -1764,6 +1781,18 @@ def _clean_title_for_tmdb(title):
     t = re.sub(r'\(https?://[^\)]+\)\s*$', '', t)
     # Strip "In English and French with..." suffixes
     t = re.sub(r'\s*In\s+\w+\s+and\s+\w+\s+with.*$', '', t)
+    # Strip "Nth Anniversary Screening" and everything after it
+    t = re.sub(r':?\s*\d+(?:st|nd|rd|th)\s+Anniversary\s+Screening\b.*$', '', t, flags=re.IGNORECASE)
+    # Strip "+ Q&A", "+ Book Event", "+ Discussion" etc.
+    t = re.sub(r'\s*\+\s+.*$', '', t)
+    # Strip "(Singalong Version)", "(Restored Edition)" etc.
+    t = re.sub(r'\s*\([^)]*(?:Version|Edition|Cut)\)', '', t, flags=re.IGNORECASE)
+    # Strip "(Ep. 1-3)" episode notations
+    t = re.sub(r'\s*\(Ep\.?\s*\d+(?:\s*[-–]\s*\d+)?\)', '', t, flags=re.IGNORECASE)
+    # Strip "with Person Name in person..." suffix
+    t = re.sub(r'\s+with\s+[A-ZÀ-Ý][a-zà-ÿ]+(?:\s+[A-ZÀ-Ý][a-zà-ÿ]+)+\s+in\s+person.*$', '', t, flags=re.IGNORECASE)
+    # Strip trailing colon or dash left after suffix removal
+    t = re.sub(r'\s*[:–—-]\s*$', '', t)
     # Collapse whitespace
     t = ' '.join(t.split()).strip()
     return t if len(t) >= 3 else title
