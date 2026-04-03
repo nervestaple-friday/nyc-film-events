@@ -1007,18 +1007,78 @@ def scrape_momi():
             'plan yourvisit', 'plan your visit', 'tours & workshops',
             'watch/read/listen', 'special screenings'}
 
+    _DATE_RE = re.compile(
+        r'(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\w*,?\s+'
+        r'((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\s+\d{1,2})'
+        r'(?:[,\s].*)?$'
+    )
+    _NEARBY_DATE_RE = re.compile(
+        r'(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\w*,?\s+'
+        r'((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\s+\d{1,2})'
+    )
+
+    def _extract_date_str(text):
+        """Extract a date_str like 'Apr 02' from text containing day+month+day."""
+        m = _DATE_RE.search(text) or _NEARBY_DATE_RE.search(text)
+        if not m:
+            return ''
+        dt = parse_date_loose(m.group(1) + f" {datetime.now().year}")
+        return dt.strftime('%b %d') if dt else ''
+
     def _parse_html(raw_html, source_label):
         """Parse HTML from any source and extract film titles."""
         soup = BeautifulSoup(raw_html, 'html.parser')
         main = soup.find('main') or soup
         found = []
         seen = set()
+
+        # Strategy 1: event-entry divs with <time> elements (main MoMI structure)
+        for entry in main.find_all('div', class_='event-entry'):
+            time_el = entry.find('time', attrs={'datetime': True})
+            link_el = entry.find('a', href=True)
+            if not link_el:
+                continue
+            raw_title = link_el.get_text(strip=True)
+            if not raw_title or len(raw_title) < 4:
+                continue
+            # Extract date from <time datetime="..."> attribute
+            date_str = ''
+            date = None
+            if time_el:
+                try:
+                    dt = datetime.fromisoformat(time_el['datetime'])
+                    date = dt.replace(tzinfo=None)
+                    date_str = date.strftime('%b %d')
+                except Exception:
+                    date_str = _extract_date_str(time_el.get_text(strip=True))
+                    date = parse_date_loose(date_str + f" {datetime.now().year}") if date_str else None
+            # Strip date from title text
+            title = re.sub(r'(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\w*,?\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec).*$', '', raw_title).strip()
+            title = re.sub(r'\s*[—–-]\s*Presented\s+by\s+.*$', '', title).strip()
+            if not title or len(title) < 4 or title.lower() in SKIP or title in seen:
+                continue
+            seen.add(title)
+            href = link_el['href']
+            if href.startswith('http'):
+                link = href
+            elif href.startswith('/'):
+                link = f"https://movingimage.org{href}"
+            else:
+                link = MOMI_URL
+            e = make_event('Museum of the Moving Image', title, link,
+                           date=date, date_str=date_str, special=True)
+            if e:
+                found.append(e)
+
+        # Strategy 2: h2/h3/h4 headings (fallback for other HTML sources)
         for el in main.find_all(['h2', 'h3', 'h4']):
             raw_title = el.get_text(strip=True)
             if not raw_title or len(raw_title) < 4 or len(raw_title) > 100:
                 continue
             if raw_title.lower() in SKIP:
                 continue
+            # Extract date from title before stripping it
+            date_str = _extract_date_str(raw_title)
             # Strip date suffixes: "Mulholland DriveFri, Mar 6, 6:30 pm"
             title = re.sub(r'(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\w*,?\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec).*$', '', raw_title).strip()
             # Strip "—Presented by ..." suffix
@@ -1026,6 +1086,15 @@ def scrape_momi():
             if not title or len(title) < 4 or title.lower() in SKIP or title in seen:
                 continue
             seen.add(title)
+            # If no date in title, check nearby sibling/parent elements
+            if not date_str:
+                for sib in el.find_next_siblings(limit=3):
+                    sib_text = sib.get_text(strip=True)
+                    date_str = _extract_date_str(sib_text)
+                    if date_str:
+                        break
+                if not date_str and el.parent:
+                    date_str = _extract_date_str(el.parent.get_text(strip=True))
             link_el = el.find('a', href=True) or (el.parent and el.parent.find('a', href=True))
             href = link_el['href'] if link_el else ''
             if href.startswith('http'):
@@ -1034,7 +1103,9 @@ def scrape_momi():
                 link = f"https://movingimage.org{href}"
             else:
                 link = MOMI_URL
-            e = make_event('Museum of the Moving Image', title, link, special=True)
+            date = parse_date_loose(date_str + f" {datetime.now().year}") if date_str else None
+            e = make_event('Museum of the Moving Image', title, link,
+                           date=date, date_str=date_str, special=True)
             if e:
                 found.append(e)
         if found:
@@ -1045,17 +1116,33 @@ def scrape_momi():
         """Parse apitap markdown output for film titles."""
         found = []
         seen = set()
-        for m in re.finditer(
-            r'(?:#{1,3}\s+|\*\*)\[?([^\n\]\*]{4,80})\]?\(?(?:https://movingimage\.org)?(/[^\s\)\"]{5,100})?\)?',
-            md,
-        ):
-            title = m.group(1).strip().strip('*').strip()
+        lines = md.splitlines()
+        for i, line in enumerate(lines):
+            m = re.match(
+                r'(?:#{1,3}\s+|\*\*)\[?([^\n\]\*]{4,80})\]?\(?(?:https://movingimage\.org)?(/[^\s\)\"]{5,100})?\)?',
+                line,
+            )
+            if not m:
+                continue
+            raw_title = m.group(1).strip().strip('*').strip()
             path  = (m.group(2) or '').strip()
             link  = f"https://movingimage.org{path}" if path else MOMI_URL
+            # Extract date from title text
+            date_str = _extract_date_str(raw_title)
+            # Strip date from title
+            title = re.sub(r'(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\w*,?\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec).*$', '', raw_title).strip()
             if not title or title.lower() in SKIP or title in seen:
                 continue
+            # If no date in title, check next few lines for date info
+            if not date_str:
+                for j in range(i + 1, min(i + 4, len(lines))):
+                    date_str = _extract_date_str(lines[j])
+                    if date_str:
+                        break
             seen.add(title)
-            e = make_event('Museum of the Moving Image', title, link, special=True)
+            date = parse_date_loose(date_str + f" {datetime.now().year}") if date_str else None
+            e = make_event('Museum of the Moving Image', title, link,
+                           date=date, date_str=date_str, special=True)
             if e:
                 found.append(e)
         if found:
