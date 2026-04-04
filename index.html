@@ -172,12 +172,9 @@
 
     function formatDateStr(dateStr) {
       if (!dateStr) return '';
-      // Handle ISO date strings from FLC ("2026-03-09")
-      if (/^\d{4}-\d{2}-\d{2}/.test(dateStr)) {
-        const d = new Date(dateStr + 'T12:00:00');
-        return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-      }
-      return dateStr;
+      const d = parseEventDate(dateStr);
+      if (!d || isNaN(d.getTime())) return dateStr;
+      return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     }
 
     const DATE_FILTERS = [
@@ -196,11 +193,20 @@
 
     function parseEventDate(dateStr) {
       if (!dateStr) return null;
+      if (/now playing/i.test(dateStr)) return new Date();
       // ISO format: "2026-03-09"
       if (/^\d{4}-\d{2}-\d{2}/.test(dateStr)) return new Date(dateStr + 'T12:00:00');
-      // "Mar 09" style — assume current year
+      // Normalize non-breaking spaces
+      let s = dateStr.replace(/\u00a0/g, ' ');
+      // Strip day-of-week prefix: "Sun, Apr 5" or "Sunday 5, April"
+      s = s.replace(/^(?:Sun|Mon|Tue|Wed|Thu|Fri|Sat)\w*,?\s*/i, '');
+      // "10, April" → "April 10"
+      const dm = s.match(/^(\d{1,2}),?\s+(\w+)$/);
+      if (dm) s = dm[2] + ' ' + dm[1];
+      // Strip time suffixes: "10PM", "MIDNIGHT", "2 PM", "7:30 PM"
+      s = s.replace(/\s+(?:\d{1,2}(?::\d{2})?\s*(?:AM|PM)|MIDNIGHT)$/i, '');
       const now = new Date();
-      const attempt = new Date(dateStr + ', ' + now.getFullYear());
+      const attempt = new Date(s + ', ' + now.getFullYear());
       return isNaN(attempt.getTime()) ? null : attempt;
     }
 
