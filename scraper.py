@@ -1791,6 +1791,8 @@ def _clean_title_for_tmdb(title):
     t = re.sub(r'\s*\(Ep\.?\s*\d+(?:\s*[-–]\s*\d+)?\)', '', t, flags=re.IGNORECASE)
     # Strip "with Person Name in person..." suffix
     t = re.sub(r'\s+with\s+[A-ZÀ-Ý][a-zà-ÿ]+(?:\s+[A-ZÀ-Ý][a-zà-ÿ]+)+\s+in\s+person.*$', '', t, flags=re.IGNORECASE)
+    # Strip ": Episodes X-Y" suffix (Dekalog-style)
+    t = re.sub(r':\s*[Ee]pisodes?\s+\d+(?:\s*[-–]\s*\d+)?$', '', t)
     # Strip trailing colon or dash left after suffix removal
     t = re.sub(r'\s*[:–—-]\s*$', '', t)
     # Collapse whitespace
@@ -1818,6 +1820,10 @@ _TMDB_SKIP_PATTERNS = [
     r'sidney peterson$', r'mabou mines',
     r'roots of rhythm remain', r'faust lsc$',
     r'may your eyes be blessed', r'bakri family',
+    r'kevin geeks out', r'snowy bing bongs',
+    r'spoons toons.*booze', r'sundays on fire',
+    r'kino-pravda', r'family time:.*vintage',
+    r'earthly delights:.*historic',
 ]
 
 def _should_skip_tmdb(title):
@@ -1832,6 +1838,15 @@ _TMDB_OVERRIDES = {
     'Point Blank': 26039,      # Boorman 1967
     'The Vanishing': 1575,     # Sluizer 1988 (Spoorloos)
     "You're Next": 83899,      # Wingard 2013
+    'Dekalog: Episodes 1-4': 118663,   # Kieslowski – use Decalogue III as representative
+    'Dekalog: Episodes 5-7': 118663,
+    'Dekalog: Episodes 8-10': 118663,
+    'Tahar Cheriaa: Under the Shadow of the Baobab': 504647,  # 2014 documentary
+    'LIVING THE LAND': 1421153,
+    'REBEL TIME: YOUNG SOUL REBELS': 31785,
+    'The MisconceivedOpening Night': 1580569,
+    'SURVIVING TIME: A LITANY FOR SURVIVAL': 327115,
+    "STORY TIME: GOD'S GIFT / WEND KUUNI": 181083,
 }
 
 
