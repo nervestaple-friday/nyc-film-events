@@ -1038,20 +1038,29 @@ def scrape_momi():
             link_el = entry.find('a', href=True)
             if not link_el:
                 continue
-            # Only grab first meaningful text from the link to avoid
-            # concatenating event title with series/subtitle spans
+            # Prefer dedicated event-title div (avoids concatenating subtitle/date)
             raw_title = None
-            for child in link_el.children:
-                if isinstance(child, str):
-                    s = child.strip()
-                    if s:
-                        raw_title = s
-                        break
-                elif hasattr(child, 'get_text'):
-                    s = child.get_text(strip=True)
-                    if s:
-                        raw_title = s
-                        break
+            title_div = entry.find('div', class_='event-title')
+            if title_div:
+                raw_title = title_div.get_text(strip=True)
+            # Fallback: <a title="Learn More About ..."> attribute
+            if not raw_title:
+                a_title = link_el.get('title', '')
+                if a_title.startswith('Learn More About '):
+                    raw_title = a_title[len('Learn More About '):]
+            # Final fallback: iterate children to get first meaningful text
+            if not raw_title:
+                for child in link_el.children:
+                    if isinstance(child, str):
+                        s = child.strip()
+                        if s:
+                            raw_title = s
+                            break
+                    elif hasattr(child, 'get_text'):
+                        s = child.get_text(strip=True)
+                        if s:
+                            raw_title = s
+                            break
             if not raw_title:
                 raw_title = link_el.get_text(strip=True)
             if not raw_title or len(raw_title) < 4:
@@ -1087,7 +1096,9 @@ def scrape_momi():
 
         # Strategy 2: h2/h3/h4 headings (fallback for other HTML sources)
         for el in main.find_all(['h2', 'h3', 'h4']):
-            raw_title = el.get_text(strip=True)
+            raw_title = el.get_text(' ', strip=True)
+            # Collapse multiple spaces that get_text(' ') may produce
+            raw_title = re.sub(r'\s+', ' ', raw_title).strip()
             if not raw_title or len(raw_title) < 4 or len(raw_title) > 100:
                 continue
             if raw_title.lower() in SKIP:
