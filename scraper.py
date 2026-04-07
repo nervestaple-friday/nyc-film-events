@@ -94,6 +94,9 @@ def clean_title(title):
     title = re.sub(r'\s*[Bb]y\s+[A-Z][a-zé\-]+(?:[\s\-]+[A-Z][a-zé\-]+)+(?:\s*In\s+.*)?$', '', title).strip()
     # Handle no-space case: "TITLEby Director"
     title = re.sub(r'(?<=[a-z\)])by\s+[A-Z].*$', '', title).strip()
+    # Strip "preceded by [short film title]" suffix
+    title = re.sub(r'\s+preceded\s+by\s+.*$', '', title, flags=re.IGNORECASE).strip()
+    title = re.sub(r'\s+preceded$', '', title, flags=re.IGNORECASE).strip()
     # Strip language suffixes
     title = re.sub(r'\s*In\s+(?:English|French|Spanish|German|Italian|Japanese|Korean)\s+(?:and|with)\s+.*$', '', title, flags=re.IGNORECASE).strip()
     return ' '.join(title.split())
@@ -1804,6 +1807,9 @@ def _clean_title_for_tmdb(title):
     t = re.sub(r'\s+with\s+[A-ZÀ-Ý][a-zà-ÿ]+(?:\s+[A-ZÀ-Ý][a-zà-ÿ]+)+\s+in\s+person.*$', '', t, flags=re.IGNORECASE)
     # Strip ": Episodes X-Y" suffix (Dekalog-style)
     t = re.sub(r':\s*[Ee]pisodes?\s+\d+(?:\s*[-–]\s*\d+)?$', '', t)
+    # Strip "preceded by [short film title]" suffix
+    t = re.sub(r'\s+preceded\s+by\s+.*$', '', t, flags=re.IGNORECASE)
+    t = re.sub(r'\s+preceded$', '', t, flags=re.IGNORECASE)
     # Strip trailing colon or dash left after suffix removal
     t = re.sub(r'\s*[:–—-]\s*$', '', t)
     # Collapse whitespace
@@ -1858,6 +1864,20 @@ _TMDB_OVERRIDES = {
     'The MisconceivedOpening Night': 1580569,
     'SURVIVING TIME: A LITANY FOR SURVIVAL': 327115,
     "STORY TIME: GOD'S GIFT / WEND KUUNI": 181083,
+    "BLACK/QUEER TIME: BLACK IS...BLACK AIN'T": 77341,
+    'Fantastic Planet': 16306,
+    'Present.Perfect.': 573675,
+    'Snowy Bing Bongs and Friends': 458189,
+    'The Pied Piper & The Vanished World of Gloves': 262054,
+    'THE WHOLE SHEBANG: TWO WRENCHING DEPARTURES': 272681,
+    'Undertone': 1480387,
+    'KINO-PRAVDA, NOS. 1-6': 462750,
+    'Big Mistakes | Episodes 1 & 2': 291506,       # TV series
+    'BEEF | Season 2 | Episodes 1 & 2': 154385,    # TV series
+    'Cold Metal': 1493018,
+    'Frío metal (Cold Metal) . Directed': 1493018,
+    '(ANTI) COLONIAL TIME': None,                   # Anthology program, no single TMDB entry
+    'MASTERS OF INDONESIAN EXPLOITATION: H. TJUT DJALIL': None,  # Program, no single entry
 }
 
 
@@ -2000,23 +2020,28 @@ def enrich_with_tmdb(events_by_venue):
     for title in sorted(titles):
         if title in cache:
             continue
-        if _should_skip_tmdb(title):
-            cache[title] = {'poster': '', 'overview': '', 'year': '', 'rating': 0, 'skipped': True, 'cached_at': now_iso}
-            continue
-
-        # Check manual overrides first — fetch by TMDB ID directly
+        # Check manual overrides BEFORE skip patterns — overrides take priority
         if title in _TMDB_OVERRIDES:
             tmdb_id = _TMDB_OVERRIDES[title]
+            if tmdb_id is None:
+                # Explicitly marked as no TMDB match (program/compilation)
+                cache[title] = {'poster': '', 'overview': '', 'year': '', 'rating': 0, 'skipped': True, 'cached_at': now_iso}
+                continue
             try:
                 if api_calls > 0:
                     time.sleep(0.25)
+                # Try movie endpoint first, fall back to TV for TV series IDs
                 r = requests.get(f'https://api.themoviedb.org/3/movie/{tmdb_id}',
                                  headers={'Authorization': f'Bearer {tmdb_token}'}, timeout=10)
+                if r.status_code == 404:
+                    # Try TV endpoint
+                    r = requests.get(f'https://api.themoviedb.org/3/tv/{tmdb_id}',
+                                     headers={'Authorization': f'Bearer {tmdb_token}'}, timeout=10)
                 r.raise_for_status()
                 api_calls += 1
                 hit = r.json()
                 poster_path = hit.get('poster_path') or ''
-                release_date = hit.get('release_date', '')
+                release_date = hit.get('release_date') or hit.get('first_air_date', '')
                 raw_rating = hit.get('vote_average', 0)
                 cache[title] = {
                     'poster': f'https://image.tmdb.org/t/p/w300{poster_path}' if poster_path else '',
@@ -2028,6 +2053,10 @@ def enrich_with_tmdb(events_by_venue):
                 continue
             except Exception as ex:
                 print(f"  [tmdb] override fetch failed for '{title}' (id={tmdb_id}): {ex}", file=sys.stderr)
+
+        if _should_skip_tmdb(title):
+            cache[title] = {'poster': '', 'overview': '', 'year': '', 'rating': 0, 'skipped': True, 'cached_at': now_iso}
+            continue
 
         if api_calls > 0:
             time.sleep(0.25)
