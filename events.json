@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-07T11:03:20.641703+00:00",
+  "updated": "2026-04-07T11:08:12.276881+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -15,7 +15,7 @@
           "overview": "When disillusioned Swedish knight Antonius Block returns home from the Crusades to find his country in the grips of the Black Death, he challenges Death to a chess match for his life. Tormented by the belief that God does not exist, Block sets off on a journey, meeting up with traveling players Jof and his wife, Mia, and becoming determined to evade Death long enough to commit one redemptive act while he still lives.",
           "year": "1957",
           "rating": 8.2,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "The Red Turtle",
@@ -28,7 +28,7 @@
           "overview": "The dialogue-less film follows the major life stages of a castaway on a deserted tropical island populated by turtles, crabs and birds.",
           "year": "2016",
           "rating": 7.4,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "The Silence",
@@ -41,7 +41,7 @@
           "overview": "With the world under attack by deadly creatures who hunt by sound, a teen and her family seek refuge outside the city and encounter a mysterious cult.",
           "year": "2019",
           "rating": 6.0,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Three Colors: Blue",
@@ -679,6 +679,10 @@
           "showtimes": [
             "8:30 PM"
           ],
+          "poster": "https://image.tmdb.org/t/p/w300/AwcgqAjh5E7KtIF9afSKFI1NzEh.jpg",
+          "overview": "Using an array of gloves in different styles and from different historical periods, the film is a short history of the cinema - from silent movies via pastiches of Buñuel and Fellini and Close Encounters of the Third Kind to a futurist junkyard where tin cans become animated police cars in a city of urban decay.",
+          "year": "1982",
+          "rating": 7.2,
           "first_seen": "2026-04-05"
         },
         {
@@ -897,13 +901,17 @@
           "first_seen": "2026-04-06"
         },
         {
-          "title": "Present.Perfect. preceded",
+          "title": "Present.Perfect.",
           "link": "https://metrograph.com/film/?vista_film_id=9999004789",
           "date_str": "Apr 25",
           "showtimes": [
             "5:00 PM"
           ],
-          "first_seen": "2026-04-06"
+          "poster": "https://image.tmdb.org/t/p/w300/sSVVBrxiqDcaVj2ZQPGPFwKRkXa.jpg",
+          "overview": "Weaving together footage filmed and broadcast by little-known Chinese live-streaming anchors, who struggle with real-life face-to-face social interaction because of their identity, disability and social-economic status, this cinematic collage explores how individuals satisfy their cravings for human connection through virtual togetherness, and how these virtual relationships challenge standard definitions of companionship.",
+          "year": "2019",
+          "rating": 7.5,
+          "first_seen": "2026-04-07"
         },
         {
           "title": "The Scar",
@@ -985,12 +993,16 @@
           "first_seen": "2026-04-07"
         },
         {
-          "title": "Fantastic Planet preceded",
+          "title": "Fantastic Planet",
           "link": "https://metrograph.com/film/?vista_film_id=9999004790",
           "date_str": "Apr 26",
           "showtimes": [
             "7:15 PM"
           ],
+          "poster": "https://image.tmdb.org/t/p/w300/prq0j1S0K07UjwLZLF6oMGflRUI.jpg",
+          "overview": "On the planet Ygam, the Draags, extremely technologically and spiritually advanced blue humanoids, consider the tiny Oms, human beings descendants of Terra's inhabitants, as ignorant animals. Those who live in slavery are treated as simple pets and used to entertain Draag children; those who live hidden in the hostile wilderness of the planet are periodically hunted and ruthlessly slaughtered as if they were vermin.",
+          "year": "1973",
+          "rating": 7.6,
           "first_seen": "2026-04-07"
         },
         {
@@ -1232,7 +1244,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/hZJTQ0EdTqkViV1m7N1jhQwu26L.jpg",
           "overview": "\"The 2026 CCTV Spring Festival Gala\" is a variety show produced and broadcast by China Media Group. It features four sub-venues in Harbin, Heilongjiang; Yiwu, Zhejiang; Hefei, Anhui; and Yibin, Sichuan. The main venue in Beijing is hosted by Ren Luyu, Sa Beining, Nigmat, Long Yang, Ma Fanshu, and Liu Xinyue. The Harbin sub-venue is co-hosted by Yang Fan and Jiang Duo, the Yiwu sub-venue by Guo Ruotian and He Chuan, the Hefei sub-venue by Zhu Xun and Bai Yu, and the Yibin sub-venue by Zhang Tao and Wang Chuhan.",
           "year": "2026",
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "2026 NDNF VIP Pass",
@@ -1290,7 +1302,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/2jTqc6aNRe81XiPpKgoMHkYGm6j.jpg",
           "overview": "San Sebastian, 1978. The workers at the water meter factory hold an assembly to discuss a strike, which ultimately fails. Disappointed, the most non-conformist workers turn their aspirations for radical transformation towards more intimate spheres. Some leave the factory to join an isolated community in the mountains, where dozens of young people embarked on an intense journey of shared cathartic experiences.",
           "year": "2025",
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Below the Clouds",
@@ -1392,7 +1404,7 @@
           "overview": "Kira is living her life with the teenage confidence that the world revolves around her. Born and raised in the late Soviet Ukraine, she sees her life predictable and clear. But it doesn't last long. Suddenly, she discovers that her father has a mistress, and her mother knows about it but prefers to remain silent. As Kira's family begins to fall apart —and so does the Soviet State— everything she knew turns out to be an illusion. Kira is searching for love, warmth, and hope for the future, going down a dark path she could not foresee.",
           "year": "2024",
           "rating": 5.8,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Donkey Days",
@@ -1487,7 +1499,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/yWIMk0hCyPacK6Sy8OXehdiJnTC.jpg",
           "overview": "Portrays a couple form Kerala who lost their house during harsh winter days while trying settle down in Delhi, building a bond amid challenges in a strange city.",
           "year": "2025",
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "IndieWire: Screen Talk Live",
@@ -1583,7 +1595,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/dFWQIoamWSIf6SiRVlREeCfuyzz.jpg",
           "overview": "\"Jazz Seen\" is an exploration of the life of William Claxton, whose photographs turned the world of jazz on its keen and perceptive ear. Various jazz artists, photographers, and actors recount memories they had with Claxton and explore his work, while parts of his life are re-enacted by actors.",
           "year": "2001",
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "RON RICE / JACK SMITH",
@@ -1687,7 +1699,7 @@
           "overview": "Commissioned by the Moscow Soviet as a documentary and information film for the citizens of Moscow prior to municipal elections, film is a tableau of Soviet life and achievements in the period of reconstruction following the Civil War of 1917-1921.",
           "year": "1926",
           "rating": 6.2,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "RETURNING TIME",
@@ -1700,7 +1712,7 @@
           "overview": "The Time Machine is purchased from an antiques store by a physician from Berlin. Much of the script plays out in one room in the Berlin villa of Dr. Erasmus Beilowski. He and his well-educated friends have an intelligent discussion about the world and the future, with a view to the Time Machine. What to use it for?",
           "year": "1984",
           "rating": 6.1,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "A SIXTH OF THE WORLD",
@@ -1722,6 +1734,10 @@
           "showtimes": [
             "6:30 PM"
           ],
+          "poster": "https://image.tmdb.org/t/p/w300/sqEUXvyBBX7iFXbURAo40ELQLp7.jpg",
+          "overview": "African-American documentary filmmaker Marlon Riggs was working on this final film as he died from AIDS-related complications in 1994; he addresses the camera from his hospital bed in several scenes. The film directly addresses sexism and homophobia within the black community, with snippets of misogynistic and anti-gay slurs from popular hip-hop songs juxtaposed with interviews with African-American intellectuals and political theorists, including Cornel West, bell hooks and Angela Davis.",
+          "year": "1995",
+          "rating": 5.6,
           "first_seen": "2026-04-07"
         }
       ]
@@ -1869,7 +1885,7 @@
           "overview": "Lost in her fears and fantasies, a young woman writes in a notebook. A young man finds this notebook on a train. Suddenly, they find themselves in the heart of a forest, in a nocturnal reality where dreams come to life.",
           "year": "2025",
           "rating": 6.5,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Aro Berria",
@@ -1884,7 +1900,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/2jTqc6aNRe81XiPpKgoMHkYGm6j.jpg",
           "overview": "San Sebastian, 1978. The workers at the water meter factory hold an assembly to discuss a strike, which ultimately fails. Disappointed, the most non-conformist workers turn their aspirations for radical transformation towards more intimate spheres. Some leave the factory to join an isolated community in the mountains, where dozens of young people embarked on an intense journey of shared cathartic experiences.",
           "year": "2025",
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "O Profeta (The Prophet)",
@@ -1897,7 +1913,7 @@
           "overview": "Exiled artist and poet Mustafa embarks on a journey home with his housekeeper and her daughter; together the trio must evade the authorities who fear that the truth in Mustafa's words will incite rebellion.",
           "year": "2014",
           "rating": 7.4,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Do You Love Me",
@@ -2034,7 +2050,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/wElH8qOEoF1Fl09DI0CA82AW4oe.jpg",
           "overview": "Nine-year-old Milo lives in a remote Argentinian village where he studies the Malambo, a folk dance full of bravura. He is an excellent dancer, but Milo’s only desire is to escape the countryside on a train for the Buenos Aires of his dreams.",
           "year": "2026",
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Next Life",
@@ -2046,7 +2062,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/kpC6R8Kal6bRIPNE8IkiFbSSUQL.jpg",
           "overview": "Next Life tells the story of a Tibetan family seeking moments of “temporary happiness” while living in exile in suburban America. As their father suffers from a mysterious inner pain, they turn to Buddhist medicine and spiritual teachings on death and rebirth, embracing the Tibetan concept of \"Tse Chema\" (reincarnation).",
           "year": "2025",
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Khidki Gaav (If on a Winter’s Night)",
@@ -2080,6 +2096,9 @@
           "showtimes": [
             "6:00 PM"
           ],
+          "poster": "https://image.tmdb.org/t/p/w300/hs4fAhciulkzmE9Cdqw2YXxf7pm.jpg",
+          "overview": "Mario wakes up with no memory of his past life. His encounter with Lazare marks the beginning of a spatio-corporeal drift, from the eastern suburbs of Mexico City to the surrounding underground cavities, where bodies and landscapes crack in the same motion.",
+          "year": "2025",
           "first_seen": "2026-04-07"
         }
       ]
@@ -2125,7 +2144,7 @@
           "showtimes": [
             "11:00 AM"
           ],
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Ed Wood",
@@ -2138,7 +2157,7 @@
           "overview": "The mostly true story of the legendary \"worst director of all time\", who, with the help of his strange friends, filmed countless B-movies without ever becoming famous or successful.",
           "year": "1994",
           "rating": 7.5,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Living in Oblivion",
@@ -2164,7 +2183,7 @@
           "overview": "A young man finds out that he holds the key to restoring hope and ensuring survival for the human race, while an alien species called the Drej are bent on mankind's destruction.",
           "year": "2000",
           "rating": 6.6,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "The Ecstasy Girls",
@@ -2177,7 +2196,7 @@
           "overview": "The friends who attended the same boarding school meet and take turns telling their recent romantic experiences. These turn out to be as varied as they are crisp, from the initiation of a student by a teacher to the misunderstanding in the company of a lord, through the false English but true seducer, the swimmer obsessed with his physical condition and, obviously, love in a group (Le Chat Qui Fume).",
           "year": "1974",
           "rating": 4.3,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Queen Kelly",
@@ -2255,7 +2274,7 @@
           "overview": "When some very creepy things start happening around school, the kids at Herrington High make the chilling discovery that confirms their worst suspicions: their teachers really are from another planet!",
           "year": "1998",
           "rating": 6.6,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Spoons Toons & Booze Says No To Drugs",
@@ -2309,7 +2328,7 @@
           "showtimes": [
             "11:00 AM"
           ],
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Nitehawk Shorts Festival 2026: NOBUDGE",
@@ -2318,7 +2337,7 @@
           "showtimes": [
             "11:00 AM"
           ],
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Nitehawk Shorts Festival 2026: CLOSING NITE",
@@ -2340,7 +2359,7 @@
           "overview": "A Roman soldier becomes torn between his love for a Christian woman and his loyalty to Emperor Nero.",
           "year": "1932",
           "rating": 6.1,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Phantom Thread",
@@ -2408,7 +2427,7 @@
           "overview": "Agerna is a planet rich in Vizorium, the one mineral necessary to space travel. When a series of mysterious attacks on mining operations has world leaders pointing fingers and pinning blame, 3WA naturally send in their top agents to investigate. But are the Lovely Angels up to the task of stopping a mad scientist bent on taking a long dormant alien race to its final evolutionary form? Throw in a thief after a bottle of WWII-vintage wine and it's a safe bet that nobody's safe. It's more chaos, more mayhem, and even more destruction than ever before as the Dirty Pair take on their wildest case yet!",
           "year": "1986",
           "rating": 7.0,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Rush Hour",
@@ -2525,7 +2544,7 @@
           "overview": "Jeffrey 'The Dude' Lebowski, a Los Angeles slacker who only wants to bowl and drink White Russians, is mistaken for another Jeffrey Lebowski, a wheelchair-bound millionaire, and finds himself dragged into a strange series of events involving nihilists, adult film producers, ferrets, errant toes, and large sums of money.",
           "year": "1998",
           "rating": 7.8,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Doc´n Roll Festival presents: Butthole Surfers: The Hole Truth and Nothing Butt",
@@ -2558,6 +2577,10 @@
           "title": "THE WHOLE SHEBANG: TWO WRENCHING DEPARTURES",
           "link": "https://www.spectacletheater.com/whole-shebang/",
           "date_str": "Apr 18",
+          "poster": "https://image.tmdb.org/t/p/w300/us4pGp34aPC2SdKr3tlkmvg5TrK.jpg",
+          "overview": "Made in response to the death of his friends Bob Fleischner and Jack Smith, who died within one week of each other in 1989, this feature includes footage from Jacobs’s Star Spangled to Death showing Smith perambulating through downtown Manhattan, as well as views of Fleischner from Jacobs’s 1961 short The Whirled.",
+          "year": "2006",
+          "rating": 5.0,
           "first_seen": "2026-04-05"
         },
         {
@@ -2738,8 +2761,10 @@
           "showtimes": [
             "6:00 PM"
           ],
-          "overview": "\"In this now infamous tape, exemplary of his early transgressive performance style, Acconci sits and relates a masturbatory fantasy about a girl rubbing his legs under the table. Carrying on a rambling dialogue that shifts back and forth between the camera/spectator and himself, Acconci sexualizes the implicit contract between performer and viewer - the viewer serving as a voyeur who makes the performance possible by watching and completing the scene, believing the fantasy.\"",
-          "year": "1972",
+          "poster": "https://image.tmdb.org/t/p/w300/1wREWUEHzjDWSreNFbFLDO7YEaM.jpg",
+          "overview": "The host of a popular paranormal podcast becomes haunted by terrifying recordings mysteriously sent her way.",
+          "year": "2026",
+          "rating": 6.2,
           "first_seen": "2026-04-07"
         }
       ]
@@ -2754,7 +2779,11 @@
           "showtimes": [
             "7:00 PM"
           ],
-          "first_seen": "2026-04-05"
+          "poster": "https://image.tmdb.org/t/p/w300/rUd8AT5oPBacoPeuFK1wFwODtLM.jpg",
+          "overview": "An update of our classic human anatomy.",
+          "year": "2014",
+          "rating": 6.3,
+          "first_seen": "2026-04-07"
         },
         {
           "title": "The Informant!",
@@ -2837,7 +2866,7 @@
           "overview": "When a disc containing memoirs of a former CIA analyst falls into the hands of gym employees, Linda and Chad, they see a chance to make enough money for Linda to have life-changing cosmetic surgery. Predictably, events whirl out of control for the duo, and those in their orbit.",
           "year": "2008",
           "rating": 6.7,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Chinatown",
@@ -2850,7 +2879,7 @@
           "overview": "Private eye Jake Gittes lives off of the murky moral climate of sunbaked, pre-World War II Southern California. Hired by a beautiful socialite to investigate her husband's extra-marital affair, Gittes is swept into a maelstrom of double dealings and deadly deceits, uncovering a web of personal and political scandals that come crashing together.",
           "year": "1974",
           "rating": 7.9,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "The Second Mother",
@@ -2860,7 +2889,7 @@
           "overview": "After leaving her daughter Jessica in a small town in Pernambuco to be raised by relatives, Val spends the next 13 years working as a nanny to Fabinho in São Paulo. She has financial stability but has to live with the guilt of having not raised Jessica herself. As Fabinho’s university entrance exams approach, Jessica reappears in her life and seems to want to give her mother a second chance. However, Jessica has not been raised to be a servant and her very existence will turn Val’s routine on its head. With precision and humour, the subtle and powerful forces that keep rigid class structures in place and how the youth may just be the ones to shake it all up.",
           "year": "2015",
           "rating": 8.0,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Like Crazy",
@@ -2886,6 +2915,10 @@
           "title": "BEEF | Season 2 | Episodes 1 & 2",
           "link": "https://www.paristheaternyc.com/film/season-2-all-the-rage-beef",
           "date_str": "Apr 17",
+          "poster": "https://image.tmdb.org/t/p/w300/wSPOstFgu3Ogs61H6A86txGcWCM.jpg",
+          "overview": "A road rage incident between two strangers — a failing contractor and an unfulfilled entrepreneur — sparks a feud that brings out their darkest impulses.",
+          "year": "2023",
+          "rating": 7.7,
           "first_seen": "2026-04-06"
         },
         {
@@ -3010,7 +3043,7 @@
           "title": "Hoyt-Schermerhorn: Stand Clear of the Closing Doors",
           "link": "https://www.bam.org/film/2026/hoyt-schermerhorn",
           "date_str": "Apr 9",
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "Exit 8",
@@ -3029,7 +3062,7 @@
           "overview": "A man trapped in an endless sterile subway passageway sets out to find Exit 8. The rules of his quest are simple: do not overlook anything out of the ordinary. If you discover an anomaly, turn back immediately. If you don’t, carry on. Then leave from Exit 8. But even a single oversight will send him back to the beginning. Will he ever reach his goal and escape this infinite corridor?",
           "year": "2025",
           "rating": 6.5,
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         },
         {
           "title": "The Travel Companion",
@@ -3095,7 +3128,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/uLRr3sVVqzcexegoCMrhb2AsVZn.jpg",
           "overview": "The estranged children of a once-famous artist hire a forger to complete his unfinished works so they can be \"discovered\" and sold after his death.",
           "year": "2026",
-          "first_seen": "2026-04-05"
+          "first_seen": "2026-04-07"
         }
       ]
     }
