@@ -94,6 +94,8 @@ def clean_title(title):
     title = re.sub(r'\s*[Bb]y\s+[A-Z][a-zé\-]+(?:[\s\-]+[A-Z][a-zé\-]+)+(?:\s*In\s+.*)?$', '', title).strip()
     # Handle no-space case: "TITLEby Director"
     title = re.sub(r'(?<=[a-z\)])by\s+[A-Z].*$', '', title).strip()
+    # Strip orphaned ". Directed" or ". Written and directed" fragments
+    title = re.sub(r'\s*\.?\s*(?:Directed|Written and directed)\s*$', '', title, flags=re.IGNORECASE).strip()
     # Strip "preceded by [short film title]" suffix
     title = re.sub(r'\s+preceded\s+by\s+.*$', '', title, flags=re.IGNORECASE).strip()
     title = re.sub(r'\s+preceded$', '', title, flags=re.IGNORECASE).strip()
@@ -1324,6 +1326,8 @@ def scrape_moma():
             # Strip " . YEAR. Directed by DIRECTOR" or " YEAR. Directed by DIRECTOR"
             # Require leading space so "Dr." abbreviation dot isn't consumed
             title = re.sub(r'\s+\.?\s*\d{4}\.\s*(?:Directed|Written and directed)\s+by\s+.*$', '', title).strip()
+            # Strip ". Directed by DIRECTOR" without year prefix
+            title = re.sub(r'\s*\.\s*(?:Directed|Written and directed)\s+by\s+.*$', '', title, flags=re.IGNORECASE).strip()
             # Strip trailing standalone dots (not abbreviations like "Dr.")
             title = re.sub(r'(?<![A-Z][a-z])\.\s*$', '', title).strip()
             # Handle double features: "Film1 . 1973. Dir... Film2 . 1952. Dir..." → keep first
