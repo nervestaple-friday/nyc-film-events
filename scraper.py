@@ -1878,6 +1878,9 @@ _TMDB_OVERRIDES = {
     'Frío metal (Cold Metal) . Directed': 1493018,
     '(ANTI) COLONIAL TIME': None,                   # Anthology program, no single TMDB entry
     'MASTERS OF INDONESIAN EXPLOITATION: H. TJUT DJALIL': None,  # Program, no single entry
+    'The Silence': 490,            # Bergman 1963 (not 2019 horror)
+    'The Hand': 100592,            # Trnka 1965 (not The Handmaiden 2016)
+    'Alice': 18917,                # Švankmajer 1988 (not Woody Allen 1990)
 }
 
 
