@@ -2135,10 +2135,12 @@ def enrich_with_tmdb(events_by_venue):
 
 def filter_by_date(events):
     now = datetime.now()
+    today = now.replace(hour=0, minute=0, second=0, microsecond=0)
     result = []
     for e in events:
         if e['date']:
-            delta = (e['date'] - now).days
+            edate = e['date'].replace(hour=0, minute=0, second=0, microsecond=0)
+            delta = (edate - today).days
             if MIN_DAYS <= delta <= MAX_DAYS:
                 result.append(e)
         else:
@@ -2148,7 +2150,7 @@ def filter_by_date(events):
             if ds and ds != 'Now Playing':
                 fallback = parse_date_loose(ds + f" {now.year}")
                 if fallback:
-                    delta = (fallback - now).days
+                    delta = (fallback.replace(hour=0, minute=0, second=0, microsecond=0) - today).days
                     if MIN_DAYS <= delta <= MAX_DAYS:
                         result.append(e)
                     # else: parseable past/far-future date — skip
@@ -2342,6 +2344,19 @@ def main():
             events_by_venue[e['venue']].append(e)
         else:
             events_by_venue[e['venue']] = events_by_venue.get(e['venue'], []) + [e]
+
+    # Purge stale past events (dates before today)
+    today_midnight = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    purged = 0
+    for venue in list(events_by_venue):
+        before = len(events_by_venue[venue])
+        events_by_venue[venue] = [
+            e for e in events_by_venue[venue]
+            if not e.get('date') or e['date'].replace(hour=0, minute=0, second=0, microsecond=0) >= today_midnight
+        ]
+        purged += before - len(events_by_venue[venue])
+    if purged:
+        print(f"\n[Purged {purged} stale past events]", file=sys.stderr)
 
     # Per-venue title deduplication
     for venue in events_by_venue:
