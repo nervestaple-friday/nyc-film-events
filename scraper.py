@@ -382,137 +382,163 @@ def scrape_syndicated():
     return events
 
 
+def _ifc_normalize_link(path):
+    """Canonical IFC link: strip trailing slash and open-captioning suffix."""
+    path = path.rstrip('/')
+    path = re.sub(r'-open-captioning$', '', path)
+    return f"https://www.ifccenter.com{path}"
+
 def scrape_ifc():
-    """IFC Center — extract film links from apitap markdown and HTML.
-    The markdown regex matches [Title](url) links; HTML parsing supplements
-    any films missed by the markdown and provides showtimes."""
-    import subprocess as _sp
+    """IFC Center — parse daily-schedule HTML for films, dates, and showtimes.
+    Each daily-schedule div has an <h3> date header and <li> entries with
+    film title, link, and per-day showtimes. Coming-soon section handled
+    separately. Apitap markdown used only as a fallback."""
     events = []
-    seen = set()  # deduplicate by link
+    seen = set()  # deduplicate by canonical link
+    now = datetime.now()
 
-    # --- Primary: apitap markdown ---
-    md = ''
-    try:
-        result = _sp.run(
-            ['apitap', 'read', 'https://www.ifccenter.com/'],
-            capture_output=True, text=True, timeout=30,
-        )
-        md = result.stdout
-    except Exception as ex:
-        print(f"  [IFC/apitap] {ex}", file=sys.stderr)
-
-    if md and len(md.strip()) > 200:
-        # Match [Title](url) links to /films/ or /series/ pages
-        for m in re.finditer(
-            r'\[([^\]\n]{3,120})\]\((?:https://www\.ifccenter\.com)?(/(?:films|series)/[\w\-/]+)\)',
-            md,
-        ):
-            title = m.group(1).strip()
-            path  = m.group(2).strip().rstrip(')')
-            link  = f"https://www.ifccenter.com{path}"
-            # Skip non-title links: images, tickets, times
-            if title.startswith('!') or re.match(
-                r'(?:Buy Tickets|Film Details|More Info|\d{1,2}:\d{2}\s*[AP]M|Opens\s)',
-                title, re.IGNORECASE,
-            ):
-                continue
-            title = re.sub(r'[#\*]', '', title).strip()
-            title = re.split(r'Q&A|Filmmaker|Director|Screening on|Opens|Academy Award', title)[0].strip()
-            if not title or len(title) < 3 or link in seen:
-                continue
-            seen.add(link)
-            context = md[max(0, m.start()-300):m.end()+400]
-            special = is_special(title)
-            date, date_str = None, ''
-            dm = re.search(
-                r'(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\w*,?\s+'
-                r'((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\.?\s+\d{1,2})',
-                context,
-            )
-            if dm:
-                date_str = dm.group(1)
-                date = parse_date_loose(date_str + f" {datetime.now().year}")
-            e = make_event('IFC Center', title, link, date=date, date_str=date_str, special=special)
-            if e:
-                events.append(e)
-
-    # --- Supplement + showtimes: HTML parsing ---
+    # --- Primary: HTML daily-schedule parsing ---
     r_html = fetch('https://www.ifccenter.com/')
     if r_html:
         ifc_soup = BeautifulSoup(r_html.text, 'html.parser')
+        # film_data[link] = {title, first_date, first_date_str, showtimes[], special}
+        film_data = {}
 
-        # Extract films from HTML <a> tags linking to /films/ or /series/
-        # Collect all title candidates per link (pick cleanest)
-        link_titles = {}
-        for a in ifc_soup.find_all('a', href=re.compile(r'/(?:films|series)/[\w-]')):
-            href = a['href']
-            path_m = re.search(r'(/(?:films|series)/[\w\-/]+)', href)
-            if not path_m:
-                continue
-            path = re.sub(r'-open-captioning/?$', '', path_m.group(1).rstrip('/'))
-            link = f"https://www.ifccenter.com{path}"
-            if link in seen:
-                continue
-            title = a.get_text(strip=True)
-            if not title or len(title) < 3:
-                continue
-            if re.match(r'(?:Buy Tickets|Film Details|More Info|Tickets and More|'
-                        r'\d{1,2}:\d{2}\s*[AP]M|Opens\s|Last Day|Now Playing)',
-                        title, re.IGNORECASE):
-                continue
-            link_titles.setdefault(link, []).append(title)
-
-        for link, titles in link_titles.items():
-            if link in seen:
-                continue
-            # Pick shortest title (usually cleanest, without concatenated descriptions)
-            title = min(titles, key=len)
-            # Strip "(Open Captioning)" suffix
-            title = re.sub(r'\s*\(Open Captioning\)\s*$', '', title).strip()
-            # Clean up long concatenated titles (series descriptions)
-            if len(title) > 80:
-                title = re.split(r'(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)', title)[0].strip()
-            if not title or len(title) < 3:
-                continue
-            seen.add(link)
-            special = is_special(title)
-            e = make_event('IFC Center', title, link, special=special)
-            if e:
-                events.append(e)
-
-        # Enrich with showtimes from daily-schedule divs
-        slug_times = {}
         for sched in ifc_soup.find_all('div', class_='daily-schedule'):
-            for li in sched.find_all('li'):
+            is_coming_soon = 'show-coming-soon' in sched.get('class', [])
+
+            # Extract date from <h3> header (e.g. "Fri Apr 10", or "Coming Soon")
+            date_h3 = sched.find('h3')
+            sched_date, sched_date_str = None, ''
+            if date_h3 and not is_coming_soon:
+                raw = date_h3.get_text(strip=True)
+                dm = re.search(
+                    r'((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\.?\s+\d{1,2})',
+                    raw,
+                )
+                if dm:
+                    sched_date_str = dm.group(1)
+                    sched_date = parse_date_loose(sched_date_str + f" {now.year}")
+
+            sched_ul = sched.find('ul')
+            if not sched_ul:
+                continue
+
+            for li in sched_ul.find_all('li', recursive=False):
                 details = li.find('div', class_='details')
                 if not details:
                     continue
                 h3 = details.find('h3')
-                if not h3 or not h3.find('a', href=True):
+                if not h3:
                     continue
-                href = h3.find('a')['href']
-                slug_m = re.search(r'/films/([\w-]+)', href)
-                if not slug_m:
+                a = h3.find('a', href=True)
+                if not a:
                     continue
-                times_ul = details.find('ul', class_='times')
-                if not times_ul:
+                href = a['href']
+                path_m = re.search(r'(/(?:films|series)/[\w\-/]+)', href)
+                if not path_m:
                     continue
+                link = _ifc_normalize_link(path_m.group(1))
+                title = a.get_text(strip=True)
+                title = re.sub(r'\s*\(Open Captioning\)\s*$', '', title).strip()
+                if not title or len(title) < 3:
+                    continue
+
+                # Extract showtimes for this day
                 times = []
-                for time_a in times_ul.find_all('a'):
-                    t = time_a.get_text(strip=True)
-                    tm = re.match(r'(\d{1,2}:\d{2}\s*(?:AM|PM))', t, re.IGNORECASE)
-                    if tm:
-                        times.append(tm.group(1).strip())
-                if times:
-                    slug_times.setdefault(slug_m.group(1), []).extend(times)
-        for s in slug_times:
-            slug_times[s] = list(dict.fromkeys(slug_times[s]))
-        for e in events:
-            if e.get('showtimes'):
-                continue
-            link_slug = re.search(r'/films/([\w-]+)', e.get('link', ''))
-            if link_slug and link_slug.group(1) in slug_times:
-                e['showtimes'] = slug_times[link_slug.group(1)]
+                times_ul = details.find('ul', class_='times')
+                if times_ul:
+                    for time_a in times_ul.find_all('a'):
+                        t = time_a.get_text(strip=True)
+                        tm = re.match(r'(\d{1,2}:\d{2}\s*(?:AM|PM))', t, re.IGNORECASE)
+                        if tm:
+                            times.append(tm.group(1).strip())
+
+                # For coming-soon, extract date from detail text
+                item_date, item_date_str = sched_date, sched_date_str
+                if is_coming_soon:
+                    detail_text = details.get_text(' ', strip=True)
+                    cs_dm = re.search(
+                        r'(?:Opens|Starting|Begins)?\s*((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\.?\s+\d{1,2})',
+                        detail_text,
+                    )
+                    if cs_dm:
+                        item_date_str = cs_dm.group(1)
+                        item_date = parse_date_loose(item_date_str + f" {now.year}")
+
+                if link in film_data:
+                    fd = film_data[link]
+                    for t in times:
+                        if t not in fd['showtimes']:
+                            fd['showtimes'].append(t)
+                    if item_date and (not fd['first_date'] or item_date < fd['first_date']):
+                        fd['first_date'] = item_date
+                        fd['first_date_str'] = item_date_str
+                else:
+                    film_data[link] = {
+                        'title': title,
+                        'first_date': item_date,
+                        'first_date_str': item_date_str,
+                        'showtimes': times,
+                        'special': is_special(title),
+                    }
+
+        for link, fd in film_data.items():
+            seen.add(link)
+            e = make_event(
+                'IFC Center', fd['title'], link,
+                date=fd['first_date'], date_str=fd['first_date_str'],
+                special=fd['special'],
+                showtimes=fd['showtimes'] or None,
+            )
+            if e:
+                events.append(e)
+
+    # --- Fallback: apitap markdown (only if HTML yielded few results) ---
+    if len(events) < 5:
+        import subprocess as _sp
+        md = ''
+        try:
+            result = _sp.run(
+                ['apitap', 'read', 'https://www.ifccenter.com/'],
+                capture_output=True, text=True, timeout=30,
+            )
+            md = result.stdout
+        except Exception as ex:
+            print(f"  [IFC/apitap] {ex}", file=sys.stderr)
+
+        if md and len(md.strip()) > 200:
+            for m in re.finditer(
+                r'\[([^\]\n]{3,120})\]\((?:https://www\.ifccenter\.com)?(/(?:films|series)/[\w\-/]+)\)',
+                md,
+            ):
+                title = m.group(1).strip()
+                path  = m.group(2).strip().rstrip(')')
+                link  = _ifc_normalize_link(path)
+                if title.startswith('!') or re.match(
+                    r'(?:Buy Tickets|Film Details|More Info|\d{1,2}:\d{2}\s*[AP]M|Opens\s)',
+                    title, re.IGNORECASE,
+                ):
+                    continue
+                title = re.sub(r'[#\*]', '', title).strip()
+                title = re.split(r'Q&A|Filmmaker|Director|Screening on|Opens|Academy Award', title)[0].strip()
+                if not title or len(title) < 3 or link in seen:
+                    continue
+                seen.add(link)
+                context = md[max(0, m.start()-300):m.end()+400]
+                special = is_special(title)
+                date, date_str = None, ''
+                dm = re.search(
+                    r'(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\w*,?\s+'
+                    r'((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\.?\s+\d{1,2})',
+                    context,
+                )
+                if dm:
+                    date_str = dm.group(1)
+                    date = parse_date_loose(date_str + f" {now.year}")
+                e = make_event('IFC Center', title, link, date=date, date_str=date_str, special=special)
+                if e:
+                    events.append(e)
 
     return events[:25]
 
