@@ -1791,6 +1791,7 @@ def scrape_bam():
 
         # Fetch detail page for showtimes
         show_times = []
+        earliest_future = None
         r2 = fetch(link)
         if r2:
             for ld_m in re.finditer(
@@ -1812,15 +1813,22 @@ def scrape_bam():
                             if MIN_DAYS <= delta <= MAX_DAYS:
                                 t = dt.strftime('%I:%M %p').lstrip('0')
                                 show_times.append(t)
-                                # Use earliest screening date if none yet
-                                if not date or date_str == 'Now Playing':
-                                    date = dt.replace(tzinfo=None)
-                                    date_str = date.strftime('%b %d')
+                                dt_naive = dt.replace(tzinfo=None)
+                                if earliest_future is None or dt_naive < earliest_future:
+                                    earliest_future = dt_naive
                         except Exception:
                             pass
                 except (json.JSONDecodeError, AttributeError):
                     pass
             show_times = list(dict.fromkeys(show_times))
+
+        # Prefer earliest future showtime as the event date; skip stale events
+        today = now.replace(hour=0, minute=0, second=0, microsecond=0)
+        if earliest_future:
+            date = earliest_future
+            date_str = date.strftime('%b %d')
+        elif not date or date.replace(hour=0, minute=0, second=0, microsecond=0) < today:
+            continue  # no future showtimes and opening date is past/missing — stale
 
         e = make_event('BAM', title, link, date=date, date_str=date_str,
                        showtimes=show_times if show_times else None)
