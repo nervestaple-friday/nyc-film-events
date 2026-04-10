@@ -2065,13 +2065,21 @@ def enrich_with_tmdb(events_by_venue):
     api_calls = 0
     for title in sorted(titles):
         if title in cache:
-            continue
+            # If this title has an override, verify the cache used the correct ID
+            if title in _TMDB_OVERRIDES:
+                expected_id = _TMDB_OVERRIDES[title]
+                if cache[title].get('tmdb_id') != expected_id:
+                    del cache[title]  # Invalidate stale/wrong cache entry
+                else:
+                    continue
+            else:
+                continue
         # Check manual overrides BEFORE skip patterns — overrides take priority
         if title in _TMDB_OVERRIDES:
             tmdb_id = _TMDB_OVERRIDES[title]
             if tmdb_id is None:
                 # Explicitly marked as no TMDB match (program/compilation)
-                cache[title] = {'poster': '', 'overview': '', 'year': '', 'rating': 0, 'skipped': True, 'cached_at': now_iso}
+                cache[title] = {'poster': '', 'overview': '', 'year': '', 'rating': 0, 'skipped': True, 'cached_at': now_iso, 'tmdb_id': None}
                 continue
             try:
                 if api_calls > 0:
@@ -2095,6 +2103,7 @@ def enrich_with_tmdb(events_by_venue):
                     'year': release_date[:4] if len(release_date) >= 4 else '',
                     'rating': round(raw_rating, 1) if raw_rating else 0,
                     'cached_at': now_iso,
+                    'tmdb_id': tmdb_id,
                 }
                 continue
             except Exception as ex:
