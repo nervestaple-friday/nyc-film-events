@@ -94,8 +94,8 @@ def clean_title(title):
     title = re.sub(r'\s*[Bb]y\s+[A-Z][a-zé\-]+(?:[\s\-]+[A-Z][a-zé\-]+)+(?:\s*In\s+.*)?$', '', title).strip()
     # Handle no-space case: "TITLEby Director"
     title = re.sub(r'(?<=[a-z\)])by\s+[A-Z].*$', '', title).strip()
-    # Strip orphaned ". Directed" or ". Written and directed" fragments
-    title = re.sub(r'\s*\.?\s*(?:Directed|Written and directed)\s*$', '', title, flags=re.IGNORECASE).strip()
+    # Strip orphaned ". Directed" / ". Written and directed" (with optional trailing "by …")
+    title = re.sub(r'\s*\.?\s*(?:Directed|Written and directed)(?:\s+by\b.*)?\s*$', '', title, flags=re.IGNORECASE).strip()
     # Strip "preceded by [short film title]" suffix
     title = re.sub(r'\s+preceded\s+by\s+.*$', '', title, flags=re.IGNORECASE).strip()
     title = re.sub(r'\s+preceded$', '', title, flags=re.IGNORECASE).strip()
@@ -1393,6 +1393,8 @@ def scrape_moma():
             title = re.sub(r'\s+\.?\s*\d{4}\.\s*(?:Directed|Written and directed)\s+by\s+.*$', '', title).strip()
             # Strip ". Directed by DIRECTOR" without year prefix
             title = re.sub(r'\s*\.\s*(?:Directed|Written and directed)\s+by\s+.*$', '', title, flags=re.IGNORECASE).strip()
+            # Strip orphaned ". Directed" without "by" (e.g. when time-strip already consumed the director)
+            title = re.sub(r'\s*\.\s*(?:Directed|Written and directed)\s*$', '', title, flags=re.IGNORECASE).strip()
             # Strip trailing standalone dots (not abbreviations like "Dr.")
             title = re.sub(r'(?<![A-Z][a-z])\.\s*$', '', title).strip()
             # Handle double features: "Film1 . 1973. Dir... Film2 . 1952. Dir..." → keep first
@@ -1944,7 +1946,7 @@ _TMDB_OVERRIDES = {
     'Big Mistakes | Episodes 1 & 2': 291506,       # TV series
     'BEEF | Season 2 | Episodes 1 & 2': 154385,    # TV series
     'Cold Metal': 1493018,
-    'Frío metal (Cold Metal) . Directed': 1493018,
+    'Frío metal (Cold Metal)': 1493018,
     '(ANTI) COLONIAL TIME': None,                   # Anthology program, no single TMDB entry
     'MASTERS OF INDONESIAN EXPLOITATION: H. TJUT DJALIL': None,  # Program, no single entry
     'The Silence': 490,            # Bergman 1963 (not 2019 horror)
