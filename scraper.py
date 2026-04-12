@@ -2144,6 +2144,7 @@ def enrich_with_tmdb(events_by_venue):
                 continue
             except Exception as ex:
                 print(f"  [tmdb] override fetch failed for '{title}' (id={tmdb_id}): {ex}", file=sys.stderr)
+            continue  # Never fall through to generic search for overridden titles
 
         if _should_skip_tmdb(title):
             cache[title] = {'poster': '', 'overview': '', 'year': '', 'rating': 0, 'skipped': True, 'cached_at': now_iso}
