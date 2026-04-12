@@ -1,0 +1,3 @@
+[submodule "nyc-restaurants"]
+	path = nyc-restaurants
+	url = https://github.com/nervestaple-friday/nyc-restaurants.git
