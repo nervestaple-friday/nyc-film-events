@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-13T11:00:59.326658+00:00",
+  "updated": "2026-04-13T11:16:50.532119+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -141,10 +141,10 @@
           "showtimes": [
             "2:10 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/vSBH5PndNMeNAMLIu6y6KFTwvWO.jpg",
-          "overview": "A one-man army comes to the rescue of the United States when a spy attempts an invasion.",
-          "year": "1985",
-          "rating": 5.7,
+          "poster": "https://image.tmdb.org/t/p/w300/c4SDhdZlKA03flhd4ssO3Opm8Xa.jpg",
+          "overview": "Paula Nelson goes to Atlantic City to meet her lover, Richard Politzer, but finds him  dead and decides to investigate his death. In her hotel room, she meets Typhus, whom she ends up knocking out. His corpse is later found in the apartment of David Goodis, a writer. Paula is arrested and interrogated. From then on, she encounters many gangsters.",
+          "year": "1967",
+          "rating": 6.1,
           "first_seen": "2026-04-13"
         },
         {
@@ -232,10 +232,10 @@
           "showtimes": [
             "11:00 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/vrZ3oRVf1WQbIQtcflJ9sZJPS82.jpg",
-          "overview": "By chance, Martin and Laura travel to Villa Gesell at the same time. They are not together anymore but 18 years ago they conceived their son, Pablo, there. Soon, situations as absurd as they are touching will arise from their encounter. Juan Villegas ventures into comedy and is back at Bafici with a nostalgic, intimate film.",
-          "year": "2018",
-          "rating": 5.9,
+          "poster": "https://image.tmdb.org/t/p/w300/tisNLcMkxryU2zxhi0PiyDFqhm0.jpg",
+          "overview": "Raoul Duke and his attorney Dr. Gonzo drive a red convertible across the Mojave desert to Las Vegas with a suitcase full of drugs to cover a motorcycle race. As their consumption of drugs increases at an alarming rate, the stoned duo trash their hotel room and fear legal repercussions. Duke begins to drive back to L.A., but after an odd run-in with a cop, he returns to Sin City and continues his wild drug binge.",
+          "year": "1998",
+          "rating": 7.2,
           "first_seen": "2026-04-13"
         },
         {
@@ -509,10 +509,10 @@
           "showtimes": [
             "5:45 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/6xqBQgRZCf2rGCJeWAO4whiVKPn.jpg",
-          "overview": "Kusoh no kikai-tachi no naka no hakai no hatsumei is an animated short wirtten and directed by Hideaki Anno and produced by Studio Ghibli. It's a Ghibli Museum exclusive.",
-          "year": "2002",
-          "rating": 7.0,
+          "poster": "https://image.tmdb.org/t/p/w300/aJ9GqbghpkPJ4siOycoCXEdVC1u.jpg",
+          "overview": "As the world progresses into the industrial age, a professor studying the \"nature of pure matter\" is spirited away by a would-be dictator and connived into building a super-bomb, as a  young reporter and a girl rescued from the sea attempt to warn him of their mutual kidnapper's intentions to dominate the world with a new and more-deadly-yet  weapon.",
+          "year": "1958",
+          "rating": 7.2,
           "first_seen": "2026-04-12"
         },
         {
@@ -811,10 +811,10 @@
           "showtimes": [
             "5:40 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/1j9LhWwdxlDRFzppMgMGJb1k0aa.jpg",
-          "overview": "The Scar draws an intense psychological suspense through one man’s confrontation with his past.",
-          "year": "2013",
-          "rating": 5.5,
+          "poster": "https://image.tmdb.org/t/p/w300/1JdHCHy36tG6RVB7Y4AKfkqDX92.jpg",
+          "overview": "When a political decision is made as to the location of a new large chemical factory, Stefan Bednarz is put in charge of it. This honest communist party man has to confront the local community opposing the construction.",
+          "year": "1976",
+          "rating": 6.5,
           "first_seen": "2026-04-13"
         },
         {
@@ -994,10 +994,10 @@
           "showtimes": [
             "11:00 AM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/cgOg2SI8Cb8XSBfb64mIhyqsXOY.jpg",
-          "overview": "Jeanne looks back on her love for Jean. The melancholic young man wouldn't accept the world as it was, always wishing to depart. She doesn't know that he's dead.",
-          "year": "1968",
-          "rating": 7.4,
+          "poster": "https://image.tmdb.org/t/p/w300/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg",
+          "overview": "After hundreds of years doing what he was built for, WALL•E— a robot designed to clean up the earth—discovers a new purpose in life when he meets a sleek search robot named EVE. EVE comes to realize that WALL•E has inadvertently stumbled upon the key to the planet's future, and races back to space to report to the humans. Meanwhile, WALL•E chases EVE across the galaxy and sets into motion one of the most imaginative adventures ever brought to the big screen.",
+          "year": "2008",
+          "rating": 8.1,
           "first_seen": "2026-04-12"
         },
         {
@@ -1082,7 +1082,7 @@
           "overview": "Orsolya is a bailiff in Cluj, the main city in Transylvania. One day she has to evict a homeless man from a cellar, an action with tragic consequences that triggers a moral crisis which Orsolya must weather as best she can.",
           "year": "2025",
           "rating": 6.5,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "TWO PROSECUTORS",
@@ -1097,7 +1097,7 @@
           "overview": "In 1937, amidst Stalin's Great Terror, a newly appointed prosecutor for the USSR is made aware of alleged corruption in the Secret Police, and takes it upon himself to investigate.",
           "year": "2025",
           "rating": 6.7,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "DAYS AND NIGHTS IN THE FOREST",
@@ -1111,7 +1111,7 @@
           "overview": "Four friends from Calcutta who have very different personalities make a holiday excursion into the country, to a tiny village in the state of Bihar where they set themselves up in a bungalow. A series of minor events, all connected to their respective reactions to their new environment, reveals their characters more deeply.",
           "year": "1970",
           "rating": 6.9,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "MONTE CARLO",
@@ -1121,10 +1121,10 @@
             "1:00 PM",
             "6:00 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/dcbqyycrWA56HXq5lm41HYuED8Y.jpg",
-          "overview": "Three young women vacationing in Paris find themselves whisked away to Monte Carlo after one of the girls is mistaken for a British heiress.",
-          "year": "2011",
-          "rating": 6.8,
+          "poster": "https://image.tmdb.org/t/p/w300/eKw9l71pSV2lQpUsfK1pV3KJKaX.jpg",
+          "overview": "A countess fleeing her husband mistakes a count for her hairdresser at a Monte Carlo casino.",
+          "year": "1930",
+          "rating": 6.5,
           "first_seen": "2026-04-13"
         },
         {
@@ -1170,10 +1170,10 @@
           "title": "OUR LAND (NUESTRA TIERRA)",
           "link": "https://filmforum.org/film/our-land",
           "date_str": "May 1",
-          "poster": "https://image.tmdb.org/t/p/w300/fNTbgnTH4GsMKIi1adHBH5NkCqm.jpg",
-          "overview": "Luigi Di Santo is a professor of philosophy in Milan who returns to his Apulian hometown to finalize the sale, together with his brothers, of an old family farm. But this project is hampered by his violent stepbrother Aldo. Things degenerate further when the four brothers find themselves embroiled in a murder.",
-          "year": "2006",
-          "rating": 6.5,
+          "poster": "https://image.tmdb.org/t/p/w300/1gXQmNpaKvjskAxfHWwdpK4IeHN.jpg",
+          "overview": "In 2009, a man and two accomplices try to evict members of the Indigenous community of Chuschagasta in northern Argentina. Claiming ownership of the land and armed with guns, they kill the community’s leader, Javier Chocobar. The murder is caught on video. It takes nine years of protests before court proceedings are finally opened in 2018. During all this time, the killers remain free. The film combines the voices and photographs of the community with courtroom footage to explore the long history of colonialism and land dispossession that led to this crime.",
+          "year": "2026",
+          "rating": 7.4,
           "first_seen": "2026-04-13"
         },
         {
@@ -1252,10 +1252,9 @@
             "1:00 PM",
             "9:55 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/cEHRQ0LVIQgKngZmRj94cSKmJFU.jpg",
-          "overview": "Sophie Dorothea is a young woman forced into a loveless marriage with Prince George Louis of Hanover. George Louis is later crowned King George I of England. Despairing of ever experiencing true love, the depressed queen finds life at court no solace. Sophie then falls for a dashing Swedish soldier of fortune, Count Konigsmark.",
-          "year": "1948",
-          "rating": 6.4,
+          "poster": "https://image.tmdb.org/t/p/w300/mbvP4f6BU923NGfqjpOJcJih3i6.jpg",
+          "overview": "A lonely gravedigger who stinks of corpses finally meets her dream man, but their whirlwind affair is cut short when he tragically drowns at sea. Grief-stricken, she goes to morbid lengths to resurrect him through madcap scientific experiments, resulting in grave consequences and unlikely love.",
+          "year": "2026",
           "first_seen": "2026-04-13"
         },
         {
@@ -1284,7 +1283,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/4mASfyyrMTKY0o1tQlhUBP9dDQj.jpg",
           "overview": "With any and all things crypto being pushed by celebrities, influencers, and politicians alike, actor-turned-author and director Ben McKenzie decides to investigate. Leveraging his celebrity status to gain access to eager prospectors, McKenzie finds himself unraveling the loosely regulated world of cryptocurrency. This skeptical but evenhanded take on the present and future of what we consider money gives a firsthand account of the chaotic financial frontier of our time.",
           "year": "2026",
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "Live-Action Oscar-Nominated Shorts 2026",
@@ -1377,7 +1376,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/6fxKOzXLDHyybBrffXaiznJ5IPk.jpg",
           "overview": "After surgery for a torn ligament, a dog named Travis begins a slow and painful recovery.",
           "year": "2026",
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "Blue Heron",
@@ -1396,7 +1395,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/4hfMbVbYc2gsMnSE1K8Oc9LQH4j.jpg",
           "overview": "In the late 1990s, a family of six settles into their new home on Vancouver Island, as internal dynamics are slowly revealed through the experiences of the youngest child, Sasha. Their fresh start is interrupted by the increasingly dangerous behavior of Jeremy, the family's oldest child.",
           "year": "2026",
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "Marama",
@@ -1408,7 +1407,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/cbi0Zk6al2CbmN87MmaPU6v58jF.jpg",
           "overview": "1859. When a young Māori woman is summoned from New Zealand to North Yorkshire, she uncovers her horrific colonial heritage and is compelled to confront and destroy the titled Englishman who devastated her family.",
           "year": "2026",
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "Maintenance Artist",
@@ -1417,7 +1416,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/VbYDDEw7RPdATftVrAboA0iuP.jpg",
           "overview": "What happens when art meets trash? Maintenance Artist profiles pioneering public artist Mierle Laderman Ukeles — the first artist-in-residence at NYC’s Department of Sanitation.",
           "year": "2025",
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "Omaha",
@@ -1427,7 +1426,7 @@
           "overview": "A young girl and her brother are awoken by their father and loaded into the car on an early morning in 2008. As they road trip across the American West, she discovers the truth about their seemingly spontaneous journey.",
           "year": "2025",
           "rating": 8.0,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "Blow Out",
@@ -1437,7 +1436,7 @@
           "overview": "While recording sound effects for a slasher flick, Jack Terry stumbles upon a real-life horror: a car careening off a bridge and into a river. Jack jumps into the water and fishes out Sally from the car, but the other passenger is already dead — a governor intending to run for president. As Jack does some investigating of his tapes, and starts a perilous romance with Sally, he enters a tangled web of conspiracy that might leave him dead.",
           "year": "1981",
           "rating": 7.4,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "The Last One for the Road",
@@ -1447,7 +1446,7 @@
           "overview": "A couple of jovial life-long drunkards run into a shy architecture undergrad, whose way of seeing things will be transformed as the trio wanders from pub to pub in search of a buried treasure.",
           "year": "2025",
           "rating": 7.6,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "Harlan County USA",
@@ -1457,7 +1456,7 @@
           "overview": "This film documents the coal miners' strike against the Brookside Mine of the Eastover Mining Company in Harlan County, Kentucky in June, 1973. Eastover's refusal to sign a contract (when the miners joined with the United Mine Workers of America) led to the strike, which lasted more than a year and included violent battles between gun-toting company thugs/scabs and the picketing miners and their supportive women-folk. Director Barbara Kopple puts the strike into perspective by giving us some background on the historical plight of the miners and some history of the UMWA.  Preserved by the Academy Film Archive in partnership with New York Women in Film & Television in 2004.",
           "year": "1977",
           "rating": 7.5,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "American Dream",
@@ -1494,7 +1493,7 @@
             "8:45 PM",
             "3:00 PM"
           ],
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "A nos amours",
@@ -1510,7 +1509,7 @@
           "overview": "Fifteen-year-old Suzanne seeks refuge from a disintegrating family in a series of impulsive, promiscuous affairs. Her fulsome sexuality further ratchets up the suppressed passions of her narcissistic brother, insecure mother and brooding, authoritarian father.",
           "year": "1983",
           "rating": 6.8,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "Agon",
@@ -1617,7 +1616,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/5y6d2or8I2kEzuEBIjNYINIO6eV.jpg",
           "overview": "“Eugene Onegin tells a love story that doesn’t work”. This is how Ralph Fiennes sums up the plot of Pyotr Ilyich Tchaikovsky’s opera, inspired by Pushkin’s work. A jaded young dandy, Onegin sets shy Tatiana on fire at first sight. Overcoming her reticence, she writes him a passionate love letter.  Alas, he brutally refuses, giving her a lecture on morality. However, years later, after a duel, he falls in love with the young woman who is now Prince Gremin’s wife. Will she yield to his advances?  Fascinated by Russian culture and attuned to the dramatic intensity of Tchaikovsky’s music, Ralph Fiennes is directing his first opera. If he chooses to use pictorial simplicity to evoke the Russian countryside or a ballroom, it is all the better to emphasise the emotions of the characters, as complex as they are modern.",
           "year": "2026",
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "Flowers of Shanghai",
@@ -1694,10 +1693,10 @@
           "showtimes": [
             "1:00 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/wD7D0B9U9ooanxyhtgLKaqM7www.jpg",
-          "overview": "Bernie Laplante is having a rough time. He's divorced, his ex-wife hates him and has custody of their son, the cops are setting a trap for him, then to top it all, he loses a shoe whilst rescuing passengers of a crashed jet. Being a thief who is down on his luck, Bernie takes advantage of the crash, but then someone else claims credit for the rescue.",
-          "year": "1992",
-          "rating": 6.3,
+          "poster": "https://image.tmdb.org/t/p/w300/vxgZto2Cz7ILHAlmRXt50I2brB2.jpg",
+          "overview": "During China's Warring States period, a district prefect arrives at the palace of Qin Shi Huang, claiming to have killed the three assassins who had made an attempt on the king's life three years ago.",
+          "year": "2002",
+          "rating": 7.5,
           "first_seen": "2026-04-12"
         },
         {
@@ -1724,7 +1723,7 @@
           "overview": "Two neighbors form a strong bond after both suspect extramarital activities of their spouses. However, they agree to keep their bond platonic so as not to commit similar wrongs.",
           "year": "2000",
           "rating": 8.1,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         }
       ]
     },
@@ -1768,7 +1767,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/soQwbV3nUU958wQEi4q6crBJRwl.jpg",
           "overview": "The career of iconic and influential poet and writer Audre Lorde is seen up until death.",
           "year": "1995",
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "(ANTI) COLONIAL TIME",
@@ -1821,10 +1820,10 @@
           "showtimes": [
             "7:30 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/rhbGzciEezbxrjnSKlKRyP3wNg4.jpg",
-          "overview": "Prem, a love guru who shares tips on dating women, helps his client, Bhaskar, woo his boss. Things get complicated when he falls for a single mother and tries to hide his profession.",
-          "year": "2007",
-          "rating": 5.5,
+          "poster": "https://image.tmdb.org/t/p/w300/jSGmIjJ1Pru9geMf9O1u8USr6gd.jpg",
+          "overview": "The story of a young man who meets his own likeness and uses him to fulfill his dreams.",
+          "year": "1968",
+          "rating": 5.9,
           "first_seen": "2026-04-13"
         },
         {
@@ -1851,7 +1850,7 @@
           "overview": "Two disc jockeys have a friend's murder to solve in the fringe-group melting pot of 1977 London.",
           "year": "1991",
           "rating": 5.1,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "LES HAUTES SOLITUDES",
@@ -1924,7 +1923,7 @@
           "overview": "A Sicilian widow earns her living as a clairvoyant, in Milan, but she hasn't got any power at all. Her son instead holds supernatural powers and with the help of his mother he becomes a strong sorcerer. But he fails perhaps to understand the real strength he possesses inside and unbinds uncontrolled forces that lead people that surround him to go mad.",
           "year": "1972",
           "rating": 5.4,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "THE HOWL / L'URLO",
@@ -1937,7 +1936,7 @@
           "overview": "A young bride flees the ceremony with a stranger and, together, they set off on an epic journey though increasingly bizarre lands. They encounter talking animals and mournful exhibitionists, converse with a discoursing rock, journey through a surrealist's psychedelic hotel, instigate a prison riot, escape from naked cannibals living in a tree, and battle a wind-up midget dictator!",
           "year": "1970",
           "rating": 4.7,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "FELLINI'S CASANOVA",
@@ -2009,7 +2008,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/dLcc3HNwC6MqzGWueNBMtxRpSrE.jpg",
           "overview": "A failed filmmaker turned single dad tries to make a living while retaining his sense of self, in James N. Kienitz Wilkins’ experimental 3D-rendered home renovation comedy, which doubles as an acidic treatise on working conditions for the contemporary creative.",
           "year": "2026",
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "Carousel",
@@ -2019,7 +2018,7 @@
           "overview": "Park manager Fiona is tasked with taking care of some former friends who won an exclusive private sneak preview of Halloween at Liseberg – a whole night, all alone in the empty park. But cotton candy, lovely rides and lots of laughter soon turn into something completely different, as they realize they are not alone in the park. And the night of dreams quickly turns into a true nightmare.",
           "year": "2023",
           "rating": 6.0,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "Little Stabs (Avant-Garde Shorts)",
@@ -2095,7 +2094,7 @@
           "overview": "Something is rotten at the Elsinore Brewery. Bob and Doug McKenzie (as seen on SCTV) help the orphan Pam regain the brewery founded by her recently-deceased father. But to do so, they must confront the suspicious Brewmeister Smith and two teams of vicious hockey players.",
           "year": "1983",
           "rating": 6.0,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "The Faculty",
@@ -2124,7 +2123,7 @@
           "overview": "The discovery of a severed human ear found in a field leads a young man on an investigation related to a beautiful, mysterious nightclub singer and a group of psychopathic criminals who have kidnapped her child.",
           "year": "1986",
           "rating": 7.6,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "Spoons Toons & Booze Says No To Drugs",
@@ -2142,7 +2141,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/bN464N8JTeW0Z4FjAxjD1zEYSJj.jpg",
           "overview": "After finishing his sentence, Ryosuke Ogiwara, who left the prison gate, got into a car that was sent by his wife's cell and Kenmochi detective of the Metropolitan Police Department, but the real Kenmochi detective arrived a few minutes later. The corpse of the bunch went up in the moat near Akasaka, and the Metropolitan Police Department's Investigation Division 1 was colored.",
           "year": "1956",
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "Fortress",
@@ -2181,7 +2180,7 @@
           "overview": "When Berke Landers, a popular high school basketball star, gets dumped by his life-long girlfriend, Allison, he soon begins to lose it. But with the help of his best friend Felix's sister Kelly, he follows his ex into the school's spring musical. Thus ensues a love triangle loosely based upon Shakespeare's \"A Midsummer Night's Dream\", where Berke is only to find himself getting over Allison and beginning to fall for Kelly.",
           "year": "2001",
           "rating": 5.6,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "Tetsuo: The Iron Man",
@@ -2277,7 +2276,7 @@
           "overview": "When Hong Kong Inspector Lee is summoned to Los Angeles to investigate a kidnapping, the FBI doesn't want any outside help and assigns cocky LAPD Detective James Carter to distract Lee from the case. Not content to watch the action from the sidelines, Lee and Carter form an unlikely partnership and investigate the case themselves.",
           "year": "1998",
           "rating": 7.1,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "Kevin Geeks Out About Dolls",
@@ -2348,10 +2347,10 @@
           "showtimes": [
             "12:00 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/dELsdRZDsIvMwVkayiYZszk6V3P.jpg",
-          "overview": "After getting blamed for spoiling Christmas, the richest kid in the world wishes he'd never been born. Unfortunately, a wishing machine, invented by professor Keenbean, picked up the wish and made it come true. Now Richie finds himself in a parallel world where his only hope is to find professor Keenbean and the wishing machine so he can wish things back to normal.",
-          "year": "1998",
-          "rating": 4.8,
+          "poster": "https://image.tmdb.org/t/p/w300/qgGh5d0IHAZRlHIdFS3XWVygumR.jpg",
+          "overview": "Billionaire heir Richie Rich has it all, including Reggie Jackson as a batting coach and Claudia Schiffer as a personal trainer -- but no playmates. What's more, scoundrel Laurence Van Dough is scheming to take over the family empire. Uh-oh! Enter faithful butler Cadbury to save the day.",
+          "year": "1994",
+          "rating": 5.9,
           "first_seen": "2026-04-13"
         },
         {
@@ -2365,7 +2364,7 @@
           "overview": "Dance-comedy trio Cocoon Central Dance lounges about, passes gas, and bursts into bizarre dance routines while navigating outer space interludes, doctor boners, and a '90s-style girl group meltdown.",
           "year": "2017",
           "rating": 5.2,
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "The Secret Life Of Pets",
@@ -2906,7 +2905,7 @@
           "showtimes": [
             "7:00 PM"
           ],
-          "first_seen": "2026-04-11"
+          "first_seen": "2026-04-13"
         },
         {
           "title": "Robert Wilson and the Moving Image",
