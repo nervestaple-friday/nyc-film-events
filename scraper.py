@@ -176,6 +176,23 @@ def fetch_cf(url, timeout=35):
         print(f"  [flaresolverr error] {url}: all retries exhausted", file=sys.stderr)
     return result
 
+def fetch_cffi(url, timeout=35):
+    """Fetch via curl_cffi to bypass Cloudflare by impersonating browser TLS fingerprint."""
+    try:
+        from curl_cffi import requests as cffi_requests
+        def _do():
+            # Use Chrome browser impersonation for TLS fingerprint
+            r = cffi_requests.get(url, timeout=timeout, impersonate="chrome120")
+            r.raise_for_status()
+            return r
+        result = _retry(_do)
+        if result is None:
+            print(f"  [curl_cffi error] {url}: all retries exhausted", file=sys.stderr)
+        return result
+    except ImportError:
+        print(f"  [curl_cffi not installed, falling back to fetch] {url}", file=sys.stderr)
+        return fetch(url)
+
 def parse_date_loose(text):
     try:
         from dateutil import parser as dp
@@ -1345,7 +1362,7 @@ def scrape_moma():
             'visit moma ps1 in queens'}
 
     # --- Primary: direct calendar fetch with Films filter ---
-    r = fetch('https://www.moma.org/calendar/?happening_filter=Films&location=both')
+    r = fetch_cffi('https://www.moma.org/calendar/?happening_filter=Films&location=both')
     if r and len(r.text) > 10000:
         soup = BeautifulSoup(r.text, 'html.parser')
 
