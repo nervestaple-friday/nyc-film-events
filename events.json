@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-14T11:01:08.707293+00:00",
+  "updated": "2026-04-14T11:19:07.083812+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -262,7 +262,7 @@
           "overview": "Witek runs after a train. Three variations follow on how such a seemingly banal incident could influence the rest of Witek's life.",
           "year": "1987",
           "rating": 7.5,
-          "first_seen": "2026-04-13"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Saturday Afternoon Cartoons: Sweet Treats",
@@ -284,7 +284,7 @@
           "overview": "In pre-unified China, the King of Qin sends his concubine to a rival kingdom to produce an assassin for a political plot, but as the king's cruelty mounts she finds her loyalty faltering.",
           "year": "1998",
           "rating": 6.9,
-          "first_seen": "2026-04-13"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Tahar Cheriaa: A Shorts Program",
@@ -293,7 +293,7 @@
           "showtimes": [
             "2:30 PM"
           ],
-          "first_seen": "2026-04-13"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Muna moto",
@@ -306,7 +306,7 @@
           "overview": "Ngando and Ndomé share an extremely perfect love. Yet, tradition demands a dowry for Ndomé’s hand that Ngando, an orphan, cannot afford. Forced to ask his uncle for assistance, Ngando finds himself at the mercy of his uncle’s lust and greed. How can Ngando and Ndomé find peace together? Their journey will be challenging and everyone will learn that not everything special can be saved.",
           "year": "1975",
           "rating": 6.5,
-          "first_seen": "2026-04-13"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Chinatown",
@@ -319,7 +319,7 @@
           "overview": "Private eye Jake Gittes lives off of the murky moral climate of sunbaked, pre-World War II Southern California. Hired by a beautiful socialite to investigate her husband's extra-marital affair, Gittes is swept into a maelstrom of double dealings and deadly deceits, uncovering a web of personal and political scandals that come crashing together.",
           "year": "1974",
           "rating": 7.9,
-          "first_seen": "2026-04-13"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Daria Kashcheeva Shorts Program",
@@ -328,7 +328,7 @@
           "showtimes": [
             "6:30 PM"
           ],
-          "first_seen": "2026-04-13"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "The Pied Piper & The Vanished World of Gloves",
@@ -341,7 +341,7 @@
           "overview": "Using an array of gloves in different styles and from different historical periods, the film is a short history of the cinema - from silent movies via pastiches of Buñuel and Fellini and Close Encounters of the Third Kind to a futurist junkyard where tin cans become animated police cars in a city of urban decay.",
           "year": "1982",
           "rating": 7.2,
-          "first_seen": "2026-04-13"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Mulholland Drive [35mm]",
@@ -354,7 +354,7 @@
           "overview": "Blonde Betty Elms has only just arrived in Hollywood to become a movie star when she meets an enigmatic brunette with amnesia. Meanwhile, as the two set off to solve the second woman's identity, filmmaker Adam Kesher runs into ominous trouble while casting his latest project.",
           "year": "2001",
           "rating": 7.8,
-          "first_seen": "2026-04-13"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Naked Came the Stranger",
@@ -707,6 +707,9 @@
           "showtimes": [
             "7:00 PM"
           ],
+          "also_at": [
+            "MoMA"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/peOymUmbUL3e3x3DJLDNpHbNFNW.jpg",
           "overview": "In summer, Nagisa and Natsuo meet by the sea. Their vacant gazes reflect each other as they exchange awkward words and wade into the rain-drenched ocean. In winter, Li, a screenwriter, travels to a snow-covered village. There, she finds a guesthouse run by Benzo.",
           "year": "2025",
@@ -1024,7 +1027,7 @@
           "overview": "After running into something with her car, Vero experiences a particular psychological state. She realizes she might have killed someone.",
           "year": "2008",
           "rating": 6.2,
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Utamaro and His Five Women",
@@ -1037,7 +1040,7 @@
           "overview": "Utamaro, a great artist, lives to create portraits of beautiful women, and the Tokyo brothels provide his models. A world of passion swirls around him, as the women vie for lovers, and, occasionally, his art gets him into trouble.",
           "year": "1946",
           "rating": 7.1,
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Prismatic Ground Closing Night: Gangsterism",
@@ -1046,7 +1049,7 @@
           "showtimes": [
             "9:00 PM"
           ],
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         }
       ]
     },
@@ -1134,7 +1137,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/5f0AG1eGsRC5aIdUGt8wAkrTSuS.jpg",
           "overview": "Rico’s summer is a mix of chasing girls and hustling homemade cocktails out of a cooler on Orchard Beach, the Bronx. But when Destiny, his teenage girlfriend, crashes at his place with his family, it’s only a matter of time before his carefree days come spiraling down.",
           "year": "2026",
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "NO PICNIC",
@@ -1144,7 +1147,7 @@
           "overview": "A cinematic love letter to a pre-gentrification New York City",
           "year": "1986",
           "rating": 6.6,
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "BERNSTEIN'S WALL",
@@ -1567,7 +1570,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/hZJTQ0EdTqkViV1m7N1jhQwu26L.jpg",
           "overview": "\"The 2026 CCTV Spring Festival Gala\" is a variety show produced and broadcast by China Media Group. It features four sub-venues in Harbin, Heilongjiang; Yiwu, Zhejiang; Hefei, Anhui; and Yibin, Sichuan. The main venue in Beijing is hosted by Ren Luyu, Sa Beining, Nigmat, Long Yang, Ma Fanshu, and Liu Xinyue. The Harbin sub-venue is co-hosted by Yang Fan and Jiang Duo, the Yiwu sub-venue by Guo Ruotian and He Chuan, the Hefei sub-venue by Zhu Xun and Bai Yu, and the Yibin sub-venue by Zhang Tao and Wang Chuhan.",
           "year": "2026",
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "2046 (Wong Kar Wai)",
@@ -1612,6 +1615,9 @@
             "6:00 PM",
             "8:45 PM"
           ],
+          "also_at": [
+            "MoMA"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/9Zu3BU6w3ijDkKUz8kTXqN3Eu6Q.jpg",
           "overview": "In the ever-changing landscape of redeveloping Shibuya, Tokyo, Ren works as a delivery driver for moth orchids. Haunted by the childhood loss of his mother, Yumiko, to suicide, he has long been estranged from his father, Hajime, a landscape designer. One day, during a routine delivery, Ren unexpectedly comes face to face with Hajime…",
           "year": "2025",
@@ -1642,7 +1648,7 @@
           "overview": "Two melancholic Hong Kong policemen fall in love: one with a mysterious underworld figure, the other with a beautiful and ethereal server at a late-night restaurant.",
           "year": "1994",
           "rating": 8.0,
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Cold Metal",
@@ -1669,7 +1675,7 @@
           "overview": "Follows a young cyclo driver on his poverty-driven descent into criminality in modern-day Ho Chi Minh City. The boy's struggles to scratch out a living for his two sisters and grandfather in the mean streets of the city lead to petty crime on behalf of a mysterious Madame from whom he rents his cyclo.",
           "year": "1995",
           "rating": 7.0,
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Donkey Days",
@@ -1679,6 +1685,9 @@
             "6:00 PM",
             "8:45 PM",
             "5:30 PM"
+          ],
+          "also_at": [
+            "MoMA"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/wmVdGnrXyB2YkzPMiyBfzyYh7eX.jpg",
           "overview": "Sisters Anna and Charlotte have always fought for their mother’s attention. As old wounds reopen and suck them back to their family home, they unravel mesmerizing mysteries, including anonymous ashes and their mother’s love for a donkey. Will they come to terms with each other?",
@@ -1723,7 +1732,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/wqvFC6WWp34YhxZxcTSYdg413Ps.jpg",
           "overview": "In the northern Alps, Anne, Hélène and Suzanne take turns looking after a mountain hut. Through the seasons, hikers come and go. Stories bloom and fade, leaving each of them facing the silence of their chosen solitude and the poetry of nature.",
           "year": "2026",
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Graduate First",
@@ -1736,7 +1745,7 @@
           "overview": "A slice of life of a group of young working class friends in a Northern French village coming to the end of their school years and embarking upon adult life. The film follows the choices and decisions made for their futures.",
           "year": "1978",
           "rating": 6.1,
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Happy Together",
@@ -1750,7 +1759,7 @@
           "overview": "A couple travels from Hong Kong to Argentina to revive their relationship but experience turbulence when both men's lives drift in separate directions.",
           "year": "1997",
           "rating": 7.6,
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Hard Boiled",
@@ -1777,7 +1786,7 @@
           "overview": "During China's Warring States period, a district prefect arrives at the palace of Qin Shi Huang, claiming to have killed the three assassins who had made an attempt on the king's life three years ago.",
           "year": "2002",
           "rating": 7.5,
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "If on a Winter's Night",
@@ -1890,7 +1899,7 @@
           "overview": "In 1950s France, Helene and Michel lead a simple life until a freak accident in 2025 leads to Helene becoming a bank executive and Michel struggling with unemployment and depression. Their children grow up in a technology-dominated world.",
           "year": "2025",
           "rating": 6.2,
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "PARTNER",
@@ -1989,7 +1998,7 @@
           "overview": "The Time Machine is purchased from an antiques store by a physician from Berlin. Much of the script plays out in one room in the Berlin villa of Dr. Erasmus Beilowski. He and his well-educated friends have an intelligent discussion about the world and the future, with a view to the Time Machine. What to use it for?",
           "year": "1984",
           "rating": 6.1,
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "ARCANA",
@@ -2028,7 +2037,7 @@
           "overview": "Imprisoned for practicing black magic, writer and adventurer Giacomo Casanova escapes and wanders Europe, using his fluid sexuality to find his place in life amid a variety of eccentric and strange characters.",
           "year": "1976",
           "rating": 6.9,
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "HOME MOVIE: NEW YORK + ANTI STAR TINA AUMONT",
@@ -2037,7 +2046,7 @@
           "showtimes": [
             "6:45 PM"
           ],
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         }
       ]
     },
@@ -2103,7 +2112,260 @@
           "title": "Little Stabs (Avant-Garde Shorts)",
           "link": "https://web.archive.org/web/20260325200153/https://movingimage.org/event/little-stabs-avant-garde-shorts/",
           "date_str": "Apr 25",
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
+        }
+      ]
+    },
+    "MoMA": {
+      "url": "https://www.moma.org/calendar/film",
+      "events": [
+        {
+          "title": "Next Life",
+          "link": "https://www.moma.org/calendar/events/11329",
+          "date_str": "Tue, Apr 14",
+          "showtimes": [
+            "6:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/kpC6R8Kal6bRIPNE8IkiFbSSUQL.jpg",
+          "overview": "Next Life tells the story of a Tibetan family seeking moments of “temporary happiness” while living in exile in suburban America. As their father suffers from a mysterious inner pain, they turn to Buddhist medicine and spiritual teachings on death and rebirth, embracing the Tibetan concept of \"Tse Chema\" (reincarnation).",
+          "year": "2025",
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "Khidki Gaav (If on a Winter’s Night)",
+          "link": "https://www.moma.org/calendar/events/11333",
+          "date_str": "Tue, Apr 14",
+          "showtimes": [
+            "6:00 PM"
+          ],
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "El tren fluvial (The River Train)",
+          "link": "https://www.moma.org/calendar/events/11330",
+          "date_str": "Tue, Apr 14",
+          "showtimes": [
+            "8:15 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/wElH8qOEoF1Fl09DI0CA82AW4oe.jpg",
+          "overview": "Nine-year-old Milo lives in a remote Argentinian village where he studies the Malambo, a folk dance full of bravura. He is an excellent dancer, but Milo’s only desire is to escape the countryside on a train for the Buenos Aires of his dreams.",
+          "year": "2026",
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "Agon",
+          "link": "https://www.moma.org/calendar/events/11323",
+          "date_str": "Tue, Apr 14",
+          "showtimes": [
+            "8:45 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/mNVOf8MONZWaMDNmRvCwKfYpB0w.jpg",
+          "overview": "The story of the preparation for an unspecified Asian Olympic Games by three real athletes, one of whom is the extraordinary Alice Bellandi, a judoka who won gold in Paris and kissed her girlfriend with a bleeding incisor.",
+          "year": "2025",
+          "rating": 7.4,
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "見はらし世代 (Brand New Landscape)",
+          "link": "https://www.moma.org/calendar/events/11332",
+          "date_str": "Wed, Apr 15",
+          "showtimes": [
+            "6:00 PM"
+          ],
+          "also_at": [
+            "Film at Lincoln Center"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/9Zu3BU6w3ijDkKUz8kTXqN3Eu6Q.jpg",
+          "overview": "In the ever-changing landscape of redeveloping Shibuya, Tokyo, Ren works as a delivery driver for moth orchids. Haunted by the childhood loss of his mother, Yumiko, to suicide, he has long been estranged from his father, Hajime, a landscape designer. One day, during a routine delivery, Ren unexpectedly comes face to face with Hajime…",
+          "year": "2025",
+          "rating": 1.0,
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "Frío metal (Cold Metal)",
+          "link": "https://www.moma.org/calendar/events/11335",
+          "date_str": "Wed, Apr 15",
+          "showtimes": [
+            "6:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/hs4fAhciulkzmE9Cdqw2YXxf7pm.jpg",
+          "overview": "Mario wakes up with no memory of his past life. His encounter with Lazare marks the beginning of a spatio-corporeal drift, from the eastern suburbs of Mexico City to the surrounding underground cavities, where bodies and landscapes crack in the same motion.",
+          "year": "2025",
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "Memory",
+          "link": "https://www.moma.org/calendar/events/11334",
+          "date_str": "Thu, Apr 16",
+          "showtimes": [
+            "6:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/4Q1n3TwieoULnuaztu9aFjqHDTI.jpg",
+          "overview": "Alex, an assassin-for-hire, finds that he's become a target after he refuses to complete a job for a dangerous criminal organization. With the crime syndicate and FBI in hot pursuit, Alex has the skills to stay ahead, except for one thing: he is struggling with severe memory loss, affecting his every move. Alex must question his every action and whom he can ultimately trust.",
+          "year": "2022",
+          "rating": 6.7,
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "Forêt Ivre (Forest High)",
+          "link": "https://www.moma.org/calendar/events/11337",
+          "date_str": "Thu, Apr 16",
+          "showtimes": [
+            "6:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/wqvFC6WWp34YhxZxcTSYdg413Ps.jpg",
+          "overview": "In the northern Alps, Anne, Hélène and Suzanne take turns looking after a mountain hut. Through the seasons, hikers come and go. Stories bloom and fade, leaving each of them facing the silence of their chosen solitude and the poetry of nature.",
+          "year": "2026",
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "Kika",
+          "link": "https://www.moma.org/calendar/events/11336",
+          "date_str": "Fri, Apr 17",
+          "showtimes": [
+            "6:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/jUEBKaMqcvrz0HHF8Cei8asjRWr.jpg",
+          "overview": "When American author Nicholas brings in a cosmetologist named Kika to prepare the corpse of his recently deceased son, she inadvertently revives the young man, then falls in love with him. Forces conspire against the couple, though, as Nicholas wants Kika for himself.",
+          "year": "1993",
+          "rating": 6.4,
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "旅と日々 (Two Seasons, Two Strangers)",
+          "link": "https://www.moma.org/calendar/events/11341",
+          "date_str": "Fri, Apr 17",
+          "showtimes": [
+            "8:45 PM"
+          ],
+          "also_at": [
+            "Metrograph"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/peOymUmbUL3e3x3DJLDNpHbNFNW.jpg",
+          "overview": "In summer, Nagisa and Natsuo meet by the sea. Their vacant gazes reflect each other as they exchange awkward words and wade into the rain-drenched ocean. In winter, Li, a screenwriter, travels to a snow-covered village. There, she finds a guesthouse run by Benzo.",
+          "year": "2025",
+          "rating": 7.7,
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "Shorts Program 2",
+          "link": "https://www.moma.org/calendar/events/11338",
+          "date_str": "Sat, Apr 18",
+          "showtimes": [
+            "3:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/wl64dmxRYrXg95BCkXPx6bJgVIt.jpg",
+          "overview": "Short Films featured at the 2017 Vancouver Latin American Film Festival.  TAILOR (Calí dos Anjos | Brazil) - GUAMÚCHIL SEEDS (Carolina Corral Paredes | Mexico) - TIMELESS (Raúl Zendejas Escandón | Mexico) - GRIEF (Cecilia Cartasegna | Argentina) - MISSING (Carlos Trujano | Mexico) - MOTHER (Simón Mesa Soto | Colombia) - THE FUTURE IS IRREVOCABLE (Silvina Estévez | Argentina) - ROSINHA (Gui Campos | Brazil)",
+          "year": "2015",
+          "rating": 9.5,
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "东山飘雨西山晴 (Two Mountains Weighing Down My Chest)",
+          "link": "https://www.moma.org/calendar/events/11339",
+          "date_str": "Sat, Apr 18",
+          "showtimes": [
+            "5:45 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/3EkZxnl7nVcrN0vg9Su42rQZnlw.jpg",
+          "overview": "A Chinese misfit ricochets between Berlin’s alternative frenzy and Beijing’s family order, transforming cultural whiplash into an offbeat search for identity and a playful quest for belonging.",
+          "year": "2026",
+          "rating": 10.0,
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "Donkey Days",
+          "link": "https://www.moma.org/calendar/events/11342",
+          "date_str": "Sat, Apr 18",
+          "showtimes": [
+            "6:00 PM",
+            "8:45 PM"
+          ],
+          "also_at": [
+            "Film at Lincoln Center"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/wmVdGnrXyB2YkzPMiyBfzyYh7eX.jpg",
+          "overview": "Sisters Anna and Charlotte have always fought for their mother’s attention. As old wounds reopen and suck them back to their family home, they unravel mesmerizing mysteries, including anonymous ashes and their mother’s love for a donkey. Will they come to terms with each other?",
+          "year": "2026",
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "Variasies op 'n Tema (Variations on a Theme)",
+          "link": "https://www.moma.org/calendar/events/11340",
+          "date_str": "Sat, Apr 18",
+          "showtimes": [
+            "8:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/cNbpR6hE1rIeb13xCFmv75PVaAx.jpg",
+          "overview": "An elderly goat herder falls victim to a scam promising long-awaited reparations for her father's WWII service. Structured as a series of recurring visual 'variations', Variations on a Theme is a portrait of endurance and loss.",
+          "year": "2026",
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "Aggie",
+          "link": "https://www.moma.org/calendar/events/11396",
+          "date_str": "Tue, Apr 21",
+          "showtimes": [
+            "6:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/2hsHEOdZowswn8Sd2AIdM342e8s.jpg",
+          "overview": "An exploration of the nexus of art, race, and justice through the story of art collector and philanthropist Agnes Gund who sold Roy Lichtenstein’s painting “Masterpiece” in 2017 for $165 million to start the Art for Justice Fund to end mass incarceration.",
+          "year": "2020",
+          "rating": 1.0,
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "Thanks for Le Temps Perdu: Hujar, Thek, Warhol",
+          "link": "https://www.moma.org/calendar/events/11371",
+          "date_str": "Tue, Apr 21",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "Galaxie",
+          "link": "https://www.moma.org/calendar/events/11372",
+          "date_str": "Wed, Apr 22",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/khtbfxCxDbrbF3XGOSMwA8IIpPL.jpg",
+          "overview": "Eun-soo and Eun-ha, a couple, left of the popular music production company to shout their individuality and form a Milky Way band with Dong-eun. Meanwhile, Dong-eun, who was investing to earn living expenses, even invested the band's money, but failed.The rest of the members, angry at Dong-eun who disappeared, sell the guitar that means a lot to Dong-eun... Dong-eun returns and goes on a journey to find a guitar.",
+          "year": "2024",
+          "rating": 5.5,
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "Salters Cottages and Peter Hujar: An Evening with Gary Schneider and Andrew Durbin",
+          "link": "https://www.moma.org/calendar/events/11373",
+          "date_str": "Thu, Apr 23",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "Patron Week: Member Screening: Butch Cassidy and the Sundance Kid",
+          "link": "https://www.moma.org/calendar/events/11306",
+          "date_str": "Fri, Apr 24",
+          "showtimes": [
+            "8:30 PM"
+          ],
+          "first_seen": "2026-04-14"
+        },
+        {
+          "title": "Duet for Cannibals",
+          "link": "https://www.moma.org/calendar/events/11374",
+          "date_str": "Fri, Apr 24",
+          "showtimes": [
+            "6:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/dQrLb8UqLnhkycYeMrBEP8cjZ3P.jpg",
+          "overview": "Arthur, a university professor, and former political activist, lives in France with Francesca. They decide to hire a young man in order to help the teacher organize his notes. The employee leaves his girlfriend Ingrid and moves in with the couple.",
+          "year": "1969",
+          "rating": 6.6,
+          "first_seen": "2026-04-14"
         }
       ]
     },
@@ -2134,7 +2396,7 @@
           "overview": "The friends who attended the same boarding school meet and take turns telling their recent romantic experiences. These turn out to be as varied as they are crisp, from the initiation of a student by a teacher to the misunderstanding in the company of a lord, through the false English but true seducer, the swimmer obsessed with his physical condition and, obviously, love in a group (Le Chat Qui Fume).",
           "year": "1974",
           "rating": 4.3,
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Queen Kelly",
@@ -2186,7 +2448,7 @@
           "overview": "When some very creepy things start happening around school, the kids at Herrington High make the chilling discovery that confirms their worst suspicions: their teachers really are from another planet!",
           "year": "1998",
           "rating": 6.6,
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Blue Velvet",
@@ -2340,7 +2602,7 @@
           "overview": "Agerna is a planet rich in Vizorium, the one mineral necessary to space travel. When a series of mysterious attacks on mining operations has world leaders pointing fingers and pinning blame, 3WA naturally send in their top agents to investigate. But are the Lovely Angels up to the task of stopping a mad scientist bent on taking a long dormant alien race to its final evolutionary form? Throw in a thief after a bottle of WWII-vintage wine and it's a safe bet that nobody's safe. It's more chaos, more mayhem, and even more destruction than ever before as the Dirty Pair take on their wildest case yet!",
           "year": "1986",
           "rating": 7.0,
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Rush Hour",
@@ -2387,7 +2649,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/c7owrzDJFPpDgfMckFmpra71wEB.jpg",
           "overview": "Burned-out video game designer Liz joins a society of traumatized adults that meet in secret and play like they are little kids. Led by the alluring Sylvester Cromwell, each member has a dark past, a deep-rooted shame that drew them to the group, and when they feel it is their time, they share their secret and accept Sylvester's promise of healing through play.",
           "year": "2024",
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "The Rookie (1990)",
@@ -2474,7 +2736,7 @@
           "overview": "Jeffrey 'The Dude' Lebowski, a Los Angeles slacker who only wants to bowl and drink White Russians, is mistaken for another Jeffrey Lebowski, a wheelchair-bound millionaire, and finds himself dragged into a strange series of events involving nihilists, adult film producers, ferrets, errant toes, and large sums of money.",
           "year": "1998",
           "rating": 7.8,
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Jimmy & The Demons",
@@ -2536,19 +2798,19 @@
           "title": "STRUCTURE. WAVE. YOUTH. CINEMA: THE LOST CHAPTER OF CHINA’S NEW DOCUMENTARY MOVEMENT",
           "link": "https://www.spectacletheater.com/structure-wave-youth-cinema/",
           "date_str": "Apr 24 10 PM",
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "SCULPTING FRAGMENTS: THREE FILMS",
           "link": "https://www.spectacletheater.com/sculpting-fragments-three-films/",
           "date_str": "Apr 21 10 PM",
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "NEW YORK ON THE VERGE: FOUR FILMS BY MICHAEL AND CHRISTIAN BLACKWOOD",
           "link": "https://www.spectacletheater.com/new-york-on-the-verge-four-films-by-michael-and-christian-blackwood/",
           "date_str": "Apr 29",
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "MASTERS OF INDONESIAN EXPLOITATION: H. TJUT DJALIL",
@@ -2563,7 +2825,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/q8YNdWmEGP6kwNVADATDV2ll9yA.jpg",
           "overview": "Between pandemics, people’s revolts and male institutions, this period film cheekily combines fantastic psychedelia and handmade sets. Inspired by the life story of Julian of Norwich, a 14th-century mystic and the first woman to write a book in English.",
           "year": "2025",
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         }
       ]
     },
@@ -2695,7 +2957,7 @@
           "overview": "The host of a popular paranormal podcast becomes haunted by terrifying recordings mysteriously sent her way.",
           "year": "2026",
           "rating": 6.3,
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Bring It On",
@@ -3022,7 +3284,7 @@
           "title": "Robert Wilson and the Moving Image",
           "link": "https://www.bam.org/film/2026/robert-wilson",
           "date_str": "Apr 17",
-          "first_seen": "2026-04-12"
+          "first_seen": "2026-04-14"
         },
         {
           "title": "Robert Wilson and the Civil Wars",
