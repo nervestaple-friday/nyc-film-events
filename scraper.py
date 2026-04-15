@@ -1977,6 +1977,17 @@ _TMDB_OVERRIDES = {
     'The Silence': 490,            # Bergman 1963 (not 2019 horror)
     'The Hand': 100592,            # Trnka 1965 (not The Handmaiden 2016)
     'Alice': 18917,                # Švankmajer 1988 (not Woody Allen 1990)
+    'Fiume o morte!': 1403843,     # Bezinović 2025 (not 1954 River and Death)
+    'The Image': 67018,            # Metzger 1975 (not 1969 short)
+    'Maraschino Cherry': 382733,   # Metzger 1978 (not 2023 Maraschino Cherries)
+    'END OF HISTORY': 1384914,     # Gregor 2025 (not 2014 Norte, Lav Diaz)
+    'The Ecstasy Girls': 98882,    # Graver 1979 (not 1974 Young Girls in Ecstasy)
+    'Memory': 838301,              # Sandu 2026 (not 2022 Liam Neeson action film)
+    'CYCLE TIME': None,            # Anthology shorts program
+    'RETURNING TIME': None,        # Anthology shorts program
+    'JAZZ TIME': None,             # Anthology shorts program
+    '2026 Gala': None,             # FLC gala event (not CCTV Spring Festival)
+    'Shorts Program 2': None,      # MoMA program (not Vancouver fest)
 }
 
 
