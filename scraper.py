@@ -1988,6 +1988,8 @@ _TMDB_OVERRIDES = {
     'JAZZ TIME': None,             # Anthology shorts program
     '2026 Gala': None,             # FLC gala event (not CCTV Spring Festival)
     'Shorts Program 2': None,      # MoMA program (not Vancouver fest)
+    'Apex': None,                  # Not the 2021 Bruce Willis action film
+    "There\u2019s No Reward": None,     # Not the 1956 Japanese crime film
 }
 
 
@@ -2132,7 +2134,7 @@ def enrich_with_tmdb(events_by_venue):
             # If this title has an override, verify the cache used the correct ID
             if title in _TMDB_OVERRIDES:
                 expected_id = _TMDB_OVERRIDES[title]
-                if cache[title].get('tmdb_id') != expected_id:
+                if 'tmdb_id' not in cache[title] or cache[title]['tmdb_id'] != expected_id:
                     del cache[title]  # Invalidate stale/wrong cache entry
                 else:
                     continue
