@@ -1896,6 +1896,7 @@ def scrape_bam():
 # ── TMDB enrichment ────────────────────────────────────────────────────────
 
 TMDB_CACHE_FILE = os.path.join(WORKSPACE, 'memory', 'tmdb-cache.json')
+MIN_TMDB_VOTES = 10  # Ignore ratings from films with fewer votes (unreliable extremes)
 
 def _clean_title_for_tmdb(title):
     """Strip director prefixes, 'by' suffixes, years, and formatting for better TMDB matching."""
@@ -2201,11 +2202,12 @@ def enrich_with_tmdb(events_by_venue):
                 poster_path = hit.get('poster_path') or ''
                 release_date = hit.get('release_date') or hit.get('first_air_date', '')
                 raw_rating = hit.get('vote_average', 0)
+                vote_count = hit.get('vote_count', 0)
                 cache[title] = {
                     'poster': f'https://image.tmdb.org/t/p/w300{poster_path}' if poster_path else '',
                     'overview': hit.get('overview', ''),
                     'year': release_date[:4] if len(release_date) >= 4 else '',
-                    'rating': round(raw_rating, 1) if raw_rating else 0,
+                    'rating': round(raw_rating, 1) if raw_rating and vote_count >= MIN_TMDB_VOTES else 0,
                     'cached_at': now_iso,
                     'tmdb_id': tmdb_id,
                 }
@@ -2251,11 +2253,12 @@ def enrich_with_tmdb(events_by_venue):
                 # TV uses first_air_date, movies use release_date
                 release_date = hit.get('release_date', '') or hit.get('first_air_date', '')
                 raw_rating = hit.get('vote_average', 0)
+                vote_count = hit.get('vote_count', 0)
                 cache[title] = {
                     'poster': f'https://image.tmdb.org/t/p/w300{poster_path}' if poster_path else '',
                     'overview': hit.get('overview', ''),
                     'year': release_date[:4] if len(release_date) >= 4 else '',
-                    'rating': round(raw_rating, 1) if raw_rating else 0,
+                    'rating': round(raw_rating, 1) if raw_rating and vote_count >= MIN_TMDB_VOTES else 0,
                     'cached_at': now_iso,
                 }
             else:
