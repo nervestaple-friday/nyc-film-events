@@ -1081,9 +1081,12 @@ def scrape_flc():
 def scrape_momi():
     """Museum of the Moving Image — cascading fetch strategy.
     movingimage.org is behind Cloudflare and blocks direct requests, so we try:
-    1. apitap read (readability extraction)
-    2. Google web cache
-    3. Wayback Machine
+    1. curl_cffi with Chrome TLS fingerprint impersonation
+    2. FlareSolverr headless browser
+    3. apitap read (readability extraction)
+    4. Wayback Machine (recent snapshots only, <7 days old)
+    5. Google web cache
+    6. Google search results scrape
     """
     import subprocess as _sp
 
@@ -1262,7 +1265,29 @@ def scrape_momi():
             print(f"  [MoMI] apitap markdown: found {len(found)} events", file=sys.stderr)
         return found
 
-    # --- Strategy 1: apitap read ---
+    # --- Strategy 1: curl_cffi with Chrome TLS fingerprint ---
+    try:
+        r = fetch_cffi(MOMI_URL, timeout=30)
+        if r and len(r.text) > 500:
+            events = _parse_html(r.text, 'curl_cffi')
+            if events:
+                return events[:20]
+        print(f"  [MoMI] curl_cffi: no events parsed", file=sys.stderr)
+    except Exception as ex:
+        print(f"  [MoMI/curl_cffi] {ex}", file=sys.stderr)
+
+    # --- Strategy 2: FlareSolverr headless browser ---
+    try:
+        r = fetch_cf(MOMI_URL, timeout=40)
+        if r and len(r.text) > 500:
+            events = _parse_html(r.text, 'FlareSolverr')
+            if events:
+                return events[:20]
+        print(f"  [MoMI] FlareSolverr: no events parsed", file=sys.stderr)
+    except Exception as ex:
+        print(f"  [MoMI/FlareSolverr] {ex}", file=sys.stderr)
+
+    # --- Strategy 3: apitap read ---
     try:
         result = _sp.run(
             ['apitap', 'read', MOMI_URL],
@@ -1281,7 +1306,32 @@ def scrape_momi():
     except Exception as ex:
         print(f"  [MoMI/apitap] {ex}", file=sys.stderr)
 
-    # --- Strategy 2: Google web cache ---
+    # --- Strategy 4: Wayback Machine (recent snapshots only) ---
+    try:
+        # Use today's date to fetch the nearest recent snapshot
+        today_ts = datetime.now().strftime('%Y%m%d')
+        wb_url = f'https://web.archive.org/web/{today_ts}/{MOMI_URL}'
+        r = requests.get(wb_url, headers=HEADERS, timeout=25, allow_redirects=True)
+        if r.status_code == 200 and len(r.text) > 500:
+            # Check snapshot age from the redirect URL (format: /web/YYYYMMDDhhmmss/)
+            snap_match = re.search(r'/web/(\d{14})/', r.url)
+            snap_age_days = None
+            if snap_match:
+                snap_dt = datetime.strptime(snap_match.group(1), '%Y%m%d%H%M%S')
+                snap_age_days = (datetime.now() - snap_dt).days
+                print(f"  [MoMI] Wayback snapshot age: {snap_age_days} days", file=sys.stderr)
+            # Only use if snapshot is less than 7 days old
+            if snap_age_days is not None and snap_age_days > 7:
+                print(f"  [MoMI] Wayback snapshot too old ({snap_age_days}d), skipping", file=sys.stderr)
+            else:
+                events = _parse_html(r.text, 'Wayback Machine')
+                if events:
+                    return events[:20]
+        print(f"  [MoMI] Wayback Machine: status {r.status_code}", file=sys.stderr)
+    except Exception as ex:
+        print(f"  [MoMI/Wayback] {ex}", file=sys.stderr)
+
+    # --- Strategy 5: Google web cache ---
     try:
         cache_url = f'https://webcache.googleusercontent.com/search?q=cache:movingimage.org/whats-on/screenings-and-series/'
         r = requests.get(cache_url, headers=HEADERS, timeout=20)
@@ -1293,19 +1343,7 @@ def scrape_momi():
     except Exception as ex:
         print(f"  [MoMI/Google cache] {ex}", file=sys.stderr)
 
-    # --- Strategy 3: Wayback Machine ---
-    try:
-        wb_url = f'https://web.archive.org/web/2026/{MOMI_URL}'
-        r = requests.get(wb_url, headers=HEADERS, timeout=25, allow_redirects=True)
-        if r.status_code == 200 and len(r.text) > 500:
-            events = _parse_html(r.text, 'Wayback Machine')
-            if events:
-                return events[:20]
-        print(f"  [MoMI] Wayback Machine: status {r.status_code}", file=sys.stderr)
-    except Exception as ex:
-        print(f"  [MoMI/Wayback] {ex}", file=sys.stderr)
-
-    # --- Strategy 4: Google search results scrape ---
+    # --- Strategy 6: Google search results scrape ---
     try:
         search_url = 'https://www.google.com/search'
         params = {'q': 'site:movingimage.org screenings 2026', 'num': '20'}
