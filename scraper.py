@@ -78,8 +78,8 @@ def save_state(state):
     with open(STATE_FILE, 'w') as f:
         json.dump(state, f, indent=2)
 
-def event_id(venue, title, date_str=''):
-    raw = f"{venue}:{title}:{date_str}".lower()
+def event_id(venue, title):
+    raw = f"{venue}:{title}".lower()
     return hashlib.md5(raw.encode()).hexdigest()[:12]
 
 def clean_title(title):
@@ -2464,7 +2464,7 @@ def main():
     filtered  = filter_by_date(all_events)
     new_events, new_ids = [], []
     for e in filtered:
-        eid = event_id(e['venue'], e['title'], e.get('date_str', ''))
+        eid = event_id(e['venue'], e['title'])
         if eid not in seen_ids:
             new_events.append(e)
             new_ids.append(eid)
@@ -2548,7 +2548,7 @@ def main():
     seen_dict = state.get('seen', {})
     for venue, evts in events_by_venue.items():
         for e in evts:
-            eid = event_id(e['venue'], e['title'], e.get('date_str', ''))
+            eid = event_id(e['venue'], e['title'])
             e['first_seen'] = seen_dict.get(eid, today)
 
     if PUSH:
