@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-22T11:09:36.601947+00:00",
+  "updated": "2026-04-22T17:03:23.446060+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -1358,9 +1358,7 @@
           "showtimes": [
             "12:35 PM",
             "9:25 PM",
-            "9:20 PM",
-            "9:50 PM",
-            "9:40 PM"
+            "9:20 PM"
           ],
           "also_at": [
             "Nitehawk (Williamsburg)"
@@ -1438,8 +1436,8 @@
             "5:30 PM",
             "10:00 PM",
             "5:05 PM",
-            "9:55 PM",
-            "5:35 PM"
+            "5:35 PM",
+            "9:55 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/cbi0Zk6al2CbmN87MmaPU6v58jF.jpg",
           "overview": "1859. When a young Māori woman is summoned from New Zealand to North Yorkshire, she uncovers her horrific colonial heritage and is compelled to confront and destroy the titled Englishman who devastated her family.",
@@ -1504,6 +1502,7 @@
             "5:15 PM",
             "9:45 PM",
             "5:30 PM",
+            "9:55 PM",
             "2:55 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/s1SNVyTWWmvpWK439bOrRF9xywS.jpg",
@@ -1531,7 +1530,9 @@
           "date_str": "Apr 24",
           "showtimes": [
             "10:50 AM",
-            "12:45 PM"
+            "12:45 PM",
+            "9:45 PM",
+            "9:30 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/7qBfQ2x3FnbB7uRaHQOBjfWFBpc.jpg",
           "overview": "Werner Herzog gains exclusive access to film inside the Chauvet caves of Southern France, capturing the oldest known pictorial creations of humankind in their astonishing natural setting.",
@@ -3156,16 +3157,6 @@
           "first_seen": "2026-04-22"
         },
         {
-          "title": "Deliverance",
-          "link": "https://www.paristheaternyc.com/film/deliverance-apex",
-          "date_str": "Apr 25",
-          "poster": "https://image.tmdb.org/t/p/w300/2TrAzNJlHyNYYSkQf6asg3rs2Xr.jpg",
-          "overview": "Intent on seeing the Cahulawassee River before it's turned into one huge lake, outdoor fanatic Lewis Medlock takes his friends on a river-rafting trip they'll never forget into the dangerous American back-country.",
-          "year": "1972",
-          "rating": 7.3,
-          "first_seen": "2026-04-22"
-        },
-        {
           "title": "Eternal Sunshine of the Spotless Mind",
           "link": "https://www.paristheaternyc.com/film/eternal-sunshine-of-the-spotless-mind-branch-selects",
           "date_str": "Apr 25",
@@ -3173,6 +3164,16 @@
           "overview": "Joel Barish, heartbroken that his girlfriend underwent a procedure to erase him from her memory, decides to do the same. However, as he watches his memories of her fade away, he realises that he still loves her, and may be too late to correct his mistake.",
           "year": "2004",
           "rating": 8.1,
+          "first_seen": "2026-04-22"
+        },
+        {
+          "title": "Deliverance",
+          "link": "https://www.paristheaternyc.com/film/deliverance-apex",
+          "date_str": "Apr 25",
+          "poster": "https://image.tmdb.org/t/p/w300/2TrAzNJlHyNYYSkQf6asg3rs2Xr.jpg",
+          "overview": "Intent on seeing the Cahulawassee River before it's turned into one huge lake, outdoor fanatic Lewis Medlock takes his friends on a river-rafting trip they'll never forget into the dangerous American back-country.",
+          "year": "1972",
+          "rating": 7.3,
           "first_seen": "2026-04-22"
         },
         {
@@ -3206,6 +3207,46 @@
           "first_seen": "2026-04-22"
         },
         {
+          "title": "Kes",
+          "link": "https://www.paristheaternyc.com/film/kes-remarkably-bright-creatures",
+          "date_str": "May 01",
+          "poster": "https://image.tmdb.org/t/p/w300/r1FMq75irhsQBVGjXhPU4xA9SDo.jpg",
+          "overview": "Bullied at school and ignored and abused at home by his indifferent mother and older brother, Billy Casper, a 15-year-old working-class Yorkshire boy, tames and trains his pet kestrel falcon whom he names Kes. Helped and encouraged by his English teacher and his fellow students, Billy finally finds a positive purpose to his unhappy existence.",
+          "year": "1970",
+          "rating": 7.4,
+          "first_seen": "2026-04-22"
+        },
+        {
+          "title": "Harry and Tonto",
+          "link": "https://www.paristheaternyc.com/film/harry-and-tonto-remarkably-bright-creatures",
+          "date_str": "May 01",
+          "poster": "https://image.tmdb.org/t/p/w300/2JIy2g5UoHBnmNnFpSU7oq5xdTG.jpg",
+          "overview": "Harry is a retired teacher in his 70s who has lived in the Upper West Side of New York City all his life. When his building is torn down to make way for a parking garage, Harry and his beloved cat Tonto begin a journey across the United States — visiting his children, seeing a world he never seemed to have the time to see before, making new friends, and saying goodbye to old friends.",
+          "year": "1974",
+          "rating": 7.1,
+          "first_seen": "2026-04-22"
+        },
+        {
+          "title": "Gorillas in the Mist",
+          "link": "https://www.paristheaternyc.com/film/gorillas-in-the-mist-remarkably-bright-creatures",
+          "date_str": "May 01",
+          "poster": "https://image.tmdb.org/t/p/w300/utptKpx6cXxmbEGu4N4HIoSZ6IS.jpg",
+          "overview": "The story of Dian Fossey, a scientist who came to Africa to study the vanishing mountain gorillas, and later fought to protect them.",
+          "year": "1988",
+          "rating": 7.0,
+          "first_seen": "2026-04-22"
+        },
+        {
+          "title": "The Rider",
+          "link": "https://www.paristheaternyc.com/film/the-rider-remarkably-bright-creatures",
+          "date_str": "May 02",
+          "poster": "https://image.tmdb.org/t/p/w300/cFsrA0Is5xode2INrPj1VJcQ18n.jpg",
+          "overview": "Once a rising star of the rodeo circuit, and a gifted horse trainer, young cowboy Brady is warned that his riding days are over after a horse crushed his skull at a rodeo. In an attempt to regain control of his own fate, Brady undertakes a search for a new identity and what it means to be a man in the heartland of the United States.",
+          "year": "2018",
+          "rating": 7.3,
+          "first_seen": "2026-04-22"
+        },
+        {
           "title": "Swapped",
           "link": "https://www.paristheaternyc.com/film/swapped-paris",
           "date_str": "May 02",
@@ -3216,13 +3257,13 @@
           "first_seen": "2026-04-22"
         },
         {
-          "title": "Nine to Five",
-          "link": "https://www.paristheaternyc.com/film/nine-to-five-branch-selects",
-          "date_str": "May 03",
-          "poster": "https://image.tmdb.org/t/p/w300/3nm6kWMFzxGtJb4UEuDB0lDWpcD.jpg",
-          "overview": "Three female employees of a sexist, egotistical, lying, hypocritical bigot find a way to turn the tables on him.",
-          "year": "1980",
-          "rating": 6.9,
+          "title": "The Black Stallion",
+          "link": "https://www.paristheaternyc.com/film/the-black-stallion-remarkably-bright-creatures",
+          "date_str": "May 02",
+          "poster": "https://image.tmdb.org/t/p/w300/uZtNc31LR5Ik3ZVo2jxwOvhkNRC.jpg",
+          "overview": "While traveling with his father, young Alec becomes fascinated by a mysterious Arabian stallion that is brought on board and stabled in the ship he is sailing on. When it tragically sinks both he and the horse survive only to be stranded on a deserted island. He befriends it, so when finally rescued both return to his home where they soon meet Henry Dailey, a once successful trainer. Together they begin training the horse to race against the fastest ones in the world.",
+          "year": "1979",
+          "rating": 7.0,
           "first_seen": "2026-04-22"
         },
         {
@@ -3236,6 +3277,26 @@
           "overview": "During summer vacation in a beachside town, 16-year-old Deniz seeks the affection of his childhood crush and navigates a love triangle.",
           "year": "2021",
           "rating": 5.9,
+          "first_seen": "2026-04-22"
+        },
+        {
+          "title": "War Horse",
+          "link": "https://www.paristheaternyc.com/film/war-horse-remarkably-bright-creatures",
+          "date_str": "May 03",
+          "poster": "https://image.tmdb.org/t/p/w300/3aRHhvvngFPJFy5uAjo7GVr3PhL.jpg",
+          "overview": "On the brink of the First World War, Albert's beloved horse Joey is sold to the Cavalry by his father. Against the backdrop of the Great War, Joey begins an odyssey full of danger, joy, and sorrow, and he transforms everyone he meets along the way. Meanwhile, Albert, unable to forget his equine friend, searches the battlefields of France to find Joey and bring him home.",
+          "year": "2011",
+          "rating": 7.3,
+          "first_seen": "2026-04-22"
+        },
+        {
+          "title": "Nine to Five",
+          "link": "https://www.paristheaternyc.com/film/nine-to-five-branch-selects",
+          "date_str": "May 03",
+          "poster": "https://image.tmdb.org/t/p/w300/3nm6kWMFzxGtJb4UEuDB0lDWpcD.jpg",
+          "overview": "Three female employees of a sexist, egotistical, lying, hypocritical bigot find a way to turn the tables on him.",
+          "year": "1980",
+          "rating": 6.9,
           "first_seen": "2026-04-22"
         },
         {
@@ -3255,45 +3316,6 @@
             "7:00 PM"
           ],
           "first_seen": "2026-04-22"
-        },
-        {
-          "title": "Ghost",
-          "link": "https://www.paristheaternyc.com/film/ghost-branch-selects",
-          "date_str": "May 09",
-          "poster": "https://image.tmdb.org/t/p/w300/w9RaPHov8oM5cnzeE27isnFMsvS.jpg",
-          "overview": "After a young man is murdered, his spirit stays behind to warn his lover of impending danger, with the help of a reluctant psychic.",
-          "year": "1990",
-          "rating": 7.2,
-          "first_seen": "2026-04-22"
-        },
-        {
-          "title": "The Not Inappropriate Show with Bob Odenkirk",
-          "link": "https://www.paristheaternyc.com/film/the-not-inappropriate-show-netflix-is-a-joke",
-          "date_str": "May 09",
-          "showtimes": [
-            "1:00 PM"
-          ],
-          "first_seen": "2026-04-22"
-        },
-        {
-          "title": "Gaslight",
-          "link": "https://www.paristheaternyc.com/film/gaslight-branch-selects",
-          "date_str": "May 10",
-          "poster": "https://image.tmdb.org/t/p/w300/gXKszCl5Q1KrgWRWpPcqn94CP58.jpg",
-          "overview": "A newlywed fears she's going mad when strange things start happening at the family mansion.",
-          "year": "1944",
-          "rating": 7.5,
-          "first_seen": "2026-04-22"
-        },
-        {
-          "title": "Fruitvale Station",
-          "link": "https://www.paristheaternyc.com/film/fruitvale-station-branch-selects",
-          "date_str": "May 11",
-          "poster": "https://image.tmdb.org/t/p/w300/oXSy3nEKFtfw5iRxdG8ouEFAnxs.jpg",
-          "overview": "Oakland, California. Young Afro-American Oscar Grant crosses paths with family members, friends, enemies and strangers before facing his fate on the platform at Fruitvale Station, in the early morning hours of New Year's Day 2009.",
-          "year": "2013",
-          "rating": 7.4,
-          "first_seen": "2026-04-22"
         }
       ]
     },
@@ -3305,7 +3327,6 @@
           "link": "https://www.bam.org/film/2026/sirat",
           "date_str": "Apr 22",
           "showtimes": [
-            "4:00 PM",
             "9:00 PM"
           ],
           "also_at": [
@@ -3335,8 +3356,8 @@
           "link": "https://www.bam.org/film/2026/project-hail-mary",
           "date_str": "Apr 22",
           "showtimes": [
-            "4:00 PM",
             "7:15 PM",
+            "4:00 PM",
             "1:30 PM",
             "4:40 PM",
             "7:50 PM",
@@ -3353,9 +3374,9 @@
           "link": "https://www.bam.org/film/2026/the-drama",
           "date_str": "Apr 22",
           "showtimes": [
-            "4:20 PM",
             "6:50 PM",
             "9:30 PM",
+            "4:20 PM",
             "1:50 PM",
             "7:00 PM"
           ],
@@ -3373,7 +3394,6 @@
           "link": "https://www.bam.org/film/2026/exit-8",
           "date_str": "Apr 22",
           "showtimes": [
-            "4:20 PM",
             "6:40 PM",
             "9:10 PM"
           ],
@@ -3388,8 +3408,8 @@
           "link": "https://www.bam.org/film/2026/robert-wilson-and-the-civil-wars",
           "date_str": "Apr 22",
           "showtimes": [
-            "4:30 PM",
             "9:15 PM",
+            "4:30 PM",
             "7:00 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/8BDN6ZDAJDUkKgO88ib33cKLaQx.jpg",
@@ -3402,9 +3422,9 @@
           "link": "https://www.bam.org/film/2026/the-christophers",
           "date_str": "Apr 22",
           "showtimes": [
-            "4:40 PM",
             "7:00 PM",
             "9:20 PM",
+            "4:40 PM",
             "2:00 PM",
             "4:30 PM",
             "6:45 PM",
