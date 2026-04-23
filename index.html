@@ -360,6 +360,20 @@
         return () => window.removeEventListener('scroll', onScroll);
       }, []);
 
+      useEffect(() => {
+        const onKeyDown = (e) => {
+          if (e.key === '/' && !e.ctrlKey && !e.metaKey && !e.altKey) {
+            const tag = document.activeElement?.tagName;
+            if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+            if (document.activeElement?.isContentEditable) return;
+            e.preventDefault();
+            searchRef.current?.focus();
+          }
+        };
+        document.addEventListener('keydown', onKeyDown);
+        return () => document.removeEventListener('keydown', onKeyDown);
+      }, []);
+
       const allVenues = data?.venues ? Object.entries(data.venues) : [];
       const venueNames = allVenues.map(([n]) => n);
       const effective = venueNames.includes(activeVenue) ? activeVenue : ALL;
