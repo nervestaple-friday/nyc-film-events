@@ -587,14 +587,16 @@ def scrape_film_forum():
                 href_dates[parent_a['href']] = 'Now Playing'
 
     seen_titles = set()
+    seen_links = set()
     for a in soup.find_all('a', href=True):
         href = a.get('href', '')
         if '/film/' in href or '/films/' in href:
             title = a.get_text(separator=' ', strip=True)
             title = clean_title_for_display(title)
-            if title and 3 < len(title) < 100 and title not in seen_titles:
+            link = f"https://filmforum.org{href}" if href.startswith('/') else href
+            if title and 3 < len(title) < 100 and title not in seen_titles and link not in seen_links:
                 seen_titles.add(title)
-                link = f"https://filmforum.org{href}" if href.startswith('/') else href
+                seen_links.add(link)
                 date = None
                 date_str = ''
                 # Try img alt date first
@@ -2514,14 +2516,18 @@ def main():
     if purged:
         print(f"\n[Purged {purged} stale past events]", file=sys.stderr)
 
-    # Per-venue title deduplication
+    # Per-venue title and link deduplication
     for venue in events_by_venue:
-        seen = set()
+        seen_titles = set()
+        seen_links = set()
         deduped = []
         for e in events_by_venue[venue]:
             norm_title = re.sub(r'[^a-z0-9 ]', '', e['title'].lower()).strip()
-            if norm_title not in seen:
-                seen.add(norm_title)
+            link = e.get('link', '')
+            if norm_title not in seen_titles and (not link or link not in seen_links):
+                seen_titles.add(norm_title)
+                if link:
+                    seen_links.add(link)
                 deduped.append(e)
         events_by_venue[venue] = deduped
 
