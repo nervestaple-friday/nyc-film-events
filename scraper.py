@@ -1895,6 +1895,39 @@ def scrape_bam():
     return events[:15]
 
 
+def scrape_maysles():
+    """Maysles Documentary Center — Squarespace calendar page."""
+    events = []
+    r = fetch('https://www.maysles.org/calendar')
+    if not r:
+        return events
+    soup = BeautifulSoup(r.text, 'html.parser')
+    now = datetime.now()
+    for item in soup.select('.summary-item'):
+        a = item.select_one('a.summary-thumbnail-container')
+        if not a:
+            a = item.select_one('.summary-title a')
+        if not a:
+            continue
+        title = (a.get('data-title') or a.get_text(strip=True)).strip()
+        if not title:
+            continue
+        href = a.get('href', '')
+        link = f'https://www.maysles.org{href}' if href.startswith('/') else href
+
+        time_el = item.find('time')
+        date, date_str = None, ''
+        if time_el:
+            date_str = time_el.get_text(strip=True)
+            date = parse_date_loose(date_str)
+
+        e = make_event('Maysles Documentary Center', title, link,
+                        date=date, date_str=date_str)
+        if e:
+            events.append(e)
+    return events
+
+
 # ── TMDB enrichment ────────────────────────────────────────────────────────
 
 TMDB_CACHE_FILE = os.path.join(WORKSPACE, 'memory', 'tmdb-cache.json')
@@ -2410,6 +2443,7 @@ VENUES_ORDER = [
     'Anthology Film Archives', 'Museum of the Moving Image', 'MoMA',
     'Nitehawk (Williamsburg)', 'Nitehawk (Prospect Park)',
     'Spectacle Theater', 'Syndicated BK', 'Paris Theater', 'BAM',
+    'Maysles Documentary Center',
 ]
 
 VENUE_URLS = {
@@ -2426,6 +2460,7 @@ VENUE_URLS = {
     'Syndicated BK':               'https://syndicatedbk.com/',
     'Paris Theater':               'https://paristheaternyc.com',
     'BAM':                         'https://www.bam.org/film',
+    'Maysles Documentary Center':  'https://www.maysles.org/calendar',
 }
 
 SCRAPERS = [
@@ -2441,6 +2476,7 @@ SCRAPERS = [
     scrape_moma,
     scrape_paris,
     scrape_bam,
+    scrape_maysles,
 ]
 
 
