@@ -1752,22 +1752,29 @@ def scrape_paris():
 
 
 def clean_bam_title(title):
-    """Strip presenter/series prefixes from BAM titles for cleaner display and TMDB matching.
+    """Strip presenter/series prefixes and wrapping quotes from BAM titles
+    for cleaner display and TMDB matching.
     e.g. 'Cinema Tropical at 25: Silvia Prieto' → 'Silvia Prieto'
          'MUBI Notebook Presents: I Am Love' → 'I Am Love'
-         'ArteEast Presents Prince of Nothingwood' → 'Prince of Nothingwood'"""
-    # "{Presenter} Presents: {Film}" or "{Presenter} presents: {Film}"
+         'ArteEast Presents Prince of Nothingwood' → 'Prince of Nothingwood'
+         '“Wuthering Heights”' → 'Wuthering Heights'"""
+    title = title.strip()
+    # "{Presenter} Presents: {Film}" / "{Presenter} present(s): {Film}"
     m = re.match(r'^.+?\s+[Pp]resents?:\s+(.+)$', title)
     if m:
-        return m.group(1).strip()
-    # "{Presenter} Presents {Film}" (no colon)
-    m = re.match(r'^.+?\s+[Pp]resents?\s+(.+)$', title)
-    if m and len(m.group(1)) > 3:
-        return m.group(1).strip()
-    # "{Series} at {N}: {Film}"
-    m = re.match(r'^.+?\s+at\s+\d+:\s+(.+)$', title)
-    if m:
-        return m.group(1).strip()
+        title = m.group(1).strip()
+    else:
+        # "{Presenter} Presents {Film}" / "{Presenter} present {Film}" (no colon)
+        m = re.match(r'^.+?\s+[Pp]resents?\s+(.+)$', title)
+        if m and len(m.group(1)) > 3:
+            title = m.group(1).strip()
+        else:
+            # "{Series} at {N}: {Film}" — anniversary-style series prefix
+            m = re.match(r'^.+?\s+at\s+\d+:\s+(.+)$', title)
+            if m:
+                title = m.group(1).strip()
+    # Strip wrapping quotes (smart and straight) that BAM occasionally adds
+    title = re.sub(r'^[\"“”‘’\']+|[\"“”‘’\']+$', '', title).strip()
     return title
 
 
