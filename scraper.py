@@ -2529,10 +2529,13 @@ def main():
         seen_dict = state.get('seen', {})
         for eid in new_ids:
             seen_dict[eid] = today
-        # Keep only the most recent 300 entries
-        if len(seen_dict) > 300:
-            sorted_items = sorted(seen_dict.items(), key=lambda x: x[1])
-            seen_dict = dict(sorted_items[-300:])
+        # Prune entries older than 90 days — date-based retention so that
+        # first_seen actually persists for events seen long ago. The previous
+        # count cap of 300 was smaller than the typical dataset (~250 events),
+        # so legitimate events kept getting evicted and re-added with a fresh
+        # first_seen, making the "NEW" badge meaningless.
+        cutoff = (datetime.now() - timedelta(days=90)).strftime('%Y-%m-%d')
+        seen_dict = {k: v for k, v in seen_dict.items() if v >= cutoff}
         state['seen']    = seen_dict
         state['lastRun'] = datetime.now().isoformat()
         save_state(state)

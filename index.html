@@ -254,7 +254,7 @@
       return seen >= cutoff;
     }
 
-    function EventCard({ event, onNavigate, venueName, venueUrl }) {
+    function EventCard({ event, onNavigate, venueName, venueUrl, showNewBadge }) {
       const [expanded, setExpanded] = useState(false);
       const hasPoster = !!event.poster;
       const rating = event.rating ? parseFloat(event.rating.toFixed(1)) : 0;
@@ -278,7 +278,7 @@
             </div>
             <div className="event-title">
               {event.link ? <a href={event.link} target="_blank" rel="noopener">{event.title}</a> : event.title}
-              {isNewEvent(event.first_seen) && <span className="new-badge">NEW</span>}
+              {showNewBadge && isNewEvent(event.first_seen) && <span className="new-badge">NEW</span>}
             </div>
             {event.overview && (
               <div className={`event-overview ${expanded ? 'expanded' : ''}`}
@@ -309,7 +309,7 @@
       );
     }
 
-    function VenueSection({ name, vdata, searchFilter, dateFilter, onNavigate }) {
+    function VenueSection({ name, vdata, searchFilter, dateFilter, onNavigate, showNewBadge }) {
       const events = (vdata.events || []).filter(e => {
         if (searchFilter && !(e.title.toLowerCase().includes(searchFilter) ||
           (e.overview && e.overview.toLowerCase().includes(searchFilter)))) return false;
@@ -326,7 +326,7 @@
             </div>
             <span className="event-count">{events.length}</span>
           </div>
-          {events.map((e, i) => <EventCard key={i} event={e} onNavigate={onNavigate} />)}
+          {events.map((e, i) => <EventCard key={i} event={e} onNavigate={onNavigate} showNewBadge={showNewBadge} />)}
         </div>
       );
     }
@@ -432,6 +432,19 @@
         return c;
       }, [allVenues]);
 
+      // Suppress NEW badge globally if the signal is meaningless: when more
+      // than 30% of events would qualify, the dataset isn't differentiating
+      // recent additions from routine listings (e.g., right after the scraper
+      // state was reset). Self-heals as state retention accumulates.
+      const showNewBadge = useMemo(() => {
+        if (!totalEvents) return false;
+        let n = 0;
+        allVenues.forEach(([, v]) => {
+          (v.events || []).forEach(e => { if (isNewEvent(e.first_seen)) n++; });
+        });
+        return n > 0 && n / totalEvents <= 0.3;
+      }, [allVenues, totalEvents]);
+
       const handleNavigate = useCallback((v) => {
         navigate(v);
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -504,12 +517,12 @@
             )}
             {sortBy === 'venue' ? (
               filtered.map(([name, vdata]) =>
-                <VenueSection key={name} name={name} vdata={vdata} searchFilter={searchLower || null} dateFilter={dateFilter} onNavigate={handleNavigate} />
+                <VenueSection key={name} name={name} vdata={vdata} searchFilter={searchLower || null} dateFilter={dateFilter} onNavigate={handleNavigate} showNewBadge={showNewBadge} />
               )
             ) : (
               flatEvents && flatEvents.length > 0 && (
                 <div className="flat-events">
-                  {flatEvents.map((e, i) => <EventCard key={i} event={e} venueName={e._venueName} venueUrl={e._venueUrl} onNavigate={handleNavigate} />)}
+                  {flatEvents.map((e, i) => <EventCard key={i} event={e} venueName={e._venueName} venueUrl={e._venueUrl} onNavigate={handleNavigate} showNewBadge={showNewBadge} />)}
                 </div>
               )
             )}
