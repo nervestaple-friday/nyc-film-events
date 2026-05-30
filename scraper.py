@@ -117,6 +117,12 @@ def clean_title_for_display(title):
     t = re.sub(r'^.+?\s+in\s+(?=[A-Z])', '', t)
     # Strip trailing " in 3-D!" or " in 3D"
     t = re.sub(r'\s+in\s+3-?D!?\s*$', '', t, flags=re.IGNORECASE)
+    # Strip bracketed/parenthesized format tags anywhere: [35mm], (DCP), [4K], [70mm], [16mm], [IMAX]
+    t = re.sub(r'\s*[\[\(](?:35\s*mm|16\s*mm|70\s*mm|DCP|4K|2K|IMAX|Digital)[\]\)]\s*',
+               ' ', t, flags=re.IGNORECASE)
+    # Strip trailing format tags without brackets: " in 35mm", " - 35mm", " on 35mm"
+    t = re.sub(r'\s+(?:in|on|-)\s+(?:35\s*mm|16\s*mm|70\s*mm|DCP|4K|2K|IMAX)\s*[!.]?\s*$',
+               '', t, flags=re.IGNORECASE)
     t = ' '.join(t.split()).strip()
     return t if len(t) >= 3 else title
 
