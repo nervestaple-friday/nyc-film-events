@@ -1587,8 +1587,22 @@ def scrape_paris():
 
             if not name or len(name) < 3:
                 continue
-            # Skip Egyptian Theater screenings (LA venue, not NYC)
-            if slug.endswith('-egyptian'):
+            # Skip non-Paris screenings. The Strapi CMS at cms.ntflxthtrs.com
+            # is shared between Paris Theater (NYC) and the Egyptian Theatre
+            # (LA, American Cinematheque), so the /api/films response mixes
+            # both venues. Each film carries an Association array — the
+            # canonical signal for "which theater plays this." Filter on it
+            # rather than slug heuristics like 'ac-*' or 'egyptian-*', which
+            # have historically missed cases (e.g. ac-heaven-s-gate,
+            # egyptian-temporary-closure-2026 both slipped past the old
+            # slug.endswith('-egyptian') guard).
+            assoc = a.get('Association') or []
+            if assoc and 'Paris' not in assoc:
+                continue
+            # Belt-and-suspenders: a film tagged as American Cinematheque
+            # programming is Egyptian-only even on the rare API quirk where
+            # Association is missing.
+            if not assoc and a.get('IsAmericanCinematheque'):
                 continue
 
             # Deduplicate by normalized title
