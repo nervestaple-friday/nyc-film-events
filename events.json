@@ -1,112 +1,9 @@
 {
-  "updated": "2026-06-05T15:01:06.018734+00:00",
+  "updated": "2026-06-06T02:15:43.076710+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
       "events": [
-        {
-          "title": "The Aviator's Wife",
-          "link": "https://metrograph.com/film/?vista_film_id=9999002870",
-          "date_str": "Jun 05",
-          "showtimes": [
-            "1:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/d4Qyuy0Ul549f6SOdUqGvIdYKD2.jpg",
-          "overview": "A wife questions her life choices as she travels to Stockholm with her husband, where he is slated to receive the Nobel Prize for Literature.",
-          "year": "2017",
-          "rating": 7.1,
-          "first_seen": "2026-05-15"
-        },
-        {
-          "title": "Mad Max 2: The Road Warrior",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004846",
-          "date_str": "Jun 05",
-          "showtimes": [
-            "1:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/l1KVEhkGDpWRzQ0VqIhZqDDuOim.jpg",
-          "overview": "Max Rockatansky returns as the heroic loner who drives the dusty roads of a postapocalyptic Australian Outback in an unending search for gasoline. Arrayed against him and the other scraggly defendants of a fuel-depot encampment are the bizarre warriors commanded by the charismatic Lord Humungus, a violent leader whose scruples are as barren as the surrounding landscape.",
-          "year": "1981",
-          "rating": 7.4,
-          "first_seen": "2026-05-08"
-        },
-        {
-          "title": "The Silence of the Lambs",
-          "link": "https://metrograph.com/film/?vista_film_id=9999003466",
-          "date_str": "Jun 05",
-          "showtimes": [
-            "3:35 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
-          "overview": "Clarice Starling is a top student at the FBI's training academy.  Jack Crawford wants Clarice to interview Dr. Hannibal Lecter, a brilliant psychiatrist who is also a violent psychopath, serving life behind bars for various acts of murder and cannibalism.  Crawford believes that Lecter may have insight into a case and that Starling, as an attractive young woman, may be just the bait to draw him out.",
-          "year": "1991",
-          "rating": 8.3,
-          "first_seen": "2026-05-15"
-        },
-        {
-          "title": "Made in Hong Kong",
-          "link": "https://metrograph.com/film/?vista_film_id=9999002313",
-          "date_str": "Jun 05",
-          "showtimes": [
-            "3:45 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/tuaJDBDgPiXHtb2FhGwRG2BAOjH.jpg",
-          "overview": "American adventurer Jeff Williams is fleeing the communist advance in China when he becomes entangled with a young Chinese orphan, Wei Lin, and a beautiful Red Cross volunteer, who arranges for their harrowing escape to Hong Kong.",
-          "year": "1952",
-          "rating": 5.1,
-          "first_seen": "2026-05-15"
-        },
-        {
-          "title": "Louis Malle, le Révolté",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004859",
-          "date_str": "Jun 05",
-          "showtimes": [
-            "6:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/cU6tBLnwhgpjaYypkI4VOkXlOUo.jpg",
-          "overview": "Documentary based on Louis Malle.",
-          "year": "2025",
-          "first_seen": "2026-05-15"
-        },
-        {
-          "title": "Dead Mountaineer's Hotel",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004847",
-          "date_str": "Jun 05",
-          "showtimes": [
-            "6:15 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/eJGvzGrsfe2sqTUPv5IwLWXjVuR.jpg",
-          "overview": "Welcome to Hotel Transylvania, Dracula's lavish five-stake resort, where monsters and their families can live it up and no humans are allowed. One special weekend, Dracula has invited all his best friends to celebrate his beloved daughter Mavis's 118th birthday. For Dracula catering to all of these legendary monsters is no problem but the party really starts when one ordinary guy stumbles into the hotel and changes everything!",
-          "year": "2012",
-          "rating": 7.0,
-          "first_seen": "2026-05-08"
-        },
-        {
-          "title": "Love Letter",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004860",
-          "date_str": "Jun 05",
-          "showtimes": [
-            "8:10 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/9iAgQSkt9z34DTYQfpG0M69SyiL.jpg",
-          "overview": "Hiroko attends the memorial service of her fiancé, Itsuki Fujii, who died in a mountain-climbing incident. Although Itsuki's mother says that their old house is gone, Hiroko records the address listed under his name in his yearbook and sends him a letter. Surprisingly, she receives a reply, and discovers it came from his old classmate, a girl who also happens to be called Itsuki Fujii.",
-          "year": "1995",
-          "rating": 7.8,
-          "first_seen": "2026-05-15"
-        },
-        {
-          "title": "Vanya on 42nd Street",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004871",
-          "date_str": "Jun 05",
-          "showtimes": [
-            "8:15 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/sYkkHsqXyUcFoLbXt4WNwnRRpT1.jpg",
-          "overview": "An uninterrupted rehearsal of Chekhov's 'Uncle Vanya' plays out by a company of actors. The setting: their run-down theater with an unusable stage and crumbling ceiling. The play is shown act by act with the briefest of breaks to move props or for refreshments. The lack of costumes, real props and scenery is soon forgotten.",
-          "year": "1994",
-          "rating": 6.6,
-          "first_seen": "2026-05-03"
-        },
         {
           "title": "Cujo",
           "link": "https://metrograph.com/film/?vista_film_id=9999004851",
@@ -131,6 +28,20 @@
           "overview": "Ko Chow is an undercover cop who is under pressure from all sides. His boss, Inspector Lau, wants him to infiltrate a gang of ruthless jewel thieves; his girlfriend wants him to commit to marriage or she will leave Hong Kong with another lover; and he is being pursued by other cops who are unaware that he is a colleague. Chow would rather quit the force, feeling guilty about betraying gang members who have become his friends.",
           "year": "1987",
           "rating": 6.9,
+          "first_seen": "2026-05-15"
+        },
+        {
+          "title": "Love Letter",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004860",
+          "date_str": "Jun 06",
+          "showtimes": [
+            "11:30 AM",
+            "8:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/9iAgQSkt9z34DTYQfpG0M69SyiL.jpg",
+          "overview": "Hiroko attends the memorial service of her fiancé, Itsuki Fujii, who died in a mountain-climbing incident. Although Itsuki's mother says that their old house is gone, Hiroko records the address listed under his name in his yearbook and sends him a letter. Surprisingly, she receives a reply, and discovers it came from his old classmate, a girl who also happens to be called Itsuki Fujii.",
+          "year": "1995",
+          "rating": 7.8,
           "first_seen": "2026-05-15"
         },
         {
@@ -478,6 +389,19 @@
           "first_seen": "2026-05-03"
         },
         {
+          "title": "Mad Max 2: The Road Warrior",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004846",
+          "date_str": "Jun 10",
+          "showtimes": [
+            "10:15 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/l1KVEhkGDpWRzQ0VqIhZqDDuOim.jpg",
+          "overview": "Max Rockatansky returns as the heroic loner who drives the dusty roads of a postapocalyptic Australian Outback in an unending search for gasoline. Arrayed against him and the other scraggly defendants of a fuel-depot encampment are the bizarre warriors commanded by the charismatic Lord Humungus, a violent leader whose scruples are as barren as the surrounding landscape.",
+          "year": "1981",
+          "rating": 7.4,
+          "first_seen": "2026-05-08"
+        },
+        {
           "title": "Cléo from 5 to 7",
           "link": "https://metrograph.com/film/?vista_film_id=9999001846",
           "date_str": "Jun 11",
@@ -724,6 +648,19 @@
           "first_seen": "2026-05-23"
         },
         {
+          "title": "The Silence of the Lambs",
+          "link": "https://metrograph.com/film/?vista_film_id=9999003466",
+          "date_str": "Jun 13",
+          "showtimes": [
+            "10:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
+          "overview": "Clarice Starling is a top student at the FBI's training academy.  Jack Crawford wants Clarice to interview Dr. Hannibal Lecter, a brilliant psychiatrist who is also a violent psychopath, serving life behind bars for various acts of murder and cannibalism.  Crawford believes that Lecter may have insight into a case and that Starling, as an attractive young woman, may be just the bait to draw him out.",
+          "year": "1991",
+          "rating": 8.3,
+          "first_seen": "2026-05-15"
+        },
+        {
           "title": "Lady and the Tramp",
           "link": "https://metrograph.com/film/?vista_film_id=9999004862",
           "date_str": "Jun 14",
@@ -774,6 +711,135 @@
           "year": "2006",
           "rating": 7.0,
           "first_seen": "2026-05-24"
+        },
+        {
+          "title": "Germany Year Zero",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004855",
+          "date_str": "Jun 15",
+          "showtimes": [
+            "4:45 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/sdxegsjrrvujXvv2GLPENyDlWDI.jpg",
+          "overview": "In the ruins of post-WWII Berlin, a twelve-year-old boy is left to his own devices in order to help provide for his family.",
+          "year": "1948",
+          "rating": 7.6,
+          "first_seen": "2026-05-10"
+        },
+        {
+          "title": "Dream of Light",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004852",
+          "date_str": "Jun 15",
+          "showtimes": [
+            "6:40 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/wH3VuGHcf0jTzeRGLZlPfqTIHS1.jpg",
+          "overview": "Filmmaker Victor Erice follows Spanish artist Antonio Lopez in his painstaking attempt to paint the image of a tree.",
+          "year": "1992",
+          "rating": 7.3,
+          "first_seen": "2026-05-09"
+        },
+        {
+          "title": "Pirosmani + Arabesques on the Pirosmani Theme",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004853",
+          "date_str": "Jun 16",
+          "showtimes": [
+            "5:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/xXCfzNcX0NcOgYeaB9hIXqDc0rB.jpg",
+          "overview": "A biography of the Georgian primitive artist Nikoloz Pirosmanishvili (1862–1918), better known as Pirosmani, who died of starvation and sold his paintings to bars and restaurants for food and drink. The film experiments with color control techniques based on the painter’s style.",
+          "year": "1969",
+          "rating": 6.9,
+          "first_seen": "2026-06-05"
+        },
+        {
+          "title": "Oasis",
+          "link": "https://metrograph.com/film/?vista_film_id=9999003667",
+          "date_str": "Jun 16",
+          "showtimes": [
+            "7:15 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/aaajiBpeBVbVwovpSQKaMfKRGKw.jpg",
+          "overview": "A young man released from prison visits the widow of the man he killed drunk-driving and becomes infatuated with his cerebral palsy-stricken daughter.",
+          "year": "2002",
+          "rating": 7.7,
+          "first_seen": "2026-05-03"
+        },
+        {
+          "title": "Vanya on 42nd Street",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004871",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "4:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/sYkkHsqXyUcFoLbXt4WNwnRRpT1.jpg",
+          "overview": "An uninterrupted rehearsal of Chekhov's 'Uncle Vanya' plays out by a company of actors. The setting: their run-down theater with an unusable stage and crumbling ceiling. The play is shown act by act with the briefest of breaks to move props or for refreshments. The lack of costumes, real props and scenery is soon forgotten.",
+          "year": "1994",
+          "rating": 6.6,
+          "first_seen": "2026-05-03"
+        },
+        {
+          "title": "Grave of the Fireflies [OV]",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004840",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "4:45 PM"
+          ],
+          "first_seen": "2026-05-21"
+        },
+        {
+          "title": "Farewell My Concubine",
+          "link": "https://metrograph.com/film/?vista_film_id=9999003621",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/f54hNIiHNINw3JiUJB2XaQl5wCN.jpg",
+          "overview": "In an epic tale of theater, gender, love and class, two Beijing opera actors navigate political turmoil as their friendship evolves over decades.",
+          "year": "1993",
+          "rating": 7.9,
+          "first_seen": "2026-05-03"
+        },
+        {
+          "title": "Peppermint Candy",
+          "link": "https://metrograph.com/film/?vista_film_id=9999003665",
+          "date_str": "Jun 18",
+          "showtimes": [
+            "4:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/jPP0gFDgdXRa1YgP8Cn8arzOHI3.jpg",
+          "overview": "In the spring of 1999, a group of old friends gather to celebrate their 20 year reunion. Among the group is Yeong-ho, a cold, unhappy man, whose demeanor puts a damper on the festivities. The seriousness of Yeong-ho's depression becomes apparent when he climbs a railroad bridge and looks like he might jump. At this crucial moment, memories of seven crucial episodes from Yeong-ho's past flood his mind.",
+          "year": "2000",
+          "rating": 7.5,
+          "first_seen": "2026-05-03"
+        },
+        {
+          "title": "The Taste of Tea",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004814",
+          "date_str": "Jun 18",
+          "showtimes": [
+            "6:50 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/yapwfNElQYFY9TaVS03jv6Gk2Rs.jpg",
+          "overview": "A spell of time in the life of a family in rural Tochigi prefecture. Yoshiko is not an ordinary housewife, instead working on an animated film project. Uncle Ayano, a successful music producer, is looking to get his head together after living in Tokyo. Meanwhile, Sachiko is concerned with why she seems to be followed by a giant version of herself. As the lazy days pass by, each member of the family is followed in a series of episodic vignettes.",
+          "year": "2004",
+          "rating": 7.5,
+          "first_seen": "2026-05-03"
+        },
+        {
+          "title": "The Handmaiden",
+          "link": "https://metrograph.com/film/?vista_film_id=9999000494",
+          "date_str": "Jun 18",
+          "showtimes": [
+            "9:40 PM"
+          ],
+          "also_at": [
+            "Nitehawk (Williamsburg)"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/dLlH4aNHdnmf62umnInL8xPlPzw.jpg",
+          "overview": "1930s Korea, in the period of Japanese occupation, a new girl, Sook-hee, is hired as a handmaiden to a Japanese heiress, Hideko, who lives a secluded life on a large countryside estate with her domineering Uncle Kouzuki. But the maid has a secret. She is a pickpocket recruited by a swindler posing as a Japanese Count to help him seduce the Lady to steal her fortune.",
+          "year": "2016",
+          "rating": 8.2,
+          "first_seen": "2026-05-03"
         },
         {
           "title": "Death in Venice",
@@ -1998,6 +2064,16 @@
       "url": "https://movingimage.org/whats-on/screenings-and-series/",
       "events": [
         {
+          "title": "Nothing but a Man",
+          "link": "https://movingimage.org/event/nothing-but-a-man/2026-06-06/",
+          "date_str": "Jun 06",
+          "poster": "https://image.tmdb.org/t/p/w300/6vWkmRHsX1yIUJSimDKEJLU4UkD.jpg",
+          "overview": "A proud black man and his school-teacher wife face discriminatory challenges in 1960s America.",
+          "year": "1964",
+          "rating": 7.4,
+          "first_seen": "2026-06-01"
+        },
+        {
           "title": "The Queen",
           "link": "https://movingimage.org/event/the-queen/",
           "date_str": "Jun 06",
@@ -2018,25 +2094,6 @@
           "first_seen": "2026-06-01"
         },
         {
-          "title": "Chan Is Missing",
-          "link": "https://movingimage.org/event/chan-is-missing/",
-          "date_str": "Jun 07",
-          "poster": "https://image.tmdb.org/t/p/w300/tox88i0SL3Nv0E7dy5EBboN6j46.jpg",
-          "overview": "Two cabbies search San Francisco's Chinatown for a mysterious character who has disappeared with their $4000. Their quest leads them on a humorous, if mundane, journey which illuminates the many problems experienced by Chinese-Americans trying to assimilate into contemporary American society.",
-          "year": "1982",
-          "rating": 6.8,
-          "first_seen": "2026-06-01"
-        },
-        {
-          "title": "Kapodistrias",
-          "link": "https://movingimage.org/event/kapodistrias/",
-          "date_str": "Jun 05",
-          "poster": "https://image.tmdb.org/t/p/w300/1hqxebXLHlbpzQac2taWg4fLFZs.jpg",
-          "overview": "The story of the greatest Greek statesman. In the early 19th century, Greece has just gained its independence from the Ottomans and Ioannis Kapodistrias is called upon to assume the role of its first governor. He steadfastly defends the freedom of every human being with courage, kindness, and dignity and many personal sacrifices. He does not hesitate to confront the forces of evil, giving up wealth, glory, and international recognition, serving his homeland with faith and devotion.",
-          "year": "2025",
-          "first_seen": "2026-05-19"
-        },
-        {
           "title": "Buddies + conversation with David Schachter and Roe Bressan",
           "link": "https://movingimage.org/event/buddies/",
           "date_str": "Jun 07",
@@ -2047,14 +2104,10 @@
           "first_seen": "2026-06-01"
         },
         {
-          "title": "Dracula’s Daughter",
-          "link": "https://movingimage.org/event/draculas-daughter/",
-          "date_str": "Jun 05",
-          "poster": "https://image.tmdb.org/t/p/w300/iUZ3hDMo8SGY2IoujCKwVt8ukm9.jpg",
-          "overview": "Samantha MacKenzie, the daughter of the president of the United States, arrives at college with a group of Secret Service agents. Samantha, however, resents their presence and decides she wants to attend school just like a normal student.",
-          "year": "2004",
-          "rating": 6.2,
-          "first_seen": "2026-05-15"
+          "title": "Vibrance: LGBTQIA+ short films from Firelight Media",
+          "link": "https://movingimage.org/event/vibrance-lgbtqia-short-films/",
+          "date_str": "Jun 07",
+          "first_seen": "2026-06-01"
         },
         {
           "title": "Body Double",
@@ -2087,6 +2140,22 @@
           "first_seen": "2026-05-25"
         },
         {
+          "title": "All Watched Over by Machines of Loving Grace",
+          "link": "https://movingimage.org/event/all-watched-over-by-machines-of-loving-grace/",
+          "date_str": "Jun 13",
+          "poster": "https://image.tmdb.org/t/p/w300/2JC5Qp4NNHXXxhzpcaSK4OxinBS.jpg",
+          "overview": "We have been colonised by the machines we have built. Although we don't realise it, the way we see everything in the world today is through the eyes of the computers.",
+          "year": "2011",
+          "rating": 8.3,
+          "first_seen": "2026-06-05"
+        },
+        {
+          "title": "2 x Harun Farocki: Serious Games I–IV + Inextinguishable Fire",
+          "link": "https://movingimage.org/event/2-x-harun-farocki-serious-games-i-iv-inextinguishable-fire/",
+          "date_str": "Jun 20",
+          "first_seen": "2026-06-05"
+        },
+        {
           "title": "Street Smart: Lessons from a TV Icon",
           "link": "https://movingimage.org/event/street-smart/2026-06-20/",
           "date_str": "Jun 20",
@@ -2106,20 +2175,13 @@
           "first_seen": "2026-06-05"
         },
         {
-          "title": "Nothing but a Man",
-          "link": "https://movingimage.org/event/nothing-but-a-man/2026-06-06/",
-          "date_str": "Jun 06",
-          "poster": "https://image.tmdb.org/t/p/w300/6vWkmRHsX1yIUJSimDKEJLU4UkD.jpg",
-          "overview": "A proud black man and his school-teacher wife face discriminatory challenges in 1960s America.",
-          "year": "1964",
-          "rating": 7.4,
-          "first_seen": "2026-06-01"
-        },
-        {
-          "title": "Vibrance: LGBTQIA+ short films from Firelight Media",
-          "link": "https://movingimage.org/event/vibrance-lgbtqia-short-films/",
-          "date_str": "Jun 07",
-          "first_seen": "2026-06-01"
+          "title": "Kapodistrias",
+          "link": "https://movingimage.org/event/kapodistrias/",
+          "date_str": "Jun 05",
+          "poster": "https://image.tmdb.org/t/p/w300/1hqxebXLHlbpzQac2taWg4fLFZs.jpg",
+          "overview": "The story of the greatest Greek statesman. In the early 19th century, Greece has just gained its independence from the Ottomans and Ioannis Kapodistrias is called upon to assume the role of its first governor. He steadfastly defends the freedom of every human being with courage, kindness, and dignity and many personal sacrifices. He does not hesitate to confront the forces of evil, giving up wealth, glory, and international recognition, serving his homeland with faith and devotion.",
+          "year": "2025",
+          "first_seen": "2026-05-19"
         }
       ]
     },
@@ -2145,6 +2207,9 @@
           "date_str": "Jun 6",
           "showtimes": [
             "11:00 AM"
+          ],
+          "also_at": [
+            "Metrograph"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/dLlH4aNHdnmf62umnInL8xPlPzw.jpg",
           "overview": "1930s Korea, in the period of Japanese occupation, a new girl, Sook-hee, is hired as a handmaiden to a Japanese heiress, Hideko, who lives a secluded life on a large countryside estate with her domineering Uncle Kouzuki. But the maid has a secret. She is a pickpocket recruited by a swindler posing as a Japanese Count to help him seduce the Lady to steal her fortune.",
@@ -2500,6 +2565,12 @@
       "url": "https://www.spectacletheater.com/",
       "events": [
         {
+          "title": "The Magic of Cinema: The Films of Dominic Angerame",
+          "link": "https://www.spectacletheater.com/the-magic-of-cinema-the-films-of-dominic-angerame/",
+          "date_str": "Jun 07",
+          "first_seen": "2026-06-05"
+        },
+        {
           "title": "FWENDS + LINDA 4EVA",
           "link": "https://www.spectacletheater.com/fwends-linda-4eva/",
           "date_str": "Jun 06",
@@ -2563,12 +2634,6 @@
           "link": "https://www.spectacletheater.com/a-burning-star/",
           "date_str": "Jun 21 7:30 PM",
           "first_seen": "2026-05-31"
-        },
-        {
-          "title": "2 BY SUKI HAWLEY & MIKE GALINSKY",
-          "link": "https://www.spectacletheater.com/2-by-suki-hawley-mike-galinsky/",
-          "date_str": "Jun 09",
-          "first_seen": "2026-05-27"
         }
       ]
     },
@@ -2602,16 +2667,6 @@
           "year": "1996",
           "rating": 7.5,
           "first_seen": "2026-05-28"
-        },
-        {
-          "title": "Heaven's Gate",
-          "link": "https://www.paristheaternyc.com/film/ac-heaven-s-gate",
-          "date_str": "Jun 05",
-          "poster": "https://image.tmdb.org/t/p/w300/cMd8zkd6NdWnQQoG7bQ9xJ8gjQR.jpg",
-          "overview": "A rare book dealer finds himself at the heart of a string of paranormal events when he is hired to find the last two copies of a text, The Nine Gates of the Kingdom of Shadows, capable of summoning the Devil.",
-          "year": "1999",
-          "rating": 6.5,
-          "first_seen": "2026-05-29"
         },
         {
           "title": "Lonely Are the Brave",
@@ -2657,32 +2712,6 @@
           "first_seen": "2026-05-30"
         },
         {
-          "title": "Midsommar: Director's Cut",
-          "link": "https://www.paristheaternyc.com/film/ac-midsommar-director-s-cut",
-          "date_str": "Jun 06",
-          "poster": "https://image.tmdb.org/t/p/w300/7LEI8ulZzO5gy9Ww2NVCrKmHeDZ.jpg",
-          "overview": "Several friends travel to Sweden to study as anthropologists a summer festival that is held every ninety years in the remote hometown of one of them. What begins as a dream vacation in a place where the sun never sets, gradually turns into a dark nightmare as the mysterious inhabitants invite them to participate in their disturbing festive activities.",
-          "year": "2019",
-          "rating": 7.2,
-          "first_seen": "2026-05-29"
-        },
-        {
-          "title": "Mother Joan of the Angels on Nitrate",
-          "link": "https://www.paristheaternyc.com/film/ac-mother-joan-of-the-angels-on-nitrate",
-          "date_str": "Jun 06",
-          "first_seen": "2026-05-30"
-        },
-        {
-          "title": "Heart of Glass",
-          "link": "https://www.paristheaternyc.com/film/ac-heart-of-glass",
-          "date_str": "Jun 06",
-          "poster": "https://image.tmdb.org/t/p/w300/yaYs87zLoXTK1pPKSMfJQRnwxgL.jpg",
-          "overview": "A small Bavarian village is renowned for its \"Ruby Glass\" glass blowing works. When the foreman of the works dies suddenly without revealing the secret of the Ruby Glass, the town slides into a deep depression, and the owner of the glassworks becomes obssessed with the lost secret.",
-          "year": "1976",
-          "rating": 6.6,
-          "first_seen": "2026-05-31"
-        },
-        {
           "title": "Trees Lounge",
           "link": "https://www.paristheaternyc.com/film/trees-lounge-bleak-week",
           "date_str": "Jun 06",
@@ -2707,26 +2736,6 @@
           "year": "1969",
           "rating": 7.6,
           "first_seen": "2026-06-01"
-        },
-        {
-          "title": "Incendies",
-          "link": "https://www.paristheaternyc.com/film/ac-incendies",
-          "date_str": "Jun 07",
-          "poster": "https://image.tmdb.org/t/p/w300/yH6DAQVgbyj72S66gN4WWVoTjuf.jpg",
-          "overview": "A mother's last wishes send twins Jeanne and Simon on a journey to Middle East in search of their tangled roots. Adapted from Wajdi Mouawad's acclaimed play, Incendies tells the powerful and moving tale of two young adults' voyage to the core of deep-rooted hatred, never-ending wars and enduring love.",
-          "year": "2010",
-          "rating": 8.1,
-          "first_seen": "2026-06-03"
-        },
-        {
-          "title": "Hereditary",
-          "link": "https://www.paristheaternyc.com/film/ac-hereditary",
-          "date_str": "Jun 07",
-          "poster": "https://image.tmdb.org/t/p/w300/hjlZSXM86wJrfCv5VKfR5DI2VeU.jpg",
-          "overview": "Following the death of the Leigh family matriarch, Annie and her children uncover disturbing secrets about their heritage. Their daily lives are not only impacted, but they also become entangled in a chilling fate from which they cannot escape, driving them to the brink of madness.",
-          "year": "2018",
-          "rating": 7.3,
-          "first_seen": "2026-06-03"
         },
         {
           "title": "Werckmeister Harmonies",
@@ -2759,16 +2768,6 @@
           "first_seen": "2026-06-04"
         },
         {
-          "title": "Threads",
-          "link": "https://www.paristheaternyc.com/film/ac-threads",
-          "date_str": "Jun 07",
-          "poster": "https://image.tmdb.org/t/p/w300/1LZXTlcgDIdVFtPUvF7Q2XV6D2r.jpg",
-          "overview": "Documentary style account of a nuclear holocaust and its effect on the working class city of Sheffield, England; and the eventual long run effects of nuclear war on civilization.",
-          "year": "1985",
-          "rating": 7.6,
-          "first_seen": "2026-06-03"
-        },
-        {
           "title": "Spider",
           "link": "https://www.paristheaternyc.com/film/spider-bleak-week",
           "date_str": "Jun 08",
@@ -2789,12 +2788,6 @@
           "overview": "After 30 years of searching, Harry has finally met the girl of his dreams. Unfortunately, before they even have a chance to go on their first date, Harry intercepts some chilling news: WWIII has begun and nuclear missiles will destroy Los Angeles in less than an hour!",
           "year": "1989",
           "rating": 6.9,
-          "first_seen": "2026-06-04"
-        },
-        {
-          "title": "Closing Temporarily for Technical Upgrades",
-          "link": "https://www.paristheaternyc.com/film/egyptian-temporary-closure-2026",
-          "date_str": "Jun 08",
           "first_seen": "2026-06-04"
         },
         {
@@ -2855,6 +2848,105 @@
           "year": "1996",
           "rating": 7.1,
           "first_seen": "2026-06-05"
+        },
+        {
+          "title": "In the Hand of Dante",
+          "link": "https://www.paristheaternyc.com/film/in-the-hand-of-dante-paris",
+          "date_str": "Jun 12",
+          "showtimes": [
+            "6:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/nPPIufTBnzEg0d7NoR5RLL1oPra.jpg",
+          "overview": "A writer helps a mob boss steal Dante's handwritten \"Divine Comedy\" manuscript as a parallel tale follows the 14th-century poet creating his masterpiece.",
+          "year": "2026",
+          "first_seen": "2026-06-05"
+        },
+        {
+          "title": "Lou Reed: Berlin",
+          "link": "https://www.paristheaternyc.com/film/lou-reed-berlin-paris",
+          "date_str": "Jun 12",
+          "showtimes": [
+            "10:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/hxlGPd24svIi1izZNj2qhAHgqBo.jpg",
+          "overview": "Lou Reed recorded the album Berlin in 1973. It was a commercial failure. Over the next 33 years, he never performed the album live. For five nights in December 2006 at St. Ann's Warehouse Brooklyn, Lou Reed performed his masterwork about love's dark sisters: jealousy, rage and loss.",
+          "year": "2007",
+          "rating": 6.8,
+          "first_seen": "2026-06-05"
+        },
+        {
+          "title": "At Eternity's Gate",
+          "link": "https://www.paristheaternyc.com/film/at-eternitys-gate-paris",
+          "date_str": "Jun 13",
+          "showtimes": [
+            "1:15 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/cMd8zkd6NdWnQQoG7bQ9xJ8gjQR.jpg",
+          "overview": "A rare book dealer finds himself at the heart of a string of paranormal events when he is hired to find the last two copies of a text, The Nine Gates of the Kingdom of Shadows, capable of summoning the Devil.",
+          "year": "1999",
+          "rating": 6.5,
+          "first_seen": "2026-06-05"
+        },
+        {
+          "title": "Before Night Falls",
+          "link": "https://www.paristheaternyc.com/film/before-night-falls-paris",
+          "date_str": "Jun 13",
+          "showtimes": [
+            "3:55 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/kb2dqj73cfmt6qHAh1ySIlVm6v0.jpg",
+          "overview": "Spanning several decades, this powerful biopic offers a glimpse into the life of famed Cuban poet and novelist Reinaldo Arenas, an artist who was vilified for his homosexuality in Fidel Castro's Cuba.",
+          "year": "2000",
+          "rating": 6.6,
+          "first_seen": "2026-06-05"
+        },
+        {
+          "title": "The Diving Bell and the Butterfly",
+          "link": "https://www.paristheaternyc.com/film/the-diving-bell-and-the-butterfly-paris",
+          "date_str": "Jun 14",
+          "showtimes": [
+            "1:15 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/6NkJ4gnLrvLj0PZDW6sNM85JMbj.jpg",
+          "overview": "Jean-Dominique Bauby, editor-in-chief of French fashion bible Elle magazine, has a devastating stroke at age 43. The damage to his brain stem results in locked-in syndrome, with which he is almost completely paralyzed and only able to communicate by blinking an eye. Bauby painstakingly dictates his memoir via the only means of expression left to him.",
+          "year": "2007",
+          "rating": 7.6,
+          "first_seen": "2026-06-05"
+        },
+        {
+          "title": "Basquiat: Black and White Version",
+          "link": "https://www.paristheaternyc.com/film/basquiat-black-and-white-version-paris",
+          "date_str": "Jun 14",
+          "showtimes": [
+            "3:55 PM"
+          ],
+          "first_seen": "2026-06-05"
+        },
+        {
+          "title": "Miral",
+          "link": "https://www.paristheaternyc.com/film/miral-paris",
+          "date_str": "Jun 15",
+          "showtimes": [
+            "9:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/AttDP5OEsMxtHPPN7Z92p2Ntnmd.jpg",
+          "overview": "A dying man in his forties recalls his childhood, his mother, the war and personal moments that tell of and juxtapose pivotal moments in Soviet history with daily life.",
+          "year": "1975",
+          "rating": 8.0,
+          "first_seen": "2026-06-05"
+        },
+        {
+          "title": "Los Olvidados (The Young and the Damned)",
+          "link": "https://www.paristheaternyc.com/film/los-olvidados-bunuel",
+          "date_str": "Jun 20",
+          "showtimes": [
+            "1:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/cDCvmYoyqFg4CuSMtGMvCpfOIEw.jpg",
+          "overview": "A group of juvenile delinquents live a violent life in the infamous slums of Mexico City; among them Pedro, whose morality is gradually corrupted and destroyed by the others.",
+          "year": "1950",
+          "rating": 8.0,
+          "first_seen": "2026-06-05"
         }
       ]
     },
@@ -2864,7 +2956,7 @@
         {
           "title": "Obsession",
           "link": "https://www.bam.org/film/2026/obsession",
-          "date_str": "Jun 05",
+          "date_str": "Jun 06",
           "showtimes": [
             "1:50 PM",
             "4:30 PM",
@@ -2880,7 +2972,7 @@
         {
           "title": "I Love Boosters",
           "link": "https://www.bam.org/film/2026/i-love-boosters",
-          "date_str": "Jun 05",
+          "date_str": "Jun 06",
           "showtimes": [
             "1:30 PM",
             "4:10 PM",
@@ -2896,7 +2988,7 @@
         {
           "title": "Backrooms",
           "link": "https://www.bam.org/film/2026/backrooms",
-          "date_str": "Jun 05",
+          "date_str": "Jun 06",
           "showtimes": [
             "1:45 PM",
             "4:15 PM",
@@ -2911,7 +3003,7 @@
         {
           "title": "Tuner",
           "link": "https://www.bam.org/film/2026/tuner",
-          "date_str": "Jun 05",
+          "date_str": "Jun 06",
           "showtimes": [
             "1:30 PM",
             "4:00 PM",
@@ -2932,7 +3024,7 @@
         {
           "title": "The Currents",
           "link": "https://www.bam.org/film/2026/the-currents",
-          "date_str": "Jun 05",
+          "date_str": "Jun 06",
           "showtimes": [
             "2:00 PM",
             "4:20 PM",
