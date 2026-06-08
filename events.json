@@ -1,151 +1,9 @@
 {
-  "updated": "2026-06-07T15:00:56.003174+00:00",
+  "updated": "2026-06-08T15:00:58.245019+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
       "events": [
-        {
-          "title": "Where is the Friend's House?",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004006",
-          "date_str": "Jun 07",
-          "showtimes": [
-            "11:10 AM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/2rTW4s1kgvoqVs0Kv8ARle1SrkF.jpg",
-          "overview": "An 8-year-old boy must return his friend's notebook he took by mistake, lest his friend be punished by expulsion from school.",
-          "year": "1987",
-          "rating": 7.9,
-          "first_seen": "2026-05-03"
-        },
-        {
-          "title": "Tomboy",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004863",
-          "date_str": "Jun 07",
-          "showtimes": [
-            "11:20 AM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/plEV1Q5u5caYASlG3pq3ON7acN7.jpg",
-          "overview": "Ten-year-old Laure isn't like most girls. She prefers football to dolls and sweaters to dresses. When Laure and her family move to a new neighbourhood, local girl Lisa mistakes Laure for a boy. Indulging in this exciting new identity, Laure becomes Mickaël, and so begins a summer of long sunny afternoons, playground games and first kisses. Yet with the school term fast approaching, and with suspicions arising amongst friends and family, Laure must face up to an uncertain future.",
-          "year": "2011",
-          "rating": 7.3,
-          "first_seen": "2026-05-17"
-        },
-        {
-          "title": "Love Letter",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004860",
-          "date_str": "Jun 07",
-          "showtimes": [
-            "1:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/9iAgQSkt9z34DTYQfpG0M69SyiL.jpg",
-          "overview": "Hiroko attends the memorial service of her fiancé, Itsuki Fujii, who died in a mountain-climbing incident. Although Itsuki's mother says that their old house is gone, Hiroko records the address listed under his name in his yearbook and sends him a letter. Surprisingly, she receives a reply, and discovers it came from his old classmate, a girl who also happens to be called Itsuki Fujii.",
-          "year": "1995",
-          "rating": 7.8,
-          "first_seen": "2026-05-15"
-        },
-        {
-          "title": "God's Country",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004864",
-          "date_str": "Jun 07",
-          "showtimes": [
-            "1:15 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/6d5XOczc226jECq0LIX0siKtgHR.jpg",
-          "overview": "Llewelyn Moss stumbles upon dead bodies, $2 million and a hoard of heroin in a Texas desert, but methodical killer Anton Chigurh comes looking for it, with local sheriff Ed Tom Bell hot on his trail. The roles of prey and predator blur as the violent pursuit of money and justice collide.",
-          "year": "2007",
-          "rating": 7.9,
-          "first_seen": "2026-05-17"
-        },
-        {
-          "title": "Atlantic City",
-          "link": "https://metrograph.com/film/?vista_film_id=9999003298",
-          "date_str": "Jun 07",
-          "showtimes": [
-            "3:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/t7COhy9HkznR0gcdhTNwtHmBN31.jpg",
-          "overview": "In a corrupt city, a small-time gangster and the estranged wife of a pot dealer find themselves thrown together in an escapade of love, money, drugs and danger.",
-          "year": "1980",
-          "rating": 6.8,
-          "first_seen": "2026-05-17"
-        },
-        {
-          "title": "Long Live the Republic!",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004865",
-          "date_str": "Jun 07",
-          "showtimes": [
-            "3:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/xEhbbGhq6N5er7vbaEtjrkxKRSr.jpg",
-          "overview": "Oldrich is the runt of his village, beaten by his father, bullied by the other boys. But he has imagination on his side, and a wiry toughness they can’t defeat. The village is in turmoil, because the Nazi occupiers have just retreated and the Red Army is advancing. Oldrich dodges amid the mayhem and panic, taking his share of blows but always managing to stay one step ahead.",
-          "year": "1965",
-          "rating": 7.5,
-          "first_seen": "2026-05-17"
-        },
-        {
-          "title": "... And the Pursuit of Happiness",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004866",
-          "date_str": "Jun 07",
-          "showtimes": [
-            "6:15 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/1DppfK3th0jTtciLw9GHe46zfM3.jpg",
-          "overview": "In 1986, Louis Malle examines the immigrant experience in America by interviewing newcomers from various professions nationwide, highlighting their struggles in a multicultural society.",
-          "year": "1986",
-          "rating": 7.0,
-          "first_seen": "2026-05-17"
-        },
-        {
-          "title": "April Story",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004867",
-          "date_str": "Jun 07",
-          "showtimes": [
-            "6:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/5rUH6AjpySr3AYXwZbAQGCDCPNL.jpg",
-          "overview": "In spring, a girl leaves the island of Hokkaido to attend university in Tokyo. Once there, she is asked to reveal why she wanted to go there in the first place.",
-          "year": "1998",
-          "rating": 7.1,
-          "first_seen": "2026-05-17"
-        },
-        {
-          "title": "Bumming in Beijing: The Last Dreamers",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004868",
-          "date_str": "Jun 07",
-          "showtimes": [
-            "8:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/A9TDnYnMxXNSgt9iweseJPFw8UF.jpg",
-          "overview": "A documentary following five young artists from around China, who travelled to Beijing in the 1980s to work as freelancers, exploring their lives, careers, and what aspirations they may have for the future.",
-          "year": "1990",
-          "first_seen": "2026-05-17"
-        },
-        {
-          "title": "Hana and Alice",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004869",
-          "date_str": "Jun 07",
-          "showtimes": [
-            "8:45 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/bkEn15Jm8Edl40ra0qRJny2MYTq.jpg",
-          "overview": "Two teenage best pals attracted to the same boy end up scrambling his life after he walks into a door and is knocked unconscious.",
-          "year": "2004",
-          "rating": 7.0,
-          "first_seen": "2026-05-17"
-        },
-        {
-          "title": "School on Fire",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004870",
-          "date_str": "Jun 07",
-          "showtimes": [
-            "9:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/uTVfcol62NROZw2W2Q7ykbFgPQ.jpg",
-          "overview": "A young schoolgirl, Yuen Fong becomes caught in a tragic stranglehold of triad activity after she testifies in court over a triad beating. When this news reaches the triad leader Brother Smart, Yuen Fong must pay him protection money for what she has done as events begin to escalate.",
-          "year": "1988",
-          "rating": 7.3,
-          "first_seen": "2026-05-17"
-        },
         {
           "title": "Andrei Rublev",
           "link": "https://metrograph.com/film/?vista_film_id=9999002144",
@@ -184,6 +42,19 @@
           "year": "1991",
           "rating": 6.7,
           "first_seen": "2026-05-04"
+        },
+        {
+          "title": "Love Letter",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004860",
+          "date_str": "Jun 08",
+          "showtimes": [
+            "7:25 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/9iAgQSkt9z34DTYQfpG0M69SyiL.jpg",
+          "overview": "Hiroko attends the memorial service of her fiancé, Itsuki Fujii, who died in a mountain-climbing incident. Although Itsuki's mother says that their old house is gone, Hiroko records the address listed under his name in his yearbook and sends him a letter. Surprisingly, she receives a reply, and discovers it came from his old classmate, a girl who also happens to be called Itsuki Fujii.",
+          "year": "1995",
+          "rating": 7.8,
+          "first_seen": "2026-05-15"
         },
         {
           "title": "Xiao Wu",
@@ -518,6 +389,19 @@
           "first_seen": "2026-05-23"
         },
         {
+          "title": "Hana and Alice",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004869",
+          "date_str": "Jun 13",
+          "showtimes": [
+            "5:10 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/bkEn15Jm8Edl40ra0qRJny2MYTq.jpg",
+          "overview": "Two teenage best pals attracted to the same boy end up scrambling his life after he walks into a door and is knocked unconscious.",
+          "year": "2004",
+          "rating": 7.0,
+          "first_seen": "2026-05-17"
+        },
+        {
           "title": "Sacro GRA",
           "link": "https://metrograph.com/film/?vista_film_id=9999004880",
           "date_str": "Jun 13",
@@ -570,6 +454,19 @@
           "first_seen": "2026-05-24"
         },
         {
+          "title": "Tomboy",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004863",
+          "date_str": "Jun 14",
+          "showtimes": [
+            "11:20 AM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/plEV1Q5u5caYASlG3pq3ON7acN7.jpg",
+          "overview": "Ten-year-old Laure isn't like most girls. She prefers football to dolls and sweaters to dresses. When Laure and her family move to a new neighbourhood, local girl Lisa mistakes Laure for a boy. Indulging in this exciting new identity, Laure becomes Mickaël, and so begins a summer of long sunny afternoons, playground games and first kisses. Yet with the school term fast approaching, and with suspicions arising amongst friends and family, Laure must face up to an uncertain future.",
+          "year": "2011",
+          "rating": 7.3,
+          "first_seen": "2026-05-17"
+        },
+        {
           "title": "Fellini Satyricon",
           "link": "https://metrograph.com/film/?vista_film_id=9999004015",
           "date_str": "Jun 14",
@@ -607,6 +504,32 @@
           "year": "2006",
           "rating": 7.0,
           "first_seen": "2026-05-24"
+        },
+        {
+          "title": "April Story",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004867",
+          "date_str": "Jun 14",
+          "showtimes": [
+            "8:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/5rUH6AjpySr3AYXwZbAQGCDCPNL.jpg",
+          "overview": "In spring, a girl leaves the island of Hokkaido to attend university in Tokyo. Once there, she is asked to reveal why she wanted to go there in the first place.",
+          "year": "1998",
+          "rating": 7.1,
+          "first_seen": "2026-05-17"
+        },
+        {
+          "title": "Atlantic City",
+          "link": "https://metrograph.com/film/?vista_film_id=9999003298",
+          "date_str": "Jun 14",
+          "showtimes": [
+            "9:45 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/t7COhy9HkznR0gcdhTNwtHmBN31.jpg",
+          "overview": "In a corrupt city, a small-time gangster and the estranged wife of a pot dealer find themselves thrown together in an escapade of love, money, drugs and danger.",
+          "year": "1980",
+          "rating": 6.8,
+          "first_seen": "2026-05-17"
         },
         {
           "title": "Germany Year Zero",
@@ -720,6 +643,19 @@
           "year": "1993",
           "rating": 7.9,
           "first_seen": "2026-05-03"
+        },
+        {
+          "title": "School on Fire",
+          "link": "https://metrograph.com/film/?vista_film_id=9999004870",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "10:20 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/uTVfcol62NROZw2W2Q7ykbFgPQ.jpg",
+          "overview": "A young schoolgirl, Yuen Fong becomes caught in a tragic stranglehold of triad activity after she testifies in court over a triad beating. When this news reaches the triad leader Brother Smart, Yuen Fong must pay him protection money for what she has done as events begin to escalate.",
+          "year": "1988",
+          "rating": 7.3,
+          "first_seen": "2026-05-17"
         },
         {
           "title": "Peppermint Candy",
@@ -1214,9 +1150,6 @@
           "link": "https://filmforum.org/film/manas",
           "date_str": "Now Playing",
           "showtimes": [
-            "1:10 PM",
-            "3:30 PM",
-            "8:15 PM",
             "12:30 PM",
             "2:50 PM",
             "7:40 PM"
@@ -1228,7 +1161,6 @@
           "link": "https://filmforum.org/film/agathas-almanac",
           "date_str": "Now Playing",
           "showtimes": [
-            "12:50 PM",
             "12:40 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/3HZNzBgBMp4TEPqWoktDWom9JZ4.jpg",
@@ -1241,7 +1173,6 @@
           "link": "https://filmforum.org/film/bellissima",
           "date_str": "June 11",
           "showtimes": [
-            "5:50 PM",
             "5:10 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/Ao5l92i1QPYq3Na98cffLInFsGB.jpg",
@@ -1263,35 +1194,6 @@
           "overview": "A cinematic love letter to a pre-gentrification New York City",
           "year": "1986",
           "first_seen": "2026-05-03"
-        },
-        {
-          "title": "RIVER OF NO RETURN",
-          "link": "https://filmforum.org/film/river-of-no-return-marilyn-100",
-          "date_str": "June 7",
-          "showtimes": [
-            "1:00 PM",
-            "2:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/47L7Uean0SqB74Qr6qVG5Vb5kgH.jpg",
-          "overview": "An itinerant farmer and his young son help a heart-of-gold saloon singer search for her estranged husband.",
-          "year": "1954",
-          "rating": 6.7,
-          "first_seen": "2026-05-28"
-        },
-        {
-          "title": "SOME LIKE IT HOT",
-          "link": "https://filmforum.org/film/some-like-it-hot-marilyn-100",
-          "date_str": "June 7",
-          "showtimes": [
-            "5:15 PM",
-            "4:30 PM",
-            "7:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/hVIKyTK13AvOGv7ICmJjK44DTzp.jpg",
-          "overview": "In Prohibition-era Chicago, musicians Joe and Jerry witness a mob hit, and flee the state in an all-female band disguised as Josephine and Daphne, but further complications set in.",
-          "year": "1959",
-          "rating": 8.1,
-          "first_seen": "2026-05-27"
         },
         {
           "title": "NIAGARA",
@@ -1390,6 +1292,33 @@
           "first_seen": "2026-05-28"
         },
         {
+          "title": "RIVER OF NO RETURN",
+          "link": "https://filmforum.org/film/river-of-no-return-marilyn-100",
+          "date_str": "June 10",
+          "showtimes": [
+            "2:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/47L7Uean0SqB74Qr6qVG5Vb5kgH.jpg",
+          "overview": "An itinerant farmer and his young son help a heart-of-gold saloon singer search for her estranged husband.",
+          "year": "1954",
+          "rating": 6.7,
+          "first_seen": "2026-05-28"
+        },
+        {
+          "title": "SOME LIKE IT HOT",
+          "link": "https://filmforum.org/film/some-like-it-hot-marilyn-100",
+          "date_str": "June 10",
+          "showtimes": [
+            "4:30 PM",
+            "7:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/hVIKyTK13AvOGv7ICmJjK44DTzp.jpg",
+          "overview": "In Prohibition-era Chicago, musicians Joe and Jerry witness a mob hit, and flee the state in an all-female band disguised as Josephine and Daphne, but further complications set in.",
+          "year": "1959",
+          "rating": 8.1,
+          "first_seen": "2026-05-27"
+        },
+        {
           "title": "HOW TO MARRY A MILLIONAIRE",
           "link": "https://filmforum.org/film/how-to-marry-a-millionaire-marilyn-100",
           "date_str": "June 11",
@@ -1405,7 +1334,7 @@
         {
           "title": "THE SEVEN YEAR ITCH",
           "link": "https://filmforum.org/film/the-seven-year-itch-marilyn-100",
-          "date_str": "June 7",
+          "date_str": "June 11",
           "showtimes": [
             "4:40 PM"
           ],
@@ -1444,6 +1373,12 @@
           "year": "1970",
           "rating": 7.0,
           "first_seen": "2026-06-07"
+        },
+        {
+          "title": "The Young Film Forum (YFF) Archive Dive: AFTER LIFE",
+          "link": "https://filmforum.org/film/after-life-yff-archive-dive",
+          "date_str": "June 12",
+          "first_seen": "2026-06-08"
         }
       ]
     },
@@ -1453,7 +1388,7 @@
         {
           "title": "Ask E. Jean",
           "link": "https://www.ifccenter.com/films/ask-e-jean",
-          "date_str": "Jun 7",
+          "date_str": "Jun 8",
           "showtimes": [
             "10:35 AM",
             "5:35 PM"
@@ -1466,7 +1401,7 @@
         {
           "title": "Blue Film",
           "link": "https://www.ifccenter.com/films/blue-film",
-          "date_str": "Jun 7",
+          "date_str": "Jun 8",
           "showtimes": [
             "3:35 PM",
             "7:40 PM"
@@ -1479,7 +1414,7 @@
         {
           "title": "Blue Heron",
           "link": "https://www.ifccenter.com/films/blue-heron",
-          "date_str": "Jun 7",
+          "date_str": "Jun 8",
           "showtimes": [
             "11:05 AM",
             "9:45 PM"
@@ -1492,7 +1427,7 @@
         {
           "title": "Cave of Forgotten Dreams 3D",
           "link": "https://www.ifccenter.com/films/cave-of-forgotten-dreams-3d",
-          "date_str": "Jun 7",
+          "date_str": "Jun 8",
           "showtimes": [
             "12:25 PM",
             "1:15 PM"
@@ -1506,7 +1441,7 @@
         {
           "title": "Chum",
           "link": "https://www.ifccenter.com/films/chum",
-          "date_str": "Jun 7",
+          "date_str": "Jun 8",
           "showtimes": [
             "10:35 AM"
           ],
@@ -1518,7 +1453,7 @@
         {
           "title": "The Easy Kind",
           "link": "https://www.ifccenter.com/films/the-easy-kind",
-          "date_str": "Jun 7",
+          "date_str": "Jun 8",
           "showtimes": [
             "2:25 PM",
             "4:35 PM",
@@ -1533,7 +1468,7 @@
         {
           "title": "Jinsei",
           "link": "https://www.ifccenter.com/films/jinsei",
-          "date_str": "Jun 7",
+          "date_str": "Jun 8",
           "showtimes": [
             "2:05 PM",
             "4:25 PM",
@@ -1548,7 +1483,7 @@
         {
           "title": "Mulholland Dr.",
           "link": "https://www.ifccenter.com/films/mulholland-dr",
-          "date_str": "Jun 7",
+          "date_str": "Jun 8",
           "showtimes": [
             "11:00 AM",
             "3:35 PM",
@@ -1565,7 +1500,7 @@
         {
           "title": "A New Leaf",
           "link": "https://www.ifccenter.com/films/a-new-leaf",
-          "date_str": "Jun 7",
+          "date_str": "Jun 8",
           "showtimes": [
             "5:05 PM",
             "4:45 PM"
@@ -1582,7 +1517,7 @@
         {
           "title": "Renoir",
           "link": "https://www.ifccenter.com/films/renoir",
-          "date_str": "Jun 7",
+          "date_str": "Jun 8",
           "showtimes": [
             "1:00 PM",
             "6:35 PM"
@@ -1596,12 +1531,12 @@
         {
           "title": "She's the He",
           "link": "https://www.ifccenter.com/films/shes-the-he",
-          "date_str": "Jun 7",
+          "date_str": "Jun 8",
           "showtimes": [
+            "1:10 PM",
             "3:05 PM",
             "7:30 PM",
             "9:40 PM",
-            "1:10 PM",
             "7:45 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/2BhhlAYwKvONGW7tr16ZhnD0sym.jpg",
@@ -1613,7 +1548,7 @@
         {
           "title": "Steal This Story, Please!",
           "link": "https://www.ifccenter.com/films/steal-this-story-please",
-          "date_str": "Jun 7",
+          "date_str": "Jun 8",
           "showtimes": [
             "10:45 AM"
           ],
@@ -1625,7 +1560,7 @@
         {
           "title": "Terminator 2: Judgment Day",
           "link": "https://www.ifccenter.com/films/terminator-2-judgment-day",
-          "date_str": "Jun 7",
+          "date_str": "Jun 8",
           "showtimes": [
             "12:20 PM",
             "9:10 PM",
@@ -1910,19 +1845,6 @@
           "first_seen": "2026-06-06"
         },
         {
-          "title": "Liberty",
-          "link": "https://www.filmlinc.org/films/liberty/",
-          "date_str": "Jun 08",
-          "showtimes": [
-            "6:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/aGh5zpJSuxcx4lzFFbZ2QyY8wQP.jpg",
-          "overview": "The President's daughter, unable to experience life like a normal 18 year-old, escapes from her entourage of Secret Service agents while traveling in Europe. She falls in love with a handsome British stranger, who also happens to be working undercover for her father.",
-          "year": "2004",
-          "rating": 6.2,
-          "first_seen": "2026-05-19"
-        },
-        {
           "title": "Love and Anarchy",
           "link": "https://www.filmlinc.org/films/love-and-anarchy/",
           "date_str": "Jun 21",
@@ -2058,6 +1980,19 @@
           "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
           "year": "2026",
           "first_seen": "2026-06-07"
+        },
+        {
+          "title": "Senso",
+          "link": "https://www.filmlinc.org/films/senso/",
+          "date_str": "Jun 09",
+          "showtimes": [
+            "9:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/iyWApADv4UD9KtVQvJ1mkKn9WXV.jpg",
+          "overview": "A troubled and neurotic Italian Countess betrays her entire country for a self-destructive love affair with an Austrian Lieutenant.",
+          "year": "1954",
+          "rating": 7.2,
+          "first_seen": "2026-06-03"
         }
       ]
     },
@@ -2065,58 +2000,19 @@
       "url": "https://anthologyfilmarchives.org/film_screenings/calendar",
       "events": [
         {
-          "title": "NEW NEWS FROM ANOTHER HOME",
+          "title": "HOUSEHOLD AFFAIRS + NO MORE TO SAY",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=06&year=2026",
-          "date_str": "Jun 08",
+          "date_str": "Jun 09",
           "showtimes": [
-            "6:30 PM"
+            "6:15 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/4ZWRvRW8YWi37Uic7GUElP6OUfk.jpg",
-          "overview": "New News From Another Home relates to its iconic original like a doppelgänger narrative. Almost fifty years after Chantal Akerman read out letters her mother sent her during her first stay in New York over images of the foreign city’s urban canyons, subway stations and building facades, Borjana Ventzislavova embarks on a personal journey through Akerman’s revered work. Images of the original locations are accompanied by emails from Ventzislavova’s mother, the tone of which is a combination of concern and gentle admonitions (the daughter sometimes writes too rarely and says too little), not unlike Natalia Akerman’s letters. “Dear Bube…” is how the “new news” begins, in which the mother reports about her everyday life in Bulgaria: the weather, health problems, family gatherings.",
-          "year": "2024",
-          "first_seen": "2026-05-29"
+          "first_seen": "2026-06-02"
         }
       ]
     },
     "Museum of the Moving Image": {
       "url": "https://movingimage.org/whats-on/screenings-and-series/",
       "events": [
-        {
-          "title": "Days of Heaven",
-          "link": "https://movingimage.org/event/days-of-heaven/2026-06-07/",
-          "date_str": "Jun 07",
-          "poster": "https://image.tmdb.org/t/p/w300/rwxTYjOZmX2rGhz7avLe1qsjNqe.jpg",
-          "overview": "In 1916, a Chicago steel worker accidentally kills his supervisor and flees to the Texas panhandle with his girlfriend and little sister to work harvesting wheat in the fields of a stoic farmer.",
-          "year": "1978",
-          "rating": 7.5,
-          "first_seen": "2026-06-01"
-        },
-        {
-          "title": "Chan Is Missing",
-          "link": "https://movingimage.org/event/chan-is-missing/",
-          "date_str": "Jun 07",
-          "poster": "https://image.tmdb.org/t/p/w300/tox88i0SL3Nv0E7dy5EBboN6j46.jpg",
-          "overview": "Two cabbies search San Francisco's Chinatown for a mysterious character who has disappeared with their $4000. Their quest leads them on a humorous, if mundane, journey which illuminates the many problems experienced by Chinese-Americans trying to assimilate into contemporary American society.",
-          "year": "1982",
-          "rating": 6.8,
-          "first_seen": "2026-06-01"
-        },
-        {
-          "title": "Buddies + conversation with David Schachter and Roe Bressan",
-          "link": "https://movingimage.org/event/buddies/",
-          "date_str": "Jun 07",
-          "poster": "https://image.tmdb.org/t/p/w300/iunbsMWtkwfrtRzU7hdCHhPjjJf.jpg",
-          "overview": "Weekend trips, office parties, late night conversations, drinking on the job, marriage pressure, biological clocks, holding eye contact a second too long… you know what makes the line between “friends” and “more than friends” really blurry? Beer.",
-          "year": "2013",
-          "rating": 5.9,
-          "first_seen": "2026-06-01"
-        },
-        {
-          "title": "Vibrance: LGBTQIA+ short films from Firelight Media",
-          "link": "https://movingimage.org/event/vibrance-lgbtqia-short-films/",
-          "date_str": "Jun 07",
-          "first_seen": "2026-06-01"
-        },
         {
           "title": "Body Double",
           "link": "https://movingimage.org/event/body-double/",
@@ -2136,6 +2032,36 @@
           "year": "2024",
           "rating": 6.3,
           "first_seen": "2026-05-30"
+        },
+        {
+          "title": "Modern Times",
+          "link": "https://movingimage.org/event/modern-times/",
+          "date_str": "Jun 13",
+          "poster": "https://image.tmdb.org/t/p/w300/7uoiKOEjxBBW0AgDGQWrlfGQ90w.jpg",
+          "overview": "A bumbling tramp desires to build a home with a young woman, yet is thwarted time and time again by his lack of experience and habit of being in the wrong place at the wrong time...",
+          "year": "1936",
+          "rating": 8.3,
+          "first_seen": "2026-06-08"
+        },
+        {
+          "title": "Days of Heaven",
+          "link": "https://movingimage.org/event/days-of-heaven/2026-06-13/",
+          "date_str": "Jun 13",
+          "poster": "https://image.tmdb.org/t/p/w300/rwxTYjOZmX2rGhz7avLe1qsjNqe.jpg",
+          "overview": "In 1916, a Chicago steel worker accidentally kills his supervisor and flees to the Texas panhandle with his girlfriend and little sister to work harvesting wheat in the fields of a stoic farmer.",
+          "year": "1978",
+          "rating": 7.5,
+          "first_seen": "2026-06-01"
+        },
+        {
+          "title": "Born in Flames",
+          "link": "https://movingimage.org/event/born-in-flames/",
+          "date_str": "Jun 14",
+          "poster": "https://image.tmdb.org/t/p/w300/nusvS8bHgIx3L2mHRLGtVjRnQOK.jpg",
+          "overview": "After the death of the family patriarch, a mother and daughter’s precarious existence is ripped apart. They must find strength in each other if they are to survive the malevolent forces that threaten to engulf them.",
+          "year": "2023",
+          "rating": 5.9,
+          "first_seen": "2026-06-08"
         },
         {
           "title": "Singin’ in the Rain",
@@ -2162,6 +2088,16 @@
           "link": "https://movingimage.org/event/2-x-harun-farocki-serious-games-i-iv-inextinguishable-fire/",
           "date_str": "Jun 20",
           "first_seen": "2026-06-05"
+        },
+        {
+          "title": "The Crowd + Live Musical Accompaniment",
+          "link": "https://movingimage.org/event/the-crowd/",
+          "date_str": "Jun 14",
+          "poster": "https://image.tmdb.org/t/p/w300/jftzHLCZLE2DOLQWY0mENOIPjxc.jpg",
+          "overview": "John, an ambitious but undisciplined New York City office worker, meets and marries Mary. They start a family, struggle to cope with marital stress, financial setbacks, and tragedy, all while lost amid the anonymous, pitiless throngs of the big city.",
+          "year": "1928",
+          "rating": 7.6,
+          "first_seen": "2026-06-08"
         },
         {
           "title": "Street Smart: Lessons from a TV Icon",
@@ -2227,32 +2163,6 @@
     "MoMA": {
       "url": "https://www.moma.org/calendar/film",
       "events": [
-        {
-          "title": "Winchester '73",
-          "link": "https://www.moma.org/calendar/events/11454",
-          "date_str": "Sun, Jun 7",
-          "showtimes": [
-            "1:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/rqRgjWqSmK9oI6duvigPmn49aVG.jpg",
-          "overview": "Lin McAdam rides into town on the trail of Dutch Henry Brown, only to find himself in a shooting competition against him. McAdam wins the prize, a one-in-a-thousand Winchester rifle, but Dutch steals it and leaves town. McAdam follows, intent on settling his old quarrel, while the rifle keeps changing hands and touching a number of lives.",
-          "year": "1950",
-          "rating": 7.3,
-          "first_seen": "2026-06-02"
-        },
-        {
-          "title": "Bend of the River",
-          "link": "https://www.moma.org/calendar/events/11455",
-          "date_str": "Sun, Jun 7",
-          "showtimes": [
-            "4:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/pffOvEVDt6XRWDwBkmQ6zWITakJ.jpg",
-          "overview": "Two men with questionable pasts, Glyn McLyntock and his friend Cole, lead a wagon-train load of homesteaders from Missouri to the Oregon territory...",
-          "year": "1952",
-          "rating": 7.0,
-          "first_seen": "2026-06-02"
-        },
         {
           "title": "Law and Order",
           "link": "https://www.moma.org/calendar/events/11456",
@@ -2526,6 +2436,19 @@
           "first_seen": "2026-06-02"
         },
         {
+          "title": "Winchester '73",
+          "link": "https://www.moma.org/calendar/events/11454",
+          "date_str": "Fri, Jun 19",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/rqRgjWqSmK9oI6duvigPmn49aVG.jpg",
+          "overview": "Lin McAdam rides into town on the trail of Dutch Henry Brown, only to find himself in a shooting competition against him. McAdam wins the prize, a one-in-a-thousand Winchester rifle, but Dutch steals it and leaves town. McAdam follows, intent on settling his old quarrel, while the rifle keeps changing hands and touching a number of lives.",
+          "year": "1950",
+          "rating": 7.3,
+          "first_seen": "2026-06-02"
+        },
+        {
           "title": "The Spoilers",
           "link": "https://www.moma.org/calendar/events/11474",
           "date_str": "Sat, Jun 20",
@@ -2536,6 +2459,19 @@
           "overview": "When honest ship captain Roy Glennister gets swindled out of his mine claim, he turns to saloon singer Cherry Malotte for assistance in his battle with no-good town kingpin Alexander McNamara.",
           "year": "1942",
           "rating": 6.2,
+          "first_seen": "2026-06-02"
+        },
+        {
+          "title": "Bend of the River",
+          "link": "https://www.moma.org/calendar/events/11455",
+          "date_str": "Sat, Jun 20",
+          "showtimes": [
+            "4:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/pffOvEVDt6XRWDwBkmQ6zWITakJ.jpg",
+          "overview": "Two men with questionable pasts, Glyn McLyntock and his friend Cole, lead a wagon-train load of homesteaders from Missouri to the Oregon territory...",
+          "year": "1952",
+          "rating": 7.0,
           "first_seen": "2026-06-02"
         },
         {
@@ -2583,19 +2519,6 @@
       "url": "https://nitehawkcinema.com/williamsburg/",
       "events": [
         {
-          "title": "Pink Flamingos",
-          "link": "https://nitehawkcinema.com/movies/pink-flamingos/",
-          "date_str": "Jun 8",
-          "showtimes": [
-            "9:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/10N8SvTQwUqyWgocPam1P18Jgr.jpg",
-          "overview": "Notorious Baltimore criminal and underground figure Divine goes up against Connie & Raymond Marble, a sleazy married couple who make a passionate attempt to humiliate her and seize her tabloid-given title as \"The Filthiest Person Alive\".",
-          "year": "1976",
-          "rating": 6.1,
-          "first_seen": "2026-05-16"
-        },
-        {
           "title": "Wild Things",
           "link": "https://nitehawkcinema.com/movies/wild-things/",
           "date_str": "Jun 20",
@@ -2631,6 +2554,19 @@
           "first_seen": "2026-06-06"
         },
         {
+          "title": "Victim",
+          "link": "https://nitehawkcinema.com/movies/victim/",
+          "date_str": "Jun 29",
+          "showtimes": [
+            "9:15 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/6N1V0qW86D5jxcPyLlIJpjgNX6p.jpg",
+          "overview": "A web of blackmail and murder attracts the attention of a barrister with a seemingly idyllic life, threatening to derail his career on the path of success.",
+          "year": "1961",
+          "rating": 7.4,
+          "first_seen": "2026-06-08"
+        },
+        {
           "title": "Muppet Treasure Island",
           "link": "https://nitehawkcinema.com/movies/muppet-treasure-island/",
           "date_str": "Jun 27",
@@ -2644,32 +2580,6 @@
           "first_seen": "2026-06-06"
         },
         {
-          "title": "Little Miss Sunshine",
-          "link": "https://nitehawkcinema.com/movies/little-miss-sunshine/",
-          "date_str": "Jun 13",
-          "showtimes": [
-            "11:00 AM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/niNdhTpPHSgw22tK0PLjQMV640v.jpg",
-          "overview": "A family loaded with quirky, colorful characters piles into an old van and road trips to California for little Olive to compete in a beauty pageant.",
-          "year": "2006",
-          "rating": 7.7,
-          "first_seen": "2026-05-23"
-        },
-        {
-          "title": "Aliens",
-          "link": "https://nitehawkcinema.com/movies/aliens/",
-          "date_str": "Jun 19",
-          "showtimes": [
-            "11:55 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
-          "overview": "Ripley, the sole survivor of the Nostromo's deadly encounter with the monstrous Alien, returns to Earth after drifting through space in hypersleep for 57 years. Although her story is initially met with skepticism, she agrees to accompany a team of Colonial Marines back to LV-426.",
-          "year": "1986",
-          "rating": 8.0,
-          "first_seen": "2026-05-27"
-        },
-        {
           "title": "Women Who Kill",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/future-of-film-is-female/",
           "date_str": "Jun 10",
@@ -2681,6 +2591,19 @@
           "year": "2016",
           "rating": 4.9,
           "first_seen": "2026-05-20"
+        },
+        {
+          "title": "Little Miss Sunshine",
+          "link": "https://nitehawkcinema.com/movies/little-miss-sunshine/",
+          "date_str": "Jun 13",
+          "showtimes": [
+            "11:00 AM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/niNdhTpPHSgw22tK0PLjQMV640v.jpg",
+          "overview": "A family loaded with quirky, colorful characters piles into an old van and road trips to California for little Olive to compete in a beauty pageant.",
+          "year": "2006",
+          "rating": 7.7,
+          "first_seen": "2026-05-23"
         },
         {
           "title": "The Mask of Fu Manchu",
@@ -2736,6 +2659,19 @@
           "first_seen": "2026-05-30"
         },
         {
+          "title": "Aliens",
+          "link": "https://nitehawkcinema.com/movies/aliens/",
+          "date_str": "Jun 19",
+          "showtimes": [
+            "11:55 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
+          "overview": "Ripley, the sole survivor of the Nostromo's deadly encounter with the monstrous Alien, returns to Earth after drifting through space in hypersleep for 57 years. Although her story is initially met with skepticism, she agrees to accompany a team of Colonial Marines back to LV-426.",
+          "year": "1986",
+          "rating": 8.0,
+          "first_seen": "2026-05-27"
+        },
+        {
           "title": "The Trip",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/film-feasts/",
           "date_str": "Jun 24",
@@ -2753,31 +2689,6 @@
     "Nitehawk (Prospect Park)": {
       "url": "https://nitehawkcinema.com/prospectpark/",
       "events": [
-        {
-          "title": "All You Need Is Kill",
-          "link": "https://nitehawkcinema.com/movies/all-you-need-is-kill/",
-          "date_str": "Jun 15",
-          "showtimes": [
-            "9:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/8RqYjWBHOndkcORj7gBVDKYpopV.jpg",
-          "overview": "A mute Cartel enforcer-turned-informant and his longtime caretaker are forced out of retirement by their previous employer, looking for revenge.",
-          "year": "2014",
-          "first_seen": "2026-05-27"
-        },
-        {
-          "title": "Strangers on a Train",
-          "link": "https://nitehawkcinema.com/movies/strangers-on-a-train/",
-          "date_str": "Jun 8",
-          "showtimes": [
-            "9:15 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/ihC083U7ef56Ui4x0P0dobojrZ1.jpg",
-          "overview": "A charming psychopath tries to coerce a tennis star into his theory that two strangers can commit the perfect crime by exchanging murders—each killing the other’s most-hated person.",
-          "year": "1951",
-          "rating": 7.7,
-          "first_seen": "2026-05-17"
-        },
         {
           "title": "Chocolate Babies",
           "link": "https://nitehawkcinema.com/movies/chocolate-babies/",
@@ -2863,6 +2774,18 @@
           "year": "1933",
           "rating": 7.1,
           "first_seen": "2026-05-19"
+        },
+        {
+          "title": "All You Need Is Kill",
+          "link": "https://nitehawkcinema.com/movies/all-you-need-is-kill/",
+          "date_str": "Jun 15",
+          "showtimes": [
+            "9:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/8RqYjWBHOndkcORj7gBVDKYpopV.jpg",
+          "overview": "A mute Cartel enforcer-turned-informant and his longtime caretaker are forced out of retirement by their previous employer, looking for revenge.",
+          "year": "2014",
+          "first_seen": "2026-05-27"
         },
         {
           "title": "The Butterfly Effect",
@@ -2966,12 +2889,6 @@
       "url": "https://www.spectacletheater.com/",
       "events": [
         {
-          "title": "The Magic of Cinema: The Films of Dominic Angerame",
-          "link": "https://www.spectacletheater.com/the-magic-of-cinema-the-films-of-dominic-angerame/",
-          "date_str": "Jun 07",
-          "first_seen": "2026-06-05"
-        },
-        {
           "title": "FWENDS + LINDA 4EVA",
           "link": "https://www.spectacletheater.com/fwends-linda-4eva/",
           "date_str": "Jun 08",
@@ -3042,63 +2959,23 @@
       "url": "https://syndicatedbk.com/",
       "events": [
         {
-          "title": "Is God Is",
+          "title": "Nirvanna the Band the Show the Movie",
           "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
-          "date_str": "Monday 8, June",
+          "date_str": "Tuesday 9, June",
           "showtimes": [
-            "6:20 PM"
+            "6:15 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/rCYQGHdoz7qwYsb6wXETJfUfDLX.jpg",
-          "overview": "Two sisters embark on an epic quest for revenge, confronting a charged family history that pushes them to extraordinary lengths.",
+          "poster": "https://image.tmdb.org/t/p/w300/sm5TGX8WbnCd9Uo26cLyTxVwA1n.jpg",
+          "overview": "When their plan to book a show at the Rivoli goes horribly wrong, Matt and Jay accidentally travel back to the year 2008. Blah blah blah blah blah.",
           "year": "2026",
-          "rating": 6.1,
-          "first_seen": "2026-05-28"
+          "rating": 7.5,
+          "first_seen": "2026-05-03"
         }
       ]
     },
     "Paris Theater": {
       "url": "https://paristheaternyc.com",
       "events": [
-        {
-          "title": "Zodiac",
-          "link": "https://www.paristheaternyc.com/film/zodiac-bleak-week",
-          "date_str": "Jun 07",
-          "poster": "https://image.tmdb.org/t/p/w300/6YmeO4pB7XTh8P8F960O1uA14JO.jpg",
-          "overview": "Over the course of a decade, editors of the San Francisco Chronicle entice themselves in the murders of the Zodiac Killer. However, as time runs its course, interest in the case dwindles in the eyes of the professionals. The Killer stops interacting with the public. However, believing he has the answers, an amateur cartoonist from the initial sightings races against time to prevent what he believes is another murder.",
-          "year": "2007",
-          "rating": 7.5,
-          "first_seen": "2026-06-02"
-        },
-        {
-          "title": "Werckmeister Harmonies",
-          "link": "https://www.paristheaternyc.com/film/werckmeister-harmonies-bleak-week",
-          "date_str": "Jun 07",
-          "poster": "https://image.tmdb.org/t/p/w300/ix3pquGqTkCW86UbVTdRcrhGEFm.jpg",
-          "overview": "A naive young man witnesses an escalation of violence in his small hometown following the arrival of a mysterious circus attraction.",
-          "year": "2001",
-          "rating": 7.8,
-          "first_seen": "2026-06-03"
-        },
-        {
-          "title": "Matador",
-          "link": "https://www.paristheaternyc.com/film/matador-bleak-week",
-          "date_str": "Jun 07",
-          "poster": "https://image.tmdb.org/t/p/w300/gdqyLupS8sQ8qQRuHutiaNAKyz3.jpg",
-          "overview": "A conflicted youth confesses to crimes he didn't commit while a man and woman aroused by death become obsessed with each other.",
-          "year": "1986",
-          "rating": 6.7,
-          "first_seen": "2026-06-04"
-        },
-        {
-          "title": "Spider",
-          "link": "https://www.paristheaternyc.com/film/spider-bleak-week",
-          "date_str": "Jun 08",
-          "poster": "https://image.tmdb.org/t/p/w300/zvm4WuYxTiGkRagRqHUey0meRQL.jpg",
-          "overview": "A mentally disturbed man takes residence in a halfway house. His mind gradually slips back into the realm created by his illness, where he replays a key part of his childhood.",
-          "year": "2002",
-          "rating": 6.6,
-          "first_seen": "2026-06-04"
-        },
         {
           "title": "Miracle Mile",
           "link": "https://www.paristheaternyc.com/film/miracle-mile-bleak-week",
@@ -3110,6 +2987,16 @@
           "overview": "After 30 years of searching, Harry has finally met the girl of his dreams. Unfortunately, before they even have a chance to go on their first date, Harry intercepts some chilling news: WWIII has begun and nuclear missiles will destroy Los Angeles in less than an hour!",
           "year": "1989",
           "rating": 6.9,
+          "first_seen": "2026-06-04"
+        },
+        {
+          "title": "Spider",
+          "link": "https://www.paristheaternyc.com/film/spider-bleak-week",
+          "date_str": "Jun 08",
+          "poster": "https://image.tmdb.org/t/p/w300/zvm4WuYxTiGkRagRqHUey0meRQL.jpg",
+          "overview": "A mentally disturbed man takes residence in a halfway house. His mind gradually slips back into the realm created by his illness, where he replays a key part of his childhood.",
+          "year": "2002",
+          "rating": 6.6,
           "first_seen": "2026-06-04"
         },
         {
@@ -3309,9 +3196,8 @@
         {
           "title": "Obsession",
           "link": "https://www.bam.org/film/2026/obsession",
-          "date_str": "Jun 07",
+          "date_str": "Jun 08",
           "showtimes": [
-            "1:50 PM",
             "4:30 PM",
             "7:00 PM",
             "9:30 PM"
@@ -3325,9 +3211,8 @@
         {
           "title": "I Love Boosters",
           "link": "https://www.bam.org/film/2026/i-love-boosters",
-          "date_str": "Jun 07",
+          "date_str": "Jun 08",
           "showtimes": [
-            "1:30 PM",
             "4:10 PM",
             "6:40 PM",
             "9:10 PM",
@@ -3341,9 +3226,8 @@
         {
           "title": "Backrooms",
           "link": "https://www.bam.org/film/2026/backrooms",
-          "date_str": "Jun 07",
+          "date_str": "Jun 08",
           "showtimes": [
-            "1:45 PM",
             "4:15 PM",
             "6:45 PM",
             "9:15 PM"
@@ -3356,9 +3240,8 @@
         {
           "title": "Tuner",
           "link": "https://www.bam.org/film/2026/tuner",
-          "date_str": "Jun 07",
+          "date_str": "Jun 08",
           "showtimes": [
-            "1:30 PM",
             "4:00 PM",
             "6:30 PM",
             "9:00 PM"
@@ -3371,9 +3254,8 @@
         {
           "title": "The Currents",
           "link": "https://www.bam.org/film/2026/the-currents",
-          "date_str": "Jun 07",
+          "date_str": "Jun 08",
           "showtimes": [
-            "2:00 PM",
             "4:20 PM",
             "6:50 PM",
             "9:20 PM"
@@ -3461,12 +3343,6 @@
     "Maysles Documentary Center": {
       "url": "https://www.maysles.org/calendar",
       "events": [
-        {
-          "title": "BLACK BOX DIARIES – BIPOC DOC EDITORS BEHIND THE SCENES MASTERCLASS",
-          "link": "https://www.maysles.org/calendar/black-box-diaries-bipoc",
-          "date_str": "June 7, 2026",
-          "first_seen": "2026-05-21"
-        },
         {
           "title": "LANDLESSNESS: A Film Program",
           "link": "https://www.maysles.org/calendar/landlessness-a-film-program",
