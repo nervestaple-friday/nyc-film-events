@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-11T15:00:44.736856+00:00",
+  "updated": "2026-06-11T15:02:47.285956+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -1672,9 +1672,6 @@
           "title": "Rose of Nevada",
           "link": "https://www.ifccenter.com/films/rose-of-nevada",
           "date_str": "Jun 19",
-          "also_at": [
-            "Film at Lincoln Center"
-          ],
           "poster": "https://image.tmdb.org/t/p/w300/rqHgjvD5HV0ojj4CEV31ztertPK.jpg",
           "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
           "year": "2026",
@@ -1895,6 +1892,15 @@
           "first_seen": "2026-06-05"
         },
         {
+          "title": "NOPE on 70mm",
+          "link": "https://www.filmlinc.org/films/nope-on-70mm/",
+          "date_str": "Jul 02",
+          "showtimes": [
+            "6:00 PM"
+          ],
+          "first_seen": "2026-06-11"
+        },
+        {
           "title": "Policarpo",
           "link": "https://www.filmlinc.org/films/policarpo/",
           "date_str": "Jun 12",
@@ -1937,54 +1943,6 @@
           "year": "2025",
           "rating": 6.6,
           "first_seen": "2026-06-05"
-        },
-        {
-          "title": "Rose of Nevada",
-          "link": "https://www.filmlinc.org/films/rose-of-nevada/",
-          "date_str": "Jun 19",
-          "showtimes": [
-            "1:15 PM",
-            "3:45 PM",
-            "6:15 PM",
-            "9:15 PM",
-            "4:15 PM",
-            "6:45 PM",
-            "8:45 PM"
-          ],
-          "also_at": [
-            "IFC Center"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/rqHgjvD5HV0ojj4CEV31ztertPK.jpg",
-          "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
-          "year": "2026",
-          "first_seen": "2026-06-07"
-        },
-        {
-          "title": "Silent Friend",
-          "link": "https://www.filmlinc.org/films/silent-friend/",
-          "date_str": "Jun 12",
-          "showtimes": [
-            "3:15 PM",
-            "8:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/r52BdT1QKYBbJv6OJfqJCAdDqfh.jpg",
-          "overview": "On the grounds of a medieval German university town looms an imposing Ginkgo biloba, a tree whose longevity stands in marked contrast to three intimate, human-scaled stories. In 1908, the university’s first female student gains admission into the prestigious botany department, confronting the sexism of both professors and peers. In 1972, amidst counterculture movements, a reserved student finds his attention captured by a fellow housemate and the geranium plant she studies. In 2020, during the COVID-19 pandemic, a neuroscientist from Hong Kong secures the help of a renowned botanist for an experiment on the old ginkgo tree.",
-          "year": "2026",
-          "rating": 7.9,
-          "first_seen": "2026-06-09"
-        },
-        {
-          "title": "Small Body",
-          "link": "https://www.filmlinc.org/films/small-body/",
-          "date_str": "Jun 14",
-          "showtimes": [
-            "1:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/u1JvPuYJ2cUs1nnoLHFvnww2MJq.jpg",
-          "overview": "A young woman in early-1900s Italy searches for a mystical sanctuary where her stillborn child can be brought back to life long enough to be baptized.",
-          "year": "2022",
-          "rating": 7.0,
-          "first_seen": "2026-06-10"
         }
       ]
     },
