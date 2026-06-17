@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17T02:48:40.654032+00:00",
+  "updated": "2026-06-17T15:01:01.839805+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -1116,28 +1116,14 @@
           "date_str": "Now Playing",
           "showtimes": [
             "12:20 PM",
+            "8:45 PM",
             "4:30 PM",
-            "8:40 PM",
-            "8:45 PM"
+            "8:40 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/tBnTAI24zNndKulKiUQrIgYzOVb.jpg",
           "overview": "A cinematic love letter to a pre-gentrification New York City",
           "year": "1986",
           "first_seen": "2026-05-03"
-        },
-        {
-          "title": "NINOTCHKA",
-          "link": "https://filmforum.org/film/ninotchka-the-lubitsch-touch",
-          "date_str": "June 17",
-          "showtimes": [
-            "12:50 PM",
-            "6:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/v4MkgNqZyodYwBDNbZ64MF9tVEL.jpg",
-          "overview": "A stern Russian woman sent to Paris on official business finds herself attracted to a man who represents everything she is supposed to detest.",
-          "year": "1939",
-          "rating": 7.5,
-          "first_seen": "2026-06-10"
         },
         {
           "title": "The Young Film Forum (YFF) Archive Dive: AFTER LIFE",
@@ -1159,6 +1145,20 @@
           "overview": "Musical adaptation of Charles Dickens' Oliver Twist, a classic tale of an orphan who runs away from the workhouse and joins up with a group of boys headed by the Artful Dodger and trained to be pickpockets by master thief Fagin.",
           "year": "1968",
           "rating": 7.0,
+          "first_seen": "2026-06-17"
+        },
+        {
+          "title": "HEAVEN CAN WAIT",
+          "link": "https://filmforum.org/film/heaven-can-wait-the-lubitsch-touch",
+          "date_str": "June 17",
+          "showtimes": [
+            "12:50 PM",
+            "6:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/h1yOiO9cow6gwmGxSAWvPdY4lhJ.jpg",
+          "overview": "Joe Pendleton is a quarterback preparing to lead his team to the superbowl when he is almost killed in an accident. An overanxious angel plucks him to heaven only to discover that he wasn't ready to die, and that his body has been cremated. A new body must be found, and that of a recently-murdered millionaire is chosen. His wife and accountant—the murderers—are confused by this development, as he buys the L.A. Rams in order to once again quarterback them into the Superbowl.",
+          "year": "1978",
+          "rating": 6.6,
           "first_seen": "2026-06-17"
         },
         {
@@ -1211,12 +1211,234 @@
           "overview": "A long time ago Ed Saxberger wrote a book of poetry that no one ever cared about. When a group of young artists rediscover his work, he must reassess his genius. The wild card in the group is Gloria, a talented and mercurial theatre actress who toys with affections and who is all set to be admired by Saxberger.",
           "year": "2026",
           "first_seen": "2026-06-12"
+        },
+        {
+          "title": "THE BEND IN THE RIVER",
+          "link": "https://filmforum.org/film/the-bend-in-the-river",
+          "date_str": "June 17",
+          "poster": "https://image.tmdb.org/t/p/w300/zrTafy46PYoaP3KiTqlKYkxpPDi.jpg",
+          "overview": "The story of a writer who returns to Ireland, after spending twenty five years in New York, to confront the ghosts of his past.",
+          "year": "2020",
+          "first_seen": "2026-06-17"
         }
       ]
     },
     "IFC Center": {
       "url": "https://www.ifccenter.com/",
       "events": [
+        {
+          "title": "Ask E. Jean",
+          "link": "https://www.ifccenter.com/films/ask-e-jean",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "1:05 PM",
+            "10:50 AM",
+            "12:05 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/yFZ40JJcjJM7u5tfZFFb9lrF6Yt.jpg",
+          "overview": "Chronicles E. Jean Carroll's life, trailblazing work and legal battles.",
+          "year": "2026",
+          "first_seen": "2026-05-15"
+        },
+        {
+          "title": "Blue Film",
+          "link": "https://www.ifccenter.com/films/blue-film",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "3:15 PM",
+            "9:55 PM",
+            "9:50 PM",
+            "2:40 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/7wECL45CnlFWsiadBHwArgVJ1nL.jpg",
+          "overview": "Drawn by the promise of easy money and anonymous sex, queer camboy Aaron Eagle is shocked to discover a personal connection with the mysterious stranger who has paid for his company. Over the course of one night, the two men engage in a war of words and emotions as they wrestle with the impact of a tainted and shared past.",
+          "year": "2026",
+          "first_seen": "2026-05-03"
+        },
+        {
+          "title": "Blue Heron",
+          "link": "https://www.ifccenter.com/films/blue-heron",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "11:05 AM",
+            "9:35 PM",
+            "4:40 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/4hfMbVbYc2gsMnSE1K8Oc9LQH4j.jpg",
+          "overview": "In the late 1990s, a family of six settles into their new home on Vancouver Island, as internal dynamics are slowly revealed through the experiences of the youngest child, Sasha. Their fresh start is interrupted by the increasingly dangerous behavior of Jeremy, the family's oldest child.",
+          "year": "2026",
+          "first_seen": "2026-05-03"
+        },
+        {
+          "title": "Gaslit",
+          "link": "https://www.ifccenter.com/films/gaslit",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "2:15 PM",
+            "7:30 PM",
+            "7:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/vhhRdCPgnYDTQySyJjNCxTJ3s4e.jpg",
+          "overview": "In GASLIT, award-winning actor and activist Jane Fonda embarks on a road trip through Texas oil fields and Gulf Coast communities, meeting the people who are fighting back against the oil and gas extraction boom. This boom, which has led to the United States becoming the world’s biggest liquified natural gas (LNG) exporter, is also fueling a massive expansion of plastics production, as fossil fuel companies double down on petrochemicals to secure their future. These are the stories of the shrimpers, cattle ranchers, former oil workers, families, members of faith communities, community organizers, self-described “reluctant activists”, and people across political and cultural spectrums who have come together in defense of the communities and coastlines they love. Join Fonda as she travels across Texas and Louisiana bearing witness to the decades-long struggle between fossil fuel profiteering and the lives of everyday people.",
+          "year": "2026",
+          "first_seen": "2026-05-22"
+        },
+        {
+          "title": "Honeyjoon",
+          "link": "https://www.ifccenter.com/films/honeyjoon",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "10:35 AM",
+            "4:50 PM",
+            "7:45 PM",
+            "12:50 PM",
+            "7:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/k0MGRrDHmJ1RJKwd56f4RHDgF9x.jpg",
+          "overview": "Persian-Kurdish Lela and her American daughter June take a trip to the romantic Azores after a recent loss, both with polar opposite views about why they’re there, how to grieve, and the size of June’s tiny bikini. Amidst honeymooners, the Woman, Life, Freedom movement and their hot, philosophical tour guide, João, the pair find each other… coming back to life.",
+          "year": "2025",
+          "first_seen": "2026-05-23"
+        },
+        {
+          "title": "I Shot Andy Warhol",
+          "link": "https://www.ifccenter.com/films/i-shot-andy-warhol",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "11:00 AM",
+            "1:35 PM",
+            "4:10 PM",
+            "6:45 PM",
+            "9:20 PM",
+            "3:35 PM",
+            "8:00 PM",
+            "8:05 PM",
+            "7:35 PM",
+            "9:15 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/8BLETXcQDxooKo8NubmmJ1psIhb.jpg",
+          "overview": "Based on the true story of Valerie Solanas who was a 1960s radical preaching hatred toward men in her \"Scum\" manifesto. She wrote a screenplay for a film that she wanted Andy Warhol to produce, but he continued to ignore her. So she shot him. This is Valerie's story.",
+          "year": "1996",
+          "rating": 6.1,
+          "first_seen": "2026-05-22"
+        },
+        {
+          "title": "Jinsei",
+          "link": "https://www.ifccenter.com/films/jinsei",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "8:55 PM",
+            "1:00 PM",
+            "9:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/8fL1gbORj0F1cKpTRfkN4lrBZf.jpg",
+          "overview": "Our hero, called by a different name in each chapter of his life, becomes a J-pop idol, an outcast, a leader, and an oracle in this hundred-year chronicle spanning the past, present, and future. Through a chance encounter with a transfer student, he trains to become an idol, starting his search for self-identity and a journey toward greatness beyond superstardom.",
+          "year": "2025",
+          "first_seen": "2026-05-15"
+        },
+        {
+          "title": "La Retaguardia (The Ones Who Stay)",
+          "link": "https://www.ifccenter.com/films/la-retaguardia-the-ones-who-stay",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "10:35 AM",
+            "10:40 AM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/dvaYtgx3Okz47ZW8NsmRwb7S7h8.jpg",
+          "overview": "Four young Cuban artists choose to stay in Cuba during what has now become the island's largest migration crisis. The One Who Stay is an intimate portrait of those who stay behind, lose loved ones, and shape the identity of a generation at risk of fading away.",
+          "year": "2025",
+          "first_seen": "2026-06-17"
+        },
+        {
+          "title": "Maddie's Secret",
+          "link": "https://www.ifccenter.com/films/maddies-secret",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "7:00 PM",
+            "11:30 AM",
+            "12:45 PM",
+            "2:15 PM",
+            "3:10 PM",
+            "4:45 PM",
+            "5:35 PM",
+            "7:15 PM",
+            "8:05 PM",
+            "9:45 PM",
+            "10:15 PM",
+            "8:00 PM",
+            "10:10 PM",
+            "3:00 PM",
+            "5:15 PM"
+          ],
+          "also_at": [
+            "BAM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/pOqdX6e4y2F9JTyoe4qorBtXVaR.jpg",
+          "overview": "Ye Xiang Lun, a talented piano player is a new student at the prestigious Tamkang School. On his first day, he meets Lu Xiao Yu, a pretty girl playing a mysterious piece of music.",
+          "year": "2007",
+          "rating": 7.5,
+          "first_seen": "2026-06-10"
+        },
+        {
+          "title": "Renoir",
+          "link": "https://www.ifccenter.com/films/renoir",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "10:40 AM",
+            "5:20 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/6rITdY5SdUMFZ0lKmLUCsNFoKmJ.jpg",
+          "overview": "In the French Riviera in the summer of 1915, Jean Renoir, son of the Impressionist painter Pierre-Auguste, returns home to convalesce after being wounded in World War I. At his side is Andrée, a young woman who rejuvenates, enchants, and inspires both father and son.",
+          "year": "2012",
+          "rating": 6.3,
+          "first_seen": "2026-05-15"
+        },
+        {
+          "title": "She's the He",
+          "link": "https://www.ifccenter.com/films/shes-the-he",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "12:15 PM",
+            "5:50 PM",
+            "9:45 PM",
+            "7:50 PM",
+            "9:35 PM",
+            "10:20 PM",
+            "10:15 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/2BhhlAYwKvONGW7tr16ZhnD0sym.jpg",
+          "overview": "Leonardo is a blind teenager dealing with an overprotective mother while trying to live a more independent life. To the disappointment of his best friend, Giovana, he plans to go on an exchange program abroad. When Gabriel, a new student in town, arrives at their classroom, new feelings blossom in Leonardo making him question his plans.",
+          "year": "2014",
+          "rating": 7.9,
+          "first_seen": "2026-05-30"
+        },
+        {
+          "title": "Steal This Story, Please!",
+          "link": "https://www.ifccenter.com/films/steal-this-story-please",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "11:15 AM",
+            "7:35 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/d7SqbT4URKiw1zmmZBSy0aTzD50.jpg",
+          "overview": "New York-based independent investigative journalist Amy Goodman has been reporting from hotspots around the world for decades: from East Timor to Morocco, Nigeria, and Gaza, and closer to home during 9/11 and the Iraq War. Goodman and a small group of colleagues present the daily online, TV, and radio news program Democracy Now!, which has been on the air since 1996 with no government funding, thanks to contributions from donors, foundations, and news consumers.",
+          "year": "2026",
+          "first_seen": "2026-05-03"
+        },
+        {
+          "title": "Terminator 2: Judgment Day",
+          "link": "https://www.ifccenter.com/films/terminator-2-judgment-day",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "3:00 PM",
+            "2:55 PM",
+            "11:15 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/jFTVD4XoWQTcg7wdyJKa8PEds5q.jpg",
+          "overview": "Ten years after the events of the original, a reprogrammed T-800 is sent back in time to protect young John Connor from the shape-shifting T-1000. Together with his mother Sarah, he fights to stop Skynet from triggering a nuclear apocalypse.",
+          "year": "1991",
+          "rating": 8.1,
+          "first_seen": "2026-05-15"
+        },
         {
           "title": "True North",
           "link": "https://www.ifccenter.com/films/true-north",
@@ -1228,7 +1450,10 @@
             "1:45 PM",
             "10:35 AM",
             "1:20 PM",
-            "6:00 PM"
+            "6:00 PM",
+            "12:00 PM",
+            "1:50 PM",
+            "6:40 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/vJGnFvdlPg1QCaPgTrCObfbAmn7.jpg",
           "overview": "Centers on the 1969 student protests against racism at Montreal’s Concordia University and their contribution to the story of Black liberation.",
@@ -2107,6 +2332,28 @@
           "year": "1971",
           "rating": 6.1,
           "first_seen": "2026-06-02"
+        },
+        {
+          "title": "Coming to America: Edison, Biograph, Guy-Blaché, Chaplin, Scorsese",
+          "link": "https://www.moma.org/calendar/events/11486",
+          "date_str": "Fri, Jul 3",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "first_seen": "2026-06-17"
+        },
+        {
+          "title": "An American Romance",
+          "link": "https://www.moma.org/calendar/events/11487",
+          "date_str": "Sat, Jul 4",
+          "showtimes": [
+            "2:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/mpYQsGg1uCenH9spvs2UtdKJ4zy.jpg",
+          "overview": "A European immigrant becomes a master of industry but almost loses his family.",
+          "year": "1944",
+          "rating": 6.1,
+          "first_seen": "2026-06-17"
         }
       ]
     },
@@ -2215,15 +2462,6 @@
           "year": "2003",
           "rating": 6.1,
           "first_seen": "2026-06-17"
-        },
-        {
-          "title": "Live Sound Cinema: A Night of Surrealism",
-          "link": "https://nitehawkcinema.com/williamsburg/film-series/live-sound-cinema/",
-          "date_str": "Jun 17",
-          "showtimes": [
-            "9:30 PM"
-          ],
-          "first_seen": "2026-05-27"
         },
         {
           "title": "Spoons Toons & Booze Goes On Vacation",
@@ -2438,19 +2676,6 @@
           "year": "2014",
           "rating": 7.6,
           "first_seen": "2026-06-17"
-        },
-        {
-          "title": "Psycho",
-          "link": "https://nitehawkcinema.com/prospectpark/film-series/additional-dialogue/",
-          "date_str": "Jun 17",
-          "showtimes": [
-            "7:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/yz4QVqPx3h1hD1DfqqQkCq3rmxW.jpg",
-          "overview": "When larcenous real estate clerk Marion Crane goes on the lam with a wad of cash and hopes of starting a new life, she ends up at the notorious Bates Motel, where manager Norman Bates cares for his housebound mother.",
-          "year": "1960",
-          "rating": 8.4,
-          "first_seen": "2026-05-27"
         },
         {
           "title": "All the President’s Men",
@@ -2997,6 +3222,9 @@
             "4:15 PM",
             "6:45 PM",
             "9:15 PM"
+          ],
+          "also_at": [
+            "IFC Center"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/pOqdX6e4y2F9JTyoe4qorBtXVaR.jpg",
           "overview": "Ye Xiang Lun, a talented piano player is a new student at the prestigious Tamkang School. On his first day, he meets Lu Xiao Yu, a pretty girl playing a mysterious piece of music.",
