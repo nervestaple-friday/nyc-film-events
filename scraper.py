@@ -341,10 +341,10 @@ def scrape_spectacle():
             if screening_dates:
                 for dt, time_str in screening_dates:
                     date_str = dt.strftime('%b %d')
-                    if time_str:
-                        date_str += f' {time_str}'
+                    showtimes = [time_str] if time_str else None
                     e = make_event('Spectacle Theater', title, link,
-                                   date=dt, date_str=date_str, special=True)
+                                   date=dt, date_str=date_str,
+                                   special=True, showtimes=showtimes)
                     if e:
                         events.append(e)
             else:
