@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17T02:43:37.252069+00:00",
+  "updated": "2026-06-17T02:48:40.654032+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -2495,13 +2495,19 @@
         {
           "title": "INTERCAT 2026",
           "link": "https://www.spectacletheater.com/intercat-2026/",
-          "date_str": "Jun 18 7:30PM",
+          "date_str": "Jun 18",
+          "showtimes": [
+            "7:30PM"
+          ],
           "first_seen": "2026-06-02"
         },
         {
           "title": "FORBIDDEN LOVE: THE UNASHAMED STORIES OF LESBIAN LIVES",
           "link": "https://www.spectacletheater.com/forbidden-love-the-unashamed-stories-of-lesbian-lives/",
-          "date_str": "Jun 17 7:30 PM",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "7:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/aoTA6sJT3NwOmaZVfMB8PKeeQiK.jpg",
           "overview": "Ten women in Canada talk about being lesbian in the 1940s, 1950s, and 1960s: discovering the pulp fiction of the day about women in love, their own first affairs, the pain of breaking up, frequenting gay bars, facing police raids, men's responses, and the etiquette of butch and femme roles. Interspersed among the interviews and archival footage are four dramatized chapters from a pulp novel, \"Forbidden Love\".",
           "year": "1992",
@@ -2511,7 +2517,10 @@
         {
           "title": "DADDY AND THE MUSCLE ACADEMY",
           "link": "https://www.spectacletheater.com/daddy-and-the-muscle-academy/",
-          "date_str": "Jun 17 10 PM",
+          "date_str": "Jun 17",
+          "showtimes": [
+            "10 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/pFDxxjY4O9Uf5wsJ2JmwwKmlYH5.jpg",
           "overview": "Tom of Finland is one of the gay world's few authentic icons. His drawings have had an enormous influence on gay identity. Tom's ultimate leather men are known and seen everywhere. They are symbols of gay pride and friendship. The documentary includes some titillating 'enactments' inspired by Tom's art work.",
           "year": "1991",
@@ -2539,7 +2548,10 @@
         {
           "title": "FATHER’S DAY AT SPECTACLE: A BURNING STAR",
           "link": "https://www.spectacletheater.com/a-burning-star/",
-          "date_str": "Jun 21 7:30 PM",
+          "date_str": "Jun 21",
+          "showtimes": [
+            "7:30 PM"
+          ],
           "first_seen": "2026-05-31"
         }
       ]
