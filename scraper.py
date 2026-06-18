@@ -117,8 +117,8 @@ def clean_title_for_display(title):
     t = re.sub(r'^.+?\s+in\s+(?=[A-Z])', '', t)
     # Strip trailing " in 3-D!" or " in 3D"
     t = re.sub(r'\s+in\s+3-?D!?\s*$', '', t, flags=re.IGNORECASE)
-    # Strip bracketed/parenthesized format tags anywhere: [35mm], (DCP), [4K], [70mm], [16mm], [IMAX]
-    t = re.sub(r'\s*[\[\(](?:35\s*mm|16\s*mm|70\s*mm|DCP|4K|2K|IMAX|Digital)[\]\)]\s*',
+    # Strip bracketed/parenthesized format tags anywhere: [35mm], (DCP), [4K], [70mm], [16mm], [IMAX], [OV]
+    t = re.sub(r'\s*[\[\(](?:35\s*mm|16\s*mm|70\s*mm|DCP|4K|2K|IMAX|Digital|OV)[\]\)]\s*',
                ' ', t, flags=re.IGNORECASE)
     # Strip trailing format tags without brackets: " in 35mm", " - 35mm", " on 35mm"
     t = re.sub(r'\s+(?:in|on|-)\s+(?:35\s*mm|16\s*mm|70\s*mm|DCP|4K|2K|IMAX)\s*[!.]?\s*$',
@@ -212,6 +212,7 @@ def parse_date_loose(text):
 
 def make_event(venue, title, link='', date=None, date_str='', special=None, showtimes=None):
     title = clean_title(title)
+    title = clean_title_for_display(title)  # strip [OV], [35mm], [DCP], etc. from all venues
     if not title or len(title) < 3 or is_mainstream(title):
         return None
     ev = {
@@ -1980,8 +1981,8 @@ def _clean_title_for_tmdb(title):
     t = re.sub(r'^.+?\s+[Pp][Rr][Ee][Ss][Ee][Nn][Tt][Ss]?:?\s+', '', t)
     # Strip "(35mm!)" and similar tags
     t = re.sub(r'\s*\((?:35mm|16mm|DCP|FREE)[^)]*\)\s*$', '', t, flags=re.IGNORECASE)
-    # Strip "[35mm]", "[16mm]", "[DCP]" etc. in square brackets
-    t = re.sub(r'\s*\[(?:35mm|16mm|DCP|4K|70mm)[^\]]*\]', '', t, flags=re.IGNORECASE)
+    # Strip "[35mm]", "[16mm]", "[DCP]", "[OV]" etc. in square brackets
+    t = re.sub(r'\s*\[(?:35mm|16mm|DCP|4K|70mm|OV)[^\]]*\]', '', t, flags=re.IGNORECASE)
     # Strip quoted titles: '"HUSBANDS"' → 'HUSBANDS'
     t = re.sub(r'^"(.+)"$', r'\1', t)
     # Strip "Presented by Name" suffix
