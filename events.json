@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-18T15:00:47.997870+00:00",
+  "updated": "2026-06-18T15:05:29.518430+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -83,7 +83,7 @@
           "first_seen": "2026-05-15"
         },
         {
-          "title": "Death in Venice",
+          "title": "Venice",
           "link": "https://metrograph.com/film/?vista_film_id=9999003306",
           "date_str": "Jun 19",
           "showtimes": [
@@ -93,7 +93,7 @@
           "overview": "Celebrated sleuth Hercule Poirot, now retired and living in self-imposed exile in Venice, reluctantly attends a Halloween séance at a decaying, haunted palazzo. When one of the guests is murdered, the detective is thrust into a sinister world of shadows and secrets.",
           "year": "2023",
           "rating": 6.6,
-          "first_seen": "2026-05-29"
+          "first_seen": "2026-06-18"
         },
         {
           "title": "Marnie",
@@ -504,13 +504,16 @@
           "first_seen": "2026-05-03"
         },
         {
-          "title": "Bumming in Beijing: The Last Dreamers [OV]",
+          "title": "Beijing: The Last Dreamers",
           "link": "https://metrograph.com/film/?vista_film_id=9999004868",
           "date_str": "Jun 23",
           "showtimes": [
             "6:45 PM"
           ],
-          "first_seen": "2026-06-13"
+          "poster": "https://image.tmdb.org/t/p/w300/A9TDnYnMxXNSgt9iweseJPFw8UF.jpg",
+          "overview": "A documentary following five young artists from around China, who travelled to Beijing in the 1980s to work as freelancers, exploring their lives, careers, and what aspirations they may have for the future.",
+          "year": "1990",
+          "first_seen": "2026-06-18"
         },
         {
           "title": "Fellini Satyricon",
@@ -526,7 +529,7 @@
           "first_seen": "2026-05-24"
         },
         {
-          "title": "The Devil's Backbone",
+          "title": "Backbone",
           "link": "https://metrograph.com/film/?vista_film_id=9999004875",
           "date_str": "Jun 24",
           "showtimes": [
@@ -536,7 +539,7 @@
           "overview": "Spain, 1939. In the last days of the Spanish Civil War, the young Carlos arrives at the Santa Lucía orphanage, where he will make friends and enemies as he follows the quiet footsteps of a mysterious presence eager for revenge.",
           "year": "2001",
           "rating": 7.3,
-          "first_seen": "2026-05-22"
+          "first_seen": "2026-06-18"
         },
         {
           "title": "A Bigger Splash",
@@ -565,7 +568,7 @@
           "first_seen": "2026-05-24"
         },
         {
-          "title": "The Goalie's Anxiety at the Penalty Kick",
+          "title": "Anxiety at the Penalty Kick",
           "link": "https://metrograph.com/film/?vista_film_id=9999004872",
           "date_str": "Jun 24",
           "showtimes": [
@@ -575,7 +578,7 @@
           "overview": "Goalkeeper Josef Bloch is sent off after committing a foul during an away game. This causes him to lose his bearings, and he wanders aimlessly through the city streets and spends the night with the box-office attendant of a movie theatre.",
           "year": "1975",
           "rating": 5.9,
-          "first_seen": "2026-05-22"
+          "first_seen": "2026-06-18"
         },
         {
           "title": "Suzhou River",
@@ -656,17 +659,17 @@
           "first_seen": "2026-05-16"
         },
         {
-          "title": "Dead Mountaineer's Hotel",
+          "title": "Hotel",
           "link": "https://metrograph.com/film/?vista_film_id=9999004847",
           "date_str": "Jun 25",
           "showtimes": [
             "9:50 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/eJGvzGrsfe2sqTUPv5IwLWXjVuR.jpg",
-          "overview": "Welcome to Hotel Transylvania, Dracula's lavish five-stake resort, where monsters and their families can live it up and no humans are allowed. One special weekend, Dracula has invited all his best friends to celebrate his beloved daughter Mavis's 118th birthday. For Dracula catering to all of these legendary monsters is no problem but the party really starts when one ordinary guy stumbles into the hotel and changes everything!",
-          "year": "2012",
-          "rating": 7.0,
-          "first_seen": "2026-05-08"
+          "poster": "https://image.tmdb.org/t/p/w300/p3pHw85UMZPegfMZBA6dZ06yarm.jpg",
+          "overview": "Inspired by true events, this film takes place in Rwanda in the 1990s when more than a million Tutsis were killed in a genocide that went mostly unnoticed by the rest of the world. Hotel owner Paul Rusesabagina houses over a thousand refuges in his hotel in attempt to save their lives.",
+          "year": "2004",
+          "rating": 7.7,
+          "first_seen": "2026-06-18"
         },
         {
           "title": "What Do We See When We Look at the Sky?",
@@ -779,7 +782,7 @@
           "first_seen": "2026-06-07"
         },
         {
-          "title": "Ivan's Childhood",
+          "title": "Childhood",
           "link": "https://metrograph.com/film/?vista_film_id=9999004903",
           "date_str": "Jun 28",
           "showtimes": [
@@ -789,7 +792,7 @@
           "overview": "The first part of Bill Douglas' influential trilogy harks back to his impoverished upbringing in early-'40s Scotland. Cinema was his only escape - he paid for it with the money he made from returning empty jam jars - and this escape is reflected most closely at this time of his life as an eight-year-old living on the breadline with his half-brother and sick grandmother in a poor mining village.",
           "year": "1972",
           "rating": 7.1,
-          "first_seen": "2026-06-07"
+          "first_seen": "2026-06-18"
         },
         {
           "title": "Turtles Can Fly",
@@ -1291,7 +1294,7 @@
           "first_seen": "2026-05-15"
         },
         {
-          "title": "She's the He",
+          "title": "the He",
           "link": "https://www.ifccenter.com/films/shes-the-he",
           "date_str": "Jun 18",
           "showtimes": [
@@ -1307,7 +1310,7 @@
           "overview": "Leonardo is a blind teenager dealing with an overprotective mother while trying to live a more independent life. To the disappointment of his best friend, Giovana, he plans to go on an exchange program abroad. When Gabriel, a new student in town, arrives at their classroom, new feelings blossom in Leonardo making him question his plans.",
           "year": "2014",
           "rating": 7.9,
-          "first_seen": "2026-05-30"
+          "first_seen": "2026-06-18"
         },
         {
           "title": "Steal This Story, Please!",
@@ -1383,7 +1386,7 @@
           "first_seen": "2026-06-17"
         },
         {
-          "title": "Maddie's Secret",
+          "title": "Secret",
           "link": "https://www.ifccenter.com/films/maddies-secret",
           "date_str": "Jun 19",
           "showtimes": [
@@ -1412,7 +1415,7 @@
           "overview": "Ye Xiang Lun, a talented piano player is a new student at the prestigious Tamkang School. On his first day, he meets Lu Xiao Yu, a pretty girl playing a mysterious piece of music.",
           "year": "2007",
           "rating": 7.5,
-          "first_seen": "2026-06-10"
+          "first_seen": "2026-06-18"
         },
         {
           "title": "Purple Rain",
@@ -1428,7 +1431,7 @@
           "first_seen": "2026-06-02"
         },
         {
-          "title": "River's Edge",
+          "title": "Edge",
           "link": "https://www.ifccenter.com/films/rivers-edge",
           "date_str": "Jun 19",
           "showtimes": [
@@ -1438,7 +1441,7 @@
           "overview": "Major Bill Cage is an officer who has never seen a day of combat when he is unceremoniously demoted and dropped into combat. Cage is killed within minutes, managing to take an alpha alien down with him. He awakens back at the beginning of the same day and is forced to fight and die again... and again - as physical contact with the alien has thrown him into a time loop.",
           "year": "2014",
           "rating": 7.6,
-          "first_seen": "2026-06-17"
+          "first_seen": "2026-06-18"
         },
         {
           "title": "Rose of Nevada",
@@ -1566,13 +1569,20 @@
           "first_seen": "2026-05-30"
         },
         {
-          "title": "Aliens on 70mm",
+          "title": "Aliens",
           "link": "https://www.filmlinc.org/films/aliens-on-70mm/",
           "date_str": "Jul 03",
           "showtimes": [
             "6:00 PM"
           ],
-          "first_seen": "2026-06-12"
+          "also_at": [
+            "Nitehawk (Williamsburg)"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
+          "overview": "Ripley, the sole survivor of the Nostromo's deadly encounter with the monstrous Alien, returns to Earth after drifting through space in hypersleep for 57 years. Although her story is initially met with skepticism, she agrees to accompany a team of Colonial Marines back to LV-426.",
+          "year": "1986",
+          "rating": 8.0,
+          "first_seen": "2026-06-18"
         },
         {
           "title": "Amarcord",
@@ -1589,14 +1599,18 @@
           "first_seen": "2026-05-26"
         },
         {
-          "title": "Dune on 70mm",
+          "title": "Dune",
           "link": "https://www.filmlinc.org/films/dune-on-70mm/",
           "date_str": "Jul 03",
           "showtimes": [
             "9:00 PM",
             "6:00 PM"
           ],
-          "first_seen": "2026-06-12"
+          "poster": "https://image.tmdb.org/t/p/w300/gDzOcq0pfeCeqMBwKIJlSmQpjkZ.jpg",
+          "overview": "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.",
+          "year": "2021",
+          "rating": 7.8,
+          "first_seen": "2026-06-18"
         },
         {
           "title": "Garden of the Finzi-Continis",
@@ -1613,14 +1627,18 @@
           "first_seen": "2026-05-30"
         },
         {
-          "title": "Hamlet on 70mm",
+          "title": "Hamlet",
           "link": "https://www.filmlinc.org/films/hamlet-on-70mm/",
           "date_str": "Jul 05",
           "showtimes": [
             "12:00 PM",
             "1:00 PM"
           ],
-          "first_seen": "2026-06-14"
+          "poster": "https://image.tmdb.org/t/p/w300/ilurgUOp6SCl4cuhfjctj1qxlfZ.jpg",
+          "overview": "Hamlet, Prince of Denmark, returns home to find his father murdered and his mother now marrying the murderer... his uncle. Meanwhile, war is brewing.",
+          "year": "1996",
+          "rating": 7.3,
+          "first_seen": "2026-06-18"
         },
         {
           "title": "Happy as Lazzaro",
@@ -1665,14 +1683,18 @@
           "first_seen": "2026-05-31"
         },
         {
-          "title": "Malcolm X on 70mm",
+          "title": "Malcolm X",
           "link": "https://www.filmlinc.org/films/malcolm-x-on-70mm/",
           "date_str": "Jul 04",
           "showtimes": [
             "3:30 PM",
             "7:30 PM"
           ],
-          "first_seen": "2026-06-13"
+          "poster": "https://image.tmdb.org/t/p/w300/o2s9ow0uRRm1BcF3teznk5twd90.jpg",
+          "overview": "A tribute to the controversial black activist and leader of the struggle for black liberation. He hit bottom during his imprisonment in the '50s, he became a Black Muslim and then a leader in the Nation of Islam. His assassination in 1965 left a legacy of self-determination and racial pride.",
+          "year": "1992",
+          "rating": 7.6,
+          "first_seen": "2026-06-18"
         },
         {
           "title": "Many Wars Ago",
@@ -1704,24 +1726,32 @@
           "first_seen": "2026-06-05"
         },
         {
-          "title": "NOPE on 70mm",
+          "title": "NOPE",
           "link": "https://www.filmlinc.org/films/nope-on-70mm/",
           "date_str": "Jul 02",
           "showtimes": [
             "6:00 PM",
             "2:00 PM"
           ],
-          "first_seen": "2026-06-11"
+          "poster": "https://image.tmdb.org/t/p/w300/AcKVlWaNVVVFQwro3nLXqPljcYA.jpg",
+          "overview": "Residents in a lonely gulch of inland California bear witness to an uncanny, chilling discovery.",
+          "year": "2022",
+          "rating": 6.8,
+          "first_seen": "2026-06-18"
         },
         {
-          "title": "North by Northwest on 70mm",
+          "title": "North by Northwest",
           "link": "https://www.filmlinc.org/films/north-by-northwest-on-70mm/",
           "date_str": "Jul 08",
           "showtimes": [
             "6:00 PM",
             "3:00 PM"
           ],
-          "first_seen": "2026-06-17"
+          "poster": "https://image.tmdb.org/t/p/w300/kNOFPQrel9YFCVzI0DF8FnCEpCw.jpg",
+          "overview": "Advertising man Roger Thornhill is mistaken for a spy, triggering a deadly cross-country chase.",
+          "year": "1959",
+          "rating": 8.0,
+          "first_seen": "2026-06-18"
         },
         {
           "title": "Pele",
@@ -1846,14 +1876,14 @@
           "first_seen": "2026-06-05"
         },
         {
-          "title": "Carlito’s Way",
+          "title": "Way",
           "link": "https://movingimage.org/event/carlitos-way-2/",
           "date_str": "Jun 20",
           "poster": "https://image.tmdb.org/t/p/w300/hu40Uxp9WtpL34jv3zyWLb5zEVY.jpg",
           "overview": "Characters from different backgrounds are thrown together when the plane they're travelling on crashes into the Pacific Ocean. A nightmare fight for survival ensues with the air supply running out and dangers creeping in from all sides.",
           "year": "2024",
-          "rating": 6.3,
-          "first_seen": "2026-05-30"
+          "rating": 6.2,
+          "first_seen": "2026-06-18"
         },
         {
           "title": "Blow Out",
@@ -2232,7 +2262,7 @@
           "first_seen": "2026-06-02"
         },
         {
-          "title": "Ulzana's Raid",
+          "title": "Raid",
           "link": "https://www.moma.org/calendar/events/11465",
           "date_str": "Fri, Jul 3",
           "showtimes": [
@@ -2242,7 +2272,7 @@
           "overview": "After receiving an anonymous tip, a tax officer leads a raid on the mansion of the most powerful figure in Lucknow, a member of parliament who has been evading income tax for years.",
           "year": "2018",
           "rating": 7.2,
-          "first_seen": "2026-06-02"
+          "first_seen": "2026-06-18"
         },
         {
           "title": "The Hired Hand",
@@ -2280,7 +2310,7 @@
           "first_seen": "2026-06-17"
         },
         {
-          "title": "Heaven’s Gate",
+          "title": "Gate",
           "link": "https://www.moma.org/calendar/events/11488",
           "date_str": "Sat, Jul 4",
           "showtimes": [
@@ -2423,6 +2453,9 @@
           "showtimes": [
             "9:15 PM"
           ],
+          "also_at": [
+            "Film at Lincoln Center"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
           "overview": "Ripley, the sole survivor of the Nostromo's deadly encounter with the monstrous Alien, returns to Earth after drifting through space in hypersleep for 57 years. Although her story is initially met with skepticism, she agrees to accompany a team of Colonial Marines back to LV-426.",
           "year": "1986",
@@ -2482,7 +2515,7 @@
           "first_seen": "2026-06-18"
         },
         {
-          "title": "Rozz Williams: Romeo’s Distress",
+          "title": "Rozz Williams: Romeo's Distress",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/music-driven/",
           "date_str": "Jul 8",
           "showtimes": [
@@ -2491,7 +2524,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/twy3SnBIimVx5JS5rMYHh42za4R.jpg",
           "overview": "Documentary film about the controversial artist, poet, and musician Rozz Williams, founder of the band Christian Death, who passed away at the young age of 34, leaving a legacy behind, now to be discovered for the first time for a new generation.",
           "year": "2026",
-          "first_seen": "2026-06-17"
+          "first_seen": "2026-06-18"
         }
       ]
     },
@@ -2629,7 +2662,7 @@
           "first_seen": "2026-06-17"
         },
         {
-          "title": "All the President’s Men",
+          "title": "All the President's Men",
           "link": "https://nitehawkcinema.com/movies/all-the-presidents-men/",
           "date_str": "Jul 2",
           "showtimes": [
@@ -2639,20 +2672,17 @@
           "overview": "During the 1972 elections, two reporters' investigation sheds light on the controversial Watergate scandal that compels President Nixon to resign from his post.",
           "year": "1976",
           "rating": 7.7,
-          "first_seen": "2026-06-11"
+          "first_seen": "2026-06-18"
         },
         {
-          "title": "Ferris Bueller’s Day Off",
+          "title": "Day Off",
           "link": "https://nitehawkcinema.com/movies/ferris-buellers-day-off/",
           "date_str": "Jun 20",
-          "showtimes": [
-            "11:30 AM"
-          ],
           "poster": "https://image.tmdb.org/t/p/w300/9LTQNCvoLsKXP0LtaKAaYVtRaQL.jpg",
           "overview": "After high school slacker Ferris Bueller successfully fakes an illness in order to skip school for the day, he goes on a series of adventures throughout Chicago with his girlfriend Sloane and best friend Cameron, all the while trying to outwit his wily school principal and fed-up sister.",
           "year": "1986",
           "rating": 7.6,
-          "first_seen": "2026-05-03"
+          "first_seen": "2026-06-18"
         }
       ]
     },
@@ -2709,13 +2739,13 @@
           "first_seen": "2026-05-27"
         },
         {
-          "title": "FATHER’S DAY AT SPECTACLE: A BURNING STAR",
+          "title": "FATHER'S DAY AT SPECTACLE: A BURNING STAR",
           "link": "https://www.spectacletheater.com/a-burning-star/",
           "date_str": "Jun 21",
           "showtimes": [
             "7:30 PM"
           ],
-          "first_seen": "2026-05-31"
+          "first_seen": "2026-06-18"
         }
       ]
     },
@@ -3146,7 +3176,7 @@
           "first_seen": "2026-06-05"
         },
         {
-          "title": "Maddie’s Secret",
+          "title": "Secret",
           "link": "https://www.bam.org/film/2026/maddies-secret",
           "date_str": "Jun 26",
           "showtimes": [
@@ -3162,7 +3192,7 @@
           "overview": "Ye Xiang Lun, a talented piano player is a new student at the prestigious Tamkang School. On his first day, he meets Lu Xiao Yu, a pretty girl playing a mysterious piece of music.",
           "year": "2007",
           "rating": 7.5,
-          "first_seen": "2026-06-13"
+          "first_seen": "2026-06-18"
         },
         {
           "title": "Spectres, Devils, and Bad Blood in the Old America",
