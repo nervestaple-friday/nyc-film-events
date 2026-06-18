@@ -1,83 +1,9 @@
 {
-  "updated": "2026-06-17T15:01:01.839805+00:00",
+  "updated": "2026-06-18T15:00:47.997870+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
       "events": [
-        {
-          "title": "Vanya on 42nd Street",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004871",
-          "date_str": "Jun 17",
-          "showtimes": [
-            "4:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/sYkkHsqXyUcFoLbXt4WNwnRRpT1.jpg",
-          "overview": "An uninterrupted rehearsal of Chekhov's 'Uncle Vanya' plays out by a company of actors. The setting: their run-down theater with an unusable stage and crumbling ceiling. The play is shown act by act with the briefest of breaks to move props or for refreshments. The lack of costumes, real props and scenery is soon forgotten.",
-          "year": "1994",
-          "rating": 6.6,
-          "first_seen": "2026-05-03"
-        },
-        {
-          "title": "Grave of the Fireflies [OV]",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004840",
-          "date_str": "Jun 17",
-          "showtimes": [
-            "4:45 PM"
-          ],
-          "first_seen": "2026-05-21"
-        },
-        {
-          "title": "Andrei Rublev",
-          "link": "https://metrograph.com/film/?vista_film_id=9999002144",
-          "date_str": "Jun 17",
-          "showtimes": [
-            "6:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/910xRIUmNJrWH2hkQifBJtoPp5R.jpg",
-          "overview": "An expansive Russian drama, this film focuses on the life of revered religious icon painter Andrei Rublev. Drifting from place to place in a tumultuous era, the peace-seeking monk eventually gains a reputation for his art. But after Rublev witnesses a brutal battle and unintentionally becomes involved, he takes a vow of silence and spends time away from his work. As he begins to ease his troubled soul, he takes steps towards becoming a painter once again.",
-          "year": "1966",
-          "rating": 8.0,
-          "first_seen": "2026-05-03"
-        },
-        {
-          "title": "Farewell My Concubine",
-          "link": "https://metrograph.com/film/?vista_film_id=9999003621",
-          "date_str": "Jun 17",
-          "showtimes": [
-            "7:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/f54hNIiHNINw3JiUJB2XaQl5wCN.jpg",
-          "overview": "In an epic tale of theater, gender, love and class, two Beijing opera actors navigate political turmoil as their friendship evolves over decades.",
-          "year": "1993",
-          "rating": 7.9,
-          "first_seen": "2026-05-03"
-        },
-        {
-          "title": "School on Fire",
-          "link": "https://metrograph.com/film/?vista_film_id=9999004870",
-          "date_str": "Jun 17",
-          "showtimes": [
-            "10:20 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/uTVfcol62NROZw2W2Q7ykbFgPQ.jpg",
-          "overview": "A young schoolgirl, Yuen Fong becomes caught in a tragic stranglehold of triad activity after she testifies in court over a triad beating. When this news reaches the triad leader Brother Smart, Yuen Fong must pay him protection money for what she has done as events begin to escalate.",
-          "year": "1988",
-          "rating": 7.3,
-          "first_seen": "2026-05-17"
-        },
-        {
-          "title": "Fallen Angels",
-          "link": "https://metrograph.com/film/?vista_film_id=9999003325",
-          "date_str": "Jun 17",
-          "showtimes": [
-            "10:25 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/yyM9BPdwttK5LKZSLvHae7QPKo1.jpg",
-          "overview": "An indifferent hitman, his infatuated business partner and an ex-convict search for love and meaning as their lives cross paths in Hong Kong.",
-          "year": "1995",
-          "rating": 7.7,
-          "first_seen": "2026-05-03"
-        },
         {
           "title": "Peppermint Candy",
           "link": "https://metrograph.com/film/?vista_film_id=9999003665",
@@ -272,6 +198,19 @@
           "year": "1971",
           "rating": 6.2,
           "first_seen": "2026-05-29"
+        },
+        {
+          "title": "Fallen Angels",
+          "link": "https://metrograph.com/film/?vista_film_id=9999003325",
+          "date_str": "Jun 19",
+          "showtimes": [
+            "10:45 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/yyM9BPdwttK5LKZSLvHae7QPKo1.jpg",
+          "overview": "An indifferent hitman, his infatuated business partner and an ex-convict search for love and meaning as their lives cross paths in Hong Kong.",
+          "year": "1995",
+          "rating": 7.7,
+          "first_seen": "2026-05-03"
         },
         {
           "title": "All About Lily Chou-Chou",
@@ -662,6 +601,19 @@
           "overview": "Agnès Varda eloquently captures Paris in the sixties with this real-time portrait of a singer set adrift in the city as she awaits test results of a biopsy. A chronicle of the minutes of one woman’s life, Cléo from 5 to 7 is a spirited mix of vivid vérité and melodrama, featuring a score by Michel Legrand and cameos by Jean-Luc Godard and Anna Karina.",
           "year": "1962",
           "rating": 7.7,
+          "first_seen": "2026-05-03"
+        },
+        {
+          "title": "Farewell My Concubine",
+          "link": "https://metrograph.com/film/?vista_film_id=9999003621",
+          "date_str": "Jun 25",
+          "showtimes": [
+            "4:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/f54hNIiHNINw3JiUJB2XaQl5wCN.jpg",
+          "overview": "In an epic tale of theater, gender, love and class, two Beijing opera actors navigate political turmoil as their friendship evolves over decades.",
+          "year": "1993",
+          "rating": 7.9,
           "first_seen": "2026-05-03"
         },
         {
@@ -1084,7 +1036,7 @@
         {
           "title": "DAYS AND NIGHTS IN THE FOREST",
           "link": "https://filmforum.org/film/days-and-nights-in-the-forest",
-          "date_str": "June 17",
+          "date_str": "June 18",
           "showtimes": [
             "12:30 PM",
             "3:00 PM",
@@ -1116,7 +1068,6 @@
           "date_str": "Now Playing",
           "showtimes": [
             "12:20 PM",
-            "8:45 PM",
             "4:30 PM",
             "8:40 PM"
           ],
@@ -1124,15 +1075,6 @@
           "overview": "A cinematic love letter to a pre-gentrification New York City",
           "year": "1986",
           "first_seen": "2026-05-03"
-        },
-        {
-          "title": "The Young Film Forum (YFF) Archive Dive: AFTER LIFE",
-          "link": "https://filmforum.org/film/after-life-yff-archive-dive",
-          "date_str": "June 17",
-          "showtimes": [
-            "6:00 PM"
-          ],
-          "first_seen": "2026-06-08"
         },
         {
           "title": "OLIVER!",
@@ -1150,7 +1092,7 @@
         {
           "title": "HEAVEN CAN WAIT",
           "link": "https://filmforum.org/film/heaven-can-wait-the-lubitsch-touch",
-          "date_str": "June 17",
+          "date_str": "June 23",
           "showtimes": [
             "12:50 PM",
             "6:00 PM"
@@ -1184,42 +1126,28 @@
         {
           "title": "Ross McElwee's SHERMAN'S MARCH",
           "link": "https://filmforum.org/film/shermans-march",
-          "date_str": "June 17",
+          "date_str": "July 3",
           "first_seen": "2026-06-10"
         },
         {
-          "title": "REMAKE",
-          "link": "https://filmforum.org/film/remake",
-          "date_str": "June 17",
-          "poster": "https://image.tmdb.org/t/p/w300/pUbzcFBGNi47c2j9UrFc1p36HXT.jpg",
-          "overview": "This film follows father Ahmed and son Tarik Karaga during WWII and the Siege of Sarajevo.",
-          "year": "2003",
-          "rating": 6.8,
-          "first_seen": "2026-06-11"
+          "title": "LA BAMBA",
+          "link": "https://filmforum.org/film/la-bamba",
+          "date_str": "June 25",
+          "poster": "https://image.tmdb.org/t/p/w300/6Znulqtc7cdqlUC69HGf26Ef5fi.jpg",
+          "overview": "Los Angeles teenager Ritchie Valens becomes an overnight rock 'n' roll success in 1958, thanks to a love ballad called \"Donna\" that he wrote for his girlfriend. But as his star rises, Valens has conflicts with his jealous brother, Bob, and becomes haunted by a recurring nightmare of a plane crash just as he begins his first national tour alongside Buddy Holly.",
+          "year": "1987",
+          "rating": 7.3,
+          "first_seen": "2026-06-18"
         },
         {
-          "title": "DREAD BEAT AN BLOOD",
-          "link": "https://filmforum.org/film/dread-beat-an-blood",
-          "date_str": "June 17",
-          "first_seen": "2026-06-12"
-        },
-        {
-          "title": "LATE FAME",
-          "link": "https://filmforum.org/film/late-fame",
-          "date_str": "June 17",
-          "poster": "https://image.tmdb.org/t/p/w300/iCLsQ34OMyOS1zN8yUhE59SZnfK.jpg",
-          "overview": "A long time ago Ed Saxberger wrote a book of poetry that no one ever cared about. When a group of young artists rediscover his work, he must reassess his genius. The wild card in the group is Gloria, a talented and mercurial theatre actress who toys with affections and who is all set to be admired by Saxberger.",
-          "year": "2026",
-          "first_seen": "2026-06-12"
-        },
-        {
-          "title": "THE BEND IN THE RIVER",
-          "link": "https://filmforum.org/film/the-bend-in-the-river",
-          "date_str": "June 17",
-          "poster": "https://image.tmdb.org/t/p/w300/zrTafy46PYoaP3KiTqlKYkxpPDi.jpg",
-          "overview": "The story of a writer who returns to Ireland, after spending twenty five years in New York, to confront the ghosts of his past.",
-          "year": "2020",
-          "first_seen": "2026-06-17"
+          "title": "ZOOT SUIT",
+          "link": "https://filmforum.org/film/zoot-suit",
+          "date_str": "June 25",
+          "poster": "https://image.tmdb.org/t/p/w300/itSXh6MxBZWvQ7xhSxusk2RwjfM.jpg",
+          "overview": "Part fact and part fiction, Zoot Suit is the film version of Luis Valdez's critically acclaimed play, based on the actual Sleepy Lagoon murder case and the zoot suit riots of 1940s Los Angeles. Henry Reyna is the leader of a group of Mexican-Americans being sent to San Quentin without substantial evidence for the death of a man at Sleepy Lagoon. As part of the defense committee, Alice Bloomfield and George Shearer fight the blatant miscarriage of justice for the freedom of Henry and his friends.",
+          "year": "1981",
+          "rating": 6.4,
+          "first_seen": "2026-06-18"
         }
       ]
     },
@@ -1229,7 +1157,7 @@
         {
           "title": "Ask E. Jean",
           "link": "https://www.ifccenter.com/films/ask-e-jean",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
             "1:05 PM",
             "10:50 AM",
@@ -1243,10 +1171,9 @@
         {
           "title": "Blue Film",
           "link": "https://www.ifccenter.com/films/blue-film",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
             "3:15 PM",
-            "9:55 PM",
             "9:50 PM",
             "2:40 PM"
           ],
@@ -1258,7 +1185,7 @@
         {
           "title": "Blue Heron",
           "link": "https://www.ifccenter.com/films/blue-heron",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
             "11:05 AM",
             "9:35 PM",
@@ -1272,10 +1199,9 @@
         {
           "title": "Gaslit",
           "link": "https://www.ifccenter.com/films/gaslit",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
             "2:15 PM",
-            "7:30 PM",
             "7:00 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/vhhRdCPgnYDTQySyJjNCxTJ3s4e.jpg",
@@ -1286,13 +1212,14 @@
         {
           "title": "Honeyjoon",
           "link": "https://www.ifccenter.com/films/honeyjoon",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
             "10:35 AM",
             "4:50 PM",
             "7:45 PM",
             "12:50 PM",
-            "7:00 PM"
+            "7:00 PM",
+            "7:05 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/k0MGRrDHmJ1RJKwd56f4RHDgF9x.jpg",
           "overview": "Persian-Kurdish Lela and her American daughter June take a trip to the romantic Azores after a recent loss, both with polar opposite views about why they’re there, how to grieve, and the size of June’s tiny bikini. Amidst honeymooners, the Woman, Life, Freedom movement and their hot, philosophical tour guide, João, the pair find each other… coming back to life.",
@@ -1302,7 +1229,7 @@
         {
           "title": "I Shot Andy Warhol",
           "link": "https://www.ifccenter.com/films/i-shot-andy-warhol",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
             "11:00 AM",
             "1:35 PM",
@@ -1324,11 +1251,12 @@
         {
           "title": "Jinsei",
           "link": "https://www.ifccenter.com/films/jinsei",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
-            "8:55 PM",
             "1:00 PM",
-            "9:00 PM"
+            "8:55 PM",
+            "9:00 PM",
+            "9:05 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/8fL1gbORj0F1cKpTRfkN4lrBZf.jpg",
           "overview": "Our hero, called by a different name in each chapter of his life, becomes a J-pop idol, an outcast, a leader, and an oracle in this hundred-year chronicle spanning the past, present, and future. Through a chance encounter with a transfer student, he trains to become an idol, starting his search for self-identity and a journey toward greatness beyond superstardom.",
@@ -1338,7 +1266,7 @@
         {
           "title": "La Retaguardia (The Ones Who Stay)",
           "link": "https://www.ifccenter.com/films/la-retaguardia-the-ones-who-stay",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
             "10:35 AM",
             "10:40 AM"
@@ -1349,39 +1277,9 @@
           "first_seen": "2026-06-17"
         },
         {
-          "title": "Maddie's Secret",
-          "link": "https://www.ifccenter.com/films/maddies-secret",
-          "date_str": "Jun 17",
-          "showtimes": [
-            "7:00 PM",
-            "11:30 AM",
-            "12:45 PM",
-            "2:15 PM",
-            "3:10 PM",
-            "4:45 PM",
-            "5:35 PM",
-            "7:15 PM",
-            "8:05 PM",
-            "9:45 PM",
-            "10:15 PM",
-            "8:00 PM",
-            "10:10 PM",
-            "3:00 PM",
-            "5:15 PM"
-          ],
-          "also_at": [
-            "BAM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/pOqdX6e4y2F9JTyoe4qorBtXVaR.jpg",
-          "overview": "Ye Xiang Lun, a talented piano player is a new student at the prestigious Tamkang School. On his first day, he meets Lu Xiao Yu, a pretty girl playing a mysterious piece of music.",
-          "year": "2007",
-          "rating": 7.5,
-          "first_seen": "2026-06-10"
-        },
-        {
           "title": "Renoir",
           "link": "https://www.ifccenter.com/films/renoir",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
             "10:40 AM",
             "5:20 PM"
@@ -1395,15 +1293,15 @@
         {
           "title": "She's the He",
           "link": "https://www.ifccenter.com/films/shes-the-he",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
             "12:15 PM",
             "5:50 PM",
-            "9:45 PM",
             "7:50 PM",
             "9:35 PM",
             "10:20 PM",
-            "10:15 PM"
+            "10:15 PM",
+            "9:50 PM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/2BhhlAYwKvONGW7tr16ZhnD0sym.jpg",
           "overview": "Leonardo is a blind teenager dealing with an overprotective mother while trying to live a more independent life. To the disappointment of his best friend, Giovana, he plans to go on an exchange program abroad. When Gabriel, a new student in town, arrives at their classroom, new feelings blossom in Leonardo making him question his plans.",
@@ -1414,7 +1312,7 @@
         {
           "title": "Steal This Story, Please!",
           "link": "https://www.ifccenter.com/films/steal-this-story-please",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
             "11:15 AM",
             "7:35 PM"
@@ -1427,9 +1325,8 @@
         {
           "title": "Terminator 2: Judgment Day",
           "link": "https://www.ifccenter.com/films/terminator-2-judgment-day",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
-            "3:00 PM",
             "2:55 PM",
             "11:15 PM"
           ],
@@ -1442,9 +1339,8 @@
         {
           "title": "True North",
           "link": "https://www.ifccenter.com/films/true-north",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
-            "1:10 PM",
             "4:05 PM",
             "6:30 PM",
             "1:45 PM",
@@ -1487,6 +1383,38 @@
           "first_seen": "2026-06-17"
         },
         {
+          "title": "Maddie's Secret",
+          "link": "https://www.ifccenter.com/films/maddies-secret",
+          "date_str": "Jun 19",
+          "showtimes": [
+            "11:30 AM",
+            "12:45 PM",
+            "2:15 PM",
+            "3:10 PM",
+            "4:45 PM",
+            "5:35 PM",
+            "7:15 PM",
+            "8:05 PM",
+            "9:45 PM",
+            "10:15 PM",
+            "8:00 PM",
+            "10:10 PM",
+            "3:00 PM",
+            "5:15 PM",
+            "10:35 AM",
+            "1:20 PM",
+            "5:05 PM"
+          ],
+          "also_at": [
+            "BAM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/pOqdX6e4y2F9JTyoe4qorBtXVaR.jpg",
+          "overview": "Ye Xiang Lun, a talented piano player is a new student at the prestigious Tamkang School. On his first day, he meets Lu Xiao Yu, a pretty girl playing a mysterious piece of music.",
+          "year": "2007",
+          "rating": 7.5,
+          "first_seen": "2026-06-10"
+        },
+        {
           "title": "Purple Rain",
           "link": "https://www.ifccenter.com/films/purple-rain",
           "date_str": "Jun 19",
@@ -1521,6 +1449,7 @@
             "2:00 PM",
             "4:50 PM",
             "7:40 PM",
+            "10:00 PM",
             "10:45 AM",
             "1:15 PM",
             "4:00 PM",
@@ -1547,6 +1476,31 @@
           "overview": "The story of a group of young adults who are trying to reignite a spooky flame to bring back the true feeling of Halloween night, they run into some dreadful trouble throughout the night when they take more than one piece of candy from the wrong doorstep…",
           "year": "2025",
           "first_seen": "2026-06-17"
+        },
+        {
+          "title": "Camp",
+          "link": "https://www.ifccenter.com/films/camp",
+          "date_str": "Jun 24",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/7IXMqZnwccogptThay3togKIFWw.jpg",
+          "overview": "When Mitchie gets a chance to attend Camp Rock, her life takes an unpredictable twist, and she learns just how important it is to be true to yourself.",
+          "year": "2008",
+          "rating": 6.4,
+          "first_seen": "2026-06-07"
+        },
+        {
+          "title": "Drunken Noodles",
+          "link": "https://www.ifccenter.com/films/drunken-noodles",
+          "date_str": "Jun 24",
+          "showtimes": [
+            "7:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/eGVOePRt3JotvogY90V5CnJ5Yah.jpg",
+          "overview": "Adnan, a young art student, arrives in New York to spend the summer in an apartment. He interns at a gallery that exhibits the work of an older, unconventional artist he once crossed paths with. As moments from his past and present intertwine, a series of encounters, both artistic and erotic, open gaps in his everyday reality.",
+          "year": "2026",
+          "first_seen": "2026-06-07"
         },
         {
           "title": "Desperate Living",
@@ -1577,25 +1531,6 @@
           "year": "2023",
           "rating": 7.3,
           "first_seen": "2026-06-17"
-        },
-        {
-          "title": "Drunken Noodles",
-          "link": "https://www.ifccenter.com/films/drunken-noodles",
-          "date_str": "Jun 26",
-          "poster": "https://image.tmdb.org/t/p/w300/eGVOePRt3JotvogY90V5CnJ5Yah.jpg",
-          "overview": "Adnan, a young art student, arrives in New York to spend the summer in an apartment. He interns at a gallery that exhibits the work of an older, unconventional artist he once crossed paths with. As moments from his past and present intertwine, a series of encounters, both artistic and erotic, open gaps in his everyday reality.",
-          "year": "2026",
-          "first_seen": "2026-06-07"
-        },
-        {
-          "title": "Camp",
-          "link": "https://www.ifccenter.com/films/camp",
-          "date_str": "Jun 26",
-          "poster": "https://image.tmdb.org/t/p/w300/7IXMqZnwccogptThay3togKIFWw.jpg",
-          "overview": "When Mitchie gets a chance to attend Camp Rock, her life takes an unpredictable twist, and she learns just how important it is to be true to yourself.",
-          "year": "2008",
-          "rating": 6.4,
-          "first_seen": "2026-06-07"
         }
       ]
     },
@@ -1753,19 +1688,6 @@
           "first_seen": "2026-05-27"
         },
         {
-          "title": "Mid-Century Loves",
-          "link": "https://www.filmlinc.org/films/mid-century-loves/",
-          "date_str": "Jun 18",
-          "showtimes": [
-            "6:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/oVfdYMOlNZhJAJqISP2bfj8Q9k8.jpg",
-          "overview": "Anthology of tragic love. A noblewoman falls for a commoner. A doctor keeps quiet about his patients' infidelities. Expectant father is sent to fight in WWI. A 1920s fascist enjoys Rome's nightlife. WWII airman falls for a girl in Naples.",
-          "year": "1954",
-          "rating": 5.2,
-          "first_seen": "2026-05-22"
-        },
-        {
           "title": "Mikey and Nicky",
           "link": "https://www.filmlinc.org/films/mikey-and-nicky/",
           "date_str": "Jun 26",
@@ -1800,6 +1722,19 @@
             "3:00 PM"
           ],
           "first_seen": "2026-06-17"
+        },
+        {
+          "title": "Pele",
+          "link": "https://www.filmlinc.org/films/pele/",
+          "date_str": "Jul 09",
+          "showtimes": [
+            "8:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/tX2gco2U4MlKEWwM4UkiIf1C74e.jpg",
+          "overview": "Against the backdrop of a turbulent era in Brazil, this documentary captures Pelé's extraordinary path from breakthrough talent to national hero. Mixing rare archival footage and exclusive interviews, this documentary celebrates the legendary Brazilian footballer who personified football as art.",
+          "year": "2021",
+          "rating": 7.3,
+          "first_seen": "2026-06-18"
         },
         {
           "title": "Rome, Open City",
@@ -1859,21 +1794,16 @@
       "url": "https://anthologyfilmarchives.org/film_screenings/calendar",
       "events": [
         {
-          "title": "BY HOOK OR BY CROOK",
+          "title": "CURSE OF THE SEVEN JACKALS",
           "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=06&year=2026",
-          "date_str": "Jun 18",
+          "date_str": "Jun 19",
           "showtimes": [
-            "6:30 PM",
-            "9:00 PM"
+            "7:15 PM",
+            "9:15 PM"
           ],
-          "also_at": [
-            "Nitehawk (Williamsburg)"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/vnXJwknZCuuQ4ebX8Mr60FgN8Jd.jpg",
-          "overview": "Shy is a transgender man who leaves his small town after the death of his father, and heads to the big city to live a life of crime. Along the way, he encounters Valentine, a quirky adoptee, in search of his birth mother. An immediate kinship is sparked between these men and they become partners in crime.",
+          "overview": "While serving as a test subject for a synthetic blood product, Bernard (Kevin Barnes) waits for each of his injections inside a suburban motel room. He develops a friendship with the helpful maid (Jill Carnes), but being a medical guinea pig gradually takes its toll on Bernard's sanity. Soon, he believes he's a mummy whose synthetic blood will grant him eternal life. Chris Jolly directs this indie horror flick shot in minimalist black-and-white.",
           "year": "2001",
-          "rating": 5.3,
-          "first_seen": "2026-06-03"
+          "first_seen": "2026-06-06"
         }
       ]
     },
@@ -1984,44 +1914,12 @@
           "year": "2000",
           "rating": 7.1,
           "first_seen": "2026-06-07"
-        },
-        {
-          "title": "Live World Cup Watch Party: United States vs. Australia",
-          "link": "https://movingimage.org/event/live-world-cup-watch-party/",
-          "date_str": "Jun 19",
-          "first_seen": "2026-06-15"
         }
       ]
     },
     "MoMA": {
       "url": "https://www.moma.org/calendar/film",
       "events": [
-        {
-          "title": "The Appaloosa",
-          "link": "https://www.moma.org/calendar/events/11471",
-          "date_str": "Wed, Jun 17",
-          "showtimes": [
-            "4:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/uCxvQAKOltwQ7vPIocW6CVe2cxO.jpg",
-          "overview": "A man tries to recover a horse stolen from him by a Mexican bandit.",
-          "year": "1966",
-          "rating": 6.4,
-          "first_seen": "2026-06-02"
-        },
-        {
-          "title": "The Beguiled",
-          "link": "https://www.moma.org/calendar/events/11472",
-          "date_str": "Wed, Jun 17",
-          "showtimes": [
-            "7:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/x4R9jyiZhJzevASus5n6WyHQTdR.jpg",
-          "overview": "During the Civil War, at a Southern girls’ boarding school, young women take in an injured enemy soldier. As they provide refuge and tend to his wounds, the house is taken over with sexual tension and dangerous rivalries, and taboos are broken in an unexpected turn of events.",
-          "year": "2017",
-          "rating": 5.9,
-          "first_seen": "2026-06-02"
-        },
         {
           "title": "Barbarosa",
           "link": "https://www.moma.org/calendar/events/11469",
@@ -2166,6 +2064,19 @@
           "first_seen": "2026-06-02"
         },
         {
+          "title": "The Appaloosa",
+          "link": "https://www.moma.org/calendar/events/11471",
+          "date_str": "Tue, Jun 23",
+          "showtimes": [
+            "4:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/uCxvQAKOltwQ7vPIocW6CVe2cxO.jpg",
+          "overview": "A man tries to recover a horse stolen from him by a Mexican bandit.",
+          "year": "1966",
+          "rating": 6.4,
+          "first_seen": "2026-06-02"
+        },
+        {
           "title": "Red Canyon",
           "link": "https://www.moma.org/calendar/events/11458",
           "date_str": "Wed, Jun 24",
@@ -2228,6 +2139,19 @@
           "overview": "LAW & ORDER surveys the wide range of work the police are asked to perform: enforcing the law, maintaining order, and providing general social services. The incidents shown illustrate how training, community expectations, socio-economic status of the subject, the threat of violence, and discretion affect police behavior.",
           "year": "1969",
           "rating": 7.0,
+          "first_seen": "2026-06-02"
+        },
+        {
+          "title": "The Beguiled",
+          "link": "https://www.moma.org/calendar/events/11472",
+          "date_str": "Sat, Jun 27",
+          "showtimes": [
+            "6:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/x4R9jyiZhJzevASus5n6WyHQTdR.jpg",
+          "overview": "During the Civil War, at a Southern girls’ boarding school, young women take in an injured enemy soldier. As they provide refuge and tend to his wounds, the house is taken over with sexual tension and dangerous rivalries, and taboos are broken in an unexpected turn of events.",
+          "year": "2017",
+          "rating": 5.9,
           "first_seen": "2026-06-02"
         },
         {
@@ -2354,6 +2278,32 @@
           "year": "1944",
           "rating": 6.1,
           "first_seen": "2026-06-17"
+        },
+        {
+          "title": "Heaven’s Gate",
+          "link": "https://www.moma.org/calendar/events/11488",
+          "date_str": "Sat, Jul 4",
+          "showtimes": [
+            "5:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/rxw9l9YNL14ODdmAavUwHLBjiDo.jpg",
+          "overview": "A rare book dealer finds himself at the heart of a string of paranormal events when he is hired to find the last two copies of a text, The Nine Gates of the Kingdom of Shadows, capable of summoning the Devil.",
+          "year": "1999",
+          "rating": 6.5,
+          "first_seen": "2026-06-18"
+        },
+        {
+          "title": "America America",
+          "link": "https://www.moma.org/calendar/events/11489",
+          "date_str": "Sun, Jul 5",
+          "showtimes": [
+            "1:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
+          "overview": "After meeting with newly elected U.S. President Thaddeus Ross, Sam finds himself in the middle of an international incident. He must discover the reason behind a nefarious global plot before the true mastermind has the entire world seeing red.",
+          "year": "2025",
+          "rating": 6.0,
+          "first_seen": "2026-06-18"
         }
       ]
     },
@@ -2379,9 +2329,6 @@
           "date_str": "Jun 23",
           "showtimes": [
             "9:15 PM"
-          ],
-          "also_at": [
-            "Anthology Film Archives"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/yt7FKvQipci97IaM0KMWpAuhhC9.jpg",
           "overview": "Shy is a transgender man who leaves his small town after the death of his father, and heads to the big city to live a life of crime. Along the way, he encounters Valentine, a quirky adoptee, in search of his birth mother. An immediate kinship is sparked between these men and they become partners in crime.",
@@ -2522,6 +2469,19 @@
           "first_seen": "2026-06-03"
         },
         {
+          "title": "Creature from Black Lake",
+          "link": "https://nitehawkcinema.com/movies/creature-from-black-lake/",
+          "date_str": "Jul 9",
+          "showtimes": [
+            "9:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/rXYmNFbJyA1Jcr3x54hCNuOWnk4.jpg",
+          "overview": "Some fishermen are attacked in the Louisiana swamps. When the word gets out of a mysterious Bigfoot-type creature, two researchers come to a small town to study and hopefully discover what the beast is. Their research from some farmers help the two men to learn that the creature may be a very angry and murderous missing link.",
+          "year": "1976",
+          "rating": 5.2,
+          "first_seen": "2026-06-18"
+        },
+        {
           "title": "Rozz Williams: Romeo’s Distress",
           "link": "https://nitehawkcinema.com/williamsburg/film-series/music-driven/",
           "date_str": "Jul 8",
@@ -2538,15 +2498,6 @@
     "Nitehawk (Prospect Park)": {
       "url": "https://nitehawkcinema.com/prospectpark/",
       "events": [
-        {
-          "title": "Fancy Dance (2023)",
-          "link": "https://nitehawkcinema.com/movies/fancy-dance-2023/",
-          "date_str": "Jun 18",
-          "showtimes": [
-            "9:00 PM"
-          ],
-          "first_seen": "2026-05-28"
-        },
         {
           "title": "The Devil Queen",
           "link": "https://nitehawkcinema.com/movies/the-devil-queen/",
@@ -2727,22 +2678,9 @@
           "first_seen": "2026-06-02"
         },
         {
-          "title": "FORBIDDEN LOVE: THE UNASHAMED STORIES OF LESBIAN LIVES",
-          "link": "https://www.spectacletheater.com/forbidden-love-the-unashamed-stories-of-lesbian-lives/",
-          "date_str": "Jun 17",
-          "showtimes": [
-            "7:30 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/aoTA6sJT3NwOmaZVfMB8PKeeQiK.jpg",
-          "overview": "Ten women in Canada talk about being lesbian in the 1940s, 1950s, and 1960s: discovering the pulp fiction of the day about women in love, their own first affairs, the pain of breaking up, frequenting gay bars, facing police raids, men's responses, and the etiquette of butch and femme roles. Interspersed among the interviews and archival footage are four dramatized chapters from a pulp novel, \"Forbidden Love\".",
-          "year": "1992",
-          "rating": 6.8,
-          "first_seen": "2026-05-31"
-        },
-        {
           "title": "DADDY AND THE MUSCLE ACADEMY",
           "link": "https://www.spectacletheater.com/daddy-and-the-muscle-academy/",
-          "date_str": "Jun 17",
+          "date_str": "Jun 20",
           "showtimes": [
             "10 PM"
           ],
@@ -2787,9 +2725,9 @@
         {
           "title": "I Love Boosters",
           "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
-          "date_str": "Thursday 18, June",
+          "date_str": "Friday 19, June",
           "showtimes": [
-            "6:20 PM"
+            "6:00 PM"
           ],
           "also_at": [
             "BAM"
@@ -2844,24 +2782,6 @@
           "first_seen": "2026-06-12"
         },
         {
-          "title": "You've Got (Voice)Mail: Voicemails for Isabelle + You've Got Mail",
-          "link": "https://www.paristheaternyc.com/film/youve-got-voicemail-voicemails-for-isabelle",
-          "date_str": "Jun 20",
-          "showtimes": [
-            "4:00 PM"
-          ],
-          "first_seen": "2026-06-10"
-        },
-        {
-          "title": "L'Age d'Or (with Un Chien Andalou)",
-          "link": "https://www.paristheaternyc.com/film/lage-dor-un-chien-andalou-bunuel",
-          "date_str": "Jun 20",
-          "showtimes": [
-            "11:00 AM"
-          ],
-          "first_seen": "2026-06-06"
-        },
-        {
           "title": "Los Olvidados (The Young and the Damned)",
           "link": "https://www.paristheaternyc.com/film/los-olvidados-bunuel",
           "date_str": "Jun 20",
@@ -2873,6 +2793,37 @@
           "year": "1950",
           "rating": 8.0,
           "first_seen": "2026-06-05"
+        },
+        {
+          "title": "L'Age d'Or (with Un Chien Andalou)",
+          "link": "https://www.paristheaternyc.com/film/lage-dor-un-chien-andalou-bunuel",
+          "date_str": "Jun 20",
+          "showtimes": [
+            "11:00 AM"
+          ],
+          "first_seen": "2026-06-06"
+        },
+        {
+          "title": "You've Got (Voice)Mail: Voicemails for Isabelle + You've Got Mail",
+          "link": "https://www.paristheaternyc.com/film/youve-got-voicemail-voicemails-for-isabelle",
+          "date_str": "Jun 20",
+          "showtimes": [
+            "4:00 PM"
+          ],
+          "first_seen": "2026-06-10"
+        },
+        {
+          "title": "Much Ado About Nothing",
+          "link": "https://www.paristheaternyc.com/film/much-ado-about-nothing-1993-paris",
+          "date_str": "Jun 21",
+          "showtimes": [
+            "6:45 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/tvltGP6vYOkHdURag0jPSjhPUAV.jpg",
+          "overview": "In this Shakespearean farce, Hero and her groom-to-be, Claudio, team up with Claudio's commanding officer, Don Pedro, the week before their wedding to hatch a matchmaking scheme. Their targets are sharp-witted duo Benedick and Beatrice -- a tough task indeed, considering their corresponding distaste for love and each other. Meanwhile, meddling Don John plots to ruin the wedding.",
+          "year": "1993",
+          "rating": 7.0,
+          "first_seen": "2026-06-10"
         },
         {
           "title": "Simon of the Desert (with Land Without Bread)",
@@ -2897,16 +2848,16 @@
           "first_seen": "2026-06-07"
         },
         {
-          "title": "Much Ado About Nothing",
-          "link": "https://www.paristheaternyc.com/film/much-ado-about-nothing-1993-paris",
-          "date_str": "Jun 21",
+          "title": "Father of the Bride",
+          "link": "https://www.paristheaternyc.com/film/father-of-the-bride-1950-paris",
+          "date_str": "Jun 22",
           "showtimes": [
-            "6:45 PM"
+            "7:00 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/tvltGP6vYOkHdURag0jPSjhPUAV.jpg",
-          "overview": "In this Shakespearean farce, Hero and her groom-to-be, Claudio, team up with Claudio's commanding officer, Don Pedro, the week before their wedding to hatch a matchmaking scheme. Their targets are sharp-witted duo Benedick and Beatrice -- a tough task indeed, considering their corresponding distaste for love and each other. Meanwhile, meddling Don John plots to ruin the wedding.",
-          "year": "1993",
-          "rating": 7.0,
+          "poster": "https://image.tmdb.org/t/p/w300/bU7HzJbJpY5OiLdqWhKSqGPtYii.jpg",
+          "overview": "George Banks is an ordinary, middle-class man whose 22 year-old daughter Annie has decided to marry a man from an upper-class family, but George can't think of what life would be like without his daughter. His wife tries to make him happy for Annie, but when the wedding takes place at their home and a foreign wedding planner takes over the ceremony, he becomes slightly insane.",
+          "year": "1991",
+          "rating": 6.5,
           "first_seen": "2026-06-10"
         },
         {
@@ -2927,19 +2878,6 @@
           "overview": "A spirited young bride-to-be living with her single mother on a small Greek island secretly invites three of her mother's ex-boyfriends in hope of finding her biological father to walk her down the aisle.",
           "year": "2008",
           "rating": 7.0,
-          "first_seen": "2026-06-10"
-        },
-        {
-          "title": "Father of the Bride",
-          "link": "https://www.paristheaternyc.com/film/father-of-the-bride-1950-paris",
-          "date_str": "Jun 22",
-          "showtimes": [
-            "7:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/bU7HzJbJpY5OiLdqWhKSqGPtYii.jpg",
-          "overview": "George Banks is an ordinary, middle-class man whose 22 year-old daughter Annie has decided to marry a man from an upper-class family, but George can't think of what life would be like without his daughter. His wife tries to make him happy for Annie, but when the wedding takes place at their home and a foreign wedding planner takes over the ceremony, he becomes slightly insane.",
-          "year": "1991",
-          "rating": 6.5,
           "first_seen": "2026-06-10"
         },
         {
@@ -2969,16 +2907,6 @@
           "first_seen": "2026-06-09"
         },
         {
-          "title": "The Way We Were",
-          "link": "https://www.paristheaternyc.com/film/the-way-we-were-paris",
-          "date_str": "Jun 26",
-          "poster": "https://image.tmdb.org/t/p/w300/o5x563ze56iI4iNsCBxTnDkt28i.jpg",
-          "overview": "Opposites attract when, during their college days, Katie Morosky, a politically active Jew, meets Hubbell Gardiner, a feckless WASP. Years later, in the wake of World War II, they meet once again and, despite their obvious differences, attempt to make their love for each other work.",
-          "year": "1973",
-          "rating": 7.0,
-          "first_seen": "2026-06-17"
-        },
-        {
           "title": "Unfaithful",
           "link": "https://www.paristheaternyc.com/film/unfaithful-paris",
           "date_str": "Jun 26",
@@ -2992,13 +2920,13 @@
           "first_seen": "2026-06-17"
         },
         {
-          "title": "Eyes Wide Shut",
-          "link": "https://www.paristheaternyc.com/film/eyes-wide-shut-paris",
+          "title": "The Way We Were",
+          "link": "https://www.paristheaternyc.com/film/the-way-we-were-paris",
           "date_str": "Jun 26",
-          "poster": "https://image.tmdb.org/t/p/w300/knEIz1eNGl5MQDbrEAVWA7iRqF9.jpg",
-          "overview": "After Dr. Bill Harford's wife, Alice, admits to having sexual fantasies about a man she met, Bill becomes obsessed with having a sexual encounter. He discovers an underground sexual group and attends one of their meetings -- and quickly discovers that he is in over his head.",
-          "year": "1999",
-          "rating": 7.5,
+          "poster": "https://image.tmdb.org/t/p/w300/o5x563ze56iI4iNsCBxTnDkt28i.jpg",
+          "overview": "Opposites attract when, during their college days, Katie Morosky, a politically active Jew, meets Hubbell Gardiner, a feckless WASP. Years later, in the wake of World War II, they meet once again and, despite their obvious differences, attempt to make their love for each other work.",
+          "year": "1973",
+          "rating": 7.0,
           "first_seen": "2026-06-17"
         },
         {
@@ -3009,6 +2937,26 @@
           "overview": "After returning to Los Angeles from a group therapy session, documentary filmmaker Bob Sanders and his wife, Carol, find themselves becoming vigilante couples counselors, offering unsolicited advice to their best friends, Ted and Alice Henderson. Not wanting to be rude, the Hendersons play along, but some latent sexual tension among the four soon comes bubbling to the surface, and long-buried desires don't stay buried for long.",
           "year": "1969",
           "rating": 6.3,
+          "first_seen": "2026-06-17"
+        },
+        {
+          "title": "Eyes Wide Shut",
+          "link": "https://www.paristheaternyc.com/film/eyes-wide-shut-paris",
+          "date_str": "Jun 26",
+          "poster": "https://image.tmdb.org/t/p/w300/knEIz1eNGl5MQDbrEAVWA7iRqF9.jpg",
+          "overview": "After Dr. Bill Harford's wife, Alice, admits to having sexual fantasies about a man she met, Bill becomes obsessed with having a sexual encounter. He discovers an underground sexual group and attends one of their meetings -- and quickly discovers that he is in over his head.",
+          "year": "1999",
+          "rating": 7.5,
+          "first_seen": "2026-06-17"
+        },
+        {
+          "title": "Marriage Story",
+          "link": "https://www.paristheaternyc.com/film/marriage-story-paris",
+          "date_str": "Jun 27",
+          "poster": "https://image.tmdb.org/t/p/w300/2JRyCKaRKyJAVpsIHeLvPw5nHmw.jpg",
+          "overview": "A stage director and an actress struggle through a grueling, coast-to-coast divorce that pushes them to their personal extremes.",
+          "year": "2019",
+          "rating": 7.7,
           "first_seen": "2026-06-17"
         },
         {
@@ -3035,14 +2983,17 @@
           "first_seen": "2026-06-17"
         },
         {
-          "title": "Marriage Story",
-          "link": "https://www.paristheaternyc.com/film/marriage-story-paris",
-          "date_str": "Jun 27",
-          "poster": "https://image.tmdb.org/t/p/w300/2JRyCKaRKyJAVpsIHeLvPw5nHmw.jpg",
-          "overview": "A stage director and an actress struggle through a grueling, coast-to-coast divorce that pushes them to their personal extremes.",
-          "year": "2019",
-          "rating": 7.7,
-          "first_seen": "2026-06-17"
+          "title": "The Discreet Charm of the Bourgeoisie",
+          "link": "https://www.paristheaternyc.com/film/the-discreet-charm-of-the-bourgeoisie-luis-bunuel",
+          "date_str": "Jun 28",
+          "showtimes": [
+            "1:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/zN4ILX2x64PvT2jIOAHXxCOi5WA.jpg",
+          "overview": "In Luis Buñuel’s deliciously satiric masterpiece, an upper-class sextet sits down to dinner but never eats, their attempts continually thwarted by a vaudevillian mixture of events both actual and imagined.",
+          "year": "1972",
+          "rating": 7.5,
+          "first_seen": "2026-06-12"
         },
         {
           "title": "The Young One",
@@ -3058,17 +3009,17 @@
           "first_seen": "2026-06-09"
         },
         {
-          "title": "The Discreet Charm of the Bourgeoisie",
-          "link": "https://www.paristheaternyc.com/film/the-discreet-charm-of-the-bourgeoisie-luis-bunuel",
-          "date_str": "Jun 28",
+          "title": "The Phantom of Liberty",
+          "link": "https://www.paristheaternyc.com/film/the-phantom-of-liberty-bunuel",
+          "date_str": "Jun 29",
           "showtimes": [
-            "1:30 PM"
+            "7:00 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/zN4ILX2x64PvT2jIOAHXxCOi5WA.jpg",
-          "overview": "In Luis Buñuel’s deliciously satiric masterpiece, an upper-class sextet sits down to dinner but never eats, their attempts continually thwarted by a vaudevillian mixture of events both actual and imagined.",
-          "year": "1972",
+          "poster": "https://image.tmdb.org/t/p/w300/f6cON5ebistPm6AS1XcZZMmKpIi.jpg",
+          "overview": "This Surrealist film, with a title referencing the Communist Manifesto, strings together short incidents based on the life of director Luis Buñuel. Presented as chance encounters, these loosely related, intersecting situations, all without a consistent protagonist, reach from the 19th century to the 1970s. Touching briefly on subjects such as execution, pedophilia, incest, and sex, the film features an array of characters, including a sick father and incompetent police officers.",
+          "year": "1974",
           "rating": 7.5,
-          "first_seen": "2026-06-12"
+          "first_seen": "2026-06-13"
         }
       ]
     },
@@ -3078,11 +3029,8 @@
         {
           "title": "Obsession",
           "link": "https://www.bam.org/film/2026/obsession",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
-            "4:30 PM",
-            "7:00 PM",
-            "9:30 PM",
             "4:20 PM",
             "6:50 PM",
             "9:20 PM",
@@ -3099,9 +3047,8 @@
         {
           "title": "I Love Boosters",
           "link": "https://www.bam.org/film/2026/i-love-boosters",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
-            "4:10 PM",
             "6:40 PM",
             "9:10 PM",
             "4:00 PM",
@@ -3119,7 +3066,7 @@
         {
           "title": "Backrooms",
           "link": "https://www.bam.org/film/2026/backrooms",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
             "4:15 PM",
             "6:45 PM",
@@ -3134,11 +3081,8 @@
         {
           "title": "Tuner",
           "link": "https://www.bam.org/film/2026/tuner",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
-            "4:20 PM",
-            "6:50 PM",
-            "9:20 PM",
             "4:00 PM",
             "1:30 PM"
           ],
@@ -3150,7 +3094,7 @@
         {
           "title": "Disclosure Day",
           "link": "https://www.bam.org/film/2026/disclosure-day",
-          "date_str": "Jun 17",
+          "date_str": "Jun 18",
           "showtimes": [
             "4:00 PM",
             "7:15 PM",
@@ -3162,18 +3106,6 @@
           "overview": "If you found out we weren’t alone, if someone showed you, proved it to you, would that frighten you?",
           "year": "2026",
           "first_seen": "2026-05-28"
-        },
-        {
-          "title": "Riverbend",
-          "link": "https://www.bam.org/film/2026/riverbend",
-          "date_str": "Jun 17",
-          "showtimes": [
-            "7:00 PM"
-          ],
-          "poster": "https://image.tmdb.org/t/p/w300/rb3BdcgObEAwqgU2oIwJ4o9Vurb.jpg",
-          "overview": "A black major and his men are on the run from a rigged court-martial and hide out in a small Georgia town where a cruel white sheriff is terrorising the black population. Together with one strong-willed woman, they formulate a bold plan to fight for freedom and human rights.",
-          "year": "1989",
-          "first_seen": "2026-06-03"
         },
         {
           "title": "Leviticus",
@@ -3260,6 +3192,22 @@
           "overview": "A documentary capturing photographer and activist Misan Harriman’s journey documenting global protest movements that drive social change. Follow Harriman as he highlights the resilience of grassroots activists fighting for equality, civil rights, and social justice, the film showcases the intersectionality of these movements and their collective power. With historical context, interviews with activists, and explorations of digital activism, the documentary reveals how Harriman's lens brings the world's activism to light, inspiring viewers to recognize their own power in shaping a more just society.",
           "year": "2026",
           "first_seen": "2026-06-17"
+        },
+        {
+          "title": "BLACK ORPHEUS",
+          "link": "https://www.maysles.org/calendar/black-orpheus",
+          "date_str": "June 19, 2026",
+          "poster": "https://image.tmdb.org/t/p/w300/fJWzdNRnfjcJuaZiKqaSURFV6Lg.jpg",
+          "overview": "Young lovers Orfeu and Eurydice run through the favelas of Rio during Carnaval, on the lam from a hitman dressed like Death and Orfeu's vengeful fiancée Mira and passing between moments of fantasy and stark reality. This impressionistic retelling of the Greek legend of Orpheus and Eurydice introduced bossa nova to the world with its soundtrack by young Brazilian composers Luiz Bonfá and Antonio Carlos Jobim.",
+          "year": "1959",
+          "rating": 7.0,
+          "first_seen": "2026-06-18"
+        },
+        {
+          "title": "HAITI vs BRAZIL – WATCH PARTY!",
+          "link": "https://www.maysles.org/calendar/haiti-vs-brazil-watch-party",
+          "date_str": "June 19, 2026",
+          "first_seen": "2026-06-18"
         },
         {
           "title": "H2O (Hip-Hop Odyssey) COMMUNITY DAY",
