@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T15:12:04.714386+00:00",
+  "updated": "2026-06-29T15:16:23.805142+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -1702,6 +1702,9 @@
           "title": "Blow Out",
           "link": "https://movingimage.org/event/blow-out-2/2026-07-03/",
           "date_str": "Jul 03",
+          "showtimes": [
+            "6:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/uFzMscVLDrTaYd6KXOXlr6dly7w.jpg",
           "overview": "While recording sound effects for a slasher flick, Jack Terry stumbles upon a real-life horror: a car careening off a bridge and into a river. Jack jumps into the water and fishes out Sally from the car, but the other passenger is already dead — a governor intending to run for president. As Jack does some investigating of his tapes, and starts a perilous romance with Sally, he enters a tangled web of conspiracy that might leave him dead.",
           "year": "1981",
@@ -1712,6 +1715,9 @@
           "title": "Scarface",
           "link": "https://movingimage.org/event/scarface-2/",
           "date_str": "Jul 10",
+          "showtimes": [
+            "6:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/iQ5ztdjvteGeboxtmRdXEChJOHh.jpg",
           "overview": "After getting a green card in exchange for assassinating a Cuban government official, Tony Montana stakes a claim on the drug trade in Miami. Viciously murdering anyone who stands in his way, Tony eventually becomes the biggest drug lord in the state, controlling nearly all the cocaine that comes through Miami. But increased pressure from the police, wars with Colombian drug cartels and his own drug-fueled paranoia serve to fuel the flames of his eventual downfall.",
           "year": "1983",
@@ -1722,6 +1728,9 @@
           "title": "Salt of the Earth",
           "link": "https://movingimage.org/event/salt-of-the-earth/",
           "date_str": "Jul 05",
+          "showtimes": [
+            "12:30 PM"
+          ],
           "also_at": [
             "MoMA"
           ],
@@ -1735,6 +1744,9 @@
           "title": "Natural Born Killers",
           "link": "https://movingimage.org/event/natural-born-killers/",
           "date_str": "Jul 11",
+          "showtimes": [
+            "3:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/fEKZwT91gxvkAoyPgpNXo8W5fu0.jpg",
           "overview": "Two victims of traumatized childhoods become lovers and serial murderers irresponsibly glorified by the mass media.",
           "year": "1994",
@@ -1745,6 +1757,9 @@
           "title": "Twists in the Cord",
           "link": "https://movingimage.org/event/twists-in-the-cord/",
           "date_str": "Jul 11",
+          "showtimes": [
+            "2:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/yTqoi2ma4p7fdZopxjMBjAJl9yW.jpg",
           "overview": "This docudrama presents the history of the telephone, updated and told from the point of view of a character who uses the screen as both a connection to intimacy and a condom for safe sex.",
           "year": "1994",
@@ -1754,12 +1769,18 @@
           "title": "The Net: The Unabomber, LSD, and the Internet",
           "link": "https://movingimage.org/event/the-net-the-unabomber-lsd-and-the-internet/",
           "date_str": "Jul 18",
+          "showtimes": [
+            "2:00 PM"
+          ],
           "first_seen": "2026-06-29"
         },
         {
           "title": "The Muppets",
           "link": "https://movingimage.org/event/the-muppets/2026-07-11/",
           "date_str": "Jul 11",
+          "showtimes": [
+            "12:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/mOB0Hdm23NslPNDkZC9eueatW3b.jpg",
           "overview": "When Kermit the Frog and the Muppets learn that their beloved theater is slated for demolition, a sympathetic human, Gary, and his felt-faced brother, Walter, swoop in to help the gang put on a telethon show and raise the $10 million they need to save the day.",
           "year": "2011",
@@ -1770,12 +1791,18 @@
           "title": "Khanevade: Portraits of Iranian Americans",
           "link": "https://movingimage.org/event/khanevade-portraits-of-iranian-americans/",
           "date_str": "Jul 12",
+          "showtimes": [
+            "12:30 PM"
+          ],
           "first_seen": "2026-06-29"
         },
         {
           "title": "Ritas",
           "link": "https://movingimage.org/event/ritas/",
           "date_str": "Jul 12",
+          "showtimes": [
+            "3:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/tyKdgqeE9thRx6xycRxetUcpLrw.jpg",
           "overview": "It explores Rita Lee's personal life and her creative process, revealing her musical talent and her ability to transform on stage. Rita herself guides the narrative through past interviews she gave throughout her career and current testimonies.",
           "year": "2025",
@@ -1785,6 +1812,9 @@
           "title": "Phantom of the Paradise",
           "link": "https://movingimage.org/event/phantom-of-the-paradise/2026-07-17/",
           "date_str": "Jul 17",
+          "showtimes": [
+            "7:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/qDOtGWeSQNwB3dG7Amt1K0JW0az.jpg",
           "overview": "Singer-songwriter Winslow Leach seeks revenge on the nefarious music producer Swan, who steals both Winslow's music and his favorite singer for the grand opening of Swan's new rock palace, the Paradise.",
           "year": "1974",
@@ -1795,6 +1825,9 @@
           "title": "Dodsworth",
           "link": "https://movingimage.org/event/dodsworth/",
           "date_str": "Jul 18",
+          "showtimes": [
+            "12:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/qpd9P54mLYvzdC6rBz56is8aeDB.jpg",
           "overview": "A retired auto manufacturer and his wife take a long-planned European vacation only to find that they want very different things from life.",
           "year": "1936",
@@ -1805,6 +1838,9 @@
           "title": "Arrival: 10th Anniversary Screening",
           "link": "https://movingimage.org/event/arrival-10th-anniversary-screening/",
           "date_str": "Jul 18",
+          "showtimes": [
+            "3:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/x2FJsf1ElAgr63Y3PNPtJrcmpoe.jpg",
           "overview": "Taking place after alien crafts land around the world, an expert linguist is recruited by the military to determine whether they come in peace or are a threat.",
           "year": "2016",
@@ -1815,6 +1851,9 @@
           "title": "Jason and the Argonauts",
           "link": "https://movingimage.org/event/jason-and-the-argonauts/",
           "date_str": "Jul 19",
+          "showtimes": [
+            "12:30 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/xHVxIgqD5CxlOI5GHxvVSt5Zh5Y.jpg",
           "overview": "Jason, a fearless sailor and explorer, returns to his home land of Thessaly after a long voyage to claim his rightful throne. He learns, however, that he must first find the magical Golden Fleece. To do so, he must embark on an epic quest fraught with fantastic monsters and terrible perils.",
           "year": "1963",
@@ -1825,6 +1864,9 @@
           "title": "Clash of the Titans",
           "link": "https://movingimage.org/event/clash-of-the-titans/",
           "date_str": "Jul 19",
+          "showtimes": [
+            "3:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/3W6QaC3Vz8UJhr6HRYuGfbNeJCs.jpg",
           "overview": "Born of a god but raised as a man, Perseus is helpless to save his family from Hades, vengeful god of the underworld. With nothing to lose, Perseus volunteers to lead a dangerous mission to defeat Hades before he can seize power from Zeus and unleash hell on earth. Battling unholy demons and fearsome beasts, Perseus and his warriors will only survive if Perseus accepts his power as a god, defies fate and creates his own destiny.",
           "year": "2010",
