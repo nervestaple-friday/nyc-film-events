@@ -1169,11 +1169,17 @@ def scrape_momi():
             # Extract date from <time datetime="..."> attribute
             date_str = ''
             date = None
+            showtimes = []
             if time_el:
                 try:
                     dt = datetime.fromisoformat(time_el['datetime'])
                     date = dt.replace(tzinfo=None)
                     date_str = date.strftime('%b %d')
+                    # The datetime attribute also carries the screening time
+                    # (movingimage.org lists each showtime as its own entry),
+                    # so surface it rather than discarding the time component.
+                    if dt.hour or dt.minute:
+                        showtimes.append(dt.strftime('%I:%M %p').lstrip('0'))
                 except Exception:
                     date_str = _extract_date_str(time_el.get_text(strip=True))
                     date = parse_date_loose(date_str + f" {datetime.now().year}") if date_str else None
@@ -1191,7 +1197,8 @@ def scrape_momi():
             else:
                 link = MOMI_URL
             e = make_event('Museum of the Moving Image', title, link,
-                           date=date, date_str=date_str, special=True)
+                           date=date, date_str=date_str, special=True,
+                           showtimes=showtimes or None)
             if e:
                 found.append(e)
 
