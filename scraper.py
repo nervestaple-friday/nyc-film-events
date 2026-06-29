@@ -2087,6 +2087,8 @@ _TMDB_OVERRIDES = {
     'END OF HISTORY': 1384914,     # Gregor 2025 (not 2014 Norte, Lav Diaz)
     'The Ecstasy Girls': 98882,    # Graver 1979 (not 1974 Young Girls in Ecstasy)
     'Memory': 838301,              # Sandu 2026 (not 2022 Liam Neeson action film)
+    "Maddie's Secret": 1517868,    # 2026 film (not the popular 2007 Taiwanese "Secret")
+    "Muriel's Wedding": 236,       # Hogan 1994 (not a 2005 wedding film)
     'CYCLE TIME': None,            # Anthology shorts program
     'RETURNING TIME': None,        # Anthology shorts program
     'JAZZ TIME': None,             # Anthology shorts program
