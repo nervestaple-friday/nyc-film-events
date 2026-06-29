@@ -110,9 +110,11 @@ def clean_title_for_display(title):
     # Normalize smart quotes
     t = t.replace('\u2019', "'").replace('\u2018', "'")
     # Strip "Director's TITLE" prefix: "Satyajit Ray's DAYS AND NIGHTS..."
-    t = re.sub(r"^[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*'s?\s+", '', t)
+    # Only when the title that follows is ALL-CAPS (the venue listing format),
+    # so real possessive titles like "Maddie's Secret" / "Rosemary's Baby" survive.
+    t = re.sub(r"^[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*'s?\s+(?=[A-Z]+(?:\s|[^A-Za-z]|$))", '', t)
     # Handle "Giuseppe De Santis' BITTER RICE" with particles
-    t = re.sub(r"^[A-Z][a-z]+(?:\s+(?:De|di|del|von|van|Le|La)\s+)?[A-Z][a-z]+'s?\s+", '', t)
+    t = re.sub(r"^[A-Z][a-z]+(?:\s+(?:De|di|del|von|van|Le|La)\s+)?[A-Z][a-z]+'s?\s+(?=[A-Z]+(?:\s|[^A-Za-z]|$))", '', t)
     # Handle "Martin and Lewis in TITLE" → "TITLE"
     t = re.sub(r'^.+?\s+in\s+(?=[A-Z])', '', t)
     # Strip trailing " in 3-D!" or " in 3D"
