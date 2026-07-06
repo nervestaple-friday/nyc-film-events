@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T15:01:46.382494+00:00",
+  "updated": "2026-07-06T15:14:58.787959+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -1071,7 +1071,10 @@
         {
           "title": "LA BAMBA",
           "link": "https://filmforum.org/film/la-bamba",
-          "date_str": "July 8",
+          "date_str": "Jul 16",
+          "showtimes": [
+            "8:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/6Znulqtc7cdqlUC69HGf26Ef5fi.jpg",
           "overview": "Los Angeles teenager Ritchie Valens becomes an overnight rock 'n' roll success in 1958, thanks to a love ballad called \"Donna\" that he wrote for his girlfriend. But as his star rises, Valens has conflicts with his jealous brother, Bob, and becomes haunted by a recurring nightmare of a plane crash just as he begins his first national tour alongside Buddy Holly.",
           "year": "1987",
@@ -1090,7 +1093,10 @@
         {
           "title": "ZOOT SUIT",
           "link": "https://filmforum.org/film/zoot-suit",
-          "date_str": "July 8",
+          "date_str": "Jul 18",
+          "showtimes": [
+            "9:10 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/itSXh6MxBZWvQ7xhSxusk2RwjfM.jpg",
           "overview": "Part fact and part fiction, Zoot Suit is the film version of Luis Valdez's critically acclaimed play, based on the actual Sleepy Lagoon murder case and the zoot suit riots of 1940s Los Angeles. Henry Reyna is the leader of a group of Mexican-Americans being sent to San Quentin without substantial evidence for the death of a man at Sleepy Lagoon. As part of the defense committee, Alice Bloomfield and George Shearer fight the blatant miscarriage of justice for the freedom of Henry and his friends.",
           "year": "1981",
