@@ -682,6 +682,49 @@ def scrape_film_forum():
             if show_times:
                 e['showtimes'] = show_times
 
+    # Special one-off screenings (Q&As, festival/series nights) aren't in the
+    # sidebar day-of-week tabs. Their real date + time live in the detail-page
+    # body as "[Weekday], [Month] [Day] at [H:MM]" — and the listing-page img
+    # alt often carries the series' opening date, not the individual screening,
+    # so those events end up with a wrong date and no showtime. Fetch the page
+    # and recover both from the earliest upcoming screening block.
+    _screening_pat = re.compile(
+        r'(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),?\s+'
+        r'(January|February|March|April|May|June|July|August|September|October|November|December)'
+        r'\s+(\d{1,2})\s+at\s+(\d{1,2}):(\d{2})', re.IGNORECASE)
+    today = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    for e in events:
+        if e.get('showtimes') or not e.get('link'):
+            continue
+        time.sleep(0.5)
+        pr = fetch(e['link'])
+        if not pr:
+            continue
+        seen_sc = set()
+        best = None  # (date, hh, mm)
+        for m in _screening_pat.finditer(pr.text):
+            mon, day, hh, mm = m.group(1).title(), int(m.group(2)), int(m.group(3)), m.group(4)
+            key = (mon, day, hh, mm)
+            if key in seen_sc:
+                continue
+            seen_sc.add(key)
+            dt = parse_date_loose(f"{mon} {day} {now.year}")
+            if dt and dt >= today and (best is None or dt < best[0]):
+                best = (dt, hh, mm)
+        if not best:
+            continue
+        dt, hh, mm = best
+        # Evening screenings default to PM (10/11 → AM, 12 → PM).
+        if 1 <= hh <= 9:
+            st = f"{hh}:{mm} PM"
+        elif hh in (10, 11):
+            st = f"{hh}:{mm} AM"
+        else:
+            st = f"12:{mm} PM"
+        e['showtimes'] = [st]
+        e['date'] = dt
+        e['date_str'] = dt.strftime('%b %d')
+
     return events[:20]
 
 
