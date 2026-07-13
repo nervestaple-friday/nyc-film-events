@@ -2624,15 +2624,32 @@ def main():
         else:
             events_by_venue[e['venue']] = events_by_venue.get(e['venue'], []) + [e]
 
-    # Purge stale past events (dates before today)
+    # Purge stale past events (dates before today).
     today_midnight = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+
+    def _event_is_stale(e):
+        dt = e.get('date')
+        if dt is not None:
+            return dt.replace(hour=0, minute=0, second=0, microsecond=0) < today_midnight
+        # No parsed date object — venues whose date_str failed to parse at
+        # scrape time would otherwise bypass the purge and linger forever, so
+        # fall back to parsing date_str here.
+        ds = (e.get('date_str') or '').replace('\xa0', ' ').strip()
+        if not ds or not re.search(r'\d', ds):
+            return False  # e.g. "Now Playing" — no staleness signal, keep
+        dt = parse_date_loose(f"{ds} {today_midnight.year}")
+        if dt is None:
+            return False
+        days_past = (today_midnight - dt.replace(hour=0, minute=0, second=0, microsecond=0)).days
+        # Only treat as stale within the last ~6 months; anything older is
+        # almost certainly a year-wrap artifact (e.g. a "Jan 05" date_str with
+        # no year that actually refers to next January), so keep it.
+        return 0 < days_past <= 180
+
     purged = 0
     for venue in list(events_by_venue):
         before = len(events_by_venue[venue])
-        events_by_venue[venue] = [
-            e for e in events_by_venue[venue]
-            if not e.get('date') or e['date'].replace(hour=0, minute=0, second=0, microsecond=0) >= today_midnight
-        ]
+        events_by_venue[venue] = [e for e in events_by_venue[venue] if not _event_is_stale(e)]
         purged += before - len(events_by_venue[venue])
     if purged:
         print(f"\n[Purged {purged} stale past events]", file=sys.stderr)
