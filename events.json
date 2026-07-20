@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-20T15:02:14.169971+00:00",
+  "updated": "2026-07-20T15:10:59.286178+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -535,6 +535,10 @@
           "showtimes": [
             "8:40 PM"
           ],
+          "poster": "https://image.tmdb.org/t/p/w300/lsuvfxyCxlnkzc49hGMUmPDibCk.jpg",
+          "overview": "In the final days of the year 1999, almost everyone in Taiwan has died from a strange plague that ravished the island. As rain pours down relentlessly, a single man is stuck with an unfinished plumbing job and a hole in his floor. This results in a very odd relationship with the woman who lives below him.",
+          "year": "1999",
+          "rating": 7.0,
           "first_seen": "2026-07-06"
         },
         {
@@ -2176,6 +2180,9 @@
           "showtimes": [
             "6:30 PM"
           ],
+          "poster": "https://image.tmdb.org/t/p/w300/hbqKnBBRWa5hYfi42Ma2uMDWeJp.jpg",
+          "overview": "In a forgotten theater, a haunted man's past flickers back to life-forcing a final reckoning.",
+          "year": "2026",
           "first_seen": "2026-07-13"
         },
         {
@@ -2185,6 +2192,10 @@
           "showtimes": [
             "7:00 PM"
           ],
+          "poster": "https://image.tmdb.org/t/p/w300/A3s2tQGNb6mhlr1hPZeE5F8IUwp.jpg",
+          "overview": "In 1959, an alien experiment crashes to earth and infects a fraternity member. They freeze the body, but in the modern day, two geeks pledging a fraternity accidentally thaw the corpse, which proceeds to infect the campus with parasites that transform their hosts into killer zombies.",
+          "year": "1986",
+          "rating": 6.8,
           "first_seen": "2026-07-20"
         },
         {
@@ -3160,6 +3171,10 @@
           "title": "The Front Page (1931)",
           "link": "https://www.paristheaternyc.com/film/the-front-page-1931-paris",
           "date_str": "Aug 02",
+          "poster": "https://image.tmdb.org/t/p/w300/1ZVA6L4a5HKIdvfpNcxDU38BHYd.jpg",
+          "overview": "Hildy Johnson is an investigative reporter looking for a bigger paycheck. When an accused murderer escapes from custody, Hildy sees an opportunity for the story of a lifetime. But when he finds the criminal, he learns that the man may not be guilty. With the help of his editor, Hildy attempts to hide the convict, uncover the conspiracy and write the scoop of his career.",
+          "year": "1931",
+          "rating": 6.5,
           "first_seen": "2026-07-20"
         },
         {
