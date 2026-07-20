@@ -2033,8 +2033,10 @@ def _clean_title_for_tmdb(title):
     t = re.sub(r'^.+?\s+[Pp][Rr][Ee][Ss][Ee][Nn][Tt][Ss]?:?\s+', '', t)
     # Strip "(35mm!)" and similar tags
     t = re.sub(r'\s*\((?:35mm|16mm|DCP|FREE)[^)]*\)\s*$', '', t, flags=re.IGNORECASE)
-    # Strip "[35mm]", "[16mm]", "[DCP]", "[OV]" etc. in square brackets
-    t = re.sub(r'\s*\[(?:35mm|16mm|DCP|4K|70mm|OV)[^\]]*\]', '', t, flags=re.IGNORECASE)
+    # Strip bracketed print/format annotations anywhere in the bracket:
+    # "[35mm]", "[DCP]", "[OV]", "[Newly Struck 35mm Print]", "[4K Restoration]"
+    t = re.sub(r'\s*\[[^\]]*(?:35mm|16mm|70mm|DCP|4K|2K|OV|Print|Restoration|Restored)[^\]]*\]',
+               '', t, flags=re.IGNORECASE)
     # Strip quoted titles: '"HUSBANDS"' → 'HUSBANDS'
     t = re.sub(r'^"(.+)"$', r'\1', t)
     # Strip "Presented by Name" suffix
@@ -2047,6 +2049,15 @@ def _clean_title_for_tmdb(title):
     t = re.sub(r'\s*In\s+\w+\s+and\s+\w+\s+with.*$', '', t)
     # Strip "Nth Anniversary Screening" and everything after it
     t = re.sub(r':?\s*\d+(?:st|nd|rd|th)\s+Anniversary\s+Screening\b.*$', '', t, flags=re.IGNORECASE)
+    # Strip parenthetical anniversary tags: "Night of the Creeps (40th Anniversary)"
+    t = re.sub(r'\s*\(\d+(?:st|nd|rd|th)\s+Anniversary[^)]*\)', '', t, flags=re.IGNORECASE)
+    # Strip parenthetical event annotations: "(New York Premiere with Cast and Crew)",
+    # "(Q&A to follow)", "(Sing-along)" — repertory listing cruft that breaks matching
+    t = re.sub(r'\s*\((?:[^)]*\b(?:Premiere|Cast and Crew|Discussion|In Person|Sing-?along)\b[^)]*)\)',
+               '', t, flags=re.IGNORECASE)
+    # Strip trailing parenthetical year: "The Front Page (1931)" → "The Front Page"
+    # (year is still recovered separately via _extract_year_from_title for filtering)
+    t = re.sub(r'\s*\((?:19|20)\d{2}\)\s*$', '', t)
     # Strip "+ Q&A", "+ Book Event", "+ Discussion" etc.
     t = re.sub(r'\s*\+\s+.*$', '', t)
     # Strip "(Singalong Version)", "(Restored Edition)" etc.
@@ -2138,6 +2149,7 @@ _TMDB_OVERRIDES = {
     'The Ecstasy Girls': 98882,    # Graver 1979 (not 1974 Young Girls in Ecstasy)
     'Memory': 838301,              # Sandu 2026 (not 2022 Liam Neeson action film)
     "Maddie's Secret": 1517868,    # 2026 film (not the popular 2007 Taiwanese "Secret")
+    'The Hole [Newly Struck 35mm Print]': 47060,  # Tsai Ming-liang 1998 (洞), not the 2001/2009 films
     "Muriel's Wedding": 236,       # Hogan 1994 (not a 2005 wedding film)
     'CYCLE TIME': None,            # Anthology shorts program
     'RETURNING TIME': None,        # Anthology shorts program
