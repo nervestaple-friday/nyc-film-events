@@ -584,14 +584,18 @@ def scrape_film_forum():
         if parent_a and parent_a.name == 'a' and '/film/' in parent_a.get('href', ''):
             alt = img.get('alt', '')
             alt_stripped = alt.strip().upper()
-            # Search entire alt text for month+day pattern (not just start)
+            # Search entire alt text for month+day pattern (not just start).
+            # Use [^\S\n]+ (spaces/tabs, NOT newlines) so a month-word inside a
+            # multi-line title can't bind to a stray number on a later line —
+            # e.g. "SHERMAN'S MARCH\n\n40TH ANNIVERSARY" must not yield "March 40".
+            # (?!\d) rejects year digits ("March 1985" -> no false day).
             dm = re.search(
                 r'((?:January|February|March|April|May|June|July|August|September|October|November|December)'
-                r'\s+\d{1,2})',
+                r')[^\S\n]+(\d{1,2})(?!\d)',
                 alt, re.IGNORECASE,
             )
-            if dm:
-                href_dates[parent_a['href']] = dm.group(1).title()
+            if dm and 1 <= int(dm.group(2)) <= 31:
+                href_dates[parent_a['href']] = f"{dm.group(1).title()} {dm.group(2)}"
             elif alt_stripped.startswith('NOW PLAYING') or alt_stripped.startswith('HELD OVER'):
                 href_dates[parent_a['href']] = 'Now Playing'
 
