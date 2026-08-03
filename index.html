@@ -41,7 +41,7 @@
     .header { border-bottom: 1px solid var(--border); padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
     .header h1 { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 600; color: var(--accent); letter-spacing: 0.02em; }
     .header-right { display: flex; align-items: center; gap: 1rem; }
-    .updated { font-size: 0.7rem; color: var(--dim); font-family: monospace; }
+    .updated { font-size: 0.72rem; color: var(--dim); font-family: monospace; background: var(--surface2); padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid var(--border); }
 
     .sticky-nav { position: sticky; top: 0; z-index: 100; background: var(--bg); }
     .search-bar { padding: 0.6rem 1.2rem; display: flex; align-items: center; border-bottom: 1px solid var(--border); background: var(--surface); }
@@ -432,6 +432,28 @@
         return c;
       }, [allVenues]);
 
+      // Mobile swipe between venue filters
+      const [touchStart, setTouchStart] = useState(null);
+      const navRef = useRef(null);
+      const handleTouchStart = useCallback((e) => {
+        setTouchStart(e.changedTouches[0].screenX);
+      }, []);
+      const handleTouchEnd = useCallback((e) => {
+        if (touchStart === null) return;
+        const endX = e.changedTouches[0].screenX;
+        const diff = touchStart - endX;
+        const threshold = 50;
+        if (Math.abs(diff) < threshold) { setTouchStart(null); return; }
+        const names = [ALL, ...venueNames];
+        const idx = names.indexOf(effective);
+        if (diff > 0 && idx < names.length - 1) {
+          handleNavigate(names[idx + 1]);
+        } else if (diff < 0 && idx > 0) {
+          handleNavigate(names[idx - 1]);
+        }
+        setTouchStart(null);
+      }, [touchStart, effective, venueNames, handleNavigate]);
+
       // Suppress NEW badge globally if the signal is meaningless: when more
       // than 30% of events would qualify, the dataset isn't differentiating
       // recent additions from routine listings (e.g., right after the scraper
@@ -487,7 +509,7 @@
             </div>
 
             {allVenues.length > 0 && (
-              <nav className="filters" role="navigation">
+              <nav className="filters" role="navigation" ref={navRef} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
                 <button className={`filter-btn ${effective === ALL ? 'active' : ''}`}
                   onClick={() => handleNavigate(ALL)} aria-pressed={effective === ALL}>All <span className="filter-count">{totalEvents}</span></button>
                 {venueNames.map(name => (
