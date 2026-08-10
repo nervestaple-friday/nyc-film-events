@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-10T15:01:41.203441+00:00",
+  "updated": "2026-08-10T15:11:13.524725+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -86,6 +86,9 @@
           "date_str": "Aug 10",
           "showtimes": [
             "9:35 PM"
+          ],
+          "also_at": [
+            "Syndicated BK"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/nV5316WUsVij8sVXLCF1g7TFitg.jpg",
           "overview": "Cab driver Max picks up a man who offers him $600 to drive him around. But the promise of easy money sours when Max realizes his fare is an assassin.",
@@ -1532,6 +1535,7 @@
             "9:30 PM"
           ],
           "also_at": [
+            "Syndicated BK",
             "BAM"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/gtssK2SacGjpj2psN0Ee2TcTgso.jpg",
@@ -1988,6 +1992,223 @@
           "year": "2021",
           "rating": 7.3,
           "first_seen": "2026-08-03"
+        },
+        {
+          "title": "THE SHOOTING",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 11",
+          "showtimes": [
+            "9:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/oaySRq49jlCtoYjhoR7IhSga6Vm.jpg",
+          "overview": "Two miners agree to guide a mysterious woman, who has appeared in their camp from nowhere, to a nearby town; but soon, because of her erratic behavior, they begin to suspect that her true purpose is quite different.",
+          "year": "1966",
+          "rating": 6.3,
+          "first_seen": "2026-08-03"
+        },
+        {
+          "title": "NOBODY WANTED TO DIE / NIEKAS NENOREJO MIRTI",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 12",
+          "showtimes": [
+            "6:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/jXaWQ7SBn5qRqXTu3IP06ZroMaL.jpg",
+          "overview": "The film is set in Lithuania after the Second World War. It shows dramatic events in a small Lithuanian farming community, where people are split between the Soviets and the \"brothers in the woods\", who are fighting to defend their land from the Soviets after the end of the Second World War.",
+          "year": "1966",
+          "rating": 5.5,
+          "first_seen": "2026-08-03"
+        },
+        {
+          "title": "THE BELLE STARR STORY‬ / IL MIO CORPO PER UN POKER",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 12",
+          "showtimes": [
+            "9:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/ipSw1v2cU2cfq0kUt3UXk6id3rK.jpg",
+          "overview": "Dominated by men in her youth, Belle Starr now out-shoots and out-gambles them as she makes her way around the West.  One man who's her equal is Larry Blackie, with whom she has an on-again, off-again relationship. Together, they become involved in a robbery which goes awry...",
+          "year": "1968",
+          "rating": 6.3,
+          "first_seen": "2026-08-03"
+        },
+        {
+          "title": "THE UNCLE'S REQUEST",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 13",
+          "showtimes": [
+            "6:00 PM"
+          ],
+          "first_seen": "2026-08-03"
+        },
+        {
+          "title": "KYOKO KAGAWA RARITIES: LITTLE PEACH / ANZUKKO",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 13",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "first_seen": "2026-08-03"
+        },
+        {
+          "title": "CÓDIGO MARCOS",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 13",
+          "showtimes": [
+            "8:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/qwItiqBEkmlIcxbk3nT94ypzd1g.jpg",
+          "first_seen": "2026-08-03"
+        },
+        {
+          "title": "QUEEN OF THURSDAYS / LA REINA DE LOS JUEVES",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 14",
+          "showtimes": [
+            "6:00 PM"
+          ],
+          "first_seen": "2026-08-10"
+        },
+        {
+          "title": "BLACK GOD, WHITE DEVIL / DEUS E O DIABO NA TERRA DO SOL",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 14",
+          "showtimes": [
+            "6:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/keNDV8nbgVLiCUyzObisEDxdAI4.jpg",
+          "overview": "Wanted for killing his boss, Manuel flees with his wife Rosa to the sertão, the barren landscape of Northern Brazil. Thrust into a primordial violent region, Manuel and Rosa come under the influence and control of a series of frightening figures.",
+          "year": "1964",
+          "rating": 7.1,
+          "first_seen": "2026-08-03"
+        },
+        {
+          "title": "DANIEL CHILE + RICARDO VEGA",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 14",
+          "showtimes": [
+            "8:30 PM"
+          ],
+          "first_seen": "2026-08-10"
+        },
+        {
+          "title": "CEMETERY WITHOUT CROSSES / UNE CORDE…UN COLT…",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 14",
+          "showtimes": [
+            "9:15 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/gUJnuwDAAMLudOlVpYsjlNNQz6O.jpg",
+          "overview": "A melancholic gunfighter is drawn into a vengeful and tragic kidnapping plot by his widowed ex-lover.",
+          "year": "1969",
+          "rating": 6.3,
+          "first_seen": "2026-08-03"
+        },
+        {
+          "title": "MAN WITH A SHOTGUN / SHOTTOGAN NO OTOKO",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 15",
+          "showtimes": [
+            "4:30 PM"
+          ],
+          "first_seen": "2026-08-03"
+        },
+        {
+          "title": "THE WALKER",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 15",
+          "showtimes": [
+            "5:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/iPt75oLdldVWjeq6Omnn1Es4EuF.jpg",
+          "overview": "Carter Page III, a middle-aged gay man in Washington, D. C., is a \"walker\", a single man who escorts other men's wives to social events so the husbands do not have to. One of the women he escorts, Lynn Lockner, is the wife of a United States senator and is carrying on an affair with a lobbyist. When she finds the lobbyist murdered, she embroils Carter in an investigation that leads to the highest levels of the federal government.",
+          "year": "2007",
+          "rating": 5.3,
+          "first_seen": "2026-08-10"
+        },
+        {
+          "title": "ADIÓS CUBA",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 15",
+          "showtimes": [
+            "7:15 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/xTmwg3KEOrsrxv3FYZu9wlD4tFC.jpg",
+          "overview": "Caridad (Yuliet Cruz) is a Cuban playwright in exile in Valencia, Spain. She is committed to writing a play about the Cuban exodus from the island. To this end, she intends to engage in dialogue with women and men who recount their migratory experiences, during which they risked their lives. The film powerfully expresses her profound perspective on uprootedness, nostalgia, and loss.",
+          "year": "2026",
+          "first_seen": "2026-08-10"
+        },
+        {
+          "title": "THE WIND BLOWS UNDER YOUR FEET / TALPUK ALATT FÜTYÜL A SZÉL",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 16",
+          "showtimes": [
+            "3:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/kCTcYxODxODol1v2TtI8APD86V0.jpg",
+          "overview": "In the 1830s, legendary outlaw Farkos Csapó Gyurka escapes from prison and returns to the Hungarian Great Plain to avenge his betrayal and reclaim his dominance over the puszta. While the local impoverished herdsmen protect him, a determined peace officer relentlessly hunts the bandit to establish modern legal order.",
+          "year": "1976",
+          "first_seen": "2026-08-10"
+        },
+        {
+          "title": "BEHIND MY EYES / DETRÁS DE MIS OJOS",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 16",
+          "showtimes": [
+            "5:00 PM"
+          ],
+          "first_seen": "2026-08-10"
+        },
+        {
+          "title": "SODA POP JOE / LIMONÁDOVÝ JOE ANEB KONSKÁ OPERA",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 16",
+          "showtimes": [
+            "5:45 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/gQM8tVWVRoYbyDe0qWyu5luixjf.jpg",
+          "overview": "A satire of the Great American Way, with Lemonade Joe a \"clean living\" gunfighter who drinks only Kola-Loca Lemonade and convinces everyone else in town (with his gun skills) that all \"real men\" drink ONLY lemonade!",
+          "year": "1964",
+          "rating": 7.1,
+          "first_seen": "2026-08-03"
+        },
+        {
+          "title": "COMANDANTE FRITZ",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 16",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/7BIm6jIcJhCV9uLXlfQhDJMJasi.jpg",
+          "overview": "East German Stasi officer Fritz travels to Cuba with orders to thwart a suspected CIA operation against Fidel Castro. In Havana he meets Lola, a young woman who will both endanger his mission, and change the course of his life dramatically.",
+          "year": "2025",
+          "first_seen": "2026-08-10"
+        },
+        {
+          "title": "WHITE SUN OF THE DESERT / BELOE SOLNTSE PUSTYNI",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 18",
+          "showtimes": [
+            "6:45 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/m0dWCKMtZAlPERK7Wsq7DH2BS4M.jpg",
+          "overview": "The setting is the east shore of the Caspian Sea (today's Turkmenistan) where the Red Army soldier Fyodor Sukhov has been fighting the Civil War in Russian Asia for a number of years. After being hospitalised and then demobbed, he sets off home to join his wife, only to be caught up in a desert fight between a Red Army cavalry unit and Basmachi guerrillas. The cavalry unit commander, Rahimov, \"convinces\" Sukhov to help, temporarily, with the protection of abandoned women of the Basmachi guerrilla leader Abdullah's harem. Leaving a young Red Army soldier, Petrukha, to assist Sukhov with the task, Rahimov and his cavalry unit set out to pursue fleeing Abdullah.Sukhov and women from Abdullah's harem return to a nearby shore town. Soon, looking for a seaway across the border, Abdullah and his gang come to the same town...",
+          "year": "1969",
+          "rating": 7.2,
+          "first_seen": "2026-08-10"
+        },
+        {
+          "title": "ZACHARIAH",
+          "link": "https://anthologyfilmarchives.org/film_screenings/calendar?view=list&month=08&year=2026",
+          "date_str": "Aug 18",
+          "showtimes": [
+            "9:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/c7rdpZlviWAcOOx5bnzfqPPPNvq.jpg",
+          "overview": "In the wake of a nuclear war, a young woman survives on her own, fearing she may actually be the proverbial last woman on earth, until she discovers the most astonishing sight of her life: another human being. A distraught scientist, he’s nearly been driven mad by radiation exposure and his desperate search for others. A fragile, imperative strand of trust connects them. But when a stranger enters the valley, their precarious bond begins to unravel.",
+          "year": "2015",
+          "rating": 5.7,
+          "first_seen": "2026-08-10"
         }
       ]
     },
@@ -2910,6 +3131,160 @@
           "year": "2008",
           "rating": 7.0,
           "first_seen": "2026-07-27"
+        },
+        {
+          "title": "Taste of Streep: Mamma Mia! Here We Go Again",
+          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+          "date_str": "Wednesday 12, August",
+          "showtimes": [
+            "6:25 PM"
+          ],
+          "first_seen": "2026-07-27"
+        },
+        {
+          "title": "Collateral",
+          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+          "date_str": "Thursday 13, August",
+          "showtimes": [
+            "6:30 PM"
+          ],
+          "also_at": [
+            "Metrograph"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/nV5316WUsVij8sVXLCF1g7TFitg.jpg",
+          "overview": "Cab driver Max picks up a man who offers him $600 to drive him around. But the promise of easy money sours when Max realizes his fare is an assassin.",
+          "year": "2004",
+          "rating": 7.2,
+          "first_seen": "2026-07-27"
+        },
+        {
+          "title": "The Invite",
+          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+          "date_str": "Saturday 15, August",
+          "showtimes": [
+            "4:30 PM"
+          ],
+          "also_at": [
+            "BAM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/vJRFj5ri9Zm7Tg0Tn7pBmOtXqKb.jpg",
+          "overview": "Joe and Angela’s marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
+          "year": "2026",
+          "first_seen": "2026-07-27"
+        },
+        {
+          "title": "I Want Your Sex",
+          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+          "date_str": "Saturday 15, August",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "also_at": [
+            "BAM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/pR7SIX3AwqdoD96OI44oLG98e7g.jpg",
+          "overview": "When fresh-faced Elliot lands an exciting job for renowned artist, icon and provocateur Erika Tracy, his fantasies come true as Erika taps him to become her sexual muse. But Elliot soon finds himself out of his depth as Erika takes him on a journey more profound than he ever could have imagined, into a world of sex, obsession, power, betrayal and murder.",
+          "year": "2026",
+          "rating": 5.8,
+          "first_seen": "2026-07-27"
+        },
+        {
+          "title": "Miami Vice",
+          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+          "date_str": "Saturday 15, August",
+          "showtimes": [
+            "9:15 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/iJPSls4taB09EUKtLj6FjFSprb3.jpg",
+          "overview": "A case involving drug lords and murder in South Florida takes a personal turn for undercover detectives Sonny Crockett and Ricardo Tubbs. Unorthodox Crockett gets involved romantically with the Chinese-Cuban wife of a trafficker of arms and drugs, while Tubbs deals with an assault on those he loves.",
+          "year": "2006",
+          "rating": 6.0,
+          "first_seen": "2026-07-27"
+        },
+        {
+          "title": "The Insider",
+          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+          "date_str": "Sunday 16, August",
+          "showtimes": [
+            "5:40 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/w695X0FvTlBCS7GSLHNILnrfqPm.jpg",
+          "overview": "A research chemist comes under personal and professional attack when he decides to appear in a 60 Minutes exposé on Big Tobacco.",
+          "year": "1999",
+          "rating": 7.5,
+          "first_seen": "2026-07-27"
+        },
+        {
+          "title": "Rose of Nevada",
+          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+          "date_str": "Sunday 16, August",
+          "showtimes": [
+            "9:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/rqHgjvD5HV0ojj4CEV31ztertPK.jpg",
+          "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
+          "year": "2026",
+          "first_seen": "2026-07-20"
+        },
+        {
+          "title": "Thief",
+          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+          "date_str": "Monday 17, August",
+          "showtimes": [
+            "8:40 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/bpjRGwfYJ71bU0hNhLIz7g3t6Oy.jpg",
+          "overview": "Frank is an expert professional safecracker, specialized in high-profile diamond heists. He plans to use his ill-gotten income to retire from crime and build a nice life for himself complete with a home, wife and kids. To accelerate the process, he signs on with a top gangster for a big score.",
+          "year": "1981",
+          "rating": 7.2,
+          "first_seen": "2026-07-27"
+        },
+        {
+          "title": "Maddie's Secret",
+          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+          "date_str": "Tuesday 18, August",
+          "showtimes": [
+            "9:00 PM"
+          ],
+          "also_at": [
+            "IFC Center",
+            "BAM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/gtssK2SacGjpj2psN0Ee2TcTgso.jpg",
+          "overview": "Maddie is a plucky dishwasher who leaps to viral superstardom at a trendy food content creation company. While her life seems picturesque — complete with an adoring husband, ride-or-die best friend and a cupboard full of woman-owned ethically-sourced chili crisp to boot — mounting professional pressures threaten to reawaken a hidden secret from her troubled past.",
+          "year": "2026",
+          "first_seen": "2026-06-29"
+        },
+        {
+          "title": "Heat",
+          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+          "date_str": "Thursday 20, August",
+          "showtimes": [
+            "8:40 PM"
+          ],
+          "also_at": [
+            "Paris Theater"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/e09dLw1Ljtccd2P4NsuUvVtS5du.jpg",
+          "overview": "Obsessive master thief Neil McCauley leads a top-notch crew on various daring heists throughout Los Angeles while determined detective Vincent Hanna pursues him without rest. Each man recognizes and respects the ability and the dedication of the other even though they are aware their cat-and-mouse game may end in violence.",
+          "year": "1995",
+          "rating": 7.9,
+          "first_seen": "2026-07-27"
+        },
+        {
+          "title": "Teenage Sex and Death at Camp Miasma",
+          "link": "https://ticketing.useast.veezi.com/sessions/?siteToken=dxdq5wzbef6bz2sjqt83ytzn1c",
+          "date_str": "Saturday 29, August",
+          "showtimes": [
+            "6:40 PM"
+          ],
+          "also_at": [
+            "BAM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/nLsFnXifieSTqSeWxjXSS8RvaUZ.jpg",
+          "overview": "After years of slapdash sequels and waning fandom, the Camp Miasma slasher franchise is handed over to an enthusiastic young director for resurrection. But when she visits the original's star, a now-reclusive actress shrouded in mystery, the two women fall into a blood-soaked world of desire, fear, and delirium.",
+          "year": "2026",
+          "first_seen": "2026-08-10"
         }
       ]
     },
@@ -3107,6 +3482,9 @@
           "title": "Heat",
           "link": "https://www.paristheaternyc.com/film/heat-paris",
           "date_str": "Aug 28",
+          "also_at": [
+            "Syndicated BK"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/e09dLw1Ljtccd2P4NsuUvVtS5du.jpg",
           "overview": "Obsessive master thief Neil McCauley leads a top-notch crew on various daring heists throughout Los Angeles while determined detective Vincent Hanna pursues him without rest. Each man recognizes and respects the ability and the dedication of the other even though they are aware their cat-and-mouse game may end in violence.",
           "year": "1995",
@@ -3199,7 +3577,8 @@
             "9:00 PM"
           ],
           "also_at": [
-            "IFC Center"
+            "IFC Center",
+            "Syndicated BK"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/gtssK2SacGjpj2psN0Ee2TcTgso.jpg",
           "overview": "Maddie is a plucky dishwasher who leaps to viral superstardom at a trendy food content creation company. While her life seems picturesque — complete with an adoring husband, ride-or-die best friend and a cupboard full of woman-owned ethically-sourced chili crisp to boot — mounting professional pressures threaten to reawaken a hidden secret from her troubled past.",
@@ -3214,6 +3593,9 @@
             "4:20 PM",
             "6:50 PM",
             "9:20 PM"
+          ],
+          "also_at": [
+            "Syndicated BK"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/vJRFj5ri9Zm7Tg0Tn7pBmOtXqKb.jpg",
           "overview": "Joe and Angela’s marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
@@ -3241,6 +3623,9 @@
           "showtimes": [
             "7:00 PM",
             "9:15 PM"
+          ],
+          "also_at": [
+            "Syndicated BK"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/pR7SIX3AwqdoD96OI44oLG98e7g.jpg",
           "overview": "When fresh-faced Elliot lands an exciting job for renowned artist, icon and provocateur Erika Tracy, his fantasies come true as Erika taps him to become her sexual muse. But Elliot soon finds himself out of his depth as Erika takes him on a journey more profound than he ever could have imagined, into a world of sex, obsession, power, betrayal and murder.",
@@ -3301,6 +3686,9 @@
             "3:00 PM",
             "6:15 PM",
             "9:00 PM"
+          ],
+          "also_at": [
+            "Syndicated BK"
           ],
           "poster": "https://image.tmdb.org/t/p/w300/nLsFnXifieSTqSeWxjXSS8RvaUZ.jpg",
           "overview": "After years of slapdash sequels and waning fandom, the Camp Miasma slasher franchise is handed over to an enthusiastic young director for resurrection. But when she visits the original's star, a now-reclusive actress shrouded in mystery, the two women fall into a blood-soaked world of desire, fear, and delirium.",
