@@ -20,6 +20,7 @@ Run weekly for a digest, or with --test to preview without updating state.
 
 import os, sys, json, hashlib, re, time, math, requests, html as _html, difflib
 from datetime import datetime, timedelta, timezone
+from collections import defaultdict
 from bs4 import BeautifulSoup
 from xml.etree import ElementTree as ET
 
@@ -2670,23 +2671,41 @@ def main():
     if purged:
         print(f"\n[Purged {purged} stale past events]", file=sys.stderr)
 
-    # Per-venue title and link deduplication
+    # Per-venue title and link deduplication.
+    #
+    # Link dedup exists to collapse one film listed twice under slightly
+    # different title strings. It only makes sense when the link identifies a
+    # film. Venues without per-film pages (Anthology) point every event at the
+    # same month-calendar URL, so keying on link there drops every film after
+    # the first. Treat a link carrying several distinct titles as a directory
+    # page and dedupe those by title alone.
+    SHARED_LINK_TITLE_THRESHOLD = 3
+    norm_title_of = lambda t: re.sub(r'[^a-z0-9 ]', '', t.lower()).strip()
     for venue in events_by_venue:
+        titles_per_link = defaultdict(set)
+        for e in events_by_venue[venue]:
+            if e.get('link'):
+                titles_per_link[e['link']].add(norm_title_of(e['title']))
+        directory_links = {
+            link for link, titles in titles_per_link.items()
+            if len(titles) >= SHARED_LINK_TITLE_THRESHOLD
+        }
+
         seen_titles = set()
         seen_links = set()
         deduped = []
         for e in events_by_venue[venue]:
-            norm_title = re.sub(r'[^a-z0-9 ]', '', e['title'].lower()).strip()
+            norm_title = norm_title_of(e['title'])
             link = e.get('link', '')
-            if norm_title not in seen_titles and (not link or link not in seen_links):
+            identifying = link and link not in directory_links
+            if norm_title not in seen_titles and (not identifying or link not in seen_links):
                 seen_titles.add(norm_title)
-                if link:
+                if identifying:
                     seen_links.add(link)
                 deduped.append(e)
         events_by_venue[venue] = deduped
 
     # Cross-venue deduplication: add also_at field
-    from collections import defaultdict
     title_venues = defaultdict(list)
     norm = lambda t: re.sub(r'[^a-z0-9 ]', '', t.lower()).strip()
     for venue, evts in events_by_venue.items():
