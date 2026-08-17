@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17T15:03:41.128222+00:00",
+  "updated": "2026-08-17T15:11:36.872084+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -1143,6 +1143,9 @@
           "title": "FILIPIÑANA",
           "link": "https://filmforum.org/film/filipinana",
           "date_str": "August 28",
+          "showtimes": [
+            "7:00 PM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/d9bovHgEC90yTgqLsoarQWnh6JW.jpg",
           "overview": "A film about a girl drawn to a golf course.",
           "year": "2020",
