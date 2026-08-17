@@ -570,6 +570,19 @@ def scrape_ifc():
     return events[:25]
 
 
+def _ff_clock_to_12h(hh, mm):
+    """Film Forum prints bare clock times ("7:00"). Anything from 1:00 to 9:59 is
+    an afternoon/evening show; only the 10 and 11 o'clock slots are matinees."""
+    hh = int(hh)
+    if 1 <= hh <= 9:
+        return f"{hh}:{mm} PM"
+    if hh in (10, 11):
+        return f"{hh}:{mm} AM"
+    if hh == 12:
+        return f"12:{mm} PM"
+    return None
+
+
 def scrape_film_forum():
     events = []
     r = fetch('https://filmforum.org/films')
@@ -673,19 +686,63 @@ def scrape_film_forum():
             continue
         times = link_times.get(e['link'])
         if times:
-            times = list(dict.fromkeys(times))
-            show_times = []
-            for t in times:
-                h, mn = t.split(':')
-                h = int(h)
-                if 1 <= h <= 9:
-                    show_times.append(f"{h}:{mn} PM")
-                elif h == 10 or h == 11:
-                    show_times.append(f"{h}:{mn} AM")
-                elif h == 12:
-                    show_times.append(f"12:{mn} PM")
+            show_times = [
+                st for st in (
+                    _ff_clock_to_12h(*t.split(':')) for t in dict.fromkeys(times)
+                ) if st
+            ]
             if show_times:
                 e['showtimes'] = show_times
+
+    # Films opening later than this week are absent from the day-of-week tabs,
+    # but any of their screenings that are already scheduled appear in the
+    # "Upcoming Events" sidebar module, which renders on every filmforum.org
+    # page (so this costs no extra request):
+    #     <h5 class="title"><a ...>FILIPIÑANA <br>Q&A with Rafael Manuel</a></h5>
+    #     <div class="showtimes"><p>Friday, August 28<br />7:00</p></div>
+    # The film title is the first line of the heading; the rest is the event
+    # subtitle. Match on that title to fill in events still missing showtimes.
+    _ff_norm = lambda t: re.sub(r'[^a-z0-9 ]', '', (t or '').lower()).strip()
+    today = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    upcoming = defaultdict(dict)  # norm title -> {date: [showtimes]}
+    for section in soup.select('div.upcoming-events section'):
+        heading = section.select_one('h5.title a')
+        block = section.select_one('div.showtimes')
+        if not heading or not block:
+            continue
+        title = _ff_norm(heading.get_text('\n', strip=True).split('\n')[0])
+        if not title:
+            continue
+        text = block.get_text('\n', strip=True)
+        dm = re.search(
+            r'(January|February|March|April|May|June|July|August|September|'
+            r'October|November|December)\s+(\d{1,2})\b', text, re.IGNORECASE)
+        if not dm:
+            continue
+        dt = parse_date_loose(f"{dm.group(1).title()} {dm.group(2)} {now.year}")
+        if not dt or dt < today:
+            continue
+        slot = upcoming[title].setdefault(dt, [])
+        for t in re.findall(r'\b(\d{1,2}):(\d{2})\b', text):
+            st = _ff_clock_to_12h(*t)
+            if st and st not in slot:
+                slot.append(st)
+
+    for e in events:
+        if e.get('showtimes'):
+            continue
+        by_date = upcoming.get(_ff_norm(e.get('title')))
+        if not by_date:
+            continue
+        # Prefer the sidebar entry for the date we already have; a film can be
+        # listed twice (e.g. a Q&A on consecutive nights) and only one of those
+        # screenings belongs to this event.
+        dt = e.get('date') if e.get('date') in by_date else min(by_date)
+        if not by_date[dt]:
+            continue
+        e['showtimes'] = list(by_date[dt])
+        e['date'] = dt
+        e['date_str'] = dt.strftime('%B %-d')
 
     # Special one-off screenings (Q&As, festival/series nights) aren't in the
     # sidebar day-of-week tabs. Their real date + time live in the detail-page
@@ -719,13 +776,9 @@ def scrape_film_forum():
         if not best:
             continue
         dt, hh, mm = best
-        # Evening screenings default to PM (10/11 → AM, 12 → PM).
-        if 1 <= hh <= 9:
-            st = f"{hh}:{mm} PM"
-        elif hh in (10, 11):
-            st = f"{hh}:{mm} AM"
-        else:
-            st = f"12:{mm} PM"
+        st = _ff_clock_to_12h(hh, mm)
+        if not st:
+            continue
         e['showtimes'] = [st]
         e['date'] = dt
         e['date_str'] = dt.strftime('%b %d')
