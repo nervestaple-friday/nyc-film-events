@@ -61,6 +61,19 @@ SPECIAL_KEYWORDS = [
     'shorts', 'documentary', 'new wave', 'classic', 'retrospective',
 ]
 
+# Listings that are not screenings: ticket bundles, merch, and fundraisers.
+# Anchored so ordinary titles ("The Passenger", "Passion") never match.
+NON_FILM_PATTERNS = [
+    r'\bpass(?:es)?\s*$',            # "2026 Scary Movies Pass"
+    r'\ball[- ]access\b',
+    r'\bmembership\b',
+    r'\bbook\s+fair\b',
+    r'\bgift\s+(?:card|certificate)\b',
+    r'\bdonat(?:e|ion)\b',
+    r'\bfundraiser\b',
+    r'\bbenefit\s+gala\b',
+]
+
 
 # ── helpers ────────────────────────────────────────────────────────────────
 
@@ -136,6 +149,13 @@ def is_special(title, description=''):
 def is_mainstream(title):
     t = title.lower()
     return any(kw in t for kw in MAINSTREAM_BLOCKLIST)
+
+def is_non_film(title):
+    """True for listings that are merchandise or fundraisers rather than screenings.
+    These arrive with no showtimes, no runtime and no TMDB match, so they render
+    as empty cards."""
+    t = title.lower()
+    return any(re.search(p, t) for p in NON_FILM_PATTERNS)
 
 def _retry(fn, retries=3, backoff=1):
     """Retry a callable up to *retries* times with exponential backoff.
@@ -216,7 +236,7 @@ def parse_date_loose(text):
 def make_event(venue, title, link='', date=None, date_str='', special=None, showtimes=None):
     title = clean_title(title)
     title = clean_title_for_display(title)  # strip [OV], [35mm], [DCP], etc. from all venues
-    if not title or len(title) < 3 or is_mainstream(title):
+    if not title or len(title) < 3 or is_mainstream(title) or is_non_film(title):
         return None
     ev = {
         'venue': venue,
@@ -1989,6 +2009,18 @@ def scrape_bam():
         earliest_future = None
         r2 = fetch(link)
         if r2:
+            # Series landing pages (Kino Canines, SWEAT! 2) link to child slugs
+            # prefixed with their own slug; a real film page never does.
+            page_slug = href.rstrip('/').split('/')[-1]
+            children = {
+                s for s in re.findall(r'/film/\d{4}/([a-z0-9\-]+)', r2.text)
+                if s != page_slug and s.startswith(page_slug + '-')
+            }
+            if len(children) >= 3:
+                print(f"  [bam] skipping series index {page_slug!r} "
+                      f"({len(children)} child films)", file=sys.stderr)
+                continue
+
             for ld_m in re.finditer(
                 r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>',
                 r2.text, re.DOTALL,
