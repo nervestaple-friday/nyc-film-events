@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24T15:02:33.169312+00:00",
+  "updated": "2026-08-24T15:09:33.748105+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -1860,15 +1860,6 @@
           "first_seen": "2026-08-10"
         },
         {
-          "title": "FLC Book Fair",
-          "link": "https://www.filmlinc.org/films/flc-book-fair/",
-          "date_str": "Aug 29",
-          "showtimes": [
-            "2:30 PM"
-          ],
-          "first_seen": "2026-08-10"
-        },
-        {
           "title": "Franz",
           "link": "https://www.filmlinc.org/films/franz/",
           "date_str": "Aug 25",
@@ -3527,12 +3518,6 @@
           "first_seen": "2026-08-10"
         },
         {
-          "title": "Kino Canines",
-          "link": "https://www.bam.org/film/2026/kino-canines",
-          "date_str": "Aug 28",
-          "first_seen": "2026-08-10"
-        },
-        {
           "title": "It Ends",
           "link": "https://www.bam.org/film/2026/it-ends",
           "date_str": "Aug 27",
@@ -3565,12 +3550,6 @@
           "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
           "year": "2026",
           "first_seen": "2026-08-10"
-        },
-        {
-          "title": "SWEAT! 2: THE DAMPENING",
-          "link": "https://www.bam.org/film/2026/sweat2",
-          "date_str": "Sep 4",
-          "first_seen": "2026-08-24"
         },
         {
           "title": "Hope",
@@ -3615,12 +3594,6 @@
           "poster": "https://image.tmdb.org/t/p/w300/klheiHrCGwNNooVvYTJCFYMzmrI.jpg",
           "overview": "Powwow People is a portrait of a powwow and its participants.",
           "year": "2025",
-          "first_seen": "2026-08-24"
-        },
-        {
-          "title": "Fantastical Felines",
-          "link": "https://www.bam.org/film/2026/fantastical-felines",
-          "date_str": "Sep 11",
           "first_seen": "2026-08-24"
         }
       ]
