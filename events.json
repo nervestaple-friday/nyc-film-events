@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24T15:10:57.031250+00:00",
+  "updated": "2026-08-24T15:12:55.735661+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -2490,6 +2490,273 @@
           "overview": "In a Parisian public hospital, Claire Simon questions what it means to live in women’s bodies, filming their diversity, singularity and their beauty in all stages throughout life. Unique stories of desires, fears and struggles unfold, including the one of the filmmaker herself.",
           "year": "2023",
           "rating": 7.8,
+          "first_seen": "2026-08-24"
+        }
+      ]
+    },
+    "MoMA": {
+      "url": "https://www.moma.org/calendar/film",
+      "events": [
+        {
+          "title": "Soleil Ô (Oh, Sun!)",
+          "link": "https://www.moma.org/calendar/events/11540",
+          "date_str": "Mon, Aug 24",
+          "showtimes": [
+            "4:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/l23NdXYuqkhFiXZHAES3XJkfBkN.jpg",
+          "overview": "An educated native of Mauritania tries to find work in Paris but encounters difficulty because of his race.",
+          "year": "1973",
+          "rating": 6.7,
+          "first_seen": "2026-08-10"
+        },
+        {
+          "title": "Solitaire à micro ouvert (Open Mic Solitaire)",
+          "link": "https://www.moma.org/calendar/events/11544",
+          "date_str": "Mon, Aug 24",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/if2WFfe9Zm6ykrVvuk6OdW5lFul.jpg",
+          "overview": "Julius-Amédée Laou's Open Mic Solitaire is about a Black Parisian who hijacks a radio station after his brother is murdered by racists.",
+          "year": "1983",
+          "first_seen": "2026-08-17"
+        },
+        {
+          "title": "My Life Is Wind (A Letter)",
+          "link": "https://www.moma.org/calendar/events/11539",
+          "date_str": "Tue, Aug 25",
+          "showtimes": [
+            "4:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/uxSvBBsSSxb5znbVQmsfjXjx4Lt.jpg",
+          "overview": "My Life is Wind is the story of Myriam’s first weeks as a refugee in an alien land told in the form of an intimate letter.",
+          "year": "2024",
+          "first_seen": "2026-08-10"
+        },
+        {
+          "title": "Stroszek",
+          "link": "https://www.moma.org/calendar/events/11545",
+          "date_str": "Tue, Aug 25",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/wDq9ytRxoVpICRcx1BvagmXhd4t.jpg",
+          "overview": "Bruno Stroszek is released from prison and warned to stop drinking. He has few skills and fewer expectations: with a glockenspiel and an accordion, he ekes out a living as a street musician. He befriends Eva, a prostitute down on her luck and they join his neighbor, Scheitz, an elderly eccentric, when he leaves Germany to live in Wisconsin.",
+          "year": "1977",
+          "rating": 7.3,
+          "first_seen": "2026-08-17"
+        },
+        {
+          "title": "Concerto pour un exil (Concerto for an Exile)",
+          "link": "https://www.moma.org/calendar/events/11541",
+          "date_str": "Wed, Aug 26",
+          "showtimes": [
+            "4:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/lwBC5fS0GLLmYamwSNKtOpT0F8O.jpg",
+          "overview": "Young Africans in Paris face insecurity and vague future. Should they stay in France, or return to their homes?",
+          "year": "1968",
+          "first_seen": "2026-08-10"
+        },
+        {
+          "title": "Measures of a Distance",
+          "link": "https://www.moma.org/calendar/events/11546",
+          "date_str": "Wed, Aug 26",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "first_seen": "2026-08-17"
+        },
+        {
+          "title": "Afrique sur Seine",
+          "link": "https://www.moma.org/calendar/events/11542",
+          "date_str": "Thu, Aug 27",
+          "showtimes": [
+            "4:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/axYgZgG3ZRJoh2SYyxNVMjAnRKd.jpg",
+          "overview": "This film is widely regarded as the first film made by an African south of the Sahara. Labelled an “ethnological documentary in reverse,” it shows 1950s Paris from the cinematic perspective of a group of African immigrants. (Mubi)",
+          "year": "1955",
+          "first_seen": "2026-08-10"
+        },
+        {
+          "title": "De l'autre côté (From the Other Side)",
+          "link": "https://www.moma.org/calendar/events/11547",
+          "date_str": "Thu, Aug 27",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/gRCr31SMpnElH5W6EZZG6cLdv0q.jpg",
+          "overview": "From the Other Side is a haunting and minimalist documentary that explores the tragic realities of illegal immigration along the U.S.–Mexico border, focusing on the twin towns of Agua Prieta, Sonora, and Douglas, Arizona. Director Chantal Akerman utilizes her signature long, observational takes and static shots to capture the harsh desert landscape and the architectural starkness of the border wall. Through deeply personal interviews with Mexican migrants and grieving families, contrasted against the high-tech tracking systems and perspectives of white American ranchers, the film highlights how tightened border security forced migrants into increasingly perilous terrain. Ultimately, the documentary serves as a poetic, empathetic, and politically charged meditation on xenophobia, separation, and the human cost of geographic boundaries.",
+          "year": "2003",
+          "rating": 7.0,
+          "first_seen": "2026-08-17"
+        },
+        {
+          "title": "Lingua Franca",
+          "link": "https://www.moma.org/calendar/events/11552",
+          "date_str": "Fri, Aug 28",
+          "showtimes": [
+            "4:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/20HKDrU2QccbEqzHmPJZRzMPoJM.jpg",
+          "overview": "Olivia, an undocumented Filipina immigrant paranoid about deportation, works as a caregiver to a Russian-Jewish grandmother in New York. When the man she’s secretly paying for a green card marriage backs out, she becomes involved with a slaughterhouse worker who is unaware that she’s a trans woman.",
+          "year": "2020",
+          "rating": 6.3,
+          "first_seen": "2026-08-17"
+        },
+        {
+          "title": "Disintegration 93-96",
+          "link": "https://www.moma.org/calendar/events/11549",
+          "date_str": "Fri, Aug 28",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/nhULgqr8T4tx57MrF2n5dxtQfZG.jpg",
+          "overview": "Living in the USA illegally for over 20 years, Miko Revereza reflects on his family's relocation from Manila to Los Angeles in this introspective essay film. Patching together self-portraiture and home-movie footage, his sombre yet resolute voice-over contemplates the weight of postcolonial history and obstructed futures on diasporic identities.",
+          "year": "2017",
+          "first_seen": "2026-08-17"
+        },
+        {
+          "title": "Take Out",
+          "link": "https://www.moma.org/calendar/events/11550",
+          "date_str": "Sat, Aug 29",
+          "showtimes": [
+            "4:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/hBpAozLANehQQnvTPcCHcKQt2vP.jpg",
+          "overview": "An illegal Chinese immigrant falls behind on payments on an enormous smuggling debt. Ming Ding has only until the end of the day to come up with the money.",
+          "year": "2008",
+          "rating": 7.1,
+          "first_seen": "2026-08-17"
+        },
+        {
+          "title": "Going Home",
+          "link": "https://www.moma.org/calendar/events/11548",
+          "date_str": "Sat, Aug 29",
+          "showtimes": [
+            "6:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/hK6KM3i7EKlGqY3MRSUbqKldSQ1.jpg",
+          "overview": "Fulfilling her late father’s last wish, Zhang Yuanyuan (Wang Zhen’er), who grew up in the United States, returns to China with her young daughter. There, she is confronted with a painful truth — her estranged mother (Li Ping), whom she has long blamed for abandoning her, has been diagnosed with Alzheimer’s disease. As the mother’s memories fade, Yuanyuan and her daughter accompany her through the gradual unraveling of time.  Through fragments of recollection and reality, Yuanyuan’s thoughts drift back to the 1980s, where she “meets” her mother as a young woman (He Lin) — brilliant, beautiful, and full of promise. In that era of newfound hope after the resumption of university entrance exams, her mother’s life seemed destined for success. Yet a single unexpected event changed the course of her life, as well as that of Yuanyuan’s father and Yuanyuan herself, forever.  A tender and time-woven story about memory, reconciliation, and the quiet strength that binds generations.",
+          "year": "2025",
+          "first_seen": "2026-08-17"
+        },
+        {
+          "title": "Transit",
+          "link": "https://www.moma.org/calendar/events/11564",
+          "date_str": "Mon, Aug 31",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/3YLOCnokMMSIOCvA0kCnkhpTD79.jpg",
+          "overview": "In an attempt to flee Nazi-occupied France, Georg assumes the identity of a dead author but soon finds himself stuck in Marseilles, where he falls in love with Maria, a young woman searching for her missing husband.",
+          "year": "2018",
+          "rating": 6.7,
+          "first_seen": "2026-08-17"
+        },
+        {
+          "title": "Le Havre",
+          "link": "https://www.moma.org/calendar/events/11584",
+          "date_str": "Wed, Sep 2",
+          "showtimes": [
+            "7:30 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/zBmY6X1hO1MKDj2bNXZ17Q6RDVJ.jpg",
+          "overview": "In the French harbor city of Le Havre, an elderly shoeshiner with an ailing wife crosses paths with a young African refugee pursued by the police for deportation.",
+          "year": "2011",
+          "rating": 7.0,
+          "first_seen": "2026-08-24"
+        },
+        {
+          "title": "First Cow",
+          "link": "https://www.moma.org/calendar/events/11553",
+          "date_str": "Thu, Sep 3",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/yS41crZ1i0fFxCQbuL7I1Y1VBwm.jpg",
+          "overview": "In the 1820s, a taciturn loner and skilled cook travels west to Oregon Territory, where he meets a Chinese immigrant also seeking his fortune. Soon the two team up on a dangerous scheme to steal milk from the wealthy landowner’s prized Jersey cow—the first, and only, in the territory.",
+          "year": "2020",
+          "rating": 7.0,
+          "first_seen": "2026-08-24"
+        },
+        {
+          "title": "Mutts",
+          "link": "https://www.moma.org/calendar/events/11551",
+          "date_str": "Fri, Sep 4",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/nv0e6ZFDhFcnqtYgqg1dr67VErm.jpg",
+          "overview": "For the 750 dogs that live in a Moroccan shelter, the daily routine consists of eating, resting, a bit of fighting and eating again. Could they possibly expect more from life? A pointed, cinematic commentary on mass confinement.",
+          "year": "2019",
+          "first_seen": "2026-08-24"
+        },
+        {
+          "title": "Minari",
+          "link": "https://www.moma.org/calendar/events/11565",
+          "date_str": "Mon, Sep 7",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/6mPNdmjdbVKPITv3LLCmQoKs9Zw.jpg",
+          "overview": "A Korean American family moves to an Arkansas farm in search of its own American dream. Amidst the challenges of this new life in the strange and rugged Ozarks, they discover the undeniable resilience of family and what really makes a home.",
+          "year": "2021",
+          "rating": 7.3,
+          "first_seen": "2026-08-24"
+        },
+        {
+          "title": "Immigrant Nation: Three from Mahdi Fleifel",
+          "link": "https://www.moma.org/calendar/events/11555",
+          "date_str": "Tue, Sep 8",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "first_seen": "2026-08-24"
+        },
+        {
+          "title": "Member Screening: El Último Sueño de Frida y Diego",
+          "link": "https://www.moma.org/calendar/events/11619",
+          "date_str": "Wed, Sep 9",
+          "showtimes": [
+            "9:00 PM"
+          ],
+          "first_seen": "2026-08-24"
+        },
+        {
+          "title": "Matches and Days [excerpt from work in progress]",
+          "link": "https://www.moma.org/calendar/events/11621",
+          "date_str": "Fri, Sep 11",
+          "showtimes": [
+            "7:00 PM"
+          ],
+          "first_seen": "2026-08-24"
+        },
+        {
+          "title": "Videograms of a Revolution",
+          "link": "https://www.moma.org/calendar/events/11622",
+          "date_str": "Sat, Sep 12",
+          "showtimes": [
+            "1:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/p0thKXkmhiZDSpRW8gyciAdMi9f.jpg",
+          "overview": "A minute-by-minute chronology of the Romanian revolution in December 1989 in Bucharest. This cinematic montage of live footage from the state television company TVR and video taken by numerous amateurs becomes a new media-based form of historiography.",
+          "year": "1992",
+          "rating": 7.9,
+          "first_seen": "2026-08-24"
+        },
+        {
+          "title": "Out of the Present",
+          "link": "https://www.moma.org/calendar/events/11623",
+          "date_str": "Sat, Sep 12",
+          "showtimes": [
+            "4:00 PM"
+          ],
+          "poster": "https://image.tmdb.org/t/p/w300/rRDPB4PboXME6qVtcH5DGauyTHy.jpg",
+          "overview": "In May 1991 Soviet cosmonauts Anatoly Artsebarksy and Sergey Krikalev visit space station Mir in space mission Ozon. Artsebarski, the commander, returns to Earth according to plan 5 months later. Krikalev has to stay in space for ten months because of the chaotic political situation in his home country. He left the USSR to return to Russia. The 1991 coup ends an important era.",
+          "year": "1997",
           "first_seen": "2026-08-24"
         }
       ]
