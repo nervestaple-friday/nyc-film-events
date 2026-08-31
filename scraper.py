@@ -29,6 +29,7 @@ WORKSPACE  = os.path.dirname(SCRIPT_DIR)
 STATE_FILE = os.path.join(WORKSPACE, 'memory', 'events-state.json')
 TEST_MODE  = '--test' in sys.argv
 PUSH       = '--push' in sys.argv or (not TEST_MODE)
+FORCE_PUSH = '--force-push' in sys.argv
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
@@ -2558,6 +2559,39 @@ def format_digest(events_by_venue):
 
 
 
+def venue_dropout_report(prev_payload, new_payload):
+    """Compare a previously published payload against the new one.
+
+    Returns a list of human-readable problems that should block a push.
+    Catches the failure mode where a venue scraper errors out (e.g. MoMA's
+    intermittent 403) and we silently ship a dataset missing that venue.
+    """
+    problems = []
+    prev_venues = (prev_payload or {}).get('venues') or {}
+    new_venues = (new_payload or {}).get('venues') or {}
+    if not prev_venues:
+        return problems
+
+    prev_counts = {v: len(d.get('events') or []) for v, d in prev_venues.items()}
+    new_counts = {v: len(d.get('events') or []) for v, d in new_venues.items()}
+
+    for venue, prev_n in sorted(prev_counts.items()):
+        if prev_n < 3:
+            continue  # venue was already marginal — not a meaningful signal
+        now_n = new_counts.get(venue, 0)
+        if now_n == 0:
+            problems.append(f'{venue}: {prev_n} events -> 0 (venue dropped out)')
+        elif now_n < prev_n * 0.34:
+            problems.append(f'{venue}: {prev_n} events -> {now_n} (down {100 - round(100 * now_n / prev_n)}%)')
+
+    prev_total = sum(prev_counts.values())
+    new_total = sum(new_counts.values())
+    if prev_total >= 20 and new_total < prev_total * 0.6:
+        problems.append(f'total: {prev_total} events -> {new_total} (down {100 - round(100 * new_total / prev_total)}%)')
+
+    return problems
+
+
 def push_to_github(events_by_venue):
     """Push events.json to nervestaple-friday/nyc-film-events for GitHub Pages."""
     import base64
@@ -2600,11 +2634,27 @@ def push_to_github(events_by_venue):
     api = 'https://api.github.com/repos/nervestaple-friday/nyc-film-events/contents/events.json'
     headers = {'Authorization': f'token {token}', 'Content-Type': 'application/json'}
 
-    # Get current SHA if file exists
+    # Get current SHA (and prior contents, for the regression guard) if file exists
     sha = None
+    prev_payload = None
     r = requests.get(api, headers=headers)
     if r.status_code == 200:
         sha = r.json().get('sha')
+        try:
+            prev_raw = base64.b64decode(r.json().get('content', '')).decode()
+            prev_payload = json.loads(prev_raw)
+        except Exception as e:
+            print(f"  [github] could not read published events.json: {e}", file=sys.stderr)
+
+    problems = venue_dropout_report(prev_payload, payload)
+    if problems:
+        for p in problems:
+            print(f'  [guard] {p}', file=sys.stderr)
+        if not FORCE_PUSH:
+            print('[ABORT] venue regression vs published data — refusing to push '
+                  '(re-run, or use --force-push if the drop is real)', file=sys.stderr)
+            return False
+        print('  [guard] --force-push set, pushing anyway', file=sys.stderr)
 
     body = {'message': f'Update events {datetime.now().strftime("%Y-%m-%d")}',
             'content': encoded}
