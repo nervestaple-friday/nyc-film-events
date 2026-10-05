@@ -999,9 +999,9 @@ def scrape_nitehawk():
                 continue
 
             for movie_slug in movie_slugs:
-                if movie_slug in seen_slugs:
+                if (location, movie_slug) in seen_slugs:
                     continue
-                seen_slugs.add(movie_slug)
+                seen_slugs.add((location, movie_slug))
 
                 # Get structured data from API
                 show = nj_fetch(movie_slug)
@@ -1132,9 +1132,20 @@ def scrape_nitehawk():
     # Filter out ghost films with no actual screening date
     events = [e for e in events if e.get('date') or e.get('date_str')]
 
+    # Dedupe and cap per location — a shared cap let Williamsburg (scraped
+    # first) fill all 50 slots and silently drop Prospect Park to zero.
     seen_titles = set()
-    deduped = [e for e in events if e['title'] not in seen_titles and not seen_titles.add(e['title'])]
-    return deduped[:50]
+    per_venue = {}
+    deduped = []
+    for e in events:
+        key = (e['venue'], e['title'])
+        if key in seen_titles:
+            continue
+        seen_titles.add(key)
+        per_venue[e['venue']] = per_venue.get(e['venue'], 0) + 1
+        if per_venue[e['venue']] <= 50:
+            deduped.append(e)
+    return deduped
 
 
 def scrape_flc():
