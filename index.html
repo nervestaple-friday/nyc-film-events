@@ -211,9 +211,20 @@
       if (!/(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(s)) return null;
       const now = new Date();
       // Some venues already include the year ("September 13, 2026").
-      const hasYear = /\b\d{4}\b/.test(s);
-      const attempt = new Date(hasYear ? s : s + ', ' + now.getFullYear());
-      return isNaN(attempt.getTime()) ? null : attempt;
+      if (/\b\d{4}\b/.test(s)) {
+        const dated = new Date(s);
+        return isNaN(dated.getTime()) ? null : dated;
+      }
+      // Yearless: pick whichever of last/this/next year lands closest to today,
+      // so "Jan 05" seen in December is next January (and "Dec 20" seen in
+      // January is last December) instead of ~11 months off.
+      let best = null;
+      for (const y of [now.getFullYear() - 1, now.getFullYear(), now.getFullYear() + 1]) {
+        const d = new Date(s + ', ' + y);
+        if (isNaN(d.getTime())) return null;
+        if (!best || Math.abs(d - now) < Math.abs(best - now)) best = d;
+      }
+      return best;
     }
 
     function toDateKey(d) { return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0'); }
