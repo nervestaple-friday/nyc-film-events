@@ -19,7 +19,7 @@ Run weekly for a digest, or with --test to preview without updating state.
 """
 
 import os, sys, json, hashlib, re, time, math, requests, html as _html, difflib
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from collections import defaultdict
 from bs4 import BeautifulSoup
 from xml.etree import ElementTree as ET
@@ -2570,6 +2570,47 @@ def format_digest(events_by_venue):
 
 
 
+_MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun',
+           'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
+
+
+def _is_past_date_str(date_str, today):
+    """True if a published date_str is provably before `today`.
+
+    Mirrors parseEventDate/isPastEvent in index.html: undated or unparseable
+    strings ("Now Playing", "Ongoing") are never past. Yearless dates take
+    whichever of last/this/next year lands closest to today.
+    """
+    s = (date_str or '').replace(' ', ' ').strip()
+    if not s or re.search(r'now playing', s, re.I):
+        return False
+    m = re.match(r'^\d{4}-\d{2}-\d{2}', s)
+    if m:
+        try:
+            return datetime.fromisoformat(m.group(0)).date() < today
+        except ValueError:
+            return False
+    s = re.sub(r'^(?:Sun|Mon|Tue|Wed|Thu|Fri|Sat)\w*,?\s*', '', s, flags=re.I)
+    dm = re.match(r'^(\d{1,2}),?\s+(\w+)$', s)
+    if dm:
+        s = f'{dm.group(2)} {dm.group(1)}'
+    mm = re.search(r'\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\w*\.?\s+(\d{1,2})\b', s, re.I)
+    if not mm:
+        return False
+    month, day = _MONTHS.index(mm.group(1).lower()) + 1, int(mm.group(2))
+    ym = re.search(r'\b(\d{4})\b', s[mm.end():])
+    years = [int(ym.group(1))] if ym else [today.year - 1, today.year, today.year + 1]
+    candidates = []
+    for y in years:
+        try:
+            candidates.append(date(y, month, day))
+        except ValueError:
+            pass
+    if not candidates:
+        return False
+    return min(candidates, key=lambda d: abs((d - today).days)) < today
+
+
 def venue_dropout_report(prev_payload, new_payload):
     """Compare a previously published payload against the new one.
 
@@ -2583,8 +2624,17 @@ def venue_dropout_report(prev_payload, new_payload):
     if not prev_venues:
         return problems
 
-    prev_counts = {v: len(d.get('events') or []) for v, d in prev_venues.items()}
-    new_counts = {v: len(d.get('events') or []) for v, d in new_venues.items()}
+    # Count only events that haven't played yet. Otherwise a venue whose
+    # festival just ended (FLC after NYFF) looks like a scraper failure, since
+    # the published counts still include the festival's now-past screenings.
+    today = datetime.now().date()
+
+    def _live_count(d):
+        return sum(1 for e in (d.get('events') or [])
+                   if not _is_past_date_str(e.get('date_str', ''), today))
+
+    prev_counts = {v: _live_count(d) for v, d in prev_venues.items()}
+    new_counts = {v: _live_count(d) for v, d in new_venues.items()}
 
     for venue, prev_n in sorted(prev_counts.items()):
         if prev_n < 3:
