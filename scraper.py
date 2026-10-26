@@ -119,6 +119,9 @@ def clean_title(title):
     return ' '.join(title.split())
 
 
+# "Stars in TITLE" prefix; the lookahead requires an ALL-CAPS word after "in".
+_STAR_IN_PREFIX = r'^.+?\s+in\s+(?=[A-Z][A-Z0-9\'&.-]+(?:[\s:!,]|$))'
+
 def clean_title_for_display(title):
     """Clean display titles: strip director prefixes, 'X in TITLE' prefixes, format suffixes."""
     t = title.strip()
@@ -130,8 +133,9 @@ def clean_title_for_display(title):
     t = re.sub(r"^[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*'s?\s+(?=[A-Z]+(?:\s|[^A-Za-z]|$))", '', t)
     # Handle "Giuseppe De Santis' BITTER RICE" with particles
     t = re.sub(r"^[A-Z][a-z]+(?:\s+(?:De|di|del|von|van|Le|La)\s+)?[A-Z][a-z]+'s?\s+(?=[A-Z]+(?:\s|[^A-Za-z]|$))", '', t)
-    # Handle "Martin and Lewis in TITLE" → "TITLE"
-    t = re.sub(r'^.+?\s+in\s+(?=[A-Z])', '', t)
+    # Handle "Martin and Lewis in TITLE" → "TITLE" — only when TITLE is ALL-CAPS,
+    # so real titles like "Once Upon a Time in Harlem" survive.
+    t = re.sub(_STAR_IN_PREFIX, '', t)
     # Strip trailing " in 3-D!" or " in 3D"
     t = re.sub(r'\s+in\s+3-?D!?\s*$', '', t, flags=re.IGNORECASE)
     # Strip bracketed/parenthesized format tags anywhere: [35mm], (DCP), [4K], [70mm], [16mm], [IMAX], [OV]
@@ -1217,6 +1221,11 @@ def scrape_flc():
         e = make_event('Film at Lincoln Center', title, link, date=date, date_str=date_str,
                        showtimes=show_times if show_times else None)
         if e:
+            # Met Opera Live in HD broadcasts are sold with a Met Guild presale;
+            # their titles ("Macbeth", "Otello") would otherwise match film adaptations.
+            if any((s.get('presaleSchedule') or {}).get('presaleType') == 'met-guild'
+                   for s in showtimes):
+                e['_no_tmdb'] = True
             events.append(e)
 
     return events[:20]
@@ -2128,7 +2137,7 @@ def _clean_title_for_tmdb(title):
     # Also handle "Giuseppe De Santis' BITTER RICE", "Ida Lupino's THE BIGAMIST"
     t = re.sub(r"^[A-ZÀ-Ý][a-zà-ÿ]+(?:\s+(?:De|di|del|von|van|Le|La)\s+)?[A-ZÀ-Ý][a-zà-ÿ]+'s?\s+", '', t)
     # Handle "Martin and Lewis in TITLE in 3-D!" → "MONEY FROM HOME"
-    t = re.sub(r'^.+?\s+in\s+(?=[A-Z])', '', t)
+    t = re.sub(_STAR_IN_PREFIX, '', t)
     # Strip trailing " in 3-D!" or " in 3D"
     t = re.sub(r'\s+in\s+3-?D!?\s*$', '', t, flags=re.IGNORECASE)
     # Strip "PRESENTER PRESENTS" prefix (case-insensitive)
@@ -2260,6 +2269,10 @@ _TMDB_OVERRIDES = {
     'Shorts Program 2': None,      # MoMA program (not Vancouver fest)
     'Apex': None,                  # Not the 2021 Bruce Willis action film
     "There\u2019s No Reward": None,     # Not the 1956 Japanese crime film
+    'The Devils': 31767,           # Ken Russell 1971 4K restoration (not the 2026 Thailand thriller)
+    "Ken Russell's The Devils": 31767,
+    "Ken Russell\u2019s The Devils": 31767,
+    'Fatherland': 1437696,         # Pawlikowski 2026 (not the 1994 TV film)
 }
 
 
@@ -2298,6 +2311,8 @@ def enrich_with_tmdb(events_by_venue):
     title_venues = _dds(set)
     for venue, events in events_by_venue.items():
         for e in events:
+            if e.get('_no_tmdb'):
+                continue
             title_venues[e['title']].add(venue)
     titles = set(title_venues.keys())
 
@@ -2509,7 +2524,7 @@ def enrich_with_tmdb(events_by_venue):
     # Attach fields to events
     for events in events_by_venue.values():
         for e in events:
-            info = cache.get(e['title'], {})
+            info = {} if e.pop('_no_tmdb', False) else cache.get(e['title'], {})
             e['poster'] = info.get('poster', '')
             e['overview'] = info.get('overview', '')
             e['year'] = info.get('year', '')
