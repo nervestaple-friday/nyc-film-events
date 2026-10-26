@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26T15:02:08.430284+00:00",
+  "updated": "2026-10-26T15:06:20.837526+00:00",
   "venues": {
     "Metrograph": {
       "url": "https://metrograph.com/calendar/",
@@ -562,17 +562,17 @@
           "first_seen": "2026-10-05"
         },
         {
-          "title": "Paris",
+          "title": "Midnight in Paris",
           "link": "https://metrograph.com/film/9999005018-midnight-in-paris/",
           "date_str": "Nov 01",
           "showtimes": [
             "9:50 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/bcJAgm2N0FW0PkCew9A1yv8r6zF.jpg",
-          "overview": "Pierre, a professional dancer, suffers from a serious heart disease. While he is waiting for a transplant which may (or may not) save his life, he has nothing better to do than look at the people around him, from the balcony of his Paris apartment.",
-          "year": "2008",
-          "rating": 6.5,
-          "first_seen": "2026-10-05"
+          "poster": "https://image.tmdb.org/t/p/w300/4wBG5kbfagTQclETblPRRGihk0I.jpg",
+          "overview": "While on a trip to Paris with his fiancée's family, a nostalgic screenwriter finds himself mysteriously going back to the 1920s every day at midnight.",
+          "year": "2011",
+          "rating": 7.5,
+          "first_seen": "2026-10-26"
         },
         {
           "title": "The Parallax View",
@@ -1255,6 +1255,10 @@
             "8:15 PM",
             "9:15 PM"
           ],
+          "also_at": [
+            "Film at Lincoln Center",
+            "BAM"
+          ],
           "poster": "https://image.tmdb.org/t/p/w300/9eukk5gby8NZCwraiC7mloZmasP.jpg",
           "overview": "A decade after his death, genre-defying filmmaker William Greaves has one last trick up his sleeve with what he considered the most important event he captured on film: a 1972 party he engineered with the living luminaries of the Harlem Renaissance.",
           "year": "2026",
@@ -1484,10 +1488,10 @@
             "Nitehawk (Williamsburg)",
             "Nitehawk (Prospect Park)"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
-          "overview": "A group of college friends' Thailand adventure turns deadly when they become trapped in submerged caves with a dangerous predator. As oxygen runs low, past conflicts emerge in their desperate fight for survival.",
-          "year": "2026",
-          "rating": 6.5,
+          "poster": "https://image.tmdb.org/t/p/w300/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg",
+          "overview": "In 1634 France, charismatic Father Urbain Grandier becomes the target of sexually depraved Sister Jeanne's accusations of witchcraft, which corrupt officials of church and state are all too happy to exploit.​​​​​​​​​​​​​​​​",
+          "year": "1971",
+          "rating": 7.5,
           "first_seen": "2026-10-05"
         },
         {
@@ -1837,14 +1841,14 @@
             "Film Forum",
             "BAM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/8HbeLtS7FRaQ6Ys8Qf62HW1VBSn.jpg",
-          "overview": "Fictional account of what might have happened if Hitler had won the war. It is now the 1960s and Germany's war crimes have so far been kept a secret. Hitler wants to talk peace with the US president. An American journalist and a German homicide cop stumble into a plot to destroy all evidence of the genocide.",
-          "year": "1994",
-          "rating": 6.3,
+          "poster": "https://image.tmdb.org/t/p/w300/oNejN1l69nBF8LdQwy5FkAQZT44.jpg",
+          "overview": "In 1949, German writer Thomas Mann and his daughter Erika embark on a road trip across a Germany in ruins, from US-dominated Frankfurt to Soviet-controlled Weimar.",
+          "year": "2026",
+          "rating": 7.3,
           "first_seen": "2026-10-12"
         },
         {
-          "title": "Harlem",
+          "title": "Once Upon a Time in Harlem",
           "link": "https://www.filmlinc.org/films/once-upon-a-time-in-harlem/",
           "date_str": "Oct 27",
           "showtimes": [
@@ -1854,13 +1858,13 @@
             "8:45 PM"
           ],
           "also_at": [
+            "Film Forum",
             "BAM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/mHX0aYjxc2cIOBfYBuaYN9SvbUf.jpg",
-          "overview": "'Sugar' Ray is the owner of an illegal casino and must contend with the pressure of vicious gangsters and corrupt police who want to see him go out of business. In the world of organised crime and police corruption in the 1920s, any dastardly trick is fair.",
-          "year": "1989",
-          "rating": 6.1,
-          "first_seen": "2026-10-12"
+          "poster": "https://image.tmdb.org/t/p/w300/9eukk5gby8NZCwraiC7mloZmasP.jpg",
+          "overview": "A decade after his death, genre-defying filmmaker William Greaves has one last trick up his sleeve with what he considered the most important event he captured on film: a 1972 party he engineered with the living luminaries of the Harlem Renaissance.",
+          "year": "2026",
+          "first_seen": "2026-10-26"
         },
         {
           "title": "Possible Love",
@@ -1889,10 +1893,10 @@
             "Nitehawk (Williamsburg)",
             "Nitehawk (Prospect Park)"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
-          "overview": "A group of college friends' Thailand adventure turns deadly when they become trapped in submerged caves with a dangerous predator. As oxygen runs low, past conflicts emerge in their desperate fight for survival.",
-          "year": "2026",
-          "rating": 6.5,
+          "poster": "https://image.tmdb.org/t/p/w300/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg",
+          "overview": "In 1634 France, charismatic Father Urbain Grandier becomes the target of sexually depraved Sister Jeanne's accusations of witchcraft, which corrupt officials of church and state are all too happy to exploit.​​​​​​​​​​​​​​​​",
+          "year": "1971",
+          "rating": 7.5,
           "first_seen": "2026-10-12"
         }
       ]
@@ -2743,10 +2747,10 @@
             "Film at Lincoln Center",
             "Nitehawk (Prospect Park)"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
-          "overview": "A group of college friends' Thailand adventure turns deadly when they become trapped in submerged caves with a dangerous predator. As oxygen runs low, past conflicts emerge in their desperate fight for survival.",
-          "year": "2026",
-          "rating": 6.5,
+          "poster": "https://image.tmdb.org/t/p/w300/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg",
+          "overview": "In 1634 France, charismatic Father Urbain Grandier becomes the target of sexually depraved Sister Jeanne's accusations of witchcraft, which corrupt officials of church and state are all too happy to exploit.​​​​​​​​​​​​​​​​",
+          "year": "1971",
+          "rating": 7.5,
           "first_seen": "2026-10-26"
         },
         {
@@ -2988,10 +2992,10 @@
             "Film at Lincoln Center",
             "Nitehawk (Williamsburg)"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
-          "overview": "A group of college friends' Thailand adventure turns deadly when they become trapped in submerged caves with a dangerous predator. As oxygen runs low, past conflicts emerge in their desperate fight for survival.",
-          "year": "2026",
-          "rating": 6.5,
+          "poster": "https://image.tmdb.org/t/p/w300/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg",
+          "overview": "In 1634 France, charismatic Father Urbain Grandier becomes the target of sexually depraved Sister Jeanne's accusations of witchcraft, which corrupt officials of church and state are all too happy to exploit.​​​​​​​​​​​​​​​​",
+          "year": "1971",
+          "rating": 7.5,
           "first_seen": "2026-10-26"
         },
         {
@@ -3254,10 +3258,10 @@
           "also_at": [
             "BAM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
-          "overview": "A group of college friends' Thailand adventure turns deadly when they become trapped in submerged caves with a dangerous predator. As oxygen runs low, past conflicts emerge in their desperate fight for survival.",
-          "year": "2026",
-          "rating": 6.5,
+          "poster": "https://image.tmdb.org/t/p/w300/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg",
+          "overview": "In 1634 France, charismatic Father Urbain Grandier becomes the target of sexually depraved Sister Jeanne's accusations of witchcraft, which corrupt officials of church and state are all too happy to exploit.​​​​​​​​​​​​​​​​",
+          "year": "1971",
+          "rating": 7.5,
           "first_seen": "2026-10-26"
         }
       ]
@@ -3376,7 +3380,7 @@
           "first_seen": "2026-10-05"
         },
         {
-          "title": "New York",
+          "title": "The Only Living Pickpocket in New York",
           "link": "https://www.bam.org/film/2026/the-only-living-pickpocket",
           "date_str": "Oct 26",
           "showtimes": [
@@ -3384,11 +3388,10 @@
             "6:40 PM",
             "9:00 PM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/lemqKtcCuAano5aqrzxYiKC8kkn.jpg",
-          "overview": "In early 1860s New York, Irish immigrant Amsterdam Vallon is released from prison and returns to the Five Points, seeking revenge against his father's killer, William Cutting, a powerful anti-immigrant gang leader. He knows that revenge can only be attained by infiltrating Cutting's inner circle. Vallon's journey becomes a fight for personal survival and to find a place for the Irish people.",
-          "year": "2002",
-          "rating": 7.3,
-          "first_seen": "2026-10-05"
+          "poster": "https://image.tmdb.org/t/p/w300/pNdB9va2AEPQe9UfhKAdIt8nus9.jpg",
+          "overview": "Harry Lehman is an aging pickpocket who plies his trade with ever-diminishing returns in a drastically changed New York. Wallets stuffed with cash have been replaced by easily cancelled credit cards, and Harry struggles to make ends meet as he cares for his disabled wife, Rosie. When he unwittingly purloins and fences a valuable USB stick, Harry finds himself in a race against time to return the loot or face the rage of a vengeful crime family.",
+          "year": "2026",
+          "first_seen": "2026-10-26"
         },
         {
           "title": "Ken Russell's The Devils",
@@ -3402,14 +3405,14 @@
           "also_at": [
             "Syndicated BK"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
-          "overview": "A group of college friends' Thailand adventure turns deadly when they become trapped in submerged caves with a dangerous predator. As oxygen runs low, past conflicts emerge in their desperate fight for survival.",
-          "year": "2026",
-          "rating": 6.5,
+          "poster": "https://image.tmdb.org/t/p/w300/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg",
+          "overview": "In 1634 France, charismatic Father Urbain Grandier becomes the target of sexually depraved Sister Jeanne's accusations of witchcraft, which corrupt officials of church and state are all too happy to exploit.​​​​​​​​​​​​​​​​",
+          "year": "1971",
+          "rating": 7.5,
           "first_seen": "2026-10-05"
         },
         {
-          "title": "Harlem",
+          "title": "Once Upon a Time in Harlem",
           "link": "https://www.bam.org/film/2026/once-upon-a-time-in-harlem",
           "date_str": "Oct 29",
           "showtimes": [
@@ -3421,12 +3424,12 @@
             "9:10 PM"
           ],
           "also_at": [
+            "Film Forum",
             "Film at Lincoln Center"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/mHX0aYjxc2cIOBfYBuaYN9SvbUf.jpg",
-          "overview": "'Sugar' Ray is the owner of an illegal casino and must contend with the pressure of vicious gangsters and corrupt police who want to see him go out of business. In the world of organised crime and police corruption in the 1920s, any dastardly trick is fair.",
-          "year": "1989",
-          "rating": 6.1,
+          "poster": "https://image.tmdb.org/t/p/w300/9eukk5gby8NZCwraiC7mloZmasP.jpg",
+          "overview": "A decade after his death, genre-defying filmmaker William Greaves has one last trick up his sleeve with what he considered the most important event he captured on film: a 1972 party he engineered with the living luminaries of the Harlem Renaissance.",
+          "year": "2026",
           "first_seen": "2026-10-26"
         },
         {
@@ -3455,10 +3458,10 @@
             "Film Forum",
             "Film at Lincoln Center"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/8HbeLtS7FRaQ6Ys8Qf62HW1VBSn.jpg",
-          "overview": "Fictional account of what might have happened if Hitler had won the war. It is now the 1960s and Germany's war crimes have so far been kept a secret. Hitler wants to talk peace with the US president. An American journalist and a German homicide cop stumble into a plot to destroy all evidence of the genocide.",
-          "year": "1994",
-          "rating": 6.3,
+          "poster": "https://image.tmdb.org/t/p/w300/oNejN1l69nBF8LdQwy5FkAQZT44.jpg",
+          "overview": "In 1949, German writer Thomas Mann and his daughter Erika embark on a road trip across a Germany in ruins, from US-dominated Frankfurt to Soviet-controlled Weimar.",
+          "year": "2026",
+          "rating": 7.3,
           "first_seen": "2026-10-19"
         },
         {
