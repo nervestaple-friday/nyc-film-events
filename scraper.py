@@ -2124,18 +2124,28 @@ def scrape_maysles():
 TMDB_CACHE_FILE = os.path.join(WORKSPACE, 'memory', 'tmdb-cache.json')
 MIN_TMDB_VOTES = 10  # Ignore ratings from films with fewer votes (unreliable extremes)
 
-def _clean_title_for_tmdb(title):
-    """Strip director prefixes, 'by' suffixes, years, and formatting for better TMDB matching."""
+_POSSESSIVE_PREFIX = r"^[A-ZÀ-Ý][a-zà-ÿ]+(?:\s+[A-ZÀ-Ý][a-zà-ÿ]+)*'s?\s+"
+_POSSESSIVE_PREFIX_PARTICLE = r"^[A-ZÀ-Ý][a-zà-ÿ]+(?:\s+(?:De|di|del|von|van|Le|La)\s+)?[A-ZÀ-Ý][a-zà-ÿ]+'s?\s+"
+
+
+def _clean_title_for_tmdb(title, strip_possessive=True):
+    """Strip director prefixes, 'by' suffixes, years, and formatting for better TMDB matching.
+
+    strip_possessive=False keeps a leading possessive ("Rosemary's Baby",
+    "Jennifer's Body", "Bram Stoker's Dracula") — those are real titles, not
+    "Director's TITLE" presenter prefixes. enrich_with_tmdb tries that form first.
+    """
     t = title.strip()
     # Normalize smart quotes to ASCII
     t = t.replace('\u2019', "'").replace('\u2018', "'").replace('\u201c', '"').replace('\u201d', '"')
     # Strip "by Director Name" suffix — require first+last name
     # Also strip trailing language notes: "In English and French with..."
     t = re.sub(r'\s*[Bb]y\s+[A-Z][a-zé\-]+(?:[\s\-]+[A-Z][a-zé\-]+)+(?:\s*In\s+.*)?$', '', t)
-    # Strip "Director's TITLE" prefix: "Satyajit Ray's DAYS AND NIGHTS..."
-    t = re.sub(r"^[A-ZÀ-Ý][a-zà-ÿ]+(?:\s+[A-ZÀ-Ý][a-zà-ÿ]+)*'s?\s+", '', t)
-    # Also handle "Giuseppe De Santis' BITTER RICE", "Ida Lupino's THE BIGAMIST"
-    t = re.sub(r"^[A-ZÀ-Ý][a-zà-ÿ]+(?:\s+(?:De|di|del|von|van|Le|La)\s+)?[A-ZÀ-Ý][a-zà-ÿ]+'s?\s+", '', t)
+    if strip_possessive:
+        # Strip "Director's TITLE" prefix: "Satyajit Ray's DAYS AND NIGHTS..."
+        t = re.sub(_POSSESSIVE_PREFIX, '', t)
+        # Also handle "Giuseppe De Santis' BITTER RICE", "Ida Lupino's THE BIGAMIST"
+        t = re.sub(_POSSESSIVE_PREFIX_PARTICLE, '', t)
     # Handle "Martin and Lewis in TITLE in 3-D!" → "MONEY FROM HOME"
     t = re.sub(_STAR_IN_PREFIX, '', t)
     # Strip trailing " in 3-D!" or " in 3D"
@@ -2341,6 +2351,12 @@ def enrich_with_tmdb(events_by_venue):
         r.raise_for_status()
         return r.json().get('results', [])
 
+    def _title_sim(query, r):
+        q = query.lower().strip()
+        sims = [difflib.SequenceMatcher(None, q, (r.get(k) or '').lower().strip()).ratio()
+                for k in ('title', 'original_title', 'name', 'original_name') if r.get(k)]
+        return max(sims, default=0)
+
     def _pick_best(results, prefer_recent, query_title=''):
         """Pick best TMDB result using title similarity, popularity, and vote count.
 
@@ -2412,6 +2428,16 @@ def enrich_with_tmdb(events_by_venue):
 
         return best
 
+    # Re-search cached hits for possessive-prefixed titles that predate the
+    # possessive-aware lookup (e.g. "Rosemary's Baby" cached as "Baby" (2015)).
+    stale_possessive = [t for t in titles if t in cache and t not in _TMDB_OVERRIDES
+                        and not cache[t].get('skipped') and not cache[t].get('possessive_v')
+                        and _clean_title_for_tmdb(t, strip_possessive=False) != _clean_title_for_tmdb(t)]
+    for t in stale_possessive:
+        del cache[t]
+    if stale_possessive:
+        print(f"  [tmdb] re-searching {len(stale_possessive)} possessive-prefixed titles", file=sys.stderr)
+
     # Search TMDB for uncached titles
     api_calls = 0
     for title in sorted(titles):
@@ -2477,23 +2503,38 @@ def enrich_with_tmdb(events_by_venue):
             venues_for_title = title_venues.get(title, set())
             prefer_recent = bool(venues_for_title & NEW_FILM_VENUES)
 
-            # Try movie search with cleaned title
-            results = _search_tmdb(cleaned, year=year, search_type='movie')
-            api_calls += 1
-
-            # If no result, try without year filter
-            if not results and year:
+            # Possessive-prefixed titles are ambiguous: "Satyajit Ray's DAYS AND
+            # NIGHTS..." is a presenter prefix, but "Rosemary's Baby" / "Jennifer's
+            # Body" are the real title. Search the unstripped form first and keep it
+            # only on a near-exact title match; otherwise fall back to the stripped
+            # form ("Jennifer's Body" was matching "Body of Lies" via "Body").
+            full = _clean_title_for_tmdb(title, strip_possessive=False)
+            if full != cleaned:
+                full_results = _search_tmdb(full, year=year, search_type='movie')
+                api_calls += 1
+                full_hit = _pick_best(full_results, prefer_recent, query_title=full)
+                if full_hit and _title_sim(full, full_hit) >= 0.9:
+                    hit = full_hit
                 time.sleep(0.25)
-                results = _search_tmdb(cleaned, search_type='movie')
+
+            if not hit:
+                # Try movie search with cleaned title
+                results = _search_tmdb(cleaned, year=year, search_type='movie')
                 api_calls += 1
 
-            # If still no result, try TV search
-            if not results:
-                time.sleep(0.25)
-                results = _search_tmdb(cleaned, year=year, search_type='tv')
-                api_calls += 1
+                # If no result, try without year filter
+                if not results and year:
+                    time.sleep(0.25)
+                    results = _search_tmdb(cleaned, search_type='movie')
+                    api_calls += 1
 
-            hit = _pick_best(results, prefer_recent, query_title=cleaned)
+                # If still no result, try TV search
+                if not results:
+                    time.sleep(0.25)
+                    results = _search_tmdb(cleaned, year=year, search_type='tv')
+                    api_calls += 1
+
+                hit = _pick_best(results, prefer_recent, query_title=cleaned)
             if hit:
                 poster_path = hit.get('poster_path') or ''
                 # TV uses first_air_date, movies use release_date
@@ -2506,6 +2547,7 @@ def enrich_with_tmdb(events_by_venue):
                     'year': release_date[:4] if len(release_date) >= 4 else '',
                     'rating': round(raw_rating, 1) if raw_rating and vote_count >= MIN_TMDB_VOTES else 0,
                     'cached_at': now_iso,
+                    'possessive_v': 1,
                 }
             else:
                 cache[title] = {'poster': '', 'overview': '', 'year': '', 'rating': 0, 'cached_at': now_iso}
