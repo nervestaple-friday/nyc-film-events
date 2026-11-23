@@ -2283,7 +2283,24 @@ _TMDB_OVERRIDES = {
     "Ken Russell's The Devils": 31767,
     "Ken Russell\u2019s The Devils": 31767,
     'Fatherland': 1437696,         # Pawlikowski 2026 (not the 1994 TV film)
+    'All of a Sudden': 1476614,    # Hamaguchi 2026 (not the 1996 HK erotic mystery)
 }
+
+
+def _override_key(title):
+    """Normalize a title for override lookup: case-, quote- and whitespace-insensitive,
+    so Film Forum's 'FATHERLAND' hits the 'Fatherland' override."""
+    t = title.replace('\u2019', "'").replace('\u2018', "'")
+    return re.sub(r'\s+', ' ', t).strip().casefold()
+
+
+_TMDB_OVERRIDES_NORM = {_override_key(k): v for k, v in _TMDB_OVERRIDES.items()}
+_NO_OVERRIDE = object()
+
+
+def _get_override(title):
+    """Return the override TMDB id (may be None = 'no match') or _NO_OVERRIDE."""
+    return _TMDB_OVERRIDES_NORM.get(_override_key(title), _NO_OVERRIDE)
 
 
 def enrich_with_tmdb(events_by_venue):
@@ -2430,7 +2447,7 @@ def enrich_with_tmdb(events_by_venue):
 
     # Re-search cached hits for possessive-prefixed titles that predate the
     # possessive-aware lookup (e.g. "Rosemary's Baby" cached as "Baby" (2015)).
-    stale_possessive = [t for t in titles if t in cache and t not in _TMDB_OVERRIDES
+    stale_possessive = [t for t in titles if t in cache and _get_override(t) is _NO_OVERRIDE
                         and not cache[t].get('skipped') and not cache[t].get('possessive_v')
                         and _clean_title_for_tmdb(t, strip_possessive=False) != _clean_title_for_tmdb(t)]
     for t in stale_possessive:
@@ -2443,8 +2460,8 @@ def enrich_with_tmdb(events_by_venue):
     for title in sorted(titles):
         if title in cache:
             # If this title has an override, verify the cache used the correct ID
-            if title in _TMDB_OVERRIDES:
-                expected_id = _TMDB_OVERRIDES[title]
+            expected_id = _get_override(title)
+            if expected_id is not _NO_OVERRIDE:
                 if 'tmdb_id' not in cache[title] or cache[title]['tmdb_id'] != expected_id:
                     del cache[title]  # Invalidate stale/wrong cache entry
                 else:
@@ -2452,8 +2469,8 @@ def enrich_with_tmdb(events_by_venue):
             else:
                 continue
         # Check manual overrides BEFORE skip patterns — overrides take priority
-        if title in _TMDB_OVERRIDES:
-            tmdb_id = _TMDB_OVERRIDES[title]
+        tmdb_id = _get_override(title)
+        if tmdb_id is not _NO_OVERRIDE:
             if tmdb_id is None:
                 # Explicitly marked as no TMDB match (program/compilation)
                 cache[title] = {'poster': '', 'overview': '', 'year': '', 'rating': 0, 'skipped': True, 'cached_at': now_iso, 'tmdb_id': None}

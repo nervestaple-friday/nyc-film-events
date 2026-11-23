@@ -1298,10 +1298,10 @@
             "Film at Lincoln Center",
             "BAM"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/8HbeLtS7FRaQ6Ys8Qf62HW1VBSn.jpg",
-          "overview": "Fictional account of what might have happened if Hitler had won the war. It is now the 1960s and Germany's war crimes have so far been kept a secret. Hitler wants to talk peace with the US president. An American journalist and a German homicide cop stumble into a plot to destroy all evidence of the genocide.",
-          "year": "1994",
-          "rating": 6.3,
+          "poster": "https://image.tmdb.org/t/p/w300/oNejN1l69nBF8LdQwy5FkAQZT44.jpg",
+          "overview": "In 1949, German writer Thomas Mann and his daughter Erika embark on a road trip across a Germany in ruins, from US-dominated Frankfurt to Soviet-controlled Weimar.",
+          "year": "2026",
+          "rating": 7.2,
           "first_seen": "2026-10-05"
         },
         {
@@ -1432,10 +1432,10 @@
           "also_at": [
             "Film at Lincoln Center"
           ],
-          "poster": "https://image.tmdb.org/t/p/w300/1GI9mC21UyZCcghL1TU3sAOhJsL.jpg",
-          "overview": "An erotic mystery in which two couples engage in multiple layers of passion, betrayal and murder.",
-          "year": "1996",
-          "rating": 6.0,
+          "poster": "https://image.tmdb.org/t/p/w300/kFD1vl6FPt8heIIgFiAyIbZqrYh.jpg",
+          "overview": "Director of a care facility for the elderly, Marie-Lou strives to introduce an innovative care philosophy based on listening and respecting residents’ dignity, despite resistance from part of her staff. Her encounter with Mari, a Japanese theater director battling cancer, will profoundly reshape her path. By forming a deep, supportive friendship, the two women join forces in a shared struggle to make the impossible possible.",
+          "year": "2026",
+          "rating": 7.8,
           "first_seen": "2026-11-16"
         },
         {
@@ -1813,7 +1813,7 @@
           "poster": "https://image.tmdb.org/t/p/w300/kFD1vl6FPt8heIIgFiAyIbZqrYh.jpg",
           "overview": "Director of a care facility for the elderly, Marie-Lou strives to introduce an innovative care philosophy based on listening and respecting residents’ dignity, despite resistance from part of her staff. Her encounter with Mari, a Japanese theater director battling cancer, will profoundly reshape her path. By forming a deep, supportive friendship, the two women join forces in a shared struggle to make the impossible possible.",
           "year": "2026",
-          "rating": 8.0,
+          "rating": 7.8,
           "first_seen": "2026-10-05"
         },
         {
@@ -1905,6 +1905,9 @@
           "showtimes": [
             "12:00 PM"
           ],
+          "poster": "https://image.tmdb.org/t/p/w300/yLTlYCHNIOK9oOiZyaIa0r7ZKmQ.jpg",
+          "overview": "Pious restraint comes face to face with sensuous hedonism in Camille Saint-Saëns’s grand-opera retelling of the Bible story of Samson and Delilah. Multi-Olivier Award winning director Richard Jones returns to The Royal Opera to stage this spectacular fin-de-siècle masterpiece, not performed at Covent Garden since 2004. Elina Garanca stars as the Philistine Dalila, SeokJong Baek as the inspiring Jewish hero Samson and Antonio Pappano conducts the full forces of the Orchestra of the Royal Opera House. With superb singing in solos and duets of great intimacy and fervour, gorgeous music with thrilling orchestral interludes, and splendid choral numbers for the Royal Opera Chorus – this is a performance to remember.",
+          "year": "2024",
           "first_seen": "2026-11-16"
         }
       ]
